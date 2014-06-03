@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="description" />
+  <title>P2P</title>
+  <%= stylesheet_link_tag  "simple", :media => "all" %>
+  <%= stylesheet_link_tag 'gmaps4rails' %>
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+  <%= javascript_include_tag "application", "jquery.ui", 'rails.validations', 'highcharts' %>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <script type="text/javascript" src="//maps.google.com/maps/api/js?v=3.5&sensor=false&libraries=geometry"></script>
+  <script type="text/javascript" src="//google-maps-utility-library-v3.googlecode.com/svn/tags/infobox/1.1.9/src/infobox_packed.js"></script>
+  <script type="text/javascript" src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.5/src/markerclusterer_packed.js"></script>
+  <script type="text/javascript" src="//google-maps-utility-library-v3.googlecode.com/svn/trunk/richmarker/src/richmarker-compiled.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  
+<div id="country_dashboard_main_contatiner">
+ <%= yield %>
+ <%= yield :scripts %>
+</div>
+<div class="countrydashboard-footer-container">
+ <div class="footer">
+    All Copy Rights Reserved to P2P</h3>
+  </div>
+</div>
+
+
+
+</body>
+</html>

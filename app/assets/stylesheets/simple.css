@@ -1,0 +1,163 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require userform
+ *= require borrower-dashboard
+ */
+
+body{
+margin:0px;
+width:100%;
+font-family: verdana;
+}
+
+/* Header listing */
+ul.header-icons, ul.header-icons ul {
+list-style: none outside none;
+margin: 0;
+}
+ul#nav, ul#nav .subs {
+border-radius: 2px;
+}
+ul#nav, ul#nav ul {
+list-style: none outside none;
+margin: 0;
+}
+ul.header-icons {
+color: #FFFFFF;
+display: block;
+float: right;
+font-size: 0;
+padding: 25px 5px 5px 0;
+width: 36%;
+margin-top:1%;
+}
+ul.header-icons li {
+display: block;
+float: right;
+font-size: 0;
+white-space: nowrap;
+margin: 0 0 0 5px;
+}
+
+ul.header-icons > li > a {
+border-radius: 11px;
+color: #FFFFFF;
+font-size: 15px;
+text-align: left;
+text-decoration: none;
+vertical-align: middle;
+}
+ul.header-icons a {
+border-style: none;
+border-width: 0;
+color: #181818;
+cursor: pointer;
+display: block;
+font-size: 13px;
+padding: 4px 18px;
+text-align: left;
+text-decoration: none;
+vertical-align: middle;
+}
+ul.header-icons >li:hover> a{
+background-color: #313638;
+height: 30px;
+border-radius: 10px 10px 0 0;
+}
+/* Header */
+.countrydashboard-header-container{
+width:100%;
+padding: 5px;
+background :#4a8bc2;
+margin:0px;
+height:70px;
+position: fixed;
+}
+.logo img{
+float: left;
+}
+.country-loggedin{
+float: left;
+color: #ffffff;
+margin-left: 3%;
+}
+.country-loggedin label{
+width: 95%;
+float: left;
+height: 26px;
+line-height: 26px;
+padding-right: 20px;
+text-align: left;
+display: block;
+}
+.country-header-icons{
+
+}
+
+/*footer*/
+.footer {
+background-color: #3399CC;
+bottom: 0;
+color: #333333;
+font-size: 12px;
+font-weight: bold;
+height: 13px;
+overflow: hidden;
+padding: 10px 10px 16px;
+text-align: center;
+top: auto;
+position: fixed;
+width:100%;
+}
+
+/* country_dashboard_main_contatiner */
+#country_dashboard_main_contatiner
+{
+		height: 73%;
+    margin: 0;
+    overflow: auto;
+    position: fixed;
+    top: 80px;
+    width: 95%;
+    margin-left:5%;
+}
+/*.workflow-bottom-container
+{
+		border: 2px solid #323232;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin-top: 15px;
+    width: 98%;
+}
+*/.workflow-bottom-container-left
+{
+		border: 1px solid #232323;
+    clear: both;
+    float: left;
+    width: 40%;
+}
+.workflow-bottom-container-right
+{
+		float: left;
+    width: 54%;
+}
+
+
+.tablesorter-header{
+  background: url("data:image/gif;base64, R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==") no-repeat 55% !important;
+}
+.tablesorter-headerAsc{
+  background: url('/assets/up_arrow.png') no-repeat 55% !important;
+}
+.tablesorter-headerDesc{
+  background: url('/assets/down_arrow.png') no-repeat 55% !important;
+}

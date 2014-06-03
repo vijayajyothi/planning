@@ -1,0 +1,61 @@
+<header>
+
+  <div class="container" style="border:0px #900 solid">
+
+    <div class="row">
+
+      <% if @current_user.present? %>
+
+      <div class="col-sm-6">
+        <div class="logo" style="width:19%;"> <%= link_to (image_tag("logo.png")), "/", :id => "logo" %></div>
+        <div class="login-info">
+
+          <span><b>Logged in as: </b><%= session[:user] %></span><br/>
+          <span><b>Last Log in: </b><%= last_login_time %></span>
+        </div>
+      </div>
+
+      <div class="col-sm-6" align="right" style=" float:right">
+
+        <!--Navigation Starts -->
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <!-- Menu and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <img src="/assets/menu.png">
+             </button>
+           </div>
+           <!-- Collect the nav links, forms, and other content for toggling -->
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" style="float: right;padding-top: 30px;" align="right">
+
+             <li><a href="#" alt="Calender" title="Calender"><span class="nav-span"></span><%= image_tag "Calendar-icon.png" %></a></li>
+             <li><a href="#" alt="Printer" title="Printer"><span class="nav-span"></span><%= image_tag "printer-icon.png" %></a></li>
+             <li><a href="#" alt="Messages" title="Messages"><span class="nav-span"></span><%= image_tag "message-already-read-icon.png" %></a></li>
+             <li class="selected-settings"><%#= link_to image_tag("settings-icon.png", :id=>"flip"), language_dashboard_path, :alt=>"Dashboard", :title=>"Country Dashboard" %></li>
+             <li><span class="nav-span"></span><%= link_to "#{image_tag("/assets/exit.png")}".html_safe, logout_path, :class=>"logout-button", :alt=>"Logout", :title=>"Logout"%>
+             </li>
+
+           </ul>
+         </div><!-- /.navbar-collapse -->
+       </div><!-- /.container-fluid -->
+     </nav>
+     <!--EOF Navigation -->
+
+
+
+   </div>
+
+<% else %>
+   <div class="col-sm-6">
+        <div class="logo"> <%= link_to (image_tag("logo.png")), "/", :id => "logo" %></div>
+</div>
+</div>
+ <% end %>
+
+
+</div>
+
+
+</header>

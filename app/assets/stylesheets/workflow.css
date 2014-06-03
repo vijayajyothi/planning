@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require workflow-basic
+ *= require workflow-inner
+ */
+
+	/*alert css*/
+	body{
+	margin:0px;
+	width:100%;
+	font-family: verdana !important;
+}
+
+
+	.alert {
+		width: 50%;
+		margin-left: 160px;
+		margin-top: 10px;
+		padding: 8px 35px 8px 14px;
+		margin-bottom: 20px;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+		background-color: #fcf8e3;
+		border: 1px solid #fbeed5;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+
+	.alert,
+	.alert h4 {
+		color: #c09853;
+	}
+
+	.alert h4 {
+		margin: 0;
+	}
+
+	.alert .close {
+		position: relative;
+		top: -2px;
+		right: -21px;
+		line-height: 20px;
+	}
+
+	.alert-success {
+		color: #468847;
+		background-color: #dff0d8;
+		border-color: #d6e9c6;
+	}
+
+	.alert-success h4 {
+		color: #468847;
+	}
+
+	.alert-danger,
+	.alert-error {
+		color: #b94a48;
+		background-color: #f2dede;
+		border-color: #eed3d7;
+	}
+
+	.alert-danger h4,
+	.alert-error h4 {
+		color: #b94a48;
+	}
+
+	.alert-info {
+		color: #3a87ad;
+		background-color: #d9edf7;
+		border-color: #bce8f1;
+	}
+
+	.alert-info h4 {
+		color: #3a87ad;
+	}
+
+	.alert-block {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+	.alert-block > p,
+	.alert-block > ul {
+		margin-bottom: 0;
+	}
+
+	.alert-block p + p {
+		margin-top: 5px;
+	}

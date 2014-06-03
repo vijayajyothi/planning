@@ -1,0 +1,367 @@
+body{ font-family: arial}
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue-webfont.woff') format('woff'),
+    url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+    url('../fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+header{background:#c2c6ce; height:70px; color:#FFF; font-weight:normal;width:100%; height:auto;}
+footer{ background:#3399cc; height:40px; color:#FFF; position:fixed; bottom:0; width:100%; z-index:1000}
+
+
+
+.logo{display:block; float:left; width:19%; height:70px;}
+.login-info{width:70%; float:left; padding-top:5px; border:0px #000 solid; font-family:arial;}
+.tabs{ width:99%; margin-left:1%; border:1px #ddd solid; height:100px;}
+
+
+/*Login Form*/
+
+.login{ width:100%; height:100%; background:url(body-bg.jpg)}
+.login-pannel{width:520px; height:480px; background:#FFF; border:6px #f6b54d solid; margin:auto; margin-top:30px}
+.login-header{width:90%; height:auto; margin:0 auto}
+.form{width:50%; height:auto; margin:0 auto; padding-top:30px}
+.form input{ width:100%; padding:7px; margin-top:3px}
+.form label{ width:100%; height:15px; padding:0px; margin-top:5px; font-size:13px}
+.form button{ margin-top:20px; background:#9b1616; color:#FFF}
+.form button:hover{background:#c41c1c;color:#FFF}
+.formfield { clear: both;padding: 20px; color: #333333; font-size: 12px; margin-top:1%; }
+.formfield fieldset { background: -moz-linear-gradient(center top , #EFEFEF, #FFFFFF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 3px 3px 10px #CCCCCC;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+.formfield fieldset input{ 
+    font-family:arial; 
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    float: left;
+    height: 20px;
+    padding: 4px;
+    width: 120px;
+    height:34px !important;}
+ fieldset {
+    font-family: arial;
+}
+
+    .box input{height:34px;}
+
+    /*Creat User Form*/
+
+
+    .box{ width:100%; height:auto; border:1px #CCC solid; border-radius:6px; padding:6px; margin-bottom:10px}
+    .workflow{width:120px; margin:0;padding:10px 0 10px 0px; background:#3399cc; color:#FFF; text-align:center}
+    .userform-row{width:100%; height:40px !important; margin-top:5px; border:0px #000 solid}
+    .userform-label{width:40%; float:left;font-weight:normal; padding:5px; font-size:13px; border:0px #003 solid; font-weight:bold}
+    .userform-input{float:right; width:60% }
+    .box .userform-input2{float:right; width:20% }
+    .userform-input3{float:right; width:35%; margin-right:5% }
+    .choose{margin-left:0px; float:left}
+
+
+
+
+    /* metro dashboard states */
+    .metro-nav {
+        font-family: arial;
+        position: relative;
+        z-index: 101; width:100%; margin-bottom:20px
+    }
+
+    .metro-nav .nav-block-orange {
+        background: #f37b53; width:100%
+    }
+    .metro-nav .nav-block-lavender {
+        background: #c551de;
+    }
+    .metro-nav .nav-block-redd {
+        background: #fe464a;
+    }
+    .metro-nav .nav-block-brown {
+        background: #675545;
+    }
+
+    .metro-nav .nav-block-yellow {
+        background: #FFB400;
+    }
+
+    .metro-nav .nav-block-blue {
+        background: #0DAED3;
+    }
+
+    .metro-nav .nav-block-green {
+        background: #74B749;
+    }
+
+    .metro-nav .nav-block-red {
+        background:#de577b;
+    }
+
+    .metro-nav .nav-block-purple {
+        background:  #9d4a9c;
+    }
+    .metro-nav .nav-block-grey {
+        background:  #77808a;
+    }
+    /*---new add--*/
+    .metro-nav .nav-light-blue {
+        background:  #61b9ff;
+    }
+    .metro-nav .nav-light-green {
+        background:  #00a489;
+    }
+    .metro-nav .nav-deep-terques {
+        background:  #0bc0cb;
+    }
+    .metro-nav .nav-light-purple {
+        background:  #847cc5;
+    }
+    .metro-nav .nav-light-yellow {
+        background:  #e5bc64;
+    }
+    .metro-nav .nav-deep-gray {
+        background:  #434343;
+    }
+    .metro-nav .nav-light-brown {
+        background:  #ab8465;
+    }
+    .metro-nav .nav-deep-red {
+        background:  #b33062;
+    }
+    .metro-nav .nav-olive {
+        background:  #959801;
+    }
+    .metro-nav .nav-deep-thistle {
+        background:  #9e7698;
+    }
+
+    .metro-fix-view .metro-nav-block.double {
+        width: 251px !important;
+    }
+
+    .metro-fix-view .metro-nav-block.long {
+        width: 251px !important;
+        height: 235px !important;
+    }
+
+    .metro-fix-view .metro-nav-block.long .value {
+        padding-top: 30px !important;
+        display: inline-block;
+    }
+
+    .metro-fix-view .metro-nav-block.long .value i {
+        font-size: 90px;
+    }
+
+    .metro-fix-view .metro-nav-block {
+        color: white;
+        cursor: pointer;
+        display: block;
+        float: left;
+        font-weight: 300;
+        height: 120px;
+        letter-spacing: 0.02em;
+        line-height: 20px;
+        margin: 0 1% 1% 0;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+        width: 120px !important;
+        z-index: 1;
+        width:100%;
+    }
+
+
+    .metro-nav .metro-nav-block.double {
+        width: 100%;
+    }
+
+    .metro-nav .metro-nav-block {
+        color: white;
+        cursor: pointer;
+        display: block;
+        float: left;
+        font-weight: 300;
+        height:114px;
+        letter-spacing: 0.02em;
+        line-height: 20px;
+        margin: 0 1% 1% 0;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+        z-index: 1;
+        margin-bottom:15px
+    }
+
+    .metro-nav .metro-nav-block i {
+        font-size: 50px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .metro-nav .metro-nav-block:last-child {
+        margin-right: 0;
+    }
+
+    .metro-nav .metro-nav-block a {
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        height: 90%;
+        line-height: 16px;
+        overflow: hidden;
+        padding: 5px 10px;
+        position: absolute;
+        text-overflow: ellipsis;
+        vertical-align: top;
+        width: 88%;
+        text-decoration: none;
+    }
+
+    .metro-nav .metro-nav-block a i {
+        transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+    }
+
+    .metro-nav .metro-nav-block a .info {
+        transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -o-transition: all 0.4s ease-in-out 0s;
+    }
+
+    .metro-nav .metro-nav-block a:hover i{
+        transform:rotate(83deg);
+        -moz-transform:rotate(83deg);
+        -webkit-transform:rotate(83deg);
+        -o-transform:rotate(83deg);
+        font-size: 140px;
+        opacity: 0.2;
+    }
+
+    .metro-nav .metro-nav-block.long a:hover i{
+
+        font-size: 200px;
+    }
+    .metro-nav .metro-nav-block.long a {
+        height: 96%;
+    }
+    .metro-nav .metro-nav-block a:hover .info {
+        transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        font-size: 40px;
+        opacity: 0.6;
+    }
+    .info_img{margin-top:10%;}
+    .metro-nav  .metro-nav-block a:hover .info_img img{
+        transform:rotate(90deg);
+        -moz-transform:rotate(90deg);
+        -webkit-transform:rotate(90deg);
+        -o-transform:rotate(90deg);
+        opacity: 0.2;
+        width:70px;
+        height:70px;
+
+    }
+    .metro-nav .metro-nav-block:hover {
+        opacity: 0.8;
+    }
+
+    .metro-nav .metro-nav-block.double a {
+        width: 94%;
+    }
+
+    .metro-nav .metro-nav-block .info {
+        font-size: 24px;
+        position: absolute;
+        right: 10px;
+        top: 45px;
+    }
+
+    .metro-nav .metro-nav-block .status, .metro-nav .metro-nav-block .tile-status {
+        background-color: transparent;
+        bottom: -10px;
+        font-size: 14px;
+        font-weight:bold;
+        left: 10px;
+        min-height: 30px;
+        position: absolute;
+    }
+
+
+
+    @media 
+    all and
+    (max-width: 478px) {
+
+        .logo{display:block; float:left; width:19%; height:70px;}
+        .login-info{width:70%; float:left; padding-top:10px}
+        .login-info span{width:100%; float:left; padding-top:10px; font-size:9px; color:#FFF}
+        .navbar-default { margin-top:-50px; width:100%;}
+        .nav-span{float:left; padding-top:5px}
+        .login-pannel{width:280px; height:480px; background:#FFF; border:6px #f6b54d solid; margin:auto; margin-top:30px}
+        .userform-label{width:40%; float:left;font-weight:normal; padding:5px; font-size:10px; border:0px #003 solid}
+
+
+    }
+
+    @media
+    (min-width: 480px) and
+    (max-width: 760px) {
+        .navbar-default { margin-top:-50px; width:100%}
+        .navbar-toggle {
+          position: relative;
+          float: right;
+          padding: 9px 10px;
+          margin-top: 8px;
+          margin-right: 0px;
+          margin-bottom: 8px;
+          background-color: transparent;
+          background-image: none;
+          border: 0px solid transparent;
+          border-radius: 4px;
+      }
+      .nav-span{float:left; padding-top:5px}
+      .login-pannel{width:450px; height:480px; background:#FFF; border:6px #f6b54d solid; margin:auto; margin-top:30px}
+      .userform-label{width:40%; float:left;font-weight:normal; padding:5px; font-size:12px; border:0px #003 solid; font-weight:bold}
+
+  }
+
+  @media
+  (min-width: 768px) and
+  (max-width: 1024px) {
+
+    .navbar-default { margin-top:5px}
+    .logo{display:block; float:left; width:19%; height:70px;}
+    .login-info span{width:100%; float:left; padding-top:10px; font-size:13px}
+    .nav-span{display:none}
+    .userform-label{width:40%; float:left;font-weight:normal; padding:5px; font-size:12px; border:0px #003 solid; font-weight:bold}
+    .photo-name{width:95%; height:80px; margin:5px 0 0 5px; border:0px #0C6 solid}
+}
+@media
+(min-width: 1024px) and
+(max-width: 1920px) {
+
+    .navbar-default { margin-top:5px}
+    .logo{display:block; float:left; width:19%; height:70px;}
+    .login-info span{width:100%; float:left; padding-top:10px; font-size:13px}
+    .nav-span{display:none}
+
+}   
+
+
+
