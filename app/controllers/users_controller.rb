@@ -1,15 +1,14 @@
 class UsersController < ApplicationController
-layout "simple"
   def new
     @user = User.new
-    # render :layout => simple
+    render :layout => false
   end
 
   def create
     @user = User.new(params[:user])
     if @user.save
       cookies[:auth_token] = @user.auth_token
-      redirect_to root_url
+      redirect_to root_url, :flash => {:notice=>"Successfully logged in! "}
     else
       render "new"
     end

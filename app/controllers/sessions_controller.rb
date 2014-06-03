@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
   def new
-    raise "here"
     render :layout=> false
   end
 
