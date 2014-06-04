@@ -1,7 +1,11 @@
 Opsgps::Application.routes.draw do
   resources :vms
+  
 resources :vms do 
-  collection {post :import}
+  collection {
+    post :import
+     # post :details
+  }
   end
 
   resources :password_resets

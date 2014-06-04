@@ -1,5 +1,7 @@
-  <h2>VM Details</h2>
-  <div class="form-search">
+<div class="col-sm-12">
+  <div class="form-search col-sm-4">
+  <h2>VM Details</h2></div>
+  <div class="form-search col-sm-4" style="margin-top:20px;">
     <div class="input-append">
 
       <%= form_tag vms_path, :method => :get do %>
@@ -7,6 +9,7 @@
       <%= submit_tag "Search", :name => nil, :class=>"btn" %>
       <% end %>
     </div>
+  </div>
   </div>
 
 <table class="table table-striped tablesorter">
@@ -20,7 +23,7 @@
   </tr>
 
   <% @vms.each do |vm| %>
-  <tr>
+  <tr style="cursor:pointer;" id ="complete_tr">
     <td><%= vm.datacenter %></td>
     <td><%= vm.connectionstate %></td>
     <td><%= vm.powerstate %></td>
@@ -56,5 +59,16 @@ $(function(){
     sortRestart    : true
   });
 });
+
+$("#complete_tr").click(function(){
+  alert("here")
+  $.ajax({
+    url : "/vms/details.html",
+    success: function(data){
+      $(".container").html(data);
+    }
+  })
+})
+
 </script>
 

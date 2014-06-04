@@ -1,4 +1,6 @@
 class VmsController < ApplicationController
+before_filter :authorize 
+
   # GET /vms
   # GET /vms.json
 
@@ -31,6 +33,10 @@ class VmsController < ApplicationController
       format.html # show.html.erb
       format.json { render json: @vm }
     end
+  end
+  def details
+    raise "here"
+    render :partial =>"details"
   end
 
   # GET /vms/new
