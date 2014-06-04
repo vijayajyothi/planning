@@ -1,0 +1,141 @@
+<%= form_for(@vm) do |f| %>
+  <% if @vm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vm.errors.count, "error") %> prohibited this vm from being saved:</h2>
+
+      <ul>
+      <% @vm.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :datacenter %><br />
+    <%= f.text_field :datacenter %>
+  </div>
+  <div class="field">
+    <%= f.label :qtynics %><br />
+    <%= f.text_field :qtynics %>
+  </div>
+  <div class="field">
+    <%= f.label :createdby %><br />
+    <%= f.text_field :createdby %>
+  </div>
+  <div class="field">
+    <%= f.label :createdtime %><br />
+    <%= f.datetime_select :createdtime %>
+  </div>
+  <div class="field">
+    <%= f.label :suspendinterval %><br />
+    <%= f.text_field :suspendinterval %>
+  </div>
+  <div class="field">
+    <%= f.label :suspendtime %><br />
+    <%= f.datetime_select :suspendtime %>
+  </div>
+  <div class="field">
+    <%= f.label :boottime %><br />
+    <%= f.text_field :boottime %>
+  </div>
+  <div class="field">
+    <%= f.label :storageuncommitted %><br />
+    <%= f.text_field :storageuncommitted %>
+  </div>
+  <div class="field">
+    <%= f.label :storagecommitted %><br />
+    <%= f.text_field :storagecommitted %>
+  </div>
+  <div class="field">
+    <%= f.label :ipaddress %><br />
+    <%= f.text_field :ipaddress %>
+  </div>
+  <div class="field">
+    <%= f.label :hostname %><br />
+    <%= f.text_field :hostname %>
+  </div>
+  <div class="field">
+    <%= f.label :toolsrunningstatus %><br />
+    <%= f.text_field :toolsrunningstatus %>
+  </div>
+  <div class="field">
+    <%= f.label :toolsversion %><br />
+    <%= f.text_field :toolsversion %>
+  </div>
+  <div class="field">
+    <%= f.label :toolstatus %><br />
+    <%= f.text_field :toolstatus %>
+  </div>
+  <div class="field">
+    <%= f.label :guestfullname %><br />
+    <%= f.text_field :guestfullname %>
+  </div>
+  <div class="field">
+    <%= f.label :usedspacegb %><br />
+    <%= f.text_field :usedspacegb %>
+  </div>
+  <div class="field">
+    <%= f.label :provisionedspacegb %><br />
+    <%= f.text_field :provisionedspacegb %>
+  </div>
+  <div class="field">
+    <%= f.label :memorymb %><br />
+    <%= f.text_field :memorymb %>
+  </div>
+  <div class="field">
+    <%= f.label :numcpu %><br />
+    <%= f.text_field :numcpu %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br />
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :gueststate %><br />
+    <%= f.text_field :gueststate %>
+  </div>
+  <div class="field">
+    <%= f.label :connectionstate %><br />
+    <%= f.text_field :connectionstate %>
+  </div>
+  <div class="field">
+    <%= f.label :powerstate %><br />
+    <%= f.text_field :powerstate %>
+  </div>
+  <div class="field">
+    <%= f.label :application %><br />
+    <%= f.text_field :application %>
+  </div>
+  <div class="field">
+    <%= f.label :persistentid %><br />
+    <%= f.text_field :persistentid %>
+  </div>
+  <div class="field">
+    <%= f.label :vmname %><br />
+    <%= f.text_field :vmname %>
+  </div>
+  <div class="field">
+    <%= f.label :vmhost %><br />
+    <%= f.text_field :vmhost %>
+  </div>
+  <div class="field">
+    <%= f.label :folder %><br />
+    <%= f.text_field :folder %>
+  </div>
+  <div class="field">
+    <%= f.label :reourcepool %><br />
+    <%= f.text_field :reourcepool %>
+  </div>
+  <div class="field">
+    <%= f.label :cluster %><br />
+    <%= f.text_field :cluster %>
+  </div>
+  <div class="field">
+    <%= f.label :vcserver %><br />
+    <%= f.text_field :vcserver %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,4 +1,9 @@
 Opsgps::Application.routes.draw do
+  resources :vms
+resources :vms do 
+  collection {post :import}
+  end
+
   resources :password_resets
 
   resources :sessions

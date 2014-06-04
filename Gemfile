@@ -18,10 +18,17 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'twitter-bootstrap-rails'
+  gem 'less-rails'
 end
+gem 'will_paginate', '~> 3.0.5'
+gem 'jquery-rails'
+gem 'jquery-tablesorter'
+gem 'sunspot_rails'
+gem 'progress_bar'
+
 
 gem 'simple_login'
-gem 'jquery-rails'
 #gem 'bcrypt-ruby', git: 'git@github.com:hananamar/bcrypt-ruby.git', :require => 'bcrypt'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
@@ -38,6 +45,7 @@ gem "twitter-bootstrap-rails"
 # To use debugger
 # gem 'debugger'
 group :development do
+  gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
   gem 'better_errors'                                # To debug errors very effectively and handles exceptions
   gem 'binding_of_caller'                            # To show all the local and instance variables
   gem 'quiet_assets'                                 # To Avoid Asset Pipeline Log in Development
