@@ -1,54 +1,60 @@
-<div class="page-header">
-  <h1>VM Details</h1>
-<%= form_tag vms_path, :method => :get do %>
-  <p>
- <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-<% end %>
-</div>
+  <h2>VM Details</h2>
+  <div class="form-search">
+    <div class="input-append">
+
+      <%= form_tag vms_path, :method => :get do %>
+      <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+      <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+      <% end %>
+    </div>
+  </div>
 
 <table class="table table-striped tablesorter">
   <tr>
-    <th>Data center</th>
-    <th>state</th>
+    <th>Data Center</th>
+    <th>State</th>
     <th>Status</th>
     <th>VM Name</th>
     <th>VCserver</th>
     <th colspan=3> Actions</th>
   </tr>
 
-<% @vms.each do |vm| %>
+  <% @vms.each do |vm| %>
   <tr>
     <td><%= vm.datacenter %></td>
     <td><%= vm.connectionstate %></td>
     <td><%= vm.powerstate %></td>
     <td><%= vm.vmname %></td>
     <td><%= vm.vcserver %></td>
-    <td><%= link_to 'Show', vm ,:class => 'btn btn-mini'%></td>
-    <td><%= link_to 'Edit', edit_vm_path(vm),:class => 'btn btn-mini' %></td>
+    <td><%= link_to 'Show', vm ,:class => 'btn btn-mini btn-info'%></td>
+    <!-- <td><%#= link_to 'Edit', edit_vm_path(vm),:class => 'btn btn-mini btn-warning' %></td> -->
     <td><%= link_to 'Destroy', vm, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td>
   </tr>
-<% end %>
+  <% end %>
 </table>
-
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @posts %>
+  </div>
+  <%= will_paginate @vms, :container => false %>
+</div>
 <br />
-<h2>Import Products</h2>
+<h3>Import VM's CSV</h3>
 <%= form_tag import_vms_path, multipart: true do %>
-  <%= file_field_tag :file %>
-  <%= submit_tag "Import" %>
+<%= file_field_tag :file %>
+<%= submit_tag "Import" %>
 <% end %>
 
-<%= will_paginate @vms %>
-<%= link_to 'New Vm', new_vm_path %>
+<%#= link_to 'New Vm', new_vm_path %>
 
 <script>
-    $(function(){
-        $('table').tablesorter({
-            widgets        : ['zebra', 'columns'],
-            usNumberFormat : false,
-            sortReset      : true,
-            sortRestart    : true
-        });
-    });
-    </script>
+$(function(){
+  $('table').tablesorter({
+    widgets        : ['zebra', 'columns'],
+    usNumberFormat : false,
+    sortReset      : true,
+    sortRestart    : true
+  });
+});
+</script>
 

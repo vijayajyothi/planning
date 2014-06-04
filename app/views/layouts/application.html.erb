@@ -44,17 +44,18 @@
 
 
     <body>
-<div style=" margin:0; padding:0; left:0; right:0;position:absolute">
+      <div style=" margin:0; padding:0; left:0; right:0;position:absolute">
 
-     <%= render :partial=> "layouts/header" %>
+       <%= render :partial=> "layouts/header" %>
+       <div class="container">
+
+         <%= yield %>
+       </div>
+       <%= yield :scripts %>
 
 
-     <%= yield %>
-     <%= yield :scripts %>
-
-
-     <%= render :partial=> "layouts/footer" %>
-     <div class="container" style="height:60px"></div>
-</div>
+       <%= render :partial=> "layouts/footer" %>
+       <div class="container" style="height:60px"></div>
+     </div>
    </body>
    </html>

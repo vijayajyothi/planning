@@ -4,23 +4,23 @@ class VmsController < ApplicationController
 
 
   def index
- @search = Vm.search do
+   @search = Vm.search do
     fulltext params[:search]
-paginate  :page => params[:page], :per_page=>30
+    paginate  :page => params[:page], :per_page=>15
   end
   @vms = @search.results
    # @vms = Vm.paginate(:page => params[:page], :per_page => 30)
 
-    respond_to do |format|
+   respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @vms }
     end
   end
   
-def import
-  Vm.import(params[:file])
-  redirect_to root_url, notice: "Clusters imported."
-end
+  def import
+    Vm.import(params[:file])
+    redirect_to root_url, notice: "Clusters imported."
+  end
 
   # GET /vms/1
   # GET /vms/1.json
