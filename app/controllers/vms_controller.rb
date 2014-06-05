@@ -20,6 +20,7 @@ before_filter :authorize
   end
   
   def import
+    Vm.update_all(:ops_status=>"Deleted")
     Vm.import(params[:file])
     redirect_to root_url, notice: "Clusters imported."
   end
