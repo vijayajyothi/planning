@@ -25,6 +25,9 @@ before_filter :authorize
     redirect_to root_url, notice: "Clusters imported."
   end
 
+  def reports
+  end
+
   # GET /vms/1
   # GET /vms/1.json
   def show

@@ -1,14 +1,19 @@
- <% if flash[:notice]%>
-            <div class="alert alert-error">
-              <p><%= flash[:notice] %></p>
-            </div>
-          <% end %>
+<% if flash[:notice]%>
+  <div class="alert alert-error">
+    <p><%= flash[:notice] %></p>
+  </div>
+<% end %>
 
 <section>
 
   <div class="container">
 
+<div class="col-sm-12 workflow-blocks" style="padding:10px 20px 10px 20px;margin-bottom:20px;">
+    IT Ops GPS provides the ability to search and navigate infrastructure inventory managed by VMware IT Operations. Data for VMs, ESX, and Services is gathered from the running environment, consolidated into a central database, and made accessible with this web application.
 
+    To navigate the inventory: search for inventory of interest, view the results, and navigate the hyperlinks in the data.
+  </div>
+  <br />
     <div class="row">
 
       <div class="col-sm-6 col-md-3">
@@ -73,20 +78,20 @@
   <div class=" col-sm-6 col-md-3"><div class="metro-nav">
     <div class="metro-nav-block nav-light-purple">
      <a data-original-title="" href="#">
-      <div class="info_img"><img src="/assets/finance.png"></div>
+      <div class="info_img"><img src="/assets/collection.png"></div>
       <div class="info">6455645<%#= @finanace_amt.to_i%></div>
       <div class="status">OS</div>
     </a>
   </div>
 
 </div><div class="metro-nav">
-  <div class="metro-nav-block nav-block-green">
-   <a data-original-title="" href="#">
-    <div class="info_img"><img src="/assets/collection.png"></div>
-    <div class="info">67457<%#= @collected_amt %></div>
-    <div class="status">Vcloud</div>
-  </a>
-  </div>
+<div class="metro-nav-block nav-block-green">
+ <a data-original-title="" href="/reports">
+  <div class="info_img"><img src="/assets/finance.png"></div>
+  <div class="info">Reports<%#= @collected_amt %></div>
+  <div class="status"></div>
+</a>
+</div>
 
 </div></div>
 

@@ -1,26 +1,30 @@
 Opsgps::Application.routes.draw do
   resources :vms
   
-resources :vms do 
-  collection {
-    post :import
+  resources :vms do 
+    collection {
+      post :import
+      
      # post :details
-  }
+   }
+   member do 
   end
+end
 
-  resources :password_resets
+resources :password_resets
 
-  resources :sessions
+resources :sessions
 
-  resources :users
+resources :users
 
-  match 'logout', to: 'sessions#destroy', as: 'logout'
+match 'reports', to: 'vms#reports', as: 'reports'
+match 'logout', to: 'sessions#destroy', as: 'logout'
 
-  match 'login', to: 'sessions#new', as: 'login'
+match 'login', to: 'sessions#new', as: 'login'
 
-  match 'signup', to: 'users#new', as: 'signup'
+match 'signup', to: 'users#new', as: 'signup'
 
-  get "home/index"
+get "home/index"
 
 #signup_path
 #login_path
