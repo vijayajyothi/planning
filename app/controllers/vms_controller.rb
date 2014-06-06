@@ -26,6 +26,7 @@ before_filter :authorize
   end
 
   def reports
+    @datacenters = Vm.all.collect(&:datacenter).uniq
   end
 
   # GET /vms/1

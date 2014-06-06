@@ -1,4 +1,65 @@
 <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/data.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<table id="datatable" class="table table-striped tablesorter">
+	<thead>
+		<tr>
+            <th></th>
+            <th>Vms</th>
+			<th>CPUs</th>
+            <th>Memory</th>
+            <th>Used Memory</th>
+        </tr>
+	</thead>
+	<tbody>
+ 
+        <% @datacenters.each do |center|%>
+        <tr>
+            <th><%= center%></th>
+            <th><%= vms(center)%></th>
+            <td><%= cpu(center)%></td>
+            <td><%= memory(center)%></td>
+            <td><%= used_memory(center)%></td>
+            
+        </tr>
+        <% end %>
+        
+	</tbody>
+</table>
+<script type="text/javascript">
+
+$(function () {
+    $('#container').highcharts({
+        data: {
+            table: document.getElementById('datatable')
+        },
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Data Center details in brief'
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Count'
+            }
+        },
+        tooltip: {
+            formatter: function() {
+                return '<b>'+ this.series.name +'</b><br/>'+
+                    this.point.y +' '+ this.point.name.toLowerCase();
+            }
+        }
+    });
+});
+</script>
+
+<% comment do %>
+<script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="http://code.highcharts.com/modules/exporting.js"></script>
 
 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
@@ -10,7 +71,7 @@ $(function () {
                 type: 'column'
             },
             title: {
-                text: 'No Of Vms in each Data center'
+                text: 'Data center details in brief'
             },
             subtitle: {
                 text: 'Vsphere data'
@@ -65,3 +126,6 @@ $(function () {
     });
     
 </script>
+
+
+<% end %>
