@@ -248,7 +248,7 @@ footer{ background:#3399cc; height:40px; color:#FFF; position:fixed; bottom:0; w
         -webkit-transform:rotate(83deg);
         -o-transform:rotate(83deg);
         font-size: 140px;
-        opacity: 0.2;
+        /*opacity: 0.2;*/
     }
 
     .metro-nav .metro-nav-block.long a:hover i{
