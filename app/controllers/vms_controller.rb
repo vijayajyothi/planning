@@ -1,4 +1,5 @@
 class VmsController < ApplicationController
+  layout "vm_details", only:[:show]
 before_filter :authorize 
 
   # GET /vms
@@ -103,5 +104,13 @@ before_filter :authorize
       format.html { redirect_to vms_url }
       format.json { head :no_content }
     end
+  end
+
+  
+  def selected_vm
+    @vm = Vm.find(params[:id])
+    @vms = Vm.where('ops_status != ?', "Deleted" )
+
+    
   end
 end

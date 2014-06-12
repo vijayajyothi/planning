@@ -35,7 +35,8 @@ match 'signup', to: 'users#new', as: 'signup'
 
 get "home/index"
 
-get "/vms" => "vm#index", :as => :vms
+get "/vms" => "vms#index", :as => :vms
+get "/selected_vm/:id" => "vms#selected_vm", :as => :selected_vm
 #signup_path
 #login_path
 #logout_path
