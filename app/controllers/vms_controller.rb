@@ -36,10 +36,10 @@ before_filter :authorize
     @vm = Vm.find(params[:id])
     @vms = Vm.where('ops_status != ?', "Deleted" )
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @vm }
-    end
+    # respond_to do |format|
+    #   format.html # show.html.erb
+    #   format.json { render json: @vm }
+    # end
   end
   def details
     raise "here"
