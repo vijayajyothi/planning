@@ -4,17 +4,16 @@
     <div class="span3">
       <div class="well sidebar-nav">
         <ul class="nav nav-list">
-          <li class="nav-header">Sidebar</li>
+          <li class="nav-header">VMs</li>
+          <% @vms.each do |each_vm|%>
+          <li><a href="#"><%= each_vm.vmname%></a></li>
+          <% end %>
           <li class="active"><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+          <li ><a href="#">Link</a></li>
+          <li ><a href="#">Link</a></li>
+          <li ><a href="#">Link</a></li>
+          <li ><a href="#">Link</a></li>
+          
 
         </ul>
       </div><!--/.well -->
@@ -29,7 +28,7 @@
             <tbody>
               <tr>
                 <td><b>VM Name</b></td>
-                <td>R<%= @vm.vmname %></td>
+                <td><%= @vm.vmname %></td>
               </tr>
               <tr>
                 <td><b>IP Address</b></td>
@@ -54,11 +53,10 @@
                 <td><%= @vm.numcpu %></td>
               </tr>   
               
-             <!--  <tr>
+             <!-- <tr>
                 <td><b>Cluster</b></td>
                 <td><%= @vm.cluster %></td>
-              </tr>   --> 
-
+             </tr> -->
 
             </tbody></table>
 
@@ -134,16 +132,24 @@
                   <td><b>Used Space(GB)</b></td>
                   <td><%= @vm.usedspacegb %></td>
                 </tr> 
+                <tr>
+                  <td><b>Status</b></td>
+                  <td><%= @vm.gueststate %></td>
+                </tr> 
               </tbody></table>
             </div>
           </div><!--/span-->
           <div class="span6">
             <div class="workflow-blocks">
-              <div class="workflow-heading"><span>OPS Data</span><p></p></div>
+              <div class="workflow-heading"><span>Other Data</span><p></p></div>
               <table class="table table-hover">
 
                 <tbody>
                  <tr>
+                  <td><b>Cluster</b></td>
+                  <td><%= @vm.cluster %></td>
+                </tr>   
+                <tr>
                   <td><b>VC Server</b></td>
                   <td><%= @vm.vcserver %></td>
                 </tr>   
@@ -159,7 +165,11 @@
                   <td><b>Application</b></td>
                   <td><%= @vm.application %></td>
                 </tr>   
-               
+                 <tr>
+                  <td><b>Num of vNICs</b></td>
+                  <td><%= @vm.qtynics %></td>
+                </tr>   
+
               </tbody></table>
             </div>
           </div><!--/span-->
@@ -187,301 +197,11 @@
               </div><!--/span-->
             </div><!--/row-->
           </div><!--/container-->
+        </section>
 
-          <% comment do %>
-          <div class="container-fluid" style="border:0px #000 solid; padding:0">
 
-            <div class="row-fluid">
-             <div class="span3">
-              <div class="well sidebar-nav">
-                <ul class="nav nav-list">
-                  <li class="active"><a href="#">sample1</a></li>
-                  <li><a href="#">sample2</a></li>
-                  <li><a href="#">sample3</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <!--Section Ends Here -->
 
-          <div class="span9" style="border:0px #000 solid; padding:0">
 
-            <div class="container">
-
-              <div class="span5">
-                <div class="workflow-blocks">
-                  <div class="workflow-heading"><span>Basic Data</span><p>Power : ON</p></div>
-
-                  <table class="table table-hover">
-                    <tbody>
-                      <tr>
-                        <td>Row1 Cell1</td>
-                        <td>Row1 Cell2</td>
-                      </tr>
-                      <tr>
-                        <td>Row1 Cell1</td>
-                        <td>Row1 Cell2</td>
-                      </tr>   
-                    </tbody></table>
-
-                  </div>
-                </div>
-                <div class="span4">
-                  <div class="workflow-blocks">
-                    <div class="workflow-heading"><span>OPS Data</span><p></p></div>
-                    <table class="table table-hover">
-
-                      <tbody>
-                        <tr>
-                          <td>Row1 Cell1</td>
-                          <td>Row1 Cell2</td>
-                        </tr>
-                        <tr><td>Row2 Cell1</td>
-                          <td>Row2 Cell2</td>
-                        </tr>
-                        <tr><td>Row2 Cell1</td>
-                          <td>Row2 Cell2</td>
-                        </tr>
-                      </tbody></table>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="span9" style="border:0px #000 solid; padding:0">
-
-                  <div class="container">
-
-                    <div class="span5">
-                      <div class="workflow-blocks">
-                        <div class="workflow-heading"><span>Basic Data</span><p>Power : ON</p></div>
-
-                        <table class="table table-hover">
-                          <tbody>
-                            <tr>
-                              <td>Row1 Cell1</td>
-                              <td>Row1 Cell2</td>
-                            </tr>
-                            <tr>
-                              <td>Row1 Cell1</td>
-                              <td>Row1 Cell2</td>
-                            </tr>   
-                          </tbody></table>
-
-                        </div>
-                      </div>
-                      <div class="span4">
-                        <div class="workflow-blocks">
-                          <div class="workflow-heading"><span>OPS Data</span><p></p></div>
-                          <table class="table table-hover">
-
-                            <tbody>
-                              <tr>
-                                <td>Row1 Cell1</td>
-                                <td>Row1 Cell2</td>
-                              </tr>
-                              <tr><td>Row2 Cell1</td>
-                                <td>Row2 Cell2</td>
-                              </tr>
-                              <tr><td>Row2 Cell1</td>
-                                <td>Row2 Cell2</td>
-                              </tr>
-                            </tbody></table>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!--Workflow ends here-->
-
-
-
-
-
-
-
-                    </div>
-
-
-
-                    <% end %>
-                  </section>
-
-
-                  <!--Section Ends Here -->
-
-
-                  <% comment do %>
-                  <div class="container-fluid">
-                    <div class="row-fluid">
-                      <divclass="span-2">
-                      hiiii
-                    </div>
-                    <divclass="span-10">
-                    bye
-                  </div>
-                </div>
-              </div>
-              <% #comment do %>
-              <p id="notice"><%= notice %></p>
-
-              <p>
-                <b>Datacenter:</b>
-                <%= @vm.datacenter %>
-              </p>
-
-              <p>
-                <b>Qtynics:</b>
-                <%= @vm.qtynics %>
-              </p>
-
-              <p>
-                <b>Createdby:</b>
-                <%= @vm.createdby %>
-              </p>
-
-              <p>
-                <b>Createdtime:</b>
-                <%= @vm.createdtime %>
-              </p>
-
-              <p>
-                <b>Suspendinterval:</b>
-                <%= @vm.suspendinterval %>
-              </p>
-
-              <p>
-                <b>Suspendtime:</b>
-                <%= @vm.suspendtime %>
-              </p>
-
-              <p>
-                <b>Boottime:</b>
-                <%= @vm.boottime %>
-              </p>
-
-              <p>
-                <b>Storageuncommitted:</b>
-                <%= @vm.storageuncommitted %>
-              </p>
-
-              <p>
-                <b>Storagecommitted:</b>
-                <%= @vm.storagecommitted %>
-              </p>
-
-              <p>
-                <b>Ipaddress:</b>
-                <%= @vm.ipaddress %>
-              </p>
-
-              <p>
-                <b>Hostname:</b>
-                <%= @vm.hostname %>
-              </p>
-
-              <p>
-                <b>Toolsrunningstatus:</b>
-                <%= @vm.toolsrunningstatus %>
-              </p>
-
-              <p>
-                <b>Toolsversion:</b>
-                <%= @vm.toolsversion %>
-              </p>
-
-              <p>
-                <b>Toolstatus:</b>
-                <%= @vm.toolstatus %>
-              </p>
-
-              <p>
-                <b>Guestfullname:</b>
-                <%= @vm.guestfullname %>
-              </p>
-
-              <p>
-                <b>Usedspacegb:</b>
-                <%= @vm.usedspacegb %>
-              </p>
-
-              <p>
-                <b>Provisionedspacegb:</b>
-                <%= @vm.provisionedspacegb %>
-              </p>
-
-              <p>
-                <b>Memorymb:</b>
-                <%= @vm.memorymb %>
-              </p>
-
-              <p>
-                <b>Numcpu:</b>
-                <%= @vm.numcpu %>
-              </p>
-
-              <p>
-                <b>Version:</b>
-                <%= @vm.version %>
-              </p>
-
-              <p>
-                <b>Gueststate:</b>
-                <%= @vm.gueststate %>
-              </p>
-
-              <p>
-                <b>Connectionstate:</b>
-                <%= @vm.connectionstate %>
-              </p>
-
-              <p>
-                <b>Powerstate:</b>
-                <%= @vm.powerstate %>
-              </p>
-
-              <p>
-                <b>Application:</b>
-                <%= @vm.application %>
-              </p>
-
-              <p>
-                <b>Persistentid:</b>
-                <%= @vm.persistentid %>
-              </p>
-
-              <p>
-                <b>Vmname:</b>
-                <%= @vm.vmname %>
-              </p>
-
-              <p>
-                <b>Vmhost:</b>
-                <%= @vm.vmhost %>
-              </p>
-
-              <p>
-                <b>Folder:</b>
-                <%= @vm.folder %>
-              </p>
-
-              <p>
-                <b>Reourcepool:</b>
-                <%= @vm.reourcepool %>
-              </p>
-
-              <p>
-                <b>Cluster:</b>
-                <%= @vm.cluster %>
-              </p>
-
-              <p>
-                <b>Vcserver:</b>
-                <%= @vm.vcserver %>
-              </p>
-
-              <%= link_to 'Edit', edit_vm_path(@vm) %> |
-              <%= link_to 'Back', vms_path %>
-              <% #end %>
-
-
-
-
-              <% end %>
+        <%= link_to 'Edit', edit_vm_path(@vm) %> |
+        <%= link_to 'Back', vms_path %>

@@ -1,4 +1,13 @@
 Opsgps::Application.routes.draw do
+  resources :clusters
+
+
+  resources :vdcs
+
+
+  resources :vcenters
+
+
   resources :vms
   
   resources :vms do 
@@ -26,6 +35,7 @@ match 'signup', to: 'users#new', as: 'signup'
 
 get "home/index"
 
+get "/vms" => "vm#index", :as => :vms
 #signup_path
 #login_path
 #logout_path

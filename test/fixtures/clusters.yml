@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  vcenter_id: 1
+  vdc_id: 1
+  cpu_total_mhz: 1
+  mem_total_mb: 1
+  cpu_no_cores: 1
+
+two:
+  name: MyString
+  vcenter_id: 1
+  vdc_id: 1
+  cpu_total_mhz: 1
+  mem_total_mb: 1
+  cpu_no_cores: 1

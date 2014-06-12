@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @cluster.name %>
+</p>
+
+<p>
+  <b>Vcenter:</b>
+  <%= @cluster.vcenter_id %>
+</p>
+
+<p>
+  <b>Vdc:</b>
+  <%= @cluster.vdc_id %>
+</p>
+
+<p>
+  <b>Cpu total mhz:</b>
+  <%= @cluster.cpu_total_mhz %>
+</p>
+
+<p>
+  <b>Mem total mb:</b>
+  <%= @cluster.mem_total_mb %>
+</p>
+
+<p>
+  <b>Cpu no cores:</b>
+  <%= @cluster.cpu_no_cores %>
+</p>
+
+
+<%= link_to 'Edit', edit_cluster_path(@cluster) %> |
+<%= link_to 'Back', clusters_path %>

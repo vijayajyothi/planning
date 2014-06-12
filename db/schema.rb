@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140605073426) do
+ActiveRecord::Schema.define(:version => 20140611070156) do
+
+  create_table "clusters", :force => true do |t|
+    t.string   "name"
+    t.integer  "vcenter_id"
+    t.integer  "vdc_id"
+    t.integer  "cpu_total_mhz"
+    t.integer  "mem_total_mb"
+    t.integer  "cpu_no_cores"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email"
@@ -21,6 +32,22 @@ ActiveRecord::Schema.define(:version => 20140605073426) do
     t.datetime "password_reset_sent_at"
     t.datetime "created_at",             :null => false
     t.datetime "updated_at",             :null => false
+  end
+
+  create_table "vcenters", :force => true do |t|
+    t.string   "name"
+    t.string   "ip"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "vdcs", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "vcenter_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "vms", :force => true do |t|
