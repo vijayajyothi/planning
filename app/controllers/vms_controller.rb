@@ -1,25 +1,25 @@
 class VmsController < ApplicationController
   layout "vm_details", only:[:show]
-before_filter :authorize 
+  before_filter :authorize 
 
   # GET /vms
   # GET /vms.json
 
 
   def index
-   @search = Vm.search do
-    fulltext params[:search]
-    paginate  :page => params[:page], :per_page=>15
-  end
-  @vms = @search.results
-   # @vms = Vm.paginate(:page => params[:page], :per_page => 30)
-
-   respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @vms }
+    @search = Vm.search do
+      fulltext params[:search]
+      paginate  :page => params[:page], :per_page=>15
     end
+    @vms = @search.results
+     # @vms = Vm.paginate(:page => params[:page], :per_page => 30)
+
+    # respond_to do |format|
+    #    format.html # index.html.erb
+    #    format.json { render json: @vms }
+    # end
   end
-  
+
   def import
     Vm.update_all(:ops_status=>"Deleted")
     Vm.import(params[:file])
