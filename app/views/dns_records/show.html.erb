@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ip:</b>
+  <%= @dns_record.ip %>
+</p>
+
+<p>
+  <b>Fqdn:</b>
+  <%= @dns_record.fqdn %>
+</p>
+
+<p>
+  <b>Record type:</b>
+  <%= @dns_record.record_type %>
+</p>
+
+<p>
+  <b>Vm:</b>
+  <%= @dns_record.vm_id %>
+</p>
+
+<p>
+  <b>F5 vip:</b>
+  <%= @dns_record.f5_vip_id %>
+</p>
+
+<p>
+  <b>F5 node:</b>
+  <%= @dns_record.f5_node_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_dns_record_path(@dns_record) %> |
+<%= link_to 'Back', dns_records_path %>

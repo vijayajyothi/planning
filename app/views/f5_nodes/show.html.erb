@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ip:</b>
+  <%= @f5_node.ip %>
+</p>
+
+<p>
+  <b>Port:</b>
+  <%= @f5_node.port %>
+</p>
+
+<p>
+  <b>F5 pool:</b>
+  <%= @f5_node.f5_pool_id %>
+</p>
+
+<p>
+  <b>F5 cluster:</b>
+  <%= @f5_node.f5_cluster_id %>
+</p>
+
+<p>
+  <b>Vm:</b>
+  <%= @f5_node.vm_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_f5_node_path(@f5_node) %> |
+<%= link_to 'Back', f5_nodes_path %>

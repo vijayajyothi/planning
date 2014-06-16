@@ -1,0 +1,43 @@
+<h1>Listing physical_disks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Storage array</th>
+    <th>Storage dae</th>
+    <th>Disk type</th>
+    <th>Vendor</th>
+    <th>Speed</th>
+    <th>Product</th>
+    <th>Revision</th>
+    <th>Serial no</th>
+    <th>Capacity mb</th>
+    <th>User capacity mb</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @physical_disks.each do |physical_disk| %>
+  <tr>
+    <td><%= physical_disk.name %></td>
+    <td><%= physical_disk.storage_array_id %></td>
+    <td><%= physical_disk.storage_dae_id %></td>
+    <td><%= physical_disk.disk_type %></td>
+    <td><%= physical_disk.vendor %></td>
+    <td><%= physical_disk.speed %></td>
+    <td><%= physical_disk.product_id %></td>
+    <td><%= physical_disk.revision %></td>
+    <td><%= physical_disk.serial_no %></td>
+    <td><%= physical_disk.capacity_mb %></td>
+    <td><%= physical_disk.user_capacity_mb %></td>
+    <td><%= link_to 'Show', physical_disk %></td>
+    <td><%= link_to 'Edit', edit_physical_disk_path(physical_disk) %></td>
+    <td><%= link_to 'Destroy', physical_disk, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Physical disk', new_physical_disk_path %>

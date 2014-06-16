@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  vmhost_id: 1
+  status: MyString
+  model: MyString
+  driver: MyString
+  pci: MyString
+  wwnn: MyString
+  wwpn: MyString
+
+two:
+  name: MyString
+  vmhost_id: 1
+  status: MyString
+  model: MyString
+  driver: MyString
+  pci: MyString
+  wwnn: MyString
+  wwpn: MyString

@@ -2,10 +2,12 @@
 
 one:
   name: MyString
+  folder_id: 1
   description: MyString
   vcenter_id: 1
 
 two:
   name: MyString
+  folder_id: 1
   description: MyString
   vcenter_id: 1

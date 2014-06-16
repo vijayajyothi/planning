@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  storage_array_id: 1
+  storage_dae_id: 1
+  disk_type: MyString
+  vendor: MyString
+  speed: MyString
+  product_id: MyString
+  revision: MyString
+  serial_no: MyString
+  capacity_mb: 1
+  user_capacity_mb: 1
+
+two:
+  name: MyString
+  storage_array_id: 1
+  storage_dae_id: 1
+  disk_type: MyString
+  vendor: MyString
+  speed: MyString
+  product_id: MyString
+  revision: MyString
+  serial_no: MyString
+  capacity_mb: 1
+  user_capacity_mb: 1

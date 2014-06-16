@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @storage_dae.name %>
+</p>
+
+<p>
+  <b>Storage array:</b>
+  <%= @storage_dae.storage_array_id %>
+</p>
+
+<p>
+  <b>Assembly name:</b>
+  <%= @storage_dae.assembly_name %>
+</p>
+
+<p>
+  <b>Vendor part no:</b>
+  <%= @storage_dae.vendor_part_no %>
+</p>
+
+<p>
+  <b>Assy revision:</b>
+  <%= @storage_dae.assy_revision %>
+</p>
+
+<p>
+  <b>Art revision:</b>
+  <%= @storage_dae.art_revision %>
+</p>
+
+<p>
+  <b>Serial no:</b>
+  <%= @storage_dae.serial_no %>
+</p>
+
+<p>
+  <b>Manufacture date:</b>
+  <%= @storage_dae.manufacture_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_storage_dae_path(@storage_dae) %> |
+<%= link_to 'Back', storage_daes_path %>

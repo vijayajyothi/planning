@@ -1,0 +1,2 @@
+module AppresourcesHelper
+end

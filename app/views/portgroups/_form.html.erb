@@ -1,0 +1,49 @@
+<%= form_for(@portgroup) do |f| %>
+  <% if @portgroup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@portgroup.errors.count, "error") %> prohibited this portgroup from being saved:</h2>
+
+      <ul>
+      <% @portgroup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :vmhost_id %><br />
+    <%= f.number_field :vmhost_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vswitch %><br />
+    <%= f.text_field :vswitch %>
+  </div>
+  <div class="field">
+    <%= f.label :pnic_id %><br />
+    <%= f.number_field :pnic_id %>
+  </div>
+  <div class="field">
+    <%= f.label :a_s %><br />
+    <%= f.text_field :a_s %>
+  </div>
+  <div class="field">
+    <%= f.label :vswitch_id %><br />
+    <%= f.number_field :vswitch_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vcenter_id %><br />
+    <%= f.number_field :vcenter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vdc_id %><br />
+    <%= f.number_field :vdc_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,51 @@
+<h1>Listing network_ports</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Network switch</th>
+    <th>Object</th>
+    <th>Type</th>
+    <th>Alias</th>
+    <th>Speed in</th>
+    <th>Speed out</th>
+    <th>Ip</th>
+    <th>If alias</th>
+    <th>If name</th>
+    <th>If index</th>
+    <th>Contact</th>
+    <th>Full duplex</th>
+    <th>Unique</th>
+    <th>If macaddress</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @network_ports.each do |network_port| %>
+  <tr>
+    <td><%= network_port.name %></td>
+    <td><%= network_port.network_switch_id %></td>
+    <td><%= network_port.object_id %></td>
+    <td><%= network_port.type %></td>
+    <td><%= network_port.alias %></td>
+    <td><%= network_port.speed_in %></td>
+    <td><%= network_port.speed_out %></td>
+    <td><%= network_port.ip %></td>
+    <td><%= network_port.if_alias %></td>
+    <td><%= network_port.if_name %></td>
+    <td><%= network_port.if_index %></td>
+    <td><%= network_port.contact %></td>
+    <td><%= network_port.full_duplex %></td>
+    <td><%= network_port.unique_id %></td>
+    <td><%= network_port.if_macaddress %></td>
+    <td><%= link_to 'Show', network_port %></td>
+    <td><%= link_to 'Edit', edit_network_port_path(network_port) %></td>
+    <td><%= link_to 'Destroy', network_port, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Network port', new_network_port_path %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  data_center: MyString
+  primary_unit_ip: MyString
+  secondary_unit_ip: MyString
+  primary_unit_name: MyString
+  secondary_unit_name: MyString
+  network_list: MyString
+  network_name_list: MyString
+  access_ip: MyString
+  name: MyString
+
+two:
+  data_center: MyString
+  primary_unit_ip: MyString
+  secondary_unit_ip: MyString
+  primary_unit_name: MyString
+  secondary_unit_name: MyString
+  network_list: MyString
+  network_name_list: MyString
+  access_ip: MyString
+  name: MyString

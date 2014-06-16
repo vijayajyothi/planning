@@ -1,0 +1,35 @@
+<h1>Listing storage_luns</h1>
+
+<table>
+  <tr>
+    <th>Lun</th>
+    <th>Storage array</th>
+    <th>Lun name</th>
+    <th>Device type</th>
+    <th>Capacity mb</th>
+    <th>Raid type</th>
+    <th>Lun no</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @storage_luns.each do |storage_lun| %>
+  <tr>
+    <td><%= storage_lun.lun %></td>
+    <td><%= storage_lun.storage_array_id %></td>
+    <td><%= storage_lun.lun_name %></td>
+    <td><%= storage_lun.device_type %></td>
+    <td><%= storage_lun.capacity_mb %></td>
+    <td><%= storage_lun.raid_type %></td>
+    <td><%= storage_lun.lun_no %></td>
+    <td><%= link_to 'Show', storage_lun %></td>
+    <td><%= link_to 'Edit', edit_storage_lun_path(storage_lun) %></td>
+    <td><%= link_to 'Destroy', storage_lun, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Storage lun', new_storage_lun_path %>

@@ -1,0 +1,49 @@
+<%= form_for(@hhba) do |f| %>
+  <% if @hhba.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hhba.errors.count, "error") %> prohibited this hhba from being saved:</h2>
+
+      <ul>
+      <% @hhba.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :vmhost_id %><br />
+    <%= f.number_field :vmhost_id %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :driver %><br />
+    <%= f.text_field :driver %>
+  </div>
+  <div class="field">
+    <%= f.label :pci %><br />
+    <%= f.text_field :pci %>
+  </div>
+  <div class="field">
+    <%= f.label :wwnn %><br />
+    <%= f.text_field :wwnn %>
+  </div>
+  <div class="field">
+    <%= f.label :wwpn %><br />
+    <%= f.text_field :wwpn %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

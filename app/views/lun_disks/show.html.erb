@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Storage lun:</b>
+  <%= @lun_disk.storage_lun_id %>
+</p>
+
+<p>
+  <b>Physical disk:</b>
+  <%= @lun_disk.physical_disk_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_lun_disk_path(@lun_disk) %> |
+<%= link_to 'Back', lun_disks_path %>

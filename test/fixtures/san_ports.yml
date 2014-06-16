@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  san_switch_id: 1
+  index: 1
+  slot: 1
+  port: 1
+  speed: MyString
+  status: MyString
+  protocol: MyString
+  port_type: MyString
+
+two:
+  san_switch_id: 1
+  index: 1
+  slot: 1
+  port: 1
+  speed: MyString
+  status: MyString
+  protocol: MyString
+  port_type: MyString

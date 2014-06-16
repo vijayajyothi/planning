@@ -1,0 +1,33 @@
+<%= form_for(@vswitch) do |f| %>
+  <% if @vswitch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vswitch.errors.count, "error") %> prohibited this vswitch from being saved:</h2>
+
+      <ul>
+      <% @vswitch.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :vcenter_id %><br />
+    <%= f.number_field :vcenter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vdc_id %><br />
+    <%= f.number_field :vdc_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vmhost_id %><br />
+    <%= f.number_field :vmhost_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<h1>Listing datastores</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Ds</th>
+    <th>Accessible</th>
+    <th>Url</th>
+    <th>Capacity</th>
+    <th>Freespace</th>
+    <th>Vcenter</th>
+    <th>Vdc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @datastores.each do |datastore| %>
+  <tr>
+    <td><%= datastore.name %></td>
+    <td><%= datastore.ds_id %></td>
+    <td><%= datastore.accessible %></td>
+    <td><%= datastore.url %></td>
+    <td><%= datastore.capacity %></td>
+    <td><%= datastore.freespace %></td>
+    <td><%= datastore.vcenter_id %></td>
+    <td><%= datastore.vdc_id %></td>
+    <td><%= link_to 'Show', datastore %></td>
+    <td><%= link_to 'Edit', edit_datastore_path(datastore) %></td>
+    <td><%= link_to 'Destroy', datastore, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Datastore', new_datastore_path %>

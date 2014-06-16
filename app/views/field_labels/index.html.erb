@@ -1,0 +1,47 @@
+<h1>Listing field_labels</h1>
+
+<table>
+  <tr>
+    <th>O type</th>
+    <th>Field name</th>
+    <th>Label</th>
+    <th>Display</th>
+    <th>Display page</th>
+    <th>Sub panel</th>
+    <th>External resource</th>
+    <th>External variable</th>
+    <th>External resource display</th>
+    <th>Style name</th>
+    <th>Table display</th>
+    <th>Child table display</th>
+    <th>Main field</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @field_labels.each do |field_label| %>
+  <tr>
+    <td><%= field_label.o_type %></td>
+    <td><%= field_label.field_name %></td>
+    <td><%= field_label.label %></td>
+    <td><%= field_label.display %></td>
+    <td><%= field_label.display_page %></td>
+    <td><%= field_label.sub_panel %></td>
+    <td><%= field_label.external_resource %></td>
+    <td><%= field_label.external_variable %></td>
+    <td><%= field_label.external_resource_display %></td>
+    <td><%= field_label.style_name %></td>
+    <td><%= field_label.table_display %></td>
+    <td><%= field_label.child_table_display %></td>
+    <td><%= field_label.main_field %></td>
+    <td><%= link_to 'Show', field_label %></td>
+    <td><%= link_to 'Edit', edit_field_label_path(field_label) %></td>
+    <td><%= link_to 'Destroy', field_label, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Field label', new_field_label_path %>

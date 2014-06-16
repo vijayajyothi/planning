@@ -1,0 +1,165 @@
+<%= form_for(@new_vm) do |f| %>
+  <% if @new_vm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@new_vm.errors.count, "error") %> prohibited this new_vm from being saved:</h2>
+
+      <ul>
+      <% @new_vm.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :resource_pool %><br />
+    <%= f.text_field :resource_pool %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :last_boot %><br />
+    <%= f.datetime_select :last_boot %>
+  </div>
+  <div class="field">
+    <%= f.label :vm_hostname %><br />
+    <%= f.text_field :vm_hostname %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :vmhost_id %><br />
+    <%= f.number_field :vmhost_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tier_id %><br />
+    <%= f.number_field :tier_id %>
+  </div>
+  <div class="field">
+    <%= f.label :backup %><br />
+    <%= f.text_field :backup %>
+  </div>
+  <div class="field">
+    <%= f.label :hw_version %><br />
+    <%= f.text_field :hw_version %>
+  </div>
+  <div class="field">
+    <%= f.label :total_mem_mb %><br />
+    <%= f.number_field :total_mem_mb %>
+  </div>
+  <div class="field">
+    <%= f.label :num_cpus %><br />
+    <%= f.number_field :num_cpus %>
+  </div>
+  <div class="field">
+    <%= f.label :num_vnics %><br />
+    <%= f.number_field :num_vnics %>
+  </div>
+  <div class="field">
+    <%= f.label :power_state %><br />
+    <%= f.text_field :power_state %>
+  </div>
+  <div class="field">
+    <%= f.label :connection_state %><br />
+    <%= f.text_field :connection_state %>
+  </div>
+  <div class="field">
+    <%= f.label :os %><br />
+    <%= f.text_field :os %>
+  </div>
+  <div class="field">
+    <%= f.label :uuid %><br />
+    <%= f.text_field :uuid %>
+  </div>
+  <div class="field">
+    <%= f.label :tools_version %><br />
+    <%= f.text_field :tools_version %>
+  </div>
+  <div class="field">
+    <%= f.label :tools_status %><br />
+    <%= f.text_field :tools_status %>
+  </div>
+  <div class="field">
+    <%= f.label :created_time %><br />
+    <%= f.datetime_select :created_time %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br />
+    <%= f.text_field :created_by %>
+  </div>
+  <div class="field">
+    <%= f.label :folder_id %><br />
+    <%= f.number_field :folder_id %>
+  </div>
+  <div class="field">
+    <%= f.label :hz_numer %><br />
+    <%= f.text_field :hz_numer %>
+  </div>
+  <div class="field">
+    <%= f.label :application_id %><br />
+    <%= f.number_field :application_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vcenter_id %><br />
+    <%= f.number_field :vcenter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vdc_id %><br />
+    <%= f.number_field :vdc_id %>
+  </div>
+  <div class="field">
+    <%= f.label :cluster_id %><br />
+    <%= f.number_field :cluster_id %>
+  </div>
+  <div class="field">
+    <%= f.label :instance_id %><br />
+    <%= f.number_field :instance_id %>
+  </div>
+  <div class="field">
+    <%= f.label :persistent_id %><br />
+    <%= f.text_field :persistent_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vm_id %><br />
+    <%= f.text_field :vm_id %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br />
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :last_suspend %><br />
+    <%= f.datetime_select :last_suspend %>
+  </div>
+  <div class="field">
+    <%= f.label :last_suspend_interval %><br />
+    <%= f.number_field :last_suspend_interval %>
+  </div>
+  <div class="field">
+    <%= f.label :last_change %><br />
+    <%= f.datetime_select :last_change %>
+  </div>
+  <div class="field">
+    <%= f.label :owner %><br />
+    <%= f.text_field :owner %>
+  </div>
+  <div class="field">
+    <%= f.label :ppm_no %><br />
+    <%= f.text_field :ppm_no %>
+  </div>
+  <div class="field">
+    <%= f.label :is_cloud %><br />
+    <%= f.check_box :is_cloud %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

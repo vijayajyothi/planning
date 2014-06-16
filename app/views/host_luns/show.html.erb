@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lun no:</b>
+  <%= @host_lun.lun_no %>
+</p>
+
+<p>
+  <b>Vmhost:</b>
+  <%= @host_lun.vmhost_id %>
+</p>
+
+<p>
+  <b>Storage lun:</b>
+  <%= @host_lun.storage_lun_id %>
+</p>
+
+<p>
+  <b>Storage array:</b>
+  <%= @host_lun.storage_array_id %>
+</p>
+
+<p>
+  <b>Storage group:</b>
+  <%= @host_lun.storage_group_id %>
+</p>
+
+<p>
+  <b>Hhba:</b>
+  <%= @host_lun.hhba_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_host_lun_path(@host_lun) %> |
+<%= link_to 'Back', host_luns_path %>

@@ -1,0 +1,37 @@
+<h1>Listing san_ports</h1>
+
+<table>
+  <tr>
+    <th>San switch</th>
+    <th>Index</th>
+    <th>Slot</th>
+    <th>Port</th>
+    <th>Speed</th>
+    <th>Status</th>
+    <th>Protocol</th>
+    <th>Port type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @san_ports.each do |san_port| %>
+  <tr>
+    <td><%= san_port.san_switch_id %></td>
+    <td><%= san_port.index %></td>
+    <td><%= san_port.slot %></td>
+    <td><%= san_port.port %></td>
+    <td><%= san_port.speed %></td>
+    <td><%= san_port.status %></td>
+    <td><%= san_port.protocol %></td>
+    <td><%= san_port.port_type %></td>
+    <td><%= link_to 'Show', san_port %></td>
+    <td><%= link_to 'Edit', edit_san_port_path(san_port) %></td>
+    <td><%= link_to 'Destroy', san_port, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New San port', new_san_port_path %>

@@ -1,0 +1,63 @@
+<h1>Listing hw_devices</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Manufacturer</th>
+    <th>Model</th>
+    <th>Serial no</th>
+    <th>Asset no</th>
+    <th>Status</th>
+    <th>Country</th>
+    <th>State</th>
+    <th>Building</th>
+    <th>Room</th>
+    <th>Floor</th>
+    <th>Ru size</th>
+    <th>Ru position</th>
+    <th>Hostname</th>
+    <th>Ip</th>
+    <th>Owned by</th>
+    <th>Assigned by</th>
+    <th>Cost center</th>
+    <th>Console</th>
+    <th>Console ip</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @hw_devices.each do |hw_device| %>
+  <tr>
+    <td><%= hw_device.name %></td>
+    <td><%= hw_device.type %></td>
+    <td><%= hw_device.manufacturer %></td>
+    <td><%= hw_device.model %></td>
+    <td><%= hw_device.serial_no %></td>
+    <td><%= hw_device.asset_no %></td>
+    <td><%= hw_device.status %></td>
+    <td><%= hw_device.country %></td>
+    <td><%= hw_device.state %></td>
+    <td><%= hw_device.building %></td>
+    <td><%= hw_device.room %></td>
+    <td><%= hw_device.floor %></td>
+    <td><%= hw_device.ru_size %></td>
+    <td><%= hw_device.ru_position %></td>
+    <td><%= hw_device.hostname %></td>
+    <td><%= hw_device.ip %></td>
+    <td><%= hw_device.owned_by %></td>
+    <td><%= hw_device.assigned_by %></td>
+    <td><%= hw_device.cost_center %></td>
+    <td><%= hw_device.console %></td>
+    <td><%= hw_device.console_ip %></td>
+    <td><%= link_to 'Show', hw_device %></td>
+    <td><%= link_to 'Edit', edit_hw_device_path(hw_device) %></td>
+    <td><%= link_to 'Destroy', hw_device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Hw device', new_hw_device_path %>

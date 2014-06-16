@@ -1,0 +1,33 @@
+<%= form_for(@fibre_commection) do |f| %>
+  <% if @fibre_commection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fibre_commection.errors.count, "error") %> prohibited this fibre_commection from being saved:</h2>
+
+      <ul>
+      <% @fibre_commection.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :fabric_id %><br />
+    <%= f.number_field :fabric_id %>
+  </div>
+  <div class="field">
+    <%= f.label :fabric_type %><br />
+    <%= f.text_field :fabric_type %>
+  </div>
+  <div class="field">
+    <%= f.label :san_port_id %><br />
+    <%= f.number_field :san_port_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

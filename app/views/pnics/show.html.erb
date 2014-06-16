@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @pnic.name %>
+</p>
+
+<p>
+  <b>Vmhost:</b>
+  <%= @pnic.vmhost_id %>
+</p>
+
+<p>
+  <b>Speed:</b>
+  <%= @pnic.speed %>
+</p>
+
+<p>
+  <b>Macaddress:</b>
+  <%= @pnic.macaddress %>
+</p>
+
+<p>
+  <b>Network switch:</b>
+  <%= @pnic.network_switch_id %>
+</p>
+
+<p>
+  <b>Network port:</b>
+  <%= @pnic.network_port_id %>
+</p>
+
+<p>
+  <b>Vlan:</b>
+  <%= @pnic.vlan %>
+</p>
+
+<p>
+  <b>Observed:</b>
+  <%= @pnic.observed %>
+</p>
+
+<p>
+  <b>Vswitch:</b>
+  <%= @pnic.vswitch_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_pnic_path(@pnic) %> |
+<%= link_to 'Back', pnics_path %>

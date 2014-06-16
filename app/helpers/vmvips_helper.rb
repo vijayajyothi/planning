@@ -1,0 +1,2 @@
+module VmvipsHelper
+end

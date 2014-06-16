@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @network_port.name %>
+</p>
+
+<p>
+  <b>Network switch:</b>
+  <%= @network_port.network_switch_id %>
+</p>
+
+<p>
+  <b>Object:</b>
+  <%= @network_port.object_id %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @network_port.type %>
+</p>
+
+<p>
+  <b>Alias:</b>
+  <%= @network_port.alias %>
+</p>
+
+<p>
+  <b>Speed in:</b>
+  <%= @network_port.speed_in %>
+</p>
+
+<p>
+  <b>Speed out:</b>
+  <%= @network_port.speed_out %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @network_port.ip %>
+</p>
+
+<p>
+  <b>If alias:</b>
+  <%= @network_port.if_alias %>
+</p>
+
+<p>
+  <b>If name:</b>
+  <%= @network_port.if_name %>
+</p>
+
+<p>
+  <b>If index:</b>
+  <%= @network_port.if_index %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @network_port.contact %>
+</p>
+
+<p>
+  <b>Full duplex:</b>
+  <%= @network_port.full_duplex %>
+</p>
+
+<p>
+  <b>Unique:</b>
+  <%= @network_port.unique_id %>
+</p>
+
+<p>
+  <b>If macaddress:</b>
+  <%= @network_port.if_macaddress %>
+</p>
+
+
+<%= link_to 'Edit', edit_network_port_path(@network_port) %> |
+<%= link_to 'Back', network_ports_path %>

@@ -1,0 +1,25 @@
+<h1>Listing appresources</h1>
+
+<table>
+  <tr>
+    <th>Application</th>
+    <th>Service</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @appresources.each do |appresource| %>
+  <tr>
+    <td><%= appresource.application_id %></td>
+    <td><%= appresource.service_id %></td>
+    <td><%= link_to 'Show', appresource %></td>
+    <td><%= link_to 'Edit', edit_appresource_path(appresource) %></td>
+    <td><%= link_to 'Destroy', appresource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Appresource', new_appresource_path %>

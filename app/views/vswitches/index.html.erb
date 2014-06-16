@@ -1,0 +1,29 @@
+<h1>Listing vswitches</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Vcenter</th>
+    <th>Vdc</th>
+    <th>Vmhost</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vswitches.each do |vswitch| %>
+  <tr>
+    <td><%= vswitch.name %></td>
+    <td><%= vswitch.vcenter_id %></td>
+    <td><%= vswitch.vdc_id %></td>
+    <td><%= vswitch.vmhost_id %></td>
+    <td><%= link_to 'Show', vswitch %></td>
+    <td><%= link_to 'Edit', edit_vswitch_path(vswitch) %></td>
+    <td><%= link_to 'Destroy', vswitch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vswitch', new_vswitch_path %>

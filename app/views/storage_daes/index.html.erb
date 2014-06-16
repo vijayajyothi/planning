@@ -1,0 +1,37 @@
+<h1>Listing storage_daes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Storage array</th>
+    <th>Assembly name</th>
+    <th>Vendor part no</th>
+    <th>Assy revision</th>
+    <th>Art revision</th>
+    <th>Serial no</th>
+    <th>Manufacture date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @storage_daes.each do |storage_dae| %>
+  <tr>
+    <td><%= storage_dae.name %></td>
+    <td><%= storage_dae.storage_array_id %></td>
+    <td><%= storage_dae.assembly_name %></td>
+    <td><%= storage_dae.vendor_part_no %></td>
+    <td><%= storage_dae.assy_revision %></td>
+    <td><%= storage_dae.art_revision %></td>
+    <td><%= storage_dae.serial_no %></td>
+    <td><%= storage_dae.manufacture_date %></td>
+    <td><%= link_to 'Show', storage_dae %></td>
+    <td><%= link_to 'Edit', edit_storage_dae_path(storage_dae) %></td>
+    <td><%= link_to 'Destroy', storage_dae, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Storage dae', new_storage_dae_path %>

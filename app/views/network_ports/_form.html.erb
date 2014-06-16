@@ -1,0 +1,77 @@
+<%= form_for(@network_port) do |f| %>
+  <% if @network_port.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@network_port.errors.count, "error") %> prohibited this network_port from being saved:</h2>
+
+      <ul>
+      <% @network_port.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :network_switch_id %><br />
+    <%= f.number_field :network_switch_id %>
+  </div>
+  <div class="field">
+    <%= f.label :object_id %><br />
+    <%= f.text_field :object_id %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :alias %><br />
+    <%= f.text_field :alias %>
+  </div>
+  <div class="field">
+    <%= f.label :speed_in %><br />
+    <%= f.number_field :speed_in %>
+  </div>
+  <div class="field">
+    <%= f.label :speed_out %><br />
+    <%= f.number_field :speed_out %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.number_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :if_alias %><br />
+    <%= f.text_field :if_alias %>
+  </div>
+  <div class="field">
+    <%= f.label :if_name %><br />
+    <%= f.text_field :if_name %>
+  </div>
+  <div class="field">
+    <%= f.label :if_index %><br />
+    <%= f.text_field :if_index %>
+  </div>
+  <div class="field">
+    <%= f.label :contact %><br />
+    <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :full_duplex %><br />
+    <%= f.text_field :full_duplex %>
+  </div>
+  <div class="field">
+    <%= f.label :unique_id %><br />
+    <%= f.text_field :unique_id %>
+  </div>
+  <div class="field">
+    <%= f.label :if_macaddress %><br />
+    <%= f.text_field :if_macaddress %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

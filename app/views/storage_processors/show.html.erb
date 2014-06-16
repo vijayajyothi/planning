@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @storage_processor.name %>
+</p>
+
+<p>
+  <b>Storage array:</b>
+  <%= @storage_processor.storage_array_id %>
+</p>
+
+<p>
+  <b>Assembly name:</b>
+  <%= @storage_processor.assembly_name %>
+</p>
+
+<p>
+  <b>Vendor part no:</b>
+  <%= @storage_processor.vendor_part_no %>
+</p>
+
+<p>
+  <b>Assy revision:</b>
+  <%= @storage_processor.assy_revision %>
+</p>
+
+<p>
+  <b>Art revision:</b>
+  <%= @storage_processor.art_revision %>
+</p>
+
+<p>
+  <b>Serial no:</b>
+  <%= @storage_processor.serial_no %>
+</p>
+
+<p>
+  <b>Cabinet:</b>
+  <%= @storage_processor.cabinet %>
+</p>
+
+<p>
+  <b>Mem size kb:</b>
+  <%= @storage_processor.mem_size_kb %>
+</p>
+
+<p>
+  <b>Manufacture year:</b>
+  <%= @storage_processor.manufacture_year %>
+</p>
+
+<p>
+  <b>Manufacture date:</b>
+  <%= @storage_processor.manufacture_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_storage_processor_path(@storage_processor) %> |
+<%= link_to 'Back', storage_processors_path %>

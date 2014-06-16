@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Storage group:</b>
+  <%= @storage_group_lun.storage_group_id %>
+</p>
+
+<p>
+  <b>Storage lun:</b>
+  <%= @storage_group_lun.storage_lun_id %>
+</p>
+
+<p>
+  <b>Host lun:</b>
+  <%= @storage_group_lun.host_lun %>
+</p>
+
+
+<%= link_to 'Edit', edit_storage_group_lun_path(@storage_group_lun) %> |
+<%= link_to 'Back', storage_group_luns_path %>

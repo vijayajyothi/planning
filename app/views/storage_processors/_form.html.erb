@@ -1,0 +1,61 @@
+<%= form_for(@storage_processor) do |f| %>
+  <% if @storage_processor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@storage_processor.errors.count, "error") %> prohibited this storage_processor from being saved:</h2>
+
+      <ul>
+      <% @storage_processor.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :storage_array_id %><br />
+    <%= f.number_field :storage_array_id %>
+  </div>
+  <div class="field">
+    <%= f.label :assembly_name %><br />
+    <%= f.text_field :assembly_name %>
+  </div>
+  <div class="field">
+    <%= f.label :vendor_part_no %><br />
+    <%= f.text_field :vendor_part_no %>
+  </div>
+  <div class="field">
+    <%= f.label :assy_revision %><br />
+    <%= f.text_field :assy_revision %>
+  </div>
+  <div class="field">
+    <%= f.label :art_revision %><br />
+    <%= f.text_field :art_revision %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_no %><br />
+    <%= f.text_field :serial_no %>
+  </div>
+  <div class="field">
+    <%= f.label :cabinet %><br />
+    <%= f.text_field :cabinet %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_size_kb %><br />
+    <%= f.number_field :mem_size_kb %>
+  </div>
+  <div class="field">
+    <%= f.label :manufacture_year %><br />
+    <%= f.number_field :manufacture_year %>
+  </div>
+  <div class="field">
+    <%= f.label :manufacture_date %><br />
+    <%= f.text_field :manufacture_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

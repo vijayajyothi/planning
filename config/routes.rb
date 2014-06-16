@@ -1,8 +1,122 @@
 Opsgps::Application.routes.draw do
-  resources :clusters
+  resources :vswitches
+
+
+  resources :vnics
+
+
+  resources :vmvips
+
+
+  resources :new_vms
+
+
+  resources :vmhosts
+
+
+  resources :vim_events
+
+
+  resources :vdisks
 
 
   resources :vdcs
+
+
+  resources :tiers
+
+
+  resources :storage_processors
+
+
+  resources :storage_luns
+
+
+  resources :storage_group_luns
+
+
+  resources :storage_daes
+
+
+  resources :storage_arrays
+
+
+  resources :search_types
+
+
+  resources :services
+
+
+  resources :san_switches
+
+
+  resources :san_ports
+
+
+  resources :portgroups
+
+
+  resources :pnics
+
+
+  resources :physical_disks
+
+
+  resources :network_switches
+
+
+  resources :network_ports
+
+
+  resources :lun_disks
+
+
+  resources :instances
+
+
+  resources :hw_devices
+
+
+  resources :host_luns
+
+
+  resources :hhbas
+
+
+  resources :folders
+
+
+  resources :field_labels
+
+
+  resources :fibre_commections
+
+
+  resources :f5_vips
+
+
+  resources :f5_pools
+
+
+  resources :f5_nodes
+
+
+  resources :f5_clusters
+
+
+  resources :dns_records
+
+
+  resources :datastores
+
+
+  resources :clusters
+
+
+  resources :appresources
+
+
+  resources :applications
 
 
   resources :vcenters

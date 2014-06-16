@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  type: 
+  vm_id: 1
+  vcenter_id: 1
+  connect_state: MyString
+  macaddress: MyString
+  portgroup_id: 1
+
+two:
+  name: MyString
+  type: 
+  vm_id: 1
+  vcenter_id: 1
+  connect_state: MyString
+  macaddress: MyString
+  portgroup_id: 1

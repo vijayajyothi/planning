@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 
+  fabric_id: 1
+  fabric_type: MyString
+  san_port_id: 1
+
+two:
+  type: 
+  fabric_id: 1
+  fabric_type: MyString
+  san_port_id: 1

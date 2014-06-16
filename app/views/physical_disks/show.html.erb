@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @physical_disk.name %>
+</p>
+
+<p>
+  <b>Storage array:</b>
+  <%= @physical_disk.storage_array_id %>
+</p>
+
+<p>
+  <b>Storage dae:</b>
+  <%= @physical_disk.storage_dae_id %>
+</p>
+
+<p>
+  <b>Disk type:</b>
+  <%= @physical_disk.disk_type %>
+</p>
+
+<p>
+  <b>Vendor:</b>
+  <%= @physical_disk.vendor %>
+</p>
+
+<p>
+  <b>Speed:</b>
+  <%= @physical_disk.speed %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @physical_disk.product_id %>
+</p>
+
+<p>
+  <b>Revision:</b>
+  <%= @physical_disk.revision %>
+</p>
+
+<p>
+  <b>Serial no:</b>
+  <%= @physical_disk.serial_no %>
+</p>
+
+<p>
+  <b>Capacity mb:</b>
+  <%= @physical_disk.capacity_mb %>
+</p>
+
+<p>
+  <b>User capacity mb:</b>
+  <%= @physical_disk.user_capacity_mb %>
+</p>
+
+
+<%= link_to 'Edit', edit_physical_disk_path(@physical_disk) %> |
+<%= link_to 'Back', physical_disks_path %>

@@ -1,0 +1,61 @@
+<%= form_for(@physical_disk) do |f| %>
+  <% if @physical_disk.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@physical_disk.errors.count, "error") %> prohibited this physical_disk from being saved:</h2>
+
+      <ul>
+      <% @physical_disk.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :storage_array_id %><br />
+    <%= f.number_field :storage_array_id %>
+  </div>
+  <div class="field">
+    <%= f.label :storage_dae_id %><br />
+    <%= f.number_field :storage_dae_id %>
+  </div>
+  <div class="field">
+    <%= f.label :disk_type %><br />
+    <%= f.text_field :disk_type %>
+  </div>
+  <div class="field">
+    <%= f.label :vendor %><br />
+    <%= f.text_field :vendor %>
+  </div>
+  <div class="field">
+    <%= f.label :speed %><br />
+    <%= f.text_field :speed %>
+  </div>
+  <div class="field">
+    <%= f.label :product_id %><br />
+    <%= f.text_field :product_id %>
+  </div>
+  <div class="field">
+    <%= f.label :revision %><br />
+    <%= f.text_field :revision %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_no %><br />
+    <%= f.text_field :serial_no %>
+  </div>
+  <div class="field">
+    <%= f.label :capacity_mb %><br />
+    <%= f.number_field :capacity_mb %>
+  </div>
+  <div class="field">
+    <%= f.label :user_capacity_mb %><br />
+    <%= f.number_field :user_capacity_mb %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

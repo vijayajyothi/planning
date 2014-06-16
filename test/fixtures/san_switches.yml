@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  ip: MyString
+  vendor: MyString
+  model: MyString
+  boot_prom: MyString
+  fabric_os: MyString
+  factory_part_no: MyString
+  kernel: MyString
+  part_no: MyString
+  serial_no: MyString
+  domain: MyString
+  switch_id: MyString
+  state: MyString
+  switch_type: MyString
+  wwn: MyString
+
+two:
+  name: MyString
+  ip: MyString
+  vendor: MyString
+  model: MyString
+  boot_prom: MyString
+  fabric_os: MyString
+  factory_part_no: MyString
+  kernel: MyString
+  part_no: MyString
+  serial_no: MyString
+  domain: MyString
+  switch_id: MyString
+  state: MyString
+  switch_type: MyString
+  wwn: MyString

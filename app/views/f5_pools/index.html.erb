@@ -1,0 +1,29 @@
+<h1>Listing f5_pools</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>F5 vip</th>
+    <th>F5 cluster</th>
+    <th>Lb method</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @f5_pools.each do |f5_pool| %>
+  <tr>
+    <td><%= f5_pool.name %></td>
+    <td><%= f5_pool.f5_vip_id %></td>
+    <td><%= f5_pool.f5_cluster_id %></td>
+    <td><%= f5_pool.lb_method %></td>
+    <td><%= link_to 'Show', f5_pool %></td>
+    <td><%= link_to 'Edit', edit_f5_pool_path(f5_pool) %></td>
+    <td><%= link_to 'Destroy', f5_pool, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New F5 pool', new_f5_pool_path %>

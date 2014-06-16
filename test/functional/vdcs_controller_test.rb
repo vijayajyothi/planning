@@ -18,7 +18,7 @@ class VdcsControllerTest < ActionController::TestCase
 
   test "should create vdc" do
     assert_difference('Vdc.count') do
-      post :create, vdc: { description: @vdc.description, name: @vdc.name, vcenter_id: @vdc.vcenter_id }
+      post :create, vdc: { description: @vdc.description, folder_id: @vdc.folder_id, name: @vdc.name, vcenter_id: @vdc.vcenter_id }
     end
 
     assert_redirected_to vdc_path(assigns(:vdc))
@@ -35,7 +35,7 @@ class VdcsControllerTest < ActionController::TestCase
   end
 
   test "should update vdc" do
-    put :update, id: @vdc, vdc: { description: @vdc.description, name: @vdc.name, vcenter_id: @vdc.vcenter_id }
+    put :update, id: @vdc, vdc: { description: @vdc.description, folder_id: @vdc.folder_id, name: @vdc.name, vcenter_id: @vdc.vcenter_id }
     assert_redirected_to vdc_path(assigns(:vdc))
   end
 

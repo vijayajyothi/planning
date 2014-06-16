@@ -16,12 +16,20 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :vcenter_id %><br />
-    <%= f.number_field :vcenter_id %>
-  </div>
-  <div class="field">
     <%= f.label :vdc_id %><br />
     <%= f.number_field :vdc_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ha_enabled %><br />
+    <%= f.number_field :ha_enabled %>
+  </div>
+  <div class="field">
+    <%= f.label :drs_enables %><br />
+    <%= f.number_field :drs_enables %>
+  </div>
+  <div class="field">
+    <%= f.label :folder_id %><br />
+    <%= f.number_field :folder_id %>
   </div>
   <div class="field">
     <%= f.label :cpu_total_mhz %><br />
@@ -34,6 +42,10 @@
   <div class="field">
     <%= f.label :cpu_no_cores %><br />
     <%= f.number_field :cpu_no_cores %>
+  </div>
+  <div class="field">
+    <%= f.label :vcenter_id %><br />
+    <%= f.number_field :vcenter_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

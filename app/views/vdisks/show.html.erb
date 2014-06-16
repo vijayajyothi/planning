@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @vdisk.name %>
+</p>
+
+<p>
+  <b>Vm:</b>
+  <%= @vdisk.vm_id %>
+</p>
+
+<p>
+  <b>Vcenter:</b>
+  <%= @vdisk.vcenter_id %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @vdisk.type %>
+</p>
+
+<p>
+  <b>Persistence:</b>
+  <%= @vdisk.persistence %>
+</p>
+
+<p>
+  <b>Format:</b>
+  <%= @vdisk.format %>
+</p>
+
+<p>
+  <b>Datastore:</b>
+  <%= @vdisk.datastore_id %>
+</p>
+
+<p>
+  <b>Filename:</b>
+  <%= @vdisk.filename %>
+</p>
+
+<p>
+  <b>Capacitykb:</b>
+  <%= @vdisk.capacitykb %>
+</p>
+
+
+<%= link_to 'Edit', edit_vdisk_path(@vdisk) %> |
+<%= link_to 'Back', vdisks_path %>

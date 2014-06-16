@@ -1,0 +1,125 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @vmhost.name %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @vmhost.ip %>
+</p>
+
+<p>
+  <b>Cluster:</b>
+  <%= @vmhost.cluster_id %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @vmhost.parent_id %>
+</p>
+
+<p>
+  <b>Connection state:</b>
+  <%= @vmhost.connection_state %>
+</p>
+
+<p>
+  <b>Power state:</b>
+  <%= @vmhost.power_state %>
+</p>
+
+<p>
+  <b>Cpu total mhz:</b>
+  <%= @vmhost.cpu_total_mhz %>
+</p>
+
+<p>
+  <b>Mem total mb:</b>
+  <%= @vmhost.mem_total_mb %>
+</p>
+
+<p>
+  <b>Esx product:</b>
+  <%= @vmhost.esx_product %>
+</p>
+
+<p>
+  <b>Esx version:</b>
+  <%= @vmhost.esx_version %>
+</p>
+
+<p>
+  <b>Esx build:</b>
+  <%= @vmhost.esx_build %>
+</p>
+
+<p>
+  <b>Esx api version:</b>
+  <%= @vmhost.esx_api_version %>
+</p>
+
+<p>
+  <b>Host:</b>
+  <%= @vmhost.host_id %>
+</p>
+
+<p>
+  <b>Is standalone:</b>
+  <%= @vmhost.is_standalone %>
+</p>
+
+<p>
+  <b>Hw device:</b>
+  <%= @vmhost.hw_device_id %>
+</p>
+
+<p>
+  <b>Vcenter:</b>
+  <%= @vmhost.vcenter_id %>
+</p>
+
+<p>
+  <b>Uuid:</b>
+  <%= @vmhost.uuid %>
+</p>
+
+<p>
+  <b>Vendor:</b>
+  <%= @vmhost.vendor %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%= @vmhost.model %>
+</p>
+
+<p>
+  <b>Cpu model:</b>
+  <%= @vmhost.cpu_model %>
+</p>
+
+<p>
+  <b>Num cpu:</b>
+  <%= @vmhost.num_cpu %>
+</p>
+
+<p>
+  <b>Num core:</b>
+  <%= @vmhost.num_core %>
+</p>
+
+<p>
+  <b>Serial no:</b>
+  <%= @vmhost.serial_no %>
+</p>
+
+<p>
+  <b>Bios version:</b>
+  <%= @vmhost.bios_version %>
+</p>
+
+
+<%= link_to 'Edit', edit_vmhost_path(@vmhost) %> |
+<%= link_to 'Back', vmhosts_path %>

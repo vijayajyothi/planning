@@ -1,0 +1,95 @@
+<h1>Listing new_vms</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Resource pool</th>
+    <th>Status</th>
+    <th>Last boot</th>
+    <th>Vm hostname</th>
+    <th>Ip</th>
+    <th>Vmhost</th>
+    <th>Tier</th>
+    <th>Backup</th>
+    <th>Hw version</th>
+    <th>Total mem mb</th>
+    <th>Num cpus</th>
+    <th>Num vnics</th>
+    <th>Power state</th>
+    <th>Connection state</th>
+    <th>Os</th>
+    <th>Uuid</th>
+    <th>Tools version</th>
+    <th>Tools status</th>
+    <th>Created time</th>
+    <th>Created by</th>
+    <th>Folder</th>
+    <th>Hz numer</th>
+    <th>Application</th>
+    <th>Vcenter</th>
+    <th>Vdc</th>
+    <th>Cluster</th>
+    <th>Instance</th>
+    <th>Persistent</th>
+    <th>Vm</th>
+    <th>Version</th>
+    <th>Last suspend</th>
+    <th>Last suspend interval</th>
+    <th>Last change</th>
+    <th>Owner</th>
+    <th>Ppm no</th>
+    <th>Is cloud</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @new_vms.each do |new_vm| %>
+  <tr>
+    <td><%= new_vm.name %></td>
+    <td><%= new_vm.resource_pool %></td>
+    <td><%= new_vm.status %></td>
+    <td><%= new_vm.last_boot %></td>
+    <td><%= new_vm.vm_hostname %></td>
+    <td><%= new_vm.ip %></td>
+    <td><%= new_vm.vmhost_id %></td>
+    <td><%= new_vm.tier_id %></td>
+    <td><%= new_vm.backup %></td>
+    <td><%= new_vm.hw_version %></td>
+    <td><%= new_vm.total_mem_mb %></td>
+    <td><%= new_vm.num_cpus %></td>
+    <td><%= new_vm.num_vnics %></td>
+    <td><%= new_vm.power_state %></td>
+    <td><%= new_vm.connection_state %></td>
+    <td><%= new_vm.os %></td>
+    <td><%= new_vm.uuid %></td>
+    <td><%= new_vm.tools_version %></td>
+    <td><%= new_vm.tools_status %></td>
+    <td><%= new_vm.created_time %></td>
+    <td><%= new_vm.created_by %></td>
+    <td><%= new_vm.folder_id %></td>
+    <td><%= new_vm.hz_numer %></td>
+    <td><%= new_vm.application_id %></td>
+    <td><%= new_vm.vcenter_id %></td>
+    <td><%= new_vm.vdc_id %></td>
+    <td><%= new_vm.cluster_id %></td>
+    <td><%= new_vm.instance_id %></td>
+    <td><%= new_vm.persistent_id %></td>
+    <td><%= new_vm.vm_id %></td>
+    <td><%= new_vm.version %></td>
+    <td><%= new_vm.last_suspend %></td>
+    <td><%= new_vm.last_suspend_interval %></td>
+    <td><%= new_vm.last_change %></td>
+    <td><%= new_vm.owner %></td>
+    <td><%= new_vm.ppm_no %></td>
+    <td><%= new_vm.is_cloud %></td>
+    <td><%= link_to 'Show', new_vm %></td>
+    <td><%= link_to 'Edit', edit_new_vm_path(new_vm) %></td>
+    <td><%= link_to 'Destroy', new_vm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New New vm', new_new_vm_path %>

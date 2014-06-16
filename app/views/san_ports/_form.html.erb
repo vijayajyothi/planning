@@ -1,0 +1,49 @@
+<%= form_for(@san_port) do |f| %>
+  <% if @san_port.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@san_port.errors.count, "error") %> prohibited this san_port from being saved:</h2>
+
+      <ul>
+      <% @san_port.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :san_switch_id %><br />
+    <%= f.number_field :san_switch_id %>
+  </div>
+  <div class="field">
+    <%= f.label :index %><br />
+    <%= f.number_field :index %>
+  </div>
+  <div class="field">
+    <%= f.label :slot %><br />
+    <%= f.number_field :slot %>
+  </div>
+  <div class="field">
+    <%= f.label :port %><br />
+    <%= f.number_field :port %>
+  </div>
+  <div class="field">
+    <%= f.label :speed %><br />
+    <%= f.text_field :speed %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :protocol %><br />
+    <%= f.text_field :protocol %>
+  </div>
+  <div class="field">
+    <%= f.label :port_type %><br />
+    <%= f.text_field :port_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

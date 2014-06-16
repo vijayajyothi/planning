@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lun: MyString
+  storage_array_id: 1
+  lun_name: MyString
+  device_type: MyString
+  capacity_mb: 1
+  raid_type: MyString
+  lun_no: 1
+
+two:
+  lun: MyString
+  storage_array_id: 1
+  lun_name: MyString
+  device_type: MyString
+  capacity_mb: 1
+  raid_type: MyString
+  lun_no: 1

@@ -1,0 +1,79 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  resource_pool: MyString
+  status: MyString
+  last_boot: 2014-06-16 02:21:45
+  vm_hostname: MyString
+  ip: MyString
+  vmhost_id: 1
+  tier_id: 1
+  backup: MyString
+  hw_version: MyString
+  total_mem_mb: 1
+  num_cpus: 1
+  num_vnics: 1
+  power_state: MyString
+  connection_state: MyString
+  os: MyString
+  uuid: MyString
+  tools_version: MyString
+  tools_status: MyString
+  created_time: 2014-06-16 02:21:45
+  created_by: MyString
+  folder_id: 1
+  hz_numer: MyString
+  application_id: 1
+  vcenter_id: 1
+  vdc_id: 1
+  cluster_id: 1
+  instance_id: 1
+  persistent_id: MyString
+  vm_id: MyString
+  version: MyString
+  last_suspend: 2014-06-16 02:21:45
+  last_suspend_interval: 1
+  last_change: 2014-06-16 02:21:45
+  owner: MyString
+  ppm_no: MyString
+  is_cloud: false
+
+two:
+  name: MyString
+  resource_pool: MyString
+  status: MyString
+  last_boot: 2014-06-16 02:21:45
+  vm_hostname: MyString
+  ip: MyString
+  vmhost_id: 1
+  tier_id: 1
+  backup: MyString
+  hw_version: MyString
+  total_mem_mb: 1
+  num_cpus: 1
+  num_vnics: 1
+  power_state: MyString
+  connection_state: MyString
+  os: MyString
+  uuid: MyString
+  tools_version: MyString
+  tools_status: MyString
+  created_time: 2014-06-16 02:21:45
+  created_by: MyString
+  folder_id: 1
+  hz_numer: MyString
+  application_id: 1
+  vcenter_id: 1
+  vdc_id: 1
+  cluster_id: 1
+  instance_id: 1
+  persistent_id: MyString
+  vm_id: MyString
+  version: MyString
+  last_suspend: 2014-06-16 02:21:45
+  last_suspend_interval: 1
+  last_change: 2014-06-16 02:21:45
+  owner: MyString
+  ppm_no: MyString
+  is_cloud: false

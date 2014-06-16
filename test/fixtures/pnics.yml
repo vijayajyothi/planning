@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  vmhost_id: 1
+  speed: 1
+  macaddress: MyString
+  network_switch_id: MyString
+  network_port_id: MyString
+  vlan: MyString
+  observed: MyString
+  vswitch_id: 1
+
+two:
+  name: MyString
+  vmhost_id: 1
+  speed: 1
+  macaddress: MyString
+  network_switch_id: MyString
+  network_port_id: MyString
+  vlan: MyString
+  observed: MyString
+  vswitch_id: 1

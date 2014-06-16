@@ -1,0 +1,33 @@
+<h1>Listing host_luns</h1>
+
+<table>
+  <tr>
+    <th>Lun no</th>
+    <th>Vmhost</th>
+    <th>Storage lun</th>
+    <th>Storage array</th>
+    <th>Storage group</th>
+    <th>Hhba</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @host_luns.each do |host_lun| %>
+  <tr>
+    <td><%= host_lun.lun_no %></td>
+    <td><%= host_lun.vmhost_id %></td>
+    <td><%= host_lun.storage_lun_id %></td>
+    <td><%= host_lun.storage_array_id %></td>
+    <td><%= host_lun.storage_group_id %></td>
+    <td><%= host_lun.hhba_id %></td>
+    <td><%= link_to 'Show', host_lun %></td>
+    <td><%= link_to 'Edit', edit_host_lun_path(host_lun) %></td>
+    <td><%= link_to 'Destroy', host_lun, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Host lun', new_host_lun_path %>

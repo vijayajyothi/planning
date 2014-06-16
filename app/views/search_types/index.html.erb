@@ -1,0 +1,27 @@
+<h1>Listing search_types</h1>
+
+<table>
+  <tr>
+    <th>Asset type</th>
+    <th>Asset label</th>
+    <th>Main field</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @search_types.each do |search_type| %>
+  <tr>
+    <td><%= search_type.asset_type %></td>
+    <td><%= search_type.asset_label %></td>
+    <td><%= search_type.main_field %></td>
+    <td><%= link_to 'Show', search_type %></td>
+    <td><%= link_to 'Edit', edit_search_type_path(search_type) %></td>
+    <td><%= link_to 'Destroy', search_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Search type', new_search_type_path %>

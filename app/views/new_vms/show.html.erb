@@ -1,0 +1,190 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @new_vm.name %>
+</p>
+
+<p>
+  <b>Resource pool:</b>
+  <%= @new_vm.resource_pool %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @new_vm.status %>
+</p>
+
+<p>
+  <b>Last boot:</b>
+  <%= @new_vm.last_boot %>
+</p>
+
+<p>
+  <b>Vm hostname:</b>
+  <%= @new_vm.vm_hostname %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @new_vm.ip %>
+</p>
+
+<p>
+  <b>Vmhost:</b>
+  <%= @new_vm.vmhost_id %>
+</p>
+
+<p>
+  <b>Tier:</b>
+  <%= @new_vm.tier_id %>
+</p>
+
+<p>
+  <b>Backup:</b>
+  <%= @new_vm.backup %>
+</p>
+
+<p>
+  <b>Hw version:</b>
+  <%= @new_vm.hw_version %>
+</p>
+
+<p>
+  <b>Total mem mb:</b>
+  <%= @new_vm.total_mem_mb %>
+</p>
+
+<p>
+  <b>Num cpus:</b>
+  <%= @new_vm.num_cpus %>
+</p>
+
+<p>
+  <b>Num vnics:</b>
+  <%= @new_vm.num_vnics %>
+</p>
+
+<p>
+  <b>Power state:</b>
+  <%= @new_vm.power_state %>
+</p>
+
+<p>
+  <b>Connection state:</b>
+  <%= @new_vm.connection_state %>
+</p>
+
+<p>
+  <b>Os:</b>
+  <%= @new_vm.os %>
+</p>
+
+<p>
+  <b>Uuid:</b>
+  <%= @new_vm.uuid %>
+</p>
+
+<p>
+  <b>Tools version:</b>
+  <%= @new_vm.tools_version %>
+</p>
+
+<p>
+  <b>Tools status:</b>
+  <%= @new_vm.tools_status %>
+</p>
+
+<p>
+  <b>Created time:</b>
+  <%= @new_vm.created_time %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @new_vm.created_by %>
+</p>
+
+<p>
+  <b>Folder:</b>
+  <%= @new_vm.folder_id %>
+</p>
+
+<p>
+  <b>Hz numer:</b>
+  <%= @new_vm.hz_numer %>
+</p>
+
+<p>
+  <b>Application:</b>
+  <%= @new_vm.application_id %>
+</p>
+
+<p>
+  <b>Vcenter:</b>
+  <%= @new_vm.vcenter_id %>
+</p>
+
+<p>
+  <b>Vdc:</b>
+  <%= @new_vm.vdc_id %>
+</p>
+
+<p>
+  <b>Cluster:</b>
+  <%= @new_vm.cluster_id %>
+</p>
+
+<p>
+  <b>Instance:</b>
+  <%= @new_vm.instance_id %>
+</p>
+
+<p>
+  <b>Persistent:</b>
+  <%= @new_vm.persistent_id %>
+</p>
+
+<p>
+  <b>Vm:</b>
+  <%= @new_vm.vm_id %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @new_vm.version %>
+</p>
+
+<p>
+  <b>Last suspend:</b>
+  <%= @new_vm.last_suspend %>
+</p>
+
+<p>
+  <b>Last suspend interval:</b>
+  <%= @new_vm.last_suspend_interval %>
+</p>
+
+<p>
+  <b>Last change:</b>
+  <%= @new_vm.last_change %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%= @new_vm.owner %>
+</p>
+
+<p>
+  <b>Ppm no:</b>
+  <%= @new_vm.ppm_no %>
+</p>
+
+<p>
+  <b>Is cloud:</b>
+  <%= @new_vm.is_cloud %>
+</p>
+
+
+<%= link_to 'Edit', edit_new_vm_path(@new_vm) %> |
+<%= link_to 'Back', new_vms_path %>

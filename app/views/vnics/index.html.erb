@@ -1,0 +1,35 @@
+<h1>Listing vnics</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Vm</th>
+    <th>Vcenter</th>
+    <th>Connect state</th>
+    <th>Macaddress</th>
+    <th>Portgroup</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vnics.each do |vnic| %>
+  <tr>
+    <td><%= vnic.name %></td>
+    <td><%= vnic.type %></td>
+    <td><%= vnic.vm_id %></td>
+    <td><%= vnic.vcenter_id %></td>
+    <td><%= vnic.connect_state %></td>
+    <td><%= vnic.macaddress %></td>
+    <td><%= vnic.portgroup_id %></td>
+    <td><%= link_to 'Show', vnic %></td>
+    <td><%= link_to 'Edit', edit_vnic_path(vnic) %></td>
+    <td><%= link_to 'Destroy', vnic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vnic', new_vnic_path %>

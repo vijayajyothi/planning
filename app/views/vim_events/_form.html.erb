@@ -1,0 +1,53 @@
+<%= form_for(@vim_event) do |f| %>
+  <% if @vim_event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vim_event.errors.count, "error") %> prohibited this vim_event from being saved:</h2>
+
+      <ul>
+      <% @vim_event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :time_stamp %><br />
+    <%= f.datetime_select :time_stamp %>
+  </div>
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :event_message %><br />
+    <%= f.text_field :event_message %>
+  </div>
+  <div class="field">
+    <%= f.label :event_type %><br />
+    <%= f.text_field :event_type %>
+  </div>
+  <div class="field">
+    <%= f.label :event_tag %><br />
+    <%= f.text_field :event_tag %>
+  </div>
+  <div class="field">
+    <%= f.label :vcenter_id %><br />
+    <%= f.number_field :vcenter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vmhost_id %><br />
+    <%= f.number_field :vmhost_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vm_id %><br />
+    <%= f.number_field :vm_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vdc_id %><br />
+    <%= f.number_field :vdc_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

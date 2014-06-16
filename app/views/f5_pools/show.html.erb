@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @f5_pool.name %>
+</p>
+
+<p>
+  <b>F5 vip:</b>
+  <%= @f5_pool.f5_vip_id %>
+</p>
+
+<p>
+  <b>F5 cluster:</b>
+  <%= @f5_pool.f5_cluster_id %>
+</p>
+
+<p>
+  <b>Lb method:</b>
+  <%= @f5_pool.lb_method %>
+</p>
+
+
+<%= link_to 'Edit', edit_f5_pool_path(@f5_pool) %> |
+<%= link_to 'Back', f5_pools_path %>

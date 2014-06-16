@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @storage_array.name %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @storage_array.ip %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%= @storage_array.uid %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%= @storage_array.model %>
+</p>
+
+<p>
+  <b>Model type:</b>
+  <%= @storage_array.model_type %>
+</p>
+
+<p>
+  <b>Agent revision:</b>
+  <%= @storage_array.agent_revision %>
+</p>
+
+<p>
+  <b>Prom revision:</b>
+  <%= @storage_array.prom_revision %>
+</p>
+
+<p>
+  <b>Revision:</b>
+  <%= @storage_array.revision %>
+</p>
+
+<p>
+  <b>Serial no:</b>
+  <%= @storage_array.serial_no %>
+</p>
+
+<p>
+  <b>Cabinet:</b>
+  <%= @storage_array.cabinet %>
+</p>
+
+
+<%= link_to 'Edit', edit_storage_array_path(@storage_array) %> |
+<%= link_to 'Back', storage_arrays_path %>

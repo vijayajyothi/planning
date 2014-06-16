@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @fibre_commection.type %>
+</p>
+
+<p>
+  <b>Fabric:</b>
+  <%= @fibre_commection.fabric_id %>
+</p>
+
+<p>
+  <b>Fabric type:</b>
+  <%= @fibre_commection.fabric_type %>
+</p>
+
+<p>
+  <b>San port:</b>
+  <%= @fibre_commection.san_port_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_fibre_commection_path(@fibre_commection) %> |
+<%= link_to 'Back', fibre_commections_path %>

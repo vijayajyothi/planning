@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  ip: MyString
+  cluster_id: 1
+  parent_id: 1
+  connection_state: MyString
+  power_state: MyString
+  cpu_total_mhz: 1
+  mem_total_mb: 1
+  esx_product: MyString
+  esx_version: MyString
+  esx_build: MyString
+  esx_api_version: MyString
+  host_id: MyString
+  is_standalone: MyString
+  hw_device_id: 1
+  vcenter_id: 1
+  uuid: MyString
+  vendor: MyString
+  model: MyString
+  cpu_model: MyString
+  num_cpu: 1
+  num_core: 1
+  serial_no: MyString
+  bios_version: MyString
+
+two:
+  name: MyString
+  ip: MyString
+  cluster_id: 1
+  parent_id: 1
+  connection_state: MyString
+  power_state: MyString
+  cpu_total_mhz: 1
+  mem_total_mb: 1
+  esx_product: MyString
+  esx_version: MyString
+  esx_build: MyString
+  esx_api_version: MyString
+  host_id: MyString
+  is_standalone: MyString
+  hw_device_id: 1
+  vcenter_id: 1
+  uuid: MyString
+  vendor: MyString
+  model: MyString
+  cpu_model: MyString
+  num_cpu: 1
+  num_core: 1
+  serial_no: MyString
+  bios_version: MyString

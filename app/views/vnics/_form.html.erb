@@ -1,0 +1,45 @@
+<%= form_for(@vnic) do |f| %>
+  <% if @vnic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vnic.errors.count, "error") %> prohibited this vnic from being saved:</h2>
+
+      <ul>
+      <% @vnic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :vm_id %><br />
+    <%= f.number_field :vm_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vcenter_id %><br />
+    <%= f.number_field :vcenter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :connect_state %><br />
+    <%= f.text_field :connect_state %>
+  </div>
+  <div class="field">
+    <%= f.label :macaddress %><br />
+    <%= f.text_field :macaddress %>
+  </div>
+  <div class="field">
+    <%= f.label :portgroup_id %><br />
+    <%= f.number_field :portgroup_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,101 @@
+<%= form_for(@hw_device) do |f| %>
+  <% if @hw_device.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hw_device.errors.count, "error") %> prohibited this hw_device from being saved:</h2>
+
+      <ul>
+      <% @hw_device.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :manufacturer %><br />
+    <%= f.text_field :manufacturer %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_no %><br />
+    <%= f.text_field :serial_no %>
+  </div>
+  <div class="field">
+    <%= f.label :asset_no %><br />
+    <%= f.text_field :asset_no %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :building %><br />
+    <%= f.text_field :building %>
+  </div>
+  <div class="field">
+    <%= f.label :room %><br />
+    <%= f.text_field :room %>
+  </div>
+  <div class="field">
+    <%= f.label :floor %><br />
+    <%= f.text_field :floor %>
+  </div>
+  <div class="field">
+    <%= f.label :ru_size %><br />
+    <%= f.number_field :ru_size %>
+  </div>
+  <div class="field">
+    <%= f.label :ru_position %><br />
+    <%= f.number_field :ru_position %>
+  </div>
+  <div class="field">
+    <%= f.label :hostname %><br />
+    <%= f.text_field :hostname %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :owned_by %><br />
+    <%= f.text_field :owned_by %>
+  </div>
+  <div class="field">
+    <%= f.label :assigned_by %><br />
+    <%= f.text_field :assigned_by %>
+  </div>
+  <div class="field">
+    <%= f.label :cost_center %><br />
+    <%= f.text_field :cost_center %>
+  </div>
+  <div class="field">
+    <%= f.label :console %><br />
+    <%= f.text_field :console %>
+  </div>
+  <div class="field">
+    <%= f.label :console_ip %><br />
+    <%= f.text_field :console_ip %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,113 @@
+<%= form_for(@vmhost) do |f| %>
+  <% if @vmhost.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vmhost.errors.count, "error") %> prohibited this vmhost from being saved:</h2>
+
+      <ul>
+      <% @vmhost.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :cluster_id %><br />
+    <%= f.number_field :cluster_id %>
+  </div>
+  <div class="field">
+    <%= f.label :parent_id %><br />
+    <%= f.number_field :parent_id %>
+  </div>
+  <div class="field">
+    <%= f.label :connection_state %><br />
+    <%= f.text_field :connection_state %>
+  </div>
+  <div class="field">
+    <%= f.label :power_state %><br />
+    <%= f.text_field :power_state %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_total_mhz %><br />
+    <%= f.number_field :cpu_total_mhz %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_total_mb %><br />
+    <%= f.number_field :mem_total_mb %>
+  </div>
+  <div class="field">
+    <%= f.label :esx_product %><br />
+    <%= f.text_field :esx_product %>
+  </div>
+  <div class="field">
+    <%= f.label :esx_version %><br />
+    <%= f.text_field :esx_version %>
+  </div>
+  <div class="field">
+    <%= f.label :esx_build %><br />
+    <%= f.text_field :esx_build %>
+  </div>
+  <div class="field">
+    <%= f.label :esx_api_version %><br />
+    <%= f.text_field :esx_api_version %>
+  </div>
+  <div class="field">
+    <%= f.label :host_id %><br />
+    <%= f.text_field :host_id %>
+  </div>
+  <div class="field">
+    <%= f.label :is_standalone %><br />
+    <%= f.text_field :is_standalone %>
+  </div>
+  <div class="field">
+    <%= f.label :hw_device_id %><br />
+    <%= f.number_field :hw_device_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vcenter_id %><br />
+    <%= f.number_field :vcenter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :uuid %><br />
+    <%= f.text_field :uuid %>
+  </div>
+  <div class="field">
+    <%= f.label :vendor %><br />
+    <%= f.text_field :vendor %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_model %><br />
+    <%= f.text_field :cpu_model %>
+  </div>
+  <div class="field">
+    <%= f.label :num_cpu %><br />
+    <%= f.number_field :num_cpu %>
+  </div>
+  <div class="field">
+    <%= f.label :num_core %><br />
+    <%= f.number_field :num_core %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_no %><br />
+    <%= f.text_field :serial_no %>
+  </div>
+  <div class="field">
+    <%= f.label :bios_version %><br />
+    <%= f.text_field :bios_version %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

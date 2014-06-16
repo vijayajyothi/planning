@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @tier.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @tier.description %>
+</p>
+
+<p>
+  <b>Application:</b>
+  <%= @tier.application_id %>
+</p>
+
+<p>
+  <b>Instance:</b>
+  <%= @tier.instance_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_tier_path(@tier) %> |
+<%= link_to 'Back', tiers_path %>

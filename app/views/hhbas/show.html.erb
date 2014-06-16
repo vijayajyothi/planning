@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @hhba.name %>
+</p>
+
+<p>
+  <b>Vmhost:</b>
+  <%= @hhba.vmhost_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @hhba.status %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%= @hhba.model %>
+</p>
+
+<p>
+  <b>Driver:</b>
+  <%= @hhba.driver %>
+</p>
+
+<p>
+  <b>Pci:</b>
+  <%= @hhba.pci %>
+</p>
+
+<p>
+  <b>Wwnn:</b>
+  <%= @hhba.wwnn %>
+</p>
+
+<p>
+  <b>Wwpn:</b>
+  <%= @hhba.wwpn %>
+</p>
+
+
+<%= link_to 'Edit', edit_hhba_path(@hhba) %> |
+<%= link_to 'Back', hhbas_path %>

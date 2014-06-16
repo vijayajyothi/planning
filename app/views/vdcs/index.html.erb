@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Folder</th>
     <th>Description</th>
     <th>Vcenter</th>
     <th></th>
@@ -13,6 +14,7 @@
 <% @vdcs.each do |vdc| %>
   <tr>
     <td><%= vdc.name %></td>
+    <td><%= vdc.folder_id %></td>
     <td><%= vdc.description %></td>
     <td><%= vdc.vcenter_id %></td>
     <td><%= link_to 'Show', vdc %></td>

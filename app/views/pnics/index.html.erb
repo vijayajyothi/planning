@@ -1,0 +1,39 @@
+<h1>Listing pnics</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Vmhost</th>
+    <th>Speed</th>
+    <th>Macaddress</th>
+    <th>Network switch</th>
+    <th>Network port</th>
+    <th>Vlan</th>
+    <th>Observed</th>
+    <th>Vswitch</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pnics.each do |pnic| %>
+  <tr>
+    <td><%= pnic.name %></td>
+    <td><%= pnic.vmhost_id %></td>
+    <td><%= pnic.speed %></td>
+    <td><%= pnic.macaddress %></td>
+    <td><%= pnic.network_switch_id %></td>
+    <td><%= pnic.network_port_id %></td>
+    <td><%= pnic.vlan %></td>
+    <td><%= pnic.observed %></td>
+    <td><%= pnic.vswitch_id %></td>
+    <td><%= link_to 'Show', pnic %></td>
+    <td><%= link_to 'Edit', edit_pnic_path(pnic) %></td>
+    <td><%= link_to 'Destroy', pnic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pnic', new_pnic_path %>

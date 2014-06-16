@@ -18,7 +18,7 @@ class ClustersControllerTest < ActionController::TestCase
 
   test "should create cluster" do
     assert_difference('Cluster.count') do
-      post :create, cluster: { cpu_no_cores: @cluster.cpu_no_cores, cpu_total_mhz: @cluster.cpu_total_mhz, mem_total_mb: @cluster.mem_total_mb, name: @cluster.name, vcenter_id: @cluster.vcenter_id, vdc_id: @cluster.vdc_id }
+      post :create, cluster: { cpu_no_cores: @cluster.cpu_no_cores, cpu_total_mhz: @cluster.cpu_total_mhz, drs_enables: @cluster.drs_enables, folder_id: @cluster.folder_id, ha_enabled: @cluster.ha_enabled, mem_total_mb: @cluster.mem_total_mb, name: @cluster.name, vcenter_id: @cluster.vcenter_id, vdc_id: @cluster.vdc_id }
     end
 
     assert_redirected_to cluster_path(assigns(:cluster))
@@ -35,7 +35,7 @@ class ClustersControllerTest < ActionController::TestCase
   end
 
   test "should update cluster" do
-    put :update, id: @cluster, cluster: { cpu_no_cores: @cluster.cpu_no_cores, cpu_total_mhz: @cluster.cpu_total_mhz, mem_total_mb: @cluster.mem_total_mb, name: @cluster.name, vcenter_id: @cluster.vcenter_id, vdc_id: @cluster.vdc_id }
+    put :update, id: @cluster, cluster: { cpu_no_cores: @cluster.cpu_no_cores, cpu_total_mhz: @cluster.cpu_total_mhz, drs_enables: @cluster.drs_enables, folder_id: @cluster.folder_id, ha_enabled: @cluster.ha_enabled, mem_total_mb: @cluster.mem_total_mb, name: @cluster.name, vcenter_id: @cluster.vcenter_id, vdc_id: @cluster.vdc_id }
     assert_redirected_to cluster_path(assigns(:cluster))
   end
 

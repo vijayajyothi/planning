@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lun:</b>
+  <%= @storage_lun.lun %>
+</p>
+
+<p>
+  <b>Storage array:</b>
+  <%= @storage_lun.storage_array_id %>
+</p>
+
+<p>
+  <b>Lun name:</b>
+  <%= @storage_lun.lun_name %>
+</p>
+
+<p>
+  <b>Device type:</b>
+  <%= @storage_lun.device_type %>
+</p>
+
+<p>
+  <b>Capacity mb:</b>
+  <%= @storage_lun.capacity_mb %>
+</p>
+
+<p>
+  <b>Raid type:</b>
+  <%= @storage_lun.raid_type %>
+</p>
+
+<p>
+  <b>Lun no:</b>
+  <%= @storage_lun.lun_no %>
+</p>
+
+
+<%= link_to 'Edit', edit_storage_lun_path(@storage_lun) %> |
+<%= link_to 'Back', storage_luns_path %>

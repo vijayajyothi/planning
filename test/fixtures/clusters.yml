@@ -2,16 +2,22 @@
 
 one:
   name: MyString
-  vcenter_id: 1
   vdc_id: 1
+  ha_enabled: 1
+  drs_enables: 1
+  folder_id: 1
   cpu_total_mhz: 1
   mem_total_mb: 1
   cpu_no_cores: 1
+  vcenter_id: 1
 
 two:
   name: MyString
-  vcenter_id: 1
   vdc_id: 1
+  ha_enabled: 1
+  drs_enables: 1
+  folder_id: 1
   cpu_total_mhz: 1
   mem_total_mb: 1
   cpu_no_cores: 1
+  vcenter_id: 1

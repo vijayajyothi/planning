@@ -1,0 +1,27 @@
+<h1>Listing storage_group_luns</h1>
+
+<table>
+  <tr>
+    <th>Storage group</th>
+    <th>Storage lun</th>
+    <th>Host lun</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @storage_group_luns.each do |storage_group_lun| %>
+  <tr>
+    <td><%= storage_group_lun.storage_group_id %></td>
+    <td><%= storage_group_lun.storage_lun_id %></td>
+    <td><%= storage_group_lun.host_lun %></td>
+    <td><%= link_to 'Show', storage_group_lun %></td>
+    <td><%= link_to 'Edit', edit_storage_group_lun_path(storage_group_lun) %></td>
+    <td><%= link_to 'Destroy', storage_group_lun, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Storage group lun', new_storage_group_lun_path %>

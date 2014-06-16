@@ -1,0 +1,45 @@
+<%= form_for(@storage_lun) do |f| %>
+  <% if @storage_lun.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@storage_lun.errors.count, "error") %> prohibited this storage_lun from being saved:</h2>
+
+      <ul>
+      <% @storage_lun.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :lun %><br />
+    <%= f.text_field :lun %>
+  </div>
+  <div class="field">
+    <%= f.label :storage_array_id %><br />
+    <%= f.number_field :storage_array_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lun_name %><br />
+    <%= f.text_field :lun_name %>
+  </div>
+  <div class="field">
+    <%= f.label :device_type %><br />
+    <%= f.text_field :device_type %>
+  </div>
+  <div class="field">
+    <%= f.label :capacity_mb %><br />
+    <%= f.number_field :capacity_mb %>
+  </div>
+  <div class="field">
+    <%= f.label :raid_type %><br />
+    <%= f.text_field :raid_type %>
+  </div>
+  <div class="field">
+    <%= f.label :lun_no %><br />
+    <%= f.number_field :lun_no %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

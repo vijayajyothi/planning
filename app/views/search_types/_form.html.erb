@@ -1,0 +1,29 @@
+<%= form_for(@search_type) do |f| %>
+  <% if @search_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@search_type.errors.count, "error") %> prohibited this search_type from being saved:</h2>
+
+      <ul>
+      <% @search_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :asset_type %><br />
+    <%= f.text_field :asset_type %>
+  </div>
+  <div class="field">
+    <%= f.label :asset_label %><br />
+    <%= f.text_field :asset_label %>
+  </div>
+  <div class="field">
+    <%= f.label :main_field %><br />
+    <%= f.text_field :main_field %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

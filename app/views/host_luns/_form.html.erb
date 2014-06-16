@@ -1,0 +1,41 @@
+<%= form_for(@host_lun) do |f| %>
+  <% if @host_lun.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@host_lun.errors.count, "error") %> prohibited this host_lun from being saved:</h2>
+
+      <ul>
+      <% @host_lun.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :lun_no %><br />
+    <%= f.number_field :lun_no %>
+  </div>
+  <div class="field">
+    <%= f.label :vmhost_id %><br />
+    <%= f.number_field :vmhost_id %>
+  </div>
+  <div class="field">
+    <%= f.label :storage_lun_id %><br />
+    <%= f.number_field :storage_lun_id %>
+  </div>
+  <div class="field">
+    <%= f.label :storage_array_id %><br />
+    <%= f.number_field :storage_array_id %>
+  </div>
+  <div class="field">
+    <%= f.label :storage_group_id %><br />
+    <%= f.number_field :storage_group_id %>
+  </div>
+  <div class="field">
+    <%= f.label :hhba_id %><br />
+    <%= f.number_field :hhba_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

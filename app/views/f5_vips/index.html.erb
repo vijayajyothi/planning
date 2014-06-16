@@ -1,0 +1,35 @@
+<h1>Listing f5_vips</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Ip</th>
+    <th>Port</th>
+    <th>Application</th>
+    <th>Instance</th>
+    <th>Tier</th>
+    <th>F5 cluster</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @f5_vips.each do |f5_vip| %>
+  <tr>
+    <td><%= f5_vip.name %></td>
+    <td><%= f5_vip.ip %></td>
+    <td><%= f5_vip.port %></td>
+    <td><%= f5_vip.application_id %></td>
+    <td><%= f5_vip.instance_id %></td>
+    <td><%= f5_vip.tier_id %></td>
+    <td><%= f5_vip.f5_cluster_id %></td>
+    <td><%= link_to 'Show', f5_vip %></td>
+    <td><%= link_to 'Edit', edit_f5_vip_path(f5_vip) %></td>
+    <td><%= link_to 'Destroy', f5_vip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New F5 vip', new_f5_vip_path %>

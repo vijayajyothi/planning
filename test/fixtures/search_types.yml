@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  asset_type: MyString
+  asset_label: MyString
+  main_field: MyString
+
+two:
+  asset_type: MyString
+  asset_label: MyString
+  main_field: MyString

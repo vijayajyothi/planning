@@ -1,0 +1,39 @@
+<h1>Listing vim_events</h1>
+
+<table>
+  <tr>
+    <th>Time stamp</th>
+    <th>Username</th>
+    <th>Event message</th>
+    <th>Event type</th>
+    <th>Event tag</th>
+    <th>Vcenter</th>
+    <th>Vmhost</th>
+    <th>Vm</th>
+    <th>Vdc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vim_events.each do |vim_event| %>
+  <tr>
+    <td><%= vim_event.time_stamp %></td>
+    <td><%= vim_event.username %></td>
+    <td><%= vim_event.event_message %></td>
+    <td><%= vim_event.event_type %></td>
+    <td><%= vim_event.event_tag %></td>
+    <td><%= vim_event.vcenter_id %></td>
+    <td><%= vim_event.vmhost_id %></td>
+    <td><%= vim_event.vm_id %></td>
+    <td><%= vim_event.vdc_id %></td>
+    <td><%= link_to 'Show', vim_event %></td>
+    <td><%= link_to 'Edit', edit_vim_event_path(vim_event) %></td>
+    <td><%= link_to 'Destroy', vim_event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vim event', new_vim_event_path %>

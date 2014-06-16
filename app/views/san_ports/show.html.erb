@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>San switch:</b>
+  <%= @san_port.san_switch_id %>
+</p>
+
+<p>
+  <b>Index:</b>
+  <%= @san_port.index %>
+</p>
+
+<p>
+  <b>Slot:</b>
+  <%= @san_port.slot %>
+</p>
+
+<p>
+  <b>Port:</b>
+  <%= @san_port.port %>
+</p>
+
+<p>
+  <b>Speed:</b>
+  <%= @san_port.speed %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @san_port.status %>
+</p>
+
+<p>
+  <b>Protocol:</b>
+  <%= @san_port.protocol %>
+</p>
+
+<p>
+  <b>Port type:</b>
+  <%= @san_port.port_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_san_port_path(@san_port) %> |
+<%= link_to 'Back', san_ports_path %>

@@ -1,0 +1,51 @@
+<h1>Listing san_switches</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Ip</th>
+    <th>Vendor</th>
+    <th>Model</th>
+    <th>Boot prom</th>
+    <th>Fabric os</th>
+    <th>Factory part no</th>
+    <th>Kernel</th>
+    <th>Part no</th>
+    <th>Serial no</th>
+    <th>Domain</th>
+    <th>Switch</th>
+    <th>State</th>
+    <th>Switch type</th>
+    <th>Wwn</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @san_switches.each do |san_switch| %>
+  <tr>
+    <td><%= san_switch.name %></td>
+    <td><%= san_switch.ip %></td>
+    <td><%= san_switch.vendor %></td>
+    <td><%= san_switch.model %></td>
+    <td><%= san_switch.boot_prom %></td>
+    <td><%= san_switch.fabric_os %></td>
+    <td><%= san_switch.factory_part_no %></td>
+    <td><%= san_switch.kernel %></td>
+    <td><%= san_switch.part_no %></td>
+    <td><%= san_switch.serial_no %></td>
+    <td><%= san_switch.domain %></td>
+    <td><%= san_switch.switch_id %></td>
+    <td><%= san_switch.state %></td>
+    <td><%= san_switch.switch_type %></td>
+    <td><%= san_switch.wwn %></td>
+    <td><%= link_to 'Show', san_switch %></td>
+    <td><%= link_to 'Edit', edit_san_switch_path(san_switch) %></td>
+    <td><%= link_to 'Destroy', san_switch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New San switch', new_san_switch_path %>

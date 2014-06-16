@@ -1,0 +1,53 @@
+<%= form_for(@pnic) do |f| %>
+  <% if @pnic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pnic.errors.count, "error") %> prohibited this pnic from being saved:</h2>
+
+      <ul>
+      <% @pnic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :vmhost_id %><br />
+    <%= f.number_field :vmhost_id %>
+  </div>
+  <div class="field">
+    <%= f.label :speed %><br />
+    <%= f.number_field :speed %>
+  </div>
+  <div class="field">
+    <%= f.label :macaddress %><br />
+    <%= f.text_field :macaddress %>
+  </div>
+  <div class="field">
+    <%= f.label :network_switch_id %><br />
+    <%= f.text_field :network_switch_id %>
+  </div>
+  <div class="field">
+    <%= f.label :network_port_id %><br />
+    <%= f.text_field :network_port_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vlan %><br />
+    <%= f.text_field :vlan %>
+  </div>
+  <div class="field">
+    <%= f.label :observed %><br />
+    <%= f.text_field :observed %>
+  </div>
+  <div class="field">
+    <%= f.label :vswitch_id %><br />
+    <%= f.number_field :vswitch_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

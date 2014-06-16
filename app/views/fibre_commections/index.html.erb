@@ -1,0 +1,29 @@
+<h1>Listing fibre_commections</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Fabric</th>
+    <th>Fabric type</th>
+    <th>San port</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fibre_commections.each do |fibre_commection| %>
+  <tr>
+    <td><%= fibre_commection.type %></td>
+    <td><%= fibre_commection.fabric_id %></td>
+    <td><%= fibre_commection.fabric_type %></td>
+    <td><%= fibre_commection.san_port_id %></td>
+    <td><%= link_to 'Show', fibre_commection %></td>
+    <td><%= link_to 'Edit', edit_fibre_commection_path(fibre_commection) %></td>
+    <td><%= link_to 'Destroy', fibre_commection, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fibre commection', new_fibre_commection_path %>

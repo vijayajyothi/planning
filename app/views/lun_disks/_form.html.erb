@@ -1,0 +1,25 @@
+<%= form_for(@lun_disk) do |f| %>
+  <% if @lun_disk.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lun_disk.errors.count, "error") %> prohibited this lun_disk from being saved:</h2>
+
+      <ul>
+      <% @lun_disk.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :storage_lun_id %><br />
+    <%= f.text_field :storage_lun_id %>
+  </div>
+  <div class="field">
+    <%= f.label :physical_disk_id %><br />
+    <%= f.text_field :physical_disk_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -67,12 +67,13 @@
             </div><!--/span-->
             <div class="dashboard">
               <%= yield %>
+              <%= yield :scripts %>
+              
             </div><!--/dashboard-->
           </div><!--/row-->
-      </section>
-        </div><!--/container-->
+        </section>
+      </div><!--/container-->
     </div>
-    <%= yield :scripts %>
 
 
     <%= render :partial=> "layouts/footer" %>

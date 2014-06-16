@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  storage_array_id: 1
+  assembly_name: MyString
+  vendor_part_no: MyString
+  assy_revision: MyString
+  art_revision: MyString
+  serial_no: MyString
+  cabinet: MyString
+  mem_size_kb: 1
+  manufacture_year: 1
+  manufacture_date: MyString
+
+two:
+  name: MyString
+  storage_array_id: 1
+  assembly_name: MyString
+  vendor_part_no: MyString
+  assy_revision: MyString
+  art_revision: MyString
+  serial_no: MyString
+  cabinet: MyString
+  mem_size_kb: 1
+  manufacture_year: 1
+  manufacture_date: MyString

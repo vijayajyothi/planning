@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @network_switch.name %>
+</p>
+
+<p>
+  <b>Unique:</b>
+  <%= @network_switch.unique_id %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @network_switch.contact %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @network_switch.description %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @network_switch.location %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @network_switch.ip %>
+</p>
+
+<p>
+  <b>Vendor:</b>
+  <%= @network_switch.vendor %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%= @network_switch.model %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @network_switch.version %>
+</p>
+
+<p>
+  <b>Device type:</b>
+  <%= @network_switch.device_type %>
+</p>
+
+<p>
+  <b>Serial no:</b>
+  <%= @network_switch.serial_no %>
+</p>
+
+
+<%= link_to 'Edit', edit_network_switch_path(@network_switch) %> |
+<%= link_to 'Back', network_switches_path %>

@@ -1,0 +1,69 @@
+<h1>Listing vmhosts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Ip</th>
+    <th>Cluster</th>
+    <th>Parent</th>
+    <th>Connection state</th>
+    <th>Power state</th>
+    <th>Cpu total mhz</th>
+    <th>Mem total mb</th>
+    <th>Esx product</th>
+    <th>Esx version</th>
+    <th>Esx build</th>
+    <th>Esx api version</th>
+    <th>Host</th>
+    <th>Is standalone</th>
+    <th>Hw device</th>
+    <th>Vcenter</th>
+    <th>Uuid</th>
+    <th>Vendor</th>
+    <th>Model</th>
+    <th>Cpu model</th>
+    <th>Num cpu</th>
+    <th>Num core</th>
+    <th>Serial no</th>
+    <th>Bios version</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vmhosts.each do |vmhost| %>
+  <tr>
+    <td><%= vmhost.name %></td>
+    <td><%= vmhost.ip %></td>
+    <td><%= vmhost.cluster_id %></td>
+    <td><%= vmhost.parent_id %></td>
+    <td><%= vmhost.connection_state %></td>
+    <td><%= vmhost.power_state %></td>
+    <td><%= vmhost.cpu_total_mhz %></td>
+    <td><%= vmhost.mem_total_mb %></td>
+    <td><%= vmhost.esx_product %></td>
+    <td><%= vmhost.esx_version %></td>
+    <td><%= vmhost.esx_build %></td>
+    <td><%= vmhost.esx_api_version %></td>
+    <td><%= vmhost.host_id %></td>
+    <td><%= vmhost.is_standalone %></td>
+    <td><%= vmhost.hw_device_id %></td>
+    <td><%= vmhost.vcenter_id %></td>
+    <td><%= vmhost.uuid %></td>
+    <td><%= vmhost.vendor %></td>
+    <td><%= vmhost.model %></td>
+    <td><%= vmhost.cpu_model %></td>
+    <td><%= vmhost.num_cpu %></td>
+    <td><%= vmhost.num_core %></td>
+    <td><%= vmhost.serial_no %></td>
+    <td><%= vmhost.bios_version %></td>
+    <td><%= link_to 'Show', vmhost %></td>
+    <td><%= link_to 'Edit', edit_vmhost_path(vmhost) %></td>
+    <td><%= link_to 'Destroy', vmhost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vmhost', new_vmhost_path %>

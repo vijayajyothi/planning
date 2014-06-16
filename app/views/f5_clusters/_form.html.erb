@@ -1,0 +1,53 @@
+<%= form_for(@f5_cluster) do |f| %>
+  <% if @f5_cluster.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@f5_cluster.errors.count, "error") %> prohibited this f5_cluster from being saved:</h2>
+
+      <ul>
+      <% @f5_cluster.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :data_center %><br />
+    <%= f.text_field :data_center %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_unit_ip %><br />
+    <%= f.text_field :primary_unit_ip %>
+  </div>
+  <div class="field">
+    <%= f.label :secondary_unit_ip %><br />
+    <%= f.text_field :secondary_unit_ip %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_unit_name %><br />
+    <%= f.text_field :primary_unit_name %>
+  </div>
+  <div class="field">
+    <%= f.label :secondary_unit_name %><br />
+    <%= f.text_field :secondary_unit_name %>
+  </div>
+  <div class="field">
+    <%= f.label :network_list %><br />
+    <%= f.text_field :network_list %>
+  </div>
+  <div class="field">
+    <%= f.label :network_name_list %><br />
+    <%= f.text_field :network_name_list %>
+  </div>
+  <div class="field">
+    <%= f.label :access_ip %><br />
+    <%= f.text_field :access_ip %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

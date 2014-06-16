@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Asset type:</b>
+  <%= @search_type.asset_type %>
+</p>
+
+<p>
+  <b>Asset label:</b>
+  <%= @search_type.asset_label %>
+</p>
+
+<p>
+  <b>Main field:</b>
+  <%= @search_type.main_field %>
+</p>
+
+
+<%= link_to 'Edit', edit_search_type_path(@search_type) %> |
+<%= link_to 'Back', search_types_path %>

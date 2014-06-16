@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @vnic.name %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @vnic.type %>
+</p>
+
+<p>
+  <b>Vm:</b>
+  <%= @vnic.vm_id %>
+</p>
+
+<p>
+  <b>Vcenter:</b>
+  <%= @vnic.vcenter_id %>
+</p>
+
+<p>
+  <b>Connect state:</b>
+  <%= @vnic.connect_state %>
+</p>
+
+<p>
+  <b>Macaddress:</b>
+  <%= @vnic.macaddress %>
+</p>
+
+<p>
+  <b>Portgroup:</b>
+  <%= @vnic.portgroup_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_vnic_path(@vnic) %> |
+<%= link_to 'Back', vnics_path %>

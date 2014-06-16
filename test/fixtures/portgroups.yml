@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  vmhost_id: 1
+  vswitch: MyString
+  pnic_id: 1
+  a_s: MyString
+  vswitch_id: 1
+  vcenter_id: 1
+  vdc_id: 1
+
+two:
+  name: MyString
+  vmhost_id: 1
+  vswitch: MyString
+  pnic_id: 1
+  a_s: MyString
+  vswitch_id: 1
+  vcenter_id: 1
+  vdc_id: 1

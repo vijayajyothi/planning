@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vm:</b>
+  <%= @vmvip.vm_id %>
+</p>
+
+<p>
+  <b>F5 vip:</b>
+  <%= @vmvip.f5_vip_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_vmvip_path(@vmvip) %> |
+<%= link_to 'Back', vmvips_path %>

@@ -1,22 +1,22 @@
-<div class="container">
+<!-- <div class="container"> -->
 
-        <section>
-         <div class="container-fluid">
-          <div class="row-fluid">
-            <div class="span3">
-              <div class="well sidebar-nav" style="margin-right:20px;">
-                <ul class="nav nav-list">
-                  <li class="nav-header">VMs</li>
-                  <% @vms.each do |each_vm|%>
-                  <li><%= link_to  each_vm.vmname, selected_vm_path(each_vm), :remote=> true%></a>
-                  </li>
-                  <% end %>
-                </ul>
-              </div><!--/.well -->
-            </div><!--/span-->
-            <div class="dashboard">
-<%= render :partial=> "vm_detail" %>
-            </div><!--/dashboard-->
-          </div><!--/row-->
-      </section>
-        </div><!--/container-->
+  <section>
+   <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="well sidebar-nav" style="margin-right:20px;">
+          <ul class="nav nav-list">
+            <li class="nav-header">VMs</li>
+            <% @vms.each do |each_vm|%>
+            <li><%= link_to  each_vm.vmname, selected_vm_path(each_vm), :remote=> true%></a>
+            </li>
+            <% end %>
+          </ul>
+        </div><!--/.well -->
+      </div><!--/span-->
+      <div class="dashboard">
+        <%= render :partial=> "vm_detail" %>
+      </div><!--/dashboard-->
+    </div><!--/row-->
+  </section>
+<!-- </div>< --><!--/container-->

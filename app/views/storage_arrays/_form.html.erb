@@ -1,0 +1,57 @@
+<%= form_for(@storage_array) do |f| %>
+  <% if @storage_array.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@storage_array.errors.count, "error") %> prohibited this storage_array from being saved:</h2>
+
+      <ul>
+      <% @storage_array.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :uid %><br />
+    <%= f.text_field :uid %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :model_type %><br />
+    <%= f.text_field :model_type %>
+  </div>
+  <div class="field">
+    <%= f.label :agent_revision %><br />
+    <%= f.text_field :agent_revision %>
+  </div>
+  <div class="field">
+    <%= f.label :prom_revision %><br />
+    <%= f.text_field :prom_revision %>
+  </div>
+  <div class="field">
+    <%= f.label :revision %><br />
+    <%= f.text_field :revision %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_no %><br />
+    <%= f.text_field :serial_no %>
+  </div>
+  <div class="field">
+    <%= f.label :cabinet %><br />
+    <%= f.text_field :cabinet %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

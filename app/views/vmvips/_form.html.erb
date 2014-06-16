@@ -1,0 +1,25 @@
+<%= form_for(@vmvip) do |f| %>
+  <% if @vmvip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vmvip.errors.count, "error") %> prohibited this vmvip from being saved:</h2>
+
+      <ul>
+      <% @vmvip.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vm_id %><br />
+    <%= f.number_field :vm_id %>
+  </div>
+  <div class="field">
+    <%= f.label :f5_vip_id %><br />
+    <%= f.number_field :f5_vip_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

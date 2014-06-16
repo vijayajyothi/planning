@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @portgroup.name %>
+</p>
+
+<p>
+  <b>Vmhost:</b>
+  <%= @portgroup.vmhost_id %>
+</p>
+
+<p>
+  <b>Vswitch:</b>
+  <%= @portgroup.vswitch %>
+</p>
+
+<p>
+  <b>Pnic:</b>
+  <%= @portgroup.pnic_id %>
+</p>
+
+<p>
+  <b>A s:</b>
+  <%= @portgroup.a_s %>
+</p>
+
+<p>
+  <b>Vswitch:</b>
+  <%= @portgroup.vswitch_id %>
+</p>
+
+<p>
+  <b>Vcenter:</b>
+  <%= @portgroup.vcenter_id %>
+</p>
+
+<p>
+  <b>Vdc:</b>
+  <%= @portgroup.vdc_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_portgroup_path(@portgroup) %> |
+<%= link_to 'Back', portgroups_path %>

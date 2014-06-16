@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  vm_id: 1
+  vcenter_id: 1
+  type: 
+  persistence: MyString
+  format: MyString
+  datastore_id: 1
+  filename: MyString
+  capacitykb: 1
+
+two:
+  name: MyString
+  vm_id: 1
+  vcenter_id: 1
+  type: 
+  persistence: MyString
+  format: MyString
+  datastore_id: 1
+  filename: MyString
+  capacitykb: 1

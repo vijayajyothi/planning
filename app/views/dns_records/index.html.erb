@@ -1,0 +1,33 @@
+<h1>Listing dns_records</h1>
+
+<table>
+  <tr>
+    <th>Ip</th>
+    <th>Fqdn</th>
+    <th>Record type</th>
+    <th>Vm</th>
+    <th>F5 vip</th>
+    <th>F5 node</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dns_records.each do |dns_record| %>
+  <tr>
+    <td><%= dns_record.ip %></td>
+    <td><%= dns_record.fqdn %></td>
+    <td><%= dns_record.record_type %></td>
+    <td><%= dns_record.vm_id %></td>
+    <td><%= dns_record.f5_vip_id %></td>
+    <td><%= dns_record.f5_node_id %></td>
+    <td><%= link_to 'Show', dns_record %></td>
+    <td><%= link_to 'Edit', edit_dns_record_path(dns_record) %></td>
+    <td><%= link_to 'Destroy', dns_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dns record', new_dns_record_path %>

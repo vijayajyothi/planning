@@ -1,0 +1,39 @@
+<h1>Listing vdisks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Vm</th>
+    <th>Vcenter</th>
+    <th>Type</th>
+    <th>Persistence</th>
+    <th>Format</th>
+    <th>Datastore</th>
+    <th>Filename</th>
+    <th>Capacitykb</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vdisks.each do |vdisk| %>
+  <tr>
+    <td><%= vdisk.name %></td>
+    <td><%= vdisk.vm_id %></td>
+    <td><%= vdisk.vcenter_id %></td>
+    <td><%= vdisk.type %></td>
+    <td><%= vdisk.persistence %></td>
+    <td><%= vdisk.format %></td>
+    <td><%= vdisk.datastore_id %></td>
+    <td><%= vdisk.filename %></td>
+    <td><%= vdisk.capacitykb %></td>
+    <td><%= link_to 'Show', vdisk %></td>
+    <td><%= link_to 'Edit', edit_vdisk_path(vdisk) %></td>
+    <td><%= link_to 'Destroy', vdisk, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vdisk', new_vdisk_path %>

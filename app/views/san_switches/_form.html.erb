@@ -1,0 +1,77 @@
+<%= form_for(@san_switch) do |f| %>
+  <% if @san_switch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@san_switch.errors.count, "error") %> prohibited this san_switch from being saved:</h2>
+
+      <ul>
+      <% @san_switch.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :vendor %><br />
+    <%= f.text_field :vendor %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :boot_prom %><br />
+    <%= f.text_field :boot_prom %>
+  </div>
+  <div class="field">
+    <%= f.label :fabric_os %><br />
+    <%= f.text_field :fabric_os %>
+  </div>
+  <div class="field">
+    <%= f.label :factory_part_no %><br />
+    <%= f.text_field :factory_part_no %>
+  </div>
+  <div class="field">
+    <%= f.label :kernel %><br />
+    <%= f.text_field :kernel %>
+  </div>
+  <div class="field">
+    <%= f.label :part_no %><br />
+    <%= f.text_field :part_no %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_no %><br />
+    <%= f.text_field :serial_no %>
+  </div>
+  <div class="field">
+    <%= f.label :domain %><br />
+    <%= f.text_field :domain %>
+  </div>
+  <div class="field">
+    <%= f.label :switch_id %><br />
+    <%= f.text_field :switch_id %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :switch_type %><br />
+    <%= f.text_field :switch_type %>
+  </div>
+  <div class="field">
+    <%= f.label :wwn %><br />
+    <%= f.text_field :wwn %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

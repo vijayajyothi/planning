@@ -1,0 +1,43 @@
+<h1>Listing network_switches</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Unique</th>
+    <th>Contact</th>
+    <th>Description</th>
+    <th>Location</th>
+    <th>Ip</th>
+    <th>Vendor</th>
+    <th>Model</th>
+    <th>Version</th>
+    <th>Device type</th>
+    <th>Serial no</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @network_switches.each do |network_switch| %>
+  <tr>
+    <td><%= network_switch.name %></td>
+    <td><%= network_switch.unique_id %></td>
+    <td><%= network_switch.contact %></td>
+    <td><%= network_switch.description %></td>
+    <td><%= network_switch.location %></td>
+    <td><%= network_switch.ip %></td>
+    <td><%= network_switch.vendor %></td>
+    <td><%= network_switch.model %></td>
+    <td><%= network_switch.version %></td>
+    <td><%= network_switch.device_type %></td>
+    <td><%= network_switch.serial_no %></td>
+    <td><%= link_to 'Show', network_switch %></td>
+    <td><%= link_to 'Edit', edit_network_switch_path(network_switch) %></td>
+    <td><%= link_to 'Destroy', network_switch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Network switch', new_network_switch_path %>

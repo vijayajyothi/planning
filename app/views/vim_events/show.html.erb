@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Time stamp:</b>
+  <%= @vim_event.time_stamp %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @vim_event.username %>
+</p>
+
+<p>
+  <b>Event message:</b>
+  <%= @vim_event.event_message %>
+</p>
+
+<p>
+  <b>Event type:</b>
+  <%= @vim_event.event_type %>
+</p>
+
+<p>
+  <b>Event tag:</b>
+  <%= @vim_event.event_tag %>
+</p>
+
+<p>
+  <b>Vcenter:</b>
+  <%= @vim_event.vcenter_id %>
+</p>
+
+<p>
+  <b>Vmhost:</b>
+  <%= @vim_event.vmhost_id %>
+</p>
+
+<p>
+  <b>Vm:</b>
+  <%= @vim_event.vm_id %>
+</p>
+
+<p>
+  <b>Vdc:</b>
+  <%= @vim_event.vdc_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_vim_event_path(@vim_event) %> |
+<%= link_to 'Back', vim_events_path %>

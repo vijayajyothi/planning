@@ -1,0 +1,43 @@
+<h1>Listing storage_processors</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Storage array</th>
+    <th>Assembly name</th>
+    <th>Vendor part no</th>
+    <th>Assy revision</th>
+    <th>Art revision</th>
+    <th>Serial no</th>
+    <th>Cabinet</th>
+    <th>Mem size kb</th>
+    <th>Manufacture year</th>
+    <th>Manufacture date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @storage_processors.each do |storage_processor| %>
+  <tr>
+    <td><%= storage_processor.name %></td>
+    <td><%= storage_processor.storage_array_id %></td>
+    <td><%= storage_processor.assembly_name %></td>
+    <td><%= storage_processor.vendor_part_no %></td>
+    <td><%= storage_processor.assy_revision %></td>
+    <td><%= storage_processor.art_revision %></td>
+    <td><%= storage_processor.serial_no %></td>
+    <td><%= storage_processor.cabinet %></td>
+    <td><%= storage_processor.mem_size_kb %></td>
+    <td><%= storage_processor.manufacture_year %></td>
+    <td><%= storage_processor.manufacture_date %></td>
+    <td><%= link_to 'Show', storage_processor %></td>
+    <td><%= link_to 'Edit', edit_storage_processor_path(storage_processor) %></td>
+    <td><%= link_to 'Destroy', storage_processor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Storage processor', new_storage_processor_path %>

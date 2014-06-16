@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @datastore.name %>
+</p>
+
+<p>
+  <b>Ds:</b>
+  <%= @datastore.ds_id %>
+</p>
+
+<p>
+  <b>Accessible:</b>
+  <%= @datastore.accessible %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @datastore.url %>
+</p>
+
+<p>
+  <b>Capacity:</b>
+  <%= @datastore.capacity %>
+</p>
+
+<p>
+  <b>Freespace:</b>
+  <%= @datastore.freespace %>
+</p>
+
+<p>
+  <b>Vcenter:</b>
+  <%= @datastore.vcenter_id %>
+</p>
+
+<p>
+  <b>Vdc:</b>
+  <%= @datastore.vdc_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_datastore_path(@datastore) %> |
+<%= link_to 'Back', datastores_path %>
