@@ -32,12 +32,12 @@
     </tr>
     <% else %>
     <tr style="cursor:pointer;" id ="complete_tr">
-      <td><%= vm.datacenter %></td>
-      <td><%= vm.connectionstate %></td>
-      <td><%= vm.powerstate %></td>
+      <td><%#= vm.datacenter %></td>
+      <td><%#= vm.connectionstate %></td>
+      <td><%#= vm.powerstate %></td>
       <td><%= vm.ops_status %></td>
-      <td><%= vm.vmname %></td>
-      <td><%= vm.vcserver %></td>
+      <td><%#= vm.vmname %></td>
+      <td><%#= vm.vcserver %></td>
       <td><%= link_to 'Show', vm ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
       <!-- <td><%#= link_to 'Edit', edit_vm_path(vm),:class => 'btn btn-mini btn-warning' %></td> -->
       <td><%= link_to 'Destroy', vm, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td>

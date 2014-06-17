@@ -31,7 +31,7 @@ class Vm < ActiveRecord::Base
 
 def self.import(file)
 	::CSV.foreach(file.path, headers: true) do |row|
-		vm = find_by_ipaddress(row["ipaddress"])
+		vm = find_by_ip(row["ipaddress"])
 		if vm.present?
 			vm.ops_status="Present"
       vm.update_attributes(row.to_hash.slice(*accessible_attributes))

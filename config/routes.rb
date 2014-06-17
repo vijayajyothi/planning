@@ -1,4 +1,7 @@
 Opsgps::Application.routes.draw do
+  resources :vcenters
+
+
   resources :storage_groups
 
 
@@ -120,9 +123,6 @@ Opsgps::Application.routes.draw do
 
 
   resources :applications
-
-
-  resources :vcenters
 
 
   resources :vms

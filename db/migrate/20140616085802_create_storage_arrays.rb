@@ -2,7 +2,7 @@ class CreateStorageArrays < ActiveRecord::Migration
   def change
     create_table :storage_arrays do |t|
       t.string :name
-      t.tring :ip
+      t.string :ip
       t.string :uid
       t.string :model
       t.string :model_type
