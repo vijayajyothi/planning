@@ -1,4 +1,7 @@
 Opsgps::Application.routes.draw do
+  resources :storage_groups
+
+
   resources :vswitches
 
 

@@ -1,0 +1,33 @@
+<%= form_for(@storage_group) do |f| %>
+  <% if @storage_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@storage_group.errors.count, "error") %> prohibited this storage_group from being saved:</h2>
+
+      <ul>
+      <% @storage_group.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :storage_array_id %><br />
+    <%= f.number_field :storage_array_id %>
+  </div>
+  <div class="field">
+    <%= f.label :hhba_id %><br />
+    <%= f.number_field :hhba_id %>
+  </div>
+  <div class="field">
+    <%= f.label :vmhost_id %><br />
+    <%= f.number_field :vmhost_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
