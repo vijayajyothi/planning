@@ -130,7 +130,6 @@ Opsgps::Application.routes.draw do
   resources :vms do 
     collection {
       post :import
-      post :vcenter_data_import
       
      # post :details
    }

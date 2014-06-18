@@ -21,18 +21,11 @@ class VmsController < ApplicationController
   end
 
   def import
-    raise "in import successfully"
-    @vcenter = vcenter_data_import
-    p "hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
     Vm.update_all(:ops_status=>"Deleted")
     Vm.import(params[:file])
     redirect_to root_url, notice: "Clusters imported."
   end
   
-def vcenter_data_import
-  p "i am here"
-  raise "heer in vcenter"
-end 
   def reports
     @datacenters = Vm.all.collect(&:datacenter).uniq
   end
