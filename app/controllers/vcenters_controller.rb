@@ -1,4 +1,6 @@
 class VcentersController < ApplicationController
+  before_filter :authorize 
+  
   # GET /vcenters
   # GET /vcenters.json
   def index

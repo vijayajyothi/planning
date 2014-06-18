@@ -1,7 +1,20 @@
-<h1>Listing vcenters</h1>
+<div class="index-container">
+<div class="col-sm-12">
+  <div class="form-search col-sm-4">
+    <h2>VM Details</h2></div>
+    <div class="form-search col-sm-4" style="margin-top:20px;">
+      <div class="input-append">
 
-<table>
-  <tr>
+        <%= form_tag vms_path, :method => :get do %>
+        <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+        <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <table class="table table-striped tablesorter">
+    <tr>
     <th>Name</th>
     <th>Ip</th>
     <th>Description</th>
@@ -21,7 +34,7 @@
   </tr>
 <% end %>
 </table>
-
+</div>
 <br />
 
 <%= link_to 'New Vcenter', new_vcenter_path %>
