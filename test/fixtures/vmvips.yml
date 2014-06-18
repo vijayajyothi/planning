@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  vm_id: 1
-  f5_vip_id: 1
-
-two:
-  vm_id: 1
-  f5_vip_id: 1
