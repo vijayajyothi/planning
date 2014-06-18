@@ -28,12 +28,12 @@ gem 'jquery-tablesorter'
 gem 'sunspot_rails'
 gem 'progress_bar'
 
+gem 'whenever', :require=>false
 
 gem 'simple_login'
 #gem 'bcrypt-ruby', git: 'git@github.com:hananamar/bcrypt-ruby.git', :require => 'bcrypt'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
-gem "twitter-bootstrap-rails"
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
