@@ -8,6 +8,7 @@ class CreateF5Vips < ActiveRecord::Migration
       t.integer :instance_id
       t.integer :tier_id
       t.integer :f5_cluster_id
+      t.string :ops_status
 
       t.timestamps
     end

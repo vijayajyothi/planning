@@ -9,6 +9,7 @@ class CreateSanPorts < ActiveRecord::Migration
       t.string :status
       t.string :protocol
       t.string :port_type
+      t.string :ops_status
 
       t.timestamps
     end

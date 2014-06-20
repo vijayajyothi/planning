@@ -5,6 +5,7 @@ class CreateVswitches < ActiveRecord::Migration
       t.integer :vcenter_id
       t.integer :vdc_id
       t.integer :vmhost_id
+      t.string :ops_status
 
       t.timestamps
     end

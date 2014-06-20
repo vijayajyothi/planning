@@ -12,6 +12,7 @@ class CreateNetworkSwitches < ActiveRecord::Migration
       t.string :version
       t.string :device_type
       t.string :serial_no
+      t.string :ops_status
 
       t.timestamps
     end

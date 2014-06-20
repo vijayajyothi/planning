@@ -9,6 +9,7 @@ class CreateDatastores < ActiveRecord::Migration
       t.integer :freespace
       t.integer :vcenter_id
       t.integer :vdc_id
+      t.string :ops_status
 
       t.timestamps
     end

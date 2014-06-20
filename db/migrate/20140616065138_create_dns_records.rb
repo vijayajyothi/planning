@@ -7,6 +7,7 @@ class CreateDnsRecords < ActiveRecord::Migration
       t.integer :vm_id
       t.integer :f5_vip_id
       t.integer :f5_node_id
+      t.string :ops_status
 
       t.timestamps
     end

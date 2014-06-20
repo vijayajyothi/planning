@@ -5,6 +5,7 @@ class CreateApplications < ActiveRecord::Migration
       t.string :description
       t.string :notes
       t.string :business_owner
+      t.string :ops_status
 
       t.timestamps
     end

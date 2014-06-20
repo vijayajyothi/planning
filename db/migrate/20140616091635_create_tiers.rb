@@ -5,6 +5,7 @@ class CreateTiers < ActiveRecord::Migration
       t.string :description
       t.integer :application_id
       t.integer :instance_id
+      t.string :ops_status
 
       t.timestamps
     end

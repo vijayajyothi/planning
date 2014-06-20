@@ -7,6 +7,7 @@ class CreateHostLuns < ActiveRecord::Migration
       t.integer :storage_array_id
       t.integer :storage_group_id
       t.integer :hhba_id
+      t.string :ops_status
 
       t.timestamps
     end

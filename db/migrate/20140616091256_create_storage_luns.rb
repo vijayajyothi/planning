@@ -8,6 +8,7 @@ class CreateStorageLuns < ActiveRecord::Migration
       t.integer :capacity_mb
       t.string :raid_type
       t.integer :lun_no
+      t.string :ops_status
 
       t.timestamps
     end

@@ -9,6 +9,7 @@ class CreatePortgroups < ActiveRecord::Migration
       t.integer :vswitch_id
       t.integer :vcenter_id
       t.integer :vdc_id
+      t.string :ops_status
 
       t.timestamps
     end

@@ -4,6 +4,7 @@ class CreateStorageGroupLuns < ActiveRecord::Migration
       t.integer :storage_group_id
       t.integer :storage_lun_id
       t.integer :host_lun
+      t.string :ops_status
 
       t.timestamps
     end

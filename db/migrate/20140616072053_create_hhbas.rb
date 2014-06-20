@@ -9,6 +9,7 @@ class CreateHhbas < ActiveRecord::Migration
       t.string :pci
       t.string :wwnn
       t.string :wwpn
+      t.string :ops_status
 
       t.timestamps
     end

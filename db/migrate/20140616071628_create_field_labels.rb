@@ -14,6 +14,7 @@ class CreateFieldLabels < ActiveRecord::Migration
       t.boolean :table_display
       t.boolean :child_table_display
       t.boolean :main_field
+      t.string :ops_status
 
       t.timestamps
     end

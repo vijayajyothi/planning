@@ -5,6 +5,7 @@ class CreateInstances < ActiveRecord::Migration
       t.string :description
       t.integer :application_id
       t.integer :inst_id
+      t.string :ops_status
 
       t.timestamps
     end

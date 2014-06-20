@@ -4,6 +4,7 @@ class CreateVcenters < ActiveRecord::Migration
       t.string :name
       t.string :ip
       t.string :description
+      t.string :ops_status
 
       t.timestamps
     end

@@ -5,6 +5,7 @@ class CreateVdcs < ActiveRecord::Migration
       t.integer :folder_id
       t.string :description
       t.integer :vcenter_id
+      t.string :ops_status
 
       t.timestamps
     end

@@ -8,6 +8,7 @@ class CreateVnics < ActiveRecord::Migration
       t.string :connect_state
       t.string :macaddress
       t.integer :portgroup_id
+      t.string :ops_status
 
       t.timestamps
     end

@@ -16,6 +16,7 @@ class CreateSanSwitches < ActiveRecord::Migration
       t.string :state
       t.string :switch_type
       t.string :wwn
+      t.string :ops_status
 
       t.timestamps
     end

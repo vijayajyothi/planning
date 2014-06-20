@@ -12,6 +12,7 @@ class CreatePhysicalDisks < ActiveRecord::Migration
       t.string :serial_no
       t.integer :capacity_mb
       t.integer :user_capacity_mb
+      t.string :ops_status
 
       t.timestamps
     end

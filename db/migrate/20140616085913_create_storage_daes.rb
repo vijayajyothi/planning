@@ -9,6 +9,7 @@ class CreateStorageDaes < ActiveRecord::Migration
       t.string :art_revision
       t.string :serial_no
       t.string :manufacture_date
+      t.string :ops_status
 
       t.timestamps
     end

@@ -10,6 +10,7 @@ class CreatePnics < ActiveRecord::Migration
       t.string :vlan
       t.string :observed
       t.integer :vswitch_id
+      t.string :ops_status
 
       t.timestamps
     end

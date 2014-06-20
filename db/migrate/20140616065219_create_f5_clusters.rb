@@ -10,6 +10,7 @@ class CreateF5Clusters < ActiveRecord::Migration
       t.string :network_name_list
       t.string :access_ip
       t.string :name
+      t.string :ops_status
 
       t.timestamps
     end

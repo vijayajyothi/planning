@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140617090359) do
+ActiveRecord::Schema.define(:version => 20140617090352) do
 
   create_table "applications", :force => true do |t|
     t.string   "name"
     t.string   "description"
     t.string   "notes"
     t.string   "business_owner"
+    t.string   "ops_status"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -25,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
   create_table "appresources", :force => true do |t|
     t.integer  "application_id"
     t.integer  "service_id"
+    t.string   "ops_status"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -39,6 +41,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "mem_total_mb"
     t.integer  "cpu_no_cores"
     t.integer  "vcenter_id"
+    t.string   "ops_status"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -52,6 +55,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "freespace"
     t.integer  "vcenter_id"
     t.integer  "vdc_id"
+    t.string   "ops_status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -63,6 +67,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "vm_id"
     t.integer  "f5_vip_id"
     t.integer  "f5_node_id"
+    t.string   "ops_status"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -77,6 +82,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "network_name_list"
     t.string   "access_ip"
     t.string   "name"
+    t.string   "ops_status"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
   end
@@ -87,6 +93,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "f5_pool_id"
     t.integer  "f5_cluster_id"
     t.integer  "vm_id"
+    t.string   "ops_status"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -96,6 +103,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "f5_vip_id"
     t.integer  "f5_cluster_id"
     t.string   "lb_method"
+    t.string   "ops_status"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -108,6 +116,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "instance_id"
     t.integer  "tier_id"
     t.integer  "f5_cluster_id"
+    t.string   "ops_status"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -117,6 +126,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "fabric_id"
     t.string   "fabric_type"
     t.integer  "san_port_id"
+    t.string   "ops_status"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -135,6 +145,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.boolean  "table_display"
     t.boolean  "child_table_display"
     t.boolean  "main_field"
+    t.string   "ops_status"
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
   end
@@ -143,6 +154,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "name"
     t.integer  "parent_id"
     t.string   "description"
+    t.string   "ops_status"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -156,6 +168,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "pci"
     t.string   "wwnn"
     t.string   "wwpn"
+    t.string   "ops_status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -167,6 +180,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "storage_array_id"
     t.integer  "storage_group_id"
     t.integer  "hhba_id"
+    t.string   "ops_status"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -193,6 +207,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "cost_center"
     t.string   "console"
     t.string   "console_ip"
+    t.string   "ops_status"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
@@ -202,6 +217,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "description"
     t.integer  "application_id"
     t.integer  "inst_id"
+    t.string   "ops_status"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -209,6 +225,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
   create_table "lun_disks", :force => true do |t|
     t.string   "storage_lun_id"
     t.string   "physical_disk_id"
+    t.string   "ops_status"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -229,6 +246,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "full_duplex"
     t.string   "unique_id"
     t.string   "if_macaddress"
+    t.string   "ops_status"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
   end
@@ -245,6 +263,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "version"
     t.string   "device_type"
     t.string   "serial_no"
+    t.string   "ops_status"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -287,6 +306,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "owner"
     t.string   "ppm_no"
     t.boolean  "is_cloud"
+    t.string   "ops_status"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
   end
@@ -303,6 +323,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "serial_no"
     t.integer  "capacity_mb"
     t.integer  "user_capacity_mb"
+    t.string   "ops_status"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -317,6 +338,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "vlan"
     t.string   "observed"
     t.integer  "vswitch_id"
+    t.string   "ops_status"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
   end
@@ -330,6 +352,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "vswitch_id"
     t.integer  "vcenter_id"
     t.integer  "vdc_id"
+    t.string   "ops_status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -343,6 +366,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "status"
     t.string   "protocol"
     t.string   "port_type"
+    t.string   "ops_status"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -363,6 +387,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "state"
     t.string   "switch_type"
     t.string   "wwn"
+    t.string   "ops_status"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
@@ -371,6 +396,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "asset_type"
     t.string   "asset_label"
     t.string   "main_field"
+    t.string   "ops_status"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -381,6 +407,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "priority"
     t.string   "notes"
     t.string   "category"
+    t.string   "ops_status"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -396,6 +423,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "revision"
     t.string   "serial_no"
     t.string   "cabinet"
+    t.string   "ops_status"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -409,6 +437,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "art_revision"
     t.string   "serial_no"
     t.string   "manufacture_date"
+    t.string   "ops_status"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -417,6 +446,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "storage_group_id"
     t.integer  "storage_lun_id"
     t.integer  "host_lun"
+    t.string   "ops_status"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -426,6 +456,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "storage_array_id"
     t.integer  "hhba_id"
     t.integer  "vmhost_id"
+    t.string   "ops_status"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -438,6 +469,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "capacity_mb"
     t.string   "raid_type"
     t.integer  "lun_no"
+    t.string   "ops_status"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -454,6 +486,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "mem_size_kb"
     t.integer  "manufacture_year"
     t.string   "manufacture_date"
+    t.string   "ops_status"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -463,6 +496,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "description"
     t.integer  "application_id"
     t.integer  "instance_id"
+    t.string   "ops_status"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -481,6 +515,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "name"
     t.string   "ip"
     t.string   "description"
+    t.string   "ops_status"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -490,6 +525,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "folder_id"
     t.string   "description"
     t.integer  "vcenter_id"
+    t.string   "ops_status"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -504,6 +540,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "datastore_id"
     t.string   "filename"
     t.integer  "capacitykb"
+    t.string   "ops_status"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
@@ -518,6 +555,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "vmhost_id"
     t.integer  "vm_id"
     t.integer  "vdc_id"
+    t.string   "ops_status"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -547,6 +585,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "num_core"
     t.string   "serial_no"
     t.string   "bios_version"
+    t.string   "ops_status"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -597,6 +636,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
   create_table "vmvips", :force => true do |t|
     t.integer  "vm_id"
     t.integer  "f5_vip_id"
+    t.string   "ops_status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -609,6 +649,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.string   "connect_state"
     t.string   "macaddress"
     t.integer  "portgroup_id"
+    t.string   "ops_status"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -618,6 +659,7 @@ ActiveRecord::Schema.define(:version => 20140617090359) do
     t.integer  "vcenter_id"
     t.integer  "vdc_id"
     t.integer  "vmhost_id"
+    t.string   "ops_status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

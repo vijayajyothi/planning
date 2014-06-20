@@ -5,6 +5,7 @@ class CreateStorageGroups < ActiveRecord::Migration
       t.integer :storage_array_id
       t.integer :hhba_id
       t.integer :vmhost_id
+      t.string :ops_status
 
       t.timestamps
     end

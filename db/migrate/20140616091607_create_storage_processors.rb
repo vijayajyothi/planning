@@ -12,6 +12,7 @@ class CreateStorageProcessors < ActiveRecord::Migration
       t.integer :mem_size_kb
       t.integer :manufacture_year
       t.string :manufacture_date
+      t.string :ops_status
 
       t.timestamps
     end

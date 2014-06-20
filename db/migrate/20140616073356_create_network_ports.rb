@@ -16,6 +16,7 @@ class CreateNetworkPorts < ActiveRecord::Migration
       t.string :full_duplex
       t.string :unique_id
       t.string :if_macaddress
+      t.string :ops_status
 
       t.timestamps
     end

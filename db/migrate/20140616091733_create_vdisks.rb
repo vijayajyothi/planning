@@ -10,6 +10,7 @@ class CreateVdisks < ActiveRecord::Migration
       t.integer :datastore_id
       t.string :filename
       t.integer :capacitykb
+      t.string :ops_status
 
       t.timestamps
     end

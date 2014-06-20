@@ -6,6 +6,7 @@ class CreateServices < ActiveRecord::Migration
       t.integer :priority
       t.string :notes
       t.string :category
+      t.string :ops_status
 
       t.timestamps
     end

@@ -25,6 +25,7 @@ class CreateVmhosts < ActiveRecord::Migration
       t.integer :num_core
       t.string :serial_no
       t.string :bios_version
+      t.string :ops_status
 
       t.timestamps
     end

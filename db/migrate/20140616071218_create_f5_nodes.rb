@@ -6,6 +6,7 @@ class CreateF5Nodes < ActiveRecord::Migration
       t.integer :f5_pool_id
       t.integer :f5_cluster_id
       t.integer :vm_id
+      t.string :ops_status
 
       t.timestamps
     end

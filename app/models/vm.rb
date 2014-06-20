@@ -40,7 +40,16 @@ class << self
 
   def vcenter_data_import
      CSV.foreach("csv_data/powercli/vcenters.csv", :headers => true) do |row|
-       Vcenter.create!(row.to_hash)
+      vcenter = Vcenter.find_by_name(row["name"])
+      if vcenter.present?
+        vcenter.ops_status = "Present"
+        vcenter.update_attributes(row.to_hash.slice(*accessible_attributes))
+      else
+        vcenter = Vcenter.new
+        vcenter.ops_status = "New"
+        vcenter.attributes = row.to_hash.slice(*accessible_attributes)
+      end
+       Vcenter.save!
     end
   end
 

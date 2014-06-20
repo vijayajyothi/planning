@@ -11,6 +11,7 @@ class CreateStorageArrays < ActiveRecord::Migration
       t.string :revision
       t.string :serial_no
       t.string :cabinet
+      t.string :ops_status
 
       t.timestamps
     end

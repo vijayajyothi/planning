@@ -22,6 +22,7 @@ class CreateHwDevices < ActiveRecord::Migration
       t.string :cost_center
       t.string :console
       t.string :console_ip
+      t.string :ops_status
 
       t.timestamps
     end

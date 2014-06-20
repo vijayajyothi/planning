@@ -10,6 +10,7 @@ class CreateClusters < ActiveRecord::Migration
       t.integer :mem_total_mb
       t.integer :cpu_no_cores
       t.integer :vcenter_id
+      t.string :ops_status
 
       t.timestamps
     end

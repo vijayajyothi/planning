@@ -10,6 +10,7 @@ class CreateVimEvents < ActiveRecord::Migration
       t.integer :vmhost_id
       t.integer :vm_id
       t.integer :vdc_id
+      t.string :ops_status
 
       t.timestamps
     end

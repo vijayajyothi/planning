@@ -38,6 +38,7 @@ class CreateNewVms < ActiveRecord::Migration
       t.string :owner
       t.string :ppm_no
       t.boolean :is_cloud
+      t.string :ops_status
 
       t.timestamps
     end
