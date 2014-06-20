@@ -36,8 +36,10 @@ end
 class << self
   def importing_data
     vcenter_data = vcenter_data_import
-    p "vcenter data updated"
+    p "vcenter data uploaded"
     data_center_data = data_center_data_import
+    cluster_data = cluster_import
+    p "vdc data uploaded"
   end
 # vcenter data
 def vcenter_data_import
@@ -72,22 +74,51 @@ end
       end
       vdc.name = row["datacenter"]
       vdc.vcenter_id = vcenter.id
-      p vdc
       vdc.save
     end
   end 
 
-  def import(file)
-   ::CSV.foreach(file.path, headers: true) do |row|
-    vm = find_by_ip(row["ipaddress"])
-    if vm.present?
-     vm.ops_status="Present"
-     vm.update_attributes(row.to_hash.slice(*accessible_attributes))
-   else
-    vm = new
-    vm.ops_status="New"
-    vm.attributes = row.to_hash.slice(*accessible_attributes)
+# Cluster date
+def cluster_import
+  CSV.foreach("csv_data/powercli/cluster.csv", :headers => true) do |row|
+
+    vcenter = Vcenter.find_by_name(row["vcserver"])
+    p vcenter.id
+    vdc = Vdc.find_by_vcenter_id(vcenter.id)
+    p vdc
+    p "tikll vdc"
+    cluster = Cluster.find_by_name(row["cluster"])
+    if cluster.present?
+      cluster.ops_status = "Present"
+      cluster.update_attributes(row.to_hash.slice(*accessible_attributes))
+    else
+      cluster = Cluster.new
+      cluster.ops_status = "New"
+      cluster.attributes = row.to_hash.slice(*accessible_attributes)
+    end
+    cluster.name = row["cluster"]
+    cluster.vdc_id = vdc.id
+    cluster.cpu_total_mhz = row["totalcpu"]
+    cluster.mem_total_mb = row["totalmemory"]
+    cluster.cpu_no_cores = row["numcpucores"]
+    cluster.vcenter_id = vcenter.id
+    p "here"
+    p cluster
+    cluster.save!
   end
+end 
+
+def import(file)
+ ::CSV.foreach(file.path, headers: true) do |row|
+  vm = find_by_ip(row["ipaddress"])
+  if vm.present?
+   vm.ops_status="Present"
+   vm.update_attributes(row.to_hash.slice(*accessible_attributes))
+ else
+  vm = new
+  vm.ops_status="New"
+  vm.attributes = row.to_hash.slice(*accessible_attributes)
+end
       # vm = find_by_id(row["id"]) || new
       # vm.attributes = row.to_hash.slice(*accessible_attributes)
       vm.save!

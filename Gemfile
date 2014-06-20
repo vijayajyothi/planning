@@ -29,7 +29,7 @@ gem 'sunspot_rails'
 gem 'progress_bar'
 
 gem 'whenever', :require=>false
-
+gem 'activerecord-reset-pk-sequence'
 gem 'simple_login'
 #gem 'bcrypt-ruby', git: 'git@github.com:hananamar/bcrypt-ruby.git', :require => 'bcrypt'
 

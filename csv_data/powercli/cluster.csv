@@ -1,0 +1,5 @@
+"timestamp","vcserver","cluster","totalcpu","totalmemory","numcpucores"
+"2011-11-21 02:03:35","wdc-srm-vc-2.vmware.com","wdc-mail-dr1","175980","515333140480","60"
+"2011-11-21 02:03:38","vmview-vc-1.vmware.com","View-vmg2","844416","2198986850304","384"
+
+
