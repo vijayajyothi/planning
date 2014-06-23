@@ -39,7 +39,9 @@ class << self
     p "vcenter data uploaded"
     data_center_data = data_center_data_import
     cluster_data = cluster_import
-    p "vdc data uploaded"
+    p "vdc data uploaded" 
+    esx_data = esx_data_import
+    p "ESX Host data (vmhost)) uploaded"
   end
 # vcenter data
 def vcenter_data_import
@@ -78,7 +80,7 @@ end
     end
   end 
 
-# Cluster date
+# Cluster data
 def cluster_import
   CSV.foreach("csv_data/powercli/cluster.csv", :headers => true) do |row|
 
@@ -107,6 +109,9 @@ def cluster_import
     cluster.save!
   end
 end 
+
+def esx_data_import
+  end
 
 def import(file)
  ::CSV.foreach(file.path, headers: true) do |row|

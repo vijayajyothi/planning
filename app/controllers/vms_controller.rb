@@ -1,6 +1,6 @@
 class VmsController < ApplicationController
   layout "vm_details", only:[:show]
-  before_filter :authorize 
+  before_filter :authorize  
 
   # GET /vms
   # GET /vms.json

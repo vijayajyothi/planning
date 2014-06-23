@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  # skip_before_filter :authorize, only: :login
   def new
     render :layout=> false
   end

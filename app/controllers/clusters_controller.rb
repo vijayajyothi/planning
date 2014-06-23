@@ -1,4 +1,5 @@
 class ClustersController < ApplicationController
+  before_filter :authorize
   # GET /clusters
   # GET /clusters.json
   def index
