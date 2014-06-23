@@ -1,4 +1,5 @@
 class VmhostsController < ApplicationController
+  before_filter :authorize
   # GET /vmhosts
   # GET /vmhosts.json
   def index

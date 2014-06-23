@@ -42,6 +42,8 @@ class << self
     p "vdc data uploaded" 
     esx_data = esx_data_import
     p "ESX Host data (vmhost)) uploaded"
+esx_pnics_data = esx_pnics_data_import
+p "ESX Host data (vmhost)) uploaded"
 end
 # vcenter data
 def vcenter_data_import
@@ -111,39 +113,60 @@ def cluster_import
 end 
 
 def esx_data_import
-   CSV.foreach("csv_data/powercli/esx_host.csv", :headers => true) do |row|
+ CSV.foreach("csv_data/powercli/esx_host.csv", :headers => true) do |row|
 
-      vcenter = Vcenter.find_by_name(row["vcserver"])
-      cluster = Cluster.find_by_name(row["cluster"])
-      esx_host = Vmhost.find_by_name(row["vmhost"])
-      if esx_host.present?
-        esx_host.ops_status = "Present"
-        esx_host.update_attributes(row.to_hash.slice(*accessible_attributes))
-      else
-        esx_host = Vmhost.new
-        esx_host.ops_status = "New"
-        esx_host.attributes = row.to_hash.slice(*accessible_attributes)
-      end
-      esx_host.vcenter_id = vcenter.id
-      esx_host.cluster_id = cluster.id
-      esx_host.name = row["vmhost"]
-      esx_host.uuid = row["uuid"]
-      esx_host.connection_state = row["connectionstate"]
-      esx_host.power_state = row["powerstate"]
-      esx_host.vendor = row["vendor"]
-      esx_host.model = row["model"]
-      esx_host.mem_total_mb = row["memorysize"]
-      esx_host.cpu_model = row["cpumodel"]
-      esx_host.cpu_total_mhz = row["cpuhz"]
-      esx_host.num_cpu = row["numcpupackages"]
-      esx_host.num_core = row["numcpucores"]
-      esx_host.esx_product = row["esxproductname"]
-      esx_host.esx_version = row["esxversion"]
-      esx_host.esx_build = row["esxbuild"]
-      esx_host.serial_no = row["serialnumber"]
-      esx_host.bios_version = row["biosversion"]
-      esx_host.save
+  vcenter = Vcenter.find_by_name(row["vcserver"])
+  cluster = Cluster.find_by_name(row["cluster"])
+  esx_host = Vmhost.find_by_name(row["vmhost"])
+  if esx_host.present?
+    esx_host.ops_status = "Present"
+    esx_host.update_attributes(row.to_hash.slice(*accessible_attributes))
+  else
+    esx_host = Vmhost.new
+    esx_host.ops_status = "New"
+    esx_host.attributes = row.to_hash.slice(*accessible_attributes)
+  end
+  esx_host.vcenter_id = vcenter.id
+  esx_host.cluster_id = cluster.id
+  esx_host.name = row["vmhost"]
+  esx_host.uuid = row["uuid"]
+  esx_host.connection_state = row["connectionstate"]
+  esx_host.power_state = row["powerstate"]
+  esx_host.vendor = row["vendor"]
+  esx_host.model = row["model"]
+  esx_host.mem_total_mb = row["memorysize"]
+  esx_host.cpu_model = row["cpumodel"]
+  esx_host.cpu_total_mhz = row["cpuhz"]
+  esx_host.num_cpu = row["numcpupackages"]
+  esx_host.num_core = row["numcpucores"]
+  esx_host.esx_product = row["esxproductname"]
+  esx_host.esx_version = row["esxversion"]
+  esx_host.esx_build = row["esxbuild"]
+  esx_host.serial_no = row["serialnumber"]
+  esx_host.bios_version = row["biosversion"]
+  esx_host.save
+end
+end
+def esx_pnics_data_import
+  CSV.foreach("csv_data/powercli/pnics.csv", :headers => true) do |row|
+
+    vmhost = Vmhost.find_by_name(row["vmhost"])
+    pnic = Pnic.find_by_macaddress(row["macaddress"])
+    if pnic.present?
+      pnic.ops_status = "Present"
+      pnic.update_attributes(row.to_hash.slice(*accessible_attributes))
+    else
+      pnic = Pnic.new
+      pnic.ops_status = "New"
+      pnic.attributes = row.to_hash.slice(*accessible_attributes)
     end
+    pnic.vmhost_id = vmhost.id
+    pnic.name = row["pnic"]
+    pnic.speed = row["speed"]
+    pnic.macaddress = row["macaddress"]
+    pnic.observed = row["observed"]
+    pnic.save
+  end
 end
 
 def import(file)
