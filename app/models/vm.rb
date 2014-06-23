@@ -42,7 +42,7 @@ class << self
     p "vdc data uploaded" 
     esx_data = esx_data_import
     p "ESX Host data (vmhost)) uploaded"
-  end
+end
 # vcenter data
 def vcenter_data_import
   CSV.foreach("csv_data/powercli/vcenters.csv", :headers => true) do |row|
@@ -88,7 +88,7 @@ def cluster_import
     p vcenter.id
     vdc = Vdc.find_by_vcenter_id(vcenter.id)
     p vdc
-    p "tikll vdc"
+    p "till vdc"
     cluster = Cluster.find_by_name(row["cluster"])
     if cluster.present?
       cluster.ops_status = "Present"
@@ -111,7 +111,40 @@ def cluster_import
 end 
 
 def esx_data_import
-  end
+   CSV.foreach("csv_data/powercli/esx_host.csv", :headers => true) do |row|
+
+      vcenter = Vcenter.find_by_name(row["vcserver"])
+      cluster = Cluster.find_by_name(row["cluster"])
+      esx_host = Vmhost.find_by_name(row["vmhost"])
+      if esx_host.present?
+        esx_host.ops_status = "Present"
+        esx_host.update_attributes(row.to_hash.slice(*accessible_attributes))
+      else
+        esx_host = Vmhost.new
+        esx_host.ops_status = "New"
+        esx_host.attributes = row.to_hash.slice(*accessible_attributes)
+      end
+      esx_host.vcenter_id = vcenter.id
+      esx_host.cluster_id = cluster.id
+      esx_host.name = row["vmhost"]
+      esx_host.uuid = row["uuid"]
+      esx_host.connection_state = row["connectionstate"]
+      esx_host.power_state = row["powerstate"]
+      esx_host.vendor = row["vendor"]
+      esx_host.model = row["model"]
+      esx_host.mem_total_mb = row["memorysize"]
+      esx_host.cpu_model = row["cpumodel"]
+      esx_host.cpu_total_mhz = row["cpuhz"]
+      esx_host.num_cpu = row["numcpupackages"]
+      esx_host.num_core = row["numcpucores"]
+      esx_host.esx_product = row["esxproductname"]
+      esx_host.esx_version = row["esxversion"]
+      esx_host.esx_build = row["esxbuild"]
+      esx_host.serial_no = row["serialnumber"]
+      esx_host.bios_version = row["biosversion"]
+      esx_host.save
+    end
+end
 
 def import(file)
  ::CSV.foreach(file.path, headers: true) do |row|
