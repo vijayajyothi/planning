@@ -1,0 +1,22 @@
+"timestamp","vmhost","hba","status","model","driver","pci","wwnn","wwpn"
+"2011-11-21 02:33:29","sc9-vf-cat1-01.vmware.com","vmhba0","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.0","50014380120bf9a1","50014380120bf9a0"
+"2011-11-21 02:33:29","sc9-vf-cat1-01.vmware.com","vmhba1","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.1","50014380120bf9a3","50014380120bf9a2"
+"2011-11-21 02:33:29","sc9-vf-cat1-01.vmware.com","vmhba2","unknown","ICH10 4 port SATA IDE Controller","ata_piix","00:1f.2",,
+"2011-11-21 02:33:29","sc9-vf-cat1-01.vmware.com","vmhba32","unknown","ICH10 4 port SATA IDE Controller","ata_piix","00:1f.2",,
+"2011-11-21 02:33:29","sc9-vf-cat1-02.vmware.com","vmhba0","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.0","50014380120c1bf9","50014380120c1bf8"
+"2011-11-21 02:33:29","sc9-vf-cat1-02.vmware.com","vmhba1","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.1","50014380120c1bfb","50014380120c1bfa"
+"2011-11-21 02:33:29","sc9-vf-cat1-02.vmware.com","vmhba2","unknown","ICH10 4 port SATA IDE Controller","ata_piix","00:1f.2",,
+"2011-11-21 02:33:29","sc9-vf-cat1-02.vmware.com","vmhba32","unknown","ICH10 4 port SATA IDE Controller","ata_piix","00:1f.2",,
+"2011-11-21 02:33:29","sc9-vf-dev1-01.vmware.com","vmhba0","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.0","50014380120c1c09","50014380120c1c08"
+"2011-11-21 02:33:29","sc9-vf-dev1-01.vmware.com","vmhba1","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.1","50014380120c1c0b","50014380120c1c0a"
+"2011-11-21 02:33:29","sc9-vf-dev1-01.vmware.com","vmhba2","unknown","ICH10 4 port SATA IDE Controller","ata_piix","00:1f.2",,
+"2011-11-21 02:33:29","sc9-vf-dev1-01.vmware.com","vmhba32","unknown","ICH10 4 port SATA IDE Controller","ata_piix","00:1f.2",,
+"2011-11-21 02:33:29","sc9-vf-dev1-02.vmware.com","vmhba0","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.0","50014380120c1bf5","50014380120c1bf4"
+"2011-11-21 02:33:29","sc9-vf-dev1-02.vmware.com","vmhba1","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.1","50014380120c1bf7","50014380120c1bf6"
+"2011-11-21 02:33:29","sc9-vf-dev1-02.vmware.com","vmhba2","unknown","ICH10 4 port SATA IDE Controller","ata_piix","00:1f.2",,
+"2011-11-21 02:33:29","sc9-vf-dev1-02.vmware.com","vmhba32","unknown","ICH10 4 port SATA IDE Controller","ata_piix","00:1f.2",,
+"2011-11-21 02:33:29","sc9-vf-dev1-03.vmware.com","vmhba0","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.0","50014380140fb0c5","50014380140fb0c4"
+"2011-11-21 02:33:29","sc9-vf-dev1-03.vmware.com","vmhba1","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.1","50014380140fb0c7","50014380140fb0c6"
+"2011-11-21 02:33:29","sc9-vf-dev1-03.vmware.com","vmhba2","unknown","ICH10 4 port SATA IDE Controller","ata_piix","00:1f.2",,
+"2011-11-21 02:33:29","sc9-vf-dev1-03.vmware.com","vmhba32","unknown","ICH10 4 port SATA IDE Controller","ata_piix","00:1f.2",,
+"2011-11-21 02:33:29","sc9-vf-dev1-04.vmware.com","vmhba0","online","ISP2532-based 8Gb Fibre Channel to PCI Express HBA","qla2xxx","06:00.0","50014380140fbec5","50014380140fbec4"

@@ -43,7 +43,9 @@ class << self
     esx_data = esx_data_import
     p "ESX Host data (vmhost)) uploaded"
 esx_pnics_data = esx_pnics_data_import
-p "ESX Host data (vmhost)) uploaded"
+p "ESX Host data uploaded"
+host_hbas_data = host_hbas_data_import
+p "Host hbas data uploaded"
 end
 # vcenter data
 def vcenter_data_import
@@ -168,6 +170,31 @@ def esx_pnics_data_import
     pnic.save
   end
 end
+
+def host_hbas_data
+  CSV.foreach("csv_data/powercli/hhbas.csv", :headers => true) do |row|
+    vmhost = Vmhost.find_by_name(row["vmhost"])
+    hbas = Hhba.where(:vmhost_id=>vmhost.id, :name=>row["hba"])
+    if hbas.present?
+      hbas.ops_status = "Present"
+      hbas.update_attributes(row.to_hash.slice(*accessible_attributes))
+    else
+      hbas = Hhba.new
+      hbas.ops_status = "New"
+      hbas.attributes = row.to_hash.slice(*accessible_attributes)
+    end
+    hbas.name = row["hba"]
+    hbas.vmhost_id = vmhost.id
+    hbas.status = row["status"]
+    hbas.model = row["model"]
+    hbas.driver = row["driver"]
+    hbas.pci = row["pci"]
+    hbas.wwnn = row["wwnn"]
+    hbas.wwpn = row["wwpn"]
+
+    hbas.save
+  end
+  end
 
 def import(file)
  ::CSV.foreach(file.path, headers: true) do |row|
