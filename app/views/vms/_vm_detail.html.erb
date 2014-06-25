@@ -3,35 +3,35 @@
 
     <div class="span6">
       <div class="workflow-blocks">
-        <div class="workflow-heading"><span>Basic Data</span><p>Power : <%= @vm.powerstate %></p></div>
+        <div class="workflow-heading"><span>Basic Data</span><p>Power : <%= @vm.power_state %></p></div>
 
         <table class="table table-hover">
           <tbody>
             <tr>
               <td><b>VM Name</b></td>
-              <td><%= @vm.vmname %></td>
+              <td><%= @vm.name %></td>
             </tr>
             <tr>
               <td><b>IP Address</b></td>
-              <td><%= @vm.ipaddress %></td>
+              <td><%= @vm.ip %></td>
             </tr>
             <tr>
               <td><b>Data Center</b></td>
-              <td><%= @vm.datacenter %></td>
+              <td><%#= @vm.datacenter %></td>
             </tr>  
 
             <tr>
               <td><b>VM Host Name</b></td>
-              <td><%= @vm.hostname %></td>
+              <td><%#= @vm.hostname %></td>
             </tr>  
 
             <tr>
               <td><b>ESX Host</b></td>
-              <td><%= @vm.vmhost %></td>
+              <td><%#= @vm.vmhost %></td>
             </tr>   
             <tr>
               <td><b>Num Of CPUs</b></td>
-              <td><%= @vm.numcpu %></td>
+              <td><%#= @vm.numcpu %></td>
             </tr>   
             
          <!-- <tr>
@@ -51,27 +51,27 @@
           <tbody>
            <tr>
             <td><b>Created By</b></td>
-            <td><%= @vm.createdby %></td>
+            <td><%#= @vm.createdby %></td>
           </tr> 
           <tr>
             <td><b>Created Time</b></td>
-            <td><%= @vm.createdtime %></td>
+            <td><%#= @vm.createdtime %></td>
           </tr> 
           <tr>
             <td><b>Suspend Interval</b></td>
-            <td><%= @vm.suspendinterval %></td>
+            <td><%#= @vm.suspendinterval %></td>
           </tr> 
           <tr>
             <td><b>Suspend Time</b></td>
-            <td><%= @vm.suspendtime %></td>
+            <td><%#= @vm.suspendtime %></td>
           </tr> 
           <tr>
             <td><b>Boot Time</b></td>
-            <td><%= @vm.boottime %></td>
+            <td><%#= @vm.boottime %></td>
           </tr> 
           <tr>
             <td><b>Createdby:</b></td>
-            <td><%= @vm.createdby %></td>
+            <td><%#= @vm.createdby %></td>
           </tr>
 
 
@@ -87,11 +87,11 @@
           <tbody>
             <tr>
               <td><b>Power State</b></td>
-              <td><%= @vm.powerstate %></td>
+              <td><%= @vm.power_state %></td>
             </tr>  
             <tr>
               <td><b>Connection State</b></td>
-              <td><%= @vm.connectionstate %></td>
+              <td><%= @vm.connection_state %></td>
             </tr> 
             <tr>
               <td><b>Version</b></td>
@@ -99,23 +99,23 @@
             </tr> 
             <tr>
               <td><b>Guest State</b></td>
-              <td><%= @vm.gueststate %></td>
+              <td><%#= @vm.guest_state %></td>
             </tr> 
             <tr>
               <td><b>Memory(MB)</b></td>
-              <td><%= @vm.memorymb %></td>
+              <td><%#= @vm.memorymb %></td>
             </tr> 
             <tr>
               <td><b>Provisioned Space(GB)</b></td>
-              <td><%= @vm.provisionedspacegb %></td>
+              <td><%#= @vm.provisionedspacegb %></td>
             </tr> 
             <tr>
               <td><b>Used Space(GB)</b></td>
-              <td><%= @vm.usedspacegb %></td>
+              <td><%#= @vm.usedspacegb %></td>
             </tr> 
             <tr>
               <td><b>Status</b></td>
-              <td><%= @vm.gueststate %></td>
+              <td><%#= @vm.gueststate %></td>
             </tr> 
           </tbody></table>
         </div>
@@ -128,27 +128,27 @@
             <tbody>
              <tr>
               <td><b>Cluster</b></td>
-              <td><%= @vm.cluster %></td>
+              <td><%#= @vm.cluster %></td>
             </tr>   
             <tr>
               <td><b>VC Server</b></td>
-              <td><%= @vm.vcserver %></td>
+              <td><%#= @vm.vcserver %></td>
             </tr>   
             <tr>
               <td><b>Resource Pool</b></td>
-              <td><%= @vm.reourcepool %></td>
+              <td><%#= @vm.reourcepool %></td>
             </tr>    
             <tr>
               <td><b>Folder</b></td>
-              <td><%= @vm.folder %></td>
+              <td><%#= @vm.folder %></td>
             </tr> 
             <tr>
               <td><b>Application</b></td>
-              <td><%= @vm.application %></td>
+              <td><%#= @vm.application %></td>
             </tr>   
             <tr>
               <td><b>Num of vNICs</b></td>
-              <td><%= @vm.qtynics %></td>
+              <td><%#= @vm.qtynics %></td>
             </tr>   
 
           </tbody></table>

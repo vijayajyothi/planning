@@ -42,11 +42,15 @@ class << self
     p "vdc data uploaded" 
     esx_data = esx_data_import
     p "ESX Host data (vmhost)) uploaded"
-esx_pnics_data = esx_pnics_data_import
-p "ESX Host data uploaded"
-host_hbas_data = host_hbas_data_import
-p "Host hbas data uploaded"
-end
+    esx_pnics_data = esx_pnics_data_import
+    p "ESX Host data uploaded"
+    host_hbas_data = host_hbas_data_import
+    p "Host hbas data uploaded"
+    port_grup_data = port_group_data_import
+    p "Host hbas data uploaded"
+    data_store_data = data_store_data_import
+    p "Data store data uploaded"
+  end
 # vcenter data
 def vcenter_data_import
   CSV.foreach("csv_data/powercli/vcenters.csv", :headers => true) do |row|
@@ -171,7 +175,7 @@ def esx_pnics_data_import
   end
 end
 
-def host_hbas_data
+def host_hbas_data_import
   CSV.foreach("csv_data/powercli/hhbas.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
     hbas = Hhba.where(:vmhost_id=>vmhost.id, :name=>row["hba"]).first
@@ -196,7 +200,7 @@ def host_hbas_data
   end
 end
 
-def port_group_data
+def port_group_data_import
   CSV.foreach("csv_data/powercli/port_group.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
     pnic = Pnic.find_by_name(row["nic"])
@@ -247,6 +251,48 @@ def data_store_data_import
     data_store.save
   end
 end
+
+
+def vm_data_import
+  CSV.foreach("csv_data/powercli/vm.csv", :headers => true) do |row|
+    vcenter = Vcenter.find_by_name(row["vcserver"])
+
+    vdc = Vdc.find_by_name(row["data"])
+
+    vm = Vm.find_by_id(row["ipaddress"])
+    if vm.present?
+      vm.ops_status = "Present"
+      vm.update_attributes(row.to_hash.slice(*accessible_attributes))
+    else
+      vm = Vm.new
+      vm.ops_status = "New"
+      vm.attributes = row.to_hash.slice(*accessible_attributes)
+    end
+    vm.name = row["vmname"]
+    vm.resource_pool = row["resourcepool"]
+    # vm.status = row["id"]
+    vm.vm_hostname = row["hostname"]
+    vm.ip = row["ipaddress"]
+    vm.total_mem_mb = row["memorymb"]
+    vm.num_cpus = row["numcpu"]
+    vm.power_state = row["powerstate"]
+    vm.connection_state = row["connectionstate"]
+    vm.os = row["guestfullname"]
+    vm.tools_version = row["toolsversion"]
+    vm.tools_status = row["toolstatus"]
+    vm.created_time = row["createdtime"]
+    vm.created_by = row["createdby"]
+    vm.vcenter_id = vcenter.id
+    vm.vdc_id = vdc.id
+    vm.persistent_id = row["persistentid"]
+    vm.vm_id = row["id"]
+    vm.version = row["version"]
+    vm.last_suspend = row["suspendtime"]
+    vm.last_suspend_interval = row["suspendinterval"]
+
+    vm.save
+  end
+  end
 
 def import(file)
  ::CSV.foreach(file.path, headers: true) do |row|
