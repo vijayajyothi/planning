@@ -4,23 +4,21 @@ class VcentersController < ApplicationController
   # GET /vcenters
   # GET /vcenters.json
   def index
-    @vcenters = Vcenter.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @vcenters }
+    @search = Vcenter.search do
+      fulltext params[:search]
+      paginate  :page => params[:page], :per_page=>15
     end
+    @vcenters = @search.results
+    @vcenters = Vcenter.paginate(:page => params[:page], :per_page => 30)
+
   end
 
   # GET /vcenters/1
   # GET /vcenters/1.json
   def show
     @vcenter = Vcenter.find(params[:id])
+    @vcenters = Vcenter.where('ops_status != ?', "Deleted" )
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @vcenter }
-    end
   end
 
   # GET /vcenters/new
@@ -81,5 +79,10 @@ class VcentersController < ApplicationController
       format.html { redirect_to vcenters_url }
       format.json { head :no_content }
     end
+  end
+
+   def selected_vcenter
+    @vcenter = Vcenter.find(params[:id])
+    @vcenters = Vcenter.where('ops_status != ?', "Deleted" )
   end
 end

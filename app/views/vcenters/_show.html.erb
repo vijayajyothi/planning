@@ -1,0 +1,22 @@
+<!-- <div class="container"> -->
+
+  <section>
+   <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="well sidebar-nav" style="margin-right:20px;">
+          <ul class="nav nav-list">
+            <li class="nav-header">Vcenters</li>
+            <% @vcenters.each do |each_vcenter|%>
+            <li><%= link_to  each_vcenter.name, selected_vcenter_path(each_vcenter), :remote=> true%></a>
+            </li>
+            <% end %>
+          </ul>
+        </div><!--/.well -->
+      </div><!--/span-->
+      <div class="dashboard">
+        <%= render :partial=> "vcenter_detail" %>
+      </div><!--/dashboard-->
+    </div><!--/row-->
+  </section>
+<!-- </div>< --><!--/container-->

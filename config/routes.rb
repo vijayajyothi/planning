@@ -154,6 +154,9 @@ get "home/index"
 
 get "/vms" => "vms#index", :as => :vms
 get "/selected_vm/:id" => "vms#selected_vm", :as => :selected_vm
+
+get "/vcenters" => "vcenters#index", :as => :vcenters
+get "/selected_vcenter/:id" => "vcenters#selected_vcenter", :as => :selected_vcenter
 #signup_path
 #login_path
 #logout_path

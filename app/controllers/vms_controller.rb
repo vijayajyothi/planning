@@ -110,7 +110,5 @@ class VmsController < ApplicationController
   def selected_vm
     @vm = Vm.find(params[:id])
     @vms = Vm.where('ops_status != ?', "Deleted" )
-
-    
   end
 end

@@ -38,19 +38,22 @@ class << self
     vcenter_data = vcenter_data_import
     p "vcenter data uploaded"
     data_center_data = data_center_data_import
+    p "data center data uploaded"
     cluster_data = cluster_import
     p "vdc data uploaded" 
     esx_data = esx_data_import
     p "ESX Host data (vmhost)) uploaded"
-    esx_pnics_data = esx_pnics_data_import
-    p "ESX Host data uploaded"
-    host_hbas_data = host_hbas_data_import
-    p "Host hbas data uploaded"
-    port_grup_data = port_group_data_import
-    p "Host hbas data uploaded"
-    data_store_data = data_store_data_import
-    p "Data store data uploaded"
-  end
+esx_pnics_data = esx_pnics_data_import
+p "ESX Host data uploaded"
+host_hbas_data = host_hbas_data_import
+p "Host hbas data uploaded"
+port_grup_data = port_group_data_import
+p "Host hbas data uploaded"
+data_store_data = data_store_data_import
+p "Data store data uploaded"
+vm_data = vm_data_import
+p "Vm  uploaded"
+end
 # vcenter data
 def vcenter_data_import
   CSV.foreach("csv_data/powercli/vcenters.csv", :headers => true) do |row|
@@ -292,7 +295,7 @@ def vm_data_import
 
     vm.save
   end
-  end
+end
 
 def import(file)
  ::CSV.foreach(file.path, headers: true) do |row|
