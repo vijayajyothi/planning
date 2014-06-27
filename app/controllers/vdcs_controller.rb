@@ -2,12 +2,14 @@ class VdcsController < ApplicationController
   # GET /vdcs
   # GET /vdcs.json
   def index
-    @vdcs = Vdc.all
+    # @search = Vdc.search do
+    #   fulltext params[:search]
+    #   paginate  :page => params[:page], :per_page=>15
+    # end
+    # @vdcs = @search.results
+    @vdcs = Vdc.paginate(:page => params[:page], :per_page => 30)
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @vdcs }
-    end
+   
   end
 
   # GET /vdcs/1
@@ -15,10 +17,7 @@ class VdcsController < ApplicationController
   def show
     @vdc = Vdc.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @vdc }
-    end
+   
   end
 
   # GET /vdcs/new
@@ -79,5 +78,10 @@ class VdcsController < ApplicationController
       format.html { redirect_to vdcs_url }
       format.json { head :no_content }
     end
+  end
+
+   def selected_vdc
+    @vdc = Vdc.find(params[:id])
+    @vdcs = Vdc.where('ops_status != ?', "Deleted" )
   end
 end

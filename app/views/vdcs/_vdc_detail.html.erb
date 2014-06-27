@@ -1,0 +1,105 @@
+<div class="right-panel">
+  <div class="span9">
+
+    <div class="span6">
+      <div class="workflow-blocks"   style="height:200px;">
+        <div class="workflow-heading"><span>Basic Data</span><p>Other :other </p></div>
+
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <td><b>Name</b></td>
+              <td><%= @vcenter.name %></td>
+            </tr>
+            <tr>
+              <td><b>IP Address</b></td>
+              <td><%= @vcenter.ip %></td>
+            </tr>
+            <tr>
+              <td><b>Location</b></td>
+              <td><%= @vcenter.location %></td>
+            </tr>  
+
+            <tr>
+              <td><b>Description</b></td>
+              <td><%= @vcenter.description %></td>
+            </tr>  
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+          <% @vdcs = get_vdc(@vcenter) %>
+    <div class="span6">
+      <div class="workflow-blocks"  style="height:200px;">
+        <div class="workflow-heading"><span>Vdcs</span><p>Count : <%= @vdcs.count%></p></div>
+        <table class="table table-hover">
+
+          <tbody>
+            <% @vdcs.each do |each_vdc|%>
+            <tr>
+              <td><b><%= each_vdc.name%></b></td>
+              <td><%#= @vm.createdby %></td>
+            </tr> 
+            <%end %>
+          </tbody></table>
+        </div>
+      </div>
+      <% @clusters = get_cluster(@vcenter) %>
+      <div class="span6" style="margin-left:0px;">
+        <div class="workflow-blocks">
+          <div class="workflow-heading"><span>Cluster</span><p>Count : <%= @clusters.count%></p></div>
+          <table class="table table-hover">
+
+            <tbody>
+             <% @clusters.each do |each_cluster|%>
+             <tr>
+
+              <td><b><%= each_cluster.name%></b></td>
+              <td><%#= @vm.power_state %></td>
+            </tr>  
+            <% end %>
+
+          </tbody></table>
+        </div>
+      </div><!--/span-->
+      <% @esxs = get_esx(@vcenter) %>
+      <div class="span6">
+        <div class="workflow-blocks">
+          <div class="workflow-heading"><span>VmHosts</span><p> Count : <%= @esxs.count %></p></div>
+          <table class="table table-hover">
+
+
+            <tbody>
+             <% @esxs.each do |each_esx|%>
+             <%  present_cluster = Cluster.find_by_id(each_esx.cluster_id)%>
+             <tr>
+              <td><b><%= each_esx.name %></b></td>
+              <td><%=present_cluster.name %></td>
+            </tr> 
+            <% end %>  
+
+
+          </tbody></table>
+        </div>
+      </div><!--/span-->
+          <!-- <div class="span4">
+            <div class="workflow-blocks">
+              <div class="workflow-heading"><span>OPS Data</span><p></p></div>
+              <table class="table table-hover">
+
+               
+              </table>
+              </div>
+            </div><!--/span--> 
+
+            
+
+
+            <!--Section Ends Here -->
+
+
+            <%#= link_to 'Edit', edit_vm_path(@vm) %> 
+            <%#= link_to 'Back', vms_path %>
+          </div><!--/span-->
+        </div><!--/span-->

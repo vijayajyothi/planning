@@ -157,6 +157,10 @@ get "/selected_vm/:id" => "vms#selected_vm", :as => :selected_vm
 
 get "/vcenters" => "vcenters#index", :as => :vcenters
 get "/selected_vcenter/:id" => "vcenters#selected_vcenter", :as => :selected_vcenter
+
+
+get "/vdcs" => "vdcs#index", :as => :vdcs
+get "/selected_vdc/:id" => "vdcs#selected_vdc", :as => :selected_vdc
 #signup_path
 #login_path
 #logout_path

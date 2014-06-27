@@ -1,0 +1,24 @@
+
+
+<!-- <div class="container"> -->
+
+  <section>
+   <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="well sidebar-nav" style="margin-right:20px;">
+          <ul class="nav nav-list">
+            <li class="nav-header">Vdcs</li>
+            <% @vdcs.each do |each_vdc|%>
+            <li><%= link_to  each_vdc.name, selected_vdc_path(each_vdc), :remote=> true%></a>
+            </li>
+            <% end %>
+          </ul>
+        </div><!--/.well -->
+      </div><!--/span-->
+      <div class="dashboard">
+        <%= render :partial=> "vdc_detail" %>
+      </div><!--/dashboard-->
+    </div><!--/row-->
+  </section>
+<!-- </div>< --><!--/container-->
