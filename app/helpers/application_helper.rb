@@ -12,4 +12,7 @@ end
 def get_cluster(vcenter)
    @clusters = Cluster.where(:vcenter_id=> vcenter.id)
 end
+def get_esx(vcenter)
+   @esex = Vmhost.where(:vcenter_id=> vcenter.id)
+end
 end
