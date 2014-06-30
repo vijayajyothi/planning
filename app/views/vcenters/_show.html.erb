@@ -1,5 +1,4 @@
 <!-- <div class="container"> -->
-
   <section>
    <div class="container-fluid">
     <div class="row-fluid">
@@ -8,7 +7,8 @@
           <ul class="nav nav-list">
             <li class="nav-header">Vcenters</li>
             <% @vcenters.each do |each_vcenter|%>
-            <li><%= link_to  each_vcenter.name, selected_vcenter_path(each_vcenter), :remote=> true%></a>
+            <li class=<%=each_vcenter.id== params[:id].to_i ? "active" : "none" %>>
+              <%= link_to  each_vcenter.name, selected_vcenter_path(each_vcenter), :remote=> true%>
             </li>
             <% end %>
           </ul>

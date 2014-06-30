@@ -16,8 +16,6 @@ class VdcsController < ApplicationController
   # GET /vdcs/1.json
   def show
     @vdc = Vdc.find(params[:id])
-
-   
   end
 
   # GET /vdcs/new
