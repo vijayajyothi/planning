@@ -10,7 +10,8 @@
           <ul class="nav nav-list">
             <li class="nav-header">Vdcs</li>
             <% @vdcs.each do |each_vdc|%>
-            <li><%= link_to  each_vdc.name, selected_vdc_path(each_vdc), :remote=> true%></a>
+             <li class=<%=each_vdc.id== params[:id].to_i ? "active" : "none" %>>
+              <%= link_to  each_vdc.name, selected_vdc_path(each_vdc), :remote=> true%>
             </li>
             <% end %>
           </ul>

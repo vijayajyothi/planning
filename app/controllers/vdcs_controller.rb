@@ -16,6 +16,7 @@ class VdcsController < ApplicationController
   # GET /vdcs/1.json
   def show
     @vdc = Vdc.find(params[:id])
+    @vdcs = Vdc.where(:ops_status!= "Deleted")
   end
 
   # GET /vdcs/new
