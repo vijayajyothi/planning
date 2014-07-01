@@ -3,23 +3,20 @@ class VmhostsController < ApplicationController
   # GET /vmhosts
   # GET /vmhosts.json
   def index
-    @vmhosts = Vmhost.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @vmhosts }
-    end
+   # @search = Vmhost.search do
+   #    fulltext params[:search]
+   #    paginate  :page => params[:page], :per_page=>15
+   #  end
+   #  @vmhosts = @search.results
+     @vmhosts = Vmhost.paginate(:page => params[:page], :per_page => 30)
+     
   end
 
   # GET /vmhosts/1
   # GET /vmhosts/1.json
   def show
     @vmhost = Vmhost.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @vmhost }
-    end
+    @vmhosts = Vmhost.where(:ops_status!="Deleted")
   end
 
   # GET /vmhosts/new
@@ -80,5 +77,10 @@ class VmhostsController < ApplicationController
       format.html { redirect_to vmhosts_url }
       format.json { head :no_content }
     end
+  end
+
+   def selected_vmhost
+    @vmhost = Vmhost.find(params[:id])
+    @vmhosts = Vmhost.where('ops_status != ?', "Deleted" )
   end
 end

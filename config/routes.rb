@@ -161,6 +161,12 @@ get "/selected_vcenter/:id" => "vcenters#selected_vcenter", :as => :selected_vce
 
 get "/vdcs" => "vdcs#index", :as => :vdcs
 get "/selected_vdc/:id" => "vdcs#selected_vdc", :as => :selected_vdc
+
+get "/clusters" => "clusters#index", :as => :clusters
+get "/selected_cluster/:id" => "clusters#selected_cluster", :as => :selected_cluster
+
+get "/vmhosts" => "vmhosts#index", :as => :vmhosts
+get "/selected_vmhost/:id" => "vmhosts#selected_vmhost", :as => :selected_vmhost
 #signup_path
 #login_path
 #logout_path

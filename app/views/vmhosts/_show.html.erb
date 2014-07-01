@@ -1,0 +1,23 @@
+<!-- <div class="container"> -->
+
+  <section>
+   <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="well sidebar-nav" style="margin-right:20px;">
+          <ul class="nav nav-list">
+            <li class="nav-header">vmhosts</li>
+            <% @vmhosts.each do |each_vmhost|%>
+            <li class=<%=each_vmhost.id== params[:id].to_i ? "active" : "none" %>>
+              <%= link_to  each_vmhost.name, selected_vmhost_path(each_vmhost), :remote=> true%>
+            </li>
+            <% end %>
+          </ul>
+        </div><!--/.well -->
+      </div><!--/span-->
+      <div class="dashboard">
+        <%= render :partial=> "vmhost_detail" %>
+      </div><!--/dashboard-->
+    </div><!--/row-->
+  </section>
+<!-- </div>< --><!--/container-->

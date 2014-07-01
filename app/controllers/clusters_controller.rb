@@ -3,23 +3,21 @@ class ClustersController < ApplicationController
   # GET /clusters
   # GET /clusters.json
   def index
-    @clusters = Cluster.all
+    # @search = Cluster.search do
+    #   fulltext params[:search]
+    #   paginate  :page => params[:page], :per_page=>15
+    # end
+    # @clusters = @search.results
+    @clusters = Cluster.paginate(:page => params[:page], :per_page => 30)
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @clusters }
-    end
+    
   end
 
   # GET /clusters/1
   # GET /clusters/1.json
   def show
     @cluster = Cluster.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @cluster }
-    end
+    @clusters  = Cluster.where(:ops_status!="Deleted")
   end
 
   # GET /clusters/new
@@ -80,5 +78,9 @@ class ClustersController < ApplicationController
       format.html { redirect_to clusters_url }
       format.json { head :no_content }
     end
+  end
+  def selected_cluster
+    @cluster = Cluster.find(params[:id])
+    @clusters = Cluster.where('ops_status != ?', "Deleted" )
   end
 end

@@ -258,15 +258,23 @@ end
 
 def vm_data_import
   CSV.foreach("csv_data/powercli/vm.csv", :headers => true) do |row|
+
     vcenter = Vcenter.find_by_name(row["vcserver"])
-
+p vcenter
     vdc = Vdc.find_by_name(row["data"])
-
+    p vdc
+    p "hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+cluster = Cluster.find_by_name(row["cluster"])
+p cluster
     vm = Vm.find_by_id(row["ipaddress"])
+    p vm
+    p "in vm"
     if vm.present?
+      p "in if"
       vm.ops_status = "Present"
       vm.update_attributes(row.to_hash.slice(*accessible_attributes))
     else
+      p "in else"
       vm = Vm.new
       vm.ops_status = "New"
       vm.attributes = row.to_hash.slice(*accessible_attributes)
@@ -287,6 +295,7 @@ def vm_data_import
     vm.created_by = row["createdby"]
     vm.vcenter_id = vcenter.id
     vm.vdc_id = vdc.id
+    vm.cluster_id = cluster.id
     vm.persistent_id = row["persistentid"]
     vm.vm_id = row["id"]
     vm.version = row["version"]

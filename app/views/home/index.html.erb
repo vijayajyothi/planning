@@ -34,7 +34,7 @@
               <a data-original-title="" data-remote="true" href="/vms">
                 <div class="info_img"><img src="/assets/borrower.png"></div>
                 <div class="info"><%= @vm_count %></div>
-                <div class="status">VMS</div>
+                <div class="status">VMs</div>
               </a>
             </div>
           </div>
@@ -48,7 +48,8 @@
             </div>
           </div>
         </div>
-        <div class=" col-sm-6 col-md-3"><div class="metro-nav">
+        <div class=" col-sm-6 col-md-3">
+          <div class="metro-nav">
           <div class="metro-nav-block nav-olive">
             <a data-original-title="" data-remote="true" href="/vdcs">
               <div class="info_img"><img src="/assets/lender.png"></div>
@@ -57,7 +58,8 @@
             </a>
           </div>
 
-        </div><div class="metro-nav">
+        </div>
+        <div class="metro-nav">
         <div class="metro-nav-block nav-block-lavender">
 
           <a data-original-title="" href="#">
@@ -70,10 +72,10 @@
       </div></div>
       <div class=" col-sm-6 col-md-3"><div class="metro-nav">
         <div class="metro-nav-block nav-block-yellow">
-          <a data-original-title="" href="#">
+          <a data-original-title=""  data-remote="true" href="/clusters">
             <div class="info_img"><img src="/assets/contract.png"></div>
-            <div class="info">7656<%#= @contract_count%></div>
-            <div class="status">Vcenters</div>
+            <div class="info"><%= @cluster_count%></div>
+            <div class="status">Clusters</div>
           </a>
         </div>
 
@@ -89,10 +91,10 @@
     </div></div>
     <div class=" col-sm-6 col-md-3"><div class="metro-nav">
       <div class="metro-nav-block nav-light-purple">
-       <a data-original-title="" href="#">
+       <a data-original-title="" data-remote="true" href="/vmhosts">
         <div class="info_img"><img src="/assets/collection.png"></div>
-        <div class="info">6455645<%#= @finanace_amt.to_i%></div>
-        <div class="status">OS</div>
+        <div class="info"><%= @vmhost_count%></div>
+        <div class="status">VM Host</div>
       </a>
     </div>
 
@@ -123,6 +125,5 @@
 
 </div>
 </div>
-
 
 </section>
