@@ -195,16 +195,82 @@
                   <div class="panel-heading">
                     <h4 class="panel-title">
                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                        Collapsible Group Item #3
+                        Hhba
                       </a>
                     </h4>
                   </div>
+                  <% @hhbas = Hhba.where(:vmhost_id=> @vmhost.id) %>
                   <div id="collapseThree" class="panel-collapse collapse">
                     <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      <table class="table table-hover">
+                        <tbody>
+                          <th> Name</th>
+                          <th> Status</th>
+                          <th> WWNN</th>
+                          <% @hhbas.each do |each_hhba|%>
+                          <tr>
+                            <td><b><%= each_hhba.name %></b></td>
+                            <td><%=each_hhba.status %></td>
+                            <td><%=each_hhba.wwnn %></td>
+                          </tr> 
+                          <% end %>  
+                        </tbody></table>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div><!--/span-->
+
+                  <div class="panel panel-default span6 " style="margin-left:0px;margin-right:6px;">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                          Pnics
+                        </a>
+                      </h4>
+                    </div>
+                    <% @pnics = Pnic.where(:vmhost_id=> @vmhost.id) %>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                      <div class="panel-body" style="max-height:570px; overflow:auto;">
+                        <table class="table table-hover">
+                          <tbody>
+                            <th> Name</th>
+                            <th> MAC Address</th>
+                            <% @pnics.each do |each_pnic|%>
+                            <tr>
+                              <td><b><%= each_pnic.name %></b></td>
+                              <td><%=each_pnic.macaddress %></td>
+                            </tr> 
+                            <% end %>  
+                          </tbody></table>
+                        </div>
+                      </div>
+                    </div>
+                    <% comment do %>
+                    <div class="panel panel-default " >
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                            Data Store
+                          </a>
+                        </h4>
+                      </div>
+                      <% @ds = Datastore.where(:vmhost_id=> @vmhost.idcluster_id) %>
+                      <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <table class="table table-hover">
+                            <tbody>
+                              <th> Name</th>
+                              <th> MAC Address</th>
+                              <% @ds.each do |each_ds|%>
+                              <tr>
+                                <td><b><%= each_ds.name %></b></td>
+                                <td><%=each_ds.ds_id %></td>
+                              </tr> 
+                              <% end %>  
+                            </tbody></table>
+                          </div>
+                        </div>
+                      </div>
+                      <% end %>
+                    </div>
+                  </div><!--/span-->
 
