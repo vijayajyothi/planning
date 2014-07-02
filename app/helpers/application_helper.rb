@@ -18,7 +18,7 @@ end
 
 def get_vms(cluster)
   @vms = Vm.where(:cluster_id=> cluster)
-  end 
+end 
 
 def my_vdc(vdc_id)
   vdc = Vdc.where(:id=> vdc_id).first
@@ -28,5 +28,8 @@ end
 def my_vcenter(vcenter_id)
   vcenter = Vcenter.where(:id => vcenter_id).first
   return vcenter.present? ?  vcenter.name : "No Value"
-  end
+end
+def get_vms_by_host(host_name)
+  vms = Vm.where(:vm_hostname=> host_name)
+end
 end

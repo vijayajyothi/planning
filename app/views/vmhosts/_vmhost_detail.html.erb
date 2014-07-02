@@ -1,32 +1,32 @@
 <div class="right-panel">
   <div class="span9">
-<% comment do %>
+    <% comment do %>
     <div class="span6">
       <div class="workflow-blocks">
         <div class="workflow-heading"><span>Basic Data</span><p>Power : <%#= @vmhost.power_state %></p></div>
 
         
 
-        </div>
       </div>
-      <div class="span6">
-        <div class="workflow-blocks">
-          <div class="workflow-heading"><span>OPS Data</span><p></p></div>
-          <table class="table table-hover">
+    </div>
+    <div class="span6">
+      <div class="workflow-blocks">
+        <div class="workflow-heading"><span>OPS Data</span><p></p></div>
+        <table class="table table-hover">
 
-           </table>
-        </div>
+        </table>
       </div>
-      <%# @vms = get_vms(@cluster.id) %>
+    </div>
+    <%# @vms = get_vms(@cluster.id) %>
 
-      <div class="span6" style="margin-left:0px;">
-        <div class="workflow-blocks">
-          <div class="workflow-heading"><span>Vms</span><p></p></div>
-          <table class="table table-hover">
-            <tbody>
-              <%# @vms.each do |each_vm|%>
-             <%#  present_cluster = Cluster.find_by_id(each_esx.cluster_id)%>
-             <tr>
+    <div class="span6" style="margin-left:0px;">
+      <div class="workflow-blocks">
+        <div class="workflow-heading"><span>Vms</span><p></p></div>
+        <table class="table table-hover">
+          <tbody>
+            <%# @vms.each do |each_vm|%>
+            <%#  present_cluster = Cluster.find_by_id(each_esx.cluster_id)%>
+            <tr>
               <td><b><%#= each_vm.name %></b></td>
               <td><%#=present_cluster.name %></td>
             </tr> 
@@ -101,96 +101,110 @@
           <% end  %>
 
 
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          Basic Data
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-        <table class="table table-hover">
-          <tbody>
-            <tr>
-              <td><b>Name</b></td>
-              <td><%= @vmhost.name %></td>
-            
-              <td><b>Cluster</b></td>
-              <td><%= @vmhost.cluster_id %></td>
-            </tr>  
-            <tr>
-              <td><b>Connection State</b></td>
-              <td><%= @vmhost.connection_state %></td>
-            
-              <td><b>Power State</b></td>
-              <td><%= @vmhost.power_state %></td>
-            </tr>  
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Basic Data
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <td><b>Name</b></td>
+                        <td><%= @vmhost.name %></td>
 
-            <tr>
-              <td><b>Total CPUs(mhz)</b></td>
-              <td><%= @vmhost.cpu_total_mhz %></td>
-            
-              <td><b>Total memory(mb)</b></td>
-              <td><%= @vmhost.mem_total_mb/1000000 %></td>
-            </tr>   
+                        <td><b>Cluster</b></td>
+                        <td><%= @vmhost.cluster_id %></td>
+                      </tr>  
+                      <tr>
+                        <td><b>Connection State</b></td>
+                        <td><%= @vmhost.connection_state %></td>
 
-            <tr>
-              <td><b>ESX Version</b></td>
-              <td><%= @vmhost.esx_version %></td>
+                        <td><b>Power State</b></td>
+                        <td><%= @vmhost.power_state %></td>
+                      </tr>  
 
-              <td><b>ESX Product</b></td>
-                <td><%= @vmhost.esx_product %></td>
-            </tr>  
-            <tr>
-                <td><b>ESX Build</b></td>
-                <td><%= @vmhost.esx_build %></td>
-             
-                <td><b>Num of CPUs</b></td>
-                <td><%= @vmhost.num_cpu %></td>
-              </tr> 
-              <tr>
-                <td><b>Num of Cores</b></td>
-                <td><%= @vmhost.num_core %></td>
-             
-                <td><b>UUID</b></td>
-                <td><%= @vmhost.uuid %></td>
-              </tr> 
+                      <tr>
+                        <td><b>Total CPUs(mhz)</b></td>
+                        <td><%= @vmhost.cpu_total_mhz %></td>
 
-          </tbody></table>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          Collapsible Group Item #2
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Collapsible Group Item #3
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
-        </div><!--/span-->
+                        <td><b>Total memory(mb)</b></td>
+                        <td><%= @vmhost.mem_total_mb/1000000 %></td>
+                      </tr>   
+
+                      <tr>
+                        <td><b>ESX Version</b></td>
+                        <td><%= @vmhost.esx_version %></td>
+
+                        <td><b>ESX Product</b></td>
+                        <td><%= @vmhost.esx_product %></td>
+                      </tr>  
+                      <tr>
+                        <td><b>ESX Build</b></td>
+                        <td><%= @vmhost.esx_build %></td>
+
+                        <td><b>Num of CPUs</b></td>
+                        <td><%= @vmhost.num_cpu %></td>
+                      </tr> 
+                      <tr>
+                        <td><b>Num of Cores</b></td>
+                        <td><%= @vmhost.num_core %></td>
+
+                        <td><b>UUID</b></td>
+                        <td><%= @vmhost.uuid %></td>
+                      </tr> 
+
+                    </tbody></table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default span6" style="margin-left:0px;margin-right:6px;">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      VMs
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <% @vms = get_vms_by_host(@vmhost.name) %>
+
+
+                    <table class="table table-hover">
+                      <tbody>
+                        <% @vms.each do |each_vm|%>
+                        <%#  present_cluster = Cluster.find_by_id(each_esx.cluster_id)%>
+                        <tr>
+                          <td><b><%= each_vm.name %></b></td>
+                          <td><%#=present_cluster.name %></td>
+                        </tr> 
+                        <% end %>  
+                      </tbody></table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        Collapsible Group Item #3
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!--/span-->
 
