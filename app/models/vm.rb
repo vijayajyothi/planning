@@ -56,6 +56,7 @@ p "Vm  uploaded"
 end
 # vcenter data
 def vcenter_data_import
+  
   CSV.foreach("csv_data/powercli/vcenters.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["name"])
     p vcenter

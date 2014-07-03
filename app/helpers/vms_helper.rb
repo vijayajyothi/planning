@@ -17,4 +17,9 @@ module VmsHelper
     used_memory = Vm.where('datacenter =? AND ops_status !=?', dc,"Deleted").collect(&:usedspacegb).map(&:to_f).sum
     return used_memory
   end
+
+  def datacenter(vdc_id)
+   vdc = Vdc.where(:id=>vdc_id).first
+   return vdc.name
+ end
 end
