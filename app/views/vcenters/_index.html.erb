@@ -34,7 +34,7 @@
       <td><%= vcenter.location %></td>
       <td><%= vcenter.description %></td>
       <td><%= link_to 'Show', vcenter ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
-      <td><%= link_to 'Edit', edit_vcenter_path(vcenter),:class => 'btn btn-mini btn-warning' %></td>
+      <td><%= link_to 'Edit', edit_vcenter_path(vcenter),:class => 'btn btn-mini btn-warning', :remote=> true %></td>
       <td><%= link_to 'Destroy', vcenter, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td>
     </tr>
     <% end %>

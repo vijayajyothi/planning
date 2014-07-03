@@ -1,7 +1,12 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  before_filter :session_expires 
   # before_filter :authorize 
-  
+
+  def session_expires
+    redirect_to login_url, alert: 'Not authorized. Please login.' if cookies[:aut_token]
+  end
+
   private
 
   def current_user

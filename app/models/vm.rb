@@ -37,29 +37,29 @@ class << self
   def importing_data
     vcenter_data = vcenter_data_import
     p "vcenter data uploaded"
-    data_center_data = data_center_data_import
-    p "data center data uploaded"
-    cluster_data = cluster_import
-    p "vdc data uploaded" 
-    esx_data = esx_data_import
-    p "ESX Host data (vmhost)) uploaded"
-esx_pnics_data = esx_pnics_data_import
-p "ESX Host data uploaded"
-host_hbas_data = host_hbas_data_import
-p "Host hbas data uploaded"
-port_grup_data = port_group_data_import
-p "Host hbas data uploaded"
-data_store_data = data_store_data_import
-p "Data store data uploaded"
-vm_data = vm_data_import
-p "Vm  uploaded"
+#     data_center_data = data_center_data_import
+#     p "data center data uploaded"
+#     cluster_data = cluster_import
+#     p "vdc data uploaded" 
+#     esx_data = esx_data_import
+#     p "ESX Host data (vmhost)) uploaded"
+# esx_pnics_data = esx_pnics_data_import
+# p "ESX Host data uploaded"
+# host_hbas_data = host_hbas_data_import
+# p "Host hbas data uploaded"
+# port_grup_data = port_group_data_import
+# p "Host hbas data uploaded"
+# data_store_data = data_store_data_import
+# p "Data store data uploaded"
+# vm_data = vm_data_import
+# p "Vm  uploaded"
 end
 # vcenter data
 def vcenter_data_import
+  Vcenter.update_all(:ops_status=>"Deleted")
   
   CSV.foreach("csv_data/powercli/vcenters.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["name"])
-    p vcenter
     if vcenter.present?
       vcenter.ops_status = "Present"
       vcenter.update_attributes(row.to_hash.slice(*accessible_attributes))
@@ -68,7 +68,10 @@ def vcenter_data_import
       vcenter.ops_status = "New"
       vcenter.attributes = row.to_hash.slice(*accessible_attributes)
     end
-    vcenter.save
+    vcenter.name = row["name"]
+    vcenter.ip = row["ip"] unless row["ip"].blank?
+    vcenter.description = row["description"]  if row["description"].present?
+    vcenter.save if vcenter.name.present?
   end
 end
 
