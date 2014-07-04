@@ -1,5 +1,5 @@
 class Vcenter < ActiveRecord::Base
-  attr_accessible :description, :ip, :name
+  attr_accessible :description, :ip, :name, :location
 
 #Searchables
   searchable do
