@@ -7,7 +7,7 @@
       <% if @current_user.present? %>
 
       <div class="col-sm-6">
-        <div class="logo" style="width:30%;"> <%= link_to (image_tag("logo1.png")), "/", :id => "logo" %></div>
+        <div class="logo" style="width:30%;"> <%= link_to (image_tag("new-vm-logo.jpg")), "/", :id => "logo" %></div>
         <div class="login-info">
           <span><b>Logged in as: </b><%= @current_user.email %></span><br/>
           <!-- <span><b>Last Log in: </b><%#= last_login_time %></span> -->
@@ -29,10 +29,12 @@
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav" style="float: right;padding-top: 30px;" align="right">
 
-             <li><a href="#" alt="Calender" title="Calender"><span class="nav-span"></span><%= image_tag "Calendar-icon.png" %></a></li>
-             <li><a href="#" alt="Printer" title="Printer"><span class="nav-span"></span><%= image_tag "printer-icon.png" %></a></li>
-             <li><a href="#" alt="Messages" title="Messages"><span class="nav-span"></span><%= image_tag "message-already-read-icon.png" %></a></li>
-             <li class="selected-settings"><%#= link_to image_tag("settings-icon.png", :id=>"flip"), language_dashboard_path, :alt=>"Dashboard", :title=>"Country Dashboard" %></li>
+             <li><a href="/vcenters" data-remote=true alt="Vcenters" title="Vcenters"><span class="nav-span"></span><%= image_tag "vcenter.png", :style=> "height:32px;width:32px;"%></a></li>
+             <li><a href="/vdcs" data-remote=true alt="vdcs" title="vdcs"><span class="nav-span"></span><%= image_tag "vdc.png", :style=> "height:32px;width:32px;" %></a></li>
+             <li><a href="/clusters" data-remote=true alt="clusters" title="clusters"><span class="nav-span"></span><%= image_tag "cluster.png", :style=> "height:32px;width:32px;" %></a></li>
+             <li><a href="/vmhosts" data-remote=true alt="vmhosts" title="vmhosts"><span class="nav-span"></span><%= image_tag "vmhost.png", :style=> "height:32px;width:32px;" %></a></li>
+             <li><a href="/vms" data-remote=true alt="vms" title="vms"><span class="nav-span"></span><%= image_tag "vm1.png", :style=> "height:32px;width:32px;" %></a></li>
+             
              <li><span class="nav-span"></span><%= link_to "#{image_tag("/assets/exit.png")}".html_safe, logout_path, :class=>"logout-button", :alt=>"Logout", :title=>"Logout"%>
              </li>
 

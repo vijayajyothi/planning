@@ -12,13 +12,13 @@ body{ font-family: arial}
 }
 
 
-header{background:#000; height:70px; color:#FFF; font-weight:normal;width:100%; height:auto;}
+header{font-weight:normal;width:100%; height:auto;border-bottom: 2px solid #3399cc}
 footer{ background:#3399cc; height:40px; color:#FFF; position:fixed; bottom:0; width:100%; z-index:1000}
 
 
 
 .logo{display:block; float:left; width:19%; height:70px;}
-.login-info{width:70%; float:left; padding-top:5px; border:0px #000 solid; font-family:arial;}
+.login-info{margin-left:37px;float:left; padding-top:5px; border:0px #000 solid; font-family:arial;}
 .tabs{ width:99%; margin-left:1%; border:1px #ddd solid; height:100px;}
 
 

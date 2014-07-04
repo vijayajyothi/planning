@@ -37,8 +37,8 @@ class << self
   def importing_data
     vcenter_data = vcenter_data_import
     p "vcenter data uploaded"
-#     data_center_data = data_center_data_import
-#     p "data center data uploaded"
+    # data_center_data = data_center_data_import
+    # p "data center data uploaded"
 #     cluster_data = cluster_import
 #     p "vdc data uploaded" 
 #     esx_data = esx_data_import
