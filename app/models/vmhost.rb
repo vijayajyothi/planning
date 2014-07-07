@@ -15,6 +15,10 @@ class Vmhost < ActiveRecord::Base
   # has_many :vim_events
   # has_many :storage_luns, :through => :storage_groups
 
+
+#SCOPES
+scope :ops_status, where('ops_status!=?', "Deleted")
+
    searchable do
     text :name
     integer :vcenter_id

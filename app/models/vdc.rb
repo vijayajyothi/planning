@@ -6,4 +6,9 @@ class Vdc < ActiveRecord::Base
   has_many :folders
   has_many :portgroups
   has_many :vswitches
+
+  
+#SCOPES
+scope :ops_status, where('ops_status!=?', "Deleted")
+
 end

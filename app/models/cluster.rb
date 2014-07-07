@@ -8,6 +8,11 @@ class Cluster < ActiveRecord::Base
   has_many :vmhosts
   has_many :vms
 
+
+
+#SCOPES
+scope :ops_status, where('ops_status!=?', "Deleted")
+
 #SEARCHABLES
   searchable do
     text :name

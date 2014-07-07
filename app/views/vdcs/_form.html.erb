@@ -15,17 +15,19 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
+ <% comment do %>
   <div class="field">
     <%= f.label :folder_id %><br />
-    <%= f.number_field :folder_id %>
+    <%= f.text_field :folder_id %>
   </div>
+  <% end %>
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
     <%= f.label :vcenter_id %><br />
-    <%= f.number_field :vcenter_id %>
+    <%= f.text_field :vcenter_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

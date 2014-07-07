@@ -1,11 +1,11 @@
 class HomeController < ApplicationController
 before_filter :authorize , :only => [:index] 
 def index
-  @vcenter_count= Vcenter.all.count
-	@vdc_count= Vdc.all.count
-  @vm_count= Vm.all.count
-  @cluster_count =  Cluster.all.count
-  @vmhost_count =  Vmhost.all.count
+  @vcenter_count= Vcenter.ops_status.count
+	@vdc_count= Vdc.ops_status.count
+  @vm_count= Vm.ops_status.count
+  @cluster_count =  Cluster.ops_status.count
+  @vmhost_count =  Vmhost.ops_status.count
 # raise @data.inspect
   end
 end

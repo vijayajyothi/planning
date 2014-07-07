@@ -24,8 +24,8 @@
     <% @vcenters.each do |vcenter| %>
     <% if vcenter.ops_status=="Deleted"%>
     <tr class="alert alert-error">
-      <td colspan=6><%= vcenter.name %> is deleted</td>
-      <td colspan=2><%= link_to 'Delete Permanently', vcenter, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger'%></td>
+      <td colspan=4><%= vcenter.name %> is deleted</td>
+      <td colspan=3><%= link_to 'Delete Permanently', vcenter, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger'%></td>
     </tr>
     <% else %>
     <tr style="cursor:pointer;" id ="complete_tr">

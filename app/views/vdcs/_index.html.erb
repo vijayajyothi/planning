@@ -24,13 +24,14 @@
     <% @vdcs.each do |vdc| %>
     <% if vdc.ops_status=="Deleted"%>
     <tr class="alert alert-error">
-      <td colspan=6><%= vdc.name %> is deleted</td>
-      <td colspan=2><%= link_to 'Delete Permanently', vdc, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger'%></td>
+      <td colspan=3><%= vdc.name %> is deleted</td>
+      <td colspan=3><%= link_to 'Delete Permanently', vdc, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger'%></td>
     </tr>
     <% else %>
     <tr style="cursor:pointer;" id ="complete_tr">
       <td><%= vdc.name %></td>
       <td><%= vdc.description %></td>
+      <td><%= vcenter_name(vdc.vcenter_id) %></td>
       <td><%= link_to 'Show', vdc ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
       <td><%= link_to 'Edit', edit_vdc_path(vdc),:class => 'btn btn-mini btn-warning' %></td>
       <td><%= link_to 'Destroy', vdc, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td>

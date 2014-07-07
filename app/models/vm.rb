@@ -19,6 +19,10 @@ has_many :f5_nodes
 has_many :vmvips
 has_many :f5_vips , :through => :vmvips
 
+
+#SCOPES
+scope :ops_status, where('ops_status != ?', "Deleted")
+
 #SEARCHABLES
 searchable do
   text :name
@@ -77,10 +81,12 @@ end
 
   # data center vdc data
   def data_center_data_import
+  Vdc.update_all(:ops_status=>"Deleted")
+
     CSV.foreach("csv_data/powercli/data_center.csv", :headers => true) do |row|
 
-      vdc = Vdc.find_by_name(row["datacenter"])
       vcenter = Vcenter.find_by_name(row["vcserver"])
+      vdc = Vdc.where(:name => row["datacenter"], :vcenter_id=>vcenter.id).first
       if vdc.present?
         vdc.ops_status = "Present"
         vdc.update_attributes(row.to_hash.slice(*accessible_attributes))
@@ -91,7 +97,7 @@ end
       end
       vdc.name = row["datacenter"]
       vdc.vcenter_id = vcenter.id
-      vdc.save
+      vdc.save if vdc.name.present?
     end
   end 
 
