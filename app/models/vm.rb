@@ -41,9 +41,9 @@ class << self
   def importing_data
     # vcenter_data = vcenter_data_import
     # p "vcenter data uploaded"
-    data_center_data = data_center_data_import
+    # data_center_data = data_center_data_import
     # p "data center data uploaded"
-#     cluster_data = cluster_import
+    cluster_data = cluster_import
 #     p "vdc data uploaded" 
 #     esx_data = esx_data_import
 #     p "ESX Host data (vmhost)) uploaded"
@@ -103,13 +103,12 @@ end
 
 # Cluster data
 def cluster_import
+  Cluster.update_all(:ops_status=>"Deleted")
+
   CSV.foreach("csv_data/powercli/cluster.csv", :headers => true) do |row|
 
     vcenter = Vcenter.find_by_name(row["vcserver"])
-    p vcenter.id
     vdc = Vdc.find_by_vcenter_id(vcenter.id)
-    p vdc
-    p "till vdc"
     cluster = Cluster.find_by_name(row["cluster"])
     if cluster.present?
       cluster.ops_status = "Present"
@@ -125,9 +124,7 @@ def cluster_import
     cluster.mem_total_mb = row["totalmemory"]
     cluster.cpu_no_cores = row["numcpucores"]
     cluster.vcenter_id = vcenter.id
-    p "here"
-    p cluster
-    cluster.save!
+    cluster.save! if cluster.name.present?
   end
 end 
 

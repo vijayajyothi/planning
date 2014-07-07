@@ -1,5 +1,5 @@
 "timestamp","vcserver","cluster","totalcpu","totalmemory","numcpucores"
-"2014-05-23 05:47:17","vc-dev-1.vmware.com","wdc-dev-greenplum1","689408","4397462781952","256"
+"2014-05-23 05:47:17","vc-dev-1.vmware.com","wdc-dev-greenplum12","689408","4397462781952","256"
 "2014-05-23 05:47:17","vc-dev-1.vmware.com","wdc-dev-greenplum2","517056","2198731390976","192"
 "2014-05-23 05:47:17","vc-dev-1.vmware.com","wdc-qa-greenplum1","1034112","4397462781952","384"
 "2014-05-23 05:47:17","vc-dev-1.vmware.com","wdc-qa-greenplum2","517056","2198731390976","192"

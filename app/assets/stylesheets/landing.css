@@ -12,7 +12,7 @@ body{ font-family: arial}
 }
 
 
-header{font-weight:normal;width:100%; height:auto;border-bottom: 2px solid #3399cc}
+header{position:fixed;height:110px; top:0;z-index:100;width:100%;background-color:#fff;font-weight:normal;width:100%; height:auto;border-bottom: 2px solid #3399cc}
 footer{ background:#3399cc; height:40px; color:#FFF; position:fixed; bottom:0; width:100%; z-index:1000}
 
 
