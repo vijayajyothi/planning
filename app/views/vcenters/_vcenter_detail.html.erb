@@ -72,10 +72,10 @@
 
             <tbody>
              <% @esxs.each do |each_esx|%>
-             <%  present_cluster = Cluster.find_by_id(each_esx.cluster_id)%>
+             <%#  present_cluster = Cluster.find_by_id(each_esx.cluster_id)%>
              <tr>
               <td><b><%= each_esx.name %></b></td>
-              <td><%=present_cluster.name %></td>
+              <td><%#=present_cluster.name %></td>
             </tr> 
             <% end %>  
 

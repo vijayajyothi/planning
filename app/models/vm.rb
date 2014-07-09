@@ -43,11 +43,11 @@ class << self
     # p "vcenter data uploaded"
     # data_center_data = data_center_data_import
     # p "data center data uploaded"
-    cluster_data = cluster_import
-#     p "vdc data uploaded" 
-#     esx_data = esx_data_import
-#     p "ESX Host data (vmhost)) uploaded"
-# esx_pnics_data = esx_pnics_data_import
+    # cluster_data = cluster_import
+    # p "vdc data uploaded" 
+    # esx_data = esx_data_import
+    # p "ESX Host data (vmhost)) uploaded"
+    # esx_pnics_data = esx_pnics_data_import
 # p "ESX Host data uploaded"
 # host_hbas_data = host_hbas_data_import
 # p "Host hbas data uploaded"
@@ -55,7 +55,7 @@ class << self
 # p "Host hbas data uploaded"
 # data_store_data = data_store_data_import
 # p "Data store data uploaded"
-# vm_data = vm_data_import
+vm_data = vm_data_import
 # p "Vm  uploaded"
 end
 # vcenter data
@@ -80,7 +80,7 @@ def vcenter_data_import
 end
 
   # data center vdc data
-  def data_center_data_import
+def data_center_data_import
   Vdc.update_all(:ops_status=>"Deleted")
 
     CSV.foreach("csv_data/powercli/data_center.csv", :headers => true) do |row|
@@ -129,11 +129,13 @@ def cluster_import
 end 
 
 def esx_data_import
- CSV.foreach("csv_data/powercli/esx_host.csv", :headers => true) do |row|
-
+  Vmhost.update_all(:ops_status=>"Deleted")
+  CSV.foreach("csv_data/powercli/esx_host.csv", :headers => true) do |row|
   vcenter = Vcenter.find_by_name(row["vcserver"])
-  cluster = Cluster.find_by_name(row["cluster"])
-  esx_host = Vmhost.find_by_name(row["vmhost"])
+  cluster = Cluster.find_by_name(row["cluster"])  
+  esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id, :cluster_id=> cluster.id).first if cluster.present?
+  # esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id).first
+ 
   if esx_host.present?
     esx_host.ops_status = "Present"
     esx_host.update_attributes(row.to_hash.slice(*accessible_attributes))
@@ -143,7 +145,7 @@ def esx_data_import
     esx_host.attributes = row.to_hash.slice(*accessible_attributes)
   end
   esx_host.vcenter_id = vcenter.id
-  esx_host.cluster_id = cluster.id
+  esx_host.cluster_id = cluster.id if cluster.present?
   esx_host.name = row["vmhost"]
   esx_host.uuid = row["uuid"]
   esx_host.connection_state = row["connectionstate"]
@@ -160,35 +162,42 @@ def esx_data_import
   esx_host.esx_build = row["esxbuild"]
   esx_host.serial_no = row["serialnumber"]
   esx_host.bios_version = row["biosversion"]
-  esx_host.save
+  esx_host.save if esx_host.name.present?
 end
 end
 def esx_pnics_data_import
   CSV.foreach("csv_data/powercli/pnics.csv", :headers => true) do |row|
-
+  p row
     vmhost = Vmhost.find_by_name(row["vmhost"])
-    pnic = Pnic.find_by_macaddress(row["macaddress"])
+    p row["vmhost"]
+    p vmhost
+    p "hereeeeeeeeeeeeeeeeeeeeeeeeee"
+    pnic = Pnic.where(:name=>row["name"], :vmhost_id=>vmhost.id).first
+    p pnic
     if pnic.present?
       pnic.ops_status = "Present"
-      pnic.update_attributes(row.to_hash.slice(*accessible_attributes))
+      # pnic.update_attributes(row.to_hash.slice(*accessible_attributes))
     else
       pnic = Pnic.new
       pnic.ops_status = "New"
-      pnic.attributes = row.to_hash.slice(*accessible_attributes)
+      # pnic.attributes = row.to_hash.slice(*accessible_attributes)
     end
     pnic.vmhost_id = vmhost.id
     pnic.name = row["pnic"]
     pnic.speed = row["speed"]
     pnic.macaddress = row["macaddress"]
     pnic.observed = row["observed"]
-    pnic.save
+    pnic.save if pnic.name.present?
   end
 end
 
 def host_hbas_data_import
   CSV.foreach("csv_data/powercli/hhbas.csv", :headers => true) do |row|
+    p row
     vmhost = Vmhost.find_by_name(row["vmhost"])
-    hbas = Hhba.where(:vmhost_id=>vmhost.id, :name=>row["hba"]).first
+    p vmhost
+    hbas = Hhba.where(:vmhost_id=>vmhost.id, :name=>row["hba"]).first if vmhost.present?
+    p hbas
     if hbas.present?
       hbas.ops_status = "Present"
       hbas.update_attributes(row.to_hash.slice(*accessible_attributes))
@@ -198,7 +207,7 @@ def host_hbas_data_import
       hbas.attributes = row.to_hash.slice(*accessible_attributes)
     end
     hbas.name = row["hba"]
-    hbas.vmhost_id = vmhost.id
+    hbas.vmhost_id = vmhost.id if vmhost.present?
     hbas.status = row["status"]
     hbas.model = row["model"]
     hbas.driver = row["driver"]
@@ -206,15 +215,15 @@ def host_hbas_data_import
     hbas.wwnn = row["wwnn"]
     hbas.wwpn = row["wwpn"]
 
-    hbas.save
+    hbas.save if hbas.name.present?
   end
 end
 
 def port_group_data_import
-  CSV.foreach("csv_data/powercli/port_group.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/portgroups.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
     pnic = Pnic.find_by_name(row["nic"])
-    pg = Portgroup.where(:vmhost_id=>vmhost.id, :name=>row["portgroup"], :pnic_id => pnic.id).first
+    pg = Portgroup.where(:vmhost_id=>vmhost.id, :name=>row["portgroup"], :pnic_id => pnic.id).first if vmhost.present?
     if pg.present?
       pg.ops_status = "Present"
       pg.update_attributes(row.to_hash.slice(*accessible_attributes))
@@ -229,7 +238,7 @@ def port_group_data_import
     pg.pnic_id = pnic.id
     pg.a_s = row["activestandby"]
 
-    pg.save
+    pg.save if pg.name.present?
   end
 end
 
@@ -300,16 +309,16 @@ p cluster
     vm.tools_status = row["toolstatus"]
     vm.created_time = row["createdtime"]
     vm.created_by = row["createdby"]
-    vm.vcenter_id = vcenter.id
-    vm.vdc_id = vdc.id
-    vm.cluster_id = cluster.id
+    vm.vcenter_id = vcenter.id if vcenter.present?
+    vm.vdc_id = vdc.id if vdc.present?
+    vm.cluster_id = cluster.id if cluster.present?
     vm.persistent_id = row["persistentid"]
     vm.vm_id = row["id"]
     vm.version = row["version"]
     vm.last_suspend = row["suspendtime"]
     vm.last_suspend_interval = row["suspendinterval"]
 
-    vm.save
+    vm.save if vm.name.present?
   end
 end
 
