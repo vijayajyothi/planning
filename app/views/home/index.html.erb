@@ -1,7 +1,9 @@
+<% comment do %>
 <% if flash[:notice]%>
 <div class="alert alert-error">
   <p><%= flash[:notice] %></p>
 </div>
+<% end %>
 <% end %>
 
 <section>
@@ -42,66 +44,66 @@
         </div>
         <div class=" col-sm-6 col-md-3">
           <div class="metro-nav">
-          <div class="metro-nav-block nav-block-orange">
-            <a data-original-title="" data-remote="true" href="/vdcs">
-              <div class="info_img"><img src="/assets/vdc.png" style="height:50px;width:50px;"></div>
-              <div class="info"><%= @vdc_count %></div>
-              <div class="status">Vdc</div>
+            <div class="metro-nav-block nav-block-orange">
+              <a data-original-title="" data-remote="true" href="/vdcs">
+                <div class="info_img"><img src="/assets/vdc.png" style="height:50px;width:50px;"></div>
+                <div class="info"><%= @vdc_count %></div>
+                <div class="status">Vdc</div>
+              </a>
+            </div>
+
+          </div>
+          <div class="metro-nav">
+            <div class="metro-nav-block nav-deep-terques">
+
+              <a data-original-title="" href="#">
+                <div class="info_img"><img src="/assets/underwriting.png"></div>
+                <div class="info">645<%#= @underwriting%></div>
+                <div class="status">F5 Vips</div>
+              </a>
+            </div>
+
+          </div></div>
+          <div class=" col-sm-6 col-md-3"><div class="metro-nav">
+            <div class="metro-nav-block nav-light-green">
+              <a data-original-title=""  data-remote="true" href="/clusters">
+                <div class="info_img"><img src="/assets/cluster.png" style="height:50px;width:50px;"></div>
+                <div class="info"><%= @cluster_count%></div>
+                <div class="status">Clusters</div>
+              </a>
+            </div>
+
+          </div><div class="metro-nav">
+          <div class="metro-nav-block nav-block-red">
+            <a data-original-title="" href="#">
+              <div class="info_img"><img src="/assets/scoring.png"></div>
+              <div class="info">7656<%#= @scoring%></div>
+              <div class="status">Services</div>
             </a>
           </div>
 
-        </div>
-        <div class="metro-nav">
-        <div class="metro-nav-block nav-deep-terques">
-
-          <a data-original-title="" href="#">
-            <div class="info_img"><img src="/assets/underwriting.png"></div>
-            <div class="info">645<%#= @underwriting%></div>
-            <div class="status">F5 Vips</div>
+        </div></div>
+        <div class=" col-sm-6 col-md-3"><div class="metro-nav">
+          <div class="metro-nav-block nav-deep-thistle">
+           <a data-original-title="" data-remote="true" href="/vmhosts">
+            <div class="info_img"><img src="/assets/vmhost.png" style="height:50px;width:50px;"></div>
+            <div class="info"><%= @vmhost_count%></div>
+            <div class="status">VM Host</div>
           </a>
         </div>
 
-      </div></div>
-      <div class=" col-sm-6 col-md-3"><div class="metro-nav">
-        <div class="metro-nav-block nav-light-green">
-          <a data-original-title=""  data-remote="true" href="/clusters">
-            <div class="info_img"><img src="/assets/cluster.png" style="height:50px;width:50px;"></div>
-            <div class="info"><%= @cluster_count%></div>
-            <div class="status">Clusters</div>
-          </a>
-        </div>
-
-      </div><div class="metro-nav">
-      <div class="metro-nav-block nav-block-red">
-        <a data-original-title="" href="#">
-          <div class="info_img"><img src="/assets/scoring.png"></div>
-          <div class="info">7656<%#= @scoring%></div>
-          <div class="status">Services</div>
+      </div>
+      <div class="metro-nav">
+        <div class="metro-nav-block nav-block-green">
+         <a data-original-title="" href="/reports">
+          <div class="info_img"><img src="/assets/finance.png"></div>
+          <div class="info">Reports<%#= @collected_amt %></div>
+          <div class="status"></div>
         </a>
       </div>
 
-    </div></div>
-    <div class=" col-sm-6 col-md-3"><div class="metro-nav">
-      <div class="metro-nav-block nav-deep-thistle">
-       <a data-original-title="" data-remote="true" href="/vmhosts">
-        <div class="info_img"><img src="/assets/vmhost.png" style="height:50px;width:50px;"></div>
-        <div class="info"><%= @vmhost_count%></div>
-        <div class="status">VM Host</div>
-      </a>
     </div>
-
   </div>
-  <div class="metro-nav">
-    <div class="metro-nav-block nav-block-green">
-     <a data-original-title="" href="/reports">
-      <div class="info_img"><img src="/assets/finance.png"></div>
-      <div class="info">Reports<%#= @collected_amt %></div>
-      <div class="status"></div>
-    </a>
-  </div>
-
-</div>
-</div>
 
 
 </div>

@@ -39,15 +39,15 @@ end
 # CLASS METHODS
 class << self
   def importing_data
-    # vcenter_data = vcenter_data_import
-    # p "vcenter data uploaded"
-    # data_center_data = data_center_data_import
-    # p "data center data uploaded"
-    # cluster_data = cluster_import
-    # p "vdc data uploaded" 
-    # esx_data = esx_data_import
-    # p "ESX Host data (vmhost)) uploaded"
-    # esx_pnics_data = esx_pnics_data_import
+    vcenter_data = vcenter_data_import
+    p "vcenter data uploaded"
+    data_center_data = data_center_data_import
+    p "data center data uploaded"
+#     cluster_data = cluster_import
+#     p "vdc data uploaded" 
+#     esx_data = esx_data_import
+#     p "ESX Host data (vmhost)) uploaded"
+#     esx_pnics_data = esx_pnics_data_import
 # p "ESX Host data uploaded"
 # host_hbas_data = host_hbas_data_import
 # p "Host hbas data uploaded"
@@ -55,9 +55,10 @@ class << self
 # p "Host hbas data uploaded"
 # data_store_data = data_store_data_import
 # p "Data store data uploaded"
-vm_data = vm_data_import
+# vm_data = vm_data_import
 # p "Vm  uploaded"
 end
+
 # vcenter data
 def vcenter_data_import
   Vcenter.update_all(:ops_status=>"Deleted")
@@ -282,7 +283,7 @@ p vcenter
     p "hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
 cluster = Cluster.find_by_name(row["cluster"])
 p cluster
-    vm = Vm.find_by_id(row["ipaddress"])
+    vm = Vm.find_by_ip(row["ipaddress"])
     p vm
     p "in vm"
     if vm.present?

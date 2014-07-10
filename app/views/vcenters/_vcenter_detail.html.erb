@@ -38,7 +38,7 @@
           <tbody>
             <% @vdcs.each do |each_vdc|%>
             <tr>
-              <td><b><%= each_vdc.name%></b></td>
+              <td><b><%= link_to each_vdc.name, each_vdc, :style=>"color:black;", :remote=> true%></b></td>
               <td><%#= @vm.createdby %></td>
             </tr> 
             <%end %>

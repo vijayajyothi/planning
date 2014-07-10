@@ -13,7 +13,7 @@
             </tr>
             <tr>
               <td><b>Vcenter</b></td>
-              <td><%= @vcenter.name %></td>
+              <td><%= link_to @vcenter.name, @vcenter, :style=>"color:black;", :remote=> true%></td>
             </tr>
             <tr>
               <td><b>Location</b></td>
