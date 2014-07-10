@@ -3,7 +3,7 @@
 
     <div class="span6">
       <div class="workflow-blocks"   style="height:200px;">
-        <div class="workflow-heading"><span>Basic Data</span><p>Other :other </p></div>
+        <div class="workflow-heading"><span>Basic Data</span><p><b><%= @vcenter.name %></b> </p></div>
 
         <table class="table table-hover">
           <tbody>
@@ -32,7 +32,7 @@
           <% @vdcs = get_vdc(@vcenter) %>
     <div class="span6">
       <div class="workflow-blocks"  style="height:200px;">
-        <div class="workflow-heading"><span>Vdcs</span><p>Count : <%= @vdcs.count%></p></div>
+        <div class="workflow-heading"><span>Vdcs</span><p>Count : <b><%= @vdcs.count%></b></p></div>
         <table class="table table-hover">
 
           <tbody>
@@ -46,9 +46,9 @@
         </div>
       </div>
       <% @clusters = get_cluster(@vcenter) %>
-      <div class="span6" style="margin-left:0px;">
+      <div class="span6" style="margin-left:0px;height:565px;">
         <div class="workflow-blocks">
-          <div class="workflow-heading"><span>Cluster</span><p>Count : <%= @clusters.count%></p></div>
+          <div class="workflow-heading"><span>Cluster</span><p>Count : <b><%= @clusters.count%></b></p></div>
           <table class="table table-hover">
 
             <tbody>
