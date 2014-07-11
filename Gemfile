@@ -34,6 +34,7 @@ gem 'simple_login'
 #gem 'bcrypt-ruby', git: 'git@github.com:hananamar/bcrypt-ruby.git', :require => 'bcrypt'
 
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'net-ldap'
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 

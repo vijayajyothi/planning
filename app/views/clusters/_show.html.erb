@@ -8,8 +8,10 @@
           <ul class="nav nav-list">
             <li class="nav-header">clusters</li>
             <% @clusters.each do |each_cluster|%>
-            <li><%= link_to  each_cluster.name, selected_cluster_path(each_cluster), :remote=> true%></a>
+              <li class=<%=each_cluster.id== params[:id].to_i ? "active" : "none" %>>
+              <%= link_to  each_cluster.name, selected_cluster_path(each_cluster), :remote=> true%>
             </li>
+            
             <% end %>
           </ul>
         </div><!--/.well -->
