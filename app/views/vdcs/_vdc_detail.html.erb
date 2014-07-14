@@ -40,7 +40,7 @@
            <% @clusters.each do |each_cluster|%>
            <tr>
 
-            <td><b><%= each_cluster.name%></b></td>
+            <td><b><%= link_to each_cluster.name, each_cluster , :style=>"color:black;", :remote=> true%></b></td>
             <td><%#= @vm.power_state %></td>
           </tr>  
           <% end %>

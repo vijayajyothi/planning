@@ -22,12 +22,12 @@ end
 
 def my_vdc(vdc_id)
   vdc = Vdc.where(:id=> vdc_id).first
-  return vdc.present? ? vdc.name : "No Value"
+  return vdc
 end
 
 def my_vcenter(vcenter_id)
   vcenter = Vcenter.where(:id => vcenter_id).first
-  return vcenter.present? ?  vcenter.name : "No Value"
+  return vcenter
 end
 def get_vms_by_host(host_name)
   vms = Vm.where(:vm_hostname=> host_name)

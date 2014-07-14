@@ -39,10 +39,10 @@ end
 # CLASS METHODS
 class << self
   def importing_data
-    vcenter_data = vcenter_data_import
-    p "vcenter data uploaded"
-    data_center_data = data_center_data_import
-    p "data center data uploaded"
+#     vcenter_data = vcenter_data_import
+#     p "vcenter data uploaded"
+#     data_center_data = data_center_data_import
+#     p "data center data uploaded"
 #     cluster_data = cluster_import
 #     p "vdc data uploaded" 
 #     esx_data = esx_data_import
@@ -55,15 +55,15 @@ class << self
 # p "Host hbas data uploaded"
 # data_store_data = data_store_data_import
 # p "Data store data uploaded"
-# vm_data = vm_data_import
-# p "Vm  uploaded"
+vm_data = vm_data_import
+p "Vm  uploaded"
 end
 
 # vcenter data
 def vcenter_data_import
   Vcenter.update_all(:ops_status=>"Deleted")
   
-  CSV.foreach("csv_data/powercli/vcenters.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/esx-vcenters.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["name"])
     if vcenter.present?
       vcenter.ops_status = "Present"
@@ -84,7 +84,7 @@ end
 def data_center_data_import
   Vdc.update_all(:ops_status=>"Deleted")
 
-    CSV.foreach("csv_data/powercli/data_center.csv", :headers => true) do |row|
+    CSV.foreach("csv_data/powercli/esx/esx-datacenters.csv", :headers => true) do |row|
 
       vcenter = Vcenter.find_by_name(row["vcserver"])
       vdc = Vdc.where(:name => row["datacenter"], :vcenter_id=>vcenter.id).first
@@ -106,7 +106,7 @@ def data_center_data_import
 def cluster_import
   Cluster.update_all(:ops_status=>"Deleted")
 
-  CSV.foreach("csv_data/powercli/cluster.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/esx-clusters.csv", :headers => true) do |row|
 
     vcenter = Vcenter.find_by_name(row["vcserver"])
     vdc = Vdc.find_by_vcenter_id(vcenter.id)
@@ -131,7 +131,7 @@ end
 
 def esx_data_import
   Vmhost.update_all(:ops_status=>"Deleted")
-  CSV.foreach("csv_data/powercli/esx_host.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/esx-hosts.csv", :headers => true) do |row|
   vcenter = Vcenter.find_by_name(row["vcserver"])
   cluster = Cluster.find_by_name(row["cluster"])  
   esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id, :cluster_id=> cluster.id).first if cluster.present?
@@ -274,15 +274,15 @@ end
 
 
 def vm_data_import
-  CSV.foreach("csv_data/powercli/vm.csv", :headers => true) do |row|
-
+  CSV.foreach("csv_data/powercli/esx/esx-vms.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["vcserver"])
-p vcenter
-    vdc = Vdc.find_by_name(row["data"])
-    p vdc
-    p "hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
-cluster = Cluster.find_by_name(row["cluster"])
+    vdc = Vdc.find_by_name(row["datacenter"])
+    vmhost = Vmhost.find_by_name(row["vmhost"])
+    cluster = Cluster.find_by_id(vmhost.cluster_id)
+    # Not getting in entry itself :cluster
+# cluster = Cluster.find_by_name(row["cluster"]) 
 p cluster
+raise 'here'
     vm = Vm.find_by_ip(row["ipaddress"])
     p vm
     p "in vm"

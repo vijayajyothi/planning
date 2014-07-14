@@ -33,8 +33,8 @@
     <% else %>
     <tr style="cursor:pointer;" id ="complete_tr">
       <td><%= cluster.name %></td>
-      <td><%= my_vdc(cluster.vdc_id) %></td>
-      <td><%= my_vcenter(cluster.vcenter_id) %></td>
+      <td><%= my_vdc(cluster.vdc_id).name %></td>
+      <td><%= my_vcenter(cluster.vcenter_id).name %></td>
       <td><%= cluster.cpu_total_mhz%></td>
       <td><%= cluster.mem_total_mb/1000000 %></td>
       <td><%= cluster.cpu_no_cores%></td>

@@ -14,7 +14,7 @@
             
             <tr>
               <td><b>VDC</b></td>
-              <td><%= my_vdc(@cluster.vdc_id) %></td>
+              <td><%= link_to my_vdc(@cluster.vdc_id).name , my_vdc(@cluster.vdc_id), :style=>"color:black;", :remote=> true%></td>
             </tr> 
             <tr>
               <td><b>Total CPU</b></td>
@@ -32,7 +32,7 @@
             </tr> 
             <tr>
               <td><b>Vcenter</b></td>
-              <td><%= my_vcenter(@cluster.vcenter_id) %></td>
+              <td><%= link_to my_vcenter(@cluster.vcenter_id).name , my_vcenter(@cluster.vcenter_id), :style=>"color:black;", :remote=> true%></td>
             </tr>   
 
 
