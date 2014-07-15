@@ -32,6 +32,10 @@ end
 def my_cluster(cluster_id)
   cluster = Cluster.where(:id=> cluster_id).first
 end
+
+def my_host(vmhost_id)
+vmhost = Vmhost.where(:id=>vmhost_id).first
+  end
 def get_vms_by_host(host_name)
   vms = Vm.where(:vm_hostname=> host_name)
 end
