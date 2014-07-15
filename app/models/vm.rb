@@ -1,5 +1,5 @@
 class Vm < ActiveRecord::Base
-  attr_accessible :application_id, :backup, :cluster_id, :connection_state, :created_by, :created_time, :folder_id, :hw_version, :hz_numer, :instance_id, :ip, :is_cloud, :last_boot, :last_change, :last_suspend, :last_suspend_interval, :name, :num_cpus, :num_vnics, :os, :owner, :persistent_id, :power_state, :ppm_no, :resource_pool, :status, :tier_id, :tools_status, :tools_version, :total_mem_mb, :uuid, :vcenter_id, :vdc_id, :version, :vm_hostname, :vm_id, :vmhost_id
+  attr_accessible :application_id, :backup, :cluster_id, :connection_state, :created_by, :created_time, :folder_id, :hw_version, :hz_numer, :instance_id, :ip, :is_cloud, :last_boot, :last_change, :last_suspend, :last_suspend_interval, :name, :num_cpus, :num_vnics, :os, :owner, :persistent_id, :power_state, :ppm_no, :resource_pool, :status, :tier_id, :tools_status, :tools_version, :total_mem_mb, :uuid, :vcenter_id, :vdc_id, :version, :vm_hostname, :vm_id, :vmhost_id, :ops_status
   # attr_accessible :application, :boottime, :cluster, :connectionstate, :createdby, :createdtime, :datacenter, :folder, :guestfullname, :gueststate, :hostname, :ipaddress, :memorymb, :numcpu, :persistentid, :powerstate, :provisionedspacegb, :qtynics, :reourcepool, :storagecommitted, :storageuncommitted, :suspendinterval, :suspendtime, :toolsrunningstatus, :toolstatus, :toolsversion, :usedspacegb, :vcserver, :version, :vmhost, :vmname
   
 #ASSOCIATIONS
@@ -274,20 +274,14 @@ end
 
 
 def vm_data_import
+  Vm.update_all(:ops_status=>"Deleted")
   CSV.foreach("csv_data/powercli/esx/esx-vms.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["vcserver"])
     vdc = Vdc.find_by_name(row["datacenter"])
     vmhost = Vmhost.find_by_name(row["vmhost"])
-    cluster = Cluster.find_by_id(vmhost.cluster_id)
-    # Not getting in entry itself :cluster
-# cluster = Cluster.find_by_name(row["cluster"]) 
-p cluster
-raise 'here'
+    cluster = Cluster.find_by_name(row["cluster"]) 
     vm = Vm.find_by_ip(row["ipaddress"])
-    p vm
-    p "in vm"
     if vm.present?
-      p "in if"
       vm.ops_status = "Present"
       vm.update_attributes(row.to_hash.slice(*accessible_attributes))
     else
@@ -313,12 +307,12 @@ raise 'here'
     vm.vcenter_id = vcenter.id if vcenter.present?
     vm.vdc_id = vdc.id if vdc.present?
     vm.cluster_id = cluster.id if cluster.present?
+    vm.vmhost_id = vmhost.id if vmhost.present?
     vm.persistent_id = row["persistentid"]
     vm.vm_id = row["id"]
     vm.version = row["version"]
     vm.last_suspend = row["suspendtime"]
     vm.last_suspend_interval = row["suspendinterval"]
-
     vm.save if vm.name.present?
   end
 end

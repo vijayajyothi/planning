@@ -56,7 +56,7 @@
                  <tbody>
                    <% @vms.each do |each_vm|%>
                    <tr>
-                    <td><b><%= link_to each_vm.name, each_vmsx, :style=>"color:black;", :remote=> true%></b></td>
+                    <td><b><%= link_to each_vm.name, each_vm, :style=>"color:black;", :remote=> true%></b></td>
 
                     <td><%#= @vm.power_state %></td>
                   </tr>  

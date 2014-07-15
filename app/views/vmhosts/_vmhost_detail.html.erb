@@ -1,272 +1,175 @@
 <div class="right-panel">
   <div class="span9">
-    <% comment do %>
-    <div class="span6">
-      <div class="workflow-blocks">
-        <div class="workflow-heading"><span>Basic Data</span><p>Power : <%#= @vmhost.power_state %></p></div>
-
-        
-
-      </div>
-    </div>
-    <div class="span6">
-      <div class="workflow-blocks">
-        <div class="workflow-heading"><span>OPS Data</span><p></p></div>
-        <table class="table table-hover">
-
-        </table>
-      </div>
-    </div>
-    <%# @vms = get_vms(@cluster.id) %>
-
-    <div class="span6" style="margin-left:0px;">
-      <div class="workflow-blocks">
-        <div class="workflow-heading"><span>Vms</span><p></p></div>
-        <table class="table table-hover">
-          <tbody>
-            <%# @vms.each do |each_vm|%>
-            <%#  present_cluster = Cluster.find_by_id(each_esx.cluster_id)%>
-            <tr>
-              <td><b><%#= each_vm.name %></b></td>
-              <td><%#=present_cluster.name %></td>
-            </tr> 
-            <%# end %>  
-          </tbody></table>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              Basic Data
+            </a>
+          </h4>
         </div>
-      </div><!--/span-->
-      <div class="span6">
-        <div class="workflow-blocks">
-          <div class="workflow-heading"><span>Other Data</span><p></p></div>
-          <table class="table table-hover">
+        <div id="collapseOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <td><b>Name</b></td>
+                  <td><%= @vmhost.name %></td>
 
-            <tbody>
-             <tr>
-              <td><b>Cluster</b></td>
-              <td><%#= @vmhost.cluster %></td>
-            </tr>   
-            <tr>
-              <td><b>VC Server</b></td>
-              <td><%#= @vmhost.vcserver %></td>
-            </tr>   
-            <tr>
-              <td><b>Resource Pool</b></td>
-              <td><%#= @vmhost.reourcepool %></td>
-            </tr>    
-            <tr>
-              <td><b>Folder</b></td>
-              <td><%#= @vmhost.folder %></td>
-            </tr> 
-            <tr>
-              <td><b>Application</b></td>
-              <td><%#= @vmhost.application %></td>
-            </tr>   
-            <tr>
-              <td><b>Num of vNICs</b></td>
-              <td><%#= @vmhost.qtynics %></td>
-            </tr>   
+                  <td><b>Cluster</b></td>
+                  <td><%= @vmhost.cluster_id %></td>
+                </tr>  
+                <tr>
+                  <td><b>Connection State</b></td>
+                  <td><%= @vmhost.connection_state %></td>
 
-          </tbody></table>
+                  <td><b>Power State</b></td>
+                  <td><%= @vmhost.power_state %></td>
+                </tr>  
+
+                <tr>
+                  <td><b>Total CPUs(mhz)</b></td>
+                  <td><%= @vmhost.cpu_total_mhz %></td>
+
+                  <td><b>Total memory(mb)</b></td>
+                  <td><%= @vmhost.mem_total_mb/1000000 %></td>
+                </tr>   
+
+                <tr>
+                  <td><b>ESX Version</b></td>
+                  <td><%= @vmhost.esx_version %></td>
+
+                  <td><b>ESX Product</b></td>
+                  <td><%= @vmhost.esx_product %></td>
+                </tr>  
+                <tr>
+                  <td><b>ESX Build</b></td>
+                  <td><%= @vmhost.esx_build %></td>
+
+                  <td><b>Num of CPUs</b></td>
+                  <td><%= @vmhost.num_cpu %></td>
+                </tr> 
+                <tr>
+                  <td><b>Num of Cores</b></td>
+                  <td><%= @vmhost.num_core %></td>
+
+                  <td><b>UUID</b></td>
+                  <td><%= @vmhost.uuid %></td>
+                </tr> 
+
+              </tbody></table>
+            </div>
+          </div>
         </div>
-      </div><!--/span-->
-          <!-- <div class="span4">
-            <div class="workflow-blocks">
-              <div class="workflow-heading"><span>OPS Data</span><p></p></div>
+
+        <div class="panel panel-default span6" style="margin-left:0px;margin-right:6px;">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                VMs
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <% @vms = get_vms_by_host(@vmhost.name) %>
+
+
               <table class="table table-hover">
-
                 <tbody>
+                  <% @vms.each do |each_vm|%>
+                  <%#  present_cluster = Cluster.find_by_id(each_esx.cluster_id)%>
                   <tr>
-                    <td>Row1 Cell1</td>
-                    <td>Row1 Cell2</td>
-                  </tr>
-                  <tr><td>Row2 Cell1</td>
-                    <td>Row2 Cell2</td>
-                  </tr>
-                  <tr><td>Row2 Cell1</td>
-                    <td>Row2 Cell2</td>
-                  </tr>
-                </tbody>
-              </table>
+                    <td><b><%= each_vm.name %></b></td>
+                    <td><%#=present_cluster.name %></td>
+                  </tr> 
+                  <% end %>  
+                </tbody></table>
               </div>
-            </div><!--/span--> 
+            </div>
+          </div>
 
-            
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  Hhba
+                </a>
+              </h4>
+            </div>
+            <% @hhbas = Hhba.where(:vmhost_id=> @vmhost.id) %>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                <table class="table table-hover">
+                  <tbody>
+                    <th> Name</th>
+                    <th> Status</th>
+                    <th> WWNN</th>
+                    <% @hhbas.each do |each_hhba|%>
+                    <tr>
+                      <td><b><%= each_hhba.name %></b></td>
+                      <td><%=each_hhba.status %></td>
+                      <td><%=each_hhba.wwnn %></td>
+                    </tr> 
+                    <% end %>  
+                  </tbody></table>
+                </div>
+              </div>
+            </div>
 
-
-         
-          </div><!--/span-->
-          <% end  %>
-
-
-          <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
+            <div class="panel panel-default span6 " style="margin-left:0px;margin-right:6px;">
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    Basic Data
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                    Pnics
                   </a>
                 </h4>
               </div>
-              <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
+              <% @pnics = Pnic.where(:vmhost_id=> @vmhost.id) %>
+              <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body" style="max-height:570px; overflow:auto;">
                   <table class="table table-hover">
                     <tbody>
+                      <th> Name</th>
+                      <th> MAC Address</th>
+                      <% @pnics.each do |each_pnic|%>
                       <tr>
-                        <td><b>Name</b></td>
-                        <td><%= @vmhost.name %></td>
-
-                        <td><b>Cluster</b></td>
-                        <td><%= @vmhost.cluster_id %></td>
-                      </tr>  
-                      <tr>
-                        <td><b>Connection State</b></td>
-                        <td><%= @vmhost.connection_state %></td>
-
-                        <td><b>Power State</b></td>
-                        <td><%= @vmhost.power_state %></td>
-                      </tr>  
-
-                      <tr>
-                        <td><b>Total CPUs(mhz)</b></td>
-                        <td><%= @vmhost.cpu_total_mhz %></td>
-
-                        <td><b>Total memory(mb)</b></td>
-                        <td><%= @vmhost.mem_total_mb/1000000 %></td>
-                      </tr>   
-
-                      <tr>
-                        <td><b>ESX Version</b></td>
-                        <td><%= @vmhost.esx_version %></td>
-
-                        <td><b>ESX Product</b></td>
-                        <td><%= @vmhost.esx_product %></td>
-                      </tr>  
-                      <tr>
-                        <td><b>ESX Build</b></td>
-                        <td><%= @vmhost.esx_build %></td>
-
-                        <td><b>Num of CPUs</b></td>
-                        <td><%= @vmhost.num_cpu %></td>
+                        <td><b><%= each_pnic.name %></b></td>
+                        <td><%=each_pnic.macaddress %></td>
                       </tr> 
-                      <tr>
-                        <td><b>Num of Cores</b></td>
-                        <td><%= @vmhost.num_core %></td>
-
-                        <td><b>UUID</b></td>
-                        <td><%= @vmhost.uuid %></td>
-                      </tr> 
-
+                      <% end %>  
                     </tbody></table>
                   </div>
                 </div>
               </div>
-
-              <div class="panel panel-default span6" style="margin-left:0px;margin-right:6px;">
+              <% comment do %>
+              <div class="panel panel-default " >
                 <div class="panel-heading">
                   <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                      VMs
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                      Data Store
                     </a>
                   </h4>
                 </div>
-                <div id="collapseTwo" class="panel-collapse collapse">
+                <% @ds = Datastore.where(:vmhost_id=> @vmhost.idcluster_id) %>
+                <div id="collapseFive" class="panel-collapse collapse">
                   <div class="panel-body">
-                    <% @vms = get_vms_by_host(@vmhost.name) %>
-
-
                     <table class="table table-hover">
                       <tbody>
-                        <% @vms.each do |each_vm|%>
-                        <%#  present_cluster = Cluster.find_by_id(each_esx.cluster_id)%>
+                        <th> Name</th>
+                        <th> MAC Address</th>
+                        <% @ds.each do |each_ds|%>
                         <tr>
-                          <td><b><%= each_vm.name %></b></td>
-                          <td><%#=present_cluster.name %></td>
+                          <td><b><%= each_ds.name %></b></td>
+                          <td><%=each_ds.ds_id %></td>
                         </tr> 
                         <% end %>  
                       </tbody></table>
                     </div>
                   </div>
                 </div>
-
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                        Hhba
-                      </a>
-                    </h4>
-                  </div>
-                  <% @hhbas = Hhba.where(:vmhost_id=> @vmhost.id) %>
-                  <div id="collapseThree" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <table class="table table-hover">
-                        <tbody>
-                          <th> Name</th>
-                          <th> Status</th>
-                          <th> WWNN</th>
-                          <% @hhbas.each do |each_hhba|%>
-                          <tr>
-                            <td><b><%= each_hhba.name %></b></td>
-                            <td><%=each_hhba.status %></td>
-                            <td><%=each_hhba.wwnn %></td>
-                          </tr> 
-                          <% end %>  
-                        </tbody></table>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel panel-default span6 " style="margin-left:0px;margin-right:6px;">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                          Pnics
-                        </a>
-                      </h4>
-                    </div>
-                    <% @pnics = Pnic.where(:vmhost_id=> @vmhost.id) %>
-                    <div id="collapseFour" class="panel-collapse collapse">
-                      <div class="panel-body" style="max-height:570px; overflow:auto;">
-                        <table class="table table-hover">
-                          <tbody>
-                            <th> Name</th>
-                            <th> MAC Address</th>
-                            <% @pnics.each do |each_pnic|%>
-                            <tr>
-                              <td><b><%= each_pnic.name %></b></td>
-                              <td><%=each_pnic.macaddress %></td>
-                            </tr> 
-                            <% end %>  
-                          </tbody></table>
-                        </div>
-                      </div>
-                    </div>
-                    <% comment do %>
-                    <div class="panel panel-default " >
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                            Data Store
-                          </a>
-                        </h4>
-                      </div>
-                      <% @ds = Datastore.where(:vmhost_id=> @vmhost.idcluster_id) %>
-                      <div id="collapseFive" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <table class="table table-hover">
-                            <tbody>
-                              <th> Name</th>
-                              <th> MAC Address</th>
-                              <% @ds.each do |each_ds|%>
-                              <tr>
-                                <td><b><%= each_ds.name %></b></td>
-                                <td><%=each_ds.ds_id %></td>
-                              </tr> 
-                              <% end %>  
-                            </tbody></table>
-                          </div>
-                        </div>
-                      </div>
-                      <% end %>
-                    </div>
-                  </div><!--/span-->
+                <% end %>
+              </div>
+            </div><!--/span-->
 

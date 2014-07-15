@@ -1,187 +1,159 @@
 <div class="right-panel">
   <div class="span9">
 
-    <div class="span6">
-      <div class="workflow-blocks">
-        <div class="workflow-heading"><span>Basic Data</span><p>Power : <%= @vm.power_state %></p></div>
-
-        <table class="table table-hover">
-          <tbody>
-            <tr>
-              <td><b>VM Name</b></td>
-              <td><%= @vm.name %></td>
-            </tr>
-            <tr>
-              <td><b>IP Address</b></td>
-              <td><%= @vm.ip %></td>
-            </tr>
-            <tr>
-              <td><b>Data Center</b></td>
-              <td><%#= datacenter(@vm.vdc_id) %></td>
-            </tr>  
-
-            <tr>
-              <td><b>VM Host Name</b></td>
-              <td><%#= @vm.hostname %></td>
-            </tr>  
-
-            <tr>
-              <td><b>ESX Host</b></td>
-              <td><%#= @vm.vmhost %></td>
-            </tr>   
-            <tr>
-              <td><b>Num Of CPUs</b></td>
-              <td><%#= @vm.numcpu %></td>
-            </tr>   
-            
-         <!-- <tr>
-            <td><b>Cluster</b></td>
-            <td><%= @vm.cluster %></td>
-          </tr> -->
-
-        </tbody></table>
-
-      </div>
-    </div>
-    <div class="span6">
-      <div class="workflow-blocks">
-        <div class="workflow-heading"><span>OPS Data</span><p></p></div>
-        <table class="table table-hover">
-
-          <tbody>
-           <tr>
-            <td><b>Created By</b></td>
-            <td><%#= @vm.createdby %></td>
-          </tr> 
-          <tr>
-            <td><b>Created Time</b></td>
-            <td><%#= @vm.createdtime %></td>
-          </tr> 
-          <tr>
-            <td><b>Suspend Interval</b></td>
-            <td><%#= @vm.suspendinterval %></td>
-          </tr> 
-          <tr>
-            <td><b>Suspend Time</b></td>
-            <td><%#= @vm.suspendtime %></td>
-          </tr> 
-          <tr>
-            <td><b>Boot Time</b></td>
-            <td><%#= @vm.boottime %></td>
-          </tr> 
-          <tr>
-            <td><b>Createdby:</b></td>
-            <td><%#= @vm.createdby %></td>
-          </tr>
 
 
-
-        </tbody></table>
-      </div>
-    </div>
-    <div class="span6" style="margin-left:0px;">
-      <div class="workflow-blocks">
-        <div class="workflow-heading"><span>Status</span><p></p></div>
-        <table class="table table-hover">
-
-          <tbody>
-            <tr>
-              <td><b>Power State</b></td>
-              <td><%= @vm.power_state %></td>
-            </tr>  
-            <tr>
-              <td><b>Connection State</b></td>
-              <td><%= @vm.connection_state %></td>
-            </tr> 
-            <tr>
-              <td><b>Version</b></td>
-              <td><%= @vm.version %></td>
-            </tr> 
-            <tr>
-              <td><b>Guest State</b></td>
-              <td><%#= @vm.guest_state %></td>
-            </tr> 
-            <tr>
-              <td><b>Memory(MB)</b></td>
-              <td><%#= @vm.memorymb %></td>
-            </tr> 
-            <tr>
-              <td><b>Provisioned Space(GB)</b></td>
-              <td><%#= @vm.provisionedspacegb %></td>
-            </tr> 
-            <tr>
-              <td><b>Used Space(GB)</b></td>
-              <td><%#= @vm.usedspacegb %></td>
-            </tr> 
-            <tr>
-              <td><b>Status</b></td>
-              <td><%#= @vm.gueststate %></td>
-            </tr> 
-          </tbody></table>
+   <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="workflow-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#basicdata">
+          <span>Basic Data</span>
+          <p><b> Status : </b><%= @vm.power_state %></p></a>
         </div>
-      </div><!--/span-->
-      <div class="span6">
-        <div class="workflow-blocks">
-          <div class="workflow-heading"><span>Other Data</span><p></p></div>
-          <table class="table table-hover">
 
-            <tbody>
-             <tr>
-              <td><b>Cluster</b></td>
-              <td><%#= @vm.cluster %></td>
-            </tr>   
-            <tr>
-              <td><b>VC Server</b></td>
-              <td><%#= @vm.vcserver %></td>
-            </tr>   
-            <tr>
-              <td><b>Resource Pool</b></td>
-              <td><%#= @vm.reourcepool %></td>
-            </tr>    
-            <tr>
-              <td><b>Folder</b></td>
-              <td><%#= @vm.folder %></td>
-            </tr> 
-            <tr>
-              <td><b>Application</b></td>
-              <td><%#= @vm.application %></td>
-            </tr>   
-            <tr>
-              <td><b>Num of vNICs</b></td>
-              <td><%#= @vm.qtynics %></td>
-            </tr>   
+        <div id="basicdata" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <table class="table table-hover">
+              <tbody>
+               <tr>
+                <td><b>vCenter</b></td>
+                <td><%= my_vcenter(@vm.vcenter_id).name %></td>
 
-          </tbody></table>
+                <td><b>Data Center</b></td>
+                <td><%= my_vdc(my_cluster(@vm.cluster_id).vdc_id).name%></td>
+              </tr>
+              <tr>
+                <td><b>Cluster</b></td>
+                <td><%= my_cluster(@vm.cluster_id).name %></td>
+                <td><b>Host</b></td>
+                <td><%= @vm.vm_hostname %></td>
+              </tr> 
+              <tr>
+                <td><b>VM Name</b></td>
+                <td><%= @vm.name %></td>
+                <td><b>VM IP Address</b></td>
+                <td><%= @vm.ip %></td>
+              </tr> 
+              <tr>
+                <td><b>Connection Status</b></td>
+                <td><%= @vm.connection_state %></td>
+
+                <td><b>Os Type</b></td>
+                <td><%= @vm.os %></td>
+              </tr>  
+
+              <tr>
+                <td><b>Total vCPUs</b></td>
+                <td><%= @vm.num_cpus %></td>
+
+                <td><b>Total vNICs</b></td>
+                <td><%= @vm.num_vnics %></td>
+              </tr>    
+              <tr>
+                <td><b>Status</b></td>
+                <td><%= @vm.status %></td>
+
+                <td><b>Helpzilla Cases</b></td>
+                <td><%= @vm.hz_numer %></td>
+              </tr>   
+
+
+
+            </tbody></table>
+          </div>
         </div>
-      </div><!--/span-->
-          <!-- <div class="span4">
-            <div class="workflow-blocks">
-              <div class="workflow-heading"><span>OPS Data</span><p></p></div>
+      </div>
+      <div class="panel panel-default  span6" style="margin-left:0px;" >
+        <%# @clusters = get_cluster(@vcenter) %>
+        <div class="workflow-heading">
+          <a data-toggle="collapse" data-parent="#accordion" href="#opsdata">
+            <span>Vsphere</span>
+            <p> <b>HW Version :</b> <%= @vm.version %></p></a>
+          </div>
+
+          <div id="opsdata" class="panel-collapse collapse">
+            <div class="panel-body" >
               <table class="table table-hover">
+               <tbody>
+                 <tr>
+                  <td><b>Resource Pool</b></td>
+                  <td><%= @vm.resource_pool %></td>
+                </tr> 
+                <tr>
+                  <td><b>Tool Status</b></td>
+                  <td><%#= vm.tools_status %></td>
+                </tr> 
+                <tr>
+                  <td><b>Tools Version</b></td>
+                  <td><%= @vm.tools_version %></td>
+                </tr> 
+                <tr>
+                  <td><b>UUID</b></td>
+                  <td><%= @vm.uuid %></td>
+                </tr> 
+                
+                <tr>
+                  <td><b>Last Boot</b></td>
+                  <td><%= @vm.last_boot %></td>
+                </tr>
 
-                <tbody>
-                  <tr>
-                    <td>Row1 Cell1</td>
-                    <td>Row1 Cell2</td>
-                  </tr>
-                  <tr><td>Row2 Cell1</td>
-                    <td>Row2 Cell2</td>
-                  </tr>
-                  <tr><td>Row2 Cell1</td>
-                    <td>Row2 Cell2</td>
-                  </tr>
-                </tbody>
-              </table>
+
+
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default  span6"  style="">
+          <% #@esxs = get_esx(@vcenter) %>
+          <div class="workflow-heading">
+            <a data-toggle="collapse" data-parent="#accordion" href="#status">
+              <span>status</span>
+              <p> Count : <%#= @esxs.count %></p></a>
+            </div>
+
+            <div id="status" class="panel-collapse collapse">
+              <div class="panel-body" style="max-height:533px; overflow:auto;">
+                <table class="table table-hover">
+                  <tbody>
+                    <tr>
+                      <td><b>Power State</b></td>
+                      <td><%= @vm.power_state %></td>
+                    </tr>  
+                    <tr>
+                      <td><b>Connection State</b></td>
+                      <td><%= @vm.connection_state %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Version</b></td>
+                      <td><%= @vm.version %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Guest State</b></td>
+                      <td><%#= @vm.guest_state %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Memory(MB)</b></td>
+                      <td><%#= @vm.memorymb %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Provisioned Space(GB)</b></td>
+                      <td><%#= @vm.provisionedspacegb %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Used Space(GB)</b></td>
+                      <td><%#= @vm.usedspacegb %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Status</b></td>
+                      <td><%#= @vm.gueststate %></td>
+                    </tr> 
+                  </tbody></table>
+                </div>
               </div>
-            </div><!--/span--> 
-
-            
-
-
-            <!--Section Ends Here -->
+            </div>
+          </div>
 
 
-            <%#= link_to 'Edit', edit_vm_path(@vm) %> 
-            <%#= link_to 'Back', vms_path %>
-          </div><!--/span-->
+          
         </div><!--/span-->
+      </div><!--/span-->

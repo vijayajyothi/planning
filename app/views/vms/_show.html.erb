@@ -8,6 +8,9 @@
           <ul class="nav nav-list">
             <li class="nav-header">VMs</li>
             <% @vms.each do |each_vm|%>
+            <li class=<%=each_vcm.id== params[:id].to_i ? "active" : "none" %>>
+              <%= link_to  each_vm.name, selected_vm_path(each_vm), :remote=> true%>
+            </li>
             <li><%= link_to  each_vm.name, selected_vm_path(each_vm), :remote=> true%></a>
             </li>
             <% end %>
