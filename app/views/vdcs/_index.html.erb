@@ -6,7 +6,7 @@
     <div class="form-search col-sm-4" style="margin-top:20px;">
       <div class="input-append">
 
-        <%= form_tag vdcs_path, :method => :get do %>
+        <%= form_tag vdcs_path, :method => :get, :remote=> true do %>
         <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
         <%= submit_tag "Search", :name => nil, :class=>"btn" %>
         <% end %>
@@ -42,9 +42,9 @@
 
   <div class="digg_pagination">
     <div class="page_info">
-      <%= page_entries_info @vdcs %>
+      <%#= page_entries_info @vdcs %>
     </div>
-    <%= will_paginate @vdcs, :container => false %>
+    <%= paginate @vdcs, :container => false, :remote=> true %>
   </div>
  
 </div>

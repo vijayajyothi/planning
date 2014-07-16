@@ -9,9 +9,9 @@ class VcentersController < ApplicationController
       paginate  :page => params[:page], :per_page=>15
     end
     @vcenters = @search.results
-    @vcenters = Vcenter.paginate(:page => params[:page], :per_page => 30)
-
-  end
+    # @vcenters = Vcenter.paginate(:page => params[:page], :per_page => 30, :page => params[:page])
+@vcenters = Vcenter.page(params[:page]).per(14) 
+ end
 
   # GET /vcenters/1
   # GET /vcenters/1.json

@@ -8,7 +8,7 @@ class ClustersController < ApplicationController
     #   paginate  :page => params[:page], :per_page=>15
     # end
     # @clusters = @search.results
-    @clusters = Cluster.paginate(:page => params[:page], :per_page => 30)
+    @clusters = Cluster.page(params[:page]).per(15) 
 
     
   end

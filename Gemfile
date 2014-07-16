@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 #hiiiiiiii
 gem 'rails', '3.2.16'
 
@@ -21,8 +21,9 @@ group :assets do
   gem 'twitter-bootstrap-rails'
   gem 'less-rails'
 end
-gem 'will_paginate', '~> 3.0.5'
-gem 'will_paginate-bootstrap'
+# gem 'will_paginate', '~> 3.0.5'
+# gem 'will_paginate-bootstrap'
+gem 'kaminari'
 gem 'jquery-rails'
 gem 'jquery-tablesorter'
 gem 'sunspot_rails'

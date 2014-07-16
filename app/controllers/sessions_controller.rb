@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   require 'net/ldap'
 
-  skip_before_filter :authenticate, :only =>["new", "verify_user"] 
+  # before_filter :verify_user, :only =>["new"] 
   def new
     render :layout=> false
   end
@@ -27,7 +27,6 @@ class SessionsController < ApplicationController
   end
 
   def verify_user
-    raise "here"
     ldap = Net::LDAP.new :host => "122.166.208.34",
     :port => 389,
     :auth => {

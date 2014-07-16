@@ -7,7 +7,7 @@ class VdcsController < ApplicationController
     #   paginate  :page => params[:page], :per_page=>15
     # end
     # @vdcs = @search.results
-    @vdcs = Vdc.paginate(:page => params[:page], :per_page => 30)
+    @vdcs = Vdc.page(params[:page]).per(14) 
 
    
   end

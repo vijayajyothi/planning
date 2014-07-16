@@ -12,7 +12,7 @@ class VmsController < ApplicationController
       paginate  :page => params[:page], :per_page=>15
     end
     @vms = @search.results
-     # @vms = Vm.paginate(:page => params[:page], :per_page => 30)
+    @vms = Vm.page(params[:page]).per(14) 
 
     # respond_to do |format|
     #    format.html # index.html.erb

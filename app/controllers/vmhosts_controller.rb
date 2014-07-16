@@ -8,7 +8,7 @@ class VmhostsController < ApplicationController
    #    paginate  :page => params[:page], :per_page=>15
    #  end
    #  @vmhosts = @search.results
-     @vmhosts = Vmhost.paginate(:page => params[:page], :per_page => 30)
+     @vmhosts = Vmhost.page(params[:page]).per(14) 
      
   end
 
