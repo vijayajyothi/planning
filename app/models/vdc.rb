@@ -7,6 +7,9 @@ class Vdc < ActiveRecord::Base
   has_many :portgroups
   has_many :vswitches
 
+searchable do
+    text :name
+  end
   
 #SCOPES
 scope :ops_status, where('ops_status!=?', "Deleted")

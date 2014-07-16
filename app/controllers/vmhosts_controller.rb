@@ -3,12 +3,12 @@ class VmhostsController < ApplicationController
   # GET /vmhosts
   # GET /vmhosts.json
   def index
-   # @search = Vmhost.search do
-   #    fulltext params[:search]
-   #    paginate  :page => params[:page], :per_page=>15
-   #  end
-   #  @vmhosts = @search.results
-     @vmhosts = Vmhost.page(params[:page]).per(14) 
+   @search = Vmhost.search do
+      fulltext params[:search]
+      paginate  :page => params[:page], :per_page=>14
+    end
+    @vmhosts = @search.results
+     # @vmhosts = Vmhost.page(params[:page]).per(14) 
      
   end
 

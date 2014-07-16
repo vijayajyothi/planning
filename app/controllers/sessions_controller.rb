@@ -27,12 +27,12 @@ class SessionsController < ApplicationController
   end
 
   def verify_user
-    ldap = Net::LDAP.new :host => "122.166.208.34",
+    ldap = Net::LDAP.new :host => "10.128.153.110",
     :port => 389,
     :auth => {
      :method => :simple,
      :username => "cn=admin, dc=ldap, dc=itcubetech, dc=com",
-     :password => "ldap123"
+     :password => "a!YLa!EJU8aMeby@a@A"
    }
    valid_email = params[:user][:user_name] =~ /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/
 

@@ -2,12 +2,12 @@ class VdcsController < ApplicationController
   # GET /vdcs
   # GET /vdcs.json
   def index
-    # @search = Vdc.search do
-    #   fulltext params[:search]
-    #   paginate  :page => params[:page], :per_page=>15
-    # end
-    # @vdcs = @search.results
-    @vdcs = Vdc.page(params[:page]).per(14) 
+    @search = Vdc.search do
+      fulltext params[:search]
+      paginate  :page => params[:page], :per_page=>14
+    end
+    @vdcs = @search.results
+    # @vdcs = Vdc.page(params[:page]).per(14) 
 
    
   end

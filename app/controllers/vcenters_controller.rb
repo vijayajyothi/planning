@@ -6,11 +6,13 @@ class VcentersController < ApplicationController
   def index
     @search = Vcenter.search do
       fulltext params[:search]
-      paginate  :page => params[:page], :per_page=>15
+      paginate  :page => params[:page], :per_page=>14
     end
     @vcenters = @search.results
+    # old code(will paginate)
     # @vcenters = Vcenter.paginate(:page => params[:page], :per_page => 30, :page => params[:page])
-@vcenters = Vcenter.page(params[:page]).per(14) 
+ # using kaminari
+# @vcenters = Vcenter.page(params[:page]).per(14)   
  end
 
   # GET /vcenters/1
