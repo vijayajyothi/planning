@@ -5,4 +5,12 @@ $(".index-container").html("<%= escape_javascript(render(:partial => "show"))%>"
   {
     $('.nav li').removeClass('active');
     $(this).addClass('active');
+
   });
+
+if($("li").hasClass("active")){
+  alert (this);
+  alert("here in js")
+  $(this).parent().prepend(this);
+
+}

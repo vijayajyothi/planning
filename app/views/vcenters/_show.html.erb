@@ -5,7 +5,6 @@
       <div class="span3">
         <div class="well sidebar-nav" style="margin-right:20px;height:780px; overflow:auto;">
           <ul class="nav nav-list">
-            <li class="nav-header">Vcenters</li>
             <% @vcenters.each do |each_vcenter|%>
             <li class=<%=each_vcenter.id== params[:id].to_i ? "active" : "none" %>>
               <%= link_to  each_vcenter.name, selected_vcenter_path(each_vcenter), :remote=> true%>
@@ -20,3 +19,11 @@
     </div><!--/row-->
   </section>
 <!-- </div>< --><!--/container-->
+
+
+<script type="text/javascript">
+$('li').on('click',function(){
+  $(this).parent().prepend(this);
+})
+
+</script>
