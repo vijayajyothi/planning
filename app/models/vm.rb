@@ -88,8 +88,8 @@ def vcenter_data_import
 end
 
   # data center vdc data
-def data_center_data_import
-  Vdc.update_all(:ops_status=>"Deleted")
+  def data_center_data_import
+    Vdc.update_all(:ops_status=>"Deleted")
 
     CSV.foreach("csv_data/powercli/esx/esx-datacenters.csv", :headers => true) do |row|
 
@@ -139,11 +139,11 @@ end
 def esx_data_import
   Vmhost.update_all(:ops_status=>"Deleted")
   CSV.foreach("csv_data/powercli/esx/esx-hosts.csv", :headers => true) do |row|
-  vcenter = Vcenter.find_by_name(row["vcserver"])
-  cluster = Cluster.find_by_name(row["cluster"])  
-  esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id, :cluster_id=> cluster.id).first if cluster.present?
+    vcenter = Vcenter.find_by_name(row["vcserver"])
+    cluster = Cluster.find_by_name(row["cluster"])  
+    esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id, :cluster_id=> cluster.id).first if cluster.present?
   # esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id).first
- 
+
   if esx_host.present?
     esx_host.ops_status = "Present"
     esx_host.update_attributes(row.to_hash.slice(*accessible_attributes))
@@ -175,7 +175,7 @@ end
 end
 def esx_pnics_data_import
   CSV.foreach("csv_data/powercli/pnics.csv", :headers => true) do |row|
-  p row
+    p row
     vmhost = Vmhost.find_by_name(row["vmhost"])
     p row["vmhost"]
     p vmhost
@@ -284,10 +284,11 @@ def vm_data_import
   Vm.update_all(:ops_status=>"Deleted")
   CSV.foreach("csv_data/powercli/esx/esx-vms.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["vcserver"])
-    vdc = Vdc.find_by_name(row["datacenter"])
     vmhost = Vmhost.find_by_name(row["vmhost"])
     cluster = Cluster.find_by_name(row["cluster"]) 
+    # vdc = Vdc.find(cluster.vdc_id)
     vm = Vm.find_by_ip(row["ipaddress"])
+    
     if vm.present?
       vm.ops_status = "Present"
       vm.update_attributes(row.to_hash.slice(*accessible_attributes))
@@ -312,7 +313,7 @@ def vm_data_import
     vm.created_time = row["createdtime"]
     vm.created_by = row["createdby"]
     vm.vcenter_id = vcenter.id if vcenter.present?
-    vm.vdc_id = vdc.id if vdc.present?
+    vm.vdc_id = cluster.vdc_id if cluster.present?
     vm.cluster_id = cluster.id if cluster.present?
     vm.vmhost_id = vmhost.id if vmhost.present?
     vm.persistent_id = row["persistentid"]

@@ -31,13 +31,13 @@ class SessionsController < ApplicationController
     :port => 389,
     :auth => {
      :method => :simple,
-     :username => "cn=admin, dc=ldap, dc=itcubetech, dc=com",
+     :username => "CN=sc.opsgps-stg,OU=Generic,OU=SeriveAccounts,OU=Corp,OU=Common,DC=vmware,DC=com",
      :password => "a!YLa!EJU8aMeby@a@A"
    }
-   valid_email = params[:user][:user_name] =~ /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/
+   valid_user = params[:user][:user_name] =~ /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/
 
-   if valid_email == 0
-    filter = Net::LDAP::Filter.eq("mail", params[:user][:user_name])
+   if valid_user == 0
+    filter = Net::LDAP::Filter.eq("username", params[:user][:user_name])
     @search = UserInfo.search do
       fulltext params[:user][:user_name] do
         fields(:email)

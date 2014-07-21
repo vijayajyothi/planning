@@ -23,7 +23,7 @@
               <tr>
                 <td><b>Cluster</b></td>
                 <td><%= link_to my_cluster(@vm.cluster_id).name, my_cluster(@vm.cluster_id), :style=>"color:black;", :remote=> true%></td>
-                <td><b>Host</b></td>
+                <td><b>ESX Host</b></td>
                 <td><%= link_to my_host(@vm.vmhost_id).name, my_host(@vm.vmhost_id), :style=>"color:black;", :remote=> true%></td>
               </tr> 
               <tr>
@@ -51,7 +51,7 @@
                 <td><b>Status</b></td>
                 <td><%= @vm.status %></td>
 
-                <td><b>Dns Name</b></td>
+                <td><b>VM Host Name</b></td>
                 <td><%= @vm.vm_hostname %></td>
               </tr>   
 
