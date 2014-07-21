@@ -51,8 +51,12 @@
                 <td><b>Status</b></td>
                 <td><%= @vm.status %></td>
 
-                <td><b>VM Host Name</b></td>
+                <td><b>DNS Name</b></td>
                 <td><%= @vm.vm_hostname %></td>
+              </tr>  
+               <tr>
+                <td><b>Power State</b></td>
+                <td><%= @vm.power_state %></td>
               </tr>   
 
 
@@ -79,7 +83,7 @@
                 </tr> 
                 <tr>
                   <td><b>Tool Status</b></td>
-                  <td><%#= vm.tools_status %></td>
+                  <td><%= @vm.tools_status %></td>
                 </tr> 
                 <tr>
                   <td><b>Tools Version</b></td>
@@ -93,7 +97,8 @@
                 <tr>
                   <td><b>Last Boot</b></td>
                   <td><%= @vm.last_boot %></td>
-                </tr>
+                </tr> 
+                
 
 
 
@@ -105,8 +110,8 @@
           <% #@esxs = get_esx(@vcenter) %>
           <div class="workflow-heading">
             <a data-toggle="collapse" data-parent="#accordion" href="#status">
-              <span>status</span>
-              <p> Extra : <%#= @esxs.count %></p></a>
+              <span>Status </span>
+              <p>  <%#= @esxs.count %></p></a>
             </div>
 
             <div id="status" class="panel-collapse collapse">
@@ -122,29 +127,26 @@
                       <td><%= @vm.connection_state %></td>
                     </tr> 
                     <tr>
-                      <td><b>Version</b></td>
-                      <td><%= @vm.version %></td>
-                    </tr> 
-                    <tr>
-                      <td><b>Guest State</b></td>
-                      <td><%#= @vm.guest_state %></td>
-                    </tr> 
-                    <tr>
-                      <td><b>Memory(MB)</b></td>
-                      <td><%#= @vm.memorymb %></td>
-                    </tr> 
-                    <tr>
-                      <td><b>Provisioned Space(GB)</b></td>
-                      <td><%#= @vm.provisionedspacegb %></td>
-                    </tr> 
-                    <tr>
-                      <td><b>Used Space(GB)</b></td>
-                      <td><%#= @vm.usedspacegb %></td>
+                      <td><b>Persistent ID </b></td>
+                      <td><%= @vm.persistent_id %></td>
                     </tr> 
                     <tr>
                       <td><b>Status</b></td>
-                      <td><%#= @vm.gueststate %></td>
+                      <td><%= @vm.guest_state %></td>
                     </tr> 
+                    <tr>
+                      <td><b>Total Memory(MB)</b></td>
+                      <td><%= @vm.total_mem_mb %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Provisioned Space(GB)</b></td>
+                      <td><%= @vm.provisioned_space %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Used Space(GB)</b></td>
+                      <td><%= @vm.used_space %></td>
+                    </tr> 
+                    
                   </tbody></table>
                 </div>
               </div>

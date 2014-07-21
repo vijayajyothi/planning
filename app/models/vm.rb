@@ -307,6 +307,7 @@ def vm_data_import
     vm.num_cpus = row["numcpu"]
     vm.power_state = row["powerstate"]
     vm.connection_state = row["connectionstate"]
+    vm.guest_state = row["gueststate"]
     vm.os = row["guestfullname"]
     vm.tools_version = row["toolsversion"]
     vm.tools_status = row["toolstatus"]
@@ -321,6 +322,9 @@ def vm_data_import
     vm.version = row["version"]
     vm.last_suspend = row["suspendtime"]
     vm.last_suspend_interval = row["suspendinterval"]
+    vm.provisioned_space = row["provisionedspacegb"]
+    vm.used_space = row["usedspacegb"]
+
     vm.save if vm.name.present?
   end
 end

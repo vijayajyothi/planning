@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140717093050) do
+ActiveRecord::Schema.define(:version => 20140721112733) do
 
   create_table "applications", :force => true do |t|
     t.string   "name"
@@ -634,6 +634,9 @@ ActiveRecord::Schema.define(:version => 20140717093050) do
     t.datetime "updated_at",            :null => false
     t.string   "ops_status"
     t.date     "new_born_on"
+    t.string   "guest_state"
+    t.string   "provisioned_space"
+    t.string   "used_space"
   end
 
   create_table "vmvips", :force => true do |t|
