@@ -174,21 +174,16 @@ def esx_data_import
 end
 end
 def esx_pnics_data_import
-  CSV.foreach("csv_data/powercli/pnics.csv", :headers => true) do |row|
-    p row
+  CSV.foreach("csv_data/powercli/esx/esx-pnics.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
-    p row["vmhost"]
-    p vmhost
-    p "hereeeeeeeeeeeeeeeeeeeeeeeeee"
     pnic = Pnic.where(:name=>row["name"], :vmhost_id=>vmhost.id).first
-    p pnic
     if pnic.present?
       pnic.ops_status = "Present"
-      # pnic.update_attributes(row.to_hash.slice(*accessible_attributes))
+      pnic.update_attributes(row.to_hash.slice(*accessible_attributes))
     else
       pnic = Pnic.new
       pnic.ops_status = "New"
-      # pnic.attributes = row.to_hash.slice(*accessible_attributes)
+      pnic.attributes = row.to_hash.slice(*accessible_attributes)
     end
     pnic.vmhost_id = vmhost.id
     pnic.name = row["pnic"]
@@ -200,12 +195,9 @@ def esx_pnics_data_import
 end
 
 def host_hbas_data_import
-  CSV.foreach("csv_data/powercli/hhbas.csv", :headers => true) do |row|
-    p row
+  CSV.foreach("csv_data/powercli/esx/esx-hosthbas.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
-    p vmhost
     hbas = Hhba.where(:vmhost_id=>vmhost.id, :name=>row["hba"]).first if vmhost.present?
-    p hbas
     if hbas.present?
       hbas.ops_status = "Present"
       hbas.update_attributes(row.to_hash.slice(*accessible_attributes))
@@ -228,10 +220,10 @@ def host_hbas_data_import
 end
 
 def port_group_data_import
-  CSV.foreach("csv_data/powercli/portgroups.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/esx-portgroups.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
     pnic = Pnic.find_by_name(row["nic"])
-    pg = Portgroup.where(:vmhost_id=>vmhost.id, :name=>row["portgroup"], :pnic_id => pnic.id).first if vmhost.present?
+    pg = Portgroup.where(:vmhost_id=>vmhost.id, :name=>row["portgroup"]).first if vmhost.present?
     if pg.present?
       pg.ops_status = "Present"
       pg.update_attributes(row.to_hash.slice(*accessible_attributes))
@@ -240,10 +232,10 @@ def port_group_data_import
       pg.ops_status = "New"
       pg.attributes = row.to_hash.slice(*accessible_attributes)
     end
-    pg.name = row["port_group"]
-    pg.vmhost_id = vmhost.id
-    # pg.vswitch = row["vswitch"]
-    pg.pnic_id = pnic.id
+    pg.name = row["portgroup"]
+    pg.vmhost_id = vmhost.id if vmhost.present?
+    pg.vswitch = row["vswitch"]
+    pg.pnic_id = pnic.id if pnic.present?
     pg.a_s = row["activestandby"]
 
     pg.save if pg.name.present?

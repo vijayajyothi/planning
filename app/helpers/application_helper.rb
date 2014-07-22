@@ -36,7 +36,7 @@ end
 def my_host(vmhost_id)
 vmhost = Vmhost.where(:id=>vmhost_id).first
   end
-def get_vms_by_host(host_name)
-  vms = Vm.where(:vm_hostname=> host_name)
+def get_vms_by_host(vmhost_id)
+  vms = Vm.where(:vmhost_id=> vmhost_id)
 end
 end
