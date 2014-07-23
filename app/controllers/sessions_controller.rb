@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   require 'net/ldap'
 
-  # before_filter :verify_user, :only =>["new"] 
+  # before_filter :verify_user, :only =>["create"] 
   def new
     render :layout=> false
   end
@@ -26,67 +26,37 @@ class SessionsController < ApplicationController
     redirect_to root_url, :notice => "Logged out!"
   end
 
-  def verify_user
-    ldap = Net::LDAP.new :host => "10.128.153.110",
+  def  verify_user
+  check = name_for_login(params[:email], params[:password])
+  raise check.inspect
+  end
+  def name_for_login( email, password )
+  email = email[/\A\w+/].downcase  # Throw out the domain, if it was there
+  # email << "@vmware.com"        # I only check people in my company
+  ldap = Net::LDAP.new :host => "10.128.153.110",
     :port => 389,
+    :base => "CN=sc.opsgps-stg,OU=Generic,OU=SeriveAccounts,OU=Corp,OU=Common,DC=vmware,DC=com",
     :auth => {
      :method => :simple,
-     :username => "CN=sc.opsgps-stg,OU=Generic,OU=SeriveAccounts,OU=Corp,OU=Common,DC=vmware,DC=com",
-     :password => "a!YLa!EJU8aMeby@a@A"
+     :username => email,
+     :password => password
    }
-   valid_user = params[:user][:user_name] =~ /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/
+  # ldap = Net::LDAP.new(
+  #   host: '10.128.153.110',    # wdcrootdc03.vmware.com
+  #   port: '389',
 
-   if valid_user == 0
-    filter = Net::LDAP::Filter.eq("username", params[:user][:user_name])
-    @search = UserInfo.search do
-      fulltext params[:user][:user_name] do
-        fields(:email)
-      end if !params[:user][:user_name].nil?
-    end
-    @resultt = @search.results
-  else
-    filter = Net::LDAP::Filter.eq("uid", params[:user][:user_name])
+  #   auth: { method: :simple, username: email, password:password }
+  #   )
+  raise "here"
+  if ldap.bind
+    # Yay, the login credentials were valid!
+    # Get the user's full name and return it
+    ldap.search(
+      base:         "CN=sc.opsgps-stg,OU=Generic,OU=SeriveAccounts,OU=Corp,OU=Common,DC=vmware,DC=com",
+      filter:       Net::LDAP::Filter.eq( "mail", email ),
+      attributes:   %w[ displayName ],
+      return_result:true
+      ).first.displayName.first
   end
-
-
-#filter = Net::LDAP::Filter.eq("uid", params[:user][:user_name])
-treebase = "dc=ldap, dc=itcubetech, dc=com"
-
-
-result = ldap.bind_as(
-  :base => treebase,
-  :filter => filter,
-  :password => params[:user][:password]
-  )
-t = ldap.get_operation_result
-
-if @resultt
-  if @resultt.first.brw_personal_info_id
-    session[:user] = @resultt.first
-    redirect_to "/borrower_dashboard"
-  elsif @resultt.first.lnd_personal_info_id
-    session[:user] = @resultt.first
-    redirect_to "/lender_dashboard"
-  end
-  
-elsif result
-  if t.message == "Success"
-    session[:user] = params[:user][:user_name]
-    ldap_user = LdapUserLog.new(:user_name =>session[:user], :login_time => DateTime.now)
-    #raise ldap_user.inspect
-    if ldap_user.save
-    #  raise ldap_user.inspect
-      #session[:ldap_user] = ldap_user
-    end
-    redirect_to "/"
-  else
-    redirect_to login_url and return
-  end
-else
-  redirect_to login_url, :flash => { :error => "User Name and Password doesn't exist." }
-end
-
-
-
 end
 end

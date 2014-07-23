@@ -32,7 +32,7 @@
     <% @vdcs = get_vdc(@vcenter) %>
     <div class="span6">
       <div class="workflow-blocks"  style="height:200px;">
-        <div class="workflow-heading"><span>Vdcs</span><p>Count : <b><%= @vdcs.count%></b></p></div>
+        <div class="workflow-heading"><span>DataCenters</span><p>Count : <b><%= @vdcs.count%></b></p></div>
         <table class="table table-hover">
 
           <tbody>
@@ -55,7 +55,7 @@
                 <p> Count : <%= @clusters.count %></p></a>
               </div>
 
-            <div id="collapseFour" class="panel-collapse collapse">
+            <div id="collapseFour" class="">
               <div class="panel-body" style="max-height:533px; overflow:auto;">
                 <table class="table table-hover">
                  <tbody>
@@ -74,11 +74,12 @@
             <% @esxs = get_esx(@vcenter) %>
             <div class="workflow-heading">
               <a data-toggle="collapse" data-parent="#accordion" href="#vmhost">
-                <span>Vmhost</span>
+                <span>ESXhost</span>
                 <p> Count : <%= @esxs.count %></p></a>
               </div>
 
-            <div id="vmhost" class="panel-collapse collapse">
+            <!-- <div id="vmhost" class="panel-collapse collapse"> -->
+            <div id="vmhost" class="">
               <div class="panel-body" style="max-height:533px; overflow:auto;">
                 <table class="table table-hover">
                  <tbody>

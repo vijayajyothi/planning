@@ -8,7 +8,7 @@
       <div class="span3">
         <div class="well sidebar-nav" style="margin-right:20px;height:780px; overflow:auto;">
           <ul class="nav nav-list">
-            <li class="nav-header">Vdcs</li>
+            <li class="nav-header">DataCenters</li>
             <% @vdcs.each do |each_vdc|%>
              <li class=<%=each_vdc.id== params[:id].to_i ? "active" : "none" %>>
               <%= link_to  each_vdc.name, selected_vdc_path(each_vdc), :remote=> true%>
