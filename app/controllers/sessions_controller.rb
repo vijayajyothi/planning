@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   require 'net/ldap'
 
-  # before_filter :verify_user, :only =>["create"] 
+  before_filter :verify_user, :only =>["create"] 
   def new
     render :layout=> false
   end
@@ -30,15 +30,16 @@ class SessionsController < ApplicationController
   check = name_for_login(params[:email], params[:password])
   raise check.inspect
   end
+
   def name_for_login( email, password )
   email = email[/\A\w+/].downcase  # Throw out the domain, if it was there
-  # email << "@vmware.com"        # I only check people in my company
+  email << "@vmware.com"        # I only check people in my company
   ldap = Net::LDAP.new :host => "10.128.153.110",
     :port => 389,
-    :base => "CN=sc.opsgps-stg,OU=Generic,OU=SeriveAccounts,OU=Corp,OU=Common,DC=vmware,DC=com",
+    :base => "DC=vmware,DC=com",
     :auth => {
      :method => :simple,
-     :username => email,
+     :username => "#{email}",
      :password => password
    }
   # ldap = Net::LDAP.new(
