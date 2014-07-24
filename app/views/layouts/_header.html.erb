@@ -3,13 +3,12 @@
   <div class="container" style="border:0px #900 solid">
 
     <div class="row">
-
       <% if @current_user.present? %>
 
       <div class="col-sm-6">
         <div class="logo" style="width:30%;"> <%= link_to (image_tag("new-vm-logo.jpg")), "/", :id => "logo" %></div>
         <div class="login-info">
-          <span><b>Logged in as: </b><%= @current_user.email %></span><br/>
+          <span><b>Logged in as: </b><%= @current_user %></span><br/>
           <!-- <span><b>Last Log in: </b><%#= last_login_time %></span> -->
         </div>
       </div>

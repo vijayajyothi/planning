@@ -10,7 +10,7 @@ class VmsController < ApplicationController
 
     @search = Vm.search do
       fulltext params[:search]
-      paginate  :page => params[:page], :per_page=>14
+      # paginate  :page => params[:page], :per_page=>14
     end
     @vms = @search.results
     # @vms = Vm.page(params[:page]).per(14) 

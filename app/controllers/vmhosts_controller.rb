@@ -5,7 +5,7 @@ class VmhostsController < ApplicationController
   def index
    @search = Vmhost.search do
       fulltext params[:search]
-      paginate  :page => params[:page], :per_page=>14
+      # paginate  :page => params[:page], :per_page=>14
     end
     @vmhosts = @search.results
      # @vmhosts = Vmhost.page(params[:page]).per(14) 

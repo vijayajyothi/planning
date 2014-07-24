@@ -7,20 +7,20 @@
 
 
   <div id="wrapper">
-  
+    
     <div class="container login">
       <div class="login-pannel">
         <div class="login-header"><img src="/assets/logo.png" width="30%"></div>
         <div class="form">
           <%= form_tag (sessions_path), class: "form" do %>
+
           <% if flash[:error]%>
-            <div class="alert alert-error">
-              <p><%= flash[:error] %></p>
-            </div>
+          <div class="alert alert-error">
+            <p><%= flash[:error] %></p>
+          </div>
           <% end %>
 
-          <label>User Name/ Email</label>
-          <%#= label_tag :email, nil ,class: "control-label" %>
+          <label>User Name</label>
           <%= text_field_tag :email, params[:email], class: "form-control" , :autofocus=> true%>
           <label>Password</label>
           <%= password_field_tag (:password), nil ,class: "form-control" %>
@@ -31,15 +31,15 @@
     </div>
 
   </div>
-   <%= render :partial=> "layouts/footer" %>
+  <%= render :partial=> "layouts/footer" %>
 </body>
 
 <style>
 .alert-error {
-color: #b94a48;
-    background-color: #f2dede;
-    border-color: #eed3d7;
-  }
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
 </style>
 
 

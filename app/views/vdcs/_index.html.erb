@@ -1,53 +1,52 @@
 
 <div class="index-container">
-<div class="col-sm-12">
-  <div class="form-search col-sm-4">
-    <h2>Vdc Details</h2></div>
-    <div class="form-search col-sm-4" style="margin-top:20px;">
-      <div class="input-append">
+  <div class="col-sm-12">
+    <div class="form-search col-sm-4">
+      <h2>DataCenter Details</h2></div>
+      <div class="form-search col-sm-4" style="margin-top:20px;">
+        <div class="input-append">
 
-        <%= form_tag vdcs_path, :method => :get, :remote=> true do %>
-        <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
-        <%= submit_tag "Search", :name => nil, :class=>"btn" %>
-        <% end %>
+          <%= form_tag vdcs_path, :method => :get, :remote=> true do %>
+          <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+          <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+          <% end %>
+        </div>
       </div>
     </div>
-  </div>
+    <div class ="container" style="height:662px;overflow:auto;">
 
-  <table class="table table-striped tablesorter">
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Vcenter</th>
-      <th colspan=3> Actions</th>
-    </tr>
-    <% @vdcs.each do |vdc| %>
-    <% if vdc.ops_status=="Deleted"%>
-    <tr class="alert alert-error">
-      <td colspan=3><%= vdc.name %> is deleted</td>
-      <td colspan=3><%= link_to 'Delete Permanently', vdc, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger'%></td>
-    </tr>
-    <% else %>
-    <tr style="cursor:pointer;" id ="complete_tr">
-      <td><%= vdc.name %></td>
-      <td><%= vdc.description %></td>
-      <td><%= vcenter_name(vdc.vcenter_id) %></td>
-      <td><%= link_to 'Show', vdc ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
-      <td><%= link_to 'Edit', edit_vdc_path(vdc),:class => 'btn btn-mini btn-warning' %></td>
-      <td><%= link_to 'Destroy', vdc, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td>
-    </tr>
-    <% end %>
-    <% end %>
-  </table>
-
-  <div class="digg_pagination">
-    <div class="page_info">
-      <%#= page_entries_info @vdcs %>
+      <table class="table table-striped tablesorter">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Vcenter</th>
+          <th colspan=3> Actions</th>
+        </tr>
+        <% @vdcs.each do |vdc| %>
+        <% if vdc.ops_status=="Deleted"%>
+        <tr class="alert alert-error">
+          <td colspan=3><%= vdc.name %> is deleted</td>
+          <td colspan=3><%= link_to 'Delete Permanently', vdc, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger'%></td>
+        </tr>
+        <% else %>
+        <tr style="cursor:pointer;" id ="complete_tr">
+          <td><%= vdc.name %></td>
+          <td><%= vdc.description %></td>
+          <td><%= vcenter_name(vdc.vcenter_id) %></td>
+          <td><%= link_to 'Show', vdc ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
+          <td><%= link_to 'Edit', edit_vdc_path(vdc),:class => 'btn btn-mini btn-warning' %></td>
+          <td><%= link_to 'Destroy', vdc, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td>
+        </tr>
+        <% end %>
+        <% end %>
+      </table>
     </div>
-    <%= paginate @vdcs, :container => false, :remote=> true %>
+    <div class="digg_pagination">
+      
+      <%#= paginate @vdcs, :container => false, :remote=> true %>
+    </div>
+    
   </div>
- 
-</div>
   <%#= link_to 'New vdc', new_vdc_path %>
 
   <script>
@@ -60,6 +59,6 @@
     });
   });
 
-    </script>
+  </script>
 
 

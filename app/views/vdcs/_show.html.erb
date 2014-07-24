@@ -4,13 +4,17 @@
 
   <section>
    <div class="container-fluid">
-    
+      <div class="form-search col-sm-4">
+    <h4>DataCenter Details</h2></div>
+    <div class="form-search col-sm-4" style="margin-top:20px;">
+     
+    </div>
+  </div>
 
     <div class="row-fluid">
       <div class="span3">
-        <div class="well sidebar-nav" style="margin-right:20px;height:780px; overflow:auto;">
+        <div class="well sidebar-nav" style="margin-right:20px;margin-bottom:0px;height:717px; overflow:auto;">
           <ul class="nav nav-list">
-            <li class="nav-header">DataCenters</li>
             <% @vdcs.each do |each_vdc|%>
              <li class=<%=each_vdc.id== params[:id].to_i ? "active" : "none" %>>
               <%= link_to  each_vdc.name, selected_vdc_path(each_vdc), :remote=> true%>

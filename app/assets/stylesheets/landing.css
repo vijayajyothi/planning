@@ -16,7 +16,6 @@ header{position:fixed;height:110px; top:0;z-index:100;width:100%;background-colo
 footer{ background:#3399cc; height:40px; color:#FFF; position:fixed; bottom:0; width:100%; z-index:1000}
 
 
-
 .logo{display:block; float:left; width:19%; height:70px;}
 .login-info{margin-left:37px;float:left; padding-top:5px; border:0px #000 solid; font-family:arial;}
 .tabs{ width:99%; margin-left:1%; border:1px #ddd solid; height:100px;}

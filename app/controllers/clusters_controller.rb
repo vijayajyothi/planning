@@ -5,7 +5,7 @@ class ClustersController < ApplicationController
   def index
     @search = Cluster.search do
       fulltext params[:search]
-      paginate  :page => params[:page], :per_page=>14
+      # paginate  :page => params[:page], :per_page=>14
     end
     @clusters = @search.results
     # @clusters = Cluster.page(params[:page]).per(14) 

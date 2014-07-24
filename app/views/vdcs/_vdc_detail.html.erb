@@ -30,36 +30,46 @@
       </div>
     </div>
 
-    <% @clusters = get_cluster(@vcenter) %>
-    <div class="span6">
-      <div class="workflow-blocks"   style="height:200px;">
-        <div class="workflow-heading"><span>Cluster</span><p>Count : <%= @clusters.count%></p></div>
-        <table class="table table-hover">
 
-          <tbody>
-           <% @clusters.each do |each_cluster|%>
-           <tr>
-
-            <td><b><%= link_to each_cluster.name, each_cluster , :style=>"color:black;", :remote=> true%></b></td>
-            <td><%#= @vm.power_state %></td>
-          </tr>  
-          <% end %>
-
-        </tbody></table>
-      </div>
-    </div><!--/span-->
       <div class="panel-group" id="accordion">
+         <div class="panel panel-default "  style="margin-top:0px;">
+    <% @clusters = get_cluster(@vcenter) %>
 
-     <div class="panel panel-default  span6"  style="margin-top:0px;">
+            <div class="workflow-heading">
+              <a data-toggle="collapse" data-parent="#accordion" href="#vmhost">
+                <span>Cluster</span>
+                <p> Count : <%= @clusters.count %></p></a>
+              </div>
+
+            <!-- <div id="vmhost" class="panel-collapse collapse"> -->
+            <div id="vmhost" class="">
+              <div class="panel-body" style="max-height:169px; overflow:auto;">
+                <table class="table table-hover">
+                 <tbody>
+           <% @clusters.each do |each_cluster|%>
+
+                   <tr>
+            <td><b><%= link_to each_cluster.name, each_cluster , :style=>"color:black;", :remote=> true%></b></td>
+
+
+                    <td><%#= @vm.power_state %></td>
+                  </tr>  
+                  <% end %>
+                </tbody></table>
+              </div>
+            </div>
+          </div>
+
+     <div class="panel panel-default  span6"  style="margin-top:0px;margin-left:0px;">
             <% @esxs = get_esx(@vcenter) %>
             <div class="workflow-heading">
               <a data-toggle="collapse" data-parent="#accordion" href="#vmhost">
-                <span>Vmhost</span>
+                <span>ESXhost</span>
                 <p> Count : <%= @esxs.count %></p></a>
               </div>
 
-            <div id="vmhost" class="panel-collapse collapse">
-              <div class="panel-body" style="max-height:533px; overflow:auto;">
+            <div id="vmhost" class="">
+              <div class="panel-body" style="max-height:469px; overflow:auto;">
                 <table class="table table-hover">
                  <tbody>
                    <% @esxs.each do |each_esx|%>

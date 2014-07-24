@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :session_expires 
+  # before_filter :session_expires 
   # before_filter :authenticate
 
   def authenticate
@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
   private
 
   def current_user
-    @current_user ||= User.find_by_auth_token!(cookies[:auth_token]) if cookies[:auth_token]
+    @current_user = cookies[:user]
   end
 
   helper_method :current_user

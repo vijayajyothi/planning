@@ -12,6 +12,7 @@
       </div>
     </div>
   </div>
+<div class ="container" style="height:662px;overflow:auto;">
 
   <table class="table table-striped tablesorter">
     <tr>
@@ -43,11 +44,9 @@
     <% end %>
     <% end %>
   </table>
+  </div>
   <div class="digg_pagination">
-    <div class="page_info">
-      <%#= page_entries_info @posts %>
-    </div>
-    <%= paginate @vms, :container => false, :remote => true %>
+    <%#= paginate @vms, :container => false, :remote => true %>
   </div>
   <br />
   <% comment do %>
