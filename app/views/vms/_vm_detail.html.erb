@@ -54,18 +54,12 @@
                 <td><b>DNS Name</b></td>
                 <td><%= @vm.vm_hostname %></td>
               </tr>  
-               <tr>
-                <td><b>Power State</b></td>
-                <td><%= @vm.power_state %></td>
-              </tr>   
-
-
-
+              
             </tbody></table>
           </div>
         </div>
       </div>
-      <div class="panel panel-default  span6" style="margin-left:0px;" >
+      <div class="panel panel-default  span6" style="margin-left:0px;margin-top:6px;" >
         <%# @clusters = get_cluster(@vcenter) %>
         <div class="workflow-heading">
           <a data-toggle="collapse" data-parent="#accordion" href="#opsdata">
@@ -73,7 +67,7 @@
             <p> <b>HW Version :</b> <%= @vm.version %></p></a>
           </div>
 
-          <div id="opsdata" class="panel-collapse collapse">
+          <div id="opsdata" class="">
             <div class="panel-body" >
               <table class="table table-hover">
                <tbody>
@@ -98,15 +92,12 @@
                   <td><b>Last Boot</b></td>
                   <td><%= @vm.last_boot %></td>
                 </tr> 
-                
-
-
 
               </tbody></table>
             </div>
           </div>
         </div>
-        <div class="panel panel-default  span6"  style="">
+        <div class="panel panel-default  span6"  style="margin-top:6px;">
           <% #@esxs = get_esx(@vcenter) %>
           <div class="workflow-heading">
             <a data-toggle="collapse" data-parent="#accordion" href="#status">
@@ -114,7 +105,7 @@
               <p>  <%#= @esxs.count %></p></a>
             </div>
 
-            <div id="status" class="panel-collapse collapse">
+            <div id="status" class="">
               <div class="panel-body" style="max-height:533px; overflow:auto;">
                 <table class="table table-hover">
                   <tbody>

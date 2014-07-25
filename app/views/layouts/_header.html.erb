@@ -5,15 +5,33 @@
     <div class="row">
       <% if @current_user.present? %>
 
-      <div class="col-sm-6">
-        <div class="logo" style="width:30%;"> <%= link_to (image_tag("new-vm-logo.jpg")), "/", :id => "logo" %></div>
+      <div class="col-sm-7">
+        <div class="logo" style="width:29%;"> <%= link_to (image_tag("new-vm-logo.jpg")), "/", :id => "logo" %></div>
         <div class="login-info">
-          <span><b>Logged in as: </b><%= @current_user %></span><br/>
+          <span><b>Welcome <%= @current_user %></b></span><br/>
           <!-- <span><b>Last Log in: </b><%#= last_login_time %></span> -->
+        </div>
+        <div class="form-search" style="float:right;margin-top:10px;">
+          <div class="input-append">
+
+            <%= form_tag vcenters_path, :method => :get, :remote=> true do %>
+            <% comment do %>
+            <div clas="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Assets<span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li>Hii</li>
+                <li>Hii2</li>
+              </ul>
+            </div>
+            <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+            <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+            <% end %>
+            <% end %>
+          </div>
         </div>
       </div>
 
-      <div class="col-sm-6" align="right" style=" float:right">
+      <div class="col-sm-5" align="right" style=" float:right">
 
         <!--Navigation Starts -->
         <nav class="navbar navbar-default" role="navigation">
@@ -47,12 +65,12 @@
 
    </div>
 
-<% else %>
+   <% else %>
    <div class="col-sm-6">
-        <div class="logo"> <%= link_to (image_tag("logo.png")), "/", :id => "logo" %></div>
+    <div class="logo"> <%= link_to (image_tag("logo.png")), "/", :id => "logo" %></div>
+  </div>
 </div>
-</div>
- <% end %>
+<% end %>
 
 
 </div>

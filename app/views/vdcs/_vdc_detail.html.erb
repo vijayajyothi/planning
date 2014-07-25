@@ -2,11 +2,12 @@
   <div class="span9">
 
     <div class="span6">
-      <div class="workflow-blocks"   style="height:200px;">
-        <div class="workflow-heading"><span>Basic Data</span><p>Other :other </p></div>
+      <div class="workflow-blocks">
+        <div class="workflow-heading"><span>Basic Data</span><p> <%#= @vm.power_state %></p></div>
         <% @vcenter = Vcenter.find_by_id(@vdc.vcenter_id) %>
+
         <table class="table table-hover">
-          <tbody>
+         <tbody>
             <tr>
               <td><b>Name</b></td>
               <td><%= @vdc.name %></td>
@@ -24,29 +25,25 @@
               <td><b>Description</b></td>
               <td><%= @vdc.description %></td>
             </tr>  
-          </tbody>
-        </table>
+          </tbody></table>
 
+        </div>
       </div>
-    </div>
-
-
-      <div class="panel-group" id="accordion">
-         <div class="panel panel-default "  style="margin-top:0px;">
+      <div class="panel-group" id="accordion" style="clear:left;">
     <% @clusters = get_cluster(@vcenter) %>
 
-            <div class="workflow-heading">
-              <a data-toggle="collapse" data-parent="#accordion" href="#vmhost">
-                <span>Cluster</span>
+        <div class="panel panel-default  span6"  style="margin-top:0px;">
+          <div class="workflow-heading">
+            <a data-toggle="collapse" data-parent="#accordion" href="#vms">
+             <span>Cluster</span>
                 <p> Count : <%= @clusters.count %></p></a>
-              </div>
+            </div>
 
-            <!-- <div id="vmhost" class="panel-collapse collapse"> -->
-            <div id="vmhost" class="">
-              <div class="panel-body" style="max-height:169px; overflow:auto;">
+            <div id="vms" class="">
+              <div class="panel-body" style="max-height:469px; overflow:auto;">
                 <table class="table table-hover">
                  <tbody>
-           <% @clusters.each do |each_cluster|%>
+                   <% @clusters.each do |each_cluster|%>
 
                    <tr>
             <td><b><%= link_to each_cluster.name, each_cluster , :style=>"color:black;", :remote=> true%></b></td>
@@ -60,7 +57,9 @@
             </div>
           </div>
 
-     <div class="panel panel-default  span6"  style="margin-top:0px;margin-left:0px;">
+
+
+          <div  class="panel panel-default  span6"  style="margin-top:0px;">
             <% @esxs = get_esx(@vcenter) %>
             <div class="workflow-heading">
               <a data-toggle="collapse" data-parent="#accordion" href="#vmhost">
@@ -68,22 +67,24 @@
                 <p> Count : <%= @esxs.count %></p></a>
               </div>
 
-            <div id="vmhost" class="">
-              <div class="panel-body" style="max-height:469px; overflow:auto;">
-                <table class="table table-hover">
-                 <tbody>
-                   <% @esxs.each do |each_esx|%>
-                   <tr>
-                    <td><b><%= link_to each_esx.name, each_esx, :style=>"color:black;", :remote=> true%></b></td>
+              <div id="vmhost" class="">
+                <div class="panel-body" style="max-height:469px; overflow:auto;">
+                  <table class="table table-hover">
+                   <tbody>
+                     <% @esxs.each do |each_esx|%>
+                     <tr>
+                      <td><b><%= link_to each_esx.name, each_esx, :style=>"color:black;", :remote=> true%></b></td>
 
-                    <td><%#= @vm.power_state %></td>
-                  </tr>  
-                  <% end %>
-                </tbody></table>
+                      <td><%#= @vm.power_state %></td>
+                    </tr>  
+                    <% end %>
+                  </tbody></table>
+                </div>
               </div>
             </div>
           </div>
-          </div>
+
+
           <!-- <div class="span4">
             <div class="workflow-blocks">
               <div class="workflow-heading"><span>OPS Data</span><p></p></div>
