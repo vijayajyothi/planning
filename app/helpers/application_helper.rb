@@ -1,5 +1,9 @@
 module ApplicationHelper
 
+
+  # nginix path : usr/local/nginx/sbin/nginx
+  # nginix editing path : usr/local/nginx/nginx.conf
+
   def comment(&block)
   #block the content
 end
