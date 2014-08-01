@@ -176,7 +176,7 @@ end
 def esx_pnics_data_import
   CSV.foreach("csv_data/powercli/esx/esx-pnics.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
-    pnic = Pnic.where(:name=>row["name"], :vmhost_id=>vmhost.id).first
+    pnic = Pnic.where(:name=>row["name"], :vmhost_id=>vmhost.id).first if vmhost.present?
     if pnic.present?
       pnic.ops_status = "Present"
       pnic.update_attributes(row.to_hash.slice(*accessible_attributes))
