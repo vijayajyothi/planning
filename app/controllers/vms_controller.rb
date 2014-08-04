@@ -13,6 +13,7 @@ class VmsController < ApplicationController
       # paginate  :page => params[:page], :per_page=>14
     end
     @vms = @search.results
+    # raise @vms.count.inspect
     # @vms = Vm.page(params[:page]).per(14) 
 
     # respond_to do |format|

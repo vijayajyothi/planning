@@ -6,7 +6,7 @@ class VcentersController < ApplicationController
   def index
     @search = Vcenter.search do
       fulltext params[:search]
-      paginate  :page => params[:page], :per_page=>14
+      # paginate  :page => params[:page], :per_page=>14
     end
     @vcenters = @search.results
     # old code(will paginate)

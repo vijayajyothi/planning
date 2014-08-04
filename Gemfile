@@ -23,7 +23,7 @@ group :assets do
 end
 # gem 'will_paginate', '~> 3.0.5'
 # gem 'will_paginate-bootstrap'
-gem 'kaminari'
+# gem 'kaminari'   # For pagination in ajax also
 gem 'jquery-rails'
 gem 'jquery-tablesorter'
 gem 'sunspot_rails'

@@ -4,7 +4,7 @@
     <div class="panel panel-default">
       <div class="workflow-heading">
         <a data-toggle="collapse" data-parent="#accordion" href="#basicdata">
-          <span>Basic Data</span>
+          <span><%= @vm.name %> Details</span>
           <p><b> Created On : </b><%= @vm.new_born_on %></p>
           <p><b> Status : </b><%= @vm.power_state %></p></a>
         </div>
@@ -36,7 +36,7 @@
                 <td><b>Connection Status</b></td>
                 <td><%= @vm.connection_state %></td>
 
-                <td><b>Os Type</b></td>
+                <td><b>OS Type</b></td>
                 <td><%= @vm.os %></td>
               </tr>  
 
@@ -63,7 +63,7 @@
         <%# @clusters = get_cluster(@vcenter) %>
         <div class="workflow-heading">
           <a data-toggle="collapse" data-parent="#accordion" href="#opsdata">
-            <span>Vsphere</span>
+            <span>vSphere</span>
             <p> <b>HW Version :</b> <%= @vm.version %></p></a>
           </div>
 
