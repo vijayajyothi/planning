@@ -6,7 +6,6 @@
       <div class="span3">
         <div class="well sidebar-nav" style="margin-right:20px;height:780px; overflow:auto;">
           <ul class="nav nav-list">
-            <li class="nav-header">clusters</li>
             <% @clusters.each do |each_cluster|%>
               <li class=<%=each_cluster.id== params[:id].to_i ? "active" : "none" %>>
               <%= link_to  each_cluster.name, selected_cluster_path(each_cluster), :remote=> true%>
