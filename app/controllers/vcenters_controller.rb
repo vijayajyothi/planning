@@ -4,16 +4,17 @@ class VcentersController < ApplicationController
   # GET /vcenters
   # GET /vcenters.json
   def index
+    count = Vcenter.count
     @search = Vcenter.search do
       fulltext params[:search]
-      # paginate  :page => params[:page], :per_page=>14
+      paginate  :page => params[:page], :per_page=>count
     end
     @vcenters = @search.results
     # old code(will paginate)
     # @vcenters = Vcenter.paginate(:page => params[:page], :per_page => 30, :page => params[:page])
  # using kaminari
 # @vcenters = Vcenter.page(params[:page]).per(14)   
- end
+end
 
   # GET /vcenters/1
   # GET /vcenters/1.json
@@ -82,8 +83,7 @@ class VcentersController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-   def selected_vcenter
+  def selected_vcenter
     @vcenter = Vcenter.find(params[:id])
     @vcenters = Vcenter.where('ops_status != ?', "Deleted" )
   end

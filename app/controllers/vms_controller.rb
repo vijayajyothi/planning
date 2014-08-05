@@ -7,10 +7,10 @@ class VmsController < ApplicationController
 
 
   def index
-
+    count = Vm.count
     @search = Vm.search do
       fulltext params[:search]
-      # paginate  :page => params[:page], :per_page=>14
+      paginate  :page => params[:page], :per_page=>count
     end
     @vms = @search.results
     # raise @vms.count.inspect

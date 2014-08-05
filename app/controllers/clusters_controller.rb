@@ -3,9 +3,10 @@ class ClustersController < ApplicationController
   # GET /clusters
   # GET /clusters.json
   def index
+    count = Cluster.count
     @search = Cluster.search do
       fulltext params[:search]
-      # paginate  :page => params[:page], :per_page=>14
+      paginate  :page => params[:page], :per_page=>count
     end
     @clusters = @search.results
     # @clusters = Cluster.page(params[:page]).per(14) 

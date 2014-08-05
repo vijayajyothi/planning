@@ -2,35 +2,45 @@
 
 <!-- <div class="container"> -->
 
-  <section>
-   <div class="container-fluid">
-      <div class="form-search col-sm-4">
+<section>
+ <div class="container-fluid">
+  <div class="form-search col-sm-4">
     <h4>DataCenter Details</h2></div>
-    <div class="form-search col-sm-4" style="margin-top:20px;">
-     
-    </div>
-  </div>
+          <div class="form-search col-sm-4" style="margin-top:3px;">
 
-    <div class="row-fluid">
-      <div class="span3">
-        <div class="well sidebar-nav" style="margin-right:20px;margin-bottom:0px;height:717px; overflow:auto;">
-          <ul class="nav nav-list">
-            <% @vdcs.each do |each_vdc|%>
-             <li class=<%=each_vdc.id== params[:id].to_i ? "active" : "none" %>>
-              <%= link_to  each_vdc.name, selected_vdc_path(each_vdc), :remote=> true%>
-            </li>
-            <% end %>
-          </ul>
-        </div><!--/.well -->
-      </div><!--/span-->
-      <div class="dashboard">
-        <%= render :partial=> "vdc_detail" %>
-      </div><!--/dashboard-->
-    </div><!--/row-->
-  </section>
-<!-- </div>< --><!--/container-->
+            <div class="input-append">
 
-<script type="text/javascript">
+              <%= form_tag vdcs_path, :method => :get, :remote=> true do %>
+              <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+              <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+              <% end %>
+            </div>
+          </div>
+          <div class="form-search col-sm-4" style="margin-top:20px;">
+           
+          </div>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span3">
+            <div class="well sidebar-nav" style="margin-right:20px;margin-bottom:0px;height:717px; overflow:auto;">
+              <ul class="nav nav-list">
+                <% @vdcs.each do |each_vdc|%>
+                <li class=<%=each_vdc.id== params[:id].to_i ? "active" : "none" %>>
+                  <%= link_to  each_vdc.name, selected_vdc_path(each_vdc), :remote=> true%>
+                </li>
+                <% end %>
+              </ul>
+            </div><!--/.well -->
+          </div><!--/span-->
+          <div class="dashboard">
+            <%= render :partial=> "vdc_detail" %>
+          </div><!--/dashboard-->
+        </div><!--/row-->
+      </section>
+      <!-- </div>< --><!--/container-->
+
+      <script type="text/javascript">
 // $('li').on('click',function(){
 //   $(this).parent().prepend(this);
 // })
