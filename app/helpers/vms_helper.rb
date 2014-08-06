@@ -1,20 +1,20 @@
 module VmsHelper
 
   def vms(dc)
-    vms =  Vm.where('datacenter =? AND ops_status !=?', dc,"Deleted").count
+    vms =  Vm.where('vdc_id =? AND ops_status !=?', dc,"Deleted").count
   end
   def cpu(dc)
-    cpus = Vm.where('datacenter =? AND ops_status !=?', dc,"Deleted").collect(&:numcpu).map(&:to_i).sum
+    cpus = Vm.where('vdc_id =? AND ops_status !=?', dc,"Deleted").collect(&:num_cpus).map(&:to_i).sum
     return cpus
   end
 
   def memory(dc)
-    memories = Vm.where('datacenter =? AND ops_status !=?', dc,"Deleted").collect(&:provisionedspacegb).map(&:to_f).sum
+    memories = Vm.where('vdc_id =? AND ops_status !=?', dc,"Deleted").collect(&:provisioned_space).map(&:to_f).sum
     return memories
   end
 
   def used_memory(dc)
-    used_memory = Vm.where('datacenter =? AND ops_status !=?', dc,"Deleted").collect(&:usedspacegb).map(&:to_f).sum
+    used_memory = Vm.where('vdc_id =? AND ops_status !=?', dc,"Deleted").collect(&:used_space).map(&:to_f).sum
     return used_memory
   end
 
