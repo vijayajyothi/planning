@@ -1,6 +1,6 @@
 class VmsController < ApplicationController
   layout "vm_details", only:[:show]
-  before_filter :authorize  
+  # before_filter :authorize  
 
   # GET /vms
   # GET /vms.json
@@ -29,7 +29,7 @@ class VmsController < ApplicationController
   end
   
   def reports
-    @datacenters = Vm.all.collect(&:datacenter).uniq
+    @datacenters = Vm.all.collect(&:vdc_id).uniq
   end
 
   # GET /vms/1

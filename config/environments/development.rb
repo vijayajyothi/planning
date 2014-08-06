@@ -1,4 +1,4 @@
-# BetterErrors::Middleware.allow_ip! "10.112.241.9"
+  # BetterErrors::Middleware.allow_ip! "10.112.241.9"
 
 Opsgps::Application.configure do
 

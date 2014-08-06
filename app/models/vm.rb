@@ -5,7 +5,7 @@ class Vm < ActiveRecord::Base
   :name, :num_cpus, :num_vnics, :os, :owner, :persistent_id, :power_state, 
   :ppm_no, :resource_pool, :status, :tier_id, :tools_status, :tools_version, 
   :total_mem_mb, :uuid, :vcenter_id, :vdc_id, :version, :vm_hostname, :vm_id, 
-  :vmhost_id, :ops_status, :new_bon_on
+  :vmhost_id, :ops_status, :new_bon_on, :guest_state, :provisioned_space, :used_space
   # attr_accessible :application, :boottime, :cluster, :connectionstate, :createdby, :createdtime, :datacenter, :folder, :guestfullname, :gueststate, :hostname, :ipaddress, :memorymb, :numcpu, :persistentid, :powerstate, :provisionedspacegb, :qtynics, :reourcepool, :storagecommitted, :storageuncommitted, :suspendinterval, :suspendtime, :toolsrunningstatus, :toolstatus, :toolsversion, :usedspacegb, :vcserver, :version, :vmhost, :vmname
   
 #ASSOCIATIONS
@@ -32,6 +32,19 @@ scope :ops_status, where('ops_status != ?', "Deleted")
 #SEARCHABLES
 searchable do
   text :name
+  string :ip
+  # text :vcenters do 
+  #   vcenters.map{|vcenter| vcenter.name}
+  # end
+  # text :vdcs do 
+  #   vdcs.map{|vdc| vdc.name}
+  # end
+  # text :clusters do 
+  #   clusters.map{|cluster| cluster.name}
+  # end
+  # text :vmhost do 
+  #   vmhosts.map{|vmhost| vmhost.name}
+  # end
   integer :vmhost_id
   integer :application_id
   integer :vcenter_id

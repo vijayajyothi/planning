@@ -43,4 +43,15 @@ vmhost = Vmhost.where(:id=>vmhost_id).first
 def get_vms_by_host(vmhost_id)
   vms = Vm.where(:vmhost_id=> vmhost_id)
 end
+def url_sort(base,text)
+		#raise text.inspect
+		#css_class = text == sort_column ? "current #{sort_direction}" : nil
+		#direction = text == sort_column && sort_direction == "asc" ? "desc" : "asc"
+		#"/#{base}?sort=#{text}?direction=#{direction}"
+		#link_to title, params.merge(:sort => column, :direction => direction, :page => nil), {:class => css_class}
+	end
+	
+	def css_sort(text)
+		#css_class = text == sort_column ? "current #{sort_direction}" : nil
+	end
 end

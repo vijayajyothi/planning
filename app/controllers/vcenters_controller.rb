@@ -4,6 +4,7 @@ class VcentersController < ApplicationController
   # GET /vcenters
   # GET /vcenters.json
   def index
+    raise "here"
     count = Vcenter.count
     @search = Vcenter.search do
       fulltext params[:search]
