@@ -1,4 +1,7 @@
 body{ font-family: arial}
+.container{
+    width:90%;
+}
 @font-face {
     font-family: 'bebas_neueregular';
     src: url('../fonts/BebasNeue-webfont.eot');
@@ -24,13 +27,12 @@ footer{ background:#3399cc; height:40px; color:#FFF; position:fixed; bottom:0; w
 /*Login Form*/
 
 .login{ width:100%; height:100%; background:url(body-bg.jpg)}
-.login-pannel{width:520px; height:480px; background:#FFF; border:6px #f6b54d solid; margin:auto; margin-top:8%}
-.login-header{width:90%; height:auto; margin:0 auto}
+.login-pannel{width:465px; height:400px; background:#FFF; border:2px #adadad solid; margin:auto; margin-top:8%;border-radius:8px;}
+.login-header{width:90%; height:auto; margin:0 auto; margin-top:10px;}
 .form{width:50%; height:auto; margin:0 auto; padding-top:30px}
 .form input{ width:100%; padding:7px; margin-top:3px}
 .form label{ width:100%; height:15px; padding:0px; margin-top:5px; font-size:13px}
-.form button{ margin-top:20px; background:#9b1616; color:#FFF}
-.form button:hover{background:#c41c1c;color:#FFF}
+.form button{ margin-top:20px; margin-left:39px;width:45%;}
 .formfield { clear: both;padding: 20px; color: #333333; font-size: 12px; margin-top:1%; }
 .formfield fieldset { background: -moz-linear-gradient(center top , #EFEFEF, #FFFFFF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border-radius: 8px 8px 8px 8px;

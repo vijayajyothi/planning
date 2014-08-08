@@ -19,14 +19,14 @@
       <th>Name</th>
       <th>Cluster</th>
       <th>Connection State</th>
-      <th colspan=3> Actions</th>
+      <th colspan=2> Actions</th>
     </tr>
 
     <% @vmhosts.each do |vmhost| %>
     <% if vmhost.ops_status=="Deleted"%>
     <tr class="alert alert-error">
       <td colspan=3><%= vmhost.name %> is deleted</td>
-      <td colspan=3><%= link_to 'Delete Permanently', vmhost, method: :delete, data: { confirm: 'Are you sure? will not reverted' } ,:class => 'btn btn-mini btn-danger'%></td>
+      <td colspan=2><%= link_to 'Delete Permanently', vmhost, method: :delete, data: { confirm: 'Are you sure? will not reverted' } ,:class => 'btn btn-mini btn-danger'%></td>
     </tr>
     <% else %>
     <tr style="cursor:pointer;" id ="complete_tr">
@@ -35,7 +35,7 @@
       <td><%= vmhost.connection_state %></td>
       <td><%= link_to 'Show', vmhost ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
      
-      <td><%= link_to 'Destroy', vmhost, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td>
+      <!-- <td><%#= link_to 'Destroy', vmhost, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td> -->
     </tr>
     <% end %>
     <% end %>

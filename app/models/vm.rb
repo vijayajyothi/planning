@@ -32,7 +32,8 @@ scope :ops_status, where('ops_status != ?', "Deleted")
 #SEARCHABLES
 searchable do
   text :name
-  string :ip
+  text :ip
+  text :vm_hostname
   # text :vcenters do 
   #   vcenters.map{|vcenter| vcenter.name}
   # end
@@ -42,8 +43,8 @@ searchable do
   # text :clusters do 
   #   clusters.map{|cluster| cluster.name}
   # end
-  # text :vmhost do 
-  #   vmhosts.map{|vmhost| vmhost.name}
+  # text :name do 
+  #   vmhost.map{|vmhost| vmhost.name}
   # end
   integer :vmhost_id
   integer :application_id
@@ -86,7 +87,7 @@ def vcenter_data_import
     vcenter = Vcenter.find_by_name(row["name"])
     if vcenter.present?
       vcenter.ops_status = "Present"
-      vcenter.update_attributes(row.to_hash.slice(*accessible_attributes))
+      # vcenter.update_attributes(row.to_hash.slice(*accessible_attributes))
     else
       vcenter = Vcenter.new
       vcenter.ops_status = "New"
@@ -94,7 +95,8 @@ def vcenter_data_import
       vcenter.attributes = row.to_hash.slice(*accessible_attributes)
     end
     vcenter.name = row["name"]
-    vcenter.ip = row["ip"] unless row["ip"].blank?
+   
+    # vcenter.ip = row["ip"] if row["ip"].present?
     vcenter.description = row["description"]  if row["description"].present?
     vcenter.save if vcenter.name.present?
   end

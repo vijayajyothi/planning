@@ -1,12 +1,30 @@
+
+
 <!-- <div class="container"> -->
 
-  <section>
-   <div class="container-fluid">
-    <div class="row-fluid">
+<section>
+ <div class="container-fluid">
+  <div class="form-search col-sm-4">
+    <h4>Vmhost Details</h2></div>
+          <div class="form-search col-sm-4" style="margin-top:3px;">
+
+            <div class="input-append">
+
+              <%= form_tag vmhosts_path, :method => :get, :remote=> true do %>
+              <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+              <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+              <% end %>
+            </div>
+          </div>
+          <div class="form-search col-sm-4" style="margin-top:20px;">
+           
+          </div>
+        </div>
+
+        <div class="row-fluid">
       <div class="span3">
         <div class="well sidebar-nav" style="margin-right:20px;height:780px; overflow:auto;">
           <ul class="nav nav-list">
-            <li class="nav-header">vmhosts</li>
             <% @vmhosts.each do |each_vmhost|%>
             <li class=<%=each_vmhost.id== params[:id].to_i ? "active" : "none" %>>
               <%= link_to  each_vmhost.name, selected_vmhost_path(each_vmhost), :remote=> true%>
