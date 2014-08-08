@@ -23,7 +23,7 @@
       <div class="row-fluid">
 
         <div class="span3">
-          <div class="well sidebar-nav" style="margin-right:20px;height:780px; overflow:auto;">
+          <div class="well sidebar-nav" style="margin-right:20px;margin-bottom:0px;height:717px; overflow:auto;">
             <ul class="nav nav-list">
               <% @vms.each do |each_vm|%>
               <li class=<%=each_vm.id== params[:id].to_i ? "active" : "none" %>>
@@ -41,7 +41,8 @@
     <!-- </div>< --><!--/container-->
 
     <script type="text/javascript">
-// $('li').on('click',function(){
-//   $(this).parent().prepend(this);
-// })
+$('li').on('click',function(){
+  $(this).parent().prepend(this);
+  $('li').animate({scrollTop: 0},'slow');
+})
 </script>
