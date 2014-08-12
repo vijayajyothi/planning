@@ -1,21 +1,5 @@
 <div class="index-container">
-  <div class="col-sm-12">
-
-   <div class="form-search" >
-     <div class="input-append" >
-      <%= form_tag search_list_path, :method => :get, :remote=> true do %>
-      <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
-      <%= submit_tag "Search", :name => nil, :class=>"btn" %>
-
-      <div class="btn-group">
-        <%#= button_tag(type:'submit', class: "btn") do %>
-        <!-- <i class= "icon-search"></i> -->
-        <% #end %>
-      </div>
-      <% end %>
-    </div>
-  </div>
-</div>
+  
 
 <!-- Index form Started -->
 <div class="col-sm-12">
