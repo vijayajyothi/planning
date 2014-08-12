@@ -1,0 +1,7 @@
+$(".landing-container").html("<%= escape_javascript(render(:partial => "search_list"))%>");
+ $('.nav li ').click(function()
+  {
+    $('.nav li').removeClass('active');
+    $(this).addClass('active');
+
+  });

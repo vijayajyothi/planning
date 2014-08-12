@@ -8,4 +8,11 @@ class HomeController < ApplicationController
     @cluster_count =  Cluster.ops_status.count
     @vmhost_count =  Vmhost.ops_status.count
   end
+
+  def search_list
+    @search = Sunspot.search [Vcenter, Vdc, Cluster, Vmhost, Vm] do 
+      fulltext params[:search]
+    end
+    @results = @search.results
+  end 
 end

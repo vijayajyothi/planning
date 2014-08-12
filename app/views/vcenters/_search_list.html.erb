@@ -1,0 +1,62 @@
+<div class="index-container">
+  <div class="col-sm-12">
+
+   <div class="form-search" >
+     <div class="input-append" >
+      <%= form_tag search_list_path, :method => :get, :remote=> true do %>
+      <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+      <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+
+      <div class="btn-group">
+        <%#= button_tag(type:'submit', class: "btn") do %>
+        <!-- <i class= "icon-search"></i> -->
+        <% #end %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<!-- Index form Started -->
+<div class="col-sm-12">
+  <div class="form-search col-sm-4">
+    <h2>Search Results</h2></div>
+  </div>
+  <div class ="container" style="height:662px;overflow:auto;">
+    <table class="table table-striped tablesorter">
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    
+      <% @results.group_by(&:class).each do |key, group| %>
+      <tr>
+        <td colspan=3><b><%= key %>: </b></td></tr>
+        <% group.each do |result|%>
+          <tr>
+            <td></td>
+            <td><%= result.name %></td>
+            <td><%= link_to 'Show', result ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
+          </tr>
+        <% end %>
+      <% end %>
+    </table>
+  </div>
+
+  
+
+</div>
+
+<script>
+$(function(){
+  $('table').tablesorter({
+    widgets        : ['zebra', 'columns'],
+    usNumberFormat : false,
+    sortReset      : true,
+    sortRestart    : true
+  });
+});
+
+</script>
+
