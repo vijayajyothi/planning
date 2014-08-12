@@ -151,12 +151,12 @@ match 'login', to: 'sessions#new', as: 'login'
 match 'signup', to: 'users#new', as: 'signup'
 
 get "home/index"
+get "/search_list" => "home#search_list", :as => :search_list
 
 get "/vms" => "vms#index", :as => :vms
 get "/selected_vm/:id" => "vms#selected_vm", :as => :selected_vm
 
 get "/vcenters" => "vcenters#index", :as => :vcenters
-get "/vcenters_list" => "vcenters#vcenters_list", :as => :vcenters_list
 get "/selected_vcenter/:id" => "vcenters#selected_vcenter", :as => :selected_vcenter
 
 

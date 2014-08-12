@@ -11,64 +11,75 @@
           <span><b>Welcome <%= @current_user %></b></span><br/>
           <!-- <span><b>Last Log in: </b><%#= last_login_time %></span> -->
         </div>
-        <div class="form-search" style="float:right;margin-top:10px;">
-          <div class="input-append">
 
-            <%= form_tag vcenters_path, :method => :get, :remote=> true do %>
-            <% comment do %>
-            <div clas="input-group-btn">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Assets<span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li>Hii</li>
-                <li>Hii2</li>
-              </ul>
-            </div>
+        <div style="margin-top:40px;float:right;">
+         <div class="form-search" >
+           <div class="input-append" >
+            <%= form_tag search_list_path, :method => :get, :remote=> true do %>
             <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
             <%= submit_tag "Search", :name => nil, :class=>"btn" %>
-            <% end %>
             <% end %>
           </div>
         </div>
       </div>
+      <div class="form-search" style="float:right;margin-top:10px;">
+        <div class="input-append">
 
-      <div class="col-sm-5" align="right" style=" float:right">
+          <%= form_tag vcenters_path, :method => :get, :remote=> true do %>
+          <% comment do %>
+          <div clas="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Assets<span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li>Hii</li>
+              <li>Hii2</li>
+            </ul>
+          </div>
+          <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+          <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+          <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
 
-        <!--Navigation Starts -->
-        <nav class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
-            <!-- Menu and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-               <img src="/assets/menu.png">
-             </button>
-           </div>
-           <!-- Collect the nav links, forms, and other content for toggling -->
-           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav" style="float: right;padding-top: 30px;" align="right">
+    <div class="col-sm-5" align="right" style=" float:right">
 
-             <li><a href="/vcenters" data-remote=true alt="Vcenters" title="Vcenters"><span class="nav-span"></span><%= image_tag "vcenter.png", :style=> "height:32px;width:32px;"%></a></li>
-             <li><a href="/vdcs" data-remote=true alt="vdcs" title="vdcs"><span class="nav-span"></span><%= image_tag "vdc.png", :style=> "height:32px;width:32px;" %></a></li>
-             <li><a href="/clusters" data-remote=true alt="clusters" title="clusters"><span class="nav-span"></span><%= image_tag "cluster.png", :style=> "height:32px;width:32px;" %></a></li>
-             <li><a href="/vmhosts" data-remote=true alt="vmhosts" title="vmhosts"><span class="nav-span"></span><%= image_tag "vmhost.png", :style=> "height:32px;width:32px;" %></a></li>
-             <li><a href="/vms" data-remote=true alt="vms" title="vms"><span class="nav-span"></span><%= image_tag "vm1.png", :style=> "height:32px;width:32px;" %></a></li>
-             
-             <li><span class="nav-span"></span><%= link_to "#{image_tag("/assets/exit.png")}".html_safe, logout_path, :class=>"logout-button", :alt=>"Logout", :title=>"Logout"%>
-             </li>
+      <!--Navigation Starts -->
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <!-- Menu and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+             <img src="/assets/menu.png">
+           </button>
+         </div>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav" style="float: right;padding-top: 30px;" align="right">
 
-           </ul>
-         </div><!-- /.navbar-collapse -->
-       </div><!-- /.container-fluid -->
-     </nav>
-     <!--EOF Navigation -->
+           <li><a href="/vcenters" data-remote=true alt="Vcenters" title="Vcenters"><span class="nav-span"></span><%= image_tag "vcenter.png", :style=> "height:32px;width:32px;"%></a></li>
+           <li><a href="/vdcs" data-remote=true alt="vdcs" title="vdcs"><span class="nav-span"></span><%= image_tag "vdc.png", :style=> "height:32px;width:32px;" %></a></li>
+           <li><a href="/clusters" data-remote=true alt="clusters" title="clusters"><span class="nav-span"></span><%= image_tag "cluster.png", :style=> "height:32px;width:32px;" %></a></li>
+           <li><a href="/vmhosts" data-remote=true alt="vmhosts" title="vmhosts"><span class="nav-span"></span><%= image_tag "vmhost.png", :style=> "height:32px;width:32px;" %></a></li>
+           <li><a href="/vms" data-remote=true alt="vms" title="vms"><span class="nav-span"></span><%= image_tag "vm1.png", :style=> "height:32px;width:32px;" %></a></li>
+
+           <li><span class="nav-span"></span><%= link_to "#{image_tag("/assets/exit.png")}".html_safe, logout_path, :class=>"logout-button", :alt=>"Logout", :title=>"Logout"%>
+           </li>
+
+         </ul>
+       </div><!-- /.navbar-collapse -->
+     </div><!-- /.container-fluid -->
+   </nav>
+   <!--EOF Navigation -->
 
 
 
-   </div>
+ </div>
 
-   <% else %>
-   <div class="col-sm-6">
-    <div class="logo"> <%= link_to (image_tag("logo.png")), "/", :id => "logo" %></div>
-  </div>
+ <% else %>
+ <div class="col-sm-6">
+  <div class="logo"> <%= link_to (image_tag("logo.png")), "/", :id => "logo" %></div>
+</div>
 </div>
 <% end %>
 

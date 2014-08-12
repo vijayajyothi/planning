@@ -88,4 +88,11 @@ end
     @vcenter = Vcenter.find(params[:id])
     @vcenters = Vcenter.where('ops_status != ?', "Deleted" )
   end
+
+  def search_list
+    @search = Sunspot.search [Vcenter, Vdc, Cluster, Vmhost, Vm] do 
+      fulltext params[:search]
+    end
+    @results = @search.results
+  end 
 end
