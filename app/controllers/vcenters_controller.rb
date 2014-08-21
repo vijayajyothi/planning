@@ -74,14 +74,19 @@ end
 
   # DELETE /vcenters/1
   # DELETE /vcenters/1.json
+  def remove
+     @vcenter = Vcenter.find(params[:id])
+    @vcenter.destroy
+  end
   def destroy
     @vcenter = Vcenter.find(params[:id])
     @vcenter.destroy
-
-    respond_to do |format|
-      format.html { redirect_to vcenters_url }
-      format.json { head :no_content }
-    end
+      redirect_to :action => :index, status:303
+    # respond_to do |format|
+    #   format.html { redirect_to vcenters_url }
+    #   format.json { head :no_content }
+    #   format.js { render :layout =>false}
+    # end
   end
   def selected_vcenter
     @vcenter = Vcenter.find(params[:id])

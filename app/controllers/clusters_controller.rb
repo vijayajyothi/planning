@@ -74,11 +74,12 @@ class ClustersController < ApplicationController
   def destroy
     @cluster = Cluster.find(params[:id])
     @cluster.destroy
+      redirect_to :action => :index, status:303
 
-    respond_to do |format|
-      format.html { redirect_to clusters_url }
-      format.json { head :no_content }
-    end
+    # respond_to do |format|
+    #   format.html { redirect_to clusters_url }
+    #   format.json { head :no_content }
+    # end
   end
   def selected_cluster
     @cluster = Cluster.find(params[:id])

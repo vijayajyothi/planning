@@ -73,11 +73,12 @@ class VmhostsController < ApplicationController
   def destroy
     @vmhost = Vmhost.find(params[:id])
     @vmhost.destroy
+      redirect_to :action => :index, status:303
 
-    respond_to do |format|
-      format.html { redirect_to vmhosts_url }
-      format.json { head :no_content }
-    end
+    # respond_to do |format|
+    #   format.html { redirect_to vmhosts_url }
+    #   format.json { head :no_content }
+    # end
   end
 
    def selected_vmhost

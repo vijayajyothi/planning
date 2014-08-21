@@ -66,13 +66,13 @@ class << self
     cluster_data = cluster_import
     p "vdc data uploaded" 
     esx_data = esx_data_import
-    p "ESX Host data (vmhost)) uploaded"
+    p "ESX Host data (vmhost) uploaded"
     esx_pnics_data = esx_pnics_data_import
-p "ESX Host data uploaded"
+p "ESX pnic data uploaded"
 host_hbas_data = host_hbas_data_import
 p "Host hbas data uploaded"
 port_group_data = port_group_data_import
-p "Host hbas data uploaded"
+p "port group data uploaded"
 # data_store_data = data_store_data_import
 # p "Data store data uploaded"
 vm_data = vm_data_import
@@ -200,7 +200,7 @@ def esx_pnics_data_import
       pnic.ops_status = "New"
       pnic.attributes = row.to_hash.slice(*accessible_attributes)
     end
-    pnic.vmhost_id = vmhost.id
+    pnic.vmhost_id = vmhost.id if vmhost.present?
     pnic.name = row["pnic"]
     pnic.speed = row["speed"]
     pnic.macaddress = row["macaddress"]

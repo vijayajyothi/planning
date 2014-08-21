@@ -3,6 +3,7 @@ task :cron => :environment do
   puts "started"
   Vm.importing_data
   puts "done"
+  OpsMailer.confirmation_mail.deliver
   p "hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
 end
 

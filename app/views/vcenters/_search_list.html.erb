@@ -16,7 +16,7 @@
     
       <% @results.group_by(&:class).each do |key, group| %>
       <tr>
-        <td colspan=3><b><%= key %>: </b></td></tr>
+        <td colspan=3><b><%= key.upcase %>: </b></td></tr>
         <% group.each do |result|%>
           <tr>
             <td></td>

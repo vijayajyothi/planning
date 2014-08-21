@@ -28,12 +28,13 @@ class SessionsController < ApplicationController
 
   def  verify_user
     user = name_for_login(params[:email], params[:password])
+    # raise user.inspect
     if user.present?
       cookies[:user] = user
-      redirect_to root_url, :notice => "Logged in!"
-    else
-      flash[:error]= "Invalid Username or Password" 
-      redirect_to root_url
+     redirect_to root_url, :notice => "Logged in!"
+     else
+       flash[:error]= "Invalid Username or Password" 
+       redirect_to root_url
     end
   end
 
@@ -63,6 +64,10 @@ if ldap.bind
       attributes:   %w[ displayName ],
       return_result:true
       ).first.displayName.first
+#  else
+ #   flash[:error] = "Invalid Username or Password"
+  #  redirect_to root_url
+
   end
 end
 end
