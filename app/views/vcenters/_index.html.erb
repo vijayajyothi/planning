@@ -1,83 +1,66 @@
 <div class="index-container">
+  <!-- Index form Started -->
   <div class="col-sm-12">
+    <div class="form-search col-sm-4">
+      <h2>vCenter Details</h2></div>
+      <div class="form-search col-sm-4" style="margin-top:20px;">
+        <div class="input-append">
 
-   <div class="form-search" >
-     <div class="input-append" >
-      <%= form_tag search_list_path, :method => :get, :remote=> true do %>
-      <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
-      <%= submit_tag "Search", :name => nil, :class=>"btn" %>
-
-      <div class="btn-group">
-        <%#= button_tag(type:'submit', class: "btn") do %>
-        <!-- <i class= "icon-search"></i> -->
-        <% #end %>
+          <%= form_tag vcenters_path, :method => :get, :remote=> true do %>
+          <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+          <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+          <% end %>
+        </div>
       </div>
-      <% end %>
     </div>
-  </div>
-</div>
-
-<!-- Index form Started -->
-<div class="col-sm-12">
-  <div class="form-search col-sm-4">
-    <h2>vCenter Details</h2></div>
-    <div class="form-search col-sm-4" style="margin-top:20px;">
-      <div class="input-append">
-
-        <%= form_tag vcenters_path, :method => :get, :remote=> true do %>
-        <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
-        <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+    <div class ="container" style="height:662px;overflow:auto;">
+      <table class="table table-striped tablesorter">
+        <tr>
+          <th>Name</th>
+          <th>IP Address</th>
+          <th>Location</th>
+          <th colspan=2> Actions</th>
+        </tr>
+        <% @vcenters.each do |vcenter| %>
+        <% if vcenter.ops_status=="Deleted"%>
+        <tr class="alert alert-error">
+          <td colspan=3><%= vcenter.name %> is deleted</td>
+          <td colspan=2><%= link_to 'Destroy', vcenter, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%>
+            <%#= link_to 'Delete Permanently', remove_path(vcenter), data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger', :remote=> true %></td>
+        </tr>
+        <% else %>
+        <tr style="cursor:pointer;" id ="complete_tr">
+          <td><%= vcenter.name %></td>
+          <td><%= vcenter.ip_address %></td>
+          <td><%= vcenter.location %></td>
+          <td><%= link_to 'Show', vcenter ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
+          <td><%= link_to 'Edit', edit_vcenter_path(vcenter),:class => 'btn btn-mini btn-warning', :remote=> true %></td>
+          <!-- <td><%#= link_to 'Destroy', vcenter, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td> -->
+        </tr>
         <% end %>
+        <% end %>
+      </table>
+    </div>
+
+    <div class="digg_pagination">
+      <div class="page_info">
+        <%#= page_entries_info @vcenters %>
       </div>
+      <%#= paginate @vcenters, :container => false, :remote=> true %>
     </div>
-  </div>
-  <div class ="container" style="height:662px;overflow:auto;">
-    <table class="table table-striped tablesorter">
-      <tr>
-        <th>Name</th>
-        <th>IP Addres</th>
-        <th>Location</th>
-        <th colspan=2> Actions</th>
-      </tr>
-      <% @vcenters.each do |vcenter| %>
-      <% if vcenter.ops_status=="Deleted"%>
-      <tr class="alert alert-error">
-        <td colspan=3><%= vcenter.name %> is deleted</td>
-        <td colspan=2><%= link_to 'Delete Permanently', vcenter, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger'%></td>
-      </tr>
-      <% else %>
-      <tr style="cursor:pointer;" id ="complete_tr">
-        <td><%= vcenter.name %></td>
-        <td><%= vcenter.ip %></td>
-        <td><%= vcenter.location %></td>
-        <td><%= link_to 'Show', vcenter ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
-        <td><%= link_to 'Edit', edit_vcenter_path(vcenter),:class => 'btn btn-mini btn-warning', :remote=> true %></td>
-        <!-- <td><%#= link_to 'Destroy', vcenter, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td> -->
-      </tr>
-      <% end %>
-      <% end %>
-    </table>
-  </div>
 
-  <div class="digg_pagination">
-    <div class="page_info">
-      <%#= page_entries_info @vcenters %>
-    </div>
-    <%#= paginate @vcenters, :container => false, :remote=> true %>
   </div>
+  <%#= link_to 'New vcenter', new_vcenter_path %>
 
-</div>
-<%#= link_to 'New vcenter', new_vcenter_path %>
-
-<script>
-$(function(){
-  $('table').tablesorter({
-    widgets        : ['zebra', 'columns'],
-    usNumberFormat : false,
-    sortReset      : true,
-    sortRestart    : true
+  <script>
+  $(function(){
+    $('table').tablesorter({
+      widgets        : ['zebra', 'columns'],
+      usNumberFormat : false,
+      sortReset      : true,
+      sortRestart    : true
+    });
   });
-});
 
-</script>
+  </script>
 

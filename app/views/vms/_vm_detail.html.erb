@@ -6,7 +6,15 @@
         <a data-toggle="collapse" data-parent="#accordion" href="#basicdata">
           <span><%= @vm.name %> Details</span>
           <p><b> Created On : </b><%= @vm.new_born_on %></p>
-          <p><b> Status : </b><%= @vm.power_state %></p></a>
+          <p><b> Status : </b>
+            <% if @vm.power_state == "PoweredOn"%>
+             <% image = "green.png"%>
+            <% elsif@vm.power_state == "PoweredOff" %>
+             <% image = "red.png"%>
+            <% else %>
+             <% image = "pause.png"%>
+            <% end %>
+            <%= image_tag "#{image}", :style=> "margin:-4px 3px 0 0;width:21px;height:21px;"%><%= @vm.power_state %></p></a>
         </div>
 
         <div id="basicdata" class="panel-collapse collapse in">

@@ -1,5 +1,5 @@
 class Vcenter < ActiveRecord::Base
-  attr_accessible :description, :ip, :name, :location, :new_born_on
+  attr_accessible :description, :ip_address, :name, :location, :new_born_on, :ops_status, :ip
 
 
 #SCOPES

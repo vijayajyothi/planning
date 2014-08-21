@@ -26,7 +26,7 @@
         <% if vdc.ops_status=="Deleted"%>
         <tr class="alert alert-error">
           <td colspan=3><%= vdc.name %> is deleted</td>
-          <td colspan=2><%= link_to 'Delete Permanently', vdc, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger'%></td>
+          <td colspan=2><%= link_to 'Delete Permanently', vdc, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger', :remote=>true%></td>
         </tr>
         <% else %>
         <tr style="cursor:pointer;" id ="complete_tr">

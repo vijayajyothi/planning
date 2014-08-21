@@ -101,11 +101,12 @@ class VmsController < ApplicationController
   def destroy
     @vm = Vm.find(params[:id])
     @vm.destroy
+      redirect_to :action => :index, status:303
 
-    respond_to do |format|
-      format.html { redirect_to vms_url }
-      format.json { head :no_content }
-    end
+    # respond_to do |format|
+    #   format.html { redirect_to vms_url }
+    #   format.json { head :no_content }
+    # end
   end
 
   

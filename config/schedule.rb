@@ -5,19 +5,21 @@
 
 # Example:
 #
-# set :output, "/path/to/my/cron_log.log"
+
+set :output, "/home/workspace/opsgps_development/cron_log.log"
 #
-set :environment, "development"
+# set :environment, "development"
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
 #   runner "MyModel.some_method"
 #   rake "some:great:rake:task"
 # end
 #
-every :day, :at => '3:00pm' do
-  rake "cron"
+every :day, :at=> '12:01am' do
+  rake `rm -rf /home/workspace/opsgps_development/solr`
   rake "sunspot:solr:stop" 
   rake "sunspot:solr:start"
+  rake "cron"
   rake "sunspot:solr:reindex"
 end
 
@@ -25,4 +27,4 @@ end
 
 # Run below line for updating cronjobs after updating this file.
 # whenever --update-crontab --set 'environment=development'
-# RAILS_ENV=development bundle exec rake test:cron --silent
+# RAILS_ENV=development bundle exec rake cron --silent

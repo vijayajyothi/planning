@@ -22,24 +22,7 @@
           </div>
         </div>
       </div>
-      <div class="form-search" style="float:right;margin-top:10px;">
-        <div class="input-append">
-
-          <%= form_tag vcenters_path, :method => :get, :remote=> true do %>
-          <% comment do %>
-          <div clas="input-group-btn">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Assets<span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li>Hii</li>
-              <li>Hii2</li>
-            </ul>
-          </div>
-          <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
-          <%= submit_tag "Search", :name => nil, :class=>"btn" %>
-          <% end %>
-          <% end %>
-        </div>
-      </div>
+      
     </div>
 
     <div class="col-sm-5" align="right" style=" float:right">
@@ -58,7 +41,7 @@
           <ul class="nav navbar-nav" style="float: right;padding-top: 30px;" align="right">
 
            <li><a href="/vcenters" data-remote=true alt="Vcenters" title="Vcenters"><span class="nav-span"></span><%= image_tag "vcenter.png", :style=> "height:32px;width:32px;"%></a></li>
-           <li><a href="/vdcs" data-remote=true alt="vdcs" title="vdcs"><span class="nav-span"></span><%= image_tag "vdc.png", :style=> "height:32px;width:32px;" %></a></li>
+           <li><a href="/vdcs" data-remote=true alt="vdcs" title="DataCenter"><span class="nav-span"></span><%= image_tag "vdc.png", :style=> "height:32px;width:32px;" %></a></li>
            <li><a href="/clusters" data-remote=true alt="clusters" title="clusters"><span class="nav-span"></span><%= image_tag "cluster.png", :style=> "height:32px;width:32px;" %></a></li>
            <li><a href="/vmhosts" data-remote=true alt="vmhosts" title="vmhosts"><span class="nav-span"></span><%= image_tag "vmhost.png", :style=> "height:32px;width:32px;" %></a></li>
            <li><a href="/vms" data-remote=true alt="vms" title="vms"><span class="nav-span"></span><%= image_tag "vm1.png", :style=> "height:32px;width:32px;" %></a></li>

@@ -48,9 +48,8 @@ gem 'net-ldap'
 # To use debugger
 # gem 'debugger'
   gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
-group :development do
-  gem 'better_errors'                                # To debug errors very effectively and handles exceptions
-  gem 'binding_of_caller'                            # To show all the local and instance variables
-  gem 'quiet_assets'                                 # To Avoid Asset Pipeline Log in Development
-
-end
+  group :development do
+    gem 'better_errors'                                # To debug errors very effectively and handles exceptions
+    gem 'binding_of_caller'                            # To show all the local and instance variables
+    gem 'quiet_assets'                                 # To Avoid Asset Pipeline Log in Development
+  end

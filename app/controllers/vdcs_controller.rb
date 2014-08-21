@@ -73,11 +73,12 @@ class VdcsController < ApplicationController
   def destroy
     @vdc = Vdc.find(params[:id])
     @vdc.destroy
+      redirect_to :action => :index, status:303
 
-    respond_to do |format|
-      format.html { redirect_to vdcs_url }
-      format.json { head :no_content }
-    end
+    # respond_to do |format|
+    #   format.html { redirect_to vdcs_url }
+    #   format.json { head :no_content }
+    # end
   end
 
    def selected_vdc
