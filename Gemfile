@@ -18,9 +18,9 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'twitter-bootstrap-rails'
   gem 'less-rails'
 end
+  gem 'twitter-bootstrap-rails'
 # gem 'will_paginate', '~> 3.0.5'
 # gem 'will_paginate-bootstrap'
 # gem 'kaminari'   # For pagination in ajax also
