@@ -50,7 +50,7 @@ Opsgps::Application.configure do
 
    config.action_mailer.smtp_settings = {
     :enable_starttls_auto => true,
-    :address => "smtp.gmail.com",
+    :address => "10.128.80.90:3000",
     :port => 587,
     :domain => "gmail.com",
     :authentication => :login,
