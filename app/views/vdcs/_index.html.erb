@@ -34,7 +34,7 @@
           <td><%= vdc.description %></td>
           <td><%= vcenter_name(vdc.vcenter_id) %></td>
           <td><%= link_to 'Show', vdc ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
-           <td><%#= link_to 'Edit', edit_vdc_path(vdc),:class => 'btn btn-mini btn-warning' %></td>
+           <td><%= link_to 'Edit', edit_vdc_path(vdc),:class => 'btn btn-mini btn-warning', :remote=> true %></td>
           <!-- <td><%#= link_to 'Destroy', vdc, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-dan -->ger'%></td> -->
         </tr>
         <% end %>

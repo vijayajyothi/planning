@@ -63,10 +63,14 @@ end
 
     respond_to do |format|
       if @vcenter.update_attributes(params[:vcenter])
-        format.html { redirect_to @vcenter, notice: 'Vcenter was successfully updated.' }
+      redirect_to :action => :index, status:303
+
+        # format.html { redirect_to @vcenter, notice: 'Vcenter was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+      redirect_to :action => :edit, status:303
+
+        # format.html { render action: "edit" }
         format.json { render json: @vcenter.errors, status: :unprocessable_entity }
       end
     end
