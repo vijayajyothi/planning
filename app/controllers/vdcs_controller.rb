@@ -56,14 +56,18 @@ class VdcsController < ApplicationController
   # PUT /vdcs/1.json
   def update
     @vdc = Vdc.find(params[:id])
+    @vdcs = Vdc.where('ops_status != ?', "Deleted" )
 
     respond_to do |format|
       if @vdc.update_attributes(params[:vdc])
-        format.html { redirect_to @vdc, notice: 'Vdc was successfully updated.' }
-        format.json { head :no_content }
+        format.js { redirect_to(vdcs_url)}
+
+        # format.html { redirect_to @vdc, notice: 'Vdc was successfully updated.' }
+        # format.json { head :no_content }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @vdc.errors, status: :unprocessable_entity }
+        format.js { redirect_to(vdcs_url)}
+        # format.html { render action: "edit" }
+        # format.json { render json: @vdc.errors, status: :unprocessable_entity }
       end
     end
   end

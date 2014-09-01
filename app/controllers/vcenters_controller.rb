@@ -60,28 +60,25 @@ end
   # PUT /vcenters/1.json
   def update
     @vcenter = Vcenter.find(params[:id])
+    @vcenters = Vcenter.where('ops_status != ?', "Deleted" )
 
     respond_to do |format|
       if @vcenter.update_attributes(params[:vcenter])
-      redirect_to :action => :index, status:303
-
-        # format.html { redirect_to @vcenter, notice: 'Vcenter was successfully updated.' }
-        format.json { head :no_content }
+        format.js { redirect_to(vcenters_url)}
+   
       else
-      redirect_to :action => :edit, status:303
+        format.js { redirect_to(vcenters_url)}
+        # redirect_to :action => :edit, status:303
 
         # format.html { render action: "edit" }
-        format.json { render json: @vcenter.errors, status: :unprocessable_entity }
+        # format.json { render json: @vcenter.errors, status: :unprocessable_entity }
       end
     end
   end
 
   # DELETE /vcenters/1
   # DELETE /vcenters/1.json
-  def remove
-     @vcenter = Vcenter.find(params[:id])
-    @vcenter.destroy
-  end
+  
   def destroy
     @vcenter = Vcenter.find(params[:id])
     @vcenter.destroy

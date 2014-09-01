@@ -1,4 +1,4 @@
-<%= form_for(@vcenter) do |f| %>
+<%= form_for(@vcenter, remote: true) do |f| %>
   <% if @vcenter.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@vcenter.errors.count, "error") %> prohibited this vcenter from being saved:</h2>
@@ -10,24 +10,31 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  <div>
+<fieldset class="formfield">
+  <p>
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
+    <%= f.text_field :name, :class=>"ops_input" %>
+  </p>
+  <p class="field">
     <%= f.label :ip_address %><br />
-    <%= f.text_field :ip_address %>
-  </div>
-  <div class="field">
+    <%= f.text_field :ip_address, :class=>"ops_input" %>
+  </p>
+  <p class="field">
     <%= f.label :location %><br />
-    <%= f.text_field :location %>
-  </div>
-  <div class="field">
+    <%= f.text_field :location, :class=>"ops_input" %>
+  </p>
+  <p class="field">
     <%= f.label :description %><br />
-    <%= f.text_area :description, :rows=>3, :cols=> 4 %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.text_area :description, :height=>"20%", :width=>"20%", :class=>"ops_input"%>
+  </p>
+  
+    <%= f.submit :class=>"btn btn-primary",:value=>"Update vCenter", :remote=> true %>
 <% end %>
+</fieldset>
+</div>
+<style>
+.ops_input{
+   margin-top:-14px !important;float: left; width: 50% !important; border: 1px solid #d9d9d9;height: 35px !important;padding: 4px;border-radius: 5px; 
+}
+</style>

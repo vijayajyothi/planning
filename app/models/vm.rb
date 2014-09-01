@@ -83,7 +83,7 @@ end
 def vcenter_data_import
   Vcenter.update_all(:ops_status=>"Deleted")
   
-  CSV.foreach("csv_data/powercli/csv_v1/esx/esx-vcenters.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/esx-vcenters.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["name"])
     if vcenter.present?
       vcenter.ops_status = "Present"
@@ -106,7 +106,7 @@ end
   def data_center_data_import
     Vdc.update_all(:ops_status=>"Deleted")
 
-    CSV.foreach("csv_data/powercli/csv_v1/esx/esx-datacenters.csv", :headers => true) do |row|
+    CSV.foreach("csv_data/powercli/esx/datacenters.csv", :headers => true) do |row|
 
       vcenter = Vcenter.find_by_name(row["vcserver"])
       vdc = Vdc.where(:name => row["datacenter"], :vcenter_id=>vcenter.id).first
@@ -128,7 +128,7 @@ end
 def cluster_import
   Cluster.update_all(:ops_status=>"Deleted")
 
-  CSV.foreach("csv_data/powercli/csv_v1/esx/esx-clusters.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/clusters.csv", :headers => true) do |row|
 
     vcenter = Vcenter.find_by_name(row["vcserver"])
     vdc = Vdc.find_by_vcenter_id(vcenter.id)
@@ -153,7 +153,7 @@ end
 
 def esx_data_import
   Vmhost.update_all(:ops_status=>"Deleted")
-  CSV.foreach("csv_data/powercli/csv_v1/esx/esx-hosts.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/hosts.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["vcserver"])
     cluster = Cluster.find_by_name(row["cluster"])  
     esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id, :cluster_id=> cluster.id).first if cluster.present?
@@ -189,7 +189,7 @@ def esx_data_import
 end
 end
 def esx_pnics_data_import
-  CSV.foreach("csv_data/powercli/csv_v1/esx/esx-pnics.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/pnics.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
     pnic = Pnic.where(:name=>row["name"], :vmhost_id=>vmhost.id).first if vmhost.present?
     if pnic.present?
@@ -210,7 +210,7 @@ def esx_pnics_data_import
 end
 
 def host_hbas_data_import
-  CSV.foreach("csv_data/powercli/csv_v1/esx/esx-hosthbas.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/hosthbas.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
     hbas = Hhba.where(:vmhost_id=>vmhost.id, :name=>row["hba"]).first if vmhost.present?
     if hbas.present?
@@ -235,7 +235,7 @@ def host_hbas_data_import
 end
 
 def port_group_data_import
-  CSV.foreach("csv_data/powercli/csv_v1/esx/esx-portgroups.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/portgroups.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
     pnic = Pnic.find_by_name(row["nic"])
     pg = Portgroup.where(:vmhost_id=>vmhost.id, :name=>row["portgroup"]).first if vmhost.present?
@@ -259,7 +259,7 @@ end
 
 
 def data_store_data_import
-  CSV.foreach("csv_data/powercli/csv-v1/esx/esx-datastores.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/datastores.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["vcserver"])
 
     vdc = Vdc.find_by_name(row["data"])
@@ -289,7 +289,7 @@ end
 
 def vm_data_import
   Vm.update_all(:ops_status=>"Deleted")
-  CSV.foreach("csv_data/powercli/csv_v1/esx/esx-vms.csv", :headers => true) do |row|
+  CSV.foreach("csv_data/powercli/esx/vms.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["vcserver"])
     vmhost = Vmhost.find_by_name(row["vmhost"])
     cluster = Cluster.find_by_name(row["cluster"]) 
