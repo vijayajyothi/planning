@@ -8,11 +8,7 @@
 
 set :output, "/home/workspace/opsgps_development/cron_log.log"
 #
-<<<<<<< HEAD
-#set :environment, "development"
-=======
-# set :environment, "development"
->>>>>>> development
+
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
 #   runner "MyModel.some_method"
@@ -25,14 +21,12 @@ every :day, :at=> '12:01am' do
   rake "sunspot:solr:start"
   rake "cron"
   rake "sunspot:solr:reindex"
+  rake `chmod -R 777 solr`
 end
 
 # Learn more: http://github.com/javan/whenever
 
 # Run below line for updating cronjobs after updating this file.
 # whenever --update-crontab --set 'environment=development'
-<<<<<<< HEAD
-# RAILS_ENV=development bundle exec rake test:cron --silent
-=======
+
 # RAILS_ENV=development bundle exec rake cron --silent
->>>>>>> development
