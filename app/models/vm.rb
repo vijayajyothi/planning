@@ -155,11 +155,8 @@ def esx_data_import
   Vmhost.update_all(:ops_status=>"Deleted")
   CSV.foreach("csv_data/powercli/esx/hosts.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["vcserver"])
-
-    cluster = Cluster.where(:vcenter_id=>vcenter)  
+    cluster = Cluster.where(:vcenter_id=>vcenter.id).first
     esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id, :cluster_id=> cluster.id).first if cluster.present?
-  # esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id).first
-
 
 
   if esx_host.present?
