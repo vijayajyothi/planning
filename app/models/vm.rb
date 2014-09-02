@@ -155,9 +155,12 @@ def esx_data_import
   Vmhost.update_all(:ops_status=>"Deleted")
   CSV.foreach("csv_data/powercli/esx/hosts.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["vcserver"])
-    cluster = Cluster.find_by_name(row["cluster"])  
+
+    cluster = Cluster.where(:vcenter_id=>vcenter)  
     esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id, :cluster_id=> cluster.id).first if cluster.present?
   # esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id).first
+
+
 
   if esx_host.present?
     esx_host.ops_status = "Present"
@@ -292,8 +295,9 @@ def vm_data_import
   CSV.foreach("csv_data/powercli/esx/vms.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["vcserver"])
     vmhost = Vmhost.find_by_name(row["vmhost"])
+
     cluster = Cluster.find_by_name(row["cluster"]) 
-    # vdc = Vdc.find(cluster.vdc_id)
+    vdc = Vdc.find_by_name(row["datacenter"])
     vm = Vm.find_by_ip(row["ipaddress"])
     
     if vm.present?
@@ -305,6 +309,7 @@ def vm_data_import
       vm.new_born_on = Date.today
       vm.attributes = row.to_hash.slice(*accessible_attributes)
     end
+
     vm.name = row["vmname"]
     vm.resource_pool = row["resourcepool"]
     # vm.status = row["id"]
@@ -312,6 +317,7 @@ def vm_data_import
     vm.ip = row["ipaddress"]
     vm.total_mem_mb = row["memorymb"]
     vm.num_cpus = row["numcpu"]
+    vm.num_vnics = row["qtynics"]
     vm.power_state = row["powerstate"]
     vm.connection_state = row["connectionstate"]
     vm.guest_state = row["gueststate"]
@@ -321,7 +327,7 @@ def vm_data_import
     vm.created_time = row["createdtime"]
     vm.created_by = row["createdby"]
     vm.vcenter_id = vcenter.id if vcenter.present?
-    vm.vdc_id = cluster.vdc_id if cluster.present?
+    vm.vdc_id = vdc.id if vdc.present?
     vm.cluster_id = cluster.id if cluster.present?
     vm.vmhost_id = vmhost.id if vmhost.present?
     vm.persistent_id = row["persistentid"]

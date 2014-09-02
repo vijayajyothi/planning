@@ -26,11 +26,11 @@
                 <td><%= link_to my_vcenter(@vm.vcenter_id).name, my_vcenter(@vm.vcenter_id), :style=>"color:black;", :remote=> true%></td>
 
                 <td><b>Data Center</b></td>
-                <td><%= link_to my_vdc(my_cluster(@vm.cluster_id).vdc_id).name, my_vdc(my_cluster(@vm.cluster_id).vdc_id), :style=>"color:black;", :remote=> true%></td>
+                <td><%= link_to my_vdc_name(@vm.vdc_id).name, my_vdc_name(@vm.vdc_id), :style=>"color:black;", :remote=> true%></td>
               </tr>
               <tr>
                 <td><b>Cluster</b></td>
-                <td><%= link_to my_cluster(@vm.cluster_id).name, my_cluster(@vm.cluster_id), :style=>"color:black;", :remote=> true%></td>
+                <td><%#= link_to my_cluster_host(@vm.vmhost_id).name, my_cluster(@vm.vmhost_id).name, :style=>"color:black;", :remote=> true%></td>
                 <td><b>ESX Host</b></td>
                 <td><%= link_to my_host(@vm.vmhost_id).name, my_host(@vm.vmhost_id), :style=>"color:black;", :remote=> true%></td>
               </tr> 
@@ -57,7 +57,7 @@
               </tr>    
               <tr>
                 <td><b>Status</b></td>
-                <td><%= @vm.status %></td>
+                <td><%= @vm.guest_state %></td>
 
                 <td><b>DNS Name</b></td>
                 <td><%= @vm.vm_hostname %></td>
@@ -129,10 +129,7 @@
                       <td><b>Persistent ID </b></td>
                       <td><%= @vm.persistent_id %></td>
                     </tr> 
-                    <tr>
-                      <td><b>Status</b></td>
-                      <td><%= @vm.guest_state %></td>
-                    </tr> 
+                    
                     <tr>
                       <td><b>Total Memory(MB)</b></td>
                       <td><%= @vm.total_mem_mb %></td>

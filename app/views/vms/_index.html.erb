@@ -27,12 +27,13 @@
     <% @vms.each do |vm| %>
     <% if vm.ops_status=="Deleted"%>
     <tr class="alert alert-error">
-      <td colspan=6><%= vm.name %> is deleted</td>
-      <td colspan=2><%= link_to 'Delete Permanently', vm, method: :delete, data: { confirm: 'Are you sure? will not reverted' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=> true%></td>
+      <td colspan=5><%= vm.name %> is deleted</td>
+      <td ><%= link_to 'Delete Permanently', vm, method: :delete, data: { confirm: 'Are you sure? will not reverted' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=> true%></td>
     </tr>
     <% else %>
     <tr style="cursor:pointer;" id ="complete_tr">
-      <td><%#= vm.name if vm.present?%></td>
+
+      <td><%= vm.name %></td>
       <td><%= vm.vm_hostname %></td>
       <td><%= my_host(vm.vmhost_id).name %></td>
       <td><%= vm.ip %></td>

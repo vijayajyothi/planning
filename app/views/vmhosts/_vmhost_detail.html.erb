@@ -15,8 +15,8 @@
                   <td><b>Vcenter</b></td>
                   <td><%= link_to my_vcenter(@vmhost.vcenter_id).name, my_vcenter(@vmhost.vcenter_id).name, :style=>"color:black;", :remote=> true%></td>
 
-                  <td><b>Cluster</b></td>
-                  <td><%= link_to my_cluster(@vmhost.cluster_id).name, my_cluster(@vmhost.cluster_id).name, :style=>"color:black;", :remote=> true%></td>
+                  <!-- <td><b>Cluster</b></td> -->
+                  <!-- <td><%#= link_to my_cluster(@vmhost.cluster_id).name if @vmhost.cluster_id.present, my_cluster(@vmhost.cluster_id).name, :style=>"color:black;", :remote=> true%></td> -->
                 </tr>  
                 <tr>
                   <td><b>Connection State</b></td>
