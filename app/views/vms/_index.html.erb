@@ -32,7 +32,7 @@
     </tr>
     <% else %>
     <tr style="cursor:pointer;" id ="complete_tr">
-      <td><%= vm.name if vm.present?%></td>
+      <td><%#= vm.name if vm.present?%></td>
       <td><%= vm.vm_hostname %></td>
       <td><%= my_host(vm.vmhost_id).name %></td>
       <td><%= vm.ip %></td>

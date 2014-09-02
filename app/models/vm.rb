@@ -312,6 +312,7 @@ def vm_data_import
     vm.ip = row["ipaddress"]
     vm.total_mem_mb = row["memorymb"]
     vm.num_cpus = row["numcpu"]
+    vm.num_vnics = row["qtynics"]
     vm.power_state = row["powerstate"]
     vm.connection_state = row["connectionstate"]
     vm.guest_state = row["gueststate"]

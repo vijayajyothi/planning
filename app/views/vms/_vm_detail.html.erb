@@ -57,7 +57,7 @@
               </tr>    
               <tr>
                 <td><b>Status</b></td>
-                <td><%= @vm.status %></td>
+                <td><%= @vm.guest_state %></td>
 
                 <td><b>DNS Name</b></td>
                 <td><%= @vm.vm_hostname %></td>
@@ -129,10 +129,7 @@
                       <td><b>Persistent ID </b></td>
                       <td><%= @vm.persistent_id %></td>
                     </tr> 
-                    <tr>
-                      <td><b>Status</b></td>
-                      <td><%= @vm.guest_state %></td>
-                    </tr> 
+                    
                     <tr>
                       <td><b>Total Memory(MB)</b></td>
                       <td><%= @vm.total_mem_mb %></td>
