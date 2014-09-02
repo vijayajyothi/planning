@@ -28,6 +28,15 @@ def my_vdc(vdc_id)
   vdc = Vdc.where(:id=> vdc_id).first
   return vdc
 end
+def my_cluster_host(vmhost_id)
+  vmhost = Vmhost.where(:id=> vmhost_id).first
+  cluster = Cluster.where(:id=> cluster.id).first
+  return cluster
+end
+def my_vdc_name(vdc_id)
+  vdc = Vdc.where(:id=> vdc_id).first
+  return vdc
+  end
 
 def my_vcenter(vcenter_id)
   vcenter = Vcenter.where(:id => vcenter_id).first
