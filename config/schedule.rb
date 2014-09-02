@@ -21,7 +21,7 @@ every :day, :at=> '12:01am' do
   rake "sunspot:solr:start"
   rake "cron"
   rake "sunspot:solr:reindex"
-  rake `chmod -R 777 solr`
+  rake `chmod -R 777 *`
 end
 
 # Learn more: http://github.com/javan/whenever
