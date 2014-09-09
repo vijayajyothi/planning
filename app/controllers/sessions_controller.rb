@@ -27,15 +27,28 @@ class SessionsController < ApplicationController
   end
 
   def  verify_user
+    if params[:email].present? && params[:password].present?
     user = name_for_login(params[:email], params[:password])
     # raise user.inspect
-    if user.present?
+    if user =="Invalid Username or Password"
+       flash[:error]= "Invalid Username or Password" 
+       redirect_to new_session_path, :notice =>"Invalid Username or Password"
+     else
       cookies[:user] = user
      redirect_to root_url, :notice => "Logged in!"
-     else
-       flash[:error]= "Invalid Username or Password" 
-       redirect_to root_url
     end
+    # if user.present?
+    #   cookies[:user] = user
+    #  redirect_to root_url, :notice => "Logged in!"
+    #  else
+    #    flash[:error]= "Invalid Username or Password" 
+    #    redirect_to root_url
+    # end
+  else
+       flash[:error]= "Invalid Username or Password" 
+       redirect_to new_session_path, :notice =>"Invalid Username or Password"
+
+  end
   end
 
   def name_for_login( email, password )
@@ -63,9 +76,9 @@ if ldap.bind
       filter:       Net::LDAP::Filter.eq( "mail", email ),
       attributes:   %w[ displayName ],
       return_result:true
-      ).first.displayName.first
-#  else
- #   flash[:error] = "Invalid Username or Password"
+      ).first.displayName.first 
+ else
+   flash[:error] = "Invalid Username or Password"
   #  redirect_to root_url
 
   end

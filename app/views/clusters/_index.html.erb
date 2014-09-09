@@ -18,9 +18,8 @@
   <table class="table table-striped tablesorter">
     <tr>
       <th>Name</th>
-      <th>Data Center</th>
       <th>Vcenter</th>
-      <th>Total Cpu</th>
+      <th>Total Cpu(GHz)</th>
       <th colspan=2> Actions</th>
     </tr>
     <% @clusters.each do |cluster| %>
@@ -32,7 +31,7 @@
     <% else %>
     <tr style="cursor:pointer;" id ="complete_tr">
       <td><%= cluster.name %></td>
-      <td><%= my_vdc(cluster.vdc_id).name %></td>
+      <!-- <td><%#= my_vdc(cluster.vdc_id).name %></td> -->
       <td><%= my_vcenter(cluster.vcenter_id).name %></td>
       <td><%= cluster.cpu_total_mhz%></td>
        <!-- <td><%#= cluster.mem_total_mb/1000000 %></td> -->

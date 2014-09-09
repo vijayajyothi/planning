@@ -3,30 +3,30 @@
 
     <div class="span12">
       <div class="workflow-blocks">
-        <div class="workflow-heading"><span>Basic Data</span><p> <%#= @vm.power_state %></p></div>
+        <div class="workflow-heading"><span><b><%= @cluster.name %></b> basic data</span><p> <%#= @vm.power_state %></p></div>
 
         <table class="table table-hover">
           <tbody>
             <tr>
-              <td><b>Name</b></td>
-              <td><%= @cluster.name %></td>
-              <td><b>Total CPU</b></td>
+              <td><b>vCenter</b></td>
+              <td><%= link_to my_vcenter(@cluster.vcenter_id).name , my_vcenter(@cluster.vcenter_id), :style=>"color:black;", :remote=> true%></td>
+              <td><b>Total CPU(GHz)</b></td>
               <td><%= @cluster.cpu_total_mhz %></td>
              
             </tr> 
             <tr>
-               <td><b>Data Center</b></td>
-              <td><%= link_to my_vdc(@cluster.vdc_id).name , my_vdc(@cluster.vdc_id), :style=>"color:black;", :remote=> true%></td>
+              <!--  <td><b>Data Center</b></td>
+              <td><%#= link_to my_vdc(@cluster.vdc_id).name , my_vdc(@cluster.vdc_id), :style=>"color:black;", :remote=> true%></td> -->
            
-              <td><b>Total menory(mb)</b></td>
-              <td><%= @cluster.mem_total_mb/1000000  %></td>
+              <td><b>Total memory(MB)</b></td>
+              <td><%= @cluster.mem_total_mb %></td>
+               <td><b>CPU Cores</b></tld>
+              <td><%= @cluster.cpu_no_cores %></td>
             </tr>  
 
             <tr>
-              <td><b>Vcenter</b></td>
-              <td><%= link_to my_vcenter(@cluster.vcenter_id).name , my_vcenter(@cluster.vcenter_id), :style=>"color:black;", :remote=> true%></td>
-              <td><b>CPU Cores</b></td>
-              <td><%= @cluster.cpu_no_cores %></td>
+             
+             
             
             </tr>   
 
@@ -46,7 +46,7 @@
             </div>
 
             <div id="vms" class="">
-              <div class="panel-body" style="max-height:506px; overflow:auto;">
+              <div class="panel-body" style="max-height:544px; overflow:auto;">
                 <table class="table table-hover">
                  <tbody>
                    <% @vms.each do |each_vm|%>
@@ -73,7 +73,7 @@
               </div>
 
               <div id="vmhost" class="">
-                <div class="panel-body" style="max-height:506px; overflow:auto;">
+                <div class="panel-body" style="max-height:544px; overflow:auto;">
                   <table class="table table-hover">
                    <tbody>
                      <% @esxs.each do |each_esx|%>
