@@ -169,10 +169,12 @@ get "/selected_cluster/:id" => "clusters#selected_cluster", :as => :selected_clu
 
 get "/vmhosts" => "vmhosts#index", :as => :vmhosts
 get "/selected_vmhost/:id" => "vmhosts#selected_vmhost", :as => :selected_vmhost
-#signup_path
-#login_path
-#logout_path
-#password_reset_path
+
+match '/404' =>'error#not_found'
+match '/422' =>'error#server_error'
+match '/500' =>'error#server_error'
+
+
 resources :users 
  # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -23,7 +23,7 @@
 
         <div class="row-fluid">
           <div class="span3">
-            <div class="well sidebar-nav" style="margin-right:20px;margin-bottom:0px;height:717px; overflow:auto;">
+             <div class="well sidebar-nav" style="margin-right:20px;margin-bottom:0px;height:717px; overflow:auto;">
               <ul class="nav nav-list">
                 <% @vdcs.each do |each_vdc|%>
                 <li class=<%=each_vdc.id== params[:id].to_i ? "active" : "none" %>>
@@ -40,8 +40,4 @@
       </section>
       <!-- </div>< --><!--/container-->
 
-      <script type="text/javascript">
-$('li').on('click',function(){
-  $(this).parent().prepend(this);
-})
-</script>
+      

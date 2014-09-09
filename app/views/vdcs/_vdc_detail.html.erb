@@ -16,10 +16,10 @@
               <td><b>Vcenter</b></td>
               <td><%= link_to @vcenter.name, @vcenter, :style=>"color:black;", :remote=> true%></td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td><b>Location</b></td>
               <td><%#= @vdc.location %></td>
-            </tr>  
+            </tr>   -->
 
             <tr>
               <td><b>Description</b></td>
@@ -40,7 +40,7 @@
             </div>
 
             <div id="vms" class="">
-              <div class="panel-body" style="max-height:469px; overflow:auto;">
+              <div class="panel-body" style="max-height:507px; overflow:auto;">
                 <table class="table table-hover">
                  <tbody>
                    <% @clusters.each do |each_cluster|%>
@@ -68,7 +68,7 @@
               </div>
 
               <div id="vmhost" class="">
-                <div class="panel-body" style="max-height:469px; overflow:auto;">
+                <div class="panel-body" style="max-height:507px; overflow:auto;">
                   <table class="table table-hover">
                    <tbody>
                      <% @esxs.each do |each_esx|%>

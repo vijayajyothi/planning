@@ -13,7 +13,7 @@
             </tr>
             <tr>
               <td><b>IP Address</b></td>
-              <td><%= @vcenter.ip %></td>
+              <td><%= @vcenter.ip_address %></td>
             </tr>
             <tr>
               <td><b>Location</b></td>
@@ -48,12 +48,12 @@
       <div class="panel-group" id="accordion">
 
         <div class="panel panel-default  span6" >
-            <% @clusters = get_cluster(@vcenter) %>
-            <div class="workflow-heading">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                <span>Cluster</span>
-                <p> Count : <%= @clusters.count %></p></a>
-              </div>
+          <% @clusters = get_cluster(@vcenter) %>
+          <div class="workflow-heading">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+              <span>Cluster</span>
+              <p> Count : <%= @clusters.count %></p></a>
+            </div>
 
             <div id="collapseFour" class="">
               <div class="panel-body" style="max-height:469px; overflow:auto;">
@@ -70,7 +70,7 @@
               </div>
             </div>
           </div>
-           <div class="panel panel-default  span6"  style="margin-top:0px;">
+          <div class="panel panel-default  span6"  style="margin-top:0px;">
             <% @esxs = get_esx(@vcenter) %>
             <div class="workflow-heading">
               <a data-toggle="collapse" data-parent="#accordion" href="#vmhost">
@@ -78,42 +78,25 @@
                 <p> Count : <%= @esxs.count %></p></a>
               </div>
 
-            <!-- <div id="vmhost" class="panel-collapse collapse"> -->
-            <div id="vmhost" class="">
-              <div class="panel-body" style="max-height:469px; overflow:auto;">
-                <table class="table table-hover">
-                 <tbody>
-                   <% @esxs.each do |each_esx|%>
-                   <tr>
-                    <td><b><%= link_to each_esx.name, each_esx, :style=>"color:black;", :remote=> true%></b></td>
+              <!-- <div id="vmhost" class="panel-collapse collapse"> -->
+              <div id="vmhost" class="">
+                <div class="panel-body" style="max-height:469px; overflow:auto;">
+                  <table class="table table-hover">
+                   <tbody>
+                     <% @esxs.each do |each_esx|%>
+                     <tr>
+                      <td><b><%= link_to each_esx.name, each_esx, :style=>"color:black;", :remote=> true%></b></td>
 
-                    <td><%#= @vm.power_state %></td>
-                  </tr>  
-                  <% end %>
-                </tbody></table>
+                      <td><%#= @vm.power_state %></td>
+                    </tr>  
+                    <% end %>
+                  </tbody></table>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-       
-          <!-- <div class="span4">
-            <div class="workflow-blocks">
-              <div class="workflow-heading"><span>OPS Data</span><p></p></div>
-              <table class="table table-hover">
-
-               
-              </table>
-              </div>
-            </div><!--/span--> 
-
-            
-
-
-            <!--Section Ends Here -->
-
-
-            <%#= link_to 'Edit', edit_vm_path(@vm) %> 
-            <%#= link_to 'Back', vms_path %>
-          </div><!--/span-->
+          
+          
         </div><!--/span-->
+      </div><!--/span-->

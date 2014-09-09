@@ -30,7 +30,7 @@
               </tr>
               <tr>
                 <td><b>Cluster</b></td>
-                <td><%#= link_to my_cluster_host(@vm.vmhost_id).name, my_cluster(@vm.vmhost_id).name, :style=>"color:black;", :remote=> true%></td>
+                <td><% if @vm.cluster_id.present? %><%= link_to my_cluster(@vm.cluster_id).name, my_cluster(@vm.cluster_id), :style=>"color:black;", :remote=> true%><% end %></td>
                 <td><b>ESX Host</b></td>
                 <td><%= link_to my_host(@vm.vmhost_id).name, my_host(@vm.vmhost_id), :style=>"color:black;", :remote=> true%></td>
               </tr> 
