@@ -1,0 +1,2 @@
+/home/workspace/opsgps/csv_data/powercli/esx/findout.txt
+/home/workspace/opsgps/csv_data/powercli/esx/mailbdy.txt
