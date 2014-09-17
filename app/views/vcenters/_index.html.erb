@@ -29,7 +29,7 @@
           <td colspan=2><%= link_to 'Destroy', vcenter, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%></td>
         </tr>
         <% else %>
-        <tr style="cursor:pointer;" id ="complete_tr">
+        <tr style="cursor:pointer;" data-link="<%= vcenter_path(vcenter) %>">
           <td><%= vcenter.name %></td>
           <td><%= vcenter.ip_address %></td>
           <td><%= vcenter.location %></td>
@@ -44,15 +44,16 @@
 
   </div>
 
-  <script>
-  $(function(){
-    $('table').tablesorter({
-      widgets        : ['zebra', 'columns'],
-      usNumberFormat : false,
-      sortReset      : true,
-      sortRestart    : true
-    });
-  });
+ <script>
+	$("tr[data-link]").click(function() {
+  link_url = $(this).data("link")
+	$.ajax({
+		type: "POST",
+		url: link_url,
+    dataType: "JSON" 
+		});
+})
+</script>
 
-  </script>
+
 

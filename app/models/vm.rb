@@ -342,6 +342,7 @@ def vm_data_import
     vcenter = Vcenter.find_by_name(row["vcserver"])
     vmhost = Vmhost.find_by_name(row["vmhost"])
     cluster = Cluster.find_by_name(row["cluster"]) 
+
     if vmhost.present?
       vmhost.cluster_id = cluster.id if cluster.present?
       vmhost.save

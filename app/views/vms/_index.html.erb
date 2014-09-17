@@ -12,13 +12,13 @@
       </div>
     </div>
   </div>
-<div class ="container" style="height:662px;overflow:auto;">
+<div class ="container" style="height:623px;overflow:auto;">
 
   <table class="table table-striped tablesorter">
     <tr>
       <th>VM Name</th>
       <th>VM Host Name</th>
-      <th>ESX Host</th>
+      <th>ESXi Host</th>
       <th>IP</th>
       <th>Connection State</th>
       <th colspan=2> Actions</th>
@@ -47,7 +47,7 @@
   </table>
   </div>
   <div class="digg_pagination">
-    <%#= paginate @vms, :container => false, :remote => true %>
+    <%= paginate @vms, :container => false, :remote => true %>
   </div>
   <br />
   <% comment do %>

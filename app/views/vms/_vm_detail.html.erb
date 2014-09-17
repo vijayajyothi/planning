@@ -136,11 +136,11 @@
                     </tr> 
                     <tr>
                       <td><b>Provisioned Space(GB)</b></td>
-                      <td><%= @vm.provisioned_space %></td>
+                      <td><%= @vm.provisioned_space.to_i.round(2) %></td>
                     </tr> 
                     <tr>
                       <td><b>Used Space(GB)</b></td>
-                      <td><%= @vm.used_space %></td>
+                      <td><%= @vm.used_space.to_i.round(2) %></td>
                     </tr> 
                     
                   </tbody></table>
