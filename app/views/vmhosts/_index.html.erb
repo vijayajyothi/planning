@@ -1,7 +1,7 @@
 <div class="index-container">
 <div class="col-sm-12">
   <div class="form-search col-sm-4">
-    <h2>vmhost Details</h2></div>
+    <h2>ESXi host Details</h2></div>
     <div class="form-search col-sm-4" style="margin-top:20px;">
       <div class="input-append">
 
@@ -17,7 +17,7 @@
   <table class="table table-striped tablesorter">
     <tr>
       <th>Name</th>
-      <th>Cluster</th>
+      <th>vCenter</th>
       <th>Connection State</th>
       <th colspan=2> Actions</th>
     </tr>
@@ -31,7 +31,7 @@
     <% else %>
     <tr style="cursor:pointer;" id ="complete_tr">
       <td><%= vmhost.name  %></td>
-      <td><%= my_cluster(vmhost.cluster_id).name if my_cluster(vmhost.cluster_id).present? %></td>
+      <td><%= my_vcenter(vmhost.vcenter_id).name %></td>
       <td><%= vmhost.connection_state %></td>
       <td><%= link_to 'Show', vmhost ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
      
