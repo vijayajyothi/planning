@@ -20,6 +20,7 @@
       <th>Name</th>
       <th>vCenter</th>
       <th>Total CPUs(GHz)</th>
+      <th>Cpu Cores</th>
       <th colspan=2> Actions</th>
     </tr>
     <% @clusters.each do |cluster| %>
@@ -35,7 +36,7 @@
       <td><%= my_vcenter(cluster.vcenter_id).name %></td>
       <td><%= cluster.cpu_total_mhz%></td>
        <!-- <td><%#= cluster.mem_total_mb/1000000 %></td> -->
-      <!--  <td><%#= cluster.cpu_no_cores%></td> -->
+       <td><%= cluster.cpu_no_cores%></td>
       <td><%= link_to 'Show', cluster ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
       <!-- <td><%#= link_to 'Edit', edit_cluster_path(cluster),:class => 'btn btn-mini btn-warning' %></td> -->
       <td><%#= link_to 'Destroy', cluster, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td>
