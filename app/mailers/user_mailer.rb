@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "your_email@example.com"
+  default from: "vkalangi1989@gmail.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -14,5 +14,8 @@ class UserMailer < ActionMailer::Base
   def account_confirmation(user)
     @user = user
     mail to: @user.email, subject: "Welcome!"
+  end
+  def confirmation_mail
+    mail(to: "vkalangi@vmware.com", subject: "Cron Job Done")
   end
 end

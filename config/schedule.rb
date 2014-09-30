@@ -6,7 +6,7 @@
 # Example:
 #
 
-set :output, "/home/workspace/opsgps/cron_log.log"
+set :output, "/home/workspace/opsgps_development/cron_log.log"
 #
 
 # every 2.hours do
@@ -15,6 +15,7 @@ set :output, "/home/workspace/opsgps/cron_log.log"
 #   rake "some:great:rake:task"
 # end
 #
+
 every :day, :at=> '12:01am' do
 
   rake "sunspot:solr:stop" 
