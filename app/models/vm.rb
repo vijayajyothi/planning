@@ -334,7 +334,9 @@ def vm_data_import
     vm.last_suspend_interval = row["suspendinterval"]
     vm.provisioned_space = row["provisionedspacegb"]
     vm.used_space = row["usedspacegb"]
-
+p "hiiiii"
+p vm.name
+p vm
     vm.save if vm.name.present?
   end
   CSV.foreach("csv_data/powercli/esx/vm-clusters.csv", :headers => true) do |row|
