@@ -3,22 +3,14 @@ class F5ClustersController < ApplicationController
   # GET /f5_clusters.json
   def index
     @f5_clusters = F5Cluster.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @f5_clusters }
-    end
   end
 
   # GET /f5_clusters/1
   # GET /f5_clusters/1.json
   def show
     @f5_cluster = F5Cluster.find(params[:id])
+    @f5_clusters = F5Cluster.all
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @f5_cluster }
-    end
   end
 
   # GET /f5_clusters/new
@@ -80,4 +72,10 @@ class F5ClustersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+   def selected_f5cluster
+    @f5_cluster = F5Cluster.find(params[:id])
+    @f5clusters = F5Cluster.where('ops_status != ?', "Deleted" )
+  end
+
 end

@@ -1,0 +1,63 @@
+<div class="index-container">
+
+  <!-- Index form Started -->
+  <div class="col-sm-12">
+    <div class="form-search col-sm-4">
+      <h2>F5 Cluster Details</h2></div>
+      <div class="form-search col-sm-4" style="margin-top:20px;">
+        <div class="input-append">
+
+          <%= form_tag f5_clusters_path, :method => :get, :remote=> true do %>
+          <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+          <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class ="container" style="height:662px;overflow:auto;">
+      <table class="table table-striped tablesorter">
+        <tr>
+          <th>Name</th>
+          <th>Data Center</th>
+          <th>Primary Unit(IP)</th>
+          <th>Secondary Unit(IP)</th>
+          <th>Access Ip</th>
+          <th colspan=2> Actions</th>
+        </tr>
+        <% @f5_clusters.each do |f5_cluster| %>
+        <% if f5_cluster.ops_status=="Deleted"%>
+        <tr class="alert alert-error">
+          <td colspan=3><%= f5_cluster.name %> is deleted</td>
+          <td colspan=2><%= link_to 'Destroy', f5_cluster, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%></td>
+        </tr>
+        <% else %>
+        <tr style="cursor:pointer;" data-link="<%= f5_cluster_path(f5_cluster) %>">
+          <td><%= f5_cluster.name %></td>
+          <td><%= f5_cluster.data_center %></td>
+          <td><%= f5_cluster.primary_unit_ip %></td>
+          <td><%= f5_cluster.secondary_unit_ip %></td>
+          <td><%= f5_cluster.access_ip %></td>
+          <td><%= link_to 'Show', f5_cluster ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
+          <td><%= link_to 'Edit', edit_f5_cluster_path(f5_cluster),:class => 'btn btn-mini btn-warning', :remote=> true %></td>
+          
+        </tr>
+        <% end %>
+        <% end %>
+      </table>
+    </div>
+
+  </div>
+
+ <script>
+  $("tr[data-link]").click(function() {
+  link_url = $(this).data("link")
+  $.ajax({
+    type: "POST",
+    url: link_url,
+    dataType: "JSON" 
+    });
+})
+</script>
+
+
+

@@ -52,6 +52,10 @@ vmhost = Vmhost.where(:id=>vmhost_id).first
 def get_vms_by_host(vmhost_id)
   vms = Vm.where(:vmhost_id=> vmhost_id)
 end
+
+def vip_f5cluster(f5cluster_id)
+f5_cluster = F5Cluster.where(:id=>f5cluster_id).first
+  end
 def url_sort(base,text)
 		#raise text.inspect
 		#css_class = text == sort_column ? "current #{sort_direction}" : nil

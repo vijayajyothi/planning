@@ -1,0 +1,47 @@
+0&&<<''; # this PGP-signed message is also valid perl
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+# CHECKSUMS file written on Wed Nov 16 20:42:45 2011 GMT by CPAN::Checksums (v2.00)
+$cksum = {
+  'Net-Telnet-3.01.tar.gz' => {
+    'md5' => '60168f232b8da397ff16f3cfe820510a',
+    'md5-ungz' => '2a1e171d95679352a36e3104bcc7a232',
+    'mtime' => '1997-12-30',
+    'sha256' => '19ab679f74ccaed9c4df88bf137cebed2b9a540bab3d4a7165c165f6f670c26e',
+    'sha256-ungz' => '036721b7fe9f66c01c3816230a8814b07d672d5f52a366cb3100c364282d35cb',
+    'size' => '30400'
+  },
+  'Net-Telnet-3.02.tar.gz' => {
+    'md5' => '7078ce36366e5bae7ad9c1ef13c1113a',
+    'md5-ungz' => '5aa4ceca7387075a07eed36898ed6440',
+    'mtime' => '2000-05-27',
+    'sha256' => '1d3b12e763167527cd2ced7eb4c712ae195da781aa64d0e6b3f32e08eeedc5c3',
+    'sha256-ungz' => 'aabc53429ff487fd0213070a4497df219ccf162624f181e3bf24e1e4e39a1ef6',
+    'size' => '30946'
+  },
+  'Net-Telnet-3.03.tar.gz' => {
+    'md5' => '2f7d34b09d6117baefe89d44cff9d5fc',
+    'md5-ungz' => '392ea40dc9a656fc6dfddf17081966ec',
+    'mtime' => '2002-07-17',
+    'sha256' => '1604911947a283a8df2bde57a9adfe71e2717f6e0f915fcc73fc47a37130a16b',
+    'sha256-ungz' => 'f07ad5147b4f2bfc4d692ccbab6aafb078a5cdd821ffe1280ba084eb8eaa6967',
+    'size' => '35641'
+  },
+  'perldb+.el-1.03.gz' => {
+    'md5' => '25d4a5a9cdf4fa194154232adbfc3721',
+    'md5-ungz' => '560b6969bf23468ac722d7daa6376afe',
+    'mtime' => '2000-05-27',
+    'sha256' => '7f30c6f2e4b2ede0c06004bd6e80a08d42c3b284e35f24e7bc48d007d9c706ab',
+    'sha256-ungz' => '85970fd832c1ddcac769855cfebe9c062ec3999a298406fab41aba81a262815e',
+    'size' => '9252'
+  }
+};
+__END__
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAk7EIEUACgkQMo2oZ0UPiexc5gCggKJWWPOsVmA3oEo8sLKDrQsT
+FnUAnjysw4TuorO0vXs+KdgaFETsfpHq
+=FLAw
+-----END PGP SIGNATURE-----

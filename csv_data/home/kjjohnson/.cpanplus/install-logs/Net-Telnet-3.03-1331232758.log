@@ -1,0 +1,32 @@
+[MSG] [Thu Mar  8 10:52:33 2012] Trying to get 'ftp://ftp.cpan.org/pub/CPAN/authors/id/J/JR/JROGERS/Net-Telnet-3.03.tar.gz'
+[MSG] [Thu Mar  8 10:52:35 2012] Trying to get 'ftp://ftp.cpan.org/pub/CPAN/authors/id/J/JR/JROGERS/CHECKSUMS'
+[MSG] [Thu Mar  8 10:52:36 2012] Checksum matches for 'Net-Telnet-3.03.tar.gz'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net-Telnet-3.03/'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net-Telnet-3.03/Makefile.PL'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net-Telnet-3.03/ChangeLog'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net-Telnet-3.03/lib/'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net-Telnet-3.03/lib/Net/'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net-Telnet-3.03/lib/Net/Telnet.pm'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net-Telnet-3.03/t/'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net-Telnet-3.03/t/select.t'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net-Telnet-3.03/README'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net-Telnet-3.03/MANIFEST'
+[MSG] [Thu Mar  8 10:52:36 2012] Extracted 'Net::Telnet' to '/home/kjjohnson/.cpanplus/5.10.1/build/Net-Telnet-3.03'
+[MSG] [Thu Mar  8 10:52:37 2012] Checking if your kit is complete...
+Looks good
+Writing Makefile for Net::Telnet
+
+[MSG] [Thu Mar  8 10:52:37 2012] DEFAULT 'filter_prereqs' HANDLER RETURNING 'sub return value'
+[MSG] [Thu Mar  8 10:52:37 2012] cp lib/Net/Telnet.pm blib/lib/Net/Telnet.pm
+Manifying blib/man3/Net::Telnet.3pm
+
+[MSG] [Thu Mar  8 10:52:37 2012] MAKE TEST passed: PERL_DL_NONLAZY=1 /usr/bin/perl "-MExtUtils::Command::MM" "-e" "test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/select.t .. ok
+All tests successful.
+Files=1, Tests=3,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.03 cusr  0.00 csys =  0.06 CPU)
+Result: PASS
+
+[MSG] [Thu Mar  8 10:52:38 2012] Manifying blib/man3/Net::Telnet.3pm
+Installing /usr/local/share/perl/5.10.1/Net/Telnet.pm
+Installing /usr/local/man/man3/Net::Telnet.3pm
+Appending installation info to /usr/local/lib/perl/5.10.1/perllocal.pod

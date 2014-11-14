@@ -1,0 +1,93 @@
+chassis_luid,nodeid,snapshotid,creationclassname,tag,dc_systemcreationclassname,dc_systemname,name,width,height,depth,serialnumber,partnumber,sku,chassistypes,typedescriptions,version,otheridentifyinginfo,r_model,dc_productid,elementname,manufacturer,model
+2156073583744,45,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G1
+2156073583749,48,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G1
+2156073583742,22,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: 00040996,"",,,,ProLiant BL680c G5
+2156073583743,22,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: 00040996,"",,,,ProLiant BL680c G5
+2156073583070,1285,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,sc9-l06-oa1b.vmware.com,BladeSystem c7000 Enclosure,,,,USE7436WY3,,,,,,,"",403320-B21,,,
+2156073583071,1285,-1,CIM_Chassis,Enclosure 1,CIM_ComputerSystem,sc9-l06-oa1b.vmware.com,SC9-CPP-PROD,17.4803,17.5197,29.7638,USE7436WY3,403320-B21,414050-001,23,Rack Mount Chassis,3.21,"",BladeSystem c7000 Enclosure,403320-B21,,,BladeSystem c7000 Enclosure
+2156073583072,1285,-1,CIM_Chassis,Rack Power Enclosure 1,CIM_ComputerSystem,sc9-l06-oa1b.vmware.com,SC9-CPP-PROD,,,,USE7436WY3,,,23,Rack Mount Chassis,,,Rack Power Enclosure,,,,Rack Power Enclosure
+2156073583750,2491,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583752,2490,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583810,2375,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583811,2377,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583812,2379,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583799,646,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583804,642,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583805,642,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583806,640,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583807,640,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583808,2571,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G7
+2156073583073,1288,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,cpp-db01-ilo.vmware.com,ProLiant BL685c G1,,,,ILOUSE801879T,,USE801879T,23,Rack Mount Chassis,,                 ,ProLiant BL685c G1,,,,
+2156073583801,922,-1,CIM_Chassis,Rack Power Enclosure 1,CIM_ComputerSystem,osdc-mc1-d1-oa1b.vmware.com,osdc-mc1-d1-1,,,,USE7426T6W,,,23,Rack Mount Chassis,,,Rack Power Enclosure,,,,Rack Power Enclosure
+2156073583821,1060,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,parootdc06-ilo.vmware.com,ProLiant BL465c G1,,,,ILOUSE74576L0,,QS7AMU6640,23,Rack Mount Chassis,,                 ,ProLiant BL465c G1,,,,
+2156073583745,1394,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,sc9-l07-oa1b.vmware.com,BladeSystem c7000 Enclosure,,,,USE743707S,,,,,,,,403320-B21,,,
+2156073583776,589,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583802,644,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583803,644,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583077,1287,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,sc9-l06-oa1a.vmware.com,BladeSystem c7000 Enclosure,,,,USE7436WY3,,,,,,,"",403320-B21,,,
+2156073583078,1287,-1,CIM_Chassis,Enclosure 1,CIM_ComputerSystem,sc9-l06-oa1a.vmware.com,SC9-CPP-PROD,17.4803,17.5197,29.7638,USE7436WY3,403320-B21,414050-001,23,Rack Mount Chassis,3.21,"",BladeSystem c7000 Enclosure,403320-B21,,,BladeSystem c7000 Enclosure
+2156073583814,996,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,osdc-mc1-f5-oa1b.vmware.com,BladeSystem c7000 Enclosure,,,,USE7436VDP,,,,,,,"",403320-B21,,,
+2156073583800,922,-1,CIM_Chassis,Enclosure 1,CIM_ComputerSystem,osdc-mc1-d1-oa1b.vmware.com,osdc-mc1-d1-1,17.4803,17.5197,29.7638,USE7426T6W,403320-B21,414050-001,23,Rack Mount Chassis,2.25,"",BladeSystem c7000 Enclosure,403320-B21,,,BladeSystem c7000 Enclosure
+2156073583818,996,-1,CIM_Chassis,Rack Power Enclosure 1,CIM_ComputerSystem,osdc-mc1-f5-oa1b.vmware.com,OSDC-MC1-F5-1,,,,USE7436VDP,,,23,Rack Mount Chassis,,,Rack Power Enclosure,,,,Rack Power Enclosure
+2156073583751,49,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583748,46,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G1
+2156073583753,51,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G1
+2156073582772,1403,-1,CIM_Chassis,Enclosure 1,CIM_ComputerSystem,sc9-l07-oa1a.vmware.com,sc9-l07-1,17.4803,17.5197,29.7638,USE743707S,403320-B21,414050-001,23,Rack Mount Chassis,2.60,"",BladeSystem c7000 Enclosure,403320-B21,,,BladeSystem c7000 Enclosure
+2156073583746,1394,-1,CIM_Chassis,Enclosure 1,CIM_ComputerSystem,sc9-l07-oa1b.vmware.com,sc9-l07-1,17.4803,17.5197,29.7638,USE743707S,403320-B21,414050-001,23,Rack Mount Chassis,3.10,"",,403320-B21,,,BladeSystem c7000 Enclosure
+2156073583813,994,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,osdc-mc1-f5-oa1a.vmware.com,BladeSystem c7000 Enclosure,,,,USE7436VDP,,,,,,,"",403320-B21,,,
+2156073583754,52,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G1
+2156073583747,1394,-1,CIM_Chassis,Rack Power Enclosure 1,CIM_ComputerSystem,sc9-l07-oa1b.vmware.com,sc9-l07-1,,,,USE743707S,,,23,Rack Mount Chassis,,,,,,,Rack Power Enclosure
+2156073583756,58,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583757,58,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583079,1287,-1,CIM_Chassis,Rack Power Enclosure 1,CIM_ComputerSystem,sc9-l06-oa1a.vmware.com,SC9-CPP-PROD,,,,USE7436WY3,,,23,Rack Mount Chassis,,,Rack Power Enclosure,,,,Rack Power Enclosure
+2156073583755,2492,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583758,2481,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583759,609,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583760,609,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583761,610,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583762,610,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583763,613,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583764,613,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583765,615,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583766,615,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583767,617,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583778,116,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583781,117,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583782,118,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583783,119,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583786,115,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583787,130,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583788,131,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073582774,1403,-1,CIM_Chassis,Rack Power Enclosure 1,CIM_ComputerSystem,sc9-l07-oa1a.vmware.com,sc9-l07-1,,,,USE743707S,,,23,Rack Mount Chassis,,,Rack Power Enclosure,,,,Rack Power Enclosure
+2156073583789,132,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583790,133,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G7
+2156073583768,617,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583770,619,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583777,589,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583779,595,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583780,595,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583784,597,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583785,597,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583791,2596,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL460c G7
+2156073583795,648,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583773,50,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583769,619,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583792,924,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,osdc-mc1-d1-oa1a.vmware.com,BladeSystem c7000 Enclosure,,,,USE7426T6W,,,,,,,"",403320-B21,,,
+2156073583815,994,-1,CIM_Chassis,Enclosure 1,CIM_ComputerSystem,osdc-mc1-f5-oa1a.vmware.com,OSDC-MC1-F5-1,17.4803,17.5197,29.7638,USE7436VDP,403320-B21,414050-001,23,Rack Mount Chassis,3.10,"",BladeSystem c7000 Enclosure,403320-B21,,,BladeSystem c7000 Enclosure
+2156073582769,1403,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,sc9-l07-oa1a.vmware.com,BladeSystem c7000 Enclosure,,,,USE743707S,,,,,,,"",403320-B21,,,
+2156073583771,621,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583775,638,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583793,924,-1,CIM_Chassis,Enclosure 1,CIM_ComputerSystem,osdc-mc1-d1-oa1a.vmware.com,osdc-mc1-d1-1,17.4803,17.5197,29.7638,USE7426T6W,403320-B21,414050-001,23,Rack Mount Chassis,2.25,"",BladeSystem c7000 Enclosure,403320-B21,,,BladeSystem c7000 Enclosure
+2156073583772,621,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583794,924,-1,CIM_Chassis,Rack Power Enclosure 1,CIM_ComputerSystem,osdc-mc1-d1-oa1a.vmware.com,osdc-mc1-d1-1,,,,USE7426T6W,,,23,Rack Mount Chassis,,,Rack Power Enclosure,,,,Rack Power Enclosure
+2156073583816,994,-1,CIM_Chassis,Rack Power Enclosure 1,CIM_ComputerSystem,osdc-mc1-f5-oa1a.vmware.com,OSDC-MC1-F5-1,,,,USE7436VDP,,,23,Rack Mount Chassis,,,Rack Power Enclosure,,,,Rack Power Enclosure
+2156073583817,996,-1,CIM_Chassis,Enclosure 1,CIM_ComputerSystem,osdc-mc1-f5-oa1b.vmware.com,OSDC-MC1-F5-1,17.4803,17.5197,29.7638,USE7436VDP,403320-B21,414050-001,23,Rack Mount Chassis,3.10,"",BladeSystem c7000 Enclosure,403320-B21,,,BladeSystem c7000 Enclosure
+2156073583774,638,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583797,922,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,osdc-mc1-d1-oa1b.vmware.com,BladeSystem c7000 Enclosure,,,,USE7426T6W,,,,,,,"",403320-B21,,,
+2156073583796,648,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583819,2640,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL460c G7
+2156073583820,2639,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G7
+2156073583664,47,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G1
+2156073583665,47,-1,CIM_Chassis,23.1,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL685c G1
+2156073583798,646,-1,CIM_Chassis,23.0,,,Chassis,,,,,,,,,,Asset Tag: unknown,"",,,,ProLiant BL680c G5
+2156073583809,1161,-1,CIM_Chassis,System Enclosure 0,CIM_ComputerSystem,avamar2tape-ilo.vmware.com,ProLiant DL320s G1,,,,ILOUSE807N9FM,,USE807N9FM,23,Rack Mount Chassis,,                 ,ProLiant DL320s G1,,,,

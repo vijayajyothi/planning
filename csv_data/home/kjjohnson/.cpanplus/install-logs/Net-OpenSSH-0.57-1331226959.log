@@ -1,0 +1,64 @@
+[MSG] [Thu Mar  8 09:15:28 2012] Trying to get 'ftp://ftp.cpan.org/pub/CPAN/authors/id/S/SA/SALVA/Net-OpenSSH-0.57.tar.gz'
+[MSG] [Thu Mar  8 09:15:31 2012] Trying to get 'ftp://ftp.cpan.org/pub/CPAN/authors/id/S/SA/SALVA/CHECKSUMS'
+[MSG] [Thu Mar  8 09:15:33 2012] Checksum matches for 'Net-OpenSSH-0.57.tar.gz'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/META.yml'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/Changes'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/MANIFEST'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/sample/'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/sample/password_from_data.pl'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/sample/mod_perl_openssh.pm'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/sample/autosudo.pl'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/sample/expect.pl'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/sample/change_passwd.pl'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/sample/keep_in_sync.pl'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/sample/net-telnet.pl'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/sample/login_handler.pl'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/t/'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/t/common.pm'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/t/1_run.t'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/t/test_user_key'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/t/2_pods.t'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/t/test_user_key.pub'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/t/test_server_key'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/t/known_hosts'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/t/test_server_key.pub'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/Makefile.PL'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/README'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/lib/'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/lib/Net/'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/lib/Net/OpenSSH.pm'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/lib/Net/OpenSSH/'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net-OpenSSH-0.57/lib/Net/OpenSSH/Constants.pm'
+[MSG] [Thu Mar  8 09:15:34 2012] Extracted 'Net::OpenSSH' to '/home/kjjohnson/.cpanplus/5.10.1/build/Net-OpenSSH-0.57'
+[MSG] [Thu Mar  8 09:15:35 2012] Checking if your kit is complete...
+Looks good
+Writing Makefile for Net::OpenSSH
+
+[MSG] [Thu Mar  8 09:15:35 2012] DEFAULT 'filter_prereqs' HANDLER RETURNING 'sub return value'
+[MSG] [Thu Mar  8 09:15:36 2012] cp lib/Net/OpenSSH/Constants.pm blib/lib/Net/OpenSSH/Constants.pm
+cp lib/Net/OpenSSH.pm blib/lib/Net/OpenSSH.pm
+Manifying blib/man3/Net::OpenSSH::Constants.3pm
+Manifying blib/man3/Net::OpenSSH.3pm
+
+[MSG] [Thu Mar  8 09:15:58 2012] MAKE TEST passed: PERL_DL_NONLAZY=1 /usr/bin/perl "-MExtUtils::Command::MM" "-e" "test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+# 
+# SSH client found: OpenSSH_5.3p1 Debian-3ubuntu7, OpenSSL 0.9.8k 25 Mar 2009.
+# Trying to connect to localhost, timeout is 15s.
+Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
+# Connection failed... trying fallback aproach
+# sshd command found at /usr/sbin/sshd.
+# Faking connection, timeout is 15s.
+# Using configuration from '/home/kjjohnson/.cpanplus/5.10.1/build/Net-OpenSSH-0.57/t'
+Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
+t/1_run.t ... ok
+t/2_pods.t .. skipped: Only the author needs to check that POD docs are right
+All tests successful.
+Files=2, Tests=46, 22 wallclock secs ( 0.03 usr  0.02 sys +  0.40 cusr  0.09 csys =  0.54 CPU)
+Result: PASS
+
+[MSG] [Thu Mar  8 09:15:59 2012] Installing /usr/local/share/perl/5.10.1/Net/OpenSSH.pm
+Installing /usr/local/share/perl/5.10.1/Net/OpenSSH/Constants.pm
+Installing /usr/local/man/man3/Net::OpenSSH::Constants.3pm
+Installing /usr/local/man/man3/Net::OpenSSH.3pm
+Appending installation info to /usr/local/lib/perl/5.10.1/perllocal.pod

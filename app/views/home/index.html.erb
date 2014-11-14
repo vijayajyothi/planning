@@ -40,7 +40,17 @@
               </a>
             </div>
           </div>
-          
+            <div class="metro-nav">
+         <!--  <div class="metro-nav-block nav-deep-thistle">
+           <a data-original-title="" data-remote="true" href="/f5vips">
+            <div class="info_img"><img src="/assets/vmhost.png" style="height:50px;width:50px;"></div>
+            <div class="info"><%= @f5vips_count%></div>
+            <div class="status">F5 VIPs</div>
+          </a>
+        </div>
+ -->
+
+  </div>
         </div>
         <div class=" col-sm-6 col-md-3">
           <div class="metro-nav">
@@ -56,14 +66,17 @@
           <div class="metro-nav">
             <div class="metro-nav-block nav-deep-terques">
 
-              <a data-original-title="" href="#">
+              <a data-original-title=""   data-remote="true" href="/f5vips">
                 <div class="info_img"><img src="/assets/underwriting.png"></div>
-                <div class="info">0<%#= @underwriting%></div>
-                <div class="status">F5 Vips</div>
+                <!-- <div class="info"><%= @f5clusters_count%></div> -->
+                <div class="info"><%= @f5vips_count%></div> 
+                <div class="status">F5 VIPs</div>
               </a>
             </div>
 
-          </div></div>
+          </div>
+         
+        </div>
           <div class=" col-sm-6 col-md-3"><div class="metro-nav">
             <div class="metro-nav-block nav-light-green">
               <a data-original-title=""  data-remote="true" href="/clusters">
@@ -105,6 +118,8 @@
     </div>
   </div>
 
+      
+  
 
 </div>
 

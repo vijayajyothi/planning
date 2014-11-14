@@ -1,0 +1,7 @@
+
+Power Supply #1 is OK
+V10F06,   AGC2M06FSST      ,23-0000067-01, B,DELTA,ECD14020006     ,06,AGC2M06F
+Power Supply #2 is absent
+Power Supply #3 is OK
+V10F06,   AGC2M06FSSH      ,23-0000067-01, B,DELTA,ECD14020006     ,06,AGC2M06F
+Power Supply #4 is absent

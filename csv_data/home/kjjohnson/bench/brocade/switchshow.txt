@@ -1,0 +1,320 @@
+switchName:	dcx-fab9sw1
+switchType:	62.3
+switchState:	Online   
+switchMode:	Native
+switchRole:	Principal
+switchDomain:	1
+switchId:	fffc01
+switchWwn:	10:00:00:05:33:02:42:00
+zoning:		ON (sc9_fab11)
+switchBeacon:	OFF
+FC Router:	OFF
+Allow XISL Use:	OFF
+LS Attributes:	[FID: 128, Base Switch: No, Default Switch: Yes, Address Mode 0]
+
+Index Slot Port Address Media Speed State     Proto
+===================================================
+  0    1    0   010000   id    N8   Online      FC  F-Port  50:06:01:64:44:60:44:9e 
+  1    1    1   010100   id    N8   Online      FC  F-Port  50:06:01:6c:44:60:44:9e 
+  2    1    2   010200   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:00 
+  3    1    3   010300   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:08 
+  4    1    4   010400   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:10 
+  5    1    5   010500   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:18 
+  6    1    6   010600   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:20 
+  7    1    7   010700   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:28 
+  8    1    8   010800   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:30 
+  9    1    9   010900   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:38 
+ 10    1   10   010a00   id    N8   Online      FC  E-Port  10:00:00:05:33:43:be:0c "vf-br5100-01" 
+ 11    1   11   010b00   id    N8   Online      FC  E-Port  10:00:00:05:33:91:62:95 "sc9-k13bc1-odd" (downstream)
+ 12    1   12   010c00   id    N8   No_Light    FC  
+ 13    1   13   010d00   id    N8   Online      FC  F-Port  50:01:24:81:1c:7b:d8:17 
+ 14    1   14   010e00   id    N8   No_Sync     FC  Disabled (Persistent) 
+ 15    1   15   010f00   id    N8   No_Sync     FC  Disabled (Persistent) 
+128    1   16   018040   id    N8   Online      FC  F-Port  50:06:01:61:3b:20:5b:8f 
+129    1   17   018140   id    N8   Online      FC  F-Port  50:06:01:63:3b:20:5b:8f 
+130    1   18   018240   id    N8   Online      FC  F-Port  50:06:01:65:3b:20:5b:8f 
+131    1   19   018340   id    N8   No_Light    FC  
+132    1   20   018440   id    N8   Online      FC  F-Port  50:06:01:61:46:e0:13:38 
+133    1   21   018540   id    N8   Online      FC  F-Port  50:06:01:69:46:e0:13:38 
+134    1   22   018640   id    N8   No_Light    FC  
+135    1   23   018740   id    N8   No_Sync     FC  Disabled (Persistent) 
+136    1   24   018840   id    N4   Online      FC  E-Port  10:00:00:05:1e:36:53:c4 "sc9-fab11sw1" 
+137    1   25   018940   id    N4   Online      FC  E-Port  10:00:00:05:1e:36:53:c4 "sc9-fab11sw1" 
+138    1   26   018a40   id    N4   Online      FC  E-Port  10:00:00:05:1e:36:53:c4 "sc9-fab11sw1" 
+139    1   27   018b40   id    N4   Online      FC  E-Port  10:00:00:05:1e:36:53:c4 "sc9-fab11sw1" (downstream)
+140    1   28   018c40   id    N8   Online      FC  E-Port  10:00:00:05:1e:fa:e6:e3 "sc9-k01bc1-odd" (downstream)
+141    1   29   018d40   id    N8   Online      FC  E-Port  10:00:00:05:33:3b:0f:2f "sc9-k04bc1-odd" (downstream)
+142    1   30   018e40   id    N8   No_Light    FC  
+143    1   31   018f40   id    N8   No_Light    FC  
+256    1   32   0188c0   id    N8   No_Light    FC  
+257    1   33   0189c0   id    N8   No_Light    FC  
+258    1   34   018ac0   id    N8   No_Light    FC  
+259    1   35   018bc0   id    N8   No_Light    FC  
+260    1   36   018cc0   id    N8   No_Light    FC  
+261    1   37   018dc0   id    N8   No_Light    FC  
+262    1   38   018ec0   id    N8   No_Light    FC  
+263    1   39   018fc0   id    N8   No_Light    FC  
+264    1   40   0180c0   id    N8   No_Light    FC  
+265    1   41   0181c0   id    N8   No_Light    FC  
+266    1   42   0182c0   id    N8   No_Light    FC  
+267    1   43   0183c0   id    N8   No_Light    FC  
+268    1   44   0184c0   id    N8   No_Light    FC  
+269    1   45   0185c0   id    N8   No_Light    FC  
+270    1   46   0186c0   id    N8   No_Light    FC  
+271    1   47   0187c0   id    N4   Online      FC  F-Port  21:00:00:1b:32:95:44:36 
+ 16    2    0   011000   id    N8   Online      FC  E-Port  50:00:53:33:21:fa:5e:65 "fcr_fd_160" (downstream)(Trunk master)  
+ 17    2    1   011100   id    N8   Online      FC  E-Port  (Trunk port, master is Slot  2 Port  0 )
+ 18    2    2   011200   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:40 
+ 19    2    3   011300   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:48 
+ 20    2    4   011400   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:50 
+ 21    2    5   011500   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:58 
+ 22    2    6   011600   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:60 
+ 23    2    7   011700   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:68 
+ 24    2    8   011800   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:70 
+ 25    2    9   011900   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:78 
+ 26    2   10   011a00   id    N8   No_Light    FC  
+ 27    2   11   011b00   id    N8   No_Light    FC  
+ 28    2   12   011c00   id    N8   No_Light    FC  
+ 29    2   13   011d00   id    N8   Online      FC  F-Port  50:01:24:80:1c:7b:d8:17 
+ 30    2   14   011e00   id    N8   No_Sync     FC  Disabled (Persistent) 
+ 31    2   15   011f00   id    N8   No_Sync     FC  Disabled (Persistent) 
+144    2   16   019040   id    N8   Online      FC  F-Port  50:06:01:69:3b:20:5b:8f 
+145    2   17   019140   id    N8   Online      FC  F-Port  50:06:01:6b:3b:20:5b:8f 
+146    2   18   019240   id    N8   Online      FC  F-Port  50:06:01:6d:3b:20:5b:8f 
+147    2   19   019340   id    N8   No_Light    FC  
+148    2   20   019440   id    N8   Online      FC  F-Port  50:06:01:63:46:e0:13:38 
+149    2   21   019540   id    N8   Online      FC  F-Port  50:06:01:6b:46:e0:13:38 
+150    2   22   019640   id    N8   No_Light    FC  
+151    2   23   019740   id    N8   No_Sync     FC  Disabled (Persistent) 
+152    2   24   019840   id    N8   Online      FC  E-Port  10:00:00:05:33:3a:62:05 "sc9-k05bc1-odd" (downstream)
+153    2   25   019940   id    N8   No_Light    FC  
+154    2   26   019a40   id    N8   No_Light    FC  
+155    2   27   019b40   id    N8   No_Light    FC  
+156    2   28   019c40   id    N8   Online      FC  E-Port  10:00:00:05:1e:fa:de:9b "sc9-k02bc1-odd" (downstream)
+157    2   29   019d40   id    N8   Online      FC  E-Port  10:00:00:05:33:3b:53:ed "sc9-k03bc1-odd" (downstream)
+158    2   30   019e40   id    N8   No_Light    FC  
+159    2   31   019f40   id    N8   No_Light    FC  
+272    2   32   0198c0   id    N4   Online      FC  F-Port  50:01:43:80:05:68:9e:ee 
+273    2   33   0199c0   id    N4   Online      FC  F-Port  50:01:43:80:01:1c:fa:e2 
+274    2   34   019ac0   id    N4   Online      FC  F-Port  50:01:43:80:01:1b:23:de 
+275    2   35   019bc0   id    N4   Online      FC  F-Port  50:01:43:80:01:1b:29:ea 
+276    2   36   019cc0   id    N8   No_Light    FC  
+277    2   37   019dc0   id    N8   No_Light    FC  
+278    2   38   019ec0   id    N8   No_Light    FC  
+279    2   39   019fc0   id    N8   No_Light    FC  
+280    2   40   0190c0   id    N8   Online      FC  F-Port  50:00:14:42:70:69:d4:11 
+281    2   41   0191c0   id    N8   Online      FC  F-Port  50:00:14:42:70:68:40:11 
+282    2   42   0192c0   id    N8   Online      FC  F-Port  50:00:14:42:70:68:b9:11 
+283    2   43   0193c0   id    N8   Online      FC  F-Port  50:00:14:42:70:69:4c:11 
+284    2   44   0194c0   id    N8   No_Light    FC  
+285    2   45   0195c0   id    N8   No_Light    FC  
+286    2   46   0196c0   id    N8   No_Light    FC  
+287    2   47   0197c0   id    N8   No_Light    FC  
+ 32    3    0   012000   id    N8   No_Light    FC  
+ 33    3    1   012100   id    N8   No_Light    FC  
+ 34    3    2   012200   id    N8   No_Light    FC  
+ 35    3    3   012300   id    N8   No_Light    FC  
+ 36    3    4   012400   id    N8   Online      FC  F-Port  50:00:14:42:60:69:d4:11 
+ 37    3    5   012500   id    N8   Online      FC  F-Port  50:00:14:42:60:68:40:11 
+ 38    3    6   012600   id    N8   Online      FC  F-Port  50:00:14:42:60:68:b9:11 
+ 39    3    7   012700   id    N8   Online      FC  F-Port  50:00:14:42:60:69:4c:11 
+ 40    3    8   012800   id    N8   No_Light    FC  
+ 41    3    9   012900   id    N8   No_Light    FC  
+ 42    3   10   012a00   id    N8   No_Light    FC  
+ 43    3   11   012b00   id    N8   No_Light    FC  
+ 44    3   12   012c00   id    N8   No_Light    FC  
+ 45    3   13   012d00   id    N8   No_Light    FC  
+ 46    3   14   012e00   id    N8   No_Light    FC  
+ 47    3   15   012f00   id    N8   No_Light    FC  
+160    3   16   01a040   id    N8   No_Light    FC  
+161    3   17   01a140   id    N8   No_Light    FC  
+162    3   18   01a240   id    N8   No_Light    FC  
+163    3   19   01a340   id    N8   No_Light    FC  
+164    3   20   01a440   id    N8   No_Light    FC  
+165    3   21   01a540   id    N8   No_Light    FC  
+166    3   22   01a640   id    N8   No_Light    FC  
+167    3   23   01a740   id    N8   No_Light    FC  
+168    3   24   01a840   id    N8   Online      FC  F-Port  50:06:01:61:46:e0:67:00 
+169    3   25   01a940   id    N8   Online      FC  F-Port  50:06:01:69:46:e0:67:00 
+170    3   26   01aa40   id    N8   Online      FC  F-Port  50:06:01:61:46:e0:72:63 
+171    3   27   01ab40   id    N8   Online      FC  F-Port  50:06:01:69:46:e0:72:63 
+172    3   28   01ac40   id    N8   No_Light    FC  
+173    3   29   01ad40   id    N8   No_Light    FC  
+174    3   30   01ae40   id    N8   No_Light    FC  
+175    3   31   01af40   id    N8   No_Light    FC  
+288    3   32   01a8c0   id    N8   No_Light    FC  
+289    3   33   01a9c0   id    N8   No_Light    FC  
+290    3   34   01aac0   id    N8   No_Light    FC  
+291    3   35   01abc0   id    N8   No_Light    FC  
+292    3   36   01acc0   id    N8   No_Light    FC  
+293    3   37   01adc0   id    N8   No_Light    FC  
+294    3   38   01aec0   id    N8   No_Light    FC  
+295    3   39   01afc0   id    N8   No_Light    FC  
+296    3   40   01a0c0   id    N8   No_Light    FC  
+297    3   41   01a1c0   id    N8   No_Light    FC  
+298    3   42   01a2c0   id    N8   No_Light    FC  
+299    3   43   01a3c0   id    N8   No_Light    FC  
+300    3   44   01a4c0   id    N8   No_Light    FC  
+301    3   45   01a5c0   id    N8   No_Light    FC  
+302    3   46   01a6c0   id    N8   No_Light    FC  
+303    3   47   01a7c0   id    N8   No_Light    FC  
+384    5    0   ------   cu    8G   No_Sync     FC  
+385    5    1   ------   cu    8G   No_Sync     FC  
+386    5    2   ------   cu    8G   No_Sync     FC  
+387    5    3   ------   cu    8G   No_Sync     FC  
+388    5    4   ------   cu    8G   No_Sync     FC  
+389    5    5   ------   cu    8G   No_Sync     FC  
+390    5    6   ------   cu    8G   No_Sync     FC  
+391    5    7   ------   cu    8G   No_Sync     FC  
+392    5    8   ------   cu    8G   No_Sync     FC  
+393    5    9   ------   cu    8G   No_Sync     FC  
+394    5   10   ------   cu    8G   No_Sync     FC  
+395    5   11   ------   cu    8G   No_Sync     FC  
+396    5   12   ------   cu    8G   No_Sync     FC  
+397    5   13   ------   cu    8G   No_Sync     FC  
+398    5   14   ------   cu    8G   No_Sync     FC  
+399    5   15   ------   cu    8G   No_Sync     FC  
+400    5   16   ------   cu    8G   No_Sync     FC  
+401    5   17   ------   cu    8G   No_Sync     FC  
+402    5   18   ------   cu    8G   No_Sync     FC  
+403    5   19   ------   cu    8G   No_Sync     FC  
+404    5   20   ------   cu    8G   No_Sync     FC  
+405    5   21   ------   cu    8G   No_Sync     FC  
+406    5   22   ------   cu    8G   No_Sync     FC  
+407    5   23   ------   cu    8G   No_Sync     FC  
+408    5   24   ------   cu    8G   No_Sync     FC  
+409    5   25   ------   cu    8G   No_Sync     FC  
+410    5   26   ------   cu    8G   No_Sync     FC  
+411    5   27   ------   cu    8G   No_Sync     FC  
+412    5   28   ------   cu    8G   No_Sync     FC  
+413    5   29   ------   cu    8G   No_Sync     FC  
+414    5   30   ------   cu    8G   No_Sync     FC  
+415    5   31   ------   cu    8G   No_Sync     FC  
+416    8    0   ------   cu    8G   No_Sync     FC  
+417    8    1   ------   cu    8G   No_Sync     FC  
+418    8    2   ------   cu    8G   No_Sync     FC  
+419    8    3   ------   cu    8G   No_Sync     FC  
+420    8    4   ------   cu    8G   No_Sync     FC  
+421    8    5   ------   cu    8G   No_Sync     FC  
+422    8    6   ------   cu    8G   No_Sync     FC  
+423    8    7   ------   cu    8G   No_Sync     FC  
+424    8    8   ------   cu    8G   No_Sync     FC  
+425    8    9   ------   cu    8G   No_Sync     FC  
+426    8   10   ------   cu    8G   No_Sync     FC  
+427    8   11   ------   cu    8G   No_Sync     FC  
+428    8   12   ------   cu    8G   No_Sync     FC  
+429    8   13   ------   cu    8G   No_Sync     FC  
+430    8   14   ------   cu    8G   No_Sync     FC  
+431    8   15   ------   cu    8G   No_Sync     FC  
+432    8   16   ------   cu    8G   No_Sync     FC  
+433    8   17   ------   cu    8G   No_Sync     FC  
+434    8   18   ------   cu    8G   No_Sync     FC  
+435    8   19   ------   cu    8G   No_Sync     FC  
+436    8   20   ------   cu    8G   No_Sync     FC  
+437    8   21   ------   cu    8G   No_Sync     FC  
+438    8   22   ------   cu    8G   No_Sync     FC  
+439    8   23   ------   cu    8G   No_Sync     FC  
+440    8   24   ------   cu    8G   No_Sync     FC  
+441    8   25   ------   cu    8G   No_Sync     FC  
+442    8   26   ------   cu    8G   No_Sync     FC  
+443    8   27   ------   cu    8G   No_Sync     FC  
+444    8   28   ------   cu    8G   No_Sync     FC  
+445    8   29   ------   cu    8G   No_Sync     FC  
+446    8   30   ------   cu    8G   No_Sync     FC  
+447    8   31   ------   cu    8G   No_Sync     FC  
+ 96   11    0   016000   id    N8   No_Light    FC  
+ 97   11    1   016100   id    N8   No_Light    FC  
+ 98   11    2   016200   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:c0 
+ 99   11    3   016300   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:c8 
+100   11    4   016400   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:f0 
+101   11    5   016500   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:f8 
+102   11    6   016600   id    N8   No_Light    FC  
+103   11    7   016700   id    N8   No_Light    FC  
+104   11    8   016800   id    N8   No_Light    FC  
+105   11    9   016900   id    N8   No_Light    FC  
+106   11   10   016a00   id    N8   Online      FC  E-Port  10:00:00:05:33:43:be:0c "vf-br5100-01" (downstream)
+107   11   11   016b00   id    N8   Online      FC  E-Port  10:00:00:05:33:91:62:95 "sc9-k13bc1-odd" 
+108   11   12   016c00   id    N8   Online      FC  F-Port  50:01:24:81:4d:3f:45:87 
+109   11   13   016d00   id    N8   Online      FC  F-Port  50:01:24:81:1c:9b:be:b7 
+110   11   14   016e00   id    N8   Online      FC  E-Port  10:00:00:05:33:55:f7:0e "sc9-k07bc1-odd" (downstream)
+111   11   15   016f00   id    N8   Online      FC  E-Port  10:00:00:05:33:5a:a3:7d "sc9-k08bc1-odd" (downstream)
+224   11   16   01e040   id    N8   Online      FC  F-Port  50:06:01:6f:3b:20:5b:8f 
+225   11   17   01e140   id    N8   Online      FC  F-Port  50:06:01:6b:3b:24:5b:8f 
+226   11   18   01e240   id    N8   Online      FC  F-Port  50:06:01:6d:3b:24:5b:8f 
+227   11   19   01e340   id    N8   No_Light    FC  
+228   11   20   01e440   id    N8   No_Light    FC  
+229   11   21   01e540   id    N8   No_Light    FC  
+230   11   22   01e640   id    N8   No_Light    FC  
+231   11   23   01e740   id    N8   No_Light    FC  
+232   11   24   01e840   id    N8   Online      FC  E-Port  10:00:00:05:33:3a:62:05 "sc9-k05bc1-odd" 
+233   11   25   01e940   id    N8   No_Light    FC  
+234   11   26   01ea40   id    N8   No_Light    FC  
+235   11   27   01eb40   id    N8   No_Light    FC  
+236   11   28   01ec40   id    N8   Online      FC  E-Port  10:00:00:05:33:3b:53:ed "sc9-k03bc1-odd" 
+237   11   29   01ed40   id    N8   Online      FC  E-Port  10:00:00:05:1e:fa:de:9b "sc9-k02bc1-odd" 
+238   11   30   01ee40   id    N8   No_Light    FC  
+239   11   31   01ef40   id    N8   No_Light    FC  
+352   11   32   01e8c0   id    N8   Online      FC  F-Port  50:00:14:42:60:69:d4:13 
+353   11   33   01e9c0   id    N8   Online      FC  F-Port  50:00:14:42:60:68:40:13 
+354   11   34   01eac0   id    N8   Online      FC  F-Port  50:00:14:42:60:68:b9:13 
+355   11   35   01ebc0   id    N8   Online      FC  F-Port  50:00:14:42:60:69:4c:13 
+356   11   36   01ecc0   id    N8   No_Light    FC  
+357   11   37   01edc0   id    N8   No_Light    FC  
+358   11   38   01eec0   id    N8   No_Light    FC  
+359   11   39   01efc0   id    N8   No_Light    FC  
+360   11   40   01e0c0   id    N8   No_Light    FC  
+361   11   41   01e1c0   id    N8   No_Light    FC  
+362   11   42   01e2c0   id    N8   No_Light    FC  
+363   11   43   01e3c0   id    N8   No_Light    FC  
+364   11   44   01e4c0   id    N8   No_Light    FC  
+365   11   45   01e5c0   id    N8   No_Light    FC  
+366   11   46   01e6c0   id    N8   No_Light    FC  
+367   11   47   01e7c0   id    N8   No_Light    FC  
+112   12    0   017000   id    N4   Online      FC  F-Port  50:06:01:62:44:60:44:9e 
+113   12    1   017100   id    N4   Online      FC  F-Port  50:06:01:6a:44:60:44:9e 
+114   12    2   017200   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:80 
+115   12    3   017300   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:88 
+116   12    4   017400   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:90 
+117   12    5   017500   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:98 
+118   12    6   017600   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:a0 
+119   12    7   017700   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:a8 
+120   12    8   017800   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:b0 
+121   12    9   017900   id    N8   Online      FC  F-Port  50:00:09:72:08:2c:ed:b8 
+122   12   10   017a00   id    N8   No_Light    FC  
+123   12   11   017b00   id    N8   No_Light    FC  
+124   12   12   017c00   id    N8   Online      FC  F-Port  50:01:24:80:4d:3f:45:87 
+125   12   13   017d00   id    N8   Online      FC  F-Port  50:01:24:80:1c:9b:be:b7 
+126   12   14   017e00   id    N8   No_Light    FC  
+127   12   15   017f00   id    N8   No_Light    FC  
+240   12   16   01f040   id    N8   Online      FC  F-Port  50:06:01:67:3b:20:5b:8f 
+241   12   17   01f140   id    N8   Online      FC  F-Port  50:06:01:63:3b:24:5b:8f 
+242   12   18   01f240   id    N8   Online      FC  F-Port  50:06:01:65:3b:24:5b:8f 
+243   12   19   01f340   id    N8   No_Light    FC  
+244   12   20   01f440   id    N8   No_Light    FC  
+245   12   21   01f540   id    N8   No_Light    FC  
+246   12   22   01f640   id    N8   No_Light    FC  
+247   12   23   01f740   id    N8   No_Light    FC  
+248   12   24   01f840   id    N8   Online      FC  F-Port  50:00:14:42:70:69:d4:13 
+249   12   25   01f940   id    N8   Online      FC  F-Port  50:00:14:42:70:68:40:13 
+250   12   26   01fa40   id    N8   Online      FC  F-Port  50:00:14:42:70:68:b9:13 
+251   12   27   01fb40   id    N8   Online      FC  F-Port  50:00:14:42:70:69:4c:13 
+252   12   28   01fc40   id    N8   No_Light    FC  
+253   12   29   01fd40   id    N8   Online      FC  E-Port  10:00:00:05:1e:fa:e6:e3 "sc9-k01bc1-odd" 
+254   12   30   01fe40   id    N8   Online      FC  E-Port  10:00:00:05:33:3b:0f:2f "sc9-k04bc1-odd" 
+255   12   31   01ff40   id    N8   No_Light    FC  
+368   12   32   01f8c0   id    N8   No_Light    FC  
+369   12   33   01f9c0   id    N8   No_Light    FC  
+370   12   34   01fac0   id    N8   No_Light    FC  
+371   12   35   01fbc0   id    N8   No_Light    FC  
+372   12   36   01fcc0   id    N8   No_Light    FC  
+373   12   37   01fdc0   id    N8   No_Light    FC  
+374   12   38   01fec0   id    N8   No_Light    FC  
+375   12   39   01ffc0   id    N8   No_Light    FC  
+376   12   40   01f0c0   id    N8   No_Light    FC  
+377   12   41   01f1c0   id    N8   No_Light    FC  
+378   12   42   01f2c0   id    N8   No_Light    FC  
+379   12   43   01f3c0   id    N8   No_Light    FC  
+380   12   44   01f4c0   id    N8   Online      FC  F-Port  50:06:01:63:46:e0:67:00 
+381   12   45   01f5c0   id    N8   Online      FC  F-Port  50:06:01:6b:46:e0:67:00 
+382   12   46   01f6c0   id    N8   Online      FC  F-Port  50:06:01:65:46:e0:72:63 
+383   12   47   01f7c0   id    N8   Online      FC  F-Port  50:06:01:6d:46:e0:72:63 

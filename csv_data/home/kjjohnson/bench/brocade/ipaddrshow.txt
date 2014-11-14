@@ -1,0 +1,22 @@
+
+CHASSIS
+Ethernet IP Address: 10.113.16.40
+Ethernet Subnetmask: 255.255.252.0
+
+CP0
+Ethernet IP Address: 10.113.16.41
+Ethernet Subnetmask: 255.255.252.0
+Host Name: cp0
+Gateway IP Address: 10.113.19.253
+
+CP1
+Ethernet IP Address: 10.113.16.42
+Ethernet Subnetmask: 255.255.252.0
+Host Name: cp1
+Gateway IP Address: 10.113.19.253
+
+Backplane IP address of CP0 : 10.0.0.5
+Backplane IP address of CP1 : 10.0.0.6
+IPv6 Autoconfiguration Enabled: Yes
+Local IPv6 Addresses:
+IPv6 Gateways:

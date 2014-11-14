@@ -2,23 +2,25 @@ class F5VipsController < ApplicationController
   # GET /f5_vips
   # GET /f5_vips.json
   def index
-    @f5_vips = F5Vip.all
+    # @f5_vips = F5Vip.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @f5_vips }
+    count = F5Vip.count
+    @search = F5Vip.search do
+      fulltext params[:search]
+      paginate  :page => params[:page], :per_page=>15
+      # paginate  :page => params[:page], :per_page=>count
     end
+    @f5_vips = @search.results
+
+    
   end
 
   # GET /f5_vips/1
   # GET /f5_vips/1.json
   def show
     @f5_vip = F5Vip.find(params[:id])
+    @f5_vips  = F5Vip.where(:ops_status!="Deleted")
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @f5_vip }
-    end
   end
 
   # GET /f5_vips/new
@@ -80,4 +82,10 @@ class F5VipsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def selected_f5_vip
+    @f5_vip = F5Vip.find(params[:id])
+    @f5_vips= F5Vip.where('ops_status != ?', "Deleted" )
+  end
+
 end

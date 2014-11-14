@@ -1,0 +1,511 @@
+physicalelement_luid,nodeid,snapshotid,creationclassname,tag,caption,description,name,installdatetime,status,manufacturedate,manufacturer,otheridentifyinginfo,partnumber,poweredon,serialnumber,sku,version,slot_number,dc_location,dc_condition,dc_firmwarerevision,dc_hwlocation,dc_productid,model
+2211908167522,924,-1,CIM_PhysicalElement,Rack Net Connector 1,Other,,"",,,,,1,WS-CBS3020-HPQ,,FOC1139T04E,432904-001,,,osdc-mc1-d1-1,,"",,,"Cisco Systems, Inc. Cisco Catalyst Blade Switch 3020 for HP"
+2211908167523,924,-1,CIM_PhysicalElement,Rack Net Connector 2,Other,,"",,,,,2,WS-CBS3020-HPQ,,FOC1139T013,432904-001,,,osdc-mc1-d1-1,,"",,,"Cisco Systems, Inc. Cisco Catalyst Blade Switch 3020 for HP"
+2211908167524,924,-1,CIM_PhysicalElement,Rack Net Connector 3,Other,,"",,,,,3,406740-B21,,TWT828V0DN,419329-001,,,osdc-mc1-d1-1,,"",,,HP HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908167515,924,-1,CIM_PhysicalElement,Remote Insight Board 0,,Blade enclosure management processor,,,,,,,,,USE7426T6W,,,,,,,,,pciLightsOut100series (8)
+2211908167538,924,-1,CIM_PhysicalElement,Server Blade 9,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,osdc-mc1-d1-1,,,,,
+2211908167526,924,-1,CIM_PhysicalElement,Rack Net Connector 5,Passive,,"",,,,,5,AE370A,,CN8731601W,411120-001,,,osdc-mc1-d1-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908167555,924,-1,CIM_PhysicalElement,Server Blade 26,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,osdc-mc1-d1-1,,,,,
+2211908167566,924,-1,CIM_PhysicalElement,Server Blade 37,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,osdc-mc1-d1-1,,,,,
+2211908167503,1394,-1,CIM_PhysicalElement,Rack Power Supply 3,,,,,,,,,412138-B21,,5A22B0EHLVC0J2,411099-001,,3,sc9-l07-1,,"",,,
+2211908167535,924,-1,CIM_PhysicalElement,Server Blade 6,,,osdc-vmg2-6.vmware.com,,,,,1,443527-B21,,USE80996B6,443684-B21,,6,osdc-mc1-d1-1,,,,,
+2211908167539,924,-1,CIM_PhysicalElement,Server Blade 10,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,osdc-mc1-d1-1,,,,,
+2211908167544,924,-1,CIM_PhysicalElement,Server Blade 15,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,osdc-mc1-d1-1,,,,,
+2211908167506,1394,-1,CIM_PhysicalElement,Rack Power Supply 6,,,,,,,,,412138-B21,,5A22B0DHLTV1CD,411099-001,,6,sc9-l07-1,,"",,,
+2211908167556,924,-1,CIM_PhysicalElement,Server Blade 27,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,osdc-mc1-d1-1,,,,,
+2211908167520,924,-1,CIM_PhysicalElement,Rack Power Supply 5,,,,,,,,,412138-B21,,5A22B0EHLVN3RW,411099-001,,5,osdc-mc1-d1-1,,"",,,
+2211908167542,924,-1,CIM_PhysicalElement,Server Blade 13,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,osdc-mc1-d1-1,,,,,
+2211908167590,922,-1,CIM_PhysicalElement,Rack Net Connector 6,Passive,,"",,,,,6,AE370A,,CN8731601M,411120-001,,,osdc-mc1-d1-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908167536,924,-1,CIM_PhysicalElement,Server Blade 7,,,osdc-vmg2-7.vmware.com,,,,,1,443527-B21,,USE80996B7,443684-B21,,7,osdc-mc1-d1-1,,,,,
+2211908167578,922,-1,CIM_PhysicalElement,Remote Insight Board 0,,Blade enclosure management processor,,,,,,,,,USE7426T6W,,,,,,,,,pciLightsOut100series (8)
+2211908167596,922,-1,CIM_PhysicalElement,Server Blade 4,,,osdc-stg-vmg1-4.vmware.com,,,,,1,443527-B21,,USE839F8E7,443684-B21,,4,osdc-mc1-d1-1,,,,,
+2211908167518,924,-1,CIM_PhysicalElement,Rack Power Supply 3,,,,,,,,,412138-B21,,5A22B0EHLV40C2,411099-001,,3,osdc-mc1-d1-1,,"",,,
+2211908167525,924,-1,CIM_PhysicalElement,Rack Net Connector 4,Other,,"",,,,,4,406740-B21,,TWT801V08B,419329-001,,,osdc-mc1-d1-1,,"",,,HP HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908167530,924,-1,CIM_PhysicalElement,Server Blade 1,,,osdc-stg-vmg1-1.vmware.com,,,,,1,443527-B21,,USE839F8DN,443684-B21,,1,osdc-mc1-d1-1,,,,,
+2211908167516,924,-1,CIM_PhysicalElement,Rack Power Supply 1,,,,,,,,,412138-B21,,5A22B0DHLTT2C3,411099-001,,1,osdc-mc1-d1-1,,"",,,
+2211908167559,924,-1,CIM_PhysicalElement,Server Blade 30,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,osdc-mc1-d1-1,,,,,
+2211908167564,924,-1,CIM_PhysicalElement,Server Blade 35,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,osdc-mc1-d1-1,,,,,
+2211908167577,924,-1,CIM_PhysicalElement,Server Blade 48,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,osdc-mc1-d1-1,,,,,
+2211908167517,924,-1,CIM_PhysicalElement,Rack Power Supply 2,,,,,,,,,412138-B21,,5A22B0DHLU31Z4,411099-001,,2,osdc-mc1-d1-1,,"",,,
+2211908167531,924,-1,CIM_PhysicalElement,Server Blade 2,,,osdc-stg-vmg1-2.vmware.com,,,,,1,443527-B21,,USE839F8E5,443684-B21,,2,osdc-mc1-d1-1,,,,,
+2211908167551,924,-1,CIM_PhysicalElement,Server Blade 22,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,osdc-mc1-d1-1,,,,,
+2211908167557,924,-1,CIM_PhysicalElement,Server Blade 28,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,osdc-mc1-d1-1,,,,,
+2211908167519,924,-1,CIM_PhysicalElement,Rack Power Supply 4,,,,,,,,,412138-B21,,5A22B0EHLV91DI,411099-001,,4,osdc-mc1-d1-1,,"",,,
+2211908167528,924,-1,CIM_PhysicalElement,Rack Net Connector 7,0,,"",,,,,7,Unknown,,Unknown,"",,,osdc-mc1-d1-1,,"",,,HP Unknown
+2211908167529,924,-1,CIM_PhysicalElement,Rack Net Connector 8,0,,"",,,,,8,Unknown,,Unknown,"",,,osdc-mc1-d1-1,,"",,,HP Unknown
+2211908167562,924,-1,CIM_PhysicalElement,Server Blade 33,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,osdc-mc1-d1-1,,,,,
+2211908167569,924,-1,CIM_PhysicalElement,Server Blade 40,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,osdc-mc1-d1-1,,,,,
+2211908167521,924,-1,CIM_PhysicalElement,Rack Power Supply 6,,,,,,,,,412138-B21,,5A22B0EHLUP0X1,411099-001,,6,osdc-mc1-d1-1,,"",,,
+2211908167541,924,-1,CIM_PhysicalElement,Server Blade 12,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,osdc-mc1-d1-1,,,,,
+2211908167548,924,-1,CIM_PhysicalElement,Server Blade 19,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,osdc-mc1-d1-1,,,,,
+2211908167552,924,-1,CIM_PhysicalElement,Server Blade 23,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,osdc-mc1-d1-1,,,,,
+2211908167527,924,-1,CIM_PhysicalElement,Rack Net Connector 6,Passive,,"",,,,,6,AE370A,,CN8731601M,411120-001,,,osdc-mc1-d1-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908167550,924,-1,CIM_PhysicalElement,Server Blade 21,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,osdc-mc1-d1-1,,,,,
+2211908167567,924,-1,CIM_PhysicalElement,Server Blade 38,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,osdc-mc1-d1-1,,,,,
+2211908167585,922,-1,CIM_PhysicalElement,Rack Net Connector 1,Other,,"",,,,,1,WS-CBS3020-HPQ,,FOC1139T04E,432904-001,,,osdc-mc1-d1-1,,"",,,"Cisco Systems, Inc. Cisco Catalyst Blade Switch 3020 for HP"
+2211908167532,924,-1,CIM_PhysicalElement,Server Blade 3,,,osdc-stg-vmg1-3.vmware.com,,,,,1,443527-B21,,USE839F8DR,443684-B21,,3,osdc-mc1-d1-1,,,,,
+2211908167543,924,-1,CIM_PhysicalElement,Server Blade 14,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,osdc-mc1-d1-1,,,,,
+2211908167547,924,-1,CIM_PhysicalElement,Server Blade 18,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,osdc-mc1-d1-1,,,,,
+2211908167581,922,-1,CIM_PhysicalElement,Rack Power Supply 3,,,,,,,,,412138-B21,,5A22B0EHLV40C2,411099-001,,3,osdc-mc1-d1-1,,"",,,
+2211908167591,922,-1,CIM_PhysicalElement,Rack Net Connector 7,0,,"",,,,,7,Unknown,,Unknown,"",,,osdc-mc1-d1-1,,"",,,HP Unknown
+2211908167533,924,-1,CIM_PhysicalElement,Server Blade 4,,,osdc-stg-vmg1-4.vmware.com,,,,,1,443527-B21,,USE839F8E7,443684-B21,,4,osdc-mc1-d1-1,,,,,
+2211908167537,924,-1,CIM_PhysicalElement,Server Blade 8,,,Unknown,,,,,1,Unknown,,Unknown,443684-B21,,8,osdc-mc1-d1-1,,,,,
+2211908167560,924,-1,CIM_PhysicalElement,Server Blade 31,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,osdc-mc1-d1-1,,,,,
+2211908167565,924,-1,CIM_PhysicalElement,Server Blade 36,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,osdc-mc1-d1-1,,,,,
+2211908167574,924,-1,CIM_PhysicalElement,Server Blade 45,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,osdc-mc1-d1-1,,,,,
+2211908167534,924,-1,CIM_PhysicalElement,Server Blade 5,,,osdc-vmg2-5.vmware.com,,,,,1,443527-B21,,USE839F8DP,443684-B21,,5,osdc-mc1-d1-1,,,,,
+2211908167540,924,-1,CIM_PhysicalElement,Server Blade 11,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,osdc-mc1-d1-1,,,,,
+2211908167576,924,-1,CIM_PhysicalElement,Server Blade 47,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,osdc-mc1-d1-1,,,,,
+2211908167587,922,-1,CIM_PhysicalElement,Rack Net Connector 3,Other,,"",,,,,3,406740-B21,,TWT828V0DN,419329-001,,,osdc-mc1-d1-1,,"",,,HP HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908167545,924,-1,CIM_PhysicalElement,Server Blade 16,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,osdc-mc1-d1-1,,,,,
+2211908167549,924,-1,CIM_PhysicalElement,Server Blade 20,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,osdc-mc1-d1-1,,,,,
+2211908167561,924,-1,CIM_PhysicalElement,Server Blade 32,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,osdc-mc1-d1-1,,,,,
+2211908167580,922,-1,CIM_PhysicalElement,Rack Power Supply 2,,,,,,,,,412138-B21,,5A22B0DHLU31Z4,411099-001,,2,osdc-mc1-d1-1,,"",,,
+2211908167546,924,-1,CIM_PhysicalElement,Server Blade 17,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,osdc-mc1-d1-1,,,,,
+2211908167554,924,-1,CIM_PhysicalElement,Server Blade 25,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,osdc-mc1-d1-1,,,,,
+2211908167572,924,-1,CIM_PhysicalElement,Server Blade 43,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,osdc-mc1-d1-1,,,,,
+2211908167594,922,-1,CIM_PhysicalElement,Server Blade 2,,,osdc-stg-vmg1-2.vmware.com,,,,,1,443527-B21,,USE839F8E5,443684-B21,,2,osdc-mc1-d1-1,,,,,
+2211908167553,924,-1,CIM_PhysicalElement,Server Blade 24,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,osdc-mc1-d1-1,,,,,
+2211908167571,924,-1,CIM_PhysicalElement,Server Blade 42,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,osdc-mc1-d1-1,,,,,
+2211908167573,924,-1,CIM_PhysicalElement,Server Blade 44,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,osdc-mc1-d1-1,,,,,
+2211908167592,922,-1,CIM_PhysicalElement,Rack Net Connector 8,0,,"",,,,,8,Unknown,,Unknown,"",,,osdc-mc1-d1-1,,"",,,HP Unknown
+2211908167595,922,-1,CIM_PhysicalElement,Server Blade 3,,,osdc-stg-vmg1-3.vmware.com,,,,,1,443527-B21,,USE839F8DR,443684-B21,,3,osdc-mc1-d1-1,,,,,
+2211908167616,922,-1,CIM_PhysicalElement,Server Blade 24,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,osdc-mc1-d1-1,,,,,
+2211908167558,924,-1,CIM_PhysicalElement,Server Blade 29,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,osdc-mc1-d1-1,,,,,
+2211908167563,924,-1,CIM_PhysicalElement,Server Blade 34,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,osdc-mc1-d1-1,,,,,
+2211908167582,922,-1,CIM_PhysicalElement,Rack Power Supply 4,,,,,,,,,412138-B21,,5A22B0EHLV91DI,411099-001,,4,osdc-mc1-d1-1,,"",,,
+2211908167583,922,-1,CIM_PhysicalElement,Rack Power Supply 5,,,,,,,,,412138-B21,,5A22B0EHLVN3RW,411099-001,,5,osdc-mc1-d1-1,,"",,,
+2211908167622,922,-1,CIM_PhysicalElement,Server Blade 30,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,osdc-mc1-d1-1,,,,,
+2211908167568,924,-1,CIM_PhysicalElement,Server Blade 39,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,osdc-mc1-d1-1,,,,,
+2211908167570,924,-1,CIM_PhysicalElement,Server Blade 41,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,osdc-mc1-d1-1,,,,,
+2211908167597,922,-1,CIM_PhysicalElement,Server Blade 5,,,osdc-vmg2-5.vmware.com,,,,,1,443527-B21,,USE839F8DP,443684-B21,,5,osdc-mc1-d1-1,,,,,
+2211908167601,922,-1,CIM_PhysicalElement,Server Blade 9,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,osdc-mc1-d1-1,,,,,
+2211908167575,924,-1,CIM_PhysicalElement,Server Blade 46,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,osdc-mc1-d1-1,,,,,
+2211908167588,922,-1,CIM_PhysicalElement,Rack Net Connector 4,Other,,"",,,,,4,406740-B21,,TWT801V08B,419329-001,,,osdc-mc1-d1-1,,"",,,HP HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908167611,922,-1,CIM_PhysicalElement,Server Blade 19,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,osdc-mc1-d1-1,,,,,
+2211908167631,922,-1,CIM_PhysicalElement,Server Blade 39,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,osdc-mc1-d1-1,,,,,
+2211908167579,922,-1,CIM_PhysicalElement,Rack Power Supply 1,,,,,,,,,412138-B21,,5A22B0DHLTT2C3,411099-001,,1,osdc-mc1-d1-1,,"",,,
+2211908167584,922,-1,CIM_PhysicalElement,Rack Power Supply 6,,,,,,,,,412138-B21,,5A22B0EHLUP0X1,411099-001,,6,osdc-mc1-d1-1,,"",,,
+2211908167586,922,-1,CIM_PhysicalElement,Rack Net Connector 2,Other,,"",,,,,2,WS-CBS3020-HPQ,,FOC1139T013,432904-001,,,osdc-mc1-d1-1,,"",,,"Cisco Systems, Inc. Cisco Catalyst Blade Switch 3020 for HP"
+2211908167612,922,-1,CIM_PhysicalElement,Server Blade 20,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,osdc-mc1-d1-1,,,,,
+2211908167620,922,-1,CIM_PhysicalElement,Server Blade 28,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,osdc-mc1-d1-1,,,,,
+2211908167589,922,-1,CIM_PhysicalElement,Rack Net Connector 5,Passive,,"",,,,,5,AE370A,,CN8731601W,411120-001,,,osdc-mc1-d1-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908167627,922,-1,CIM_PhysicalElement,Server Blade 35,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,osdc-mc1-d1-1,,,,,
+2211908167645,1161,-1,CIM_PhysicalElement,Fault Tolerant Power Supply 0.1,,,,,,,,,,,"",,,,,,"",,,""
+2211908167652,994,-1,CIM_PhysicalElement,Rack Power Supply 3,,,,,,,,,412138-B21,,5A22B0DHLU12NB,411099-001,,3,OSDC-MC1-F5-1,,"",,,
+2211908167670,994,-1,CIM_PhysicalElement,Rack Net Connector 5,Passive,,"",,,,,5,AE370A,,CN8731602D,411120-001,,,OSDC-MC1-F5-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908167593,922,-1,CIM_PhysicalElement,Server Blade 1,,,osdc-stg-vmg1-1.vmware.com,,,,,1,443527-B21,,USE839F8DN,443684-B21,,1,osdc-mc1-d1-1,,,,,
+2211908167610,922,-1,CIM_PhysicalElement,Server Blade 18,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,osdc-mc1-d1-1,,,,,
+2211908167630,922,-1,CIM_PhysicalElement,Server Blade 38,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,osdc-mc1-d1-1,,,,,
+2211908167638,922,-1,CIM_PhysicalElement,Server Blade 46,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,osdc-mc1-d1-1,,,,,
+2211908167598,922,-1,CIM_PhysicalElement,Server Blade 6,,,osdc-vmg2-6.vmware.com,,,,,1,443527-B21,,USE80996B6,443684-B21,,6,osdc-mc1-d1-1,,,,,
+2211908167626,922,-1,CIM_PhysicalElement,Server Blade 34,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,osdc-mc1-d1-1,,,,,
+2211908167636,922,-1,CIM_PhysicalElement,Server Blade 44,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,osdc-mc1-d1-1,,,,,
+2211908167640,922,-1,CIM_PhysicalElement,Server Blade 48,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,osdc-mc1-d1-1,,,,,
+2211908167648,994,-1,CIM_PhysicalElement,Rack Power Supply 1,,,,,,,,,412138-B21,,5A22B0EHLVT0EF,411099-001,,1,OSDC-MC1-F5-1,,"",,,
+2211908167599,922,-1,CIM_PhysicalElement,Server Blade 7,,,osdc-vmg2-7.vmware.com,,,,,1,443527-B21,,USE80996B7,443684-B21,,7,osdc-mc1-d1-1,,,,,
+2211908167605,922,-1,CIM_PhysicalElement,Server Blade 13,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,osdc-mc1-d1-1,,,,,
+2211908167617,922,-1,CIM_PhysicalElement,Server Blade 25,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,osdc-mc1-d1-1,,,,,
+2211908167637,922,-1,CIM_PhysicalElement,Server Blade 45,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,osdc-mc1-d1-1,,,,,
+2211908167600,922,-1,CIM_PhysicalElement,Server Blade 8,,,Unknown,,,,,1,Unknown,,Unknown,443684-B21,,8,osdc-mc1-d1-1,,,,,
+2211908167623,922,-1,CIM_PhysicalElement,Server Blade 31,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,osdc-mc1-d1-1,,,,,
+2211908167667,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.14,,,,,,,,,,,5QD4DXB5,,,2,7,,HPG3,,,ATA     GB0750C4414
+2211908167674,994,-1,CIM_PhysicalElement,Rack Net Connector 7,0,,"",,,,,7,Unknown,,Unknown,"",,,OSDC-MC1-F5-1,,"",,,Unknown
+2211908167682,994,-1,CIM_PhysicalElement,Server Blade 5,,,osdc-stg-vmg1-5.vmware.com,,,,,1,443527-B21,,USE839F8E8,443684-B21,,5,OSDC-MC1-F5-1,,,,,
+2211908167602,922,-1,CIM_PhysicalElement,Server Blade 10,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,osdc-mc1-d1-1,,,,,
+2211908167606,922,-1,CIM_PhysicalElement,Server Blade 14,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,osdc-mc1-d1-1,,,,,
+2211908167624,922,-1,CIM_PhysicalElement,Server Blade 32,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,osdc-mc1-d1-1,,,,,
+2211908167632,922,-1,CIM_PhysicalElement,Server Blade 40,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,osdc-mc1-d1-1,,,,,
+2211908167672,994,-1,CIM_PhysicalElement,Rack Net Connector 6,Passive,,"",,,,,6,AE370A,,CN87316055,411120-001,,,OSDC-MC1-F5-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908167603,922,-1,CIM_PhysicalElement,Server Blade 11,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,osdc-mc1-d1-1,,,,,
+2211908167615,922,-1,CIM_PhysicalElement,Server Blade 23,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,osdc-mc1-d1-1,,,,,
+2211908167656,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.4,,,,,,,,,,,5QD4CAJ8,,,2,1,,HPG3,,,ATA     GB0750C4414
+2211908167660,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.10,,,,,,,,,,,5QD4C96H,,,2,3,,HPG3,,,ATA     GB0750C4414
+2211908167686,994,-1,CIM_PhysicalElement,Server Blade 9,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,OSDC-MC1-F5-1,,,,,
+2211908167604,922,-1,CIM_PhysicalElement,Server Blade 12,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,osdc-mc1-d1-1,,,,,
+2211908167609,922,-1,CIM_PhysicalElement,Server Blade 17,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,osdc-mc1-d1-1,,,,,
+2211908167629,922,-1,CIM_PhysicalElement,Server Blade 37,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,osdc-mc1-d1-1,,,,,
+2211908167607,922,-1,CIM_PhysicalElement,Server Blade 15,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,osdc-mc1-d1-1,,,,,
+2211908167613,922,-1,CIM_PhysicalElement,Server Blade 21,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,osdc-mc1-d1-1,,,,,
+2211908167643,994,-1,CIM_PhysicalElement,Remote Insight Board 0,,Blade enclosure management processor,,,,,,,,,USE7436VDP,,,,,,,,,pciLightsOut100series (8)
+2211908167675,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.18,,,,,,,,,,,5QD49AWG,,,2,11,,HPG3,,,ATA     GB0750C4414
+2211908167684,994,-1,CIM_PhysicalElement,Server Blade 7,,,osdc-stg-vmg1-7.vmware.com,,,,,1,443527-B21,,USE839F8E2,443684-B21,,7,OSDC-MC1-F5-1,,,,,
+2211908167608,922,-1,CIM_PhysicalElement,Server Blade 16,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,osdc-mc1-d1-1,,,,,
+2211908167621,922,-1,CIM_PhysicalElement,Server Blade 29,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,osdc-mc1-d1-1,,,,,
+2211908167716,996,-1,CIM_PhysicalElement,Rack Net Connector 2,Other,,"",,,,,2,WS-CBS3020-HPQ,,FOC1138T0SJ,432904-001,,,OSDC-MC1-F5-1,,"",,,"Cisco Systems, Inc. Cisco Catalyst Blade Switch 3020 for HP"
+2211908167644,1161,-1,CIM_PhysicalElement,Drive Array Controller 2,,,HP Smart Array P400 Controller-10.0,,,,,PA82C0H9SVJ4UG,,,P61630G9SVI3SE,,D,2,,,4.12,Slot 2,,HP Smart Array P400 Controller
+2211908167614,922,-1,CIM_PhysicalElement,Server Blade 22,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,osdc-mc1-d1-1,,,,,
+2211908167671,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.16,,,,,,,,,,,5QD4C7Z9,,,2,9,,HPG3,,,ATA     GB0750C4414
+2211908167679,994,-1,CIM_PhysicalElement,Server Blade 2,,,osdc-vmg2-2.vmware.com,,,,,1,443527-B21,,USE80996BL,443684-B21,,2,OSDC-MC1-F5-1,,,,,
+2211908167683,994,-1,CIM_PhysicalElement,Server Blade 6,,,osdc-stg-vmg1-6.vmware.com,,,,,1,               ,,USE839F8E0,443684-B21,,6,OSDC-MC1-F5-1,,,,,
+2211908167618,922,-1,CIM_PhysicalElement,Server Blade 26,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,osdc-mc1-d1-1,,,,,
+2211908167633,922,-1,CIM_PhysicalElement,Server Blade 41,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,osdc-mc1-d1-1,,,,,
+2211908167639,922,-1,CIM_PhysicalElement,Server Blade 47,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,osdc-mc1-d1-1,,,,,
+2211908167619,922,-1,CIM_PhysicalElement,Server Blade 27,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,osdc-mc1-d1-1,,,,,
+2211908167651,994,-1,CIM_PhysicalElement,Rack Power Supply 2,,,,,,,,,412138-B21,,5A22B0EHLV532Y,411099-001,,2,OSDC-MC1-F5-1,,"",,,
+2211908167661,994,-1,CIM_PhysicalElement,Rack Net Connector 1,Other,,"",,,,,1,WS-CBS3020-HPQ,,FOC1143T033,432904-001,,,OSDC-MC1-F5-1,,"",,,"Cisco Systems, Inc. Cisco Catalyst Blade Switch 3020 for HP"
+2211908167669,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.15,,,,,,,,,,,5QD4CR2E,,,2,8,,HPG3,,,ATA     GB0750C4414
+2211908167625,922,-1,CIM_PhysicalElement,Server Blade 33,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,osdc-mc1-d1-1,,,,,
+2211908167642,1161,-1,CIM_PhysicalElement,Keyboard 0,,101-Key Enhanced Keyboard,,,,,,,,,,,,,,,,,,
+2211908167649,1161,-1,CIM_PhysicalElement,Storage System 2.1,,,,,,,"",,,,"",,0,,,,"",,,""
+2211908167653,994,-1,CIM_PhysicalElement,Rack Power Supply 4,,,,,,,,,412138-B21,,5A22B0AHLTH0F3,411099-001,,4,OSDC-MC1-F5-1,,"",,,
+2211908167690,994,-1,CIM_PhysicalElement,Server Blade 13,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,OSDC-MC1-F5-1,,,,,
+2211908167708,994,-1,CIM_PhysicalElement,Server Blade 19,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,OSDC-MC1-F5-1,,,,,
+2211908167628,922,-1,CIM_PhysicalElement,Server Blade 36,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,osdc-mc1-d1-1,,,,,
+2211908167635,922,-1,CIM_PhysicalElement,Server Blade 43,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,osdc-mc1-d1-1,,,,,
+2211908167647,1161,-1,CIM_PhysicalElement,Storage System 2.0,,,,,,,HP,,,,"",,0,,,,1.20,,,DL320s
+2211908167680,994,-1,CIM_PhysicalElement,Server Blade 3,,,osdc-vmg2-3.vmware.com,,,,,1,443527-B21,,USE839F8DW,443684-B21,,3,OSDC-MC1-F5-1,,,,,
+2211908167687,994,-1,CIM_PhysicalElement,Server Blade 10,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,OSDC-MC1-F5-1,,,,,
+2211908167692,996,-1,CIM_PhysicalElement,Rack Power Supply 1,,,,,,,,,412138-B21,,5A22B0EHLVT0EF,411099-001,,1,OSDC-MC1-F5-1,,"",,,
+2211908167641,1161,-1,CIM_PhysicalElement,Remote Insight Board 0,,,HP Integrated Lights-Out Management 2-1.4,1191394800000,,,,10.16.66.172,,,ILOUSE807N9FM,,2,0,,,1.42,,,HP Integrated Lights-Out 2
+2211908167634,922,-1,CIM_PhysicalElement,Server Blade 42,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,osdc-mc1-d1-1,,,,,
+2211908167658,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.8,,,,,,,,,,,5QD4CPK5,,,2,1,,HPG3,,,ATA     GB0750C4414
+2211908167659,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.9,,,,,,,,,,,5QD42E90,,,2,2,,HPG3,,,ATA     GB0750C4414
+2211908167664,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.12,,,,,,,,,,,5QD4D2BS,,,2,5,,HPG3,,,ATA     GB0750C4414
+2211908167678,994,-1,CIM_PhysicalElement,Server Blade 1,,,osdc-vmg2-1.vmware.com,,,,,1,443527-B21,,USE839F8DM,443684-B21,,1,OSDC-MC1-F5-1,,,,,
+2211908167733,996,-1,CIM_PhysicalElement,Server Blade 1,,,osdc-vmg2-1.vmware.com,,,,,1,443527-B21,,USE839F8DM,443684-B21,,1,OSDC-MC1-F5-1,,,,,
+2211908167750,996,-1,CIM_PhysicalElement,Server Blade 9,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,OSDC-MC1-F5-1,,,,,
+2211908164635,1285,-1,CIM_PhysicalElement,Rack Power Supply 3,,,,,,,,,412138-B21,,5A22B0EHLUY09O,411099-001,,3,SC9-CPP-PROD,,"",,,
+2211908164632,1285,-1,CIM_PhysicalElement,Remote Insight Board 0,,Blade enclosure management processor,,,,,,,,,USE7436WY3,,,,,,,,,pciLightsOut100series (8)
+2211908164640,1285,-1,CIM_PhysicalElement,Rack Net Connector 2,Other,,"",,,,,2,406740-B21,,TWT828V0LP,419329-001,,,SC9-CPP-PROD,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908167662,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.11,,,,,,,,,,,5QD4MM6P,,,2,4,,HPG3,,,ATA     GB0750C4414
+2211908167663,994,-1,CIM_PhysicalElement,Rack Net Connector 2,Other,,"",,,,,2,WS-CBS3020-HPQ,,FOC1138T0SJ,432904-001,,,OSDC-MC1-F5-1,,"",,,"Cisco Systems, Inc. Cisco Catalyst Blade Switch 3020 for HP"
+2211908167665,994,-1,CIM_PhysicalElement,Rack Net Connector 3,Other,,"",,,,,3,406740-B21,,TWT828V0PV,419329-001,,,OSDC-MC1-F5-1,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908164636,1285,-1,CIM_PhysicalElement,Rack Power Supply 4,,,,,,,,,412138-B21,,5A22B0DHLTO1I1,411099-001,,4,SC9-CPP-PROD,,"",,,
+2211908167676,994,-1,CIM_PhysicalElement,Rack Net Connector 8,0,,"",,,,,8,Unknown,,Unknown,"",,,OSDC-MC1-F5-1,,"",,,Unknown
+2211908167699,1161,-1,CIM_PhysicalElement,PCI Board 1.3,,,ATI ES1000-1.3,,,,,,,,,,,0,,,,,,
+2211908167646,1161,-1,CIM_PhysicalElement,Fault Tolerant Power Supply 0.2,,,,,,,,,,,"",,,,,,"",,,""
+2211908167654,994,-1,CIM_PhysicalElement,Rack Power Supply 5,,,,,,,,,412138-B21,,5A22B0EHLVG1E0,411099-001,,5,OSDC-MC1-F5-1,,"",,,
+2211908164638,1285,-1,CIM_PhysicalElement,Rack Power Supply 6,,,,,,,,,412138-B21,,5A22B0EHLV51QF,411099-001,,6,SC9-CPP-PROD,,"",,,
+2211908167655,994,-1,CIM_PhysicalElement,Rack Power Supply 6,,,,,,,,,412138-B21,,5A22B0EHLUV2HH,411099-001,,6,OSDC-MC1-F5-1,,"",,,
+2211908167673,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.17,,,,,,,,,,,5QD4C8Q8,,,2,10,,HPG3,,,ATA     GB0750C4414
+2211908167689,994,-1,CIM_PhysicalElement,Server Blade 12,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,OSDC-MC1-F5-1,,,,,
+2211908164641,1285,-1,CIM_PhysicalElement,Rack Net Connector 3,Passive,,"",,,,,3,AE370A,,CN87316004,411120-001,,,SC9-CPP-PROD,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908164642,1285,-1,CIM_PhysicalElement,Rack Net Connector 4,Passive,,"",,,,,4,AE370A,,CN8731602H,411120-001,,,SC9-CPP-PROD,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908167703,1161,-1,CIM_PhysicalElement,PCI Board 2.0,,,(Empty)-2.0,,,,,,,,,,,1,,,,,,
+2211908167705,1161,-1,CIM_PhysicalElement,PCI Board 3.4,,,HP NC324i PCIe Dual Port Gigabit Server Adapter-3.4,,,,,,,,,,,0,,,,,,
+2211908164645,1285,-1,CIM_PhysicalElement,Rack Net Connector 7,0,,"",,,,,7,Unknown,,Unknown,"",,,SC9-CPP-PROD,,"",,,Unknown
+2211908167723,994,-1,CIM_PhysicalElement,Server Blade 28,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,OSDC-MC1-F5-1,,,,,
+2211908167657,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.5,,,,,,,,,,,5QD4B2TX,,,2,2,,HPG3,,,ATA     GB0750C4414
+2211908167668,994,-1,CIM_PhysicalElement,Rack Net Connector 4,Other,,"",,,,,4,406740-B21,,TWT828V0P5,419329-001,,,OSDC-MC1-F5-1,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908167650,996,-1,CIM_PhysicalElement,Remote Insight Board 0,,Blade enclosure management processor,,,,,,,,,USE7436VDP,,,,,,,,,pciLightsOut100series (8)
+2211908164647,1285,-1,CIM_PhysicalElement,Server Blade 1,,,CPP-DB01,,,,,1,405024-B21,,USE801879T,436376-001,,1,SC9-CPP-PROD,,,,,
+2211908164649,1285,-1,CIM_PhysicalElement,Server Blade 3,,,CPP-DB03,,,,,1,405024-B21,,USE7436V69,436376-001,,3,SC9-CPP-PROD,,,,,
+2211908167666,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.13,,,,,,,,,,,5QD4C9QH,,,2,6,,HPG3,,,ATA     GB0750C4414
+2211908164633,1285,-1,CIM_PhysicalElement,Rack Power Supply 1,,,,,,,,,412138-B21,,5A22B0EHLV11FQ,411099-001,,1,SC9-CPP-PROD,,"",,,
+2211908167681,994,-1,CIM_PhysicalElement,Server Blade 4,,,osdc-vmg2-4.vmware.com,,,,,1,443527-B21,,USE80996BD,443684-B21,,4,OSDC-MC1-F5-1,,,,,
+2211908167695,1161,-1,CIM_PhysicalElement,PCI Board 0.29,,,Serial bus controller - USB (Universal Host Controller Specification)-0.29,,,,,,,,,,,0,,,,,,
+2211908167730,994,-1,CIM_PhysicalElement,Server Blade 32,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,OSDC-MC1-F5-1,,,,,
+2211908167740,994,-1,CIM_PhysicalElement,Server Blade 38,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,OSDC-MC1-F5-1,,,,,
+2211908164639,1285,-1,CIM_PhysicalElement,Rack Net Connector 1,Other,,"",,,,,1,406740-B21,,TWT828V0M2,419329-001,,,SC9-CPP-PROD,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908164643,1285,-1,CIM_PhysicalElement,Rack Net Connector 5,0,,"",,,,,5,Unknown,,Unknown,"",,,SC9-CPP-PROD,,"",,,Unknown
+2211908167777,996,-1,CIM_PhysicalElement,Server Blade 31,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,OSDC-MC1-F5-1,,,,,
+2211908164653,1285,-1,CIM_PhysicalElement,Server Blade 7,,,CPP-DB07,,,,,1,405024-B21,,USE801879P,436376-001,,7,SC9-CPP-PROD,,,,,
+2211908167677,1161,-1,CIM_PhysicalElement,Drive Array Drive 2.19,,,,,,,,,,,5QD48FN1,,,2,12,,HPG3,,,ATA     GB0750C4414
+2211908167688,994,-1,CIM_PhysicalElement,Server Blade 11,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,OSDC-MC1-F5-1,,,,,
+2211908167698,996,-1,CIM_PhysicalElement,Rack Power Supply 3,,,,,,,,,412138-B21,,5A22B0DHLU12NB,411099-001,,3,OSDC-MC1-F5-1,,"",,,
+2211908161139,1403,-1,CIM_PhysicalElement,Rack Net Connector 6,Passive,,"",,,,,6,AE370A,,CN8738601F,411120-001,,,sc9-l07-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908167738,994,-1,CIM_PhysicalElement,Server Blade 37,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,OSDC-MC1-F5-1,,,,,
+2211908164634,1285,-1,CIM_PhysicalElement,Rack Power Supply 2,,,,,,,,,412138-B21,,5A22B0EHLV13HF,411099-001,,2,SC9-CPP-PROD,,"",,,
+2211908167755,996,-1,CIM_PhysicalElement,Server Blade 12,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,OSDC-MC1-F5-1,,,,,
+2211908167685,994,-1,CIM_PhysicalElement,Server Blade 8,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,OSDC-MC1-F5-1,,,,,
+2211908164637,1285,-1,CIM_PhysicalElement,Rack Power Supply 5,,,,,,,,,412138-B21,,5A22B0DHLTQ190,411099-001,,5,SC9-CPP-PROD,,"",,,
+2211908167718,996,-1,CIM_PhysicalElement,Rack Net Connector 3,Other,,"",,,,,3,406740-B21,,TWT828V0PV,419329-001,,,OSDC-MC1-F5-1,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908164646,1285,-1,CIM_PhysicalElement,Rack Net Connector 8,0,,"",,,,,8,Unknown,,Unknown,"",,,SC9-CPP-PROD,,"",,,Unknown
+2211908167720,996,-1,CIM_PhysicalElement,Rack Net Connector 4,Other,,"",,,,,4,406740-B21,,TWT828V0P5,419329-001,,,OSDC-MC1-F5-1,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908164650,1285,-1,CIM_PhysicalElement,Server Blade 4,,,CPP-DB04,,,,,1,XXXXXX-XXX,,3H7AMK0133,436376-001,,4,SC9-CPP-PROD,,,,,
+2211908167691,994,-1,CIM_PhysicalElement,Server Blade 14,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,OSDC-MC1-F5-1,,,,,
+2211908164644,1285,-1,CIM_PhysicalElement,Rack Net Connector 6,Other,,"",,,,,6,WS-CBS3020-HPQ,,FOC1147T0V3,432904-001,,,SC9-CPP-PROD,,"",,,"Cisco Systems, Inc. Cisco Catalyst Blade Switch 3020 for HP"
+2211908167713,994,-1,CIM_PhysicalElement,Server Blade 23,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,OSDC-MC1-F5-1,,,,,
+2211908164651,1285,-1,CIM_PhysicalElement,Server Blade 5,,,CPP-DB05,,,,,1,XXXXXX-XXX,,use7436v6d,436376-001,,5,SC9-CPP-PROD,,,,,
+2211908167724,996,-1,CIM_PhysicalElement,Rack Net Connector 6,Passive,,"",,,,,6,AE370A,,CN87316055,411120-001,,,OSDC-MC1-F5-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908164652,1285,-1,CIM_PhysicalElement,Server Blade 6,,,CPP-DB06,,,,,1,405024-B21,,USE7436V6F,436376-001,,6,SC9-CPP-PROD,,,,,
+2211908167727,994,-1,CIM_PhysicalElement,Server Blade 30,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,OSDC-MC1-F5-1,,,,,
+2211908167693,994,-1,CIM_PhysicalElement,Server Blade 15,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,OSDC-MC1-F5-1,,,,,
+2211908164648,1285,-1,CIM_PhysicalElement,Server Blade 2,,,CPP-DB02,,,,,1,405024-B21,,USE7436V6H,436376-001,,2,SC9-CPP-PROD,,,,,
+2211908167696,994,-1,CIM_PhysicalElement,Server Blade 16,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,OSDC-MC1-F5-1,,,,,
+2211908164654,1285,-1,CIM_PhysicalElement,Server Blade 8,,,CPP-DB08,,,,,1,405024-B21,,USE801879Y,436376-001,,8,SC9-CPP-PROD,,,,,
+2211908164655,1285,-1,CIM_PhysicalElement,Server Blade 9,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,SC9-CPP-PROD,,,,,
+2211908167709,996,-1,CIM_PhysicalElement,Rack Power Supply 6,,,,,,,,,412138-B21,,5A22B0EHLUV2HH,411099-001,,6,OSDC-MC1-F5-1,,"",,,
+2211908164659,1285,-1,CIM_PhysicalElement,Server Blade 13,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,SC9-CPP-PROD,,,,,
+2211908167715,994,-1,CIM_PhysicalElement,Server Blade 24,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,OSDC-MC1-F5-1,,,,,
+2211908164656,1285,-1,CIM_PhysicalElement,Server Blade 10,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,SC9-CPP-PROD,,,,,
+2211908167694,996,-1,CIM_PhysicalElement,Rack Power Supply 2,,,,,,,,,412138-B21,,5A22B0EHLV532Y,411099-001,,2,OSDC-MC1-F5-1,,"",,,
+2211908164658,1285,-1,CIM_PhysicalElement,Server Blade 12,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,SC9-CPP-PROD,,,,,
+2211908164661,1285,-1,CIM_PhysicalElement,Server Blade 14,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,SC9-CPP-PROD,,,,,
+2211908164662,1285,-1,CIM_PhysicalElement,Server Blade 15,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,SC9-CPP-PROD,,,,,
+2211908167712,994,-1,CIM_PhysicalElement,Server Blade 22,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,OSDC-MC1-F5-1,,,,,
+2211908164663,1285,-1,CIM_PhysicalElement,Server Blade 16,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,SC9-CPP-PROD,,,,,
+2211908167719,994,-1,CIM_PhysicalElement,Server Blade 26,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,OSDC-MC1-F5-1,,,,,
+2211908164669,1285,-1,CIM_PhysicalElement,Server Blade 22,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,SC9-CPP-PROD,,,,,
+2211908167697,1161,-1,CIM_PhysicalElement,PCI Board 0.31,,,Mass storage controller-0.31,,,,,,,,,,,0,,,,,,
+2211908164657,1285,-1,CIM_PhysicalElement,Server Blade 11,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,SC9-CPP-PROD,,,,,
+2211908167700,994,-1,CIM_PhysicalElement,Server Blade 17,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,OSDC-MC1-F5-1,,,,,
+2211908164664,1285,-1,CIM_PhysicalElement,Server Blade 17,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,SC9-CPP-PROD,,,,,
+2211908167702,996,-1,CIM_PhysicalElement,Rack Power Supply 4,,,,,,,,,412138-B21,,5A22B0AHLTH0F3,411099-001,,4,OSDC-MC1-F5-1,,"",,,
+2211908164667,1285,-1,CIM_PhysicalElement,Server Blade 20,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,SC9-CPP-PROD,,,,,
+2211908167725,994,-1,CIM_PhysicalElement,Server Blade 29,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,OSDC-MC1-F5-1,,,,,
+2211908164665,1285,-1,CIM_PhysicalElement,Server Blade 18,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,SC9-CPP-PROD,,,,,
+2211908167704,994,-1,CIM_PhysicalElement,Server Blade 18,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,OSDC-MC1-F5-1,,,,,
+2211908164666,1285,-1,CIM_PhysicalElement,Server Blade 19,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,SC9-CPP-PROD,,,,,
+2211908167706,996,-1,CIM_PhysicalElement,Rack Power Supply 5,,,,,,,,,412138-B21,,5A22B0EHLVG1E0,411099-001,,5,OSDC-MC1-F5-1,,"",,,
+2211908164673,1285,-1,CIM_PhysicalElement,Server Blade 26,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,SC9-CPP-PROD,,,,,
+2211908167711,994,-1,CIM_PhysicalElement,Server Blade 21,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,OSDC-MC1-F5-1,,,,,
+2211908164676,1285,-1,CIM_PhysicalElement,Server Blade 29,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,SC9-CPP-PROD,,,,,
+2211908167710,994,-1,CIM_PhysicalElement,Server Blade 20,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,OSDC-MC1-F5-1,,,,,
+2211908164668,1285,-1,CIM_PhysicalElement,Server Blade 21,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,SC9-CPP-PROD,,,,,
+2211908167714,996,-1,CIM_PhysicalElement,Rack Net Connector 1,Other,,"",,,,,1,WS-CBS3020-HPQ,,FOC1143T033,432904-001,,,OSDC-MC1-F5-1,,"",,,"Cisco Systems, Inc. Cisco Catalyst Blade Switch 3020 for HP"
+2211908164674,1285,-1,CIM_PhysicalElement,Server Blade 27,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,SC9-CPP-PROD,,,,,
+2211908167722,996,-1,CIM_PhysicalElement,Rack Net Connector 5,Passive,,"",,,,,5,AE370A,,CN8731602D,411120-001,,,OSDC-MC1-F5-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908164679,1288,-1,CIM_PhysicalElement,Keyboard 0,,101-Key Enhanced Keyboard,,,,,,,,,,,,,,,,,,
+2211908167728,996,-1,CIM_PhysicalElement,Rack Net Connector 8,0,,"",,,,,8,Unknown,,Unknown,"",,,OSDC-MC1-F5-1,,"",,,Unknown
+2211908164678,1285,-1,CIM_PhysicalElement,Server Blade 31,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,SC9-CPP-PROD,,,,,
+2211908167732,994,-1,CIM_PhysicalElement,Server Blade 34,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,OSDC-MC1-F5-1,,,,,
+2211908164670,1285,-1,CIM_PhysicalElement,Server Blade 23,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,SC9-CPP-PROD,,,,,
+2211908167717,994,-1,CIM_PhysicalElement,Server Blade 25,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,OSDC-MC1-F5-1,,,,,
+2211908164677,1285,-1,CIM_PhysicalElement,Server Blade 30,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,SC9-CPP-PROD,,,,,
+2211908167729,994,-1,CIM_PhysicalElement,Server Blade 31,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,OSDC-MC1-F5-1,,,,,
+2211908164680,1285,-1,CIM_PhysicalElement,Server Blade 32,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,SC9-CPP-PROD,,,,,
+2211908167736,994,-1,CIM_PhysicalElement,Server Blade 36,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,OSDC-MC1-F5-1,,,,,
+2211908167721,994,-1,CIM_PhysicalElement,Server Blade 27,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,OSDC-MC1-F5-1,,,,,
+2211908164671,1285,-1,CIM_PhysicalElement,Server Blade 24,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,SC9-CPP-PROD,,,,,
+2211908167726,996,-1,CIM_PhysicalElement,Rack Net Connector 7,0,,"",,,,,7,Unknown,,Unknown,"",,,OSDC-MC1-F5-1,,"",,,Unknown
+2211908164672,1285,-1,CIM_PhysicalElement,Server Blade 25,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,SC9-CPP-PROD,,,,,
+2211908164685,1285,-1,CIM_PhysicalElement,Server Blade 37,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,SC9-CPP-PROD,,,,,
+2211908167731,994,-1,CIM_PhysicalElement,Server Blade 33,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,OSDC-MC1-F5-1,,,,,
+2211908167734,994,-1,CIM_PhysicalElement,Server Blade 35,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,OSDC-MC1-F5-1,,,,,
+2211908164675,1285,-1,CIM_PhysicalElement,Server Blade 28,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,SC9-CPP-PROD,,,,,
+2211908164683,1285,-1,CIM_PhysicalElement,Server Blade 35,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,SC9-CPP-PROD,,,,,
+2211908167741,996,-1,CIM_PhysicalElement,Server Blade 5,,,osdc-stg-vmg1-5.vmware.com,,,,,1,443527-B21,,USE839F8E8,443684-B21,,5,OSDC-MC1-F5-1,,,,,
+2211908164684,1285,-1,CIM_PhysicalElement,Server Blade 36,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,SC9-CPP-PROD,,,,,
+2211908164689,1285,-1,CIM_PhysicalElement,Server Blade 41,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,SC9-CPP-PROD,,,,,
+2211908167776,996,-1,CIM_PhysicalElement,Server Blade 30,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,OSDC-MC1-F5-1,,,,,
+2211908164691,1285,-1,CIM_PhysicalElement,Server Blade 43,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,SC9-CPP-PROD,,,,,
+2211908164703,1287,-1,CIM_PhysicalElement,Rack Power Supply 5,,,,,,,,,412138-B21,,5A22B0DHLTQ190,411099-001,,5,SC9-CPP-PROD,,"",,,
+2211908164681,1285,-1,CIM_PhysicalElement,Server Blade 33,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,SC9-CPP-PROD,,,,,
+2211908167735,996,-1,CIM_PhysicalElement,Server Blade 2,,,osdc-vmg2-2.vmware.com,,,,,1,443527-B21,,USE80996BL,443684-B21,,2,OSDC-MC1-F5-1,,,,,
+2211908164690,1285,-1,CIM_PhysicalElement,Server Blade 42,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,SC9-CPP-PROD,,,,,
+2211908167739,996,-1,CIM_PhysicalElement,Server Blade 4,,,osdc-vmg2-4.vmware.com,,,,,1,443527-B21,,USE80996BD,443684-B21,,4,OSDC-MC1-F5-1,,,,,
+2211908164700,1287,-1,CIM_PhysicalElement,Rack Power Supply 2,,,,,,,,,412138-B21,,5A22B0EHLV13HF,411099-001,,2,SC9-CPP-PROD,,"",,,
+2211908164701,1287,-1,CIM_PhysicalElement,Rack Power Supply 3,,,,,,,,,412138-B21,,5A22B0EHLUY09O,411099-001,,3,SC9-CPP-PROD,,"",,,
+2211908167742,994,-1,CIM_PhysicalElement,Server Blade 39,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,OSDC-MC1-F5-1,,,,,
+2211908164682,1285,-1,CIM_PhysicalElement,Server Blade 34,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,SC9-CPP-PROD,,,,,
+2211908167737,996,-1,CIM_PhysicalElement,Server Blade 3,,,osdc-vmg2-3.vmware.com,,,,,1,443527-B21,,USE839F8DW,443684-B21,,3,OSDC-MC1-F5-1,,,,,
+2211908164687,1285,-1,CIM_PhysicalElement,Server Blade 39,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,SC9-CPP-PROD,,,,,
+2211908164695,1285,-1,CIM_PhysicalElement,Server Blade 47,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,SC9-CPP-PROD,,,,,
+2211908164699,1287,-1,CIM_PhysicalElement,Rack Power Supply 1,,,,,,,,,412138-B21,,5A22B0EHLV11FQ,411099-001,,1,SC9-CPP-PROD,,"",,,
+2211908167752,996,-1,CIM_PhysicalElement,Server Blade 10,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,OSDC-MC1-F5-1,,,,,
+2211908164704,1287,-1,CIM_PhysicalElement,Rack Power Supply 6,,,,,,,,,412138-B21,,5A22B0EHLV51QF,411099-001,,6,SC9-CPP-PROD,,"",,,
+2211908167760,994,-1,CIM_PhysicalElement,Server Blade 48,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,OSDC-MC1-F5-1,,,,,
+2211908164707,1287,-1,CIM_PhysicalElement,Rack Net Connector 3,Passive,,"",,,,,3,AE370A,,CN87316004,411120-001,,,SC9-CPP-PROD,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908164686,1285,-1,CIM_PhysicalElement,Server Blade 38,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,SC9-CPP-PROD,,,,,
+2211908167743,996,-1,CIM_PhysicalElement,Server Blade 6,,,osdc-stg-vmg1-6.vmware.com,,,,,1,               ,,USE839F8E0,443684-B21,,6,OSDC-MC1-F5-1,,,,,
+2211908164692,1285,-1,CIM_PhysicalElement,Server Blade 44,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,SC9-CPP-PROD,,,,,
+2211908167770,996,-1,CIM_PhysicalElement,Server Blade 24,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,OSDC-MC1-F5-1,,,,,
+2211908164694,1285,-1,CIM_PhysicalElement,Server Blade 46,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,SC9-CPP-PROD,,,,,
+2211908167780,996,-1,CIM_PhysicalElement,Server Blade 34,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,OSDC-MC1-F5-1,,,,,
+2211908164696,1285,-1,CIM_PhysicalElement,Server Blade 48,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,SC9-CPP-PROD,,,,,
+2211908167744,994,-1,CIM_PhysicalElement,Server Blade 40,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,OSDC-MC1-F5-1,,,,,
+2211908164688,1285,-1,CIM_PhysicalElement,Server Blade 40,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,SC9-CPP-PROD,,,,,
+2211908164713,1287,-1,CIM_PhysicalElement,Server Blade 1,,,CPP-DB01,,,,,1,405024-B21,,USE801879T,436376-001,,1,SC9-CPP-PROD,,,,,
+2211908167762,996,-1,CIM_PhysicalElement,Server Blade 16,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,OSDC-MC1-F5-1,,,,,
+2211908164720,1287,-1,CIM_PhysicalElement,Server Blade 8,,,CPP-DB08,,,,,1,405024-B21,,USE801879Y,436376-001,,8,SC9-CPP-PROD,,,,,
+2211908167768,996,-1,CIM_PhysicalElement,Server Blade 22,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,OSDC-MC1-F5-1,,,,,
+2211908164693,1285,-1,CIM_PhysicalElement,Server Blade 45,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,SC9-CPP-PROD,,,,,
+2211908167745,994,-1,CIM_PhysicalElement,Server Blade 41,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,OSDC-MC1-F5-1,,,,,
+2211908164697,1287,-1,CIM_PhysicalElement,Remote Insight Board 0,,Blade enclosure management processor,,,,,,,,,USE7436WY3,,,,,,,,,pciLightsOut100series (8)
+2211908164709,1287,-1,CIM_PhysicalElement,Rack Net Connector 5,0,,"",,,,,5,Unknown,,Unknown,"",,,SC9-CPP-PROD,,"",,,Unknown
+2211908167748,996,-1,CIM_PhysicalElement,Server Blade 8,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,OSDC-MC1-F5-1,,,,,
+2211908164714,1287,-1,CIM_PhysicalElement,Server Blade 2,,,CPP-DB02,,,,,1,405024-B21,,USE7436V6H,436376-001,,2,SC9-CPP-PROD,,,,,
+2211908167778,996,-1,CIM_PhysicalElement,Server Blade 32,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,OSDC-MC1-F5-1,,,,,
+2211908167792,996,-1,CIM_PhysicalElement,Server Blade 46,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,OSDC-MC1-F5-1,,,,,
+2211908167746,996,-1,CIM_PhysicalElement,Server Blade 7,,,osdc-stg-vmg1-7.vmware.com,,,,,1,443527-B21,,USE839F8E2,443684-B21,,7,OSDC-MC1-F5-1,,,,,
+2211908164702,1287,-1,CIM_PhysicalElement,Rack Power Supply 4,,,,,,,,,412138-B21,,5A22B0DHLTO1I1,411099-001,,4,SC9-CPP-PROD,,"",,,
+2211908167749,994,-1,CIM_PhysicalElement,Server Blade 43,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,OSDC-MC1-F5-1,,,,,
+2211908164705,1287,-1,CIM_PhysicalElement,Rack Net Connector 1,Other,,"",,,,,1,406740-B21,,TWT828V0M2,419329-001,,,SC9-CPP-PROD,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908167756,994,-1,CIM_PhysicalElement,Server Blade 46,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,OSDC-MC1-F5-1,,,,,
+2211908164708,1287,-1,CIM_PhysicalElement,Rack Net Connector 4,Passive,,"",,,,,4,AE370A,,CN8731602H,411120-001,,,SC9-CPP-PROD,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908167775,996,-1,CIM_PhysicalElement,Server Blade 29,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,OSDC-MC1-F5-1,,,,,
+2211908164706,1287,-1,CIM_PhysicalElement,Rack Net Connector 2,Other,,"",,,,,2,406740-B21,,TWT828V0LP,419329-001,,,SC9-CPP-PROD,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908164710,1287,-1,CIM_PhysicalElement,Rack Net Connector 6,Other,,"",,,,,6,WS-CBS3020-HPQ,,FOC1147T0V3,432904-001,,,SC9-CPP-PROD,,"",,,"Cisco Systems, Inc. Cisco Catalyst Blade Switch 3020 for HP"
+2211908167747,994,-1,CIM_PhysicalElement,Server Blade 42,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,OSDC-MC1-F5-1,,,,,
+2211908164716,1287,-1,CIM_PhysicalElement,Server Blade 4,,,CPP-DB04,,,,,1,XXXXXX-XXX,,3H7AMK0133,436376-001,,4,SC9-CPP-PROD,,,,,
+2211908167758,994,-1,CIM_PhysicalElement,Server Blade 47,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,OSDC-MC1-F5-1,,,,,
+2211908164717,1287,-1,CIM_PhysicalElement,Server Blade 5,,,CPP-DB05,,,,,1,XXXXXX-XXX,,use7436v6d,436376-001,,5,SC9-CPP-PROD,,,,,
+2211908167788,996,-1,CIM_PhysicalElement,Server Blade 42,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,OSDC-MC1-F5-1,,,,,
+2211908164711,1287,-1,CIM_PhysicalElement,Rack Net Connector 7,0,,"",,,,,7,Unknown,,Unknown,"",,,SC9-CPP-PROD,,"",,,Unknown
+2211908164715,1287,-1,CIM_PhysicalElement,Server Blade 3,,,CPP-DB03,,,,,1,405024-B21,,USE7436V69,436376-001,,3,SC9-CPP-PROD,,,,,
+2211908167751,994,-1,CIM_PhysicalElement,Server Blade 44,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,OSDC-MC1-F5-1,,,,,
+2211908164718,1287,-1,CIM_PhysicalElement,Server Blade 6,,,CPP-DB06,,,,,1,405024-B21,,USE7436V6F,436376-001,,6,SC9-CPP-PROD,,,,,
+2211908164725,1287,-1,CIM_PhysicalElement,Server Blade 13,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,SC9-CPP-PROD,,,,,
+2211908167757,996,-1,CIM_PhysicalElement,Server Blade 13,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,OSDC-MC1-F5-1,,,,,
+2211908164726,1287,-1,CIM_PhysicalElement,Server Blade 14,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,SC9-CPP-PROD,,,,,
+2211908167767,996,-1,CIM_PhysicalElement,Server Blade 21,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,OSDC-MC1-F5-1,,,,,
+2211908164735,1287,-1,CIM_PhysicalElement,Server Blade 23,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,SC9-CPP-PROD,,,,,
+2211908164712,1287,-1,CIM_PhysicalElement,Rack Net Connector 8,0,,"",,,,,8,Unknown,,Unknown,"",,,SC9-CPP-PROD,,"",,,Unknown
+2211908167753,996,-1,CIM_PhysicalElement,Server Blade 11,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,OSDC-MC1-F5-1,,,,,
+2211908164719,1287,-1,CIM_PhysicalElement,Server Blade 7,,,CPP-DB07,,,,,1,405024-B21,,USE801879P,436376-001,,7,SC9-CPP-PROD,,,,,
+2211908167771,996,-1,CIM_PhysicalElement,Server Blade 25,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,OSDC-MC1-F5-1,,,,,
+2211908164722,1287,-1,CIM_PhysicalElement,Server Blade 10,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,SC9-CPP-PROD,,,,,
+2211908167791,996,-1,CIM_PhysicalElement,Server Blade 45,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,OSDC-MC1-F5-1,,,,,
+2211908164729,1287,-1,CIM_PhysicalElement,Server Blade 17,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,SC9-CPP-PROD,,,,,
+2211908167754,994,-1,CIM_PhysicalElement,Server Blade 45,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,OSDC-MC1-F5-1,,,,,
+2211908164721,1287,-1,CIM_PhysicalElement,Server Blade 9,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,SC9-CPP-PROD,,,,,
+2211908164728,1287,-1,CIM_PhysicalElement,Server Blade 16,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,SC9-CPP-PROD,,,,,
+2211908167761,996,-1,CIM_PhysicalElement,Server Blade 15,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,OSDC-MC1-F5-1,,,,,
+2211908164730,1287,-1,CIM_PhysicalElement,Server Blade 18,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,SC9-CPP-PROD,,,,,
+2211908167779,996,-1,CIM_PhysicalElement,Server Blade 33,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,OSDC-MC1-F5-1,,,,,
+2211908164731,1287,-1,CIM_PhysicalElement,Server Blade 19,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,SC9-CPP-PROD,,,,,
+2211908161153,1403,-1,CIM_PhysicalElement,Server Blade 3,,,sc9-prod-vmg2-3,,,,,1,443527-B21,,USE852JLC4,443684-B21,,3,sc9-l07-1,,,,,
+2211908167794,996,-1,CIM_PhysicalElement,Server Blade 48,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,OSDC-MC1-F5-1,,,,,
+2211908164723,1287,-1,CIM_PhysicalElement,Server Blade 11,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,SC9-CPP-PROD,,,,,
+2211908167759,996,-1,CIM_PhysicalElement,Server Blade 14,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,OSDC-MC1-F5-1,,,,,
+2211908164724,1287,-1,CIM_PhysicalElement,Server Blade 12,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,SC9-CPP-PROD,,,,,
+2211908167764,996,-1,CIM_PhysicalElement,Server Blade 18,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,OSDC-MC1-F5-1,,,,,
+2211908164732,1287,-1,CIM_PhysicalElement,Server Blade 20,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,SC9-CPP-PROD,,,,,
+2211908167766,996,-1,CIM_PhysicalElement,Server Blade 20,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,OSDC-MC1-F5-1,,,,,
+2211908167785,996,-1,CIM_PhysicalElement,Server Blade 39,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,OSDC-MC1-F5-1,,,,,
+2211908164745,1287,-1,CIM_PhysicalElement,Server Blade 32,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,SC9-CPP-PROD,,,,,
+2211908161141,1403,-1,CIM_PhysicalElement,Rack Net Connector 7,0,,"",,,,,7,Unknown,,Unknown,"",,,sc9-l07-1,,"",,,HP Unknown
+2211908167763,996,-1,CIM_PhysicalElement,Server Blade 17,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,OSDC-MC1-F5-1,,,,,
+2211908167773,996,-1,CIM_PhysicalElement,Server Blade 27,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,OSDC-MC1-F5-1,,,,,
+2211908164727,1287,-1,CIM_PhysicalElement,Server Blade 15,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,SC9-CPP-PROD,,,,,
+2211908164733,1287,-1,CIM_PhysicalElement,Server Blade 21,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,SC9-CPP-PROD,,,,,
+2211908164739,1287,-1,CIM_PhysicalElement,Server Blade 27,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,SC9-CPP-PROD,,,,,
+2211908164747,1288,-1,CIM_PhysicalElement,Drive Array Drive 2.0,,,,,,,,,,,3NM3AGHP00009810L4NC,,,2,1,,HPD7,,,HP      DG146ABAB4
+2211908164734,1287,-1,CIM_PhysicalElement,Server Blade 22,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,SC9-CPP-PROD,,,,,
+2211908167765,996,-1,CIM_PhysicalElement,Server Blade 19,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,OSDC-MC1-F5-1,,,,,
+2211908164746,1287,-1,CIM_PhysicalElement,Server Blade 33,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,SC9-CPP-PROD,,,,,
+2211908161117,1403,-1,CIM_PhysicalElement,Rack Power Supply 3,,,,,,,,,412138-B21,,5A22B0EHLVC0J2,411099-001,,3,sc9-l07-1,,"",,,
+2211908164749,1288,-1,CIM_PhysicalElement,Drive Array Drive 2.1,,,,,,,,,,,3NM3AREQ00009810KUTL,,,2,2,,HPD7,,,HP      DG146ABAB4
+2211908167787,996,-1,CIM_PhysicalElement,Server Blade 41,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,OSDC-MC1-F5-1,,,,,
+2211908161119,1403,-1,CIM_PhysicalElement,Rack Power Supply 4,,,,,,,,,412138-B21,,5A22B0DHLU53O5,411099-001,,4,sc9-l07-1,,"",,,
+2211908161121,1403,-1,CIM_PhysicalElement,Rack Power Supply 5,,,,,,,,,412138-B21,,5A22B0DHLU50GK,411099-001,,5,sc9-l07-1,,"",,,
+2211908164756,1287,-1,CIM_PhysicalElement,Server Blade 41,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,SC9-CPP-PROD,,,,,
+2211908167769,996,-1,CIM_PhysicalElement,Server Blade 23,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,OSDC-MC1-F5-1,,,,,
+2211908164737,1287,-1,CIM_PhysicalElement,Server Blade 25,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,SC9-CPP-PROD,,,,,
+2211908164738,1287,-1,CIM_PhysicalElement,Server Blade 26,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,SC9-CPP-PROD,,,,,
+2211908164741,1288,-1,CIM_PhysicalElement,Storage System 2.0,,,,,,,"",,,,"",,0,,,,"",,,""
+2211908164754,1287,-1,CIM_PhysicalElement,Server Blade 39,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,SC9-CPP-PROD,,,,,
+2211908164736,1287,-1,CIM_PhysicalElement,Server Blade 24,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,SC9-CPP-PROD,,,,,
+2211908167772,996,-1,CIM_PhysicalElement,Server Blade 26,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,OSDC-MC1-F5-1,,,,,
+2211908164742,1287,-1,CIM_PhysicalElement,Server Blade 29,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,SC9-CPP-PROD,,,,,
+2211908167781,996,-1,CIM_PhysicalElement,Server Blade 35,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,OSDC-MC1-F5-1,,,,,
+2211908164750,1287,-1,CIM_PhysicalElement,Server Blade 35,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,SC9-CPP-PROD,,,,,
+2211908167793,996,-1,CIM_PhysicalElement,Server Blade 47,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,OSDC-MC1-F5-1,,,,,
+2211908161077,1403,-1,CIM_PhysicalElement,Remote Insight Board 0,,Blade enclosure management processor,,,,,,,,,USE743707S,,,,,,,,,pciLightsOut100series (8)
+2211908164757,1287,-1,CIM_PhysicalElement,Server Blade 42,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,SC9-CPP-PROD,,,,,
+2211908164767,1288,-1,CIM_PhysicalElement,PCI Board 2.0,,,(Empty)-2.0,,,,,,,,,,,3,,,,,,
+2211908164740,1287,-1,CIM_PhysicalElement,Server Blade 28,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,SC9-CPP-PROD,,,,,
+2211908167774,996,-1,CIM_PhysicalElement,Server Blade 28,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,OSDC-MC1-F5-1,,,,,
+2211908164743,1287,-1,CIM_PhysicalElement,Server Blade 30,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,SC9-CPP-PROD,,,,,
+2211908167786,996,-1,CIM_PhysicalElement,Server Blade 40,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,OSDC-MC1-F5-1,,,,,
+2211908164752,1287,-1,CIM_PhysicalElement,Server Blade 37,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,SC9-CPP-PROD,,,,,
+2211908167790,996,-1,CIM_PhysicalElement,Server Blade 44,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,OSDC-MC1-F5-1,,,,,
+2211908164744,1287,-1,CIM_PhysicalElement,Server Blade 31,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,SC9-CPP-PROD,,,,,
+2211908167782,996,-1,CIM_PhysicalElement,Server Blade 36,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,OSDC-MC1-F5-1,,,,,
+2211908164748,1287,-1,CIM_PhysicalElement,Server Blade 34,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,SC9-CPP-PROD,,,,,
+2211908161129,1403,-1,CIM_PhysicalElement,Rack Net Connector 1,Other,,"",,,,,1,406740-B21,,TWT939V1N8,419329-001,,,sc9-l07-1,,"",,,HP HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908164751,1287,-1,CIM_PhysicalElement,Server Blade 36,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,SC9-CPP-PROD,,,,,
+2211908167783,996,-1,CIM_PhysicalElement,Server Blade 37,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,OSDC-MC1-F5-1,,,,,
+2211908164753,1287,-1,CIM_PhysicalElement,Server Blade 38,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,SC9-CPP-PROD,,,,,
+2211908167784,996,-1,CIM_PhysicalElement,Server Blade 38,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,OSDC-MC1-F5-1,,,,,
+2211908164760,1287,-1,CIM_PhysicalElement,Server Blade 45,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,SC9-CPP-PROD,,,,,
+2211908164765,1288,-1,CIM_PhysicalElement,PCI Board 1.3,,,ATI ES1000-1.3,,,,,,,,,,,0,,,,,,
+2211908164698,1288,-1,CIM_PhysicalElement,Drive Array Controller 2,,,HP Smart Array E200i Controller-66.8,,,,,P9A3A0B9SVD1K8,,,3H78MK0089,,A,0,,,1.80,Slot 0,,HP Smart Array E200i Controller
+2211908161124,1403,-1,CIM_PhysicalElement,Rack Power Supply 6,,,,,,,,,412138-B21,,5A22B0DHLTV1CD,411099-001,,6,sc9-l07-1,,"",,,
+2211908164755,1287,-1,CIM_PhysicalElement,Server Blade 40,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,SC9-CPP-PROD,,,,,
+2211908164759,1287,-1,CIM_PhysicalElement,Server Blade 44,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,SC9-CPP-PROD,,,,,
+2211908167789,996,-1,CIM_PhysicalElement,Server Blade 43,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,OSDC-MC1-F5-1,,,,,
+2211908164762,1287,-1,CIM_PhysicalElement,Server Blade 47,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,SC9-CPP-PROD,,,,,
+2211908164769,1288,-1,CIM_PhysicalElement,PCI Board 5.0,,,HP NC373i Multifunction Gigabit Server Adapter-5.0,,,,,,,,,,,0,,,,,,
+2211908164774,1288,-1,CIM_PhysicalElement,PCI Board 73.0,,,HP NC373m Multifunction Gigabit Server Adapter-73.0,,,,,,,,,,,2,,,,,,
+2211908164758,1287,-1,CIM_PhysicalElement,Server Blade 43,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,SC9-CPP-PROD,,,,,
+2211908164770,1288,-1,CIM_PhysicalElement,PCI Board 7.4,,,HP NC326i PCIe Dual Port Gigabit Server Adapter-7.4,,,,,,,,,,,0,,,,,,
+2211908164773,1288,-1,CIM_PhysicalElement,PCI Board 71.0,,,HP NC373m Multifunction Gigabit Server Adapter-71.0,,,,,,,,,,,2,,,,,,
+2211908164660,1288,-1,CIM_PhysicalElement,Remote Insight Board 0,,,HP Integrated Lights-Out Management 2-1.4,1220166000000,,,,10.113.58.35,,,ILOUSE801879T,,2,0,,,1.61,,,HP Integrated Lights-Out 2
+2211908161157,1403,-1,CIM_PhysicalElement,Server Blade 5,,,sc9-prod-vmg2-5,,,,,1,443527-B21,,USE80996B8,443684-B21,,5,sc9-l07-1,,,,,
+2211908161175,1403,-1,CIM_PhysicalElement,Server Blade 14,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,sc9-l07-1,,,,,
+2211908164761,1287,-1,CIM_PhysicalElement,Server Blade 46,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,SC9-CPP-PROD,,,,,
+2211908161161,1403,-1,CIM_PhysicalElement,Server Blade 7,,,sc9-prod-vmg2-7,,,,,1,443527-B21,,USE80996BM,443684-B21,,7,sc9-l07-1,,,,,
+2211908161167,1403,-1,CIM_PhysicalElement,Server Blade 10,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,sc9-l07-1,,,,,
+2211908164763,1287,-1,CIM_PhysicalElement,Server Blade 48,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,SC9-CPP-PROD,,,,,
+2211908164764,1288,-1,CIM_PhysicalElement,PCI Board 0.2,,,Serial bus controller - USB (Open Host Controller Specification)-0.2,,,,,,,,,,,0,,,,,,
+2211908164768,1288,-1,CIM_PhysicalElement,PCI Board 3.0,,,HP NC373i Multifunction Gigabit Server Adapter-3.0,,,,,,,,,,,0,,,,,,
+2211908167796,1060,-1,CIM_PhysicalElement,Keyboard 0,,101-Key Enhanced Keyboard,,,,,,,,,,,,,,,,,,
+2211908164771,1288,-1,CIM_PhysicalElement,PCI Board 8.0,,,Serial bus controller - Fibre Channel-8.0,,,,,,,,,,,1,,,,,,
+2211908167805,1060,-1,CIM_PhysicalElement,PCI Board 2.3,,,HP NC370i Multifunction Gigabit Server Adapter-2.3,,,,,,,,,,,0,,,,,,
+2211908161135,1403,-1,CIM_PhysicalElement,Rack Net Connector 4,Other,,"",,,,,4,406740-B21,,TWT939V1M5,419329-001,,,sc9-l07-1,,"",,,HP HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908161113,1403,-1,CIM_PhysicalElement,Rack Power Supply 1,,,,,,,,,412138-B21,,5A22B0DHLU40DT,411099-001,,1,sc9-l07-1,,"",,,
+2211908161115,1403,-1,CIM_PhysicalElement,Rack Power Supply 2,,,,,,,,,412138-B21,,5A22B0DHLU5042,411099-001,,2,sc9-l07-1,,"",,,
+2211908161184,1403,-1,CIM_PhysicalElement,Server Blade 19,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,sc9-l07-1,,,,,
+2211908167800,1060,-1,CIM_PhysicalElement,Drive Array Drive 0.1,,,,,,,,,,,3NP1YEMT000098137NXJ,,,0,2,,HPD7,,,HP      DG072ABAB3
+2211908161190,1403,-1,CIM_PhysicalElement,Server Blade 24,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,sc9-l07-1,,,,,
+2211908161137,1403,-1,CIM_PhysicalElement,Rack Net Connector 5,Passive,,"",,,,,5,AE370A,,CN8738600J,411120-001,,,sc9-l07-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908167806,1060,-1,CIM_PhysicalElement,PCI Board 2.4,,,HP NC370i Multifunction Gigabit Server Adapter-2.4,,,,,,,,,,,0,,,,,,
+2211908161159,1403,-1,CIM_PhysicalElement,Server Blade 6,,,sc9-prod-vmg2-6,,,,,1,443527-B21,,USE80996B9,443684-B21,,6,sc9-l07-1,,,,,
+2211908167501,1394,-1,CIM_PhysicalElement,Rack Power Supply 1,,,,,,,,,412138-B21,,5A22B0DHLU40DT,411099-001,,1,sc9-l07-1,,"",,,
+2211908161163,1403,-1,CIM_PhysicalElement,Server Blade 8,,,sc9-prod-vmg2-8,,,,,1,443527-B21,,USE80996BR,443684-B21,,8,sc9-l07-1,,,,,
+2211908161169,1403,-1,CIM_PhysicalElement,Server Blade 11,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,sc9-l07-1,,,,,
+2211908167502,1394,-1,CIM_PhysicalElement,Rack Power Supply 2,,,,,,,,,412138-B21,,5A22B0DHLU5042,411099-001,,2,sc9-l07-1,,"",,,
+2211908161131,1403,-1,CIM_PhysicalElement,Rack Net Connector 2,Other,,"",,,,,2,406740-B21,,TWT939V1LP,419329-001,,,sc9-l07-1,,"",,,HP HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908161142,1403,-1,CIM_PhysicalElement,Rack Net Connector 8,0,,"",,,,,8,Unknown,,Unknown,"",,,sc9-l07-1,,"",,,HP Unknown
+2211908167500,1394,-1,CIM_PhysicalElement,Remote Insight Board 0,,Blade enclosure management processor,,,,,,,,,USE743707S,,,,,,,,,pciLightsOut100series (8)
+2211908167507,1394,-1,CIM_PhysicalElement,Rack Net Connector 1,Other,,"",,,,,1,406740-B21,,TWT939V1N8,419329-001,,,sc9-l07-1,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908161133,1403,-1,CIM_PhysicalElement,Rack Net Connector 3,Other,,"",,,,,3,406740-B21,,TWT939V1JR,419329-001,,,sc9-l07-1,,"",,,HP HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908161181,1403,-1,CIM_PhysicalElement,Server Blade 17,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,sc9-l07-1,,,,,
+2211908161215,1403,-1,CIM_PhysicalElement,Server Blade 37,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,sc9-l07-1,,,,,
+2211908167795,1060,-1,CIM_PhysicalElement,Remote Insight Board 0,,,HP Integrated Lights-Out Management 2-0.4,1244617200000,,,,10.16.66.227,,,ILOUSE74576L0,,2,0,,,1.78,,,HP Integrated Lights-Out 2
+2211908161149,1403,-1,CIM_PhysicalElement,Server Blade 1,,,sc9-prod-vmg2-1,,,,,1,443527-B21,,USE852JLC1,443684-B21,,1,sc9-l07-1,,,,,
+2211908161151,1403,-1,CIM_PhysicalElement,Server Blade 2,,,sc9-prod-vmg2-2,,,,,1,443527-B21,,USE850JB22,443684-B21,,2,sc9-l07-1,,,,,
+2211908167801,1060,-1,CIM_PhysicalElement,PCI Board 0.3,,,ATI ES1000-0.3,,,,,,,,,,,0,,,,,,
+2211908167797,1060,-1,CIM_PhysicalElement,Drive Array Controller 0,,,HP Smart Array E200i Controller-80.8,,,,,P9A3A0B9SV80W4,,,QS7AMU6640,,A,0,,,1.66,Slot 0,,HP Smart Array E200i Controller
+2211908167509,1394,-1,CIM_PhysicalElement,Rack Net Connector 3,Other,,"",,,,,3,406740-B21,,TWT939V1JR,419329-001,,,sc9-l07-1,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908167798,1060,-1,CIM_PhysicalElement,Storage System 0.0,,,,,,,"",,,,"",,0,,,,"",,,""
+2211908167505,1394,-1,CIM_PhysicalElement,Rack Power Supply 5,,,,,,,,,412138-B21,,5A22B0DHLU50GK,411099-001,,5,sc9-l07-1,,"",,,
+2211908167799,1060,-1,CIM_PhysicalElement,Drive Array Drive 0.0,,,,,,,,,,,3NP1WFBZ00009813HV2P,,,0,1,,HPD7,,,HP      DG072ABAB3
+2211908167803,1060,-1,CIM_PhysicalElement,PCI Board 0.7,,,Serial bus controller - USB (Open Host Controller Specification)-0.7,,,,,,,,,,,0,,,,,,
+2211908161155,1403,-1,CIM_PhysicalElement,Server Blade 4,,,sc9-prod-vmg2-4,,,,,1,443527-B21,,USE80996BV,443684-B21,,4,sc9-l07-1,,,,,
+2211908161179,1403,-1,CIM_PhysicalElement,Server Blade 16,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,sc9-l07-1,,,,,
+2211908161185,1403,-1,CIM_PhysicalElement,Server Blade 20,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,sc9-l07-1,,,,,
+2211908161165,1403,-1,CIM_PhysicalElement,Server Blade 9,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,sc9-l07-1,,,,,
+2211908167804,1060,-1,CIM_PhysicalElement,PCI Board 1.0,,,(Empty)-1.0,,,,,,,,,,,1,,,,,,
+2211908161171,1403,-1,CIM_PhysicalElement,Server Blade 12,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,sc9-l07-1,,,,,
+2211908161183,1403,-1,CIM_PhysicalElement,Server Blade 18,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,sc9-l07-1,,,,,
+2211908161222,1403,-1,CIM_PhysicalElement,Server Blade 42,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,sc9-l07-1,,,,,
+2211908161226,1403,-1,CIM_PhysicalElement,Server Blade 44,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,sc9-l07-1,,,,,
+2211908167807,1060,-1,CIM_PhysicalElement,PCI Board 3.0,,,(Empty)-3.0,,,,,,,,,,,2,,,,,,
+2211908161189,1403,-1,CIM_PhysicalElement,Server Blade 23,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,sc9-l07-1,,,,,
+2211908161220,1403,-1,CIM_PhysicalElement,Server Blade 41,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,sc9-l07-1,,,,,
+2211908167808,1060,-1,CIM_PhysicalElement,PCI Board 4.0,,,(Empty)-4.0,,,,,,,,,,,3,,,,,,
+2211908161173,1403,-1,CIM_PhysicalElement,Server Blade 13,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,sc9-l07-1,,,,,
+2211908161194,1403,-1,CIM_PhysicalElement,Server Blade 26,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,10,sc9-l07-1,,,,,
+2211908161235,1403,-1,CIM_PhysicalElement,Server Blade 48,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,sc9-l07-1,,,,,
+2211908161177,1403,-1,CIM_PhysicalElement,Server Blade 15,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,sc9-l07-1,,,,,
+2211908161186,1403,-1,CIM_PhysicalElement,Server Blade 21,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,5,sc9-l07-1,,,,,
+2211908167511,1394,-1,CIM_PhysicalElement,Rack Net Connector 5,Passive,,"",,,,,5,AE370A,,CN8738600J,411120-001,,,sc9-l07-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908161218,1403,-1,CIM_PhysicalElement,Server Blade 39,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,7,sc9-l07-1,,,,,
+2211908167514,1394,-1,CIM_PhysicalElement,Rack Net Connector 8,0,,"",,,,,8,Unknown,,Unknown,"",,,sc9-l07-1,,"",,,Unknown
+2211908161187,1403,-1,CIM_PhysicalElement,Server Blade 22,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,sc9-l07-1,,,,,
+2211908161206,1403,-1,CIM_PhysicalElement,Server Blade 33,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,1,sc9-l07-1,,,,,
+2211908161192,1403,-1,CIM_PhysicalElement,Server Blade 25,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,9,sc9-l07-1,,,,,
+2211908167504,1394,-1,CIM_PhysicalElement,Rack Power Supply 4,,,,,,,,,412138-B21,,5A22B0DHLU53O5,411099-001,,4,sc9-l07-1,,"",,,
+2211908161212,1403,-1,CIM_PhysicalElement,Server Blade 36,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,4,sc9-l07-1,,,,,
+2211908161219,1403,-1,CIM_PhysicalElement,Server Blade 40,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,8,sc9-l07-1,,,,,
+2211908167508,1394,-1,CIM_PhysicalElement,Rack Net Connector 2,Other,,"",,,,,2,406740-B21,,TWT939V1LP,419329-001,,,sc9-l07-1,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908167510,1394,-1,CIM_PhysicalElement,Rack Net Connector 4,Other,,"",,,,,4,406740-B21,,TWT939V1M5,419329-001,,,sc9-l07-1,,"",,,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem
+2211908167512,1394,-1,CIM_PhysicalElement,Rack Net Connector 6,Passive,,"",,,,,6,AE370A,,CN8738601F,411120-001,,,sc9-l07-1,,"",,,BROCADE Brocade 4/12 SAN Switch for HP c-Class BladeSystem
+2211908161196,1403,-1,CIM_PhysicalElement,Server Blade 27,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,sc9-l07-1,,,,,
+2211908161210,1403,-1,CIM_PhysicalElement,Server Blade 35,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,3,sc9-l07-1,,,,,
+2211908161217,1403,-1,CIM_PhysicalElement,Server Blade 38,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,6,sc9-l07-1,,,,,
+2211908167513,1394,-1,CIM_PhysicalElement,Rack Net Connector 7,0,,"",,,,,7,Unknown,,Unknown,"",,,sc9-l07-1,,"",,,Unknown
+2211908161198,1403,-1,CIM_PhysicalElement,Server Blade 28,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,12,sc9-l07-1,,,,,
+2211908161208,1403,-1,CIM_PhysicalElement,Server Blade 34,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,2,sc9-l07-1,,,,,
+2211908161200,1403,-1,CIM_PhysicalElement,Server Blade 29,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,sc9-l07-1,,,,,
+2211908161201,1403,-1,CIM_PhysicalElement,Server Blade 30,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,sc9-l07-1,,,,,
+2211908161202,1403,-1,CIM_PhysicalElement,Server Blade 31,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,sc9-l07-1,,,,,
+2211908161203,1403,-1,CIM_PhysicalElement,Server Blade 32,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,16,sc9-l07-1,,,,,
+2211908161224,1403,-1,CIM_PhysicalElement,Server Blade 43,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,11,sc9-l07-1,,,,,
+2211908161230,1403,-1,CIM_PhysicalElement,Server Blade 46,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,14,sc9-l07-1,,,,,
+2211908161228,1403,-1,CIM_PhysicalElement,Server Blade 45,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,13,sc9-l07-1,,,,,
+2211908161233,1403,-1,CIM_PhysicalElement,Server Blade 47,,,Unknown,,,,,0,Unknown,,Unknown,Unknown,,15,sc9-l07-1,,,,,
