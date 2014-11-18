@@ -26,9 +26,13 @@ scope :ops_status, where('ops_status != ?', "Deleted")
 class << self
   def importing_f5_data
     f5cluster_data = f5cluster_data_import
+    p "Done with f5Cluster data Import"
     f5vip_data = f5vip_data_import
+    p "Done with F5Vip data Import"
     f5pool_data = f5_pool_import
+    p "Done with F5 pool data Import"
     f5_node_import = f5_node_import
+    p "Done with F5 node data Import"
   end
 
   def f5cluster_data_import

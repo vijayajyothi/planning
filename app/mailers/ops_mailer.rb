@@ -4,4 +4,8 @@ class OpsMailer < ActionMailer::Base
   def confirmation_mail
     mail(to: "vkalangi@vmware.com", subject: "Cron Job Done")
   end
+
+  def f5_confirmation_mail
+    mail(to: "vkalangi@vmware.com", subject: "F5 Cron Job Done")
+  end
 end

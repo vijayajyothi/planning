@@ -17,7 +17,7 @@ set :output, "/home/workspace/opsgps_development/cron_log.log"
 #
 
 every :day, :at=> '12:01am' do
-  rake `rm -rf /home/workspace/opsgps_development/solr`
+  # rake `rm -rf /home/workspace/opsgps_development/solr`
   rake "sunspot:solr:stop" 
   rake "sunspot:solr:start"
   rake "cron"
@@ -25,6 +25,15 @@ every :day, :at=> '12:01am' do
   rake `chmod -R 777 *`
 end
 
+
+every 2.hours do
+  rake "sunspot:solr:stop" 
+  rake "sunspot:solr:start"
+  rake "f5cron"
+  rake "sunspot:solr:reindex"
+  rake `chmod -R 777 *`
+
+end
 # Learn more: http://github.com/javan/whenever
 
 # Run below line for updating cronjobs after updating this file.
