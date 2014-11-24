@@ -35,6 +35,7 @@ class SessionsController < ApplicationController
        redirect_to new_session_path, :notice =>"Invalid Username or Password"
      else
       cookies[:user] = user
+      # cookies.permanent[:user] = user
      redirect_to root_url, :notice => "Logged in!"
     end
     # if user.present?
