@@ -1,6 +1,6 @@
-Sep 18, 2014 12:01:25 AM org.apache.solr.core.SolrCore initIndex
+Oct 20, 2014 12:01:13 AM org.apache.solr.core.SolrCore initIndex
 WARNING: [default] WARNING: Solr index directory 'solr/./default/data/index/' is locked.  Unlocking...
-Sep 18, 2014 12:01:25 AM org.apache.solr.core.CoreContainer recordAndThrow
+Oct 20, 2014 12:01:13 AM org.apache.solr.core.CoreContainer recordAndThrow
 SEVERE: Unable to create core: default
 org.apache.solr.common.SolrException: Cannot forcefully unlock a NativeFSLock which is held by another indexer component: solr/./default/data/index/write.lock
 	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:806)
@@ -23,7 +23,7 @@ Caused by: org.apache.lucene.store.LockReleaseFailedException: Cannot forcefully
 	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:479)
 	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:730)
 	... 13 more
-Sep 18, 2014 12:01:25 AM org.apache.solr.common.SolrException log
+Oct 20, 2014 12:01:13 AM org.apache.solr.common.SolrException log
 SEVERE: null:org.apache.solr.common.SolrException: Unable to create core: default
 	at org.apache.solr.core.CoreContainer.recordAndThrow(CoreContainer.java:1672)
 	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1057)
