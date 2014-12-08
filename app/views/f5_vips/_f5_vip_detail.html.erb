@@ -76,7 +76,7 @@
                 <% @vm = Vm.where(:ip=>each_f5node.ip).first %>
                   <%  if @vm.present?%>
                 <tr>
-                  <td><%= @vm.name %></td>
+                  <td><b><%= link_to @vm.name, @vm, :style=>"color:black;", :remote=> true%></b></td>
                   <td><%= @vm.power_state  %></td>
 
                 </tr>   
