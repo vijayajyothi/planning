@@ -1,0 +1,58 @@
+<!-- <script src="http://code.highcharts.com/stock/highstock.js"></script> -->
+<!-- <script src="http://code.highcharts.com/modules/data.js"></script> -->
+<!-- <script src="http://code.highcharts.com/modules/exporting.js"></script> -->
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<table id="datatable" class="table table-striped tablesorter">
+	<thead>
+		<tr>
+            <th>Data Centers</th>
+            <th>Vms</th>
+			<th>CPUs</th>
+            <th>Memory</th>
+            <th>Used Memory</th>
+        </tr>
+	</thead>
+	<tbody>
+        <% @datacenters.each do |dcenter|%>
+        <tr>
+            <th><%= my_vdc(dcenter).name%></th>
+            <th><%= vms(dcenter)%></th>
+            <td><%= cpu(dcenter)%></td>
+            <td><%= memory(dcenter)%></td>
+            <td><%= used_memory(dcenter)%></td>
+            
+        </tr>
+        <% end %>
+        
+	</tbody>
+</table>
+<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        data: {
+            table: document.getElementById('datatable')
+        },
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Data Center details in brief'
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Count'
+            }
+        },
+        tooltip: {
+            formatter: function() {
+                return '<b>'+ this.series.name +'</b><br/>'+
+                    this.point.y +' '+ this.point.name.toLowerCase();
+            }
+        }
+    });
+});
+</script>
+

@@ -170,9 +170,18 @@ get "/selected_cluster/:id" => "clusters#selected_cluster", :as => :selected_clu
 get "/vmhosts" => "vmhosts#index", :as => :vmhosts
 get "/selected_vmhost/:id" => "vmhosts#selected_vmhost", :as => :selected_vmhost
 
+# Error Logs
 match '/404' =>'error#not_found'
 match '/422' =>'error#server_error'
 match '/500' =>'error#server_error'
+
+# F5 Cluster
+get "/f5s" => "f5_clusters#index", :as => :f5s
+get "/selected_f5cluster/:id" => "f5_clusters#selected_f5cluster", :as => :selected_f5cluster
+
+# F5 Cluster
+get "/f5vips" => "f5_vips#index", :as => :f5vips
+get "/selected_f5_vip/:id" => "f5_vips#selected_f5_vip", :as => :selected_f5_vip
 
 
 resources :users 

@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my $arraylistfile = '/mnt/datadepot/scripts/clariion/navi-arrays.txt';
+
+my %arrays;
+
+open my $in, $arraylistfile
+    or die "can't open $arraylistfile: $!\n";
+while (<$in>) {
+    chomp;
+    next if /^#/;
+    my ($ipaddr, $arrayname) = split(/\s+/, 2);
+    $arrays{$ipaddr} = $arrayname;
+}
+close($in);

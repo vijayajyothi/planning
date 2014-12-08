@@ -1,0 +1,168 @@
+
+Chassis Backplane Revision: 0
+
+SW BLADE  Slot: 1	
+Header Version:       	2
+Power Consume Factor: 	-115
+Factory Part Num:      	60-1000375-13
+Factory Serial Num:    	AHG0414F058
+Manufacture:           	Day:  7  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+
+SW BLADE  Slot: 2	
+Header Version:       	2
+Power Consume Factor: 	-115
+Factory Part Num:      	60-1000375-13
+Factory Serial Num:    	AHG0423F04K
+Manufacture:           	Day:  2  Month:  6  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	370 days
+Time Awake:            	112 days
+
+SW BLADE  Slot: 3	
+Header Version:       	2
+Power Consume Factor: 	-115
+Factory Part Num:      	60-1000375-13
+Factory Serial Num:    	AHG0429G04L
+Manufacture:           	Day: 28  Month:  7  Year: 2011
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	25 days
+Time Awake:            	25 days
+
+CP BLADE  Slot: 6	
+Header Version:       	2
+Power Consume Factor: 	-40
+Factory Part Num:      	60-1000376-08
+Factory Serial Num:    	AHJ0415F066
+Manufacture:           	Day: 13  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+
+CP BLADE  Slot: 7	
+Header Version:       	2
+Power Consume Factor: 	-40
+Factory Part Num:      	60-1000376-08
+Factory Serial Num:    	AHJ0415F00M
+Manufacture:           	Day:  9  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+
+CORE BLADE  Slot: 5	
+Header Version:       	2
+Power Consume Factor: 	-105
+Factory Part Num:      	60-1000377-11
+Factory Serial Num:    	AHL0415F026
+Manufacture:           	Day: 12  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+
+CORE BLADE  Slot: 8	
+Header Version:       	2
+Power Consume Factor: 	-105
+Factory Part Num:      	60-1000377-11
+Factory Serial Num:    	AHL0415F01F
+Manufacture:           	Day: 12  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+
+SW BLADE  Slot: 11	
+Header Version:       	2
+Power Consume Factor: 	-115
+Factory Part Num:      	60-1000375-13
+Factory Serial Num:    	AHG0445E04R
+Manufacture:           	Day: 17  Month: 11  Year: 2009
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	469 days
+Time Awake:            	112 days
+
+SW BLADE  Slot: 12	
+Header Version:       	2
+Power Consume Factor: 	-115
+Factory Part Num:      	60-1000375-13
+Factory Serial Num:    	AHG0415F0K8
+Manufacture:           	Day: 17  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+
+POWER SUPPLY  Unit: 1	
+Header Version:       	2
+Power Consume Factor: 	2000
+Factory Part Num:      	23-0000067-01
+Factory Serial Num:    	AGC2M06FSST
+Manufacture:           	Day: 21  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+
+POWER SUPPLY  Unit: 3	
+Header Version:       	2
+Power Consume Factor: 	2000
+Factory Part Num:      	23-0000067-01
+Factory Serial Num:    	AGC2M06FSSH
+Manufacture:           	Day: 21  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	441 days
+Time Awake:            	2 days
+
+FAN  Unit: 1	
+Header Version:       	2
+Power Consume Factor: 	-126
+Factory Part Num:      	60-1000384-07
+Factory Serial Num:    	AGB0618D13A
+Manufacture:           	Day: 30  Month:  4  Year: 2008
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	234 days
+Time Awake:            	112 days
+
+FAN  Unit: 2	
+Header Version:       	2
+Power Consume Factor: 	-126
+Factory Part Num:      	60-1000384-09
+Factory Serial Num:    	AGB0616F0DC
+Manufacture:           	Day: 21  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+
+FAN  Unit: 3	
+Header Version:       	2
+Power Consume Factor: 	-126
+Factory Part Num:      	60-1000384-09
+Factory Serial Num:    	AGB0616F0DH
+Manufacture:           	Day: 21  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+
+WWN  Unit: 1
+Header Version:       	2
+Power Consume Factor: 	-1
+Factory Part Num:      	60-1000491-05
+Factory Serial Num:    	AFX0617F02G
+Manufacture:           	Day: 21  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+ID:           		EMC0000CA
+Part Num:     		CONTRX0000DCX
+Serial Num:   		BRCAFX0617F02G
+
+WWN  Unit: 2	
+Header Version:       	2
+Power Consume Factor: 	-1
+Factory Part Num:      	60-1000491-05
+Factory Serial Num:    	AJX0413F08F
+Manufacture:           	Day: 21  Month:  4  Year: 2010
+Update:                	Day:  7  Month: 11  Year: 2011
+Time Alive:            	442 days
+Time Awake:            	112 days
+
+Chassis Factory Serial Num: AFY0617F00K
+

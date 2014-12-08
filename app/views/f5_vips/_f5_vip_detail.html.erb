@@ -1,0 +1,173 @@
+<div class="right-panel">
+  <div class="span9">
+
+    <div class="span6">
+      <div class="workflow-blocks">
+        <div class="workflow-heading"><b>F5 VIP:</b> <%= @f5_vip.name %></div>
+
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <td><b>Big IP</b></td>
+              <td><%= link_to "https://#{vip_f5cluster(@f5_vip.f5_cluster_id).primary_unit_ip}", "https://#{vip_f5cluster(@f5_vip.f5_cluster_id).primary_unit_ip}", target: '_blank' %></td>
+              <td><b>F5 VIP IP</b></td>
+              <td><%= @f5_vip.ip %></td>
+            </tr>
+
+            <tr>
+              <td><b>Port</b></td>
+              <td><%= @f5_vip.port %></td>
+              <td ><b>F5 Cluster</b></td>
+              <td colspan=3><%= vip_f5cluster(@f5_vip.f5_cluster_id).name %></td>
+            </tr> 
+          </tbody></table>
+
+        </div>
+      </div>
+      <!-- F5 Pools -->
+      <% @f5pools = F5Pool.find_by_sql(F5Pool.group(:f5_cluster_id).where(:f5_vip_id=>@f5_vip.id))%>
+      <div class="span6">
+        <div class="workflow-blocks">
+          <div class="workflow-heading"> <a data-toggle="collapse" data-parent="#accordion" href="#pool">
+            <span>F5 Pools</span>
+          </a></div>
+
+          <div id="pool">
+            <div class="" style="max-height:544px; overflow:auto;">
+              <table class="table table-hover">
+               <tbody>
+                <th>Name</th>
+                <th> LB Method</th>
+                <% @f5pools.each do |each_pool|%>
+                <tr>
+                  <td><b><%= each_pool.name %></b></td>
+                  <td><%= each_pool.lb_method %></td>
+                </tr>  
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- F5 Pool ends -->
+
+    <!-- F5 Cluster -->
+
+    <div class="panel-group" id="accordion" style="clear:left;">
+    <% @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('ip,port').where(:f5_vip_id=>@f5_vip.id))%>
+
+      <% @f5pools = F5Pool.find_by_sql(F5Pool.group(:f5_cluster_id).where(:f5_vip_id=>@f5_vip.id))%>
+
+      <div class="span6">
+        <div class="workflow-blocks" style="margin-top:0px;">
+          <div class="workflow-heading"> <a data-toggle="collapse" data-parent="#accordion" href="#f5vm">
+            <span>VMs</span>
+          </a></div>
+
+          <div id="f5vm" class="">
+            <div class="" style="max-height:544px; overflow:auto;">
+             <table class="table table-hover">
+               <tbody>
+                <th>Name</th>
+                <th>Status</th>
+                <% @f5nodes.each do |each_f5node|%>
+                <% @vm = Vm.where(:ip=>each_f5node.ip).first %>
+                  <%  if @vm.present?%>
+                <tr>
+                  <td><%= @vm.name %></td>
+                  <td><%= @vm.power_state  %></td>
+
+                </tr>   
+                  <%end  %>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- F5 Cluster ends -->
+
+
+    <%# @f5nodes = F5Node.where(:f5_vip_id=>@f5_vip.id) %>
+
+    <div  class="panel panel-default  span6"  style="margin-top:0px;">
+      <div class="workflow-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#node">
+          <span>F5 Nodes</span>
+          <p> Count : <%= @f5nodes.count %></p></a>
+        </div>
+
+        <div id="node" class="">
+          <div class="" style="max-height:544px; overflow:auto;">
+            <table class="table table-hover">
+             <tbody>
+              <th>IP</th>
+              <th>Port</th>
+              <% @f5nodes.each do |each_f5node|%>
+              <tr>
+                <td><b><%=  each_f5node.ip%></b></td>
+                <td><%=  each_f5node.port%></td>
+                <td><%#=  each_f5node.id%></td>
+
+              </tr>  
+              <% end %>
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!-- F5 Cluster -->
+
+    <div class="panel-group" id="accordion" style="clear:left;">
+      <% @f5pools = F5Pool.find_by_sql(F5Pool.group(:f5_cluster_id).where(:f5_vip_id=>@f5_vip.id))%>
+
+      <div class="panel panel-default  span12"  style="margin-top:0px;">
+        <div class="workflow-heading">
+          <a data-toggle="collapse" data-parent="#accordion" href="#f5cluster">
+            <span><b>F5 Cluster: </b><%= vip_f5cluster(@f5_vip.f5_cluster_id).name%></span>
+          </a>
+        </div>
+        <div id="f5cluster" class="">
+          <div class="" style="max-height:544px; overflow:auto;">
+           <table class="table table-hover">
+            <tbody>
+              <tr>
+                <td><b>Datacenter</b></td>
+                <td><%= vip_f5cluster(@f5_vip.f5_cluster_id).data_center %></td>
+                <td><b>F5 Cluster</b></td>
+                <td><%= vip_f5cluster(@f5_vip.f5_cluster_id).name %></td>
+              </tr> 
+              <tr>
+                <td><b>Device 1</b></td>
+                <td><%= link_to "https://#{vip_f5cluster(@f5_vip.f5_cluster_id).primary_unit_ip}","https://#{vip_f5cluster(@f5_vip.f5_cluster_id).primary_unit_ip}", target: "_blank"%></td>
+                <td><b>Device 2</b></td>
+                <td><%= link_to "https://#{vip_f5cluster(@f5_vip.f5_cluster_id).secondary_unit_ip}", "https://#{vip_f5cluster(@f5_vip.f5_cluster_id).secondary_unit_ip}", target: "_blank" %></td>
+              </tr> 
+              <tr>
+                <td> <b>VLAN IPs</b></td>
+                <td colspan=3><%= vip_f5cluster(@f5_vip.f5_cluster_id).network_list%></td>
+              </tr><tr>
+              <td><b>VLANs</b></td>
+              <td colspan=3><%= vip_f5cluster(@f5_vip.f5_cluster_id).network_name_list %></td>
+            </tr>  
+          </tbody></table>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- F5 Cluster ends -->
+    
+  </div><!--/span-->
+

@@ -1,0 +1,62 @@
+==> cim_chassis.csv <==
+	chassis_luid,nodeid,snapshotid,creationclassname,tag,
+	dc_systemcreationclassname,dc_systemname,name,
+	width,height,depth,serialnumber,partnumber,sku,
+	chassistypes,typedescriptions,version,otheridentifyinginfo,
+	r_model,dc_productid,elementname,manufacturer,model
+
+==> cim_networkadapter.csv <==
+	networkadapter_luid,nodeid,snapshotid,creationclassname,deviceid,
+	systemcreationclassname,systemname,name,networkaddresses,statusinfo,
+	permanentaddress,caption,ethernetadp_internalmacrcverr,
+	ethernetadp_internalmactranerr,
+	fullduplex,octetstransmitted,octetsreceived,maxspeed,
+	ipprotocolendpoint_subnetmask,dc_broadcastaddress,dc_dhcpenabled,
+	r_inputerrors,r_outputerrors,r_duplex,r_macaddress,
+	dc_adminstatus,dc_operstatus,
+	lanendpoint_protocoltype,lanendpoint_operationalstatus,
+	ethernetport_porttype,ethernetport_maxdatasize,ipv6address,
+	manufacturer
+
+==> cim_physicalelement.csv <==
+	physicalelement_luid,nodeid,snapshotid,creationclassname,tag,
+	caption,description,name,installdatetime,status,
+	manufacturedate,manufacturer,otheridentifyinginfo,partnumber,
+	poweredon,serialnumber,sku,version,slot_number,
+	dc_location,dc_condition,dc_firmwarerevision,
+	dc_hwlocation,dc_productid,model
+
+==> cim_powersupply.csv <==
+	powersupply_luid,nodeid,snapshotid,creationclassname,
+	deviceid,systemcreationclassname,systemname,name,
+	availability,additionalavailability,totaloutputpower,
+	r_status,r_condition,r_maxcapacity,
+	dc_powersupplypresent,dc_powersupplystatus,
+	dc_redundancystate,dc_currentoutputpower,
+	otheridentifyinginfo,caption,type,location,manufacturer,
+	tag,physicalposition,redundancyname,redundancystatus
+
+==> devices.csv <==
+	devicekey,name,guid,discovered,productsubtype,overallstatus,
+	producttype,producttypestr,productname,timestamp,lockflags,
+	fulldnsname,mxguid,discoveredname,durablename,wwname,
+	subtype2,subtype3,subtype4,subtype5,subtype6,subtype7,subtype8,
+	nodeluid,uniqueidentifier
+
+==> racks.csv <==
+	devicekey,assorack,assoenclosure,devicetype,slotnumber,
+	devicename,model,serialnumber
+
+==> r_inventory.csv <==
+	devicekey,devicename,productname,productid,numberofcpu,
+	virtualserialnumber,memorysize,romversion,serialnumber,assettag,
+	osname,ipaddress,iplongvalue,osvendor,snapshotid,
+	deviceowner,location,producttype,devicestatus,deviceboottime,
+	productsubtype,producttypestr,serverrole,ipxaddress
+
+==> r_networkinterface.csv <==
+	devicekey,devicename,description,ipaddress,macaddress,
+	inputerrors,outputerrors,speed,ipv6address,duplex,fullduplex,
+	interfacename,subnetmask,broadcastaddress,interfacestate,
+	dhcpenabled,iplongvalue,snapshotid,operationalstatus,
+	protocoltype,maxdatasize,porttype,manufacturer

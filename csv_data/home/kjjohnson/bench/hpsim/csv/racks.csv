@@ -1,0 +1,936 @@
+devicekey,assorack,assoenclosure,devicetype,slotnumber,devicename,model,serialnumber
+748,"",osdc-ph3-e25-1,MgmtProc,1,osdc-ph3-e25-oa1a,BladeSystem c7000 Onboard Administrator,O978MU3885
+747,"",osdc-ph3-e25-1,Server,1,USE7153W26,ProLiant BL685c G1,USE7153W26
+765,"",osdc-ph3-e25-1,Server,2,USE923MM8R,ProLiant BL685c G6,USE923MM8R
+745,"",osdc-ph3-e25-1,Server,3,USE7386ALE,ProLiant BL685c G1,USE7386ALE
+766,"",osdc-ph3-e25-1,Server,4,USE7153W22,ProLiant BL685c G1,USE7153W22
+767,"",osdc-ph3-e25-1,Server,5,USE74576L2,ProLiant BL465c G1,USE74576L2
+768,"",osdc-ph3-e25-1,Server,6,USE7153W1V,ProLiant BL465c G1,USE7153W1V
+769,"",osdc-ph3-e25-1,Server,7,USE738683T,ProLiant BL465c G1,USE738683T
+770,"",osdc-ph3-e25-1,Server,8,USE74576KM,ProLiant BL465c G1,USE74576KM
+771,"",osdc-ph3-e25-1,Server,14,USE74576KN,ProLiant BL465c G1,USE74576KN
+772,"",osdc-ph3-e25-1,Server,15,USE738683V,ProLiant BL465c G1,USE738683V
+773,"",osdc-ph3-e25-1,Server,16,USE7386AN8,ProLiant BL465c G1,USE7386AN8
+759,"",osdc-ph3-e25-1,Switch,1,FOC1136T07U,Cisco Catalyst Blade Switch 3020 for HP,FOC1136T07U
+760,"",osdc-ph3-e25-1,Switch,2,FOC1136T0D2,Cisco Catalyst Blade Switch 3020 for HP,FOC1136T0D2
+763,"",osdc-ph3-e25-1,Switch,5,TWT735V03W,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT735V03W
+764,"",osdc-ph3-e25-1,Switch,6,TWT737V0SA,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT737V0SA
+693,"",osdc-ph3-e25-2,MgmtProc,1,osdc-ph3-e25-oa2a,BladeSystem c7000 Onboard Administrator,O978MU2503
+695,"",osdc-ph3-e25-2,MgmtProc,2,osdc-ph3-e25-oa2b,BladeSystem c7000 Onboard Administrator,O978MU3631
+690,"",osdc-ph3-e25-2,Server,1,USE7386924,ProLiant BL685c G1,USE7386924
+709,"",osdc-ph3-e25-2,Server,2,USE923MM8S,ProLiant BL685c G6,USE923MM8S
+686,"",osdc-ph3-e25-2,Server,3,USE7386925,ProLiant BL685c G1,USE7386925
+710,"",osdc-ph3-e25-2,Server,4,USE74472RE,ProLiant BL685c G1,USE74472RE
+711,"",osdc-ph3-e25-2,Server,6,USE7153W1X,ProLiant BL465c G1,USE7153W1X
+712,"",osdc-ph3-e25-2,Server,7,USE74576KY,ProLiant BL465c G1,USE74576KY
+713,"",osdc-ph3-e25-2,Server,8,USE74576KW,ProLiant BL465c G1,USE74576KW
+714,"",osdc-ph3-e25-2,Server,14,USE74576KD,ProLiant BL465c G1,USE74576KD
+715,"",osdc-ph3-e25-2,Server,15,USE74576KA,ProLiant BL465c G1,USE74576KA
+716,"",osdc-ph3-e25-2,Server,16,USE7153W20,ProLiant BL465c G1,USE7153W20
+704,"",osdc-ph3-e25-2,Switch,1,FOC1134T0BA,Cisco Catalyst Blade Switch 3020 for HP,FOC1134T0BA
+705,"",osdc-ph3-e25-2,Switch,2,FOC1134T0B8,Cisco Catalyst Blade Switch 3020 for HP,FOC1134T0B8
+706,"",osdc-ph3-e25-2,Switch,5,TWT735V03T,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT735V03T
+707,"",osdc-ph3-e25-2,Switch,6,TWT735V0UB,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT735V0UB
+1401,"",sc9-l07-1,Server,1,USE852JLC1,ProLiant BL680c G5,USE852JLC1
+1399,"",sc9-l07-1,Server,2,USE850JB22,ProLiant BL680c G5,USE850JB22
+1393,"",sc9-l07-1,Server,3,USE852JLC4,ProLiant BL680c G5,USE852JLC4
+1391,"",sc9-l07-1,Server,4,USE80996BV,ProLiant BL680c G5,USE80996BV
+1388,"",sc9-l07-1,Server,5,USE80996B8,ProLiant BL680c G5,USE80996B8
+1384,"",sc9-l07-1,Server,6,USE80996B9,ProLiant BL680c G5,USE80996B9
+1386,"",sc9-l07-1,Server,7,USE80996BM,ProLiant BL680c G5,USE80996BM
+1411,"",sc9-l07-1,Server,8,USE80996BR,ProLiant BL680c G5,USE80996BR
+1406,"",sc9-l07-1,Switch,1,TWT939V1N8,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT939V1N8
+1407,"",sc9-l07-1,Switch,2,TWT939V1LP,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT939V1LP
+1408,"",sc9-l07-1,Switch,3,TWT939V1JR,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT939V1JR
+1409,"",sc9-l07-1,Switch,4,TWT939V1M5,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT939V1M5
+520,"",WDC-F07-BC1,Server,16,USE74576KE,ProLiant BL465c G1,USE74576KE
+513,"",WDC-F07-BC1,Switch,1,FOC1239T0AM,Cisco Catalyst Blade Switch 3020 for HP,FOC1239T0AM
+514,"",WDC-F07-BC1,Switch,2,FOC1239T0AU,Cisco Catalyst Blade Switch 3020 for HP,FOC1239T0AU
+515,"",WDC-F07-BC1,Switch,3,TWT828V04A,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V04A
+516,"",WDC-F07-BC1,Switch,4,TWT828V044,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V044
+517,"",WDC-F07-BC1,Switch,5,wdc-fab1sw16,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN88416082
+518,"",WDC-F07-BC1,Switch,6,wdc-fab2sw16,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8841607J
+3014,"",wdc-f14-trn,MgmtProc,1,wdc-f15-trn-oa1,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB13BP2453
+3016,"",wdc-f14-trn,MgmtProc,2,OB16BP0578,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB16BP0578
+2999,"",wdc-f14-trn,Server,1,USE129CWC0,ProLiant BL460c G7,USE129CWC0
+3001,"",wdc-f14-trn,Server,2,USE129CWBT,ProLiant BL460c G7,USE129CWBT
+2991,"",wdc-f14-trn,Server,3,USE129CWC1,ProLiant BL460c G7,USE129CWC1
+3003,"",wdc-f14-trn,Server,4,USE129CWBX,ProLiant BL460c G7,USE129CWBX
+2995,"",wdc-f14-trn,Server,5,USE129CWBS,ProLiant BL460c G7,USE129CWBS
+2993,"",wdc-f14-trn,Server,6,USE129CWC2,ProLiant BL460c G7,USE129CWC2
+2997,"",wdc-f14-trn,Server,7,USE129CWBW,ProLiant BL460c G7,USE129CWBW
+3005,"",wdc-f14-trn,Server,8,USE129CWBV,ProLiant BL460c G7,USE129CWBV
+3009,"",wdc-f14-trn,Server,9,USE129CWBR,ProLiant BL460c G7,USE129CWBR
+3007,"",wdc-f14-trn,Server,10,USE129CWBP,ProLiant BL460c G7,USE129CWBP
+3011,"",wdc-f14-trn,Server,11,USE129CWBL,ProLiant BL460c G7,USE129CWBL
+3013,"",wdc-f14-trn,Server,12,USE129CWBM,ProLiant BL460c G7,USE129CWBM
+3017,"",wdc-f14-trn,Switch,1,FOC1236T0DG,Cisco Catalyst Blade Switch 3020 for HP,FOC1236T0DG
+3018,"",wdc-f14-trn,Switch,6,sc5-fab32sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731600D
+492,"",wdc-g10-bc1,MgmtProc,1,wdc-g10-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB9BBP4303
+494,"",wdc-g10-bc1,MgmtProc,2,wdc-g10-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB9CBP5631
+503,"",wdc-g10-bc1,Server,1,USE04232JS,ProLiant BL685c G7,USE04232JS
+504,"",wdc-g10-bc1,Server,2,USE04232JT,ProLiant BL685c G7,USE04232JT
+505,"",wdc-g10-bc1,Server,3,USE0453M24,ProLiant BL685c G7,USE04232JF
+3288,"",wdc-g10-bc1,Server,6,USE146KYBF,ProLiant BL490c G7,USE146KYBF
+3289,"",wdc-g10-bc1,Server,7,USE146KYAY,ProLiant BL490c G7,USE146KYAY
+506,"",wdc-g10-bc1,Server,8,USE0412ML2,ProLiant BL460c G7,USE0412ML2
+3290,"",wdc-g10-bc1,Server,14,USE146KYBC,ProLiant BL490c G7,USE146KYBC
+507,"",wdc-g10-bc1,Server,15,USE0412ML3,ProLiant BL460c G7,USE0412ML3
+508,"",wdc-g10-bc1,Server,16,USE0412ML5,ProLiant BL460c G7,USE0412ML5
+564,"",wdc-g11-bc1,MgmtProc,1,wdc-g11-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK1108
+562,"",wdc-g11-bc1,MgmtProc,2,wdc-g11-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK9196
+571,"",wdc-g11-bc1,Server,1,USE04232JK,ProLiant BL685c G7,USE04232JK
+572,"",wdc-g11-bc1,Server,2,USE04232JR,ProLiant BL685c G7,USE04232JR
+3294,"",wdc-g11-bc1,Server,6,USE146KYAS,ProLiant BL490c G7,USE146KYAS
+3295,"",wdc-g11-bc1,Server,7,USE146KYBB,ProLiant BL490c G7,USE146KYBB
+573,"",wdc-g11-bc1,Server,8,USE0412ML8,ProLiant BL460c G7,USE0412ML8
+3296,"",wdc-g11-bc1,Server,14,USE146KYAT,ProLiant BL490c G7,USE146KYAT
+574,"",wdc-g11-bc1,Server,15,USE0412MKR,ProLiant BL460c G7,USE0412MKR
+575,"",wdc-g11-bc1,Server,16,USE0412MKY,ProLiant BL460c G7,USE0412MKY
+214,EBIZ,"",Enclosure,-1,prodEBS-II,BladeSystem c7000 Enclosure G2,SGH050P7EK
+1582,EBIZ,"",Enclosure,-1,stage-EBS-II,BladeSystem c7000 Enclosure G2,SGH050P7EL
+1506,EBIZ,sc9-i8-1,MgmtProc,1,sc9-i8-oa1a,BladeSystem c7000 Onboard Administrator,O979MU6423
+1508,EBIZ,sc9-i8-1,MgmtProc,2,sc9-i8-oa1b,BladeSystem c7000 Onboard Administrator,O978MU2636
+1524,EBIZ,sc9-i8-1,Server,1,USE923MM8J,ProLiant BL685c G6,USE923MM8J
+1525,EBIZ,sc9-i8-1,Server,2,USE80996B5,ProLiant BL680c G5,USE80996B5
+1505,EBIZ,sc9-i8-1,Server,3,USE80996C8,ProLiant BL680c G5,USE80996C8
+1501,EBIZ,sc9-i8-1,Server,4,USE80996BW,ProLiant BL680c G5,USE80996BW
+1503,EBIZ,sc9-i8-1,Server,5,USE80996BJ,ProLiant BL680c G5,USE80996BJ
+1526,EBIZ,sc9-i8-1,Server,6,USE80996AY,ProLiant BL680c G5,USE80996AY
+1527,EBIZ,sc9-i8-1,Server,7,USE809964X,ProLiant BL460c G1,USE809964X
+1528,EBIZ,sc9-i8-1,Server,8,USE809964E,ProLiant BL460c G1,USE809964E
+1529,EBIZ,sc9-i8-1,Server,15,USE8099655,ProLiant BL460c G1,USE8099655
+1530,EBIZ,sc9-i8-1,Server,16,USE809964V,ProLiant BL460c G1,USE809964V
+1516,EBIZ,sc9-i8-1,Switch,1,TWT743V15F,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT743V15F
+1517,EBIZ,sc9-i8-1,Switch,2,TWT743V16M,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT743V16M
+1518,EBIZ,sc9-i8-1,Switch,3,TWT743V0KU,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT743V0KU
+1519,EBIZ,sc9-i8-1,Switch,4,TWT743V0XN,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT743V0XN
+1520,EBIZ,sc9-i8-1,Switch,5,TWT802V0HR,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT802V0HR
+1521,EBIZ,sc9-i8-1,Switch,6,TWT802V0X8,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT802V0X8
+1522,EBIZ,sc9-i8-1,Switch,8,TWT805V04B,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT805V04B
+1550,EBIZ,sc9-i8-2,MgmtProc,1,sc9-i8-oa2a,BladeSystem c7000 Onboard Administrator,O979MU5742
+1552,EBIZ,sc9-i8-2,MgmtProc,2,sc9-i8-oa2b,BladeSystem c7000 Onboard Administrator,O97BMU4785
+1566,EBIZ,sc9-i8-2,Server,1,USE923MM92,ProLiant BL685c G6,USE923MM92
+1567,EBIZ,sc9-i8-2,Server,2,USE80996B3,ProLiant BL680c G5,USE80996B3
+1537,EBIZ,sc9-i8-2,Server,3,USE80996B0,ProLiant BL680c G5,USE80996B0
+1547,EBIZ,sc9-i8-2,Server,4,USE80996BK,ProLiant BL680c G5,USE80996BK
+1542,EBIZ,sc9-i8-2,Server,5,USE80996BP,ProLiant BL680c G5,USE80996BP
+1549,EBIZ,sc9-i8-2,Server,6,USE80996C4,ProLiant BL680c G5,USE80996C4
+1568,EBIZ,sc9-i8-2,Server,7,USE809964N,ProLiant BL460c G1,USE809964N
+1569,EBIZ,sc9-i8-2,Server,8,USE809964B,ProLiant BL460c G1,USE809964B
+1570,EBIZ,sc9-i8-2,Server,15,USE809964T,ProLiant BL460c G1,USE809964T
+1571,EBIZ,sc9-i8-2,Server,16,USE8099656,ProLiant BL460c G1,USE8099656
+1559,EBIZ,sc9-i8-2,Switch,1,TWT736V21S,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT736V21S
+1560,EBIZ,sc9-i8-2,Switch,2,TWT737V0H2,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT737V0H2
+1561,EBIZ,sc9-i8-2,Switch,3,TWT736V1XW,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT736V1XW
+1562,EBIZ,sc9-i8-2,Switch,4,TWT737V03U,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT737V03U
+1563,EBIZ,sc9-i8-2,Switch,5,TWT802V0V5,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT802V0V5
+1564,EBIZ,sc9-i8-2,Switch,6,TWT802V0CZ,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT802V0CZ
+1565,EBIZ,sc9-i8-2,Switch,8,TWT751V0AX,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT751V0AX
+1583,EBIZ,stage-EBS-II,MgmtProc,1,sc9-i2-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB0BBK6374
+1581,EBIZ,stage-EBS-II,MgmtProc,2,sc9-i2-oa2a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB0ABK1489
+1580,EBIZ,stage-EBS-II,Server,1,USE0494NY3,ProLiant BL685c G7,USE0494NY3
+1576,EBIZ,stage-EBS-II,Server,2,USE0494NY1,ProLiant BL685c G7,USE0494NY1
+1578,EBIZ,stage-EBS-II,Server,3,USE0494NY4,ProLiant BL685c G7,USE0494NY4
+1584,EBIZ,stage-EBS-II,Switch,1,10.113.66.233,Cisco Catalyst Blade Switch 3020 for HP,FOC1138T14J
+1585,EBIZ,stage-EBS-II,Switch,2,10.113.66.232,Cisco Catalyst Blade Switch 3020 for HP,FOC1147T0W3
+1586,EBIZ,stage-EBS-II,Switch,3,FOC1139T077,Cisco Catalyst Blade Switch 3020 for HP,FOC1139T077
+1587,EBIZ,stage-EBS-II,Switch,4,10.113.66.231,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T08E
+1588,EBIZ,stage-EBS-II,Switch,5,TWT751V0GN,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT751V0GN
+1589,EBIZ,stage-EBS-II,Switch,6,TWT802V0M8,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT802V0M8
+1590,EBIZ,stage-EBS-II,Switch,8,TWT751V04R,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT751V04R
+1466,Federal_scripts,"",Enclosure,-1,SC9-G13-BC1,BladeSystem c7000 Enclosure G2,SGH037P5K4
+1465,Federal_scripts,SC9-G13-BC1,MgmtProc,1,sc9-g13-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB03BP9085
+1467,Federal_scripts,SC9-G13-BC1,MgmtProc,2,sc9-g13-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB07BK3319
+1479,Federal_scripts,SC9-G13-BC1,Server,5,USE0370T5E,ProLiant BL465c G7,USE0370T5E
+1480,Federal_scripts,SC9-G13-BC1,Server,6,USE0370T5S,ProLiant BL465c G7,USE0370T5S
+1481,Federal_scripts,SC9-G13-BC1,Server,7,USE0370T5N,ProLiant BL465c G7,USE0370T5N
+1482,Federal_scripts,SC9-G13-BC1,Server,8,USE0370T5M,ProLiant BL465c G7,USE0370T5M
+1483,Federal_scripts,SC9-G13-BC1,Server,13,USE0370T5P,ProLiant BL465c G7,USE0370T5P
+1461,Federal_scripts,SC9-G13-BC1,Server,14,USE0370T5J,ProLiant BL465c G7,USE0370T5J
+1464,Federal_scripts,SC9-G13-BC1,Server,15,USE0370T5T,ProLiant BL465c G7,USE0370T5T
+1484,Federal_scripts,SC9-G13-BC1,Server,16,USE0370T5R,ProLiant BL465c G7,USE0370T5R
+1474,Federal_scripts,SC9-G13-BC1,Switch,1,FOC1418T1LW,Cisco Catalyst Blade Switch 3020 for HP,FOC1418T1LW
+1475,Federal_scripts,SC9-G13-BC1,Switch,2,FOC1418T1AU,Cisco Catalyst Blade Switch 3020 for HP,FOC1418T1AU
+2301,Federal_scripts,SC9-G13-BC1,Switch,3,sc9-federal-fab1,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8029B08J
+2241,Federal_scripts,SC9-G13-BC1,Switch,4,sc9-federal-fab2,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8029B07B
+1476,Federal_scripts,SC9-G13-BC1,Switch,5,FOC1418T1KF,Cisco Catalyst Blade Switch 3020 for HP,FOC1418T1KF
+1477,Federal_scripts,SC9-G13-BC1,Switch,6,FOC1418T1M4,Cisco Catalyst Blade Switch 3020 for HP,FOC1418T1M4
+1593,J06,"",Enclosure,-1,SC9-View-C1,BladeSystem c7000 Enclosure,USE81098YF
+1592,J06,SC9-View-C1,MgmtProc,1,sc9-j06-oa1a,BladeSystem c7000 Onboard Administrator,O979MU0687
+1594,J06,SC9-View-C1,MgmtProc,2,sc9-j06-oa1b,BladeSystem c7000 Onboard Administrator,O979MU1704
+1605,J06,SC9-View-C1,Server,1,USE8038F5M,ProLiant BL685c G1,USE8038F5M
+1606,J06,SC9-View-C1,Server,2,USE7436V6B,ProLiant BL685c G1,USE7436V6B
+1607,J06,SC9-View-C1,Server,3,USE03816F74Y,ProLiant BL685c G7,USE03816F74Y
+1598,J06,SC9-View-C1,Switch,1,FOC1139T07G,Cisco Catalyst Blade Switch 3020 for HP,FOC1139T07G
+1599,J06,SC9-View-C1,Switch,2,FOC1147T0SK,Cisco Catalyst Blade Switch 3020 for HP,FOC1147T0SK
+1600,J06,SC9-View-C1,Switch,3,FOC1138T11D,Cisco Catalyst Blade Switch 3020 for HP,FOC1138T11D
+1601,J06,SC9-View-C1,Switch,4,FOC1140T08F,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T08F
+1602,J06,SC9-View-C1,Switch,5,sc9-fab63sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8836608N
+1603,J06,SC9-View-C1,Switch,6,sc9-fab64sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN88366083
+1609,J07,"",Enclosure,-1,SC9-J07,BladeSystem c7000 Enclosure,USE7436WR4
+1608,J07,SC9-J07,MgmtProc,1,sc9-j07-oa1a,BladeSystem c7000 Onboard Administrator,O979MU2236
+1610,J07,SC9-J07,MgmtProc,2,sc9-j07-oa1b,BladeSystem c7000 Onboard Administrator,O979MU1892
+1611,J07,SC9-J07,Switch,1,FOC1139T042,Cisco Catalyst Blade Switch 3020 for HP,FOC1139T042
+1612,J07,SC9-J07,Switch,2,FOC1138T13N,Cisco Catalyst Blade Switch 3020 for HP,FOC1138T13N
+1613,J07,SC9-J07,Switch,3,FOC1147T0UK,Cisco Catalyst Blade Switch 3020 for HP,FOC1147T0UK
+1614,J07,SC9-J07,Switch,4,FOC1138T0TZ,Cisco Catalyst Blade Switch 3020 for HP,FOC1138T0TZ
+1615,J07,SC9-J07,Switch,5,sc9-fab65sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731601H
+1616,J07,SC9-J07,Switch,6,sc9-fab66sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731604V
+1286,L06,"",Enclosure,-1,SC9-CPP-PROD,BladeSystem c7000 Enclosure,USE7436WY3
+1287,L06,SC9-CPP-PROD,MgmtProc,1,sc9-l06-oa1a,BladeSystem c7000 Onboard Administrator,O979MU2863
+1285,L06,SC9-CPP-PROD,MgmtProc,2,sc9-l06-oa1b,BladeSystem c7000 Onboard Administrator,O979MU2242
+1302,L06,SC9-CPP-PROD,Server,1,USE801879T,ProLiant BL685c G1,USE801879T
+1303,L06,SC9-CPP-PROD,Server,2,USE7436V6H,ProLiant BL685c G1,USE7436V6H
+1304,L06,SC9-CPP-PROD,Server,3,USE7436V69,ProLiant BL685c G1,USE7436V69
+1305,L06,SC9-CPP-PROD,Server,4,3H7AMK0133,ProLiant BL685c G1,3H7AMK0133
+1306,L06,SC9-CPP-PROD,Server,5,use7436v6d,ProLiant BL685c G1,use7436v6d
+1307,L06,SC9-CPP-PROD,Server,6,USE7436V6F,ProLiant BL685c G1,USE7436V6F
+1308,L06,SC9-CPP-PROD,Server,7,USE801879P,ProLiant BL685c G1,USE801879P
+1309,L06,SC9-CPP-PROD,Server,8,USE801879Y,ProLiant BL685c G1,USE801879Y
+1296,L06,SC9-CPP-PROD,Switch,1,TWT828V0M2,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0M2
+1297,L06,SC9-CPP-PROD,Switch,2,TWT828V0LP,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0LP
+1298,L06,SC9-CPP-PROD,Switch,3,sc9-fab43sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87316004
+1299,L06,SC9-CPP-PROD,Switch,4,sc9-fab44sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731602H
+1300,L06,SC9-CPP-PROD,Switch,6,10.113.59.240,Cisco Catalyst Blade Switch 3020 for HP,FOC1147T0V3
+923,osdc-mc1-d1,"",Enclosure,-1,osdc-mc1-d1-1,BladeSystem c7000 Enclosure,USE7426T6W
+924,osdc-mc1-d1,osdc-mc1-d1-1,MgmtProc,1,osdc-mc1-d1-oa1a,BladeSystem c7000 Onboard Administrator,O979MU1192
+922,osdc-mc1-d1,osdc-mc1-d1-1,MgmtProc,2,osdc-mc1-d1-oa1b,BladeSystem c7000 Onboard Administrator,O979MU2244
+940,osdc-mc1-d1,osdc-mc1-d1-1,Server,1,USE839F8DN,ProLiant BL680c G5,USE839F8DN
+941,osdc-mc1-d1,osdc-mc1-d1-1,Server,2,USE839F8E5,ProLiant BL680c G5,USE839F8E5
+942,osdc-mc1-d1,osdc-mc1-d1-1,Server,3,USE839F8DR,ProLiant BL680c G5,USE839F8DR
+943,osdc-mc1-d1,osdc-mc1-d1-1,Server,4,USE839F8E7,ProLiant BL680c G5,USE839F8E7
+944,osdc-mc1-d1,osdc-mc1-d1-1,Server,5,USE839F8DP,ProLiant BL680c G5,USE839F8DP
+945,osdc-mc1-d1,osdc-mc1-d1-1,Server,6,USE80996B6,ProLiant BL680c G5,USE80996B6
+946,osdc-mc1-d1,osdc-mc1-d1-1,Server,7,USE80996B7,ProLiant BL680c G5,USE80996B7
+947,osdc-mc1-d1,osdc-mc1-d1-1,Server,8,USE80996C7,ProLiant BL680c G5,USE80996C7
+933,osdc-mc1-d1,osdc-mc1-d1-1,Switch,1,osdc-mc1d05-3020-sw1,Cisco Catalyst Blade Switch 3020 for HP,FOC1139T04E
+934,osdc-mc1-d1,osdc-mc1-d1-1,Switch,2,FOC1139T013,Cisco Catalyst Blade Switch 3020 for HP,FOC1139T013
+935,osdc-mc1-d1,osdc-mc1-d1-1,Switch,3,TWT828V0DN,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0DN
+936,osdc-mc1-d1,osdc-mc1-d1-1,Switch,4,TWT801V08B,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT801V08B
+937,osdc-mc1-d1,osdc-mc1-d1-1,Switch,5,osdc-fab23sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731601W
+938,osdc-mc1-d1,osdc-mc1-d1-1,Switch,6,osdc-fab24sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731601M
+1056,osdc-mc1-f1,"",Enclosure,-1,osdc-mc1-f1-1,BladeSystem c7000 Enclosure,USE6351M47
+1131,osdc-mc1-f1,"",Enclosure,-1,osdc-mc1-f1-2,BladeSystem c7000 Enclosure,USE7143SCJ
+1057,osdc-mc1-f1,osdc-mc1-f1-1,MgmtProc,1,10.16.66.138,BladeSystem c7000 Onboard Administrator,O968MK0130
+1055,osdc-mc1-f1,osdc-mc1-f1-1,MgmtProc,2,osdc-mc1-f1-oa1b,BladeSystem c7000 Onboard Administrator,O978MU3350
+1071,osdc-mc1-f1,osdc-mc1-f1-1,Server,1,USE80996BY,ProLiant BL680c G5,USE80996BY
+1072,osdc-mc1-f1,osdc-mc1-f1-1,Server,3,use7386927,ProLiant BL685c G1,use7386927
+1073,osdc-mc1-f1,osdc-mc1-f1-1,Server,6,USE74576L0,ProLiant BL465c G1,USE74576L0
+1074,osdc-mc1-f1,osdc-mc1-f1-1,Server,8,USE7153W1S,ProLiant BL465c G1,USE7153W1S
+1075,osdc-mc1-f1,osdc-mc1-f1-1,Server,14,USE7477D13,ProLiant BL465c G1,USE7477D13
+1044,osdc-mc1-f1,osdc-mc1-f1-1,Server,15,USE809964Y,ProLiant BL460c G1,USE809964Y
+1076,osdc-mc1-f1,osdc-mc1-f1-1,Server,16,USE809965B,ProLiant BL460c G1,USE809965B
+1064,osdc-mc1-f1,osdc-mc1-f1-1,Switch,1,FOC1101T0R0,Cisco Catalyst Blade Switch 3020 for HP,FOC1101T0R0
+1065,osdc-mc1-f1,osdc-mc1-f1-1,Switch,2,FOC1101T0PU,Cisco Catalyst Blade Switch 3020 for HP,FOC1101T0PU
+1066,osdc-mc1-f1,osdc-mc1-f1-1,Switch,3,osdc-fab33sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8704600C
+1067,osdc-mc1-f1,osdc-mc1-f1-1,Switch,4,osdc-fab34sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8704602W
+1068,osdc-mc1-f1,osdc-mc1-f1-1,Switch,5,TWT722V08P,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT722V08P
+1069,osdc-mc1-f1,osdc-mc1-f1-1,Switch,6,TWT724W03U,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT724W03U
+1130,osdc-mc1-f1,osdc-mc1-f1-2,MgmtProc,1,10.16.66.136,BladeSystem c7000 Onboard Administrator,O96CMU8024
+1132,osdc-mc1-f1,osdc-mc1-f1-2,MgmtProc,2,10.16.66.137,BladeSystem c7000 Onboard Administrator,O967MK0539
+1141,osdc-mc1-f1,osdc-mc1-f1-2,Server,1,USE80996AT,ProLiant BL680c G5,USE80996AT
+1052,osdc-mc1-f1,osdc-mc1-f1-2,Server,3,USE80996BH,ProLiant BL680c G5,USE80996BH
+1142,osdc-mc1-f1,osdc-mc1-f1-2,Server,4,USE7153W21,ProLiant BL685c G1,USE7153W21
+1083,osdc-mc1-f1,osdc-mc1-f1-2,Server,15,USE809964F,ProLiant BL460c G1,USE809964F
+1125,osdc-mc1-f1,osdc-mc1-f1-2,Server,16,USE8099651,ProLiant BL460c G1,USE8099651
+1136,osdc-mc1-f1,osdc-mc1-f1-2,Switch,1,FOC1101T0R1,Cisco Catalyst Blade Switch 3020 for HP,FOC1101T0R1
+1137,osdc-mc1-f1,osdc-mc1-f1-2,Switch,2,FOC1101T0R6,Cisco Catalyst Blade Switch 3020 for HP,FOC1101T0R6
+1997,osdc-mc1-f1,osdc-mc1-f1-2,Switch,3,osdc-fab31sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87046007
+1138,osdc-mc1-f1,osdc-mc1-f1-2,Switch,4,osdc-fab32sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8704601U
+1139,osdc-mc1-f1,osdc-mc1-f1-2,Switch,5,TWT724V0HL,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT724V0HL
+1140,osdc-mc1-f1,osdc-mc1-f1-2,Switch,6,TWT724V0RC,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT724V0RC
+1148,osdc-mc1-f14,"",Enclosure,-1,osdc-mc1-f14-1,BladeSystem c7000 Enclosure,USE7143RYV
+1187,osdc-mc1-f14,"",Enclosure,-1,osdc-mc1-f14-2,BladeSystem c7000 Enclosure,USE73764L3
+1147,osdc-mc1-f14,osdc-mc1-f14-1,MgmtProc,1,10.16.66.160,BladeSystem c7000 Onboard Administrator,O96CMV0257
+1149,osdc-mc1-f14,osdc-mc1-f14-1,MgmtProc,2,10.16.66.159,BladeSystem c7000 Onboard Administrator,O96CMU8105
+1118,osdc-mc1-f14,osdc-mc1-f14-1,Server,1,USE738666J,ProLiant BL685c G1,USE738666J
+1054,osdc-mc1-f14,osdc-mc1-f14-1,Server,2,3H6CMK2768,ProLiant BL685c G1,3H6CMK2768
+1157,osdc-mc1-f14,osdc-mc1-f14-1,Server,3,USE7153W28,ProLiant BL685c G1,USE7153W28
+1158,osdc-mc1-f14,osdc-mc1-f14-1,Server,4,USE80288AA,ProLiant BL680c G5,USE80288AA
+1033,osdc-mc1-f14,osdc-mc1-f14-1,Server,6,USE80996B1,ProLiant BL680c G5,USE80996B1
+1152,osdc-mc1-f14,osdc-mc1-f14-1,Switch,1,FOC1052T0LZ,Cisco Catalyst Blade Switch 3020 for HP,FOC1052T0LZ
+1153,osdc-mc1-f14,osdc-mc1-f14-1,Switch,2,FOC1101T0R7,Cisco Catalyst Blade Switch 3020 for HP,FOC1101T0R7
+2040,osdc-mc1-f14,osdc-mc1-f14-1,Switch,3,osdc-fab35sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8704600P
+2041,osdc-mc1-f14,osdc-mc1-f14-1,Switch,4,osdc-fab36sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87046006
+1154,osdc-mc1-f14,osdc-mc1-f14-1,Switch,5,TWT735V01S,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT735V01S
+1155,osdc-mc1-f14,osdc-mc1-f14-1,Switch,6,TWT736V1X0,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT736V1X0
+1186,osdc-mc1-f14,osdc-mc1-f14-2,MgmtProc,1,10.16.66.213,BladeSystem c7000 Onboard Administrator,O978MU1964
+1188,osdc-mc1-f14,osdc-mc1-f14-2,MgmtProc,2,10.16.66.214,BladeSystem c7000 Onboard Administrator,O978MU0801
+1113,osdc-mc1-f14,osdc-mc1-f14-2,Server,1,USE7386ALJ,ProLiant BL685c G1,USE7386ALJ
+1198,osdc-mc1-f14,osdc-mc1-f14-2,Server,2,USE7386ALH,ProLiant BL685c G1,USE7386ALH
+1199,osdc-mc1-f14,osdc-mc1-f14-2,Server,3,USE7153W24,ProLiant BL685c G1,USE7153W24
+1040,osdc-mc1-f14,osdc-mc1-f14-2,Server,4,USE7386ALF,ProLiant BL685c G1,USE7386ALF
+1200,osdc-mc1-f14,osdc-mc1-f14-2,Server,6,USE80996AV,ProLiant BL680c G5,USE80996AV
+1192,osdc-mc1-f14,osdc-mc1-f14-2,Switch,1,FOC1134T0MJ,Cisco Catalyst Blade Switch 3020 for HP,FOC1134T0MJ
+1193,osdc-mc1-f14,osdc-mc1-f14-2,Switch,2,FOC1134T0MC,Cisco Catalyst Blade Switch 3020 for HP,FOC1134T0MC
+1195,osdc-mc1-f14,osdc-mc1-f14-2,Switch,4,osdc-fab38sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN873660AY
+1196,osdc-mc1-f14,osdc-mc1-f14-2,Switch,5,TWT737V0SG,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT737V0SG
+1197,osdc-mc1-f14,osdc-mc1-f14-2,Switch,6,TWT736V2KX,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT736V2KX
+995,OSDC-MC1-F5,"",Enclosure,-1,OSDC-MC1-F5-1,BladeSystem c7000 Enclosure,USE7436VDP
+994,OSDC-MC1-F5,OSDC-MC1-F5-1,MgmtProc,1,osdc-mc1-f5-oa1a,BladeSystem c7000 Onboard Administrator,O979MU0765
+996,OSDC-MC1-F5,OSDC-MC1-F5-1,MgmtProc,2,osdc-mc1-f5-oa1b,BladeSystem c7000 Onboard Administrator,O979MU1765
+974,OSDC-MC1-F5,OSDC-MC1-F5-1,Server,1,USE839F8DM,ProLiant BL680c G5,USE839F8DM
+976,OSDC-MC1-F5,OSDC-MC1-F5-1,Server,2,USE80996BL,ProLiant BL680c G5,USE80996BL
+969,OSDC-MC1-F5,OSDC-MC1-F5-1,Server,3,USE839F8DW,ProLiant BL680c G5,USE839F8DW
+971,OSDC-MC1-F5,OSDC-MC1-F5-1,Server,4,USE80996BD,ProLiant BL680c G5,USE80996BD
+982,OSDC-MC1-F5,OSDC-MC1-F5-1,Server,5,USE839F8E8,ProLiant BL680c G5,USE839F8E8
+978,OSDC-MC1-F5,OSDC-MC1-F5-1,Server,6,USE839F8E0,ProLiant BL680c G5,USE839F8E0
+980,OSDC-MC1-F5,OSDC-MC1-F5-1,Server,7,USE839F8E2,ProLiant BL680c G5,USE839F8E2
+997,OSDC-MC1-F5,OSDC-MC1-F5-1,Switch,1,FOC1143T033,Cisco Catalyst Blade Switch 3020 for HP,FOC1143T033
+998,OSDC-MC1-F5,OSDC-MC1-F5-1,Switch,2,FOC1138T0SJ,Cisco Catalyst Blade Switch 3020 for HP,FOC1138T0SJ
+999,OSDC-MC1-F5,OSDC-MC1-F5-1,Switch,3,TWT828V0PV,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0PV
+1000,OSDC-MC1-F5,OSDC-MC1-F5-1,Switch,4,TWT828V0P5,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0P5
+1001,OSDC-MC1-F5,OSDC-MC1-F5-1,Switch,5,osdc-fab13sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731602D
+1002,OSDC-MC1-F5,OSDC-MC1-F5-1,Switch,6,osdc-fab14sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87316055
+731,osdc-ph3-e14,"",Enclosure,-1,osdc-ph3-e14-1,BladeSystem c7000 Enclosure,USE7416NHR
+730,osdc-ph3-e14,osdc-ph3-e14-1,MgmtProc,1,osdc-ph3-e14-oa1a,BladeSystem c7000 Onboard Administrator,O979MU6237
+732,osdc-ph3-e14,osdc-ph3-e14-1,MgmtProc,2,osdc-ph3-e14-oa1b,BladeSystem c7000 Onboard Administrator,O979MU5271
+722,osdc-ph3-e14,osdc-ph3-e14-1,Server,1,USE7426S0A,ProLiant BL685c G1,USE7426S0A
+718,osdc-ph3-e14,osdc-ph3-e14-1,Server,2,USE7426S08,ProLiant BL685c G1,USE7426S08
+724,osdc-ph3-e14,osdc-ph3-e14-1,Server,3,USE7426S09,ProLiant BL685c G1,USE7426S09
+726,osdc-ph3-e14,osdc-ph3-e14-1,Server,4,USE7426SF6,ProLiant BL685c G1,USE7426SF6
+720,osdc-ph3-e14,osdc-ph3-e14-1,Server,5,USE7426S0B,ProLiant BL685c G1,USE7426S0B
+729,osdc-ph3-e14,osdc-ph3-e14-1,Server,6,USE7426SF7,ProLiant BL685c G1,USE7426SF7
+741,osdc-ph3-e14,osdc-ph3-e14-1,Server,7,USE74473RL,ProLiant BL465c G1,USE74473RL
+742,osdc-ph3-e14,osdc-ph3-e14-1,Server,8,USE74473RM,ProLiant BL465c G1,USE74473RM
+743,osdc-ph3-e14,osdc-ph3-e14-1,Server,16,USE809964A,ProLiant BL460c G1,USE809964A
+736,osdc-ph3-e14,osdc-ph3-e14-1,Switch,1,FOC1138T050,Cisco Catalyst Blade Switch 3020 for HP,FOC1138T050
+737,osdc-ph3-e14,osdc-ph3-e14-1,Switch,2,FOC1136T0H9,Cisco Catalyst Blade Switch 3020 for HP,FOC1136T0H9
+738,osdc-ph3-e14,osdc-ph3-e14-1,Switch,3,osdc-fab55sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87316022
+739,osdc-ph3-e14,osdc-ph3-e14-1,Switch,4,osdc-fab56sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87316017
+782,osdc-ph3-e14_09USE743707M,"",Enclosure,-1,osdc-ph3-e14-2,BladeSystem c7000 Enclosure,USE743707M
+781,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,MgmtProc,1,osdc-ph3-e14-oa2a,BladeSystem c7000 Onboard Administrator,O979MU3765
+783,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,MgmtProc,2,osdc-ph3-e14-oa2b,BladeSystem c7000 Onboard Administrator,O977MU1285
+798,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Server,1,use74472rw,ProLiant BL685c G1,use74472rw
+799,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Server,2,USE74472SH,ProLiant BL685c G1,USE74472SH
+800,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Server,3,USE74472SF,ProLiant BL685c G1,USE74472SF
+801,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Server,4,USE74472RL,ProLiant BL685c G1,USE74472RL
+802,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Server,5,USE74472RX,ProLiant BL685c G1,USE74472RX
+803,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Server,7,USE04232JE,ProLiant BL685c G7,USE04232JE
+804,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Server,8,USE74472RB,ProLiant BL685c G1,USE74472RB
+791,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Switch,1,FOC1140T0LE,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T0LE
+792,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Switch,2,FOC1140T0L1,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T0L1
+793,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Switch,3,osdc-fab61sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8738601K
+794,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Switch,4,osdc-fab62sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8738600F
+795,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Switch,5,FOC1140T0KT,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T0KT
+796,osdc-ph3-e14_09USE743707M,osdc-ph3-e14-2,Switch,6,FOC1140T0NH,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T0NH
+749,osdc-ph3-e25,"",Enclosure,-1,osdc-ph3-e25-1,BladeSystem c7000 Enclosure,USE7386A5T
+694,osdc-ph3-e25,"",Enclosure,-1,osdc-ph3-e25-2,BladeSystem c7000 Enclosure,USE738683R
+830,osdc-ph3-e26,"",Enclosure,-1,osdc-ph3-e26-2,BladeSystem c7000 Enclosure,USE74575X7
+865,osdc-ph3-e26,"",Enclosure,-1,osdc-ph3-e26-1,BladeSystem c7000 Enclosure,USE74575X4
+864,osdc-ph3-e26,osdc-ph3-e26-1,MgmtProc,1,osdc-ph3-e26-oa1a,BladeSystem c7000 Onboard Administrator,O979MU5986
+876,osdc-ph3-e26,osdc-ph3-e26-1,Server,1,USE74576LD,ProLiant BL685c G1,USE74576LD
+877,osdc-ph3-e26,osdc-ph3-e26-1,Server,2,USE74576LP,ProLiant BL685c G1,USE74576LP
+878,osdc-ph3-e26,osdc-ph3-e26-1,Server,3,USE74576LJ,ProLiant BL685c G1,USE74576LJ
+879,osdc-ph3-e26,osdc-ph3-e26-1,Server,4,USE74576L9,ProLiant BL685c G1,USE74576L9
+880,osdc-ph3-e26,osdc-ph3-e26-1,Server,5,USE74576KJ,ProLiant BL465c G1,USE74576KJ
+881,osdc-ph3-e26,osdc-ph3-e26-1,Server,14,USE74576KT,ProLiant BL465c G1,USE74576KT
+882,osdc-ph3-e26,osdc-ph3-e26-1,Server,15,USE74576KR,ProLiant BL465c G1,USE74576KR
+872,osdc-ph3-e26,osdc-ph3-e26-1,Switch,1,FOC1140T11V,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T11V
+873,osdc-ph3-e26,osdc-ph3-e26-1,Switch,2,FOC1140T11U,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T11U
+874,osdc-ph3-e26,osdc-ph3-e26-1,Switch,3,osdc-ph3-e26-fab63sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87426055
+875,osdc-ph3-e26,osdc-ph3-e26-1,Switch,4,osdc-ph3-e26-fab64sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8742604Y
+829,osdc-ph3-e26,osdc-ph3-e26-2,MgmtProc,1,osdc-ph3-e26-oa2a,BladeSystem c7000 Onboard Administrator,O979MU6338
+841,osdc-ph3-e26,osdc-ph3-e26-2,Server,1,USE74576LF,ProLiant BL685c G1,USE74576LF
+842,osdc-ph3-e26,osdc-ph3-e26-2,Server,2,use74576lr,ProLiant BL685c G1,use74576lr
+843,osdc-ph3-e26,osdc-ph3-e26-2,Server,3,USE74576LS,ProLiant BL685c G1,USE74576LS
+844,osdc-ph3-e26,osdc-ph3-e26-2,Server,4,3H77MK0858,ProLiant BL685c G1,3H77MK0858
+845,osdc-ph3-e26,osdc-ph3-e26-2,Server,15,USE7477D14,ProLiant BL465c G1,USE7477D14
+836,osdc-ph3-e26,osdc-ph3-e26-2,Switch,1,FOC1140T13V,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T13V
+837,osdc-ph3-e26,osdc-ph3-e26-2,Switch,2,FOC1142T054,Cisco Catalyst Blade Switch 3020 for HP,FOC1142T054
+838,osdc-ph3-e26,osdc-ph3-e26-2,Switch,3,osdc-fab65sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8742604R
+839,osdc-ph3-e26,osdc-ph3-e26-2,Switch,4,osdc-fab66sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8742604M
+848,osdc-ph3-e27,"",Enclosure,-1,osdc-ph3-e27-2,BladeSystem c7000 Enclosure,USE74575X8
+810,osdc-ph3-e27,"",Enclosure,-1,osdc-ph3-e27-1,BladeSystem c7000 Enclosure,USE74575X9
+809,osdc-ph3-e27,osdc-ph3-e27-1,MgmtProc,1,10.16.24.82,BladeSystem c7000 Onboard Administrator,O979MU5513
+822,osdc-ph3-e27,osdc-ph3-e27-1,Server,1,USE80996BF,ProLiant BL680c G5,USE80996BF
+823,osdc-ph3-e27,osdc-ph3-e27-1,Server,2,USE80996B2,ProLiant BL680c G5,USE80996B2
+824,osdc-ph3-e27,osdc-ph3-e27-1,Server,3,USE80996BN,ProLiant BL680c G5,USE80996BN
+825,osdc-ph3-e27,osdc-ph3-e27-1,Server,4,USE80996AS,ProLiant BL680c G5,USE80996AS
+826,osdc-ph3-e27,osdc-ph3-e27-1,Server,5,USE80996C3,ProLiant BL680c G5,USE80996C3
+827,osdc-ph3-e27,osdc-ph3-e27-1,Server,7,USE74576KK,ProLiant BL465c G1,USE74576KK
+817,osdc-ph3-e27,osdc-ph3-e27-1,Switch,1,FOC1142T04C,Cisco Catalyst Blade Switch 3020 for HP,FOC1142T04C
+818,osdc-ph3-e27,osdc-ph3-e27-1,Switch,2,FOC1142T04M,Cisco Catalyst Blade Switch 3020 for HP,FOC1142T04M
+819,osdc-ph3-e27,osdc-ph3-e27-1,Switch,5,osdc-fab67sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87426047
+820,osdc-ph3-e27,osdc-ph3-e27-1,Switch,6,osdc-fab68sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87426045
+847,osdc-ph3-e27,osdc-ph3-e27-2,MgmtProc,1,osdc-ph3-e27-oa2a,BladeSystem c7000 Onboard Administrator,O978MU3852
+849,osdc-ph3-e27,osdc-ph3-e27-2,MgmtProc,2,osdc-ph3-e27-oa2b,BladeSystem c7000 Onboard Administrator,O96CMU8147
+859,osdc-ph3-e27,osdc-ph3-e27-2,Server,1,USE80996BT,ProLiant BL680c G5,USE80996BT
+860,osdc-ph3-e27,osdc-ph3-e27-2,Server,2,USE80996BC,ProLiant BL680c G5,USE80996BC
+861,osdc-ph3-e27,osdc-ph3-e27-2,Server,3,USE80996C9,ProLiant BL680c G5,USE80996C9
+862,osdc-ph3-e27,osdc-ph3-e27-2,Server,4,USE80996BB,ProLiant BL680c G5,USE80996BB
+863,osdc-ph3-e27,osdc-ph3-e27-2,Server,5,USE80996BX,ProLiant BL680c G5,USE80996BX
+855,osdc-ph3-e27,osdc-ph3-e27-2,Switch,1,FOC1140T126,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T126
+856,osdc-ph3-e27,osdc-ph3-e27-2,Switch,2,FOC1140T12U,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T12U
+857,osdc-ph3-e27,osdc-ph3-e27-2,Switch,5,osdc-ph3e27-fab69sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87426038
+858,osdc-ph3-e27,osdc-ph3-e27-2,Switch,6,osdc-ph3e27-fab70sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87426056
+343,QAI,"",Enclosure,-1,wdc-f05-bc1,BladeSystem c7000 Enclosure G2,SGH013P2C4
+372,QAI,"",Enclosure,-1,wdc-f06-bc1,BladeSystem c7000 Enclosure G2,SGH013P2C3
+342,QAI,wdc-f05-bc1,MgmtProc,1,wdc-f05-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB01BP3619
+344,QAI,wdc-f05-bc1,MgmtProc,2,wdc-f05-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB02BP6033
+362,QAI,wdc-f05-bc1,Server,1,USE013YWPF,ProLiant BL685c G6,USE013YWPF
+363,QAI,wdc-f05-bc1,Server,2,USE013YWP8,ProLiant BL685c G6,USE013YWP8
+364,QAI,wdc-f05-bc1,Server,3,USE013YWPL,ProLiant BL685c G6,USE013YWPL
+365,QAI,wdc-f05-bc1,Server,4,USE013YWPB,ProLiant BL685c G6,USE013YWPB
+366,QAI,wdc-f05-bc1,Server,5,USE013YWP9,ProLiant BL685c G6,USE013YWP9
+367,QAI,wdc-f05-bc1,Server,6,USE013YWP6,ProLiant BL685c G6,USE013YWP6
+368,QAI,wdc-f05-bc1,Server,7,USE74576K9,ProLiant BL465c G1,USE74576K9
+369,QAI,wdc-f05-bc1,Server,8,USE74576KV,ProLiant BL465c G1,USE74576KV
+370,QAI,wdc-f05-bc1,Server,16,USE74576KB,ProLiant BL465c G1,USE74576KB
+355,QAI,wdc-f05-bc1,Switch,1,10.128.203.233,Cisco Catalyst Blade Switch 3020 for HP,FOC1401T13V
+356,QAI,wdc-f05-bc1,Switch,2,10.128.203.230,Cisco Catalyst Blade Switch 3020 for HP,FOC1402T01V
+357,QAI,wdc-f05-bc1,Switch,3,TWT952V0BW,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT952V0BW
+358,QAI,wdc-f05-bc1,Switch,4,TWT002V0WS,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT002V0WS
+359,QAI,wdc-f05-bc1,Switch,5,wdc-fab1sw56,HP B-series 8/12c SAN Switch BladeSystem c-Class,CN8003A0J3
+360,QAI,wdc-f05-bc1,Switch,6,wdc-fab2sw56,HP B-series 8/12c SAN Switch BladeSystem c-Class,CN8003A0ES
+371,QAI,wdc-f06-bc1,MgmtProc,1,wdc-f06-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB01BP2436
+373,QAI,wdc-f06-bc1,MgmtProc,2,wdc-f06-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB02BP5331
+390,QAI,wdc-f06-bc1,Server,1,USE013YWP7,ProLiant BL685c G6,USE013YWP7
+391,QAI,wdc-f06-bc1,Server,2,USE013YWPC,ProLiant BL685c G6,USE013YWPC
+392,QAI,wdc-f06-bc1,Server,3,USE013YWPJ,ProLiant BL685c G6,USE013YWPJ
+393,QAI,wdc-f06-bc1,Server,4,USE013YWP5,ProLiant BL685c G6,USE013YWP5
+394,QAI,wdc-f06-bc1,Server,5,USE013YWPH,ProLiant BL685c G6,USE013YWPH
+395,QAI,wdc-f06-bc1,Server,6,USE013YWPA,ProLiant BL685c G6,USE013YWPA
+396,QAI,wdc-f06-bc1,Server,7,USE7477CX3,ProLiant BL465c G1,USE7477CX3
+397,QAI,wdc-f06-bc1,Server,15,USE7436V6K,ProLiant BL465c G1,USE7436V6K
+384,QAI,wdc-f06-bc1,Switch,1,10.128.203.231,Cisco Catalyst Blade Switch 3020 for HP,FOC1401T13W
+385,QAI,wdc-f06-bc1,Switch,2,10.128.203.244,Cisco Catalyst Blade Switch 3020 for HP,FOC1401T13Y
+386,QAI,wdc-f06-bc1,Switch,3,TWT002V0J1,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT002V0J1
+387,QAI,wdc-f06-bc1,Switch,4,TWT002V0K8,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT002V0K8
+388,QAI,wdc-f06-bc1,Switch,5,wdc-fab1sw57,HP B-series 8/12c SAN Switch BladeSystem c-Class,CN8003A0EC
+389,QAI,wdc-f06-bc1,Switch,6,wdc-fab2sw57,HP B-series 8/12c SAN Switch BladeSystem c-Class,CN8003A0FA
+3335,SC9-bm026-k03_09USE81099L1,SC9-k03-bc1,Server,1,XPF--TM1B0FJ,ProLiant BL685c G7,XPF%%TM1B0FJ
+1260,SC9-bm026-k05,"",Enclosure,-1,sc9-k05-bc1,BladeSystem c7000 Enclosure G2,SGH043P6EW
+1259,SC9-bm026-k05,sc9-k05-bc1,MgmtProc,1,sc9-k05-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK0409
+1261,SC9-bm026-k05,sc9-k05-bc1,MgmtProc,2,sc9-k05-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK9811
+1986,SC9-bm026-k05,sc9-k05-bc1,Switch,1,sc9-k05-bc1-flex10-1,HP VC Flex-10 Enet Module,3C4034005W
+1263,SC9-bm026-k05,sc9-k05-bc1,Switch,2,sc9-k05-bc1-flex10-2,HP VC Flex-10 Enet Module,3C4034005L
+1264,SC9-bm026-k05,sc9-k05-bc1,Switch,5,sc9-k05bc1-odd,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8036B0AC
+1265,SC9-bm026-k05,sc9-k05-bc1,Switch,6,sc9-k05bc1-even,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8025B0F1
+1715,SC9-bm_O26-K02_09USE81099L1,"",Enclosure,-1,SC9-k04-bc1,BladeSystem c7000 Enclosure G2,SGH043P6ET
+1743,SC9-bm_O26-K02_09USE81099L1,"",Enclosure,-1,SC9-k03-bc1,BladeSystem c7000 Enclosure G2,SGH043P6EV
+1787,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,MgmtProc,1,sc9-k01-oa1a,BladeSystem c7000 Onboard Administrator,O981MP8372
+1789,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,MgmtProc,2,sc9-k01-oa1b,BladeSystem c7000 Onboard Administrator,OB9ABP2467
+1803,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Server,1,USE04232JB,ProLiant BL685c G7,USE04232JB
+1804,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Server,2,USE04232JC,ProLiant BL685c G7,USE04232JC
+2533,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Server,3,USE129CMLB,ProLiant BL685c G7,USE129CMLB
+2534,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Server,4,USE129CMLA,ProLiant BL685c G7,USE129CMLA
+1805,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Server,6,USE0412MKP,ProLiant BL460c G7,USE0412MKP
+1806,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Server,7,USE0412ML4,ProLiant BL460c G7,USE0412ML4
+1807,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Server,8,USE04024CF,ProLiant BL460c G7,USE04024CF
+1808,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Server,14,USE0412MKJ,ProLiant BL460c G7,USE0412MKJ
+1809,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Server,15,USE0412MKW,ProLiant BL460c G7,USE0412MKW
+1810,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Server,16,USE04024CE,ProLiant BL460c G7,USE04024CE
+1798,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Switch,1,sc9-k01-flex10-1,HP VC Flex-10 Enet Module,TW20380039
+1799,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Switch,2,sc9-k01-flex10-2,HP VC Flex-10 Enet Module,TW2038003C
+1800,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Switch,5,sc9-k01bc1-even,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8030B0A9
+1801,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1,Switch,6,sc9-k01bc1-odd,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8030B0AU
+1788,SC9-bm_O26-K02_09USE81099L1,SC9-K01-BC1_USE81099L1,Enclosure,-1,SC9-K01-BC1,BladeSystem c7000 Enclosure,USE81099L1
+1813,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,MgmtProc,1,sc9-k02-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB9ABP2306
+1815,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,MgmtProc,2,sc9-k02-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB9ABP2391
+1830,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Server,1,USE04232JA,ProLiant BL685c G7,USE04232JA
+1831,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Server,2,USE04232JP,ProLiant BL685c G7,USE04232JP
+1832,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Server,6,USE0412MKX,ProLiant BL460c G7,USE0412MKX
+1833,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Server,7,USE0412ML6,ProLiant BL460c G7,USE0412ML6
+1834,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Server,8,USE04024CJ,ProLiant BL460c G7,USE04024CJ
+1835,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Server,14,USE0412MKS,ProLiant BL460c G7,USE0412MKS
+1836,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Server,15,USE0412MKM,ProLiant BL460c G7,USE0412MKM
+1837,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Server,16,USE04024CH,ProLiant BL460c G7,USE04024CH
+1817,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Switch,1,sc9-k02-flex10-1,HP VC Flex-10 Enet Module,TW20380036
+1818,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Switch,2,sc9-k02-flex10-2,HP VC Flex-10 Enet Module,TW20380032
+1819,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Switch,5,sc9-k02bc-even,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8030B09R
+1820,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1,Switch,6,sc9-k02bc1-odd,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8029B09Z
+1814,SC9-bm_O26-K02_09USE81099L1,SC9-K02-BC1_USE81099L7,Enclosure,-1,SC9-K02-BC1,BladeSystem c7000 Enclosure,USE81099L7
+1744,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,MgmtProc,1,sc9-k03-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK0953
+1742,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,MgmtProc,2,sc9-k03-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK9770
+1755,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Server,1,USE04232JF,ProLiant BL685c G7,USE04232JF
+1756,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Server,2,USE04232JJS1,ProLiant BL685c G7,USE04232JJS1
+2542,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Server,3,USE129CML9,ProLiant BL685c G7,USE129CML9
+2543,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Server,4,USE129CMLC,ProLiant BL685c G7,USE129CMLC
+1757,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Server,6,USE0412ML1,ProLiant BL460c G7,USE0412ML1
+1739,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Server,7,USE0412MLA,ProLiant BL460c G7,USE0412MLA
+1737,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Server,8,USE0412MKL,ProLiant BL460c G7,USE0412MKL
+1758,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Server,15,USE0412MKV,ProLiant BL460c G7,USE0412MKV
+1741,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Server,16,USE0412ML0,ProLiant BL460c G7,USE0412ML0
+1746,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Switch,1,sc9-k03-bc1-flex10-1,HP VC Flex-10 Enet Module,3C40340061
+1747,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Switch,2,sc9-k03-bc1-flex10-2,HP VC Flex-10 Enet Module,3C4034006M
+1748,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Switch,5,sc9-k03bc1-even,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8037B021
+1749,SC9-bm_O26-K02_09USE81099L1,SC9-k03-bc1,Switch,6,sc9-k03bc1-odd,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8037B00Z
+1716,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,MgmtProc,1,sc9-k04-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK0532
+1714,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,MgmtProc,2,sc9-k04-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK5852
+1729,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Server,1,USE04232JH,ProLiant BL685c G7,USE04232JH
+1730,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Server,2,USE04232JMJ6,ProLiant BL685c G7,USE04232JMJ6
+1731,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Server,6,USE0412ML9,ProLiant BL460c G7,USE0412ML9
+1732,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Server,7,USE0412MKK,ProLiant BL460c G7,USE0412MKK
+1733,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Server,8,USE0412MKT,ProLiant BL460c G7,USE0412MKT
+1734,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Server,15,USE0412MKN,ProLiant BL460c G7,USE0412MKN
+1735,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Server,16,USE0412ML7,ProLiant BL460c G7,USE0412ML7
+1724,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Switch,1,sc9-k04-bc1-flex10-1,HP VC Flex-10 Enet Module,3C4034005S
+1725,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Switch,2,sc9-k04-bc1-flex10-2,HP VC Flex-10 Enet Module,3C40340067
+1726,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Switch,5,sc9-k04bc1-even,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8037B01L
+1727,SC9-bm_O26-K02_09USE81099L1,SC9-k04-bc1,Switch,6,sc9-k04bc1-odd,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8037B03J
+135,sc9-i6,"",Enclosure,-1,sc9-i6-2,BladeSystem c7000 Enclosure,USE80287R4
+166,sc9-i6,"",Enclosure,-1,sc9-i6-1,BladeSystem c7000 Enclosure,USE80287R5
+213,sc9-i6,prodEBS-II,MgmtProc,1,sc9-i1-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK0241
+215,sc9-i6,prodEBS-II,MgmtProc,2,sc9-i1-oa2a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB0BBK6459
+226,sc9-i6,prodEBS-II,Server,1,use0494ny0,ProLiant BL685c G7,use0494ny0
+227,sc9-i6,prodEBS-II,Server,2,USE0494NY7,ProLiant BL685c G7,USE0494NY7
+228,sc9-i6,prodEBS-II,Server,3,USE0494NY5,ProLiant BL685c G7,USE0494NY5
+219,sc9-i6,prodEBS-II,Switch,1,FOC1140T12L,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T12L
+220,sc9-i6,prodEBS-II,Switch,2,10.113.74.235,Cisco Catalyst Blade Switch 3020 for HP,FOC1235T0V2
+221,sc9-i6,prodEBS-II,Switch,3,FOC1235T0U0,Cisco Catalyst Blade Switch 3020 for HP,FOC1235T0U0
+222,sc9-i6,prodEBS-II,Switch,4,FOC1140T0KZ,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T0KZ
+223,sc9-i6,prodEBS-II,Switch,5,TWT751V0AD,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT751V0AD
+224,sc9-i6,prodEBS-II,Switch,6,TWT802V0SG,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT802V0SG
+225,sc9-i6,prodEBS-II,Switch,8,TWT802V0EC,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT802V0EC
+167,sc9-i6,sc9-i6-1,MgmtProc,1,sc9-i6-oa1a,BladeSystem c7000 Onboard Administrator,O97BMU5153
+165,sc9-i6,sc9-i6-1,MgmtProc,2,sc9-i6-oa1b,BladeSystem c7000 Onboard Administrator,O981MP0408
+185,sc9-i6,sc9-i6-1,Server,1,USE923MM8T,ProLiant BL685c G6,USE923MM8T
+186,sc9-i6,sc9-i6-1,Server,2,USE80996C1,ProLiant BL680c G5,USE80996C1
+187,sc9-i6,sc9-i6-1,Server,3,USE80996BA,ProLiant BL680c G5,USE80996BA
+188,sc9-i6,sc9-i6-1,Server,4,USE80996BE,ProLiant BL680c G5,USE80996BE
+189,sc9-i6,sc9-i6-1,Server,5,USE80996AR,ProLiant BL680c G5,USE80996AR
+190,sc9-i6,sc9-i6-1,Server,6,USE80996AX,ProLiant BL680c G5,USE80996AX
+191,sc9-i6,sc9-i6-1,Server,7,USE8099652,ProLiant BL460c G1,USE8099652
+192,sc9-i6,sc9-i6-1,Server,8,USE809965A,ProLiant BL460c G1,USE809965A
+193,sc9-i6,sc9-i6-1,Server,15,USE809964D,ProLiant BL460c G1,USE809964D
+194,sc9-i6,sc9-i6-1,Server,16,USE80892W4,ProLiant BL460c G1,USE80892W4
+178,sc9-i6,sc9-i6-1,Switch,1,TWT803V1H5,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT803V1H5
+179,sc9-i6,sc9-i6-1,Switch,2,TWT803V1FL,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT803V1FL
+180,sc9-i6,sc9-i6-1,Switch,3,TWT803V1J6,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT803V1J6
+181,sc9-i6,sc9-i6-1,Switch,4,TWT803V1FE,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT803V1FE
+182,sc9-i6,sc9-i6-1,Switch,5,TWT750V06V,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT750V06V
+183,sc9-i6,sc9-i6-1,Switch,6,TWT751V061,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT751V061
+184,sc9-i6,sc9-i6-1,Switch,8,TWT751V0GJ,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT751V0GJ
+134,sc9-i6,sc9-i6-2,MgmtProc,1,sc9-i6-oa2a,BladeSystem c7000 Onboard Administrator,O97BMU5076
+136,sc9-i6,sc9-i6-2,MgmtProc,2,sc9-i6-oa2b,BladeSystem c7000 Onboard Administrator,O982MP0344
+155,sc9-i6,sc9-i6-2,Server,1,USE923MM8N,ProLiant BL685c G6,USE923MM8N
+156,sc9-i6,sc9-i6-2,Server,2,USE80996C0,ProLiant BL680c G5,USE80996C0
+157,sc9-i6,sc9-i6-2,Server,3,USE80996AP,ProLiant BL680c G5,USE80996AP
+158,sc9-i6,sc9-i6-2,Server,4,USE80996B4,ProLiant BL680c G5,USE80996B4
+159,sc9-i6,sc9-i6-2,Server,5,USE80996C2,ProLiant BL680c G5,USE80996C2
+160,sc9-i6,sc9-i6-2,Server,6,USE80996C6,ProLiant BL680c G5,USE80996C6
+161,sc9-i6,sc9-i6-2,Server,7,USE8099653,ProLiant BL460c G1,USE8099653
+162,sc9-i6,sc9-i6-2,Server,8,USE809964K,ProLiant BL460c G1,USE809964K
+163,sc9-i6,sc9-i6-2,Server,15,USE8099650,ProLiant BL460c G1,USE8099650
+164,sc9-i6,sc9-i6-2,Server,16,USE8099654,ProLiant BL460c G1,USE8099654
+147,sc9-i6,sc9-i6-2,Switch,1,TWT804V0G0,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT804V0G0
+148,sc9-i6,sc9-i6-2,Switch,2,TWT803V1G0,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT803V1G0
+149,sc9-i6,sc9-i6-2,Switch,3,TWT802V05L,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT802V05L
+150,sc9-i6,sc9-i6-2,Switch,4,TWT802V042,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT802V042
+151,sc9-i6,sc9-i6-2,Switch,5,TWT805V01R,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT805V01R
+152,sc9-i6,sc9-i6-2,Switch,6,TWT750V02C,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT750V02C
+153,sc9-i6,sc9-i6-2,Switch,8,TWT750V03N,HP 4Gb Fibre Channel Pass-thru Module for c-Class BladeSystem,TWT750V03N
+1507,sc9-i8,"",Enclosure,-1,sc9-i8-1,BladeSystem c7000 Enclosure,USE74575X5
+1551,sc9-i8,"",Enclosure,-1,sc9-i8-2,BladeSystem c7000 Enclosure,USE74575X6
+1678,sc9-j10,1Z34AB7890_USE7436VP2,Enclosure,-1,1Z34AB7890_USE7436VP2,BladeSystem c7000 Enclosure,USE7436VP2
+1679,sc9-j10,1Z34AB7890_USE7436VP2,MgmtProc,1,sc9-j10-oa1b,BladeSystem c7000 Onboard Administrator,O981MP8596
+1677,sc9-j10,1Z34AB7890_USE7436VP2,MgmtProc,2,sc9-j10-oa1a,BladeSystem c7000 Onboard Administrator,O994MP0897
+1691,sc9-j10,1Z34AB7890_USE7436VP2,Server,1,USE03816F9,ProLiant BL685c G7,USE03816F9
+1630,sc9-j10,1Z34AB7890_USE7436VP2,Server,2,USE0525C48,ProLiant BL685c G7,USE0525C48
+1692,sc9-j10,1Z34AB7890_USE7436VP2,Server,3,USE03816FB,ProLiant BL685c G7,USE03816FB
+1693,sc9-j10,1Z34AB7890_USE7436VP2,Server,4,USE03816F5,ProLiant BL685c G7,USE03816F5
+1694,sc9-j10,1Z34AB7890_USE7436VP2,Server,5,USE03816F6,ProLiant BL685c G7,USE03816F6
+1634,sc9-j10,1Z34AB7890_USE7436VP2,Server,6,USE0525C47,ProLiant BL685c G7,USE0525C47
+1638,sc9-j10,1Z34AB7890_USE7436VP2,Server,7,USE0525C46,ProLiant BL685c G7,USE0525C46
+1684,sc9-j10,1Z34AB7890_USE7436VP2,Switch,1,FOC1139T040,Cisco Catalyst Blade Switch 3020 for HP,FOC1139T040
+1685,sc9-j10,1Z34AB7890_USE7436VP2,Switch,2,FOC1139T06C,Cisco Catalyst Blade Switch 3020 for HP,FOC1139T06C
+1686,sc9-j10,1Z34AB7890_USE7436VP2,Switch,3,FOC1138T0S5,Cisco Catalyst Blade Switch 3020 for HP,FOC1138T0S5
+1687,sc9-j10,1Z34AB7890_USE7436VP2,Switch,4,FOC1139T04L,Cisco Catalyst Blade Switch 3020 for HP,FOC1139T04L
+1688,sc9-j10,1Z34AB7890_USE7436VP2,Switch,5,sc9-fab35sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731601G
+1689,sc9-j10,1Z34AB7890_USE7436VP2,Switch,6,sc9-fab36sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731600J
+1646,sc9-j12,"",Enclosure,-1,sc9-j12-1,BladeSystem c7000 Enclosure,USE80894HC
+1645,sc9-j12,sc9-j12-1,MgmtProc,1,sc9-j12-oa1a,BladeSystem c7000 Onboard Administrator,O981MP5220
+1647,sc9-j12,sc9-j12-1,MgmtProc,2,sc9-j12-oa1b,BladeSystem c7000 Onboard Administrator,O981MP4141
+1661,sc9-j12,sc9-j12-1,Server,1,USE0494T0A,ProLiant BL685c G7,USE0494T0A
+1662,sc9-j12,sc9-j12-1,Server,2,USE0494T0B,ProLiant BL685c G7,USE0494T0B
+1663,sc9-j12,sc9-j12-1,Server,3,USE0494T0C,ProLiant BL685c G7,USE0494T0C
+1664,sc9-j12,sc9-j12-1,Server,4,USE0494T08,ProLiant BL685c G7,USE0494T08
+1665,sc9-j12,sc9-j12-1,Server,5,USE0494T09,ProLiant BL685c G7,USE0494T09
+1626,sc9-j12,sc9-j12-1,Server,6,USE03816F4,ProLiant BL685c G7,USE03816F4
+1666,sc9-j12,sc9-j12-1,Server,7,USE03816F2,ProLiant BL685c G7,USE03816F2
+1667,sc9-j12,sc9-j12-1,Server,8,USE03816F3,ProLiant BL685c G7,USE03816F3
+1655,sc9-j12,sc9-j12-1,Switch,1,FOC1201T07R,Cisco Catalyst Blade Switch 3020 for HP,FOC1201T07R
+1656,sc9-j12,sc9-j12-1,Switch,2,FOC1201T0SM,Cisco Catalyst Blade Switch 3020 for HP,FOC1201T0SM
+1657,sc9-j12,sc9-j12-1,Switch,3,FOC1201T08Y,Cisco Catalyst Blade Switch 3020 for HP,FOC1201T08Y
+1658,sc9-j12,sc9-j12-1,Switch,4,FOC1201T08T,Cisco Catalyst Blade Switch 3020 for HP,FOC1201T08T
+1942,sc9-j12,sc9-j12-1,Switch,5,sc9-fab73sw1,Brocade 4/24 SAN Switch for HP c-Class BladeSystem,CN8801704H
+1659,sc9-j12,sc9-j12-1,Switch,6,sc9-fab74sw1,Brocade 4/24 SAN Switch for HP c-Class BladeSystem,CN88017048
+3078,SC9-K13,"",Enclosure,-1,SC9-K13-BC1,BladeSystem c7000 Enclosure G2,SGH138PCV7
+3079,SC9-K13,SC9-K13-BC1,MgmtProc,1,sc9-k13-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB14BP3316
+3077,SC9-K13,SC9-K13-BC1,MgmtProc,2,sc9-k13-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB15BP2850
+1270,SC9-K13,SC9-K13-BC1,Server,1,USE04232JDGD,ProLiant BL685c G7,USE04232JDGD
+1271,SC9-K13,SC9-K13-BC1,Server,2,USE04232JL,ProLiant BL685c G7,USE04232JL
+1272,SC9-K13,SC9-K13-BC1,Server,3,USE04232JN,ProLiant BL685c G7,USE04232JN
+2512,SC9-K13,SC9-K13-BC1,Server,4,USE129CMLD,ProLiant BL685c G7,USE129CMLD
+2699,SC9-K13,SC9-K13-BC1,Server,6,USE11285TE,ProLiant BL490c G7,USE11285TE
+2313,SC9-K13,SC9-K13-BC1,Server,7,USE11285T1,ProLiant BL490c G7,USE11285T1
+2314,SC9-K13,SC9-K13-BC1,Server,8,USE11285T7,ProLiant BL490c G7,USE11285T7
+2700,SC9-K13,SC9-K13-BC1,Server,14,USE11285TC,ProLiant BL490c G7,USE11285TC
+2328,SC9-K13,SC9-K13-BC1,Server,15,USE11285SK,ProLiant BL490c G7,USE11285SK
+2316,SC9-K13,SC9-K13-BC1,Server,16,USE11285T3,ProLiant BL490c G7,USE11285T3
+3081,SC9-K13,SC9-K13-BC1,Switch,1,sc9-k13-bc1-flex10-1,HP VC Flex-10 Enet Module,3C412800BF
+3082,SC9-K13,SC9-K13-BC1,Switch,2,sc9-k13-bc1-flex10-2,HP VC Flex-10 Enet Module,3C412800F8
+3083,SC9-K13,SC9-K13-BC1,Switch,6,0.0.3.0,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8130B035
+1404,sc9-l07,"",Enclosure,-1,sc9-l07-1,BladeSystem c7000 Enclosure,USE743707S
+1394,sc9-l07,sc9-l07-1,MgmtProc,-1,sc9-l07-oa1b,HP Onboard Administrator,""
+1403,sc9-l07,sc9-l07-1,MgmtProc,1,sc9-l07-oa1a,BladeSystem c7000 Onboard Administrator,O979MU2845
+1215,SC9-L10,"",Enclosure,-1,SC9-L10-Bottom,BladeSystem c7000 Enclosure,USE81099L4
+1214,SC9-L10,SC9-L10-Bottom,MgmtProc,1,sc9-l10-oa1a,BladeSystem c7000 Onboard Administrator,O981MP6707
+1216,SC9-L10,SC9-L10-Bottom,MgmtProc,2,sc9-l10-oa1b,BladeSystem c7000 Onboard Administrator,O981MP4219
+1213,SC9-L10,SC9-L10-Bottom,Server,1,USE839F8DX,ProLiant BL680c G5,USE839F8DX
+1231,SC9-L10,SC9-L10-Bottom,Server,2,USE839F8DS,ProLiant BL680c G5,USE839F8DS
+1232,SC9-L10,SC9-L10-Bottom,Server,3,USE839F8DK,ProLiant BL680c G5,USE839F8DK
+1211,SC9-L10,SC9-L10-Bottom,Server,4,USE839F8DV,ProLiant BL680c G5,USE839F8DV
+1233,SC9-L10,SC9-L10-Bottom,Server,5,USE73869PR,ProLiant BL685c G1,USE73869PR
+1234,SC9-L10,SC9-L10-Bottom,Server,7,USE809964L,ProLiant BL460c G1,USE809964L
+1235,SC9-L10,SC9-L10-Bottom,Server,8,USE809964S,ProLiant BL460c G1,USE809964S
+1236,SC9-L10,SC9-L10-Bottom,Server,15,USE80187A6,ProLiant BL465c G1,USE80187A6
+1237,SC9-L10,SC9-L10-Bottom,Server,16,USE80187A3,ProLiant BL465c G1,USE80187A3
+1224,SC9-L10,SC9-L10-Bottom,Switch,1,TWT828V0MN,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0MN
+1225,SC9-L10,SC9-L10-Bottom,Switch,2,TWT828V0KH,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0KH
+1226,SC9-L10,SC9-L10-Bottom,Switch,3,sc9-fab53sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8747603M
+1227,SC9-L10,SC9-L10-Bottom,Switch,4,sc9-fab54sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN87476034
+1228,SC9-L10,SC9-L10-Bottom,Switch,5,TWT828V0D6,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0D6
+1229,SC9-L10,SC9-L10-Bottom,Switch,6,TWT828V058,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V058
+78,UAT,"",Enclosure,-1,wdc-e07-bc1,BladeSystem c7000 Enclosure G2,SGH005P1EF
+62,UAT,"",Enclosure,-1,wdc-e08-bc1,BladeSystem c7000 Enclosure G2,SGH005P1EH
+77,UAT,wdc-e07-bc1,MgmtProc,1,10.128.200.77,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB9BBP5548
+79,UAT,wdc-e07-bc1,MgmtProc,2,10.128.200.78,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB9CBP8495
+94,UAT,wdc-e07-bc1,Server,1,USE006XD4M,ProLiant BL685c G6,USE006XD4M
+95,UAT,wdc-e07-bc1,Server,2,USE006XD4L,ProLiant BL685c G6,USE006XD4L
+96,UAT,wdc-e07-bc1,Server,3,USE006XD4W,ProLiant BL685c G6,USE006XD4W
+97,UAT,wdc-e07-bc1,Server,4,USE006XD4X,ProLiant BL685c G6,USE006XD4X
+98,UAT,wdc-e07-bc1,Server,5,USE006XD51,ProLiant BL685c G6,USE006XD51
+99,UAT,wdc-e07-bc1,Server,6,USE006XD4K,ProLiant BL685c G6,USE006XD4K
+100,UAT,wdc-e07-bc1,Server,7,USE006XD4Y,ProLiant BL685c G6,USE006XD4Y
+101,UAT,wdc-e07-bc1,Server,8,USE006XD4V,ProLiant BL685c G6,USE006XD4V
+88,UAT,wdc-e07-bc1,Switch,1,10.128.201.236,Cisco Catalyst Blade Switch 3020 for HP,FOC1351T026
+89,UAT,wdc-e07-bc1,Switch,2,10.128.201.248,Cisco Catalyst Blade Switch 3020 for HP,FOC1351T03X
+90,UAT,wdc-e07-bc1,Switch,3,TWT944V006,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT944V006
+91,UAT,wdc-e07-bc1,Switch,4,TWT944V0CN,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT944V0CN
+92,UAT,wdc-e07-bc1,Switch,5,10.128.200.154,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8948B0C4
+93,UAT,wdc-e07-bc1,Switch,6,10.128.200.155,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8951B017
+61,UAT,wdc-e08-bc1,MgmtProc,1,10.128.200.75,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB9BBP5353
+63,UAT,wdc-e08-bc1,MgmtProc,2,10.128.200.76,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB9CBP7397
+54,UAT,wdc-e08-bc1,Server,1,USE006XD4P,ProLiant BL685c G6,USE006XD4P
+74,UAT,wdc-e08-bc1,Server,2,USE006XD4J,ProLiant BL685c G6,USE006XD4J
+26,UAT,wdc-e08-bc1,Server,3,USE006XD50,ProLiant BL685c G6,USE006XD50
+75,UAT,wdc-e08-bc1,Server,4,USE006XD4H,ProLiant BL685c G6,USE006XD4H
+24,UAT,wdc-e08-bc1,Server,5,USE006XD4S,ProLiant BL685c G6,USE006XD4S
+76,UAT,wdc-e08-bc1,Server,6,USE006XD4T,ProLiant BL685c G6,USE006XD4T
+60,UAT,wdc-e08-bc1,Server,7,USE006XD4N,ProLiant BL685c G6,USE006XD4N
+56,UAT,wdc-e08-bc1,Server,8,USE006XD4R,ProLiant BL685c G6,USE006XD4R
+67,UAT,wdc-e08-bc1,Switch,1,10.128.201.234,Cisco Catalyst Blade Switch 3020 for HP,FOC1351T088
+68,UAT,wdc-e08-bc1,Switch,2,10.128.201.241,Cisco Catalyst Blade Switch 3020 for HP,FOC1351T0B3
+69,UAT,wdc-e08-bc1,Switch,3,TWT944V04K,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT944V04K
+70,UAT,wdc-e08-bc1,Switch,4,TWT944V03Z,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT944V03Z
+71,UAT,wdc-e08-bc1,Switch,5,10.128.200.156,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8948B0DS
+72,UAT,wdc-e08-bc1,Switch,6,10.128.200.157,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8948B08B
+1311,UnnamedRack,"",Enclosure,-1,SGH642X98P,BladeSystem c7000 Enclosure,USE810992L
+1341,UnnamedRack,"",Enclosure,-1,1Z34AB7890,BladeSystem c7000 Enclosure,USE81098YH
+1342,UnnamedRack,1Z34AB7890,MgmtProc,1,sc9-l04-oa1a,BladeSystem c7000 Onboard Administrator,O981MP8667
+1340,UnnamedRack,1Z34AB7890,MgmtProc,2,sc9-l04-oa1b,BladeSystem c7000 Onboard Administrator,O981MP6497
+1357,UnnamedRack,1Z34AB7890,Server,1,USE839F8E6,ProLiant BL680c G5,USE839F8E6
+1358,UnnamedRack,1Z34AB7890,Server,2,USE839F8DY,ProLiant BL680c G5,USE839F8DY
+1359,UnnamedRack,1Z34AB7890,Server,3,USE839F8DF,ProLiant BL680c G5,USE839F8DF
+1360,UnnamedRack,1Z34AB7890,Server,4,USE839F8DH,ProLiant BL680c G5,USE839F8DH
+1361,UnnamedRack,1Z34AB7890,Server,5,USE839F8DJ,ProLiant BL680c G5,USE839F8DJ
+1362,UnnamedRack,1Z34AB7890,Server,6,USE839F8DL,ProLiant BL680c G5,USE839F8DL
+1363,UnnamedRack,1Z34AB7890,Server,7,USE839F8DD,ProLiant BL680c G5,USE839F8DD
+1364,UnnamedRack,1Z34AB7890,Server,8,USE839F8E4,ProLiant BL680c G5,USE839F8E4
+1351,UnnamedRack,1Z34AB7890,Switch,1,TWT752V09D,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT752V09D
+1352,UnnamedRack,1Z34AB7890,Switch,2,TWT828V01T,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V01T
+1353,UnnamedRack,1Z34AB7890,Switch,3,sc9-fab33sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN874760AM
+1354,UnnamedRack,1Z34AB7890,Switch,4,sc9-fab34sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8747603N
+1355,UnnamedRack,1Z34AB7890,Switch,5,TWT828V010,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V010
+1356,UnnamedRack,1Z34AB7890,Switch,6,TWT828V02H,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V02H
+1312,UnnamedRack,SGH642X98P,MgmtProc,1,sc9-l04-oa2a,BladeSystem c7000 Onboard Administrator,O981MP8398
+1310,UnnamedRack,SGH642X98P,MgmtProc,2,sc9-l04-oa2b,BladeSystem c7000 Onboard Administrator,O981MP3833
+1330,UnnamedRack,SGH642X98P,Server,1,USE839F8DT,ProLiant BL680c G5,USE839F8DT
+1331,UnnamedRack,SGH642X98P,Server,2,USE839F8E1,ProLiant BL680c G5,USE839F8E1
+1332,UnnamedRack,SGH642X98P,Server,3,USE839F8DE,ProLiant BL680c G5,USE839F8DE
+1333,UnnamedRack,SGH642X98P,Server,4,USE839F8E3,ProLiant BL680c G5,USE839F8E3
+1334,UnnamedRack,SGH642X98P,Server,5,USE74473RN,ProLiant BL465c G1,USE74473RN
+1335,UnnamedRack,SGH642X98P,Server,6,USE7436V66,ProLiant BL465c G1,USE7436V66
+1336,UnnamedRack,SGH642X98P,Server,7,USE7436V63,ProLiant BL465c G1,USE7436V63
+1337,UnnamedRack,SGH642X98P,Server,8,USE80187A7,ProLiant BL465c G1,USE80187A7
+1338,UnnamedRack,SGH642X98P,Server,15,USE80187A4,ProLiant BL465c G1,USE80187A4
+1339,UnnamedRack,SGH642X98P,Server,16,USE80187A5,ProLiant BL465c G1,USE80187A5
+1323,UnnamedRack,SGH642X98P,Switch,1,TWT828V0MW,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0MW
+1324,UnnamedRack,SGH642X98P,Switch,2,TWT828V0L3,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0L3
+1325,UnnamedRack,SGH642X98P,Switch,3,sc9-fab31sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8836607G
+1326,UnnamedRack,SGH642X98P,Switch,4,sc9-fab32sw1,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN88366085
+1327,UnnamedRack,SGH642X98P,Switch,5,TWT828V053,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V053
+1328,UnnamedRack,SGH642X98P,Switch,6,TWT828V01R,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V01R
+2552,wdc-e03-bc1_09SGH132PC03,"",Enclosure,-1,wdc-e03-bc1,BladeSystem c7000 Enclosure G2,SGH132PC03
+2551,wdc-e03-bc1_09SGH132PC03,wdc-e03-bc1,MgmtProc,1,10.128.200.130,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB11BP6536
+2553,wdc-e03-bc1_09SGH132PC03,wdc-e03-bc1,MgmtProc,2,10.128.200.131,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB16BP0590
+2638,wdc-e03-bc1_09SGH132PC03,wdc-e03-bc1,Server,2,USE132DTL6,ProLiant BL680c G7,USE132DTL6
+2639,wdc-e03-bc1_09SGH132PC03,wdc-e03-bc1,Server,4,wdc-itlab1-3,ProLiant BL680c G7,USE132DTL4
+2596,wdc-e03-bc1_09SGH132PC03,wdc-e03-bc1,Server,5,wdc-itlab2-1,ProLiant BL460c G7,USE132DTL2
+2555,wdc-e03-bc1_09SGH132PC03,wdc-e03-bc1,Switch,1,10.128.200.134,HP VC Flex-10 Enet Module,3C4119016X
+2556,wdc-e03-bc1_09SGH132PC03,wdc-e03-bc1,Switch,2,10.128.200.135,HP VC Flex-10 Enet Module,3C41190153
+2557,wdc-e03-bc1_09SGH132PC03,wdc-e03-bc1,Switch,3,10.128.200.138,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8126B02Z
+2558,wdc-e03-bc1_09SGH132PC03,wdc-e03-bc1,Switch,4,10.128.200.139,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8126B01R
+2561,wdc-e04-bc1_09SGH132PC02,"",Enclosure,-1,wdc-e04-bc1,BladeSystem c7000 Enclosure G2,SGH132PC02
+2560,wdc-e04-bc1_09SGH132PC02,wdc-e04-bc1,MgmtProc,1,10.128.200.132,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB13BP6663
+2562,wdc-e04-bc1_09SGH132PC02,wdc-e04-bc1,MgmtProc,2,10.128.200.133,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB16BP2011
+2571,wdc-e04-bc1_09SGH132PC02,wdc-e04-bc1,Server,2,wdc-itlab1-2,ProLiant BL680c G7,USE132DTL7
+2572,wdc-e04-bc1_09SGH132PC02,wdc-e04-bc1,Server,4,USE132DTL5,ProLiant BL680c G7,USE132DTL5
+2856,wdc-e04-bc1_09SGH132PC02,wdc-e04-bc1,Server,4,WUC0C9V0Z0DW,ProLiant BL680c G7,WUC0C9V0Z0DW
+2640,wdc-e04-bc1_09SGH132PC02,wdc-e04-bc1,Server,5,wdc-itlab2-2,ProLiant BL460c G7,USE132DTL3
+2564,wdc-e04-bc1_09SGH132PC02,wdc-e04-bc1,Switch,1,10.128.200.136,HP VC Flex-10 Enet Module,3C4119012M
+2565,wdc-e04-bc1_09SGH132PC02,wdc-e04-bc1,Switch,2,10.128.200.137,HP VC Flex-10 Enet Module,3C4119012L
+2566,wdc-e04-bc1_09SGH132PC02,wdc-e04-bc1,Switch,3,10.128.200.140,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8125B050
+2567,wdc-e04-bc1_09SGH132PC02,wdc-e04-bc1,Switch,4,10.128.200.141,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8125B05D
+121,wdc-e06_09SGH051P7ST,"",Enclosure,-1,wdc-e05-bc1,BladeSystem c7000 Enclosure G2,SGH051P7ST
+103,wdc-e06_09SGH051P7ST,"",Enclosure,-1,wdc-e06-bc1,BladeSystem c7000 Enclosure G2,SGH051P7SV
+120,wdc-e06_09SGH051P7ST,wdc-e05-bc1,MgmtProc,1,10.128.200.99,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK5578
+122,wdc-e06_09SGH051P7ST,wdc-e05-bc1,MgmtProc,2,10.128.200.100,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB0BBK5473
+130,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Server,1,wdc-devtest4-public-vmotion,ProLiant BL685c G7,USE05158EE
+131,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Server,2,wdc-devtest4-2,ProLiant BL685c G7,USE05158ED
+132,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Server,3,wdc-devtest4-3,ProLiant BL685c G7,USE05158EH
+2375,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Server,4,wdc-devtest4-4,ProLiant BL685c G7,USE05158E6
+133,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Server,5,wdc-devtest4-5,ProLiant BL685c G7,USE05158EK
+2377,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Server,6,wdc-devtest4-6,ProLiant BL685c G7,USE05158E9
+2379,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Server,7,wdc-devtest4-7,ProLiant BL685c G7,USE05158E8
+2481,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Server,8,wdc-devtest4-8,ProLiant BL685c G7,USE05158EM
+124,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Switch,1,10.128.200.106,HP VC Flex-10 Enet Module,3C4043004B
+125,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Switch,2,10.128.200.107,HP VC Flex-10 Enet Module,3C4043004D
+2380,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Switch,3,10.128.200.110,HP B-series 8/12c SAN Switch BladeSystem c-Class,CN8038A04K
+126,wdc-e06_09SGH051P7ST,wdc-e05-bc1,Switch,4,10.128.200.111,HP B-series 8/12c SAN Switch BladeSystem c-Class,CN8038A05X
+102,wdc-e06_09SGH051P7ST,wdc-e06-bc1,MgmtProc,1,10.128.200.101,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB09BK6417
+104,wdc-e06_09SGH051P7ST,wdc-e06-bc1,MgmtProc,2,10.128.200.102,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB0BBK5524
+115,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Server,1,wdc-devtest4-9,ProLiant BL685c G7,USE05158E5
+2490,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Server,2,wdc-devtest4-10,ProLiant BL685c G7,USE05158E7
+116,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Server,3,wdc-devtest4-11,ProLiant BL685c G7,USE05158EB
+2491,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Server,4,wdc-devtest4-12,ProLiant BL685c G7,USE05158EJ
+117,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Server,5,wdc-devtest4-13,ProLiant BL685c G7,USE05158EC
+2492,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Server,6,wdc-devtest4-14,ProLiant BL685c G7,USE05158EL
+118,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Server,7,wdc-devtest4-15,ProLiant BL685c G7,USE05158EA
+119,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Server,8,wdc-devtest4-16,ProLiant BL685c G7,USE05158EF
+106,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Switch,1,10.128.201.233,HP VC Flex-10 Enet Module,3C40430053
+107,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Switch,2,10.128.201.240,HP VC Flex-10 Enet Module,3C40430054
+108,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Switch,3,10.128.200.112,HP B-series 8/12c SAN Switch BladeSystem c-Class,CN8038A03S
+109,wdc-e06_09SGH051P7ST,wdc-e06-bc1,Switch,4,10.128.200.113,HP B-series 8/12c SAN Switch BladeSystem c-Class,CN8038A05B
+28,wdc-e09-bc1_09USE7436XA7,"",Enclosure,-1,WDC-E09-BC1,BladeSystem c7000 Enclosure,USE7436XA7
+27,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,MgmtProc,1,10.128.200.71,BladeSystem c7000 Onboard Administrator,O979MU2058
+29,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,MgmtProc,2,10.128.200.72,BladeSystem c7000 Onboard Administrator,O979MU0904
+45,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Server,1,wdc-labmanager1-1,ProLiant BL685c G1,USE74576LM
+46,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Server,2,wdc-labmanager1-2,ProLiant BL685c G1,USE738666F
+47,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Server,3,wdc-devtest2-1,ProLiant BL685c G1,USE7153W2A
+48,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Server,4,wdc-devtest2-2,ProLiant BL685c G1,USE8038F5N
+49,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Server,5,redwood-dev1-1-vmotion,ProLiant BL680c G5,USE852JLC5
+50,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Server,6,redwood-dev1-2,ProLiant BL680c G5,N388MK2284
+51,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Server,7,wdc-labmanager1-3,ProLiant BL685c G1,3H73MK0677
+52,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Server,8,wdc-labmanager1-4,ProLiant BL685c G1,USE7153W29
+38,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Switch,1,FOC1140T11L,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T11L
+39,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Switch,2,FOC1233T199,Cisco Catalyst Blade Switch 3020 for HP,FOC1233T199
+40,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Switch,3,TWT838V07B,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT838V07B
+41,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Switch,4,TWT838V0VK,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT838V0VK
+42,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Switch,5,wdc-fab1sw79,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8742600Z
+43,wdc-e09-bc1_09USE7436XA7,WDC-E09-BC1,Switch,6,wdc-fab2sw79,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731602A
+670,wdc-e10,"",Enclosure,-1,wdc-e10-bc1,BladeSystem c7000 Enclosure,USE7436VP4
+665,wdc-e10,wdc-e10-bc1,MgmtProc,1,10.128.200.61,BladeSystem c7000 Onboard Administrator,O979MU1319
+671,wdc-e10,wdc-e10-bc1,MgmtProc,2,10.128.200.62,BladeSystem c7000 Onboard Administrator,O979MU6040
+646,wdc-e10,wdc-e10-bc1,Server,1,wdc-devtest3-3-vmotion,ProLiant BL680c G5,USE850JB1B
+644,wdc-e10,wdc-e10-bc1,Server,2,wdc-devtest3-4-vmotion,ProLiant BL680c G5,USE850JB1R
+648,wdc-e10,wdc-e10-bc1,Server,3,wdc-devtest3-5-vmotion,ProLiant BL680c G5,USE850JB26
+677,wdc-e10,wdc-e10-bc1,Server,4,USE923MM8M,ProLiant BL685c G6,USE923MM8M
+245,wdc-e10,wdc-e10-bc1,Server,5,USE923MM8L,ProLiant BL685c G6,USE923MM8L
+243,wdc-e10,wdc-e10-bc1,Server,6,USE923MM8W,ProLiant BL685c G6,USE923MM8W
+658,wdc-e10,wdc-e10-bc1,Server,7,USE7386AN4,ProLiant BL465c G1,USE7386AN4
+660,wdc-e10,wdc-e10-bc1,Server,8,QS74MU2764,ProLiant BL465c G1,QS74MU2764
+662,wdc-e10,wdc-e10-bc1,Server,15,USE7477CX0,ProLiant BL465c G1,USE7477CX0
+664,wdc-e10,wdc-e10-bc1,Server,16,USE7386AMW,ProLiant BL465c G1,USE7386AMW
+672,wdc-e10,wdc-e10-bc1,Switch,1,FOC1235T0UG,Cisco Catalyst Blade Switch 3020 for HP,FOC1235T0UG
+673,wdc-e10,wdc-e10-bc1,Switch,2,FOC1235T0VZ,Cisco Catalyst Blade Switch 3020 for HP,FOC1235T0VZ
+674,wdc-e10,wdc-e10-bc1,Switch,3,TWT838V108,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT838V108
+675,wdc-e10,wdc-e10-bc1,Switch,4,TWT838V076,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT838V076
+3476,wdc-e10,wdc-e10-bc1,Switch,5,wdc-fab1sw80,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731600Y
+3477,wdc-e10,wdc-e10-bc1,Switch,6,wdc-fab2sw80,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731603F
+650,wdc-e11,"",Enclosure,-1,wdc-e11-bc1,BladeSystem c7000 Enclosure,USE81099L0
+649,wdc-e11,wdc-e11-bc1,MgmtProc,1,10.128.200.49,BladeSystem c7000 Onboard Administrator,O981MP8400
+651,wdc-e11,wdc-e11-bc1,MgmtProc,2,10.128.200.50,BladeSystem c7000 Onboard Administrator,O987MP4848
+638,wdc-e11,wdc-e11-bc1,Server,1,wdc-devtest1-11-vmotion,ProLiant BL680c G5,USE850JB23
+640,wdc-e11,wdc-e11-bc1,Server,2,wdc-devtest1-12-vmotion,ProLiant BL680c G5,USE850JB17
+642,wdc-e11,wdc-e11-bc1,Server,3,wdc-devtest1-13-vmotion,ProLiant BL680c G5,USE850JB1X
+253,wdc-e11,wdc-e11-bc1,Server,4,USE923MM8K,ProLiant BL685c G6,USE923MM8K
+249,wdc-e11,wdc-e11-bc1,Server,5,USE923MM91,ProLiant BL685c G6,USE923MM91
+247,wdc-e11,wdc-e11-bc1,Server,6,USE923MM8X,ProLiant BL685c G6,USE923MM8X
+58,wdc-e11,wdc-e11-bc1,Server,7,wdc-devtest3-1-vmotion,ProLiant BL680c G5,USE852JLCB
+22,wdc-e11,wdc-e11-bc1,Server,8,wdc-devtest3-2-vmotion,ProLiant BL680c G5,USE851JCF7
+652,wdc-e11,wdc-e11-bc1,Switch,1,FOC1236T0E8,Cisco Catalyst Blade Switch 3020 for HP,FOC1236T0E8
+653,wdc-e11,wdc-e11-bc1,Switch,2,FOC1235T1AY,Cisco Catalyst Blade Switch 3020 for HP,FOC1235T1AY
+654,wdc-e11,wdc-e11-bc1,Switch,3,TWT743V0KL,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT743V0KL
+655,wdc-e11,wdc-e11-bc1,Switch,4,TWT828V01G,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V01G
+2287,wdc-e11,wdc-e11-bc1,Switch,5,wdc-fab1sw81,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8742602F
+2288,wdc-e11,wdc-e11-bc1,Switch,6,wdc-fab2sw81,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN884160AE
+628,wdc-e12,"",Enclosure,-1,wdc-e12-bc1,BladeSystem c7000 Enclosure,USE81099N2
+627,wdc-e12,wdc-e12-bc1,MgmtProc,1,10.128.200.41,BladeSystem c7000 Onboard Administrator,O981MP4432
+629,wdc-e12,wdc-e12-bc1,MgmtProc,2,10.128.201.24,BladeSystem c7000 Onboard Administrator,O98BMP5768
+585,wdc-e12,wdc-e12-bc1,Server,1,USE850JB1E,ProLiant BL680c G5,USE850JB1E
+613,wdc-e12,wdc-e12-bc1,Server,2,wdc-devtest1-6-vmotion,ProLiant BL680c G5,USE850JB1J
+615,wdc-e12,wdc-e12-bc1,Server,3,wdc-devtest1-7-vmotion,ProLiant BL680c G5,USE850JB1Y
+617,wdc-e12,wdc-e12-bc1,Server,4,wdc-devtest1-8-vmotion,ProLiant BL680c G5,USE850JB19
+619,wdc-e12,wdc-e12-bc1,Server,5,wdc-devtest1-9-vmotion,ProLiant BL680c G5,USE850JB1W
+621,wdc-e12,wdc-e12-bc1,Server,6,wdc-devtest1-10-vmotion,ProLiant BL680c G5,USE850JB1A
+626,wdc-e12,wdc-e12-bc1,Server,7,USE80187A9,ProLiant BL465c G1,USE80187A9
+624,wdc-e12,wdc-e12-bc1,Server,8,USE74576KC,ProLiant BL465c G1,USE74576KC
+636,wdc-e12,wdc-e12-bc1,Server,16,USE7436V64,ProLiant BL465c G1,USE7436V64
+631,wdc-e12,wdc-e12-bc1,Switch,1,FOC1236T0E5,Cisco Catalyst Blade Switch 3020 for HP,FOC1236T0E5
+632,wdc-e12,wdc-e12-bc1,Switch,2,FOC1236T07F,Cisco Catalyst Blade Switch 3020 for HP,FOC1236T07F
+633,wdc-e12,wdc-e12-bc1,Switch,3,TWT743V0Y8,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT743V0Y8
+634,wdc-e12,wdc-e12-bc1,Switch,4,TWT825V0YF,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT825V0YF
+2285,wdc-e12,wdc-e12-bc1,Switch,5,wdc-fab1sw82,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN884160AC
+2286,wdc-e12,wdc-e12-bc1,Switch,6,wdc-fab2sw82,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN884160AJ
+599,wdc-e13,"",Enclosure,-1,wdc-e13-bc1,BladeSystem c7000 Enclosure,USE850JBEN
+598,wdc-e13,wdc-e13-bc1,MgmtProc,1,10.128.200.30,BladeSystem c7000 Onboard Administrator,O98BMP5572
+600,wdc-e13,wdc-e13-bc1,MgmtProc,2,10.128.200.31,BladeSystem c7000 Onboard Administrator,O987MP5321
+591,wdc-e13,wdc-e13-bc1,Server,1,USE850JB16,ProLiant BL680c G5,USE850JB16
+595,wdc-e13,wdc-e13-bc1,Server,2,wdc-devtest1-1-vmotion,ProLiant BL680c G5,USE850JB1M
+597,wdc-e13,wdc-e13-bc1,Server,3,wdc-devtest1-2-vmotion,ProLiant BL680c G5,USE850JB24
+589,wdc-e13,wdc-e13-bc1,Server,4,wdc-devtest1-3-vmotion,ProLiant BL680c G5,USE850JB18
+609,wdc-e13,wdc-e13-bc1,Server,5,wdc-devtest1-4-vmotion,ProLiant BL680c G5,USE850JB1D
+610,wdc-e13,wdc-e13-bc1,Server,6,wdc-devtest1-5-vmotion,ProLiant BL680c G5,USE850JB1T
+593,wdc-e13,wdc-e13-bc1,Server,7,USE74576L1,ProLiant BL465c G1,USE74576L1
+611,wdc-e13,wdc-e13-bc1,Server,8,USE74576L3,ProLiant BL465c G1,USE74576L3
+587,wdc-e13,wdc-e13-bc1,Server,16,USE80187A2,ProLiant BL465c G1,USE80187A2
+604,wdc-e13,wdc-e13-bc1,Switch,1,FOC1239T1CS,Cisco Catalyst Blade Switch 3020 for HP,FOC1239T1CS
+605,wdc-e13,wdc-e13-bc1,Switch,2,FOC1239T1CZ,Cisco Catalyst Blade Switch 3020 for HP,FOC1239T1CZ
+606,wdc-e13,wdc-e13-bc1,Switch,3,TWT828V0NJ,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT828V0NJ
+607,wdc-e13,wdc-e13-bc1,Switch,4,TWT743V0R6,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT743V0R6
+2758,wdc-e13,wdc-e13-bc1,Switch,5,wdc-fab1sw83,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8840604V
+2759,wdc-e13,wdc-e13-bc1,Switch,6,wdc-fab2sw83,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8841606D
+510,WDC-F08-BC1,SGH642X98T,Enclosure,-1,WDC-F07-BC1,BladeSystem c7000 Enclosure,USE850JBEP
+511,WDC-F08-BC1,WDC-F07-BC1,MgmtProc,1,wdc-f07-oa1a,BladeSystem c7000 Onboard Administrator,O98BMP5639
+509,WDC-F08-BC1,WDC-F07-BC1,MgmtProc,2,wdc-f07-oa1b,BladeSystem c7000 Onboard Administrator,O98BMP4976
+3233,WDC-F08-BC1,WDC-F07-BC1,Server,1,USE146KW5L,ProLiant BL620c G7,USE146KW5L
+3234,WDC-F08-BC1,WDC-F07-BC1,Server,2,USE146KW5N,ProLiant BL620c G7,USE146KW5N
+3235,WDC-F08-BC1,WDC-F07-BC1,Server,3,USE146KW5P,ProLiant BL620c G7,USE146KW5P
+3236,WDC-F08-BC1,WDC-F07-BC1,Server,4,USE146KW5M,ProLiant BL620c G7,USE146KW5M
+2336,WDC-F08-BC1,WDC-F07-BC1,Server,5,USE11285SS,ProLiant BL490c G7,USE11285SS
+2335,WDC-F08-BC1,WDC-F07-BC1,Server,6,USE11285SX,ProLiant BL490c G7,USE11285SX
+3121,WDC-F08-BC1,WDC-F07-BC1,Server,6,BWB0H9VZN099,ProLiant BL490c G7,BWB0H9VZN099
+2315,WDC-F08-BC1,WDC-F07-BC1,Server,7,USE11285TD,ProLiant BL490c G7,USE11285TD
+2339,WDC-F08-BC1,WDC-F07-BC1,Server,8,USE11285SH,ProLiant BL490c G7,USE11285SH
+3237,WDC-F08-BC1,WDC-F07-BC1,Server,13,USE146KW5E,ProLiant BL490c G7,USE146KW5E
+3056,WDC-F08-BC1,WDC-F07-BC1,Server,14,USE139FTXN,ProLiant BL490c G7,USE139FTXN
+3054,WDC-F08-BC1,WDC-F07-BC1,Server,15,USE139FTXP,ProLiant BL490c G7,USE139FTXP
+3068,WDC-F08-BC1,WDC-F07-BC1,Server,16,USE139FTXT,ProLiant BL490c G7,USE139FTXT
+3059,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Enclosure,-1,WDC-F08-BC1_SGH139PD57,BladeSystem c7000 Enclosure G2,SGH139PD57
+3058,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,MgmtProc,1,wdc-f08-oa1a,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB15BP5280
+3060,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,MgmtProc,2,wdc-f08-oa1b,BladeSystem c7000 DDR2 Onboard Administrator with KVM,OB13BP8779
+3247,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,1,USE146KW5R,ProLiant BL620c G7,USE146KW5R
+3248,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,2,USE146KW5S,ProLiant BL620c G7,USE146KW5S
+3249,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,3,USE146KW5T,ProLiant BL620c G7,USE146KW5T
+3049,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,5,USE11285TF,ProLiant BL490c G7,USE11285TF
+2343,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,6,USE11285SJ,ProLiant BL490c G7,USE11285SJ
+2341,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,7,USE11285SW,ProLiant BL490c G7,USE11285SW
+3071,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,8,USE11285TA,ProLiant BL490c G7,USE11285TA
+3301,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,13,USE146KYB7,ProLiant BL490c G7,USE146KYB7
+3067,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,14,USE139FTXS,ProLiant BL490c G7,USE139FTXS
+3070,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,15,USE139FTXR,ProLiant BL490c G7,USE139FTXR
+3069,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Server,16,USE139FTXV,ProLiant BL490c G7,USE139FTXV
+3134,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Switch,1,wdc-f08-bc1-flex10-1,HP VC Flex-10 Enet Module,3C41280057
+3044,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Switch,1,wdc-f07-bc1-flex10-2,HP VC Flex-10 Enet Module,3C41280057
+3135,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Switch,2,wdc-f08-bc1-flex10-2,HP VC Flex-10 Enet Module,3C41280076
+3043,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Switch,2,wdc-f07-bc1-flex10-1,HP VC Flex-10 Enet Module,3C41280076
+3136,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Switch,5,wdc-f08bc1-odd,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8128B035
+3045,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Switch,5,wdc-f07bc1-odd,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8128B035
+3046,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Switch,6,wdc-f07bc1-even,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8128B05D
+3137,WDC-F08-BC1,WDC-F08-BC1_SGH139PD57,Switch,6,wdc-f08bc1-even,HP B-series 8/24c SAN Switch BladeSystem c-Class,CN8128B05D
+3015,wdc-f14-bc1,"",Enclosure,-1,wdc-f14-trn,BladeSystem c7000 Enclosure G2,USE129CWAE
+472,WDC-G05,SGH642X98E,Enclosure,-1,wdc-g05-bc1,BladeSystem c7000 Enclosure,USE850JBEL
+471,WDC-G05,wdc-g05-bc1,MgmtProc,1,wdc-g05-oa1a,BladeSystem c7000 Onboard Administrator,O98BMP5404
+473,WDC-G05,wdc-g05-bc1,MgmtProc,2,wdc-g05-oa1b,BladeSystem c7000 Onboard Administrator,O979MU5466
+486,WDC-G05,wdc-g05-bc1,Server,1,USE850JB1P,ProLiant BL680c G5,USE850JB1P
+487,WDC-G05,wdc-g05-bc1,Server,2,USE850JB1L,ProLiant BL680c G5,USE850JB1L
+488,WDC-G05,wdc-g05-bc1,Server,3,USE852JLCD,ProLiant BL680c G5,USE852JLCD
+489,WDC-G05,wdc-g05-bc1,Server,4,USE852JLC0,ProLiant BL680c G5,USE852JLC0
+490,WDC-G05,wdc-g05-bc1,Server,16,USE74576L7,ProLiant BL465c G1,USE74576L7
+479,WDC-G05,wdc-g05-bc1,Switch,1,FOC1236T0DK,Cisco Catalyst Blade Switch 3020 for HP,FOC1236T0DK
+480,WDC-G05,wdc-g05-bc1,Switch,2,FOC1239T1CJ,Cisco Catalyst Blade Switch 3020 for HP,FOC1239T1CJ
+481,WDC-G05,wdc-g05-bc1,Switch,3,TWT824V24G,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT824V24G
+482,WDC-G05,wdc-g05-bc1,Switch,4,TWT824V1ZY,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT824V1ZY
+483,WDC-G05,wdc-g05-bc1,Switch,5,wdc-fab1sw15,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8846602L
+484,WDC-G05,wdc-g05-bc1,Switch,6,wdc-fab2sw15,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8841609H
+493,wdc-g10,"",Enclosure,-1,wdc-g10-bc1,BladeSystem c7000 Enclosure G2,SGH005P1DX
+563,wdc-g11,"",Enclosure,-1,wdc-g11-bc1,BladeSystem c7000 Enclosure G2,SGH043P6EX
+528,wdc-h07,wdc-h07-1,Enclosure,-1,wdc-h07-bc1,BladeSystem c7000 Enclosure,USE7436VDS
+527,wdc-h07,wdc-h07-bc1,MgmtProc,1,wdc-h07-oa1a,BladeSystem c7000 Onboard Administrator,O979MU1691
+529,wdc-h07,wdc-h07-bc1,MgmtProc,2,wdc-h07-oa1b,BladeSystem c7000 Onboard Administrator,O979MU0913
+544,wdc-h07,wdc-h07-bc1,Server,1,USE80892WR,ProLiant BL680c G5,USE80892WR
+545,wdc-h07,wdc-h07-bc1,Server,2,USE80892WF,ProLiant BL680c G5,USE80892WF
+546,wdc-h07,wdc-h07-bc1,Server,3,USE80892WV,ProLiant BL680c G5,USE80892WV
+547,wdc-h07,wdc-h07-bc1,Server,4,USE80892WK,ProLiant BL680c G5,USE80892WK
+548,wdc-h07,wdc-h07-bc1,Server,5,USE80892WE,ProLiant BL680c G5,USE80892WE
+549,wdc-h07,wdc-h07-bc1,Server,15,USE74576KH,ProLiant BL465c G1,USE74576KH
+550,wdc-h07,wdc-h07-bc1,Server,16,USE74576L4,ProLiant BL465c G1,USE74576L4
+535,wdc-h07,wdc-h07-bc1,Switch,1,FOC1139T04J,Cisco Catalyst Blade Switch 3020 for HP,FOC1139T04J
+536,wdc-h07,wdc-h07-bc1,Switch,2,FOC1140T090,Cisco Catalyst Blade Switch 3020 for HP,FOC1140T090
+537,wdc-h07,wdc-h07-bc1,Switch,3,wdc-exch-fab1sw19,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8730604L
+538,wdc-h07,wdc-h07-bc1,Switch,4,wdc-exch-fab2sw19,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731604P
+539,wdc-h07,wdc-h07-bc1,Switch,5,FOC1239T1RE,Cisco Catalyst Blade Switch 3020 for HP,FOC1239T1RE
+540,wdc-h07,wdc-h07-bc1,Switch,6,FOC1138T11T,Cisco Catalyst Blade Switch 3020 for HP,FOC1138T11T
+541,wdc-h07,wdc-h07-bc1,Switch,7,TWT743V0WS,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT743V0WS
+542,wdc-h07,wdc-h07-bc1,Switch,8,TWT743V169,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT743V169
+314,wdc-loadtest,"",Enclosure,-1,wdc-f04-bc1,BladeSystem c7000 Enclosure,USE850JBEM
+255,wdc-loadtest,"",Enclosure,-1,wdc-f03-bc1,BladeSystem c7000 Enclosure,USE852JMRP
+285,wdc-loadtest,"",Enclosure,-1,wdc-f02-bc1,BladeSystem c7000 Enclosure,USE852JMRR
+284,wdc-loadtest,wdc-f02-bc1,MgmtProc,1,10.128.202.22,BladeSystem c7000 Onboard Administrator,O98BMP6179
+286,wdc-loadtest,wdc-f02-bc1,MgmtProc,2,10.128.202.23,BladeSystem c7000 Onboard Administrator,O987MP3674
+303,wdc-loadtest,wdc-f02-bc1,Server,1,L301MK1260,ProLiant BL685c G6,L301MK1260
+304,wdc-loadtest,wdc-f02-bc1,Server,2,USE852JLCF,ProLiant BL680c G5,USE852JLCF
+305,wdc-loadtest,wdc-f02-bc1,Server,3,USE852JLCE,ProLiant BL680c G5,USE852JLCE
+306,wdc-loadtest,wdc-f02-bc1,Server,4,USE852JLC2,ProLiant BL680c G5,USE852JLC2
+307,wdc-loadtest,wdc-f02-bc1,Server,5,USE852JLCC,ProLiant BL680c G5,USE852JLCC
+308,wdc-loadtest,wdc-f02-bc1,Server,6,USE852JLCA,ProLiant BL680c G5,USE852JLCA
+309,wdc-loadtest,wdc-f02-bc1,Server,7,USE809964R,ProLiant BL460c G1,USE809964R
+310,wdc-loadtest,wdc-f02-bc1,Server,8,USE8099659,ProLiant BL460c G1,USE8099659
+311,wdc-loadtest,wdc-f02-bc1,Server,15,USE809964C,ProLiant BL460c G1,USE809964C
+312,wdc-loadtest,wdc-f02-bc1,Server,16,USE8099657,ProLiant BL460c G1,USE8099657
+297,wdc-loadtest,wdc-f02-bc1,Switch,1,TWT838V0RB,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT838V0RB
+298,wdc-loadtest,wdc-f02-bc1,Switch,2,TWT838V0EP,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT838V0EP
+299,wdc-loadtest,wdc-f02-bc1,Switch,3,TWT838V07F,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT838V07F
+300,wdc-loadtest,wdc-f02-bc1,Switch,4,TWT838V0LS,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT838V0LS
+301,wdc-loadtest,wdc-f02-bc1,Switch,5,10.128.202.30,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8731600V
+302,wdc-loadtest,wdc-f02-bc1,Switch,6,10.128.202.34,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8742602B
+254,wdc-loadtest,wdc-f03-bc1,MgmtProc,1,10.128.202.24,BladeSystem c7000 Onboard Administrator,O979MU6393
+256,wdc-loadtest,wdc-f03-bc1,MgmtProc,2,10.128.202.25,BladeSystem c7000 Onboard Administrator,O98BMP7344
+274,wdc-loadtest,wdc-f03-bc1,Server,1,USE923MM90,ProLiant BL685c G6,USE923MM90
+275,wdc-loadtest,wdc-f03-bc1,Server,2,USE852JLC7,ProLiant BL680c G5,USE852JLC7
+276,wdc-loadtest,wdc-f03-bc1,Server,3,USE850JB1C,ProLiant BL680c G5,USE850JB1C
+277,wdc-loadtest,wdc-f03-bc1,Server,4,USE850JB1F,ProLiant BL680c G5,USE850JB1F
+278,wdc-loadtest,wdc-f03-bc1,Server,5,USE850JB21,ProLiant BL680c G5,USE850JB21
+279,wdc-loadtest,wdc-f03-bc1,Server,6,USE850JB1K,ProLiant BL680c G5,USE850JB1K
+280,wdc-loadtest,wdc-f03-bc1,Server,7,USE809964M,ProLiant BL460c G1,USE809964M
+281,wdc-loadtest,wdc-f03-bc1,Server,8,PZ73MV4591,ProLiant BL460c G1,PZ73MV4591
+282,wdc-loadtest,wdc-f03-bc1,Server,15,PZ8AMQ2808,ProLiant BL460c G1,PZ8AMQ2808
+283,wdc-loadtest,wdc-f03-bc1,Server,16,USE809964H,ProLiant BL460c G1,USE809964H
+267,wdc-loadtest,wdc-f03-bc1,Switch,1,TWT838V0VD,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT838V0VD
+268,wdc-loadtest,wdc-f03-bc1,Switch,2,TWT838V0UC,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT838V0UC
+269,wdc-loadtest,wdc-f03-bc1,Switch,3,TWT751V0KV,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT751V0KV
+270,wdc-loadtest,wdc-f03-bc1,Switch,4,TWT752V0GE,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT752V0GE
+271,wdc-loadtest,wdc-f03-bc1,Switch,5,10.128.202.31,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN88406041
+272,wdc-loadtest,wdc-f03-bc1,Switch,6,10.128.202.35,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8742602S
+313,wdc-loadtest,wdc-f04-bc1,MgmtProc,1,10.128.202.26,BladeSystem c7000 Onboard Administrator,O98BMP4971
+315,wdc-loadtest,wdc-f04-bc1,MgmtProc,2,10.128.202.27,BladeSystem c7000 Onboard Administrator,O987MP5787
+332,wdc-loadtest,wdc-f04-bc1,Server,1,USE850JB25,ProLiant BL680c G5,USE850JB25
+333,wdc-loadtest,wdc-f04-bc1,Server,2,USE852JLC8,ProLiant BL680c G5,USE852JLC8
+334,wdc-loadtest,wdc-f04-bc1,Server,3,USE850JB1H,ProLiant BL680c G5,USE850JB1H
+335,wdc-loadtest,wdc-f04-bc1,Server,4,USE852JLC3,ProLiant BL680c G5,USE852JLC3
+336,wdc-loadtest,wdc-f04-bc1,Server,5,USE0494NY2,ProLiant BL685c G7,USE0494NY2
+337,wdc-loadtest,wdc-f04-bc1,Server,6,USE0494NY6,ProLiant BL685c G7,USE0494NY6
+338,wdc-loadtest,wdc-f04-bc1,Server,7,USE809964J,ProLiant BL460c G1,USE809964J
+339,wdc-loadtest,wdc-f04-bc1,Server,8,USE7497JD7,ProLiant BL465c G1,USE7497JD7
+340,wdc-loadtest,wdc-f04-bc1,Server,15,USE7456KL,ProLiant BL465c G1,USE7456KL
+341,wdc-loadtest,wdc-f04-bc1,Server,16,USE7436V67,ProLiant BL465c G1,USE7436V67
+326,wdc-loadtest,wdc-f04-bc1,Switch,1,TWT939V0U8,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT939V0U8
+327,wdc-loadtest,wdc-f04-bc1,Switch,2,TWT939V1RD,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT939V1RD
+328,wdc-loadtest,wdc-f04-bc1,Switch,3,TWT950V240,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT950V240
+329,wdc-loadtest,wdc-f04-bc1,Switch,4,TWT950V1WU,HP 1Gb Ethernet Pass-Thru Module for c-Class BladeSystem,TWT950V1WU
+330,wdc-loadtest,wdc-f04-bc1,Switch,5,10.128.202.32,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN8840603C
+331,wdc-loadtest,wdc-f04-bc1,Switch,6,10.128.202.37,Brocade 4/12 SAN Switch for HP c-Class BladeSystem,CN88406042

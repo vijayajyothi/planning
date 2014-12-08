@@ -1,0 +1,7 @@
+"timestamp","ipaddress","sp","assemblyname","cabinet","serialnum","emc_part_num","emc_assy_rev","emc_art_rev","emc_serialnum","manu_year","manu_month","manu_day","memory","arrayname"
+"2012-4-11 14:7:46","10.128.204.64","A","ARGONAUT REV B SP WSM 2.40GHZ","SPE5","CF25J112200026","110-113-418B","B26","N/A","CF25J112200026","N/A","N/A","N/A","18432","wdc-vnx-2630"
+"2012-4-11 14:7:46","10.128.204.64","B","ARGONAUT REV B SP WSM 2.40GHZ","SPE5","CF25J112200002","110-113-418B","B26","N/A","CF25J112200002","N/A","N/A","N/A","18432","wdc-vnx-2630"
+"2012-4-11 14:7:46","10.119.0.203","A","ARGONAUT REV B SP WSM 2.80GHZ","SPE5","CF24J111800002","110-113-724B","B24","N/A","CF24J111800002","N/A","N/A","N/A","24576","vf-vnx7500-cs0"
+"2012-4-11 14:7:46","10.119.0.203","B","ARGONAUT REV B SP WSM 2.80GHZ","SPE5","CF24J103800028","110-113-724B","B24","N/A","CF24J103800028","N/A","N/A","N/A","24576","vf-vnx7500-cs0"
+"2012-4-11 14:7:46","10.113.81.5","A","ARGONAUT REV B SP WSM 2.80GHZ","SPE5","FCNAR120900087","110-113-724B","B28","N/A","FCNAR120900087","N/A","N/A","N/A","24576","osdc-cx3-80-04 Exchange"
+"2012-4-11 14:7:46","10.113.81.5","B","ARGONAUT REV B SP WSM 2.80GHZ","SPE5","FCNAR120801127","110-113-724B","B28","N/A","FCNAR120801127","N/A","N/A","N/A","24576","osdc-cx3-80-04 Exchange"

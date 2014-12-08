@@ -1,0 +1,446 @@
+vendor	model	versiontype	version
+		biosversion	
+allied	AlliedTelBG	version	
+avamar	avamar client	version	3.7.1-100
+avamar	avamar client	version	4.0.3-24
+avamar	avamar client	version	4.1.100-1470
+avamar	avamar client	version	4.1.101-340
+avamar	avamar client	version	4.1.106-27
+avamar	avamar client	version	5.0.101-32
+avamar	avamar client	version	5.0.105-169
+avamar	avamar client	version	5.0.106-28
+avamar	avamar client	version	6.0.100-592
+avamar	avamar client	version	unKnown 
+avaya	AvayaDV	version	
+avaya	AvayaRT	version	
+avaya	Cajun P330	version	version
+brocade	CONTRX0000300	version	v6.4.1b
+brocade	CONTRX0000410	version	v6.2.0c
+brocade	CONTRX0000410	version	v6.3.1a
+brocade	CONTRX000048K	version	v6.2.1b
+brocade	CONTRX000048K	version	v6.3.1a
+brocade	CONTRX000048K	version	v6.4.1b
+brocade	CONTRX0000510	version	v6.4.1b
+brocade	CONTRX0000DCX	version	v6.3.0b
+brocade	CONTRX0000DCX	version	v6.4.1b
+brocade	SLKWRM0000HP2	version	v6.2.0c
+brocade	SLKWRM0000HP2	version	v6.2.1b
+brocade	SLKWRM0000HP2	version	v6.3.1c
+brocade	SLKWRM0000HP2	version	v6.4.1a
+brocade	SLKWRM0000HP2	version	v6.4.1b
+brocade	SP640-Y01A	version	v6.4.1b
+cisco	Cat 3560E 12SD	version	12.2(55)SE3
+cisco	Cat 4506E	version	12.2(53)SG1
+cisco	Cat 4507RE	version	12.2(53)SG
+cisco	Cat 4507RE	version	12.2(53)SG1
+cisco	Cat 4507RE	version	12.2(53)SG2
+cisco	Cat 4507RE	version	15.0(2)SG
+cisco	Cat 4507RE	version	15.0(2)SG1
+cisco	Cat 4510RE	version	12.2(52)SG
+cisco	Cat 4510RE	version	12.2(53)SG
+cisco	Cat 4510RE	version	12.2(53)SG1
+cisco	Cat 4510RE	version	15.0(2)SG1
+cisco	Cat 4900M	version	12.2(53)SG1
+cisco	Cat 65xx Virtual Switch	version	12.2(33)SXI5
+cisco	Cat295024C	version	12.1(14)EA1a
+cisco	Cat2960-48TT	version	12.2(35)SE1
+cisco	Cat2960G-24TC	version	12.2(35)SE5
+cisco	Cat2960G-24TC	version	12.2(55)SE3
+cisco	Cat2960G-24TC	version	12.2(58)SE2
+cisco	Cat2960G-48TC	version	12.2(25)SEE
+cisco	Cat2960G-48TC	version	12.2(35)SE5
+cisco	Cat2960G-48TC	version	12.2(58)SE2
+cisco	Cat3560-24TS	version	12.2(35)SE5
+cisco	Cat3560-48TS	version	12.2(25)SEE3
+cisco	Cat3560-48TS	version	12.2(44)SE1
+cisco	Cat3560-48TS	version	12.2(50)SE5
+cisco	Cat3560-48TS	version	12.2(58)SE2
+cisco	Cat3560E24TD	version	12.2(40)SE
+cisco	Cat3560G-48PS	version	12.2(35)SE5
+cisco	Cat3560_24PS	version	12.2(25)SEE3
+cisco	Cat3560_24PS	version	12.2(35)SE5
+cisco	Cat3560_24PS	version	12.2(46)SE
+cisco	Cat3560_24PS	version	12.2(52)SE
+cisco	Cat3560_48PS	version	12.2(25)SEB4
+cisco	Cat3560_48PS	version	12.2(25)SEE2
+cisco	Cat37xxStack	version	12.2(25)SEB4
+cisco	Cat37xxStack	version	12.2(25)SED1
+cisco	Cat37xxStack	version	12.2(25)SEE2
+cisco	Cat37xxStack	version	12.2(25)SEE3
+cisco	Cat37xxStack	version	12.2(25)SEE4
+cisco	Cat37xxStack	version	12.2(35)SE
+cisco	Cat37xxStack	version	12.2(35)SE2
+cisco	Cat37xxStack	version	12.2(35)SE5
+cisco	Cat37xxStack	version	12.2(37)SE1
+cisco	Cat37xxStack	version	12.2(40)SE
+cisco	Cat37xxStack	version	12.2(44)SE2
+cisco	Cat37xxStack	version	12.2(46)SE
+cisco	Cat37xxStack	version	12.2(50)SE1
+cisco	Cat37xxStack	version	12.2(50)SE3
+cisco	Cat37xxStack	version	12.2(50)SE5
+cisco	Cat37xxStack	version	12.2(52)SE
+cisco	Cat37xxStack	version	12.2(53)SE
+cisco	Cat37xxStack	version	12.2(53)SE2
+cisco	Cat37xxStack	version	12.2(55)SE
+cisco	Cat37xxStack	version	12.2(55)SE1
+cisco	Cat37xxStack	version	12.2(55)SE3
+cisco	Cat37xxStack	version	12.2(58)SE1
+cisco	Cat37xxStack	version	15.0(1)SE
+cisco	Cat4507	version	12.2(53)SG2
+cisco	Cat4948	version	12.2(25)EWA8
+cisco	Cat4948	version	12.2(31)SGA4
+cisco	Cat4948	version	12.2(37)SG1
+cisco	Cat4948	version	12.2(54)SG
+cisco	Cat494810GE	version	12.2(25)EWA10
+cisco	Cat494810GE	version	12.2(25)EWA8
+cisco	Cat494810GE	version	12.2(25)EWA9
+cisco	Cat6506	version	12.2(33)SXH1
+cisco	Cat6506	version	12.2(33)SXI4a
+cisco	Cat6509	version	12.2(18)SXF
+cisco	Cat6509	version	12.2(18)SXF11
+cisco	Cat6509	version	12.2(18)SXF13
+cisco	Cat6509	version	12.2(18)SXF15a
+cisco	Cat6509	version	12.2(18)SXF17
+cisco	Cat6509	version	12.2(18)SXF17a
+cisco	Cat6509	version	12.2(18)SXF5
+cisco	Cat6509	version	12.2(18)SXF9
+cisco	Cat6509	version	12.2(33)SXH1
+cisco	Cat6509	version	12.2(33)SXH3
+cisco	Cat6509	version	12.2(33)SXH5
+cisco	Cat6509	version	12.2(33)SXH8a
+cisco	Cat6509	version	12.2(33)SXI2a
+cisco	Cat6509	version	12.2(33)SXI3
+cisco	Cat6509	version	12.2(33)SXI4a
+cisco	Cat6509	version	12.2(33)SXI6
+cisco	Cat6509	version	12.2(33)SXJ1
+cisco	Cat6513	version	12.2(33)SXH
+cisco	Cat_2948G	version	8.4(9)GLX
+cisco	Cat_2980GSW	version	8.4(9)GLX
+cisco	Cisco 2921 K9	version	15.1(4)M2
+cisco	Cisco 3845nv	version	15.1(4)M1
+cisco	Cisco 3925 K9	version	15.0(1)M2
+cisco	Cisco 3925 K9	version	15.0(1)M4
+cisco	Cisco 3925 K9	version	15.1(1)T1
+cisco	Cisco 3945 K9	version	15.0(1)M1
+cisco	Cisco 3945 K9	version	15.0(1)M2
+cisco	Cisco 3945 K9	version	15.1(2)T2
+cisco	Cisco 3945 K9	version	15.1(3)T1
+cisco	Cisco 3945 K9	version	15.1(4)M1
+cisco	Cisco 3945 K9	version	15.1(4)M2
+cisco	Cisco ASA5550	version	8.2(1)18
+cisco	Cisco ASR 1002	version	15.0(1)S1
+cisco	Cisco ASR 9006	version	3.9.1[00]
+cisco	Cisco Nexus 7000	version	5.1(3)
+cisco	Cisco UCS 6100	version	4.1(3)N2(1.3m)
+cisco	Cisco UCS 6100	version	4.2(1)N1(1.43m)
+cisco	Cisco1841	version	12.4(15)T7
+cisco	Cisco1841	version	12.4(21a)
+cisco	Cisco1841	version	12.4(23)
+cisco	Cisco1841	version	12.4(25)
+cisco	Cisco1841	version	12.4(25a)
+cisco	Cisco1841	version	12.4(25e)
+cisco	Cisco1841	version	12.4(3i)
+cisco	Cisco2811	version	12.4(13d)
+cisco	Cisco2821	version	12.4(13d)
+cisco	Cisco2821	version	12.4(20)T1
+cisco	Cisco2821	version	12.4(25e)
+cisco	Cisco2821	version	12.4(3i)
+cisco	Cisco2821	version	12.4(7a)
+cisco	Cisco2821	version	12.4(9)T1
+cisco	Cisco3825	version	12.4(24)T3
+cisco	Cisco3825	version	12.4(4)T
+cisco	Cisco3845	version	12.4(12)
+cisco	Cisco3845	version	12.4(15)T10
+cisco	Cisco3845	version	12.4(15)T12
+cisco	Cisco3845	version	12.4(16)
+cisco	Cisco3845	version	12.4(16a)
+cisco	Cisco3845	version	12.4(16b)
+cisco	Cisco3845	version	12.4(18)
+cisco	Cisco3845	version	12.4(19)
+cisco	Cisco3845	version	12.4(23)
+cisco	Cisco3845	version	12.4(24)T2
+cisco	Cisco3845	version	12.4(25b)
+cisco	Cisco3845	version	12.4(3)
+cisco	Cisco3845	version	12.4(4)T
+cisco	Cisco3845	version	12.4(5b)
+cisco	Cisco3845	version	12.4(9)T5
+cisco	Cisco3845	version	12.4(9)T6
+cisco	Cisco3845	version	15.0(1)M3
+cisco	Cisco3845	version	15.0(1)M4
+cisco	Cisco3845	version	15.1(4)M1
+cisco	Cisco7206VXR	version	12.4(15)T1
+cisco	Cisco7206VXR	version	12.4(15)T11
+cisco	Cisco7206VXR	version	12.4(24)T3
+cisco	Cisco7206VXR	version	12.4(9)T1
+cisco	Cisco7206VXR	version	15.0(1)S1
+cisco	CiscoBG	version	12.2(53)SE2
+cisco	CiscoIGESM	version	12.1(22)EA6a
+cisco	CiscoRT	version	3.2(2c)
+cisco	CiscoRTR	version	12.4(15)T10
+cisco	CiscoWS3020Hpq	version	12.2(35)SE
+cisco	CiscoWS3020Hpq	version	12.2(37)SE1
+cisco	CiscoWS3020Hpq	version	12.2(40)SE1
+cisco	CiscoWS3020Hpq	version	12.2(40)SE2
+cisco	CiscoWS3020Hpq	version	12.2(46)SE
+cisco	CiscoWS3020Hpq	version	12.2(53)SE1
+cisco	CiscoWSC6504E	version	12.2(33)SXI4a
+cisco	N10-S6100	version	
+cisco	N10-S6200	version	
+cisco	R210-2121605W	biosversion	C200.1.2.1a.0.080820102357
+cisco	R210-2121605W	biosversion	C200.1.4.1.0.071320110702
+dell	PowerEdge 1800	biosversion	
+dell	PowerEdge 1800	biosversion	A05
+digital	Digital Products, Inc.RT	version	
+emc	2GB FC DAE STILETTO SYSTEM (100-561-539)	art_rev	D05
+emc	4GB FC DAE D15 W/ FLANGES (100-562-124)	art_rev	C01
+emc	4GB FC DAE STILETTO W/ FLANGES (100-561-622)	art_rev	D05
+emc	4GB FC DAE STILETTO W/ FLANGES (100-561-622)	art_rev	E01
+emc	4GB FC DAE STILETTO W/ FLANGES (100-561-622)	art_rev	E02
+emc	4GB FC DAE STILETTO W/ FLANGES (100-561-622)	art_rev	E03
+emc	722020ALCLAR2000	array disk productRev	A34E/1534
+emc	722020CLCLAR2000	array disk productRev	A3FB/2159
+emc	BLACK WIDOW - VE CPU MODULE (110-093-000B)	sps assy_rev	B18
+emc	CX3-10c	agentrev	6.26.32(0.72)
+emc	CX3-10c	promrev	4.00.00
+emc	CX3-10c	revision	3.26.10.5.032
+emc	CX3-10C SAN/ISCSI COMBO (100-561-294)	sps assy_rev	A06
+emc	CX3-20	agentrev	6.26.31(2.70)
+emc	CX3-20	promrev	4.00.00
+emc	CX3-20	revision	3.26.20.5.031
+emc	CX3-20 SAN (100-561-063)	sps assy_rev	A09
+emc	CX3-20 SAN (100-561-063)	sps assy_rev	A16
+emc	CX3-20 SAN (100-561-860)	sps assy_rev	A08
+emc	CX3-40	agentrev	6.26.31(2.70)
+emc	CX3-40	promrev	4.00.00
+emc	CX3-40	revision	3.26.40.5.031
+emc	CX3-40 SAN (100-561-855)	sps assy_rev	A04
+emc	CX3-40 SAN (100-561-855)	sps assy_rev	A05
+emc	CX3-80	agentrev	6.26.31(2.70)
+emc	CX3-80	agentrev	6.26.32(0.72)
+emc	CX3-80	promrev	5.15.00
+emc	CX3-80	revision	3.26.80.5.031
+emc	CX3-80	revision	3.26.80.5.032
+emc	CX4-480	agentrev	7.30.12(0.73)
+emc	CX4-480	promrev	5.30.00
+emc	CX4-480	revision	04.30.000.5.522
+emc	CX4-960	agentrev	7.30.12(0.73)
+emc	CX4-960	promrev	7.00.00
+emc	CX4-960	revision	04.30.000.5.522
+emc	DD880	datadomain version	4.9.2.6-226914
+emc	HH  SAN SP 4X4GB FC 8X1 GB DIMMS (100-561-092)	sps assy_rev	A09
+emc	HH  SAN SP 4X4GB FC 8X1 GB DIMMS (100-561-092)	sps assy_rev	A11
+emc	HH  SAN SP 4X4GB FC 8X1 GB DIMMS (100-561-092)	sps assy_rev	A14
+emc	HH SANIV SP2 8X1GB DIMMS (100-562-152)	sps assy_rev	A03
+emc	HH SANIV SP2 8X1GB DIMMS NEBS (100-562-152)	sps assy_rev	A02
+emc	HH SANIV SP2 8X1GB DIMMS NEBS (100-562-521)	sps assy_rev	A03
+emc	Hitachi HUA722010CLA330	datadomain disk firmware	JP4OA3EA
+emc	Hitachi HUA722020ALA330	datadomain disk firmware	JKAOA20N
+emc	Hitachi HUA722020ALA330	datadomain disk firmware	JKAOA3EA
+emc	HUS151P1 CLAR146	array disk productRev	R450
+emc	HUS151P1 CLAR146	array disk productRev	R4F0
+emc	HUS151P1 CLAR146	array disk productRev	R600
+emc	HUS15303 CLAR300	array disk productRev	C4F0
+emc	HUS15603 CLAR300	array disk productRev	C3A8
+emc	HUS15606 CLAR600	array disk productRev	C3A8
+emc	Seagate ST31000340NS	datadomain disk firmware	XR38
+emc	SS160510 CLAR100	array disk productRev	6C3Q/2161
+emc	ST314635 CLAR146	array disk productRev	HC01
+emc	ST314635 CLAR146	array disk productRev	HC08
+emc	ST314670 CLAR146	array disk productRev	6A1A
+emc	ST314670 CLAR146	array disk productRev	6A1E
+emc	ST314685 CLAR146	array disk productRev	9A18
+emc	ST314685 CLAR146	array disk productRev	9A1C
+emc	ST314695 CLAR146	array disk productRev	E008
+emc	ST330060 CLAR300	array disk productRev	RC00
+emc	ST330060 CLAR300	array disk productRev	RC05
+emc	ST330065 CLAR300	array disk productRev	HC08
+emc	ST345080 CLAR450	array disk productRev	RC05
+emc	STE30065 CLAR146	array disk productRev	EC0C
+emc	STE30065 CLAR300	array disk productRev	EC0B
+emc	STE30065 CLAR300	array disk productRev	EC0C
+emc	STE60005 CLAR600	array disk productRev	EC0C
+emc	STT14685 CLAR146	array disk productRev	630F
+emc	STT14685 CLAR146	array disk productRev	6310
+emc	STT14685 CLAR146	array disk productRev	6316
+emc	STT30065 CLAR300	array disk productRev	630F
+emc	STT30065 CLAR300	array disk productRev	6310
+emc	STT33009 CLAR300	array disk productRev	C001
+emc	STT33009 CLAR300	array disk productRev	C003
+emc	STT33009 CLAR300	array disk productRev	C00A
+emc	STT33009 CLAR300	array disk productRev	E80A
+emc	STT34007 CLAR400	array disk productRev	C001
+emc	STT34007 CLAR400	array disk productRev	C003
+emc	STT34007 CLAR400	array disk productRev	C00A
+emc	STT34007 CLAR400	array disk productRev	C00B
+emc	STT34007 CLAR400	array disk productRev	E80A
+emc	WDC WD3000BLFS-01YBU0	datadomain disk firmware	04.04V06
+emc	WDC WD3000BLFS-01YBU1	datadomain disk firmware	04.04V06
+emc	WILDCAT-S SP CLOVERTOWN (16GB) (110-800-000C)	sps assy_rev	C42
+emc	WILDCAT-S SP CLOVERTOWN (16GB) (110-800-000C)	sps assy_rev	C43
+emc	WILDCAT-S SP CLOVERTOWN (16GB) (110-800-000C)	sps assy_rev	C44
+emc	ZIV2A074 CLAR72	array disk productRev	100H
+emc	ZIV2A210 CLAR200	array disk productRev	100H
+extreme	BlackDiamond 12804	version	
+extreme	BlackDiamond 6808	version	15.0(1)XO1
+extreme	BlackDiamond 6808	version	7.7.2
+extreme	BlackDiamond 6808	version	7.8.1
+extreme	BlackDiamond 6808	version	7.8.2
+extreme	BlackDiamond 8810	version	
+extreme	Extreme Device	version	
+extreme	Summit 200-48	version	
+extreme	Summit 200-48	version	7.5e.2
+extreme	Summit 200-48	version	7.6e.2
+extreme	Summit 200-48	version	7.6e.3
+extreme	Summit 200-48	version	7.7e.2
+extreme	Summit 200-48	version	7.8e.1
+extreme	Summit 200-48	version	7.8e.2
+extreme	Summit 300-48	version	7.5e.2
+extreme	Summit 400-24	version	
+extreme	Summit 400-24	version	7.7e.2
+extreme	Summit 400-24	version	7.8e.1
+extreme	Summit 400-24	version	7.8e.2
+extreme	Summit 400-24t	version	7.8e.2
+extreme	Summit 400-48t	version	7.7e.2
+extreme	Summit 400-48t	version	7.7e.3
+extreme	Summit 400-48t	version	7.8e.1
+extreme	Summit 400-48t	version	7.8e.2
+extreme	Summit 48i1u	version	7.6.2
+extreme	Summit 48i1u	version	7.6.3
+extreme	Summit Ver2Stack	version	
+extreme	Summit X250-24p	version	
+extreme	Summit X250-48p	version	
+extreme	Summit X250-48t	version	
+extreme	Summit X450a-24t	version	
+extreme	Summit X450a-48t	version	
+extreme	Summit X450e-48p	version	
+extreme	Summit X450e-48p	version	15.0(2)SG
+extreme	SummitStack	version	7.8e.2
+f5	BIG-IP 1500	version	9.2.5
+f5	BIG-IP 1500	version	9.4.3
+f5	BIG-IP 1600	version	9.4.6
+f5	BIG-IP 1600	version	9.4.8
+f5	BIG-IP 3400	version	9.4.3
+f5	BIG-IP 3400	version	9.4.5
+f5	BIG-IP 3600	version	9.4.5
+f5	BIG-IP 8900	version	10.2.1
+f5	BIG-IP LTM 6400	version	9.4.5
+f5	BIGIP - 3400	version	9.4.3
+f5	BIGIP - Virtual	version	10.2.1
+f5	BIGIP LTM 6400	version	9.4.3
+fortinet	Fortinet, Inc.RT	version	
+fortinet	Fortinet, Inc.RT	version	12.2(55)SE4
+foundry	FoundryBG	version	
+hp	ProCurve Switch	version	
+hp	ProLiant BL460c G1	biosversion	I15
+hp	ProLiant BL460c G7	biosversion	I27
+hp	ProLiant BL490c G7	biosversion	
+hp	ProLiant BL490c G7	biosversion	I28
+hp	ProLiant BL620c G7	biosversion	I25
+hp	ProLiant BL680c G5	biosversion	I17
+hp	ProLiant BL680c G7	biosversion	I25
+hp	ProLiant BL685c G1	biosversion	A08
+hp	ProLiant BL685c G6	biosversion	A17
+hp	ProLiant BL685c G7	biosversion	A20
+hp	ProLiant DL360 G7	biosversion	P68
+hp	ProLiant DL365 G1	biosversion	A10
+hp	ProLiant DL385 G2	biosversion	
+hp	ProLiant DL585 G1	biosversion	A01
+hp	ProLiant ML350 G6	biosversion	D22
+juniper	J2300	version	8.2R1.7
+juniper	J2300	version	8.3R3.2
+juniper	J2300	version	8.4R2.4
+juniper	J2320	version	8.4R1.13
+juniper	J2320	version	8.4R2.4
+juniper	J2320	version	9.3R4.4
+juniper	J6350	version	
+juniper	J6350	version	10.2R3.10
+juniper	J6350	version	10.4R2.7
+juniper	J6350	version	10.4R6.5
+juniper	J6350	version	8.2R1.7
+juniper	J6350	version	8.2R2.4
+juniper	J6350	version	8.3R3.2
+juniper	J6350	version	8.3R3.4
+juniper	J6350	version	8.5R2.10
+juniper	J6350	version	8.5R4.3
+juniper	J6350	version	9.2R2.15
+juniper	J6350	version	9.3R3.8
+juniper	J6350	version	9.6R2.11
+juniper	JuniperRT	version	
+juniper	JuniperRT	version	10.0R3.10
+juniper	M10i	version	11.4R1.14
+juniper	M10i	version	8.2R2.4
+juniper	M10i	version	8.5S5
+juniper	M10i	version	9.2R2.15
+juniper	M10i	version	9.5R1.8
+juniper	M10i	version	9.6R3.8
+juniper	SRX240	version	10.0R1.8
+juniper	SRX240	version	10.0R3.10
+juniper	SRX240	version	10.3R3.7
+juniper	SRX240	version	10.4R4.5
+juniper	SRX240	version	10.4R6.5
+juniper	SRX240	version	10.4R7.5
+juniper	SRX240	version	10.4R8.5
+silverpeak	Silver Peak Systems, Inc.RT	version	
+trapeze	RoamAbout Sw MXR2	version	
+trapeze	TrapezeBG	version	
+vmware		version	
+vmware	ESX	version	3.5.0110268
+vmware	ESX	version	3.5.070356
+vmware	ESX	version	3.5.082663
+vmware	ESX	version	4.0.0208167
+vmware	ESX	version	4.0.0244038
+vmware	ESX	version	4.1.0260247
+vmware	ESX	version	4.1.0348481
+vmware	ESXi	version	5.0.0469512
+vmware	ESXi	version	5.0.0474610
+vmware	ESXi	version	5.0.0504890
+vmware	ESXi	version	5.0.0515841
+vmware	vm	firmware version	
+vmware	vm	firmware version	Unknown
+vmware	vm	firmware version	v4
+vmware	vm	firmware version	v7
+vmware	vm	firmware version	v8
+vmware	vm	tools version	()
+vmware	vm	tools version	(toolsNotInstalled)
+vmware	vm	tools version	(toolsNotRunning)
+vmware	vm	tools version	0(toolsNotInstalled)
+vmware	vm	tools version	2147483647(toolsNotRunning)
+vmware	vm	tools version	2147483647(toolsOk)
+vmware	vm	tools version	41412(toolsNotRunning)
+vmware	vm	tools version	5184(toolsOld)
+vmware	vm	tools version	6304(toolsNotRunning)
+vmware	vm	tools version	6310(toolsOld)
+vmware	vm	tools version	6313(toolsNotRunning)
+vmware	vm	tools version	6313(toolsOld)
+vmware	vm	tools version	6404(toolsOld)
+vmware	vm	tools version	64607(toolsOk)
+vmware	vm	tools version	7201(toolsNotRunning)
+vmware	vm	tools version	7201(toolsOld)
+vmware	vm	tools version	7202(toolsNotRunning)
+vmware	vm	tools version	7202(toolsOld)
+vmware	vm	tools version	7299(toolsNotRunning)
+vmware	vm	tools version	7299(toolsOld)
+vmware	vm	tools version	7300(toolsNotRunning)
+vmware	vm	tools version	7300(toolsOld)
+vmware	vm	tools version	7302(toolsNotRunning)
+vmware	vm	tools version	7302(toolsOld)
+vmware	vm	tools version	7303(toolsOld)
+vmware	vm	tools version	7396(toolsOld)
+vmware	vm	tools version	8192(toolsNotRunning)
+vmware	vm	tools version	8193(toolsNotRunning)
+vmware	vm	tools version	8193(toolsOld)
+vmware	vm	tools version	8194(toolsNotRunning)
+vmware	vm	tools version	8194(toolsOk)
+vmware	vm	tools version	8194(toolsOld)
+vmware	vm	tools version	8195(toolsNotRunning)
+vmware	vm	tools version	8195(toolsOld)
+vmware	vm	tools version	8290()
+vmware	vm	tools version	8290(toolsNotRunning)
+vmware	vm	tools version	8290(toolsOld)
+vmware	vm	tools version	8295(toolsNotRunning)
+vmware	vm	tools version	8295(toolsOk)
+vmware	vm	tools version	8295(toolsOld)
+vmware	vm	tools version	8353(toolsNotRunning)
+vmware	vm	tools version	8353(toolsOld)
+vmware	vm	tools version	8384(toolsNotRunning)
+vmware	vm	tools version	8384(toolsOk)

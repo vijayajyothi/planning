@@ -1,0 +1,3 @@
+mysqladmin -u root -p create vcopsrelationships
+
+mysql -u root -p vcopsrelationships <create-table.sql

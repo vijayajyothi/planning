@@ -1,7 +1,0 @@
-"timestamp","vcserver","cluster","resourcepool","folder","vmhost","vmname","persistentid","id","application","powerstate","connectionstate","gueststate","version","numcpu","memorymb","provisionedspacegb","usedspacegb","guestfullname","toolstatus","toolsversion","toolsrunningstatus","hostname","ipaddress","storagecommitted","storageuncommitted","boottime","suspendtime","suspendinterval","createdtime","createdby","qtynics","datacenter","service","instance","tier","hz","ppm","owner"
-"2013-08-05 01:00:20",,,,,,,,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,
-"2013-08-05 01:00:20",,,,,,,,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,
-"2013-08-05 01:00:20",,,,,,,,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,
-"2013-08-05 01:00:21",,,,,,,,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,
-"2013-08-05 01:00:21",,,,,,,,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,
-"2013-08-05 01:00:21",,,,,,,,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,

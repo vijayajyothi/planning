@@ -1,0 +1,23 @@
+#!/usr/bin/expect -f
+set host [lindex $argv 0]
+set user [lindex $argv 1]
+set keyfile [lindex $argv 2]
+set passwords [lrange $argv 3 end]
+set count 0
+spawn ./copy-key.sh -i $keyfile $user@$host 
+expect {
+     -re "password:" {
+        puts "[lindex $passwords $count]"
+  	send "[lindex $passwords $count]\r" 
+        incr count
+        exp_continue
+    }
+     -re "Permission*" {
+        incr count
+        exp_continue
+    } eof {
+    	catch wait status
+        set exit_status [lindex $status 3]
+    }
+}
+exit $exit_status

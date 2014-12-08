@@ -24,6 +24,8 @@
           <%= text_field_tag :email, params[:email], class: "form-control" , :autofocus=> true%>
           <label>Password</label>
           <%= password_field_tag (:password), nil ,class: "form-control" %>
+          <!-- <label>Remember me</label> -->
+          <%#= check_box_tag :remember_me, 1, params[:remember_me] %>
           <button type="submit" class="btn btn-primary">Submit</button>
           <% end %>
         </div>

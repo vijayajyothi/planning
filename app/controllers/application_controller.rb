@@ -11,7 +11,8 @@ class ApplicationController < ActionController::Base
   end 
 
   def session_expires
-    redirect_to login_url, alert: 'Not authorized. Please login.' if cookies[:aut_token]
+    # redirect_to login_url, alert: 'Not authorized. Please login.' if cookies[:aut_token]
+    redirect_to login_url, alert: 'Not authorized. Please login.' if cookies[:user]
   end
 
   private

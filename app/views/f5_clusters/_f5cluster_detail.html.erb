@@ -1,0 +1,113 @@
+<div class="right-panel">
+  <div class="span9">
+
+    <div class="span12">
+      <div class="workflow-blocks"   style="height:200px;">
+        <div class="workflow-heading"><span>Basic Data</span></div>
+
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <td><b>Name</b></td>
+              <td><%= @f5_cluster.name %></td>
+              
+              <td><b>Data Center</b></td>
+              <td><%= @f5_cluster.data_center %></td>
+            </tr>
+            <tr>
+              <td><b>Primary unit ip</b></td>
+              <td><%= @f5_cluster.primary_unit_ip %></td>
+              
+              <td><b>Secondary unit ip</b></td>
+              <td><%= @f5_cluster.secondary_unit_ip %></td>
+            </tr>  
+            <tr>
+              <td><b>VLAN Ips</b></td>
+              <td><%= @f5_cluster.network_list %></td>
+              
+              <td><b>Access Ip</b></td>
+              <td><%= @f5_cluster.access_ip %></td>
+            </tr>  
+            <tr>
+              <td><b>VLANs</b></td>
+              <td colspan=3><%= @f5_cluster.network_name_list %></td>
+
+              </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+    <% comment do %>
+    <% @vdcs = get_vdc(@f5_cluster) %>
+    <div class="span6">
+      <div class="workflow-blocks"  style="height:200px;">
+        <div class="workflow-heading"><span>DataCenters</span><p>Count : <b><%= @vdcs.count%></b></p></div>
+        <table class="table table-hover">
+
+          <tbody>
+            <% @vdcs.each do |each_vdc|%>
+            <tr>
+              <td><b><%= link_to each_vdc.name, each_vdc, :style=>"color:black;", :remote=> true%></b></td>
+              <td><%#= @vm.createdby %></td>
+            </tr> 
+            <%end %>
+          </tbody></table>
+        </div>
+      </div>
+      <div class="panel-group" id="accordion">
+
+        <div class="panel panel-default  span6" >
+          <% @clusters = get_cluster(@f5_cluster) %>
+          <div class="workflow-heading">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+              <span>Cluster</span>
+              <p> Count : <%= @clusters.count %></p></a>
+            </div>
+
+            <div id="collapseFour" class="">
+              <div class="panel-body" style="max-height:469px; overflow:auto;">
+                <table class="table table-hover">
+                 <tbody>
+                   <% @clusters.each do |each_cluster|%>
+                   <tr>
+                    <td><b><%= link_to each_cluster.name, each_cluster, :style=>"color:black;", :remote=> true%></b></td>
+
+                    <td><%#= @vm.power_state %></td>
+                  </tr>  
+                  <% end %>
+                </tbody></table>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default  span6"  style="margin-top:0px;">
+            <% @esxs = get_esx(@f5_cluster) %>
+            <div class="workflow-heading">
+              <a data-toggle="collapse" data-parent="#accordion" href="#vmhost">
+                <span>ESXi Host</span>
+                <p> Count : <%= @esxs.count %></p></a>
+              </div>
+
+              <!-- <div id="vmhost" class="panel-collapse collapse"> -->
+              <div id="vmhost" class="">
+                <div class="panel-body" style="max-height:469px; overflow:auto;">
+                  <table class="table table-hover">
+                   <tbody>
+                     <% @esxs.each do |each_esx|%>
+                     <tr>
+                      <td><b><%= link_to each_esx.name, each_esx, :style=>"color:black;", :remote=> true%></b></td>
+
+                      <td><%#= @vm.power_state %></td>
+                    </tr>  
+                    <% end %>
+                  </tbody></table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+        </div><!--/span-->
+      </div><!--/span-->
+      <% end %>

@@ -1,0 +1,12 @@
+/opt/Navisphere/bin/naviseccli returned failure for 10.113.16.50
+/opt/Navisphere/bin/naviseccli returned failure for 10.113.58.21
+/opt/Navisphere/bin/naviseccli returned failure for 10.119.0.203
+/opt/Navisphere/bin/naviseccli returned failure for 10.128.204.64
+/opt/Navisphere/bin/naviseccli returned failure for array 10.113.16.50
+/opt/Navisphere/bin/naviseccli returned failure for array 10.113.50.21
+/opt/Navisphere/bin/naviseccli returned failure for array 10.113.58.21
+/opt/Navisphere/bin/naviseccli returned failure for array 10.119.0.203
+/opt/Navisphere/bin/naviseccli returned failure for array 10.128.204.64
+/opt/Navisphere/bin/naviseccli returned failure for array 10.16.66.91
+/opt/Navisphere/bin/naviseccli returned failure for array 10.16.66.93
+/opt/Navisphere/bin/naviseccli returned failure for array 10.16.68.25

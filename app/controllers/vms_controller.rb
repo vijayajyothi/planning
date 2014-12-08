@@ -44,10 +44,7 @@ class VmsController < ApplicationController
     #   format.json { render json: @vm }
     # end
   end
-  def details
-    raise "here"
-    render :partial =>"details"
-  end
+ 
 
   # GET /vms/new
   # GET /vms/new.json
