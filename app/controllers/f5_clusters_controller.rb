@@ -9,7 +9,7 @@ class F5ClustersController < ApplicationController
   # GET /f5_clusters/1.json
   def show
     @f5_cluster = F5Cluster.find(params[:id])
-    @f5_clusters = F5Cluster.all
+    @f5_clusters = F5Cluster.where('ops_status != ?', "Deleted" )
 
   end
 

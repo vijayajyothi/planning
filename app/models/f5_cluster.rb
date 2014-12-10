@@ -36,6 +36,7 @@ class << self
   end
 
   def f5cluster_data_import
+    F5Cluster.update_all(:ops_status=>"Deleted")
 
     CSV.foreach("csv_data/f5/f5_clusters.csv", :headers => true) do |row|
       f5cluster = F5Cluster.find_by_name(row["Name"])

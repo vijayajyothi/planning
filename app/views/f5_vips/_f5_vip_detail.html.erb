@@ -56,7 +56,8 @@
     <!-- F5 Cluster -->
 
     <div class="panel-group" id="accordion" style="clear:left;">
-    <% @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('ip,port').where(:f5_vip_id=>@f5_vip.id))%>
+    <% @f5nodes = F5Node.find_by_sql(F5Node.where(:f5_vip_id=>@f5_vip.id))%>
+    <%# @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('ip,port').where(:f5_vip_id=>@f5_vip.id))%>
 
       <% @f5pools = F5Pool.find_by_sql(F5Pool.group(:f5_cluster_id).where(:f5_vip_id=>@f5_vip.id))%>
 
