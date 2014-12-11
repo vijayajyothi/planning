@@ -76,6 +76,8 @@ class << self
       f5v.name=row["Virtual Server Name"].sub(/\/Common\//,"") if row["Virtual Server Name"].present?
       f5v.ip=row["Virtual Server IP"]
       f5v.port = row[" Virtual Server Port"]
+      f5v.vip_status = row[" VIP Status"]
+      f5v.vip_enable = row[" VIP Enable Status"]
       # f5v.application_id = 
       # f5v.instance.id =
       # f5v.tier_id =
@@ -101,6 +103,8 @@ class << self
       f5p.name=row[" Pool Name"].sub(/\/Common\//,"") if row[" Pool Name"].present?
       f5p.f5_cluster_id = f5cluster.id if f5cluster.present?
       f5p.lb_method = row["LB Method"]
+
+      f5p.pool_status = row[" Pool Status"]
       f5p.save 
 
     end
@@ -125,7 +129,6 @@ class << self
       #   vipvm.save
 
       # end
-
       if f5n.present?
         f5n.ops_status = "Present"
       else
@@ -135,9 +138,12 @@ class << self
       end
       f5n.ip = row[" Node IP"]
       f5n.port = row[" Node Port"]
+      f5n.node_enable = row[" Node Enabled State"]
+      f5n.node_status = row[" Node Status"] 
       f5n.f5_vip_id = f5v.id if f5v.present?
       f5n.pool_id = f5p.id if f5p.present?
       f5n.vm_id = vm.id if vm.present?
+
       f5n.f5_cluster_id = f5cluster.id if f5cluster.present?
       f5n.save if f5n.ip.present?
 

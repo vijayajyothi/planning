@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141104110211) do
+ActiveRecord::Schema.define(:version => 20141211060626) do
 
   create_table "applications", :force => true do |t|
     t.string   "name"
@@ -97,6 +97,8 @@ ActiveRecord::Schema.define(:version => 20141104110211) do
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
     t.integer  "f5_vip_id"
+    t.string   "node_enable"
+    t.string   "node_status"
   end
 
   create_table "f5_pools", :force => true do |t|
@@ -107,6 +109,7 @@ ActiveRecord::Schema.define(:version => 20141104110211) do
     t.string   "ops_status"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.string   "pool_status"
   end
 
   create_table "f5_vips", :force => true do |t|
@@ -120,6 +123,8 @@ ActiveRecord::Schema.define(:version => 20141104110211) do
     t.string   "ops_status"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "vip_enable"
+    t.string   "vip_status"
   end
 
   create_table "fibre_commections", :force => true do |t|

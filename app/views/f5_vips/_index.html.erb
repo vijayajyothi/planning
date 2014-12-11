@@ -25,7 +25,7 @@
         <% @f5_vips.each do |f5_vip| %>
         <% unless f5_vip.ops_status=="Deleted"%>
         
-        <tr style="cursor:pointer;" data-link="<%= f5_vip_path(f5_vip) %>">
+        <tr style="" data-link="<%= f5_vip_path(f5_vip) %>">
           <td><%= f5_vip.name %></td>
           <td><%= f5_vip.ip %></td>
           <td><%= f5_vip.port %></td>
