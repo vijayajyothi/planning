@@ -18,7 +18,7 @@
               <td><b>Port</b></td>
               <td><%= @f5_vip.port %></td>
               <td ><b>F5 Cluster</b></td>
-              <td ><%= vip_f5cluster(@f5_vip.f5_cluster_id).name %></td>
+              <td ><%= link_to vip_f5cluster(@f5_vip.f5_cluster_id).name, vip_f5cluster(@f5_vip.f5_cluster_id), :style=>"color:black;", :remote=> true%>
             </tr> 
             <tr>
               <td><b>VIP Status</b></td>
@@ -64,12 +64,12 @@
     <!-- F5 Cluster -->
 
     <div class="panel-group" id="accordion" style="clear:left;">
-    <%# @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('ip,port,node_status,node_enable').where(:f5_vip_id=>@f5_vip.id))%>
-    <% @f5nodes = F5Node.find_by_sql(F5Node.where(:f5_vip_id=>@f5_vip.id))%>
+    <%# @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('MAX(id), ip,port,node_status,node_enable,ops_status').where(:f5_vip_id=>@f5_vip.id))%>
+    <%# @f5nodes = F5Node.find_by_sql(F5Node.where(:f5_vip_id=>@f5_vip.id,'ops_status != ?', "Deleted")) %>
     <%# @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('ip,port').where(:f5_vip_id=>@f5_vip.id))%>
-
-
-      <div class="span12">
+<% @nodes = F5Node.where('ops_status != ?', "Deleted")%>
+<%@f5nodes = @nodes.where(:f5_vip_id=>@f5_vip.id)%>
+      <div class="span12"d>
         <div class="workflow-blocks" style="margin-top:0px;">
           <div class="workflow-heading"> <a data-toggle="collapse" data-parent="#accordion" href="#f5vm">
             <span>F5 Nodes </span>
@@ -126,7 +126,9 @@
       <div class="panel panel-default  span12"  style="margin-top:0px;">
         <div class="workflow-heading">
           <a data-toggle="collapse" data-parent="#accordion" href="#f5cluster">
-            <span><b>F5 Cluster: </b><%= vip_f5cluster(@f5_vip.f5_cluster_id).name%></span>
+            <span><b>F5 Cluster: </b>
+              <%= link_to vip_f5cluster(@f5_vip.f5_cluster_id).name, vip_f5cluster(@f5_vip.f5_cluster_id), :style=>"color:black;", :remote=> true%>
+            </span>
           </a>
         </div>
         <div id="f5cluster" class="">

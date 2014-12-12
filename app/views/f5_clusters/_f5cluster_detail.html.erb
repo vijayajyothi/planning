@@ -3,7 +3,7 @@
 
     <div class="span12">
       <div class="workflow-blocks"   style="height:200px;">
-        <div class="workflow-heading"><span>Basic Data</span></div>
+        <div class="workflow-heading"><span>Basic Data</span><p> </p></div>
 
         <table class="table table-hover">
           <tbody>
@@ -38,6 +38,34 @@
 
       </div>
     </div>
+      <div class="panel-group" id="accordion">
+
+        <div class="panel panel-default  span6" >
+          <% @f5vips = F5Vip.where(:f5_cluster_id=>@f5_cluster.id)%>
+          <%# @clusters = get_cluster(@vcenter) %>
+          <div class="workflow-heading">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+              <span>F5Vips</span>
+              <p> Count : <%= @f5vips.count %></p></a>
+            </div>
+
+            <div id="collapseFour" class="">
+              <div class="panel-body" style="max-height:469px; overflow:auto;">
+                <table class="table table-hover">
+                 <tbody>
+                   <% @f5vips.each do |each_f5vip|%>
+                   <tr>
+                    <td><b><%= link_to each_f5vip.name, each_f5vip, :style=>"color:black;", :remote=> true%></b></td>
+
+                  </tr>  
+                  <% end %>
+                </tbody></table>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
     <% comment do %>
     <% @vdcs = get_vdc(@f5_cluster) %>
     <div class="span6">

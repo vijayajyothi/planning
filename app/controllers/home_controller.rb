@@ -12,7 +12,7 @@ class HomeController < ApplicationController
   end
 
   def search_list
-    @search = Sunspot.search [Vcenter, Vdc, Cluster, Vmhost, Vm, F5Vip, F5Cluster] do 
+    @search = Sunspot.search [Vcenter, Vdc, Cluster, Vmhost, Vm, F5Vip, F5Cluster, F5Device] do 
       fulltext params[:search]
     end
     @results = @search.results

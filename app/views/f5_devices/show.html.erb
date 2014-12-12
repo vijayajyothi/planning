@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Device:</b>
+  <%= @f5_device.device %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @f5_device.ip %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @f5_device.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_f5_device_path(@f5_device) %> |
+<%= link_to 'Back', f5_devices_path %>
