@@ -31,7 +31,7 @@
       <td ><%= link_to 'Delete Permanently', vm, method: :delete, data: { confirm: 'Are you sure? will not reverted' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=> true%></td>
     </tr>
     <% else %>
-    <tr style="cursor:pointer;" id ="complete_tr">
+    <tr style="" id ="complete_tr">
 
       <td><%= vm.name %></td>
       <td><%= vm.vm_hostname %></td>

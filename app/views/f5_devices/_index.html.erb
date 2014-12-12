@@ -1,0 +1,63 @@
+<div class="index-container">
+
+  <!-- Index form Started -->
+  <div class="col-sm-12">
+    <div class="form-search col-sm-4">
+      <h2>F5 Device Details</h2></div>
+      <div class="form-search col-sm-4" style="margin-top:20px;">
+        <div class="input-append">
+
+          <%= form_tag f5_devices_path, :method => :get, :remote=> true do %>
+          <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+          <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class ="container" style="height:662px;overflow:auto;">
+      <table class="table table-striped tablesorter">
+        <tr>
+          <th>Device</th>
+          <th>IP</th>
+          <th>Status</th>
+          <th>Redirect</th>
+          <th colspan=2> Actions</th>
+        </tr>
+        <% @f5_devices.each do |f5_device| %>
+        <% if f5_device.ops_status=="Deleted"%>
+        <tr class="alert alert-error">
+          <td colspan=3><%= f5_device.device %> is deleted</td>
+          <td colspan=2><%= link_to 'Destroy', f5_device, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%></td>
+        </tr>
+        <% else %>
+        <tr style="" data-link="<%#= f5_cluster_path(f5_cluster) %>">
+          <td><%= f5_device.device %></td>
+          <td><%= f5_device.ip %></td>
+
+          <% if f5_device.status == "active"%>
+          <% image = "green.png"%>
+          <% else f5_device.status == "standby" %>
+          <% image = "red.png"%>
+          <% end %>
+          <td>  <%= image_tag "#{image}", :style=> "margin:-4px 3px 0 0;width:21px;height:21px;"%><%= f5_device.status %></td>
+          <td><%= link_to "https://#{f5_device.ip}","https://#{f5_device.ip}", target: "_blank"%></td>
+
+          <% if f5_device.status == "active"%>
+            <% @f5cluster= F5Cluster.where("primary_unit_ip='#{f5_device.ip}' OR secondary_unit_ip= '#{f5_device.ip}'").first %>
+            <% if @f5cluster.present?%>
+              <% @f5cluster.active=f5_device.ip %>
+              <% @f5cluster.save %>
+              <td><%= link_to 'Show',  @f5cluster ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
+              <%else%>
+              <td>F5 Cluster does't exist</td>
+            <% end %>  
+             <%else%>
+              <td>Stand By</td>        
+          <% end %>          
+        </tr>
+        <% end %>
+        <% end %>
+      </table>
+    </div>
+
+  </div>

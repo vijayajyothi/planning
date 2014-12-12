@@ -1,4 +1,7 @@
 Opsgps::Application.routes.draw do
+  resources :f5_devices
+
+
   resources :vcenters
 
 
@@ -182,6 +185,10 @@ get "/selected_f5cluster/:id" => "f5_clusters#selected_f5cluster", :as => :selec
 # F5 Cluster
 get "/f5vips" => "f5_vips#index", :as => :f5vips
 get "/selected_f5_vip/:id" => "f5_vips#selected_f5_vip", :as => :selected_f5_vip
+
+# F5 Cluster
+get "/f5devices" => "f5_devices#index", :as => :f5devices
+get "/selected_f5_device/:id" => "f5_devices#selected_f5_device", :as => :selected_f5_device
 
 
 resources :users 

@@ -29,7 +29,7 @@
           <td colspan=2><%= link_to 'Delete Permanently', vdc, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%></td>
         </tr>
         <% else %>
-        <tr style="cursor:pointer;" id ="complete_tr">
+        <tr style="" id ="complete_tr">
           <td><%= vdc.name %></td>
           <td><%= vcenter_name(vdc.vcenter_id) %></td>
           <td><%= vdc.description %></td>

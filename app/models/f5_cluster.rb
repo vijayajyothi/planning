@@ -35,30 +35,58 @@ class << self
     p "Done with F5 node data Import"
   end
 
-  def f5cluster_data_import
-    F5Cluster.update_all(:ops_status=>"Deleted")
+  def updating_f5_data
+    f5_device_data  = f5_device_update
+  end
 
-    CSV.foreach("csv_data/f5/f5_clusters.csv", :headers => true) do |row|
-      f5cluster = F5Cluster.find_by_name(row["Name"])
-      if f5cluster.present?
-        f5cluster.ops_status = "Present"
-      else
-        f5cluster = F5Cluster.new
-        f5cluster.ops_status = "New"
+  def f5_device_update
+    F5Device.update_all(:ops_status=>"Deleted")
 
-        f5cluster.attributes = row.to_hash.slice(*accessible_attributes)
-      end
-      f5cluster.name = row["Name"]
-      f5cluster.data_center = row["DataCenter"]
-      f5cluster.primary_unit_ip = row["Primary Unit"]
-      f5cluster.secondary_unit_ip = row["Secondary Unit"]
-      f5cluster.primary_unit_name = row["primary_unit_name"]
-      f5cluster.secondary_unit_name = row["secondary_unit_name"]
-      f5cluster.network_list = row["Networks"]
-      f5cluster.network_name_list = row["Use"]
-      f5cluster.access_ip = row["Accss IP"]
-      f5cluster.save if f5cluster.name.present?
+    CSV.foreach("csv_data/f5/f5_update.csv", :headers => true) do |row|
+     f5device = F5Device.find_by_ip(row["ip"])
+     if f5device.present?
+      f5device.ops_status = "Present"
+    else
+      f5device = F5Device.new
+      f5device.ops_status = "New"
+
+      f5device.attributes = row.to_hash.slice(*accessible_attributes)
     end
+    f5device.device = row["lbname"]
+    f5device.ip = row["ip"]
+    f5device.status = row["status"]
+    f5device.save if f5device.ip.present?
+
+
+  end
+
+end
+
+def f5cluster_data_import
+  F5Cluster.update_all(:ops_status=>"Deleted")
+  F5Cluster.update_all(:active=>0)
+
+  CSV.foreach("csv_data/f5/f5_clusters.csv", :headers => true) do |row|
+    f5cluster = F5Cluster.find_by_name(row["Name"])
+    if f5cluster.present?
+      f5cluster.ops_status = "Present"
+    else
+      f5cluster = F5Cluster.new
+      f5cluster.ops_status = "New"
+
+      f5cluster.attributes = row.to_hash.slice(*accessible_attributes)
+    end
+    f5cluster.name = row["Name"]
+    f5cluster.data_center = row["DataCenter"]
+    f5cluster.primary_unit_ip = row["Primary Unit"]
+    f5cluster.secondary_unit_ip = row["Secondary Unit"]
+    f5cluster.primary_unit_name = row["primary_unit_name"]
+    f5cluster.secondary_unit_name = row["secondary_unit_name"]
+    f5cluster.network_list = row["Networks"]
+    f5cluster.network_name_list = row["Use"]
+    f5cluster.access_ip = row["Accss IP"]
+    f5cluster.save if f5cluster.name.present?
+  end
   end #cluster data import end
 
 
@@ -77,6 +105,8 @@ class << self
       f5v.name=row["Virtual Server Name"].sub(/\/Common\//,"") if row["Virtual Server Name"].present?
       f5v.ip=row["Virtual Server IP"]
       f5v.port = row[" Virtual Server Port"]
+      f5v.vip_status = row[" VIP Status"]
+      f5v.vip_enable = row[" VIP Enable Status"]
       # f5v.application_id = 
       # f5v.instance.id =
       # f5v.tier_id =
@@ -102,6 +132,8 @@ class << self
       f5p.name=row[" Pool Name"].sub(/\/Common\//,"") if row[" Pool Name"].present?
       f5p.f5_cluster_id = f5cluster.id if f5cluster.present?
       f5p.lb_method = row["LB Method"]
+
+      f5p.pool_status = row[" Pool Status"]
       f5p.save 
 
     end
@@ -126,7 +158,6 @@ class << self
       #   vipvm.save
 
       # end
-
       if f5n.present?
         f5n.ops_status = "Present"
       else
@@ -136,14 +167,17 @@ class << self
       end
       f5n.ip = row[" Node IP"]
       f5n.port = row[" Node Port"]
+      f5n.node_enable = row[" Node Enabled State"]
+      f5n.node_status = row[" Node Status"] 
       f5n.f5_vip_id = f5v.id if f5v.present?
       f5n.pool_id = f5p.id if f5p.present?
       f5n.vm_id = vm.id if vm.present?
+
       f5n.f5_cluster_id = f5cluster.id if f5cluster.present?
       f5n.save if f5n.ip.present?
 
 
-    
+
     end
   end
 

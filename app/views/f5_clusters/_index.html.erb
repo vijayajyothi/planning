@@ -31,7 +31,7 @@
           <td colspan=2><%= link_to 'Destroy', f5_cluster, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%></td>
         </tr>
         <% else %>
-        <tr style="cursor:pointer;" data-link="<%= f5_cluster_path(f5_cluster) %>">
+        <tr style="" data-link="<%= f5_cluster_path(f5_cluster) %>">
           <td><%= f5_cluster.name %></td>
           <td><%= f5_cluster.data_center %></td>
           <td><%= f5_cluster.primary_unit_ip %></td>
