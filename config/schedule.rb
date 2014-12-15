@@ -21,19 +21,21 @@ every :day, :at=> '12:01am' do
   rake "sunspot:solr:stop" 
   rake "sunspot:solr:start"
   rake "cron"
-  rake "sunspot:solr:reindex"
-  rake `chmod -R 777 *`
-end
-
-
-every 2.hours do
-  rake "sunspot:solr:stop" 
-  rake "sunspot:solr:start"
   rake "f5cron"
+  rake "f5cron_update"
   rake "sunspot:solr:reindex"
   rake `chmod -R 777 *`
-
 end
+
+
+# every 2.hours do
+#   rake "sunspot:solr:stop" 
+#   rake "sunspot:solr:start"
+#   rake "f5cron"
+#   rake "sunspot:solr:reindex"
+#   rake `chmod -R 777 *`
+
+# end
 # Learn more: http://github.com/javan/whenever
 
 # Run below line for updating cronjobs after updating this file.

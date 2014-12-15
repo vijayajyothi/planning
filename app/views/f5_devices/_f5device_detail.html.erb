@@ -1,0 +1,134 @@
+<div class="right-panel">
+  <div class="span9">
+
+    <div class="span6">
+      <div class="workflow-blocks">
+        <div class="workflow-heading"><span>Basic Data</span></div>
+
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <td><b>Device Name</b></td>
+              <td><%= @f5_device.name %></td>
+            </tr>
+            <tr>
+              <td><b>IP Address</b></td>
+              <td><%= link_to "https://#{@f5_device.ip}","https://#{@f5_device.ip}", target: "_blank"%></td>
+            </tr>
+            <tr>
+              <td><b>Status</b></td>
+              <% if @f5_device.status == "active"%>
+              <% image = "green.png"%>
+              <% else @f5_device.status == "standby" %>
+              <% image = "red.png"%>
+              <% end %>
+              <td>  <%= image_tag "#{image}", :style=> "margin:-4px 3px 0 0;width:21px;height:21px;"%><%= @f5_device.status %></td>
+            </tr>  
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+    <% @f5cluster= F5Cluster.where("primary_unit_ip='#{@f5_device.ip}' OR secondary_unit_ip= '#{@f5_device.ip}'").first %>
+    <!-- reuse******************************************* -->
+    <% comment do %>
+
+    <div class="span6">
+      <div class="workflow-blocks"  style="height:158px;">
+        <div class="workflow-heading"><span><b>F5Cluster:</b><p><%= @f5cluster.name %></p> </span></div>
+        <table class="table table-hover">
+
+          <tbody>
+            <tr>
+              <td><b>Data Center</b></td>
+              <td><%= @f5cluster.data_center %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <% end %>
+
+    <!-- reuse******************************************* -->
+
+    <div class="panel-group" id="accordion">
+
+      <div class="panel panel-default  span12" >
+        <%# @clusters = get_cluster(@f5_device) %>
+        <div class="workflow-heading">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+            <span>F5Cluster : <p> <%= @f5cluster.name %></p></span></a>
+          </div>
+
+          <div id="collapseFour" class="">
+            <div class="" style="max-height:469px; overflow:auto;">
+              <table class="table table-hover">
+               <tbody>
+                <tr>
+
+
+                  <td><b>Data Center</b></td>
+                  <td><%= @f5cluster.data_center %></td>
+
+                  <td><b>Primary unit ip</b></td>
+                  <td><%= @f5cluster.primary_unit_ip %></td>
+                </tr>
+                <tr> 
+                  <td><b>Secondary unit ip</b></td>
+                  <td><%= @f5cluster.secondary_unit_ip %></td>
+
+                  <td><b>VLAN Ips</b></td>
+                  <td><%= @f5cluster.network_list %></td>
+                </tr>  
+                <tr> 
+                  <td><b>Access Ip</b></td>
+                  <td><%= @f5cluster.access_ip %></td>
+
+                  <td><b>VLANs</b></td>
+                  <td><%= @f5cluster.network_name_list %></td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default  span12" style="margin-top:10px;margin-left:0px;"  >
+      <% @vips = get_vips(@f5cluster.id) %>
+      <div class="workflow-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#vmhost">
+          <span>F5 Vips</span>
+          <p> Count : <%= @vips.count %></p></a>
+        </div>
+
+        <!-- <div id="vmhost" class="panel-collapse collapse"> -->
+        <div id="vmhost" class="">
+          <div class="" style="max-height:344px; overflow:auto;">
+            <table class="table table-hover">
+             <tbody>
+              <tr>
+                <th>VIP Name</th>
+                <th>IP</th>
+                <th>Port</th>
+              </tr>
+              <% @vips.each do |each_vip|%>
+              <tr>
+                <td><b><%= link_to each_vip.name, each_vip, :style=>"color:black;", :remote=> true%></b></td>
+                <td><%= link_to "https://#{@f5_device.ip}","https://#{@f5_device.ip}", target: "_blank"%></td>
+                <td><%= each_vip.port %></td>
+              </tr>  
+              <% end %>
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div><!--/span-->
+</div><!--/span-->

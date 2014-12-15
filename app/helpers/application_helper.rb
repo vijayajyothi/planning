@@ -36,7 +36,7 @@ end
 def my_vdc_name(vdc_id)
   vdc = Vdc.where(:id=> vdc_id).first
   return vdc
-  end
+end
 
 def my_vcenter(vcenter_id)
   vcenter = Vcenter.where(:id => vcenter_id).first
@@ -47,15 +47,20 @@ def my_cluster(cluster_id)
 end
 
 def my_host(vmhost_id)
-vmhost = Vmhost.where(:id=>vmhost_id).first
-  end
+  vmhost = Vmhost.where(:id=>vmhost_id).first
+end
 def get_vms_by_host(vmhost_id)
   vms = Vm.where(:vmhost_id=> vmhost_id)
 end
 
 def vip_f5cluster(f5cluster_id)
-f5_cluster = F5Cluster.where(:id=>f5cluster_id).first
-  end
+  f5_cluster = F5Cluster.where(:id=>f5cluster_id).first
+end
+
+def get_vips(f5cluster_id)
+  vips = F5Vip.where(:f5_cluster_id=>f5cluster_id)
+  return vips
+end
 def url_sort(base,text)
 		#raise text.inspect
 		#css_class = text == sort_column ? "current #{sort_direction}" : nil

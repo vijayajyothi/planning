@@ -8,8 +8,9 @@
         <table class="table table-hover">
           <tbody>
             <tr>
-              <td><b>Big IP</b></td>
-              <td><%= link_to "https://#{vip_f5cluster(@f5_vip.f5_cluster_id).primary_unit_ip}", "https://#{vip_f5cluster(@f5_vip.f5_cluster_id).primary_unit_ip}", target: '_blank' %></td>
+             
+              <td><b>F5 VIP Name</b></td>
+              <td><%= @f5_vip.name %></td>
               <td><b>F5 VIP IP</b></td>
               <td><%= @f5_vip.ip %></td>
             </tr>
@@ -20,12 +21,7 @@
               <td ><b>F5 Cluster</b></td>
               <td ><%= link_to vip_f5cluster(@f5_vip.f5_cluster_id).name, vip_f5cluster(@f5_vip.f5_cluster_id), :style=>"color:black;", :remote=> true%>
             </tr> 
-            <tr>
-              <td><b>VIP Status</b></td>
-              <td><%= @f5_vip.vip_status %></td>
-              <td ><b>VIP Enabled Status</b></td>
-              <td ><%= @f5_vip.vip_enable %></td>
-            </tr>
+           
           </tbody></table>
 
         </div>
