@@ -52,7 +52,7 @@ class << self
 
       f5device.attributes = row.to_hash.slice(*accessible_attributes)
     end
-    f5device.device = row["lbname"]
+    f5device.name = row["lbname"]
     f5device.ip = row["ip"]
     f5device.status = row["status"]
     f5device.save if f5device.ip.present?
