@@ -10,10 +10,8 @@ class F5DevicesController < ApplicationController
   def show
     @f5_device = F5Device.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @f5_device }
-    end
+    @f5_devices = F5Device.where('ops_status != ?', "Deleted" )
+   
   end
 
   # GET /f5_devices/new
@@ -75,4 +73,10 @@ class F5DevicesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def selected_f5_device
+    @f5_device = F5Device.find(params[:id])
+    @f5_devices = F5Device.where('ops_status != ?', "Deleted" )
+  end
+
 end

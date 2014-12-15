@@ -1,0 +1,48 @@
+<!-- <div class="container"> -->
+<section>
+ <div class="container-fluid">
+   <div class="col-sm-12">
+    <div class="form-search col-sm-4">
+      <h4>F5 Device Details</h2></div>
+        <div class="form-search col-sm-4" style="margin-top:3px;">
+
+          <div class="input-append">
+
+            <%= form_tag f5devices_path, :method => :get, :remote=> true do %>
+            <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+            <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-search col-sm-4" style="margin-top:20px;">
+
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav" style="margin-right:20px;margin-bottom:0px;height:717px; overflow:auto;">
+
+            <ul class="nav nav-list">
+              <% @f5_devices.each do |each_f5d|%>
+              <li class=<%=each_f5d.id== params[:id].to_i ? "active" : "none" %>>
+                <%= link_to  each_f5d.name, selected_f5_device_path(each_f5d), :remote=> true%>
+              </li>
+              <% end %>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="dashboard">
+          <%= render :partial=> "f5device_detail" %>
+        </div><!--/dashboard-->
+      </div><!--/row-->
+    </section>
+    <!-- </div>< --><!--/container-->
+
+    <!-- prepending the element to top of the page on click -->
+    <script type="text/javascript">
+// $('li').on('click',function(){
+//    $(this).parent().prepend(this);
+// })
+
+</script>

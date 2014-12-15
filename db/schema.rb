@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141212102108) do
+ActiveRecord::Schema.define(:version => 20141215050508) do
 
   create_table "applications", :force => true do |t|
     t.string   "name"
@@ -89,7 +89,7 @@ ActiveRecord::Schema.define(:version => 20141212102108) do
   end
 
   create_table "f5_devices", :force => true do |t|
-    t.string   "device"
+    t.string   "name"
     t.string   "ip"
     t.string   "status"
     t.datetime "created_at", :null => false

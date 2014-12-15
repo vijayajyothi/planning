@@ -5,6 +5,16 @@ task :cron => :environment do
   puts "done"
   OpsMailer.confirmation_mail.deliver
   p "hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+  puts "started f5"
+  F5Cluster.importing_f5_data
+  puts "importing F5 is done"
+  OpsMailer.f5_confirmation_mail.deliver
+  p "f5 job done with sending a mail"
+  puts "started f5 update"
+  F5Cluster.updating_f5_data
+  puts "updating F5 with new file is done"
+  OpsMailer.f5_up_confirmation_mail.deliver
+  p "f5 updation job done with sending a mail"
 end
 
 
