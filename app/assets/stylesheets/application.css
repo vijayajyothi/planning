@@ -26,3 +26,8 @@
 .formatHTML5 th .desc {
   background-image: url(down_arrow.gif);
 }
+
+
+a:hover{
+  background-color: transparent;
+};

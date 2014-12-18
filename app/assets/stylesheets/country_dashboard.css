@@ -150,14 +150,14 @@ ul.header-icons >li:hover> a{
 		text-decoration: none;
 		margin: 2px 22px;
 	}
-	a:hover#template {
+/*	a:hover#template {
 		background: -webkit-gradient(linear, left top, left bottom, from(#8cc63f), to(#538116));
 		background: -moz-linear-gradient(center top , #8cc63f, #538116) repeat scroll 0 0 rgba(0, 0, 0, 0);
 		background-image:     -ms-linear-gradient(top, #8cc63f, #538116); 
 		background-image:      -o-linear-gradient(top, #8cc63f, #538116); 
 		background-image:         linear-gradient(top, #8cc63f, #538116);
 		color: #fff;
-	}
+	}*/
 
 
 

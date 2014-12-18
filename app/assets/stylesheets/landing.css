@@ -251,6 +251,10 @@ footer{ background:#3399cc; height:40px; color:#FFF; position:fixed; bottom:0; w
         font-size: 140px;
         /*opacity: 0.2;*/
     }
+    .metro-nav .metro-nav-block a:hover {
+     {
+background-color: none !important;
+     } 
 
     .metro-nav .metro-nav-block.long a:hover i{
 

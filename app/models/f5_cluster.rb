@@ -40,7 +40,7 @@ class << self
   end
 
   def f5_device_update
-    F5Device.update_all(:ops_status=>"Deleted")
+    # F5Device.update_all(:ops_status=>"Deleted")
 
     CSV.foreach("csv_data/f5/f5_update.csv", :headers => true) do |row|
      f5device = F5Device.find_by_ip(row["ip"])
@@ -92,6 +92,7 @@ def f5cluster_data_import
 
   def f5vip_data_import
     F5Vip.update_all(:ops_status=>"Deleted")
+
     CSV.foreach("csv_data/f5/f5.csv", :headers => true) do |row|
       f5cluster = F5Cluster.where(:access_ip=>row[" Access IP"]).first
       f5v = F5Vip.where(:name=>row["Virtual Server Name"].sub(/\/Common\//,""), :f5_cluster_id =>f5cluster.id).first if f5cluster.present?
