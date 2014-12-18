@@ -56,7 +56,7 @@ body{
 }
 .workflow-header-icons ul#icons-header li:hover
 {
-	background-color: #000;
+	/*background-color: #000;*/
 }
 ul.icons-header {
 	color: #FFFFFF;

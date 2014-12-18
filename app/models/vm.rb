@@ -208,9 +208,13 @@ def esx_pnics_data_import
     pnic.observed = row["observed"]
     pnic.save if pnic.name.present?
   end
+  extra_pnics = Pnic.where(:ops_status=>"Deleted")
+  extra_pnics.delete_all
 end
 
 def host_hbas_data_import
+  Hhba.update_all(:ops_status=>"Deleted")
+
   CSV.foreach("csv_data/powercli/esx/hosthbas.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
     hbas = Hhba.where(:vmhost_id=>vmhost.id, :name=>row["hba"]).first if vmhost.present?
@@ -233,9 +237,13 @@ def host_hbas_data_import
 
     hbas.save if hbas.name.present?
   end
+   extra_hosts = Hhba.where(:ops_status=>"Deleted")
+  extra_hosts.delete_all
 end
 
 def port_group_data_import
+  PortGroup.update_all(:ops_status=>"Deleted")
+
   CSV.foreach("csv_data/powercli/esx/portgroups.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
     pnic = Pnic.find_by_name(row["nic"])
@@ -256,10 +264,14 @@ def port_group_data_import
 
     pg.save if pg.name.present?
   end
+   extra_pgs = PortGroup.where(:ops_status=>"Deleted")
+  extra_pgs.delete_all
 end
 
 
 def data_store_data_import
+  Datastore.update_all(:ops_status=>"Deleted")
+
   CSV.foreach("csv_data/powercli/esx/datastores.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["vcserver"])
 
@@ -285,6 +297,8 @@ def data_store_data_import
 
     data_store.save
   end
+   extra_data_stores = Datastore.where(:ops_status=>"Deleted")
+  extra_data_stores.delete_all
 end
 
 
