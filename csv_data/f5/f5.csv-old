@@ -1,8 +1,4 @@
 Datacenter, Cluster,Primary,Secondary, Access IP,Virtual Server Name,Virtual Server IP, Virtual Server Port, VIP Status, VIP Enable Status, Pool Name, Pool Status,LB Method, Monitor Name, Node IP, Node Port, Node Enabled State, Node Status, iRules
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.0.71//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.0.71//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.0.71//iControl/iControlPortal.cgi>>}
-vipdata
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,w-stage-ext-vip,10.113.54.21,80,GREEN,ENABLED,w-stage-pool,GREEN,ROUND ROBIN,w-stage-monitor,10.113.54.23,80,UP,ENABLED,amsstg-redirect  http-to-https-redirect  irule-www-stage-ccred  lqestg-redirect  renewals-redirct
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,w-stage-ext-vip,10.113.54.21,80,GREEN,ENABLED,w-stage-pool,GREEN,ROUND ROBIN,w-stage-monitor,10.113.54.24,80,UP,ENABLED,amsstg-redirect  http-to-https-redirect  irule-www-stage-ccred  lqestg-redirect  renewals-redirct
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,w-stage-int-vip,10.113.54.22,80,GREEN,ENABLED,w-stage-pool,GREEN,ROUND ROBIN,w-stage-monitor,10.113.54.23,80,UP,ENABLED,
@@ -108,10 +104,6 @@ SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,zimbra-prod-webprox
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,zimbraesna-vip,10.113.63.5,13777,GREEN,ENABLED,zimbraesna-pool,GREEN,ROUND ROBIN,tcp,10.113.62.153,13777,UP,ENABLED,
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,w-stage-ext-vip-SSL,10.113.54.21,443,GREEN,ENABLED,w-stage-pool-SSL,GREEN,ROUND ROBIN,tcp,10.113.54.23,443,UP,ENABLED,
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,w-stage-ext-vip-SSL,10.113.54.21,443,GREEN,ENABLED,w-stage-pool-SSL,GREEN,ROUND ROBIN,tcp,10.113.54.24,443,UP,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.0.82//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.0.82//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.0.82//iControl/iControlPortal.cgi>>}
-vipdata
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/archive-outbound-lb.vmware.com,10.113.208.58,25,GREEN,ENABLED,/Common/archive-outbound-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/tcp,10.113.208.28,25,UP,ENABLED,
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/archive-outbound-lb.vmware.com,10.113.208.58,25,GREEN,ENABLED,/Common/archive-outbound-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/tcp,10.113.208.29,25,UP,ENABLED,
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/askvmware-prod-ssl-vip,10.113.63.51,443,GREEN,ENABLED,/Common/askvmware-prod-pool,GREEN,ROUND ROBIN,/Common/askvmware-prod-monitor,10.113.63.52,80,UP,ENABLED,
@@ -443,10 +435,6 @@ SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/cpp-vip,10.
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/cpp-vip,10.113.63.20,80,RED,ENABLED,/Common/cpp-pool,RED,ROUND ROBIN,/Common/CPP-http,10.113.62.120,80,DOWN,ENABLED,/Common/http-to-https-redirect
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/ftpsite-https-vip,10.113.63.125,443,GREEN,ENABLED,/Common/ftpsite-https-pool,GREEN,ROUND ROBIN,/Common/ftpsite_custom_https,10.113.63.95,8443,UP,ENABLED,
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/ftpsite-int-https-vip,10.113.63.129,443,GREEN,ENABLED,/Common/ftpsite-https-pool,GREEN,ROUND ROBIN,/Common/ftpsite_custom_https,10.113.63.95,8443,UP,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.76.13//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.76.13//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.76.13//iControl/iControlPortal.cgi>>}
-vipdata
 SC9,sc9-tier1-prod-int-1,10.113.72.71,10.113.72.72,10.113.76.13,ucmprod-ssl-vip,10.113.76.188,4458,GREEN,ENABLED,ucmprod_SSL-pool,GREEN,ROUND ROBIN,https,10.113.76.186,4458,UP,ENABLED,
 SC9,sc9-tier1-prod-int-1,10.113.72.71,10.113.72.72,10.113.76.13,ucmprod-ssl-vip,10.113.76.188,4458,GREEN,ENABLED,ucmprod_SSL-pool,GREEN,ROUND ROBIN,https,10.113.76.187,4458,UP,ENABLED,
 SC9,sc9-tier1-prod-int-1,10.113.72.71,10.113.72.72,10.113.76.13,prodosb-8012-vip,10.113.76.193,8012,GREEN,ENABLED,prodosb-8012-pool,GREEN,ROUND ROBIN,https_custom_osb_8012,10.113.76.64,8012,UP,ENABLED,
@@ -571,10 +559,6 @@ SC9,sc9-tier1-prod-int-1,10.113.72.71,10.113.72.72,10.113.76.13,vam-prod-lamp-vi
 SC9,sc9-tier1-prod-int-1,10.113.72.71,10.113.72.72,10.113.76.13,vam-prod-lamp-vip-1,10.113.76.131,80,RED,ENABLED,vam-prod-lamp-pool,RED,ROUND ROBIN,custom_http,10.22.16.37,80,DOWN,ENABLED,
 SC9,sc9-tier1-prod-int-1,10.113.72.71,10.113.72.72,10.113.76.13,vam-prod-mysql-vip-1,10.113.76.133,3306,RED,ENABLED,vam-prod-mysql-pool,RED,ROUND ROBIN,tcp,10.22.16.42,3306,DOWN,ENABLED,
 SC9,sc9-tier1-prod-int-1,10.113.72.71,10.113.72.72,10.113.76.13,vam-prod-mysql-vip-1,10.113.76.133,3306,RED,ENABLED,vam-prod-mysql-pool,RED,ROUND ROBIN,tcp,10.22.16.43,3306,DOWN,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.68.13//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.68.13//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.68.13//iControl/iControlPortal.cgi>>}
-vipdata
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,stage-Support-vip,10.113.68.100,7019,RED,ENABLED,stage-Support-pool,RED,LEAST CONNECTION_MEMBER,stage-support-vip-mon,10.113.68.38,7019,DOWN,ENABLED,
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,stage-Support-vip,10.113.68.100,7019,RED,ENABLED,stage-Support-pool,RED,LEAST CONNECTION_MEMBER,stage-support-vip-mon,10.113.68.39,7019,DOWN,ENABLED,
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,stagesoax-vip.vmware.com,10.113.68.81,7777,GREEN,ENABLED,stagesoax-pool,GREEN,ROUND ROBIN,http_custom,10.113.68.56,7777,UP,ENABLED,
@@ -629,7 +613,7 @@ SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,stage-Account-v
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,stage-Account-vip,10.113.68.93,7031,RED,ENABLED,stage-Account-pool,RED,ROUND ROBIN,http_custom,10.113.68.24,7031,DOWN,ENABLED,
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,s2-stage-websvc4-vip.vmware.com,10.113.68.197,8481,GREEN,ENABLED,s2-stage-websvc4-pool,GREEN,ROUND ROBIN,http_custom,10.113.68.195,8481,UP,ENABLED,
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,s2-stage-websvc4-vip.vmware.com,10.113.68.197,8481,GREEN,ENABLED,s2-stage-websvc4-pool,GREEN,ROUND ROBIN,http_custom,10.113.68.196,8481,UP,ENABLED,
-SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,s2-stage-websvc3-vip.vmware.com,10.113.68.249,8381,GREEN,ENABLED,s2-stage-websvc3-pool,GREEN,ROUND ROBIN,http_custom,10.113.68.226,8381,DOWN,ENABLED,
+SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,s2-stage-websvc3-vip.vmware.com,10.113.68.249,8381,GREEN,ENABLED,s2-stage-websvc3-pool,GREEN,ROUND ROBIN,http_custom,10.113.68.226,8381,UP,ENABLED,
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,s2-stage-websvc3-vip.vmware.com,10.113.68.249,8381,GREEN,ENABLED,s2-stage-websvc3-pool,GREEN,ROUND ROBIN,http_custom,10.113.68.227,8381,UP,ENABLED,
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,s2-stage-websvc2-vip.vmware.com,10.113.68.245,8281,GREEN,ENABLED,s2-stage-websvc2-pool,GREEN,ROUND ROBIN,http_custom,10.113.68.226,8281,UP,ENABLED,
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,s2-stage-websvc2-vip.vmware.com,10.113.68.245,8281,GREEN,ENABLED,s2-stage-websvc2-pool,GREEN,ROUND ROBIN,http_custom,10.113.68.227,8281,UP,ENABLED,
@@ -719,10 +703,6 @@ SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,Portal-stage-fl
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,ora-stage-fmidm-389-ovd-vip,10.113.68.169,389,GREEN,ENABLED,ora-stage-fmidm-6501-ovd-pool,GREEN,ROUND ROBIN,tcp,10.113.68.187,6501,UP,ENABLED,
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,ora-stage-fmidm-389-ovd-vip,10.113.68.169,389,GREEN,ENABLED,ora-stage-fmidm-6501-ovd-pool,GREEN,ROUND ROBIN,tcp,10.113.68.188,6501,UP,ENABLED,
 SC9,sc9-tier1-stage-int-1,10.113.64.71,10.113.64.72,10.113.68.13,ora-stage-fmidm-389-ovd-vip,10.113.68.169,389,GREEN,ENABLED,ora-stage-fmidm-6501-ovd-pool,GREEN,ROUND ROBIN,tcp,10.113.68.189,6501,UP,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.60.13//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.60.13//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.60.13//iControl/iControlPortal.cgi>>}
-vipdata
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,s2-prod-catsso-newvip-8072,10.113.161.246,8072,GREEN,ENABLED,s2-prod-catsso-newvip-pool-8072,GREEN,ROUND ROBIN,tcp,10.113.161.24,8072,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,s2-prod-catsso-newvip-8072,10.113.161.246,8072,GREEN,ENABLED,s2-prod-catsso-newvip-pool-8072,GREEN,ROUND ROBIN,tcp,10.113.161.25,8072,DOWN,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,montools-prod-hyp-sc9-vip-1.vmware.com,10.113.164.114,7080,GREEN,ENABLED,montools-prod-hyp-sc9-vip-1-pool-7080,GREEN,ROUND ROBIN,montools-prod-hyp-monitor,10.113.161.219,7080,UP,ENABLED,
@@ -979,10 +959,6 @@ SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,adautofs-vip-389
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,adautofs-vip-389,10.113.60.198,389,GREEN,ENABLED,sc9-ad-389-pool,GREEN,ROUND ROBIN,tcp,10.113.60.19,389,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,montools-prod-hyp-sc9-vip-1.vmware.com-7443,10.113.164.114,7443,GREEN,ENABLED,montools-prod-hyp-sc9-vip-1-pool-7443,GREEN,ROUND ROBIN,http,10.113.161.219,7443,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,montools-prod-hyp-sc9-vip-1.vmware.com-7443,10.113.164.114,7443,GREEN,ENABLED,montools-prod-hyp-sc9-vip-1-pool-7443,GREEN,ROUND ROBIN,http,10.113.161.221,7443,UP,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.0.81//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.0.81//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.0.81//iControl/iControlPortal.cgi>>}
-vipdata
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,controlm-stage-vip,10.113.15.50,443,GREEN,ENABLED,controlm-stage-pool,GREEN,ROUND ROBIN,http,10.113.15.32,18080,UP,ENABLED,insert-X-Forwarded-Proto-https
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,OWA-autodiscovery-vip,10.113.190.55,443,GREEN,ENABLED,SC09-OWA-pool,GREEN,ROUND ROBIN,http,10.113.190.5,80,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,OWA-autodiscovery-vip,10.113.190.55,443,GREEN,ENABLED,SC09-OWA-pool,GREEN,ROUND ROBIN,http,10.113.190.6,80,UP,ENABLED,
@@ -1453,7 +1429,7 @@ SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,streaming-prod,10.1
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lrpi-vip.vmware.com,10.113.14.170,443,GREEN,ENABLED,s2-stage-lrpi-pool,GREEN,ROUND ROBIN,s2-stage-lri-monitor,10.113.14.166,8001,DOWN,DISABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lrpi-vip.vmware.com,10.113.14.170,443,GREEN,ENABLED,s2-stage-lrpi-pool,GREEN,ROUND ROBIN,s2-stage-lri-monitor,10.113.14.166,8002,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lrpi-vip.vmware.com,10.113.14.170,443,GREEN,ENABLED,s2-stage-lrpi-pool,GREEN,ROUND ROBIN,s2-stage-lri-monitor,10.113.14.167,8001,DOWN,DISABLED,
-SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lrpi-vip.vmware.com,10.113.14.170,443,GREEN,ENABLED,s2-stage-lrpi-pool,GREEN,ROUND ROBIN,s2-stage-lri-monitor,10.113.14.167,8002,DOWN,ENABLED,
+SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lrpi-vip.vmware.com,10.113.14.170,443,GREEN,ENABLED,s2-stage-lrpi-pool,GREEN,ROUND ROBIN,s2-stage-lri-monitor,10.113.14.167,8002,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,EPM-PROD-FDM,10.113.163.205,443,GREEN,ENABLED,EPM-PROD-FDM-pool,GREEN,ROUND ROBIN,tcp,10.113.163.78,80,UP,ENABLED,insert-X-Forwarded-Proto-https
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,EPM-PROD-FDM,10.113.163.205,443,GREEN,ENABLED,EPM-PROD-FDM-pool,GREEN,ROUND ROBIN,tcp,10.113.163.79,80,UP,ENABLED,insert-X-Forwarded-Proto-https
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-websvc5-vip,10.113.68.201,8581,GREEN,ENABLED,s2-stage-websvc5-pool,GREEN,ROUND ROBIN,tcp,10.113.68.195,8581,UP,ENABLED,
@@ -1901,12 +1877,6 @@ SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-prod-ebssso-vip-
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,mirage-prod-int-vip,10.113.164.185,8000,GREEN,ENABLED,mirage-pool,GREEN,ROUND ROBIN,tcp,10.113.163.175,8000,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,mirage-prod-int-vip,10.113.164.185,8000,GREEN,ENABLED,mirage-pool,GREEN,ROUND ROBIN,tcp,10.113.164.32,8000,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,knova-prd2-adm-vip-SSL,10.113.164.170,443,GREEN,ENABLED,knova-prd2-adm-pool,GREEN,ROUND ROBIN,tcp,10.113.163.92,8080,UP,ENABLED,
-checked dc and cl
-"hi"
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.110.138//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.110.138//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.110.138//iControl/iControlPortal.cgi>>}
-vipdata
 OSDC,osdc-prod-dmz-1,10.16.110.138,10.16.110.139,10.16.110.138,sblwebesvstage-prxy-bypass-vip,10.16.79.182,80,RED,DISABLED,sblwebesvstage-pool,RED,ROUND ROBIN,http1.0,10.16.79.158,80,DOWN,DISABLED,sblwebesvstage-irule
 OSDC,osdc-prod-dmz-1,10.16.110.138,10.16.110.139,10.16.110.138,sblwebesvstage-prxy-bypass-vip,10.16.79.182,80,RED,DISABLED,sblwebesvstage-pool,RED,ROUND ROBIN,http1.0,10.16.79.159,80,DOWN,DISABLED,sblwebesvstage-irule
 OSDC,osdc-prod-dmz-1,10.16.110.138,10.16.110.139,10.16.110.138,sblwebesvprod-prxy-bypass-vip,10.16.79.181,80,RED,DISABLED,sblwebesvprod-pool,RED,ROUND ROBIN,http1.0,10.16.79.161,80,DOWN,DISABLED,sblwebesvprod-irule
@@ -1961,10 +1931,6 @@ OSDC,osdc-prod-dmz-1,10.16.110.138,10.16.110.139,10.16.110.138,at-secure-ssl-vip
 OSDC,osdc-prod-dmz-1,10.16.110.138,10.16.110.139,10.16.110.138,at-secure-1-vip,10.16.79.179,443,GREEN,ENABLED,at-secure-1-pool,GREEN,ROUND ROBIN,https-VMView,10.16.79.176,443,UP,ENABLED,
 OSDC,osdc-prod-dmz-1,10.16.110.138,10.16.110.139,10.16.110.138,askvmware-vip,10.16.79.39,80,RED,DISABLED,askvmware-pool,RED,ROUND ROBIN,http,10.16.79.38,80,DOWN,DISABLED,
 OSDC,osdc-prod-dmz-1,10.16.110.138,10.16.110.139,10.16.110.138,sfdc-osb-osdc.vmware.com-vip,10.16.79.183,443,RED,DISABLED,osb-osdc.vmware.com-pool,RED,ROUND ROBIN,http,10.16.79.184,80,DOWN,DISABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.24.201//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.24.201//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.24.201//iControl/iControlPortal.cgi>>}
-vipdata
 OSDC,osdc-prod-int-1,10.16.24.201,10.16.24.202,10.16.24.201,outlooksoft-vip,10.16.67.111,80,RED,DISABLED,outlooksoft-pool,RED,ROUND ROBIN,http1.0,10.16.67.135,80,DOWN,DISABLED,
 OSDC,osdc-prod-int-1,10.16.24.201,10.16.24.202,10.16.24.201,outlooksoft-vip,10.16.67.111,80,RED,DISABLED,outlooksoft-pool,RED,ROUND ROBIN,http1.0,10.16.67.137,80,DOWN,DISABLED,
 OSDC,osdc-prod-int-1,10.16.24.201,10.16.24.202,10.16.24.201,vmvdm-vip,10.16.12.23,80,RED,DISABLED,vmvdm-pool,RED,ROUND ROBIN,http-VDM,10.16.12.21,80,DOWN,DISABLED,http-to-https-redirect
@@ -2261,10 +2227,6 @@ OSDC,osdc-prod-int-1,10.16.24.201,10.16.24.202,10.16.24.201,paroot-dc-vip1,10.16
 OSDC,osdc-prod-int-1,10.16.24.201,10.16.24.202,10.16.24.201,paroot-dc-vip1,10.16.45.101,389,GREEN,ENABLED,parootdc-test-pool,GREEN,ROUND ROBIN,tcp,10.16.67.128,389,DOWN,ENABLED,
 OSDC,osdc-prod-int-1,10.16.24.201,10.16.24.202,10.16.24.201,osdc-ad-ovd-vip-3268,10.16.45.100,3268,RED,ENABLED,testad-3268-pool,RED,ROUND ROBIN,tcp,10.16.45.226,3268,DOWN,ENABLED,
 OSDC,osdc-prod-int-1,10.16.24.201,10.16.24.202,10.16.24.201,osdc-ad-ovd-vip-3268,10.16.45.100,3268,RED,ENABLED,testad-3268-pool,RED,ROUND ROBIN,tcp,10.21.184.21,3268,DOWN,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.66.108//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.66.108//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.66.108//iControl/iControlPortal.cgi>>}
-vipdata
 OSDC,osdc-non-prod-int-1,10.16.66.108,10.16.66.109,10.16.66.108,perf-ebssso,10.16.41.214,443,RED,ENABLED,perf-ebssso-pool,RED,ROUND ROBIN,https,10.16.41.206,443,DOWN,ENABLED,
 OSDC,osdc-non-prod-int-1,10.16.66.108,10.16.66.109,10.16.66.108,perf-ebssso,10.16.41.214,443,RED,ENABLED,perf-ebssso-pool,RED,ROUND ROBIN,https,10.16.41.207,443,DOWN,ENABLED,
 OSDC,osdc-non-prod-int-1,10.16.66.108,10.16.66.109,10.16.66.108,s2-test-lr3-vip.vmware.com,10.16.41.188,8001,RED,ENABLED,s2-test-lr3-pool,RED,ROUND ROBIN,s2-dev2-lr-monitor,10.16.41.185,8001,DOWN,ENABLED,
@@ -2553,10 +2515,6 @@ OSDC,osdc-non-prod-int-1,10.16.66.108,10.16.66.109,10.16.66.108,s2-dev-hhq-vip.v
 OSDC,osdc-non-prod-int-1,10.16.66.108,10.16.66.109,10.16.66.108,s2-dev-hhq-vip.vmware.com,10.16.20.246,7080,RED,ENABLED,s2-dev-hhq-pool,RED,ROUND ROBIN,s2-dev-hhq-newmonitor,10.16.41.126,7080,DOWN,ENABLED,
 OSDC,osdc-non-prod-int-1,10.16.66.108,10.16.66.109,10.16.66.108,lrp-test-vip.vmware.com,10.16.41.196,80,RED,ENABLED,lrp-test-pool,RED,ROUND ROBIN,http,10.16.41.194,80,DOWN,ENABLED,
 OSDC,osdc-non-prod-int-1,10.16.66.108,10.16.66.109,10.16.66.108,lrp-test-vip.vmware.com,10.16.41.196,80,RED,ENABLED,lrp-test-pool,RED,ROUND ROBIN,http,10.16.41.195,80,DOWN,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.108.11//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.108.11//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.16.108.11//iControl/iControlPortal.cgi>>}
-vipdata
 OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,portal-beta-wlp-vip,10.16.27.62,7003,BLUE,DISABLED,portal-beta-wlp-pool,RED,ROUND ROBIN,HTTP1.0,10.16.27.60,7003,DOWN,DISABLED,
 OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,portal-beta-wlp-vip,10.16.27.62,7003,BLUE,DISABLED,portal-beta-wlp-pool,RED,ROUND ROBIN,HTTP1.0,10.16.27.61,7003,DOWN,DISABLED,
 OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,gsswebstage-80,10.16.71.161,80,BLUE,DISABLED,gsswebstage-host,RED,ROUND ROBIN,http,10.16.71.107,80,DOWN,DISABLED,gss-new-rule
@@ -2617,10 +2575,6 @@ OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,idm-vip,10.16.
 OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,phnx-portal-uat2-vip,10.16.71.172,80,BLUE,DISABLED,crp2-flexlm-2-pool,RED,ROUND ROBIN,http,10.16.22.23,80,DOWN,DISABLED,UAT2-http-to-https-redirect
 OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,phnx-portal-uat2-ssl-vip,10.16.71.172,443,BLUE,DISABLED,crp2-flexlm-2-pool,RED,ROUND ROBIN,http,10.16.22.23,80,DOWN,DISABLED,
 OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,devsoa-vip,10.16.71.153,7777,GREEN,ENABLED,devsoa-pool,GREEN,ROUND ROBIN,http,10.16.71.157,7777,UP,ENABLED,devsoa-redirect-890651
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.128.156.13//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.128.156.13//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.128.156.13//iControl/iControlPortal.cgi>>}
-vipdata
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/ltrmqsslt-vip-5674,10.128.38.67,5674,RED,ENABLED,/Common/ltrmqsslt-5674-pool,RED,ROUND ROBIN,/Common/tcp,10.128.38.51,5674,DOWN,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/ltrmqsslt-vip-5674,10.128.38.67,5674,RED,ENABLED,/Common/ltrmqsslt-5674-pool,RED,ROUND ROBIN,/Common/tcp,10.128.38.52,5674,DOWN,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/supplier-lt-vip-ssl,10.128.38.50,443,RED,ENABLED,/Common/supplier-lt-pool,RED,ROUND ROBIN,/Common/tcp,10.128.38.40,8000,DOWN,ENABLED,
@@ -2653,13 +2607,13 @@ WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/wdc-mylnssl-ssl-v
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/wdc-mylnssl-http-vip,10.128.156.129,80,RED,ENABLED,/Common/wdc-mylnssl-http-pool,RED,ROUND ROBIN,/Common/http_custom,10.128.156.101,80,DOWN,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-prod-web-ext-vip,10.128.156.131,80,RED,ENABLED,/Common/vmworld-prod-web-ext-pool,RED,ROUND ROBIN,/Common/http_custom,10.128.156.28,80,DOWN,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-prod-web-ext-vip,10.128.156.131,80,RED,ENABLED,/Common/vmworld-prod-web-ext-pool,RED,ROUND ROBIN,/Common/http_custom,10.128.156.29,80,DOWN,ENABLED,
-WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-vip-2,10.128.38.54,80,GREEN,DISABLED,/Common/vmworld-lt-pool,GREEN,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.11.85,80,UP,ENABLED,
-WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-vip-2,10.128.38.54,80,GREEN,DISABLED,/Common/vmworld-lt-pool,GREEN,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.38.55,80,DOWN,ENABLED,
-WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-vip-2,10.128.38.54,80,GREEN,DISABLED,/Common/vmworld-lt-pool,GREEN,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.38.56,80,DOWN,ENABLED,
+WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-vip-2,10.128.38.54,80,RED,DISABLED,/Common/vmworld-lt-pool,RED,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.11.85,80,DOWN,ENABLED,
+WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-vip-2,10.128.38.54,80,RED,DISABLED,/Common/vmworld-lt-pool,RED,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.38.55,80,DOWN,ENABLED,
+WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-vip-2,10.128.38.54,80,RED,DISABLED,/Common/vmworld-lt-pool,RED,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.38.56,80,DOWN,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-vip-1,10.128.38.25,80,RED,DISABLED,/Common/vmworld-lt-jive-pool,RED,ROUND ROBIN,/Common/tcp,10.128.38.26,80,DOWN,ENABLED,
-WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-ssl-vip-2,10.128.38.54,443,GREEN,DISABLED,/Common/vmworld-lt-pool,GREEN,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.11.85,80,UP,ENABLED,/Common/insert-X-Forwarded-Proto-https
-WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-ssl-vip-2,10.128.38.54,443,GREEN,DISABLED,/Common/vmworld-lt-pool,GREEN,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.38.55,80,DOWN,ENABLED,/Common/insert-X-Forwarded-Proto-https
-WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-ssl-vip-2,10.128.38.54,443,GREEN,DISABLED,/Common/vmworld-lt-pool,GREEN,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.38.56,80,DOWN,ENABLED,/Common/insert-X-Forwarded-Proto-https
+WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-ssl-vip-2,10.128.38.54,443,RED,DISABLED,/Common/vmworld-lt-pool,RED,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.11.85,80,DOWN,ENABLED,/Common/insert-X-Forwarded-Proto-https
+WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-ssl-vip-2,10.128.38.54,443,RED,DISABLED,/Common/vmworld-lt-pool,RED,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.38.55,80,DOWN,ENABLED,/Common/insert-X-Forwarded-Proto-https
+WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/vmworld-lt-ssl-vip-2,10.128.38.54,443,RED,DISABLED,/Common/vmworld-lt-pool,RED,PREDICTIVE MEMBER,/Common/vmworld-lt-pool-mon,10.128.38.56,80,DOWN,ENABLED,/Common/insert-X-Forwarded-Proto-https
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/viops-prod-web-ext-vip,10.128.156.132,80,RED,ENABLED,/Common/viops-prod-web-ext-pool,RED,ROUND ROBIN,/Common/http_custom,10.128.156.23,80,DOWN,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/viops-prod-web-ext-vip,10.128.156.132,80,RED,ENABLED,/Common/viops-prod-web-ext-pool,RED,ROUND ROBIN,/Common/http_custom,10.128.156.24,80,DOWN,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/supplier-lt-vip,10.128.38.50,80,RED,ENABLED,/Common/supplier-lt-pool,RED,ROUND ROBIN,/Common/tcp,10.128.38.40,8000,DOWN,ENABLED,/Common/http-to-https-redirect
@@ -2724,10 +2678,6 @@ WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/lttapim-8445,10.1
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/lttapim-8445,10.128.38.73,443,GREEN,ENABLED,/Common/ltapim-pool-8445,GREEN,ROUND ROBIN,/Common/tcp,10.128.38.72,8445,UP,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/workspace-stg.vmware.com-80,10.128.38.63,80,GREEN,ENABLED,/Common/workspace-stg-pool,GREEN,ROUND ROBIN,/Common/tcp,10.128.80.17,443,UP,ENABLED,/Common/http-to-https-redirect
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/workspace-stg.vmware.com-80,10.128.38.63,80,GREEN,ENABLED,/Common/workspace-stg-pool,GREEN,ROUND ROBIN,/Common/tcp,10.128.80.18,443,UP,ENABLED,/Common/http-to-https-redirect
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.128.34.13//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.128.34.13//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.128.34.13//iControl/iControlPortal.cgi>>}
-vipdata
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-entitlement.vmware.com_ssl,10.128.10.24,443,GREEN,ENABLED,obiee-prd1-entitlement-pool,GREEN,ROUND ROBIN,tcp,10.128.10.226,9704,DOWN,ENABLED,append_URI_iRule
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-entitlement.vmware.com_ssl,10.128.10.24,443,GREEN,ENABLED,obiee-prd1-entitlement-pool,GREEN,ROUND ROBIN,tcp,10.128.10.228,9704,UP,ENABLED,append_URI_iRule
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-entitlement.vmware.com_ssl,10.128.10.24,443,GREEN,ENABLED,obiee-prd1-entitlement-pool,GREEN,ROUND ROBIN,tcp,10.128.10.229,9704,DOWN,ENABLED,append_URI_iRule
@@ -3024,12 +2974,12 @@ WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-hhq-vip,10.128.37.15
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-hhq-vip,10.128.37.156,7080,RED,ENABLED,s2-lt-hhq-pool,RED,ROUND ROBIN,s2-lt-hhq-monitor,10.128.11.87,7080,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-hhq-vip,10.128.37.156,7080,RED,ENABLED,s2-lt-hhq-pool,RED,ROUND ROBIN,s2-lt-hhq-monitor,10.128.36.215,7080,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-hhq-vip,10.128.37.156,7080,RED,ENABLED,s2-lt-hhq-pool,RED,ROUND ROBIN,s2-lt-hhq-monitor,10.128.37.38,7080,DOWN,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr5-vip.vmware.com,10.128.37.166,8011,RED,ENABLED,s2-lt-lr5-pool,RED,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.91,8011,DOWN,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr5-vip.vmware.com,10.128.37.166,8011,RED,ENABLED,s2-lt-lr5-pool,RED,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.92,8011,DOWN,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr5-vip.vmware.com,10.128.37.166,8011,GREEN,ENABLED,s2-lt-lr5-pool,GREEN,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.91,8011,UP,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr5-vip.vmware.com,10.128.37.166,8011,GREEN,ENABLED,s2-lt-lr5-pool,GREEN,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.92,8011,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-websvc5-pool,10.128.37.44,8581,GREEN,ENABLED,s2-lt-websvc5-pool,GREEN,ROUND ROBIN,http_custom,10.128.10.157,8581,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-websvc5-pool,10.128.37.44,8581,GREEN,ENABLED,s2-lt-websvc5-pool,GREEN,ROUND ROBIN,http_custom,10.128.10.158,8581,UP,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr4-vip.vmware.com,10.128.37.173,8001,RED,ENABLED,s2-lt-lr4-pool,RED,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.91,8001,DOWN,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr4-vip.vmware.com,10.128.37.173,8001,RED,ENABLED,s2-lt-lr4-pool,RED,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.92,8001,DOWN,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr4-vip.vmware.com,10.128.37.173,8001,GREEN,ENABLED,s2-lt-lr4-pool,GREEN,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.91,8001,UP,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr4-vip.vmware.com,10.128.37.173,8001,GREEN,ENABLED,s2-lt-lr4-pool,GREEN,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.92,8001,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,cbr-lt-solr-vip_http,10.128.37.155,80,RED,ENABLED,cbr-lt-solr-pool,RED,ROUND ROBIN,cbr-monitor,10.128.37.151,8080,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,cbr-lt-solr-vip_http,10.128.37.155,80,RED,ENABLED,cbr-lt-solr-pool,RED,ROUND ROBIN,cbr-monitor,10.128.37.152,8080,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-ebssso-vip.vmware.com,10.128.37.147,443,GREEN,ENABLED,s2-lt-ebssso-pool,GREEN,ROUND ROBIN,tcp,10.128.37.73,9443,UP,ENABLED,
@@ -3110,10 +3060,6 @@ WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-ext-vip-443,10.128.
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-ext-vip-443,10.128.38.66,443,GREEN,ENABLED,esg-lt-ext-vip-pool-443,GREEN,ROUND ROBIN,tcp,10.128.38.75,443,DOWN,DISABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-ext-vip-443,10.128.38.66,443,GREEN,ENABLED,esg-lt-ext-vip-pool-443,GREEN,ROUND ROBIN,tcp,10.128.38.76,443,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-ext-vip-443,10.128.38.66,443,GREEN,ENABLED,esg-lt-ext-vip-pool-443,GREEN,ROUND ROBIN,tcp,10.128.38.77,443,UP,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.128.152.13//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.128.152.13//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.128.152.13//iControl/iControlPortal.cgi>>}
-vipdata
 WDC,wdc-tier2-prod-int-1,10.128.5.11,10.128.5.12,10.128.152.13,psynch-prod-wdc-vip,10.128.152.132,3334,GREEN,ENABLED,psynch-wdc-3334-pool,GREEN,ROUND ROBIN,tcp,10.128.152.118,3334,UP,ENABLED,
 WDC,wdc-tier2-prod-int-1,10.128.5.11,10.128.5.12,10.128.152.13,wdc-wpad-apac-vip,10.128.152.225,80,GREEN,ENABLED,wdc-prod-wpad-pool,GREEN,ROUND ROBIN,wdc-wpad-monitor,10.128.153.68,80,UP,ENABLED,
 WDC,wdc-tier2-prod-int-1,10.128.5.11,10.128.5.12,10.128.152.13,wdc-wpad-apac-vip,10.128.152.225,80,GREEN,ENABLED,wdc-prod-wpad-pool,GREEN,ROUND ROBIN,wdc-wpad-monitor,10.128.153.69,80,UP,ENABLED,
@@ -3203,10 +3149,6 @@ WDC,wdc-tier2-prod-int-1,10.128.5.11,10.128.5.12,10.128.152.13,wdc-wpad-paloalto
 WDC,wdc-tier2-prod-int-1,10.128.5.11,10.128.5.12,10.128.152.13,wdc-rootdc-vip-1,10.128.153.28,389,GREEN,ENABLED,wdcrrootdc-pool-1,GREEN,ROUND ROBIN,tcp,10.128.152.31,389,UP,ENABLED,
 WDC,wdc-tier2-prod-int-1,10.128.5.11,10.128.5.12,10.128.152.13,wdc-rootdc-vip-1,10.128.153.28,389,GREEN,ENABLED,wdcrrootdc-pool-1,GREEN,ROUND ROBIN,tcp,10.128.152.32,389,UP,ENABLED,
 WDC,wdc-tier2-prod-int-1,10.128.5.11,10.128.5.12,10.128.152.13,wdc-rootdc-vip-1,10.128.153.28,389,GREEN,ENABLED,wdcrrootdc-pool-1,GREEN,ROUND ROBIN,tcp,10.128.153.110,389,UP,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.130.64.13//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.130.64.13//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.130.64.13//iControl/iControlPortal.cgi>>}
-vipdata
 WDC,wdc-uat-dmz-1,10.128.7.11,10.128.7.12,10.130.64.13,/Common/communities-demo-ssl-vip,10.130.64.57,443,RED,ENABLED,/Common/communities-demo-pool,RED,ROUND ROBIN,/Common/communities-demo-pool-monitor,10.130.64.58,80,DOWN,ENABLED,
 WDC,wdc-uat-dmz-1,10.128.7.11,10.128.7.12,10.130.64.13,/Common/communities-demo-ssl-vip,10.130.64.57,443,RED,ENABLED,/Common/communities-demo-pool,RED,ROUND ROBIN,/Common/communities-demo-pool-monitor,10.130.64.59,80,DOWN,ENABLED,
 WDC,wdc-uat-dmz-1,10.128.7.11,10.128.7.12,10.130.64.13,/Common/communities-demo-vip-1,10.130.64.57,80,RED,ENABLED,/Common/communities-demo-pool,RED,ROUND ROBIN,/Common/communities-demo-pool-monitor,10.130.64.58,80,DOWN,ENABLED,
@@ -3332,10 +3274,6 @@ WDC,wdc-uat-dmz-1,10.128.7.11,10.128.7.12,10.130.64.13,/Common/esg-wdc-ext-vip.v
 WDC,wdc-uat-dmz-1,10.128.7.11,10.128.7.12,10.130.64.13,/Common/esg-wdc-ext-vip.vmware.com-443,10.130.64.80,443,GREEN,ENABLED,/Common/esg-wdc-ext-new-pool-443,GREEN,ROUND ROBIN,/Common/tcp,10.130.64.82,443,UP,ENABLED,
 WDC,wdc-uat-dmz-1,10.128.7.11,10.128.7.12,10.130.64.13,/Common/esg-test-ext-vip-443,10.130.64.26,443,GREEN,ENABLED,/Common/esg-test-ext-pool-443,GREEN,ROUND ROBIN,/Common/tcp,10.130.64.92,443,UP,ENABLED,
 WDC,wdc-uat-dmz-1,10.128.7.11,10.128.7.12,10.130.64.13,/Common/esg-test-ext-vip-443,10.130.64.26,443,GREEN,ENABLED,/Common/esg-test-ext-pool-443,GREEN,ROUND ROBIN,/Common/tcp,10.130.64.93,443,UP,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.130.44.13//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.130.44.13//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.130.44.13//iControl/iControlPortal.cgi>>}
-vipdata
 WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,qai-idp-vip.vmware.com_SSL,10.130.40.26,8443,RED,ENABLED,qai-idp-pool,RED,ROUND ROBIN,tcp,10.130.40.139,8443,DOWN,ENABLED,
 WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,qai-idp-vip.vmware.com_SSL,10.130.40.26,8443,RED,ENABLED,qai-idp-pool,RED,ROUND ROBIN,tcp,10.130.40.140,8443,DOWN,ENABLED,
 WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,communities-uat-vip-ssl,10.130.45.137,443,RED,ENABLED,communities-uat-pool,RED,ROUND ROBIN,tcp,10.130.45.134,80,DOWN,ENABLED,
@@ -3695,15 +3633,9 @@ WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,cat-qai-mln-vip-new.vmw
 WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,cat-qai-mln-vip-new.vmware.com,10.130.40.188,8080,GREEN,ENABLED,cat-qai-mln-pool-new,GREEN,ROUND ROBIN,http_custom,10.130.41.9,8080,DOWN,ENABLED,
 WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,iweb-dev-vip-ssl.vmware.com,10.130.40.91,443,GREEN,ENABLED,iweb-dev-pool,GREEN,ROUND ROBIN,http,10.130.45.114,80,UP,ENABLED,
 WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,iweb-dev-vip-ssl.vmware.com,10.130.40.91,443,GREEN,ENABLED,iweb-dev-pool,GREEN,ROUND ROBIN,http,10.130.45.115,80,UP,ENABLED,
-WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,esg-qa-int-vip.vmware.com,10.130.41.18,8443,GREEN,ENABLED,esg-qa-int-pool,GREEN,ROUND ROBIN,esg_custom_monitor,10.130.41.48,8443,UP,ENABLED,
-WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,esg-qa-int-vip.vmware.com,10.130.41.18,8443,GREEN,ENABLED,esg-qa-int-pool,GREEN,ROUND ROBIN,esg_custom_monitor,10.130.41.49,8443,DOWN,ENABLED,
+WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,esg-qa-int-vip.vmware.com,10.130.41.18,8443,GREEN,ENABLED,esg-qa-int-pool,GREEN,ROUND ROBIN,esg_custom_monitor,10.130.41.48,8443,DOWN,ENABLED,
+WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,esg-qa-int-vip.vmware.com,10.130.41.18,8443,GREEN,ENABLED,esg-qa-int-pool,GREEN,ROUND ROBIN,esg_custom_monitor,10.130.41.49,8443,UP,ENABLED,
 WDC,wdc-uat-int-1,10.128.7.111,10.128.7.112,10.130.44.13,pdh-sup-vip,10.130.40.218,80,GREEN,ENABLED,pdh-sup-pool,GREEN,ROUND ROBIN,tcp,10.130.40.170,8000,UP,ENABLED,
-checked dc and cl
-"hi"
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.119.4.13//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.119.4.13//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.119.4.13//iControl/iControlPortal.cgi>>}
-vipdata
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,api.cf-prod-vip,10.119.68.30,80,GREEN,ENABLED,api.cf-prod-pool,GREEN,ROUND ROBIN,http,10.119.68.70,80,UP,ENABLED,http-to-https-redirect
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,api.cf-prod-vip,10.119.68.30,80,GREEN,ENABLED,api.cf-prod-pool,GREEN,ROUND ROBIN,http,10.119.68.71,80,UP,ENABLED,http-to-https-redirect
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,api.cf.vmware.com-ssl,10.119.68.30,443,GREEN,ENABLED,api.cf-prod-pool,GREEN,ROUND ROBIN,http,10.119.68.70,80,UP,ENABLED,
@@ -3889,22 +3821,12 @@ vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,vmdash11g-vip,10.119.6
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,vmdash11g-vip,10.119.60.52,80,RED,ENABLED,vmdash11g-pool,RED,ROUND ROBIN,webflashuat,10.119.17.77,9704,DOWN,ENABLED,append_URI_iRule
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,vmdash11g-vip,10.119.60.52,80,RED,ENABLED,vmdash11g-pool,RED,ROUND ROBIN,webflashuat,10.119.17.78,9704,DOWN,ENABLED,append_URI_iRule
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,vmdashuat-vip,10.119.60.49,9704,GREEN,ENABLED,vmdashuat-pool,GREEN,ROUND ROBIN,tcp,10.119.41.78,9704,UP,ENABLED,append_URI_iRule
-vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,vmdashuat-vip,10.119.60.49,9704,GREEN,ENABLED,vmdashuat-pool,GREEN,ROUND ROBIN,tcp,10.119.41.79,9704,DOWN,ENABLED,append_URI_iRule
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,vmdashuat-vip,10.119.60.49,9704,GREEN,ENABLED,vmdashuat-pool,GREEN,ROUND ROBIN,tcp,10.119.41.79,9704,UP,ENABLED,append_URI_iRule
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,webflash10g-vip,10.119.60.55,80,RED,ENABLED,webflash10g-pool,RED,ROUND ROBIN,webflashprod,10.119.17.74,9704,DOWN,ENABLED,append_URI_iRule
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,webflash10g-vip,10.119.60.55,80,RED,ENABLED,webflash10g-pool,RED,ROUND ROBIN,webflashprod,10.119.17.75,9704,DOWN,ENABLED,append_URI_iRule
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,webflash10g-vip,10.119.60.55,80,RED,ENABLED,webflash10g-pool,RED,ROUND ROBIN,webflashprod,10.119.17.79,9704,DOWN,ENABLED,append_URI_iRule
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,webflashuat-vip,10.119.60.75,9704,GREEN,ENABLED,webflashuat-pool,GREEN,ROUND ROBIN,webflashuat,10.119.41.80,9704,UP,ENABLED,append_URI_iRule
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,webflashuat-vip,10.119.60.75,9704,GREEN,ENABLED,webflashuat-pool,GREEN,ROUND ROBIN,webflashuat,10.119.41.81,9704,UP,ENABLED,append_URI_iRule
-checked dc and cl
-"hi"
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.148.232.3//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.148.232.3//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.148.232.3//iControl/iControlPortal.cgi>>}
-vipdata
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.70.41//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.70.41//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.70.41//iControl/iControlPortal.cgi>>}
-vipdata
 SC9,lb1-VPRN-DMZ,10.113.18.50,10.113.18.54,10.113.70.41,/Common/sftpsite-stg-ext.vmware.com_sftp,10.113.210.21,22,GREEN,ENABLED,/Common/sftpsite-ext-stg-sftp-pool,GREEN,ROUND ROBIN,/Common/tcp,10.113.54.94,12222,UP,ENABLED,
 SC9,lb1-VPRN-DMZ,10.113.18.50,10.113.18.54,10.113.70.41,/Common/sftpsite-stg-ext.vmware.com_sftp,10.113.210.21,22,GREEN,ENABLED,/Common/sftpsite-ext-stg-sftp-pool,GREEN,ROUND ROBIN,/Common/tcp,10.113.54.95,12222,DOWN,ENABLED,
 SC9,lb1-VPRN-DMZ,10.113.18.50,10.113.18.54,10.113.70.41,/Common/phtransfer-stg-int.vmware.com_sftp,10.113.210.25,22,GREEN,ENABLED,/Common/phtransfer-int-stg-sftp-pool,GREEN,ROUND ROBIN,/Common/phtranfer-sftp-monitor-stg,10.113.54.98,2222,DOWN,ENABLED,
@@ -3998,10 +3920,6 @@ SC9,lb1-VPRN-DMZ,10.113.18.50,10.113.18.54,10.113.70.41,/Common/pds-vip-22,10.11
 SC9,lb1-VPRN-DMZ,10.113.18.50,10.113.18.54,10.113.70.41,/Common/pds-vip-22,10.113.208.112,22,GREEN,ENABLED,/Common/pds-pool-22,GREEN,ROUND ROBIN,/Common/pds-sftp-monitor,10.113.208.78,2222,DOWN,ENABLED,
 SC9,lb1-VPRN-DMZ,10.113.18.50,10.113.18.54,10.113.70.41,/Common/myln-prod-vip-1,10.113.63.78,80,GREEN,ENABLED,/Common/myln-prod-http-pool,GREEN,ROUND ROBIN,/Common/myln-prod-http-monitor,10.113.62.168,80,UP,ENABLED,
 SC9,lb1-VPRN-DMZ,10.113.18.50,10.113.18.54,10.113.70.41,/Common/myln-prod-vip-1,10.113.63.78,80,GREEN,ENABLED,/Common/myln-prod-http-pool,GREEN,ROUND ROBIN,/Common/myln-prod-http-monitor,10.113.62.169,80,UP,ENABLED,
-checked dc and cl
-"hi"
-{"LocalLB.VirtualServer"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.18.59//iControl/iControlPortal.cgi>>, "LocalLB.Pool"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.18.59//iControl/iControlPortal.cgi>>, "LocalLB.PoolMember"=>#<SOAP::RPC::Driver:#<SOAP::RPC::Proxy:https://10.113.18.59//iControl/iControlPortal.cgi>>}
-vipdata
 SC9,ld2sc1-sjc3,10.113.18.59,10.113.18.59,10.113.18.59,knova-stg2-kss-vip,10.113.53.145,8080,GREEN,ENABLED,knova-stg2-kss-pool,GREEN,LEAST CONNECTION_MEMBER,knova-prod-kss-kcc-mon,10.113.52.38,8080,UP,ENABLED,
 SC9,ld2sc1-sjc3,10.113.18.59,10.113.18.59,10.113.18.59,knova-stg2-kss-vip,10.113.53.145,8080,GREEN,ENABLED,knova-stg2-kss-pool,GREEN,LEAST CONNECTION_MEMBER,knova-prod-kss-kcc-mon,10.113.52.46,8080,UP,ENABLED,
 SC9,ld2sc1-sjc3,10.113.18.59,10.113.18.59,10.113.18.59,knova-stg2-kss-vip,10.113.53.145,8080,GREEN,ENABLED,knova-stg2-kss-pool,GREEN,LEAST CONNECTION_MEMBER,knova-prod-kss-kcc-mon,10.113.52.72,8080,UP,ENABLED,
@@ -4139,5 +4057,3 @@ SC9,ld2sc1-sjc3,10.113.18.59,10.113.18.59,10.113.18.59,vdc-stg-app-vip-443,10.11
 SC9,ld2sc1-sjc3,10.113.18.59,10.113.18.59,10.113.18.59,vdc-stg-app-vip-443,10.113.53.88,443,GREEN,ENABLED,vdc-stg-app-8443-pool,GREEN,ROUND ROBIN,tcp,10.113.15.72,8443,UP,ENABLED,
 SC9,ld2sc1-sjc3,10.113.18.59,10.113.18.59,10.113.18.59,vdc-stg-app-vip-443,10.113.53.88,443,GREEN,ENABLED,vdc-stg-app-8443-pool,GREEN,ROUND ROBIN,tcp,10.113.53.86,8443,DOWN,DISABLED,
 SC9,ld2sc1-sjc3,10.113.18.59,10.113.18.59,10.113.18.59,vdc-stg-app-vip-443,10.113.53.88,443,GREEN,ENABLED,vdc-stg-app-8443-pool,GREEN,ROUND ROBIN,tcp,10.113.53.87,8443,DOWN,DISABLED,
-checked dc and cl
-"hi"
