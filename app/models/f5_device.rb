@@ -1,7 +1,7 @@
 class F5Device < ActiveRecord::Base
-  attr_accessible :device, :ip, :status
+  attr_accessible :name, :ip, :status
   searchable do
-    text :device
+    text :name
     text :status
   end
 end
