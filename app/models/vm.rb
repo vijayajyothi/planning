@@ -188,6 +188,8 @@ def esx_data_import
 end
 end
 def esx_pnics_data_import
+  Pnic.update_all(:ops_status=>"Deleted")
+
   CSV.foreach("csv_data/powercli/esx/pnics.csv", :headers => true) do |row|
     vmhost = Vmhost.find_by_name(row["vmhost"])
     pnic = Pnic.where(:name=>row["name"], :vmhost_id=>vmhost.id).first if vmhost.present?
