@@ -54,14 +54,14 @@
     <% end %>
 
     <!-- reuse******************************************* -->
-
+        <% if @f5cluster.present? %>
     <div class="panel-group" id="accordion">
 
       <div class="panel panel-default  span12" >
         <%# @clusters = get_cluster(@f5_device) %>
         <div class="workflow-heading">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-            <span>F5Cluster : <p> <%= @f5cluster.name %></p></span></a>
+            <span>F5Cluster : <p> <%= @f5cluster.name%></p></span></a>
           </div>
 
           <div id="collapseFour" class="">
@@ -130,6 +130,7 @@
       </div>
     </div>
 
+          <% end %>
 
 
   </div><!--/span-->

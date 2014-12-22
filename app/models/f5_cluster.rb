@@ -33,6 +33,8 @@ class << self
     p "Done with F5 pool data Import"
     f5_node_import = f5_node_import
     p "Done with F5 node data Import"
+    f5_vip_capacity_import = f5_vip_capacity
+    p "Done with F5 node data Import"
   end
 
   def updating_f5_data
