@@ -26,6 +26,7 @@
 
         </div>
       </div>
+      <%  if @f5_vip.port.present?%>
       <!-- F5 Pools -->
       <%# @f5pools = F5Pool.find_by_sql(F5Pool.group(:f5_cluster_id).where(:f5_vip_id=>@f5_vip.id))%>
       <% @f5pool = F5Pool.where(:f5_vip_id=>@f5_vip.id).last%>
@@ -162,3 +163,4 @@
     
   </div><!--/span-->
 
+<% end %>

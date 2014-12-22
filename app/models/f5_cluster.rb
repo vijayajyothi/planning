@@ -182,6 +182,26 @@ def f5cluster_data_import
     end
   end
 
+  def f5_vip_capacity
+    CSV.foreach("csv_data/f5/f5_vip_capacity_new.csv", :headers => true) do |row|
+      f5v = F5Vip.where(:ip=>row["ip"]).first
+      if f5v.present?
+        f5v.ops_status = "Present"
+      else
+        f5v = F5Vip.new
+        f5v.ops_status = "New"
+        f5v.attributes = row.to_hash.slice(*accessible_attributes)
+      end
+      f5v.name=row["name"]
+      f5v.ip=row["ip"]
+      f5v.port = row["port"]
+      f5c = F5Cluster.where(:name=>row[3]).first
+      f5v.f5_cluster_id = f5c.id if f5c.present?
+      f5v.save if f5v.name.present?
+    end
+  end
+
+
 
   end #self class end
 end
