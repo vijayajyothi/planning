@@ -42,7 +42,7 @@ class << self
   end
 
   def f5_device_update
-    # F5Device.update_all(:ops_status=>"Deleted")
+    F5Device.update_all(:ops_status=>"Deleted")
 
     CSV.foreach("csv_data/f5/f5_update.csv", :headers => true) do |row|
      f5device = F5Device.find_by_ip(row["ip"])
@@ -58,7 +58,7 @@ class << self
     f5device.ip = row["ip"]
     f5device.status = row["status"]
     f5device.save if f5device.ip.present?
-
+    # F5Cluster.where(:primary_unit_ip=>f5_device.ip OR :secondary_unit_ip=>@f5_device.ip).first 
 
   end
 
@@ -89,6 +89,8 @@ def f5cluster_data_import
     f5cluster.access_ip = row["Accss IP"]
     f5cluster.save if f5cluster.name.present?
   end
+  delete_f5cluster = F5Cluster.where(:ops_status=>"Deleted")
+delete_f5cluster.delete_all
   end #cluster data import end
 
 
@@ -116,6 +118,8 @@ def f5cluster_data_import
       f5v.f5_cluster_id = f5cluster.id if f5cluster.present?
       f5v.save if f5v.name.present?
     end
+    delete_f5 = F5Vip.where(:ops_status=>"Deleted")
+    delete_f5.delete_all
   end
 
   def f5_pool_import
