@@ -2,7 +2,14 @@ class F5DevicesController < ApplicationController
   # GET /f5_devices
   # GET /f5_devices.json
   def index
-    @f5_devices = F5Device.all
+    @search = F5Device.search do
+      fulltext params[:search]
+      paginate  :page => params[:page], :per_page=>15
+      # paginate  :page => params[:page], :per_page=>count
+    end
+    @f5_devices = @search.results
+
+    # @f5_devices = F5Device.all
   end
 
   # GET /f5_devices/1

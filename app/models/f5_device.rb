@@ -3,5 +3,6 @@ class F5Device < ActiveRecord::Base
   searchable do
     text :name
     text :status
+    text :ip
   end
 end

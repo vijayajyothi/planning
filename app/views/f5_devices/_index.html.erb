@@ -43,6 +43,7 @@
           <td><%= link_to "https://#{f5_device.ip}","https://#{f5_device.ip}", target: "_blank"%></td>
           <td><%= link_to "Show", f5_device, :class => 'btn btn-mini btn-info', :remote=> true%></td>
 
+ 
 
 <% comment do %>
           <% if f5_device.status == "active"%>
@@ -63,5 +64,8 @@
         <% end %>
       </table>
     </div>
+    <div class="digg_pagination">
+      <%= paginate @f5_devices, :container => false, :remote => true %>
+    </div>  
 
   </div>
