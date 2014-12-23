@@ -34,26 +34,7 @@
     </div>
 
     <% @f5cluster= F5Cluster.where("primary_unit_ip='#{@f5_device.ip}' OR secondary_unit_ip= '#{@f5_device.ip}'").first %>
-    <!-- reuse******************************************* -->
-    <% comment do %>
 
-    <div class="span6">
-      <div class="workflow-blocks"  style="height:158px;">
-        <div class="workflow-heading"><span><b>F5Cluster:</b><p><%= @f5cluster.name %></p> </span></div>
-        <table class="table table-hover">
-
-          <tbody>
-            <tr>
-              <td><b>Data Center</b></td>
-              <td><%= @f5cluster.data_center %></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <% end %>
-
-    <!-- reuse******************************************* -->
         <% if @f5cluster.present? %>
     <div class="panel-group" id="accordion">
 
@@ -61,7 +42,7 @@
         <%# @clusters = get_cluster(@f5_device) %>
         <div class="workflow-heading">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-            <span>F5Cluster : <p> <%= @f5cluster.name%></p></span></a>
+            <span>F5Cluster : <%= link_to @f5cluster.name,@f5cluster, :remote=> true%> </span></a>
           </div>
 
           <div id="collapseFour" class="">
@@ -86,7 +67,7 @@
                 </tr>  
                 <tr> 
                   <td><b>Access Ip</b></td>
-                  <td><%= @f5cluster.access_ip %></td>
+                  <td><%= link_to "https://#{@f5_device.ip}","https://#{@f5_device.ip}", target: "_blank"%></td>
 
                   <td><b>VLANs</b></td>
                   <td><%= @f5cluster.network_name_list %></td>
@@ -103,7 +84,7 @@
       <% @vips = get_vips(@f5cluster.id) %>
       <div class="workflow-heading">
         <a data-toggle="collapse" data-parent="#accordion" href="#vmhost">
-          <span>F5 Vips</span>
+          <span>F5 Vips under F5Clsuter: <%= link_to @f5cluster.name, @f5cluster, :remote=> true%> </span>
           <p> Count : <%= @vips.count %></p></a>
         </div>
 
@@ -115,13 +96,11 @@
               <tr>
                 <th>VIP Name</th>
                 <th>IP</th>
-                <th>Port</th>
               </tr>
               <% @vips.each do |each_vip|%>
               <tr>
                 <td><b><%= link_to each_vip.name, each_vip, :style=>"color:black;", :remote=> true%></b></td>
                 <td><%= link_to "https://#{@f5_device.ip}","https://#{@f5_device.ip}", target: "_blank"%></td>
-                <td><%= each_vip.port %></td>
               </tr>  
               <% end %>
             </tbody></table>
@@ -129,7 +108,8 @@
         </div>
       </div>
     </div>
-
+<%else%>
+F5 Cluster Details are not Available
           <% end %>
 
 

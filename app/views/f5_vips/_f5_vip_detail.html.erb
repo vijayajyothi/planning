@@ -43,12 +43,14 @@
                 <th>Name</th>
                 <th> LB Method</th>
                 <th> Status</th>
+      <%  if @f5pool.present?%>
+
                 <tr>
                   <td><b><%= @f5pool.name %></b></td>
                   <td><%= @f5pool.lb_method %></td>
                   <td><%= @f5pool.pool_status %></td>
                 </tr>  
-
+<% end %>
               </tbody>
             </table>
           </div>
@@ -113,12 +115,13 @@
     </div>
 
 
+    <% end %>
 
 
 <!-- F5 Cluster -->
 
     <div class="panel-group" id="accordion" style="clear:left;">
-      <% @f5pools = F5Pool.find_by_sql(F5Pool.group(:f5_cluster_id).where(:f5_vip_id=>@f5_vip.id))%>
+      <%# @f5pools = F5Pool.find_by_sql(F5Pool.group(:f5_cluster_id).where(:f5_vip_id=>@f5_vip.id))%>
 
       <div class="panel panel-default  span12"  style="margin-top:0px;">
         <div class="workflow-heading">
@@ -163,4 +166,4 @@
     
   </div><!--/span-->
 
-<% end %>
+<%#end %>
