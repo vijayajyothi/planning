@@ -17,5 +17,5 @@
 /cron.log
 /solr/*
 
-
+/public/*
 # /csvbkp/*

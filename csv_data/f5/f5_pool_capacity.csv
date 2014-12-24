@@ -1066,7 +1066,7 @@ visl-stg-ml-pool,ROUND,ROBIN,visl-stg-ml-vip
 s2-stage-hhq-pool,ROUND,ROBIN,s2-stage-hhq-vip.vmware.com
 vdc-stg-repo-8080-pool,PREDICTIVE,MEMBER,vdc-stg-repo-8080-vip.vmware.com
 s2-prod-hhq-pool,ROUND,ROBIN,s2-prod-hhq-vip.vmware.com
-visl-stg-pl-pool,ROUND,ROBIN,visl-stg-pl-vip
+visl-stg-pl-pool,FASTEST,APP_RESPONSE,visl-stg-pl-vip
 proofptdirs-http-pool,ROUND,ROBIN,proofptdirs-http-vip
 visl-prod-pl-pool,ROUND,ROBIN,visl-prod-pl-vip
 orgchart-pool,PREDICTIVE,MEMBER,org-prod-vip
@@ -3522,3 +3522,7 @@ ltsoa-m-vip-pool,ROUND,ROBIN,lt-soa-7777
 ltsoa-admin-vip-pool,ROUND,ROBIN,lt-soa-7001
 uatsoa-m-vip-pool,ROUND,ROBIN,uat-soa-7777
 uatsoa-admin-vip-pool,ROUND,ROBIN,uat-soa-7001
+w-stage-pool,ROUND,ROBIN,star.mblogs-stage.vmware.com
+w-stage-pool,ROUND,ROBIN,star.mblogs-stage.vmware.com-80
+visl-lt-pl-pool,ROUND,ROBIN,visl-lt-pl-vip
+visl-lt-ml-pool,ROUND,ROBIN,visl-lt-ml-vip

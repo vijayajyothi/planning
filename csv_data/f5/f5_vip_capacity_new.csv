@@ -805,6 +805,8 @@ id,name,ip,name
 3431,vdc-prod-app-vip2,10.113.164.90,sc9-tier2-prod-int-2
 3433,mirage-prod-int-vip,10.113.164.185,sc9-tier2-prod-int-2
 3434,knova-prd2-adm-vip-SSL,10.113.164.170,sc9-tier2-prod-int-2
+3440,star.mblogs-stage.vmware.com,10.113.53.65,sc9-tier2-prod-int-2
+3441,star.mblogs-stage.vmware.com-80,10.113.53.65,sc9-tier2-prod-int-2
 242,sblwebesvstage-prxy-bypass-vip,10.16.79.182,osdc-prod-dmz-1
 243,sblwebesvprod-prxy-bypass-vip,10.16.79.181,osdc-prod-dmz-1
 244,mylearnweb-ci-vip,10.16.79.174,osdc-prod-dmz-1
@@ -1244,6 +1246,8 @@ id,name,ip,name
 3424,epm-lt-drm-vip,10.128.37.224,wdc-lt-int-1
 3436,lt-soa-7777,10.128.11.170,wdc-lt-int-1
 3437,lt-soa-7001,10.128.11.170,wdc-lt-int-1
+3442,visl-lt-pl-vip,10.128.37.152,wdc-lt-int-1
+3443,visl-lt-ml-vip,10.128.37.150,wdc-lt-int-1
 568,WDC-OWA-ssl-vip,10.128.152.76,wdc-tier2-prod-int-1
 569,viops-prod-app-int-vip,10.128.152.71,wdc-tier2-prod-int-1
 570,viops-prod-db-int-vip,10.128.152.48,wdc-tier2-prod-int-1
@@ -3379,7 +3383,7 @@ id,name,ip,name
 3389,pds-vip-443,10.113.208.112,lb1-VPRN-DMZ
 3390,pds-vip-11880,10.113.208.112,lb1-VPRN-DMZ
 3391,pds-vip-22,10.113.208.112,lb1-VPRN-DMZ
-3435,mirage-prod-dmz-vip,10.113.208.118,lb1-VPRN-DMZ
+3435,mirage-prod-dmz-vip,10.113.208.117,lb1-VPRN-DMZ
 1761,knova-stg2-kss-vip,10.113.53.145,ld2sc1-sjc3
 1762,knova-stg2-kcc-vip,10.113.53.231,ld2sc1-sjc3
 1763,s2-stage-ebssso-vip,10.113.53.118,ld2sc1-sjc3
