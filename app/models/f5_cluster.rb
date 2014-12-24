@@ -44,10 +44,8 @@ class << self
     
     f5_node_import = f5_node_import
     p "Done with F5 node data Import"
-    
-  end
-
-  # def updating_f5_data
+end  
+# def updating_f5_data
   #   f5_device_data  = f5_device_update
   # end
 
@@ -76,6 +74,8 @@ class << self
     f5cluster.access_ip = row["Accss IP"]
     f5cluster.save if f5cluster.name.present?
   end
+  delete_f5cluster = F5Cluster.where(:ops_status=>"Deleted")
+delete_f5cluster.delete_all
   end #cluster data import end
 
   def f5_device_update
@@ -145,6 +145,8 @@ def f5vip_data_import
       f5v.f5_cluster_id = f5c.id if f5c.present?
       f5v.save if f5v.name.present?
     end
+    delete_f5 = F5Vip.where(:ops_status=>"Deleted")
+    delete_f5.delete_all
   end
 
 
