@@ -78,12 +78,11 @@ end
 delete_f5cluster.delete_all
   end #cluster data import end
 
-
   def f5_device_update
     F5Device.update_all(:ops_status=>"Deleted")
 
-    CSV.foreach("csv_data/f5/f5_update.csv", :headers => true) do |row|
-     f5device = F5Device.find_by_ip(row["ip"])
+    CSV.foreach("csv_data/f5/f5device_update.csv", :headers => true) do |row|
+     f5device = F5Device.find_by_ip(row["mgmt-ip"])
      if f5device.present?
       f5device.ops_status = "Present"
     else
@@ -92,9 +91,9 @@ delete_f5cluster.delete_all
 
       f5device.attributes = row.to_hash.slice(*accessible_attributes)
     end
-    f5device.name = row["lbname"]
-    f5device.ip = row["ip"]
-    f5device.status = row["status"]
+    f5device.name = row["lb-name"]
+    f5device.ip = row["mgmt-ip"]
+    f5device.status = row["lb-state"]
     f5device.save if f5device.ip.present?
   end
 
