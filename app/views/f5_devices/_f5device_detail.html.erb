@@ -100,7 +100,7 @@
               <% @vips.each do |each_vip|%>
               <tr>
                 <td><b><%= link_to each_vip.name, each_vip, :style=>"color:black;", :remote=> true%></b></td>
-                <td><%= link_to "https://#{@f5_device.ip}","https://#{@f5_device.ip}", target: "_blank"%></td>
+                <td><%= link_to each_vip.ip, each_vip, :style=>"color:black;", :remote=> true%><%#= link_to "https://#{each_vip.ip}","https://#{each_vip.ip}", target: "_blank"%></td>
               </tr>  
               <% end %>
             </tbody></table>
