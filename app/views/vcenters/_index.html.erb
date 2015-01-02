@@ -34,8 +34,11 @@
           <td><%= vcenter.ip_address %></td>
           <td><%= vcenter.location %></td>
           <td><%= link_to 'Show', vcenter ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
+          <%# if @current_user == " "%>
+          <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
+          <% if @users.include? @current_user  %>
           <td><%= link_to 'Edit', edit_vcenter_path(vcenter),:class => 'btn btn-mini btn-warning', :remote=> true %></td>
-          
+          <% end %>
         </tr>
         <% end %>
         <% end %>

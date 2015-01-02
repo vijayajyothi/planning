@@ -13,13 +13,13 @@
         </div>
       </div>
     </div>
-    <div class ="container" style="height:662px;overflow:auto;">
+    <div class ="container" style="height:662px;overflow:auto;float:left;">
 
       <table class="table table-striped tablesorter">
         <tr>
           <th>Name</th>
           <th>vCenter</th>
-          <th>Description</th>
+          <!-- <th>Description</th> -->
           <th colspan=2> Actions</th>
         </tr>
         <% @vdcs.each do |vdc| %>
@@ -32,10 +32,9 @@
         <tr style="" id ="complete_tr">
           <td><%= vdc.name %></td>
           <td><%= vcenter_name(vdc.vcenter_id) %></td>
-          <td><%= vdc.description %></td>
+          <!-- <td><%#= vdc.description %></td> -->
           <td><%= link_to 'Show', vdc ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
-           <td><%= link_to 'Edit', edit_vdc_path(vdc),:class => 'btn btn-mini btn-warning', :remote=> true %></td>
-          <!-- <td><%#= link_to 'Destroy', vdc, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-dan -->ger'%></td> -->
+           <!-- <td><%#= link_to 'Edit', edit_vdc_path(vdc),:class => 'btn btn-mini btn-warning', :remote=> true %></td> -->
         </tr>
         <% end %>
         <% end %>
