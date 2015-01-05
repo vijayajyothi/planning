@@ -44,7 +44,9 @@ class << self
     
     f5_node_import = f5_node_import
     p "Done with F5 node data Import"
-end  
+    f5_node_capacity_import = f5_node_capacity_import
+    p "Done with F5 node capacity data Import"
+  end  
 # def updating_f5_data
   #   f5_device_data  = f5_device_update
   # end
@@ -75,7 +77,7 @@ end
     f5cluster.save if f5cluster.name.present?
   end
   delete_f5cluster = F5Cluster.where(:ops_status=>"Deleted")
-delete_f5cluster.delete_all
+  delete_f5cluster.delete_all
   end #cluster data import end
 
   def f5_device_update
@@ -175,71 +177,86 @@ def f5vip_data_import
     end
 #     delete_pools = F5Pool.where(:ops_status=>"Deleted")
 # delete_pools.delete_all
-  end
+end
 
-  def f5_pool_capacity_import
-    CSV.foreach("csv_data/f5/f5_pool_capacity.csv", :headers => true) do |row|
-      f5_vip = F5Vip.where(:name=>"#{row[3]}").first
-      f5p = F5Pool.where(:name=>row[0], :f5_vip_id=>f5_vip.id).first if f5_vip.present?
-      if f5p.present?
-        f5p.ops_status = "Present"
-      else
-        f5p = F5Pool.new
-        f5p.ops_status = "New"
-        f5p.attributes = row.to_hash.slice(*accessible_attributes)
-      end
-      f5p.f5_vip_id = f5_vip.id if f5_vip.present?
-      f5p.name=row[0].sub(/\/Common\//,"") if row[0].present?
-      f5p.f5_cluster_id = f5_vip.f5_cluster_id if f5_vip.present?
-      f5p.lb_method = row["lb"]+" "+row["method"]
-      f5p.pool_status = "Not Available"
-
-      f5p.save 
+def f5_pool_capacity_import
+  CSV.foreach("csv_data/f5/f5_pool_capacity.csv", :headers => true) do |row|
+    f5_vip = F5Vip.where(:name=>"#{row[3]}").first
+    f5p = F5Pool.where(:name=>row[0], :f5_vip_id=>f5_vip.id).first if f5_vip.present?
+    if f5p.present?
+      f5p.ops_status = "Present"
+    else
+      f5p = F5Pool.new
+      f5p.ops_status = "New"
+      f5p.attributes = row.to_hash.slice(*accessible_attributes)
     end
+    f5p.f5_vip_id = f5_vip.id if f5_vip.present?
+    f5p.name=row[0].sub(/\/Common\//,"") if row[0].present?
+    f5p.f5_cluster_id = f5_vip.f5_cluster_id if f5_vip.present?
+    f5p.lb_method = row["lb"]+" "+row["method"]
+    f5p.pool_status = "Not Available"
+
+    f5p.save 
   end
+end
 
-  def f5_node_import
-    F5Node.update_all(:ops_status=>"Deleted")
-    CSV.foreach("csv_data/f5/f5.csv", :headers => true) do |row|
-      f5cluster = F5Cluster.where(:access_ip=>row[" Access IP"]).first
-      f5v = F5Vip.where(:name=>row["Virtual Server Name"].sub(/\/Common\//,""), :f5_cluster_id =>f5cluster.id).first if f5cluster.present?
-      f5p = F5Pool.where(:name=>row[" pool Name"].sub(/\/Common\//,"")).first if row[" pool Name"].present?
-      f5n = F5Node.where(:ip=>row[" Node IP"], :port=>row[" Node Port"], :f5_pool_id =>f5p.id).first if f5p.present?
-      vm = Vm.where(:ip=>row[" Node Ip"]).first
-      # p vm
-      # if vm.present?
-      #   vipvm = Vmvip.where(:vm_id=>vm.id,:f5_vip_id=>f5v.id).first
-      #   if vipvm.present?
-      #   else
-      #     vipvm.vm_id = vm.id
-      #     vipvm.f5_vip_id = f5v.id
-      #   end
-      #   vipvm.save
-
-      # end
-      if f5n.present?
-        f5n.ops_status = "Present"
-      else
-        f5n = F5Node.new
-        f5n.ops_status = "New"
-        f5n.attributes = row.to_hash.slice(*accessible_attributes)
-      end
-      f5n.ip = row[" Node IP"]
-      f5n.port = row[" Node Port"]
-      f5n.node_enable = row[" Node Enabled State"]
-      f5n.node_status = row[" Node Status"] 
-      f5n.f5_vip_id = f5v.id if f5v.present?
-      f5n.pool_id = f5p.id if f5p.present?
-      f5n.vm_id = vm.id if vm.present?
-
-      f5n.f5_cluster_id = f5cluster.id if f5cluster.present?
-      f5n.save if f5n.ip.present?
-
-
-
+def f5_node_import
+  F5Node.update_all(:ops_status=>"Deleted")
+  CSV.foreach("csv_data/f5/f5.csv", :headers => true) do |row|
+    f5cluster = F5Cluster.where(:access_ip=>row[" Access IP"]).first
+    f5v = F5Vip.where(:name=>row["Virtual Server Name"].sub(/\/Common\//,""), :f5_cluster_id =>f5cluster.id).first if f5cluster.present?
+    f5p = F5Pool.where(:name=>row[" pool Name"].sub(/\/Common\//,"")).first if row[" pool Name"].present?
+    f5n = F5Node.where(:ip=>row[" Node IP"], :port=>row[" Node Port"], :f5_pool_id =>f5p.id).first if f5p.present?
+    vm = Vm.where(:ip=>row[" Node IP"]).first
+    if f5n.present?
+      f5n.ops_status = "Present"
+    else
+      f5n = F5Node.new
+      f5n.ops_status = "New"
+      f5n.attributes = row.to_hash.slice(*accessible_attributes)
     end
-  end
+    f5n.ip = row[" Node IP"]
+    f5n.port = row[" Node Port"]
+    f5n.node_enable = row[" Node Enabled State"]
+    f5n.node_status = row[" Node Status"] 
+    f5n.f5_vip_id = f5v.id if f5v.present?
+    f5n.f5_pool_id = f5p.id if f5p.present?
+    f5n.vm_id = vm.id if vm.present?
 
+    f5n.f5_cluster_id = f5cluster.id if f5cluster.present?
+    f5n.save if f5n.ip.present?
+
+ # delete_nodes = F5Node.where(:ops_status=>"Deleted")
+# delete_nodes.delete_all
+
+end
+end
+
+def f5_node_capacity_import
+# ip,port,f5_pool_id,f5_cluster_id,vm_id
+  CSV.foreach("csv_data/f5/f5_node_capacity.csv", :headers => true) do |row|
+    f5p = F5Pool.where(:name=>row["name"]).first
+    f5n =  F5Node.where(:ip=>row["ip"], :f5_pool_id=>f5p.id).first if f5p.present?
+    vm = Vm.where(:ip=>row["ip"]).first
+ if f5n.present?
+      f5n.ops_status = "Present"
+    else
+      f5n = F5Node.new
+      f5n.ops_status = "New"
+      # f5n.attributes = row.to_hash.slice(*accessible_attributes)
+    end
+    f5n.ip = row["ip"]
+    f5n.port = row["port"]
+    f5n.f5_vip_id = f5p.f5_vip_id if f5p.present?
+    f5n.f5_pool_id = f5p.id if f5p.present?
+    f5n.vm_id = vm.id if vm.present?
+
+    f5n.f5_cluster_id = f5p.f5_cluster_id if f5p.present?
+    f5n.save if f5n.ip.present?
+    raise f5n.inspect
+
+end
+end
 
 
   end #self class end
