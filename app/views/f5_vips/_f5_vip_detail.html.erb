@@ -8,7 +8,7 @@
         <table class="table table-hover">
           <tbody>
             <tr>
-             
+
               <td><b>F5 VIP Name</b></td>
               <td><%= @f5_vip.name %></td>
               <td><b>F5 VIP IP</b></td>
@@ -20,105 +20,95 @@
               <td><%= @f5_vip.port %></td>
               <td ><b>F5 Cluster</b></td>
               <td ><%= link_to vip_f5cluster(@f5_vip.f5_cluster_id).name, vip_f5cluster(@f5_vip.f5_cluster_id), :style=>"color:black;", :remote=> true%>
-            </tr> 
-           
-          </tbody></table>
+              </tr> 
 
-        </div>
-      </div>
-      <%  if @f5_vip.port.present?%>
-      <!-- F5 Pools -->
-      <%# @f5pools = F5Pool.find_by_sql(F5Pool.group(:f5_cluster_id).where(:f5_vip_id=>@f5_vip.id))%>
-      <% @f5pool = F5Pool.where(:f5_vip_id=>@f5_vip.id).last%>
-      <div class="span6">
-        <div class="workflow-blocks">
-          <div class="workflow-heading"> <a data-toggle="collapse" data-parent="#accordion" href="#pool">
-            <span>F5 Pools</span>
-          </a></div>
+            </tbody></table>
 
-          <div id="pool">
-            <div class="" style="max-height:544px; overflow:auto;">
-              <table class="table table-hover">
-               <tbody>
-                <th>Name</th>
-                <th> LB Method</th>
-                <th> Status</th>
-      <%  if @f5pool.present?%>
-
-                <tr>
-                  <td><b><%= @f5pool.name %></b></td>
-                  <td><%= @f5pool.lb_method %></td>
-                  <td><%= @f5pool.pool_status %></td>
-                </tr>  
-<% end %>
-              </tbody>
-            </table>
           </div>
         </div>
+        <!-- F5 Pools -->
+        <%# @f5pools = F5Pool.find_by_sql(F5Pool.group(:f5_cluster_id).where(:f5_vip_id=>@f5_vip.id))%>
+        <% @f5pool = F5Pool.where(:f5_vip_id=>@f5_vip.id).last%>
+        <div class="span6">
+          <div class="workflow-blocks">
+            <div class="workflow-heading"> <a data-toggle="collapse" data-parent="#accordion" href="#pool">
+              <span>F5 Pools</span>
+            </a></div>
 
+            <div id="pool">
+              <div class="" style="max-height:544px; overflow:auto;">
+                <table class="table table-hover">
+                 <tbody>
+                  <th>Name</th>
+                  <th> LB Method</th>
+                  <th> Status</th>
+                  <%  if @f5pool.present?%>
+
+                  <tr>
+                    <td><b><%= @f5pool.name %></b></td>
+                    <td><%= @f5pool.lb_method %></td>
+                    <td><%= @f5pool.pool_status %></td>
+                  </tr>  
+                  <% end %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
       </div>
+      <!-- F5 Pool ends -->
+
+      <!-- F5 Cluster -->
+      <div class="panel-group" id="accordion" style="clear:left;">
+        <%# @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('MAX(id), ip,port,node_status,node_enable,ops_status').where(:f5_vip_id=>@f5_vip.id))%>
+        <%# @f5nodes = F5Node.find_by_sql(F5Node.where(:f5_vip_id=>@f5_vip.id,'ops_status != ?', "Deleted")) %>
+        <%# @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('ip,port').where(:f5_vip_id=>@f5_vip.id))%>
+        <%# @nodes = F5Node.where('ops_status != ?', "Deleted")%>
+        <%@f5nodes = F5Node.where(:f5_pool_id=>@f5pool.id)%>
+        <div class="span12"d>
+          <div class="workflow-blocks" style="margin-top:0px;">
+            <div class="workflow-heading"> <a data-toggle="collapse" data-parent="#accordion" href="#f5vm">
+              <span>F5 Nodes </span>
+            </a></div>
+
+            <div id="f5vm" class="">
+              <div class="" style="max-height:544px; overflow:auto;">
+               <table class="table table-hover">
+                 <tbody>
+                  <th>IP</th>
+                  <th>Port</th>
+                  <th>Node Status</th>
+                  <th>Node Enabled Status</th>
+                  <th>Name</th>
+                  <th>VM Status</th>
+                  <% if @f5nodes.present? %>
+                  <% @f5nodes.each do |each_f5node|%>
+                  <%#= each_f5node.to_yaml%>
+                  <tr>
+                    <td><b><%=  each_f5node.ip%></b></td>
+                    <td><%=  each_f5node.port%></td>
+                    <td><%=  each_f5node.node_enable%></td>
+                    <td><%=  each_f5node.node_status%></td>
+                    <% @vm = Vm.where(:ip=>each_f5node.ip).first %>
+                    <%  if @vm.present?%>
+                    <td><%= link_to @vm.name, @vm, :style=>"color:black;", :remote=> true%></td>
+                    <td><%= @vm.power_state  %></td>
+                    <%end  %>
+                    <% end %>
+                  </tr>   
+                    <% end %>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
-    <!-- F5 Pool ends -->
 
     <!-- F5 Cluster -->
-
-    <div class="panel-group" id="accordion" style="clear:left;">
-    <%# @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('MAX(id), ip,port,node_status,node_enable,ops_status').where(:f5_vip_id=>@f5_vip.id))%>
-    <%# @f5nodes = F5Node.find_by_sql(F5Node.where(:f5_vip_id=>@f5_vip.id,'ops_status != ?', "Deleted")) %>
-    <%# @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('ip,port').where(:f5_vip_id=>@f5_vip.id))%>
-<% @nodes = F5Node.where('ops_status != ?', "Deleted")%>
-<%@f5nodes = @nodes.where(:f5_vip_id=>@f5_vip.id)%>
-      <div class="span12"d>
-        <div class="workflow-blocks" style="margin-top:0px;">
-          <div class="workflow-heading"> <a data-toggle="collapse" data-parent="#accordion" href="#f5vm">
-            <span>F5 Nodes </span>
-          </a></div>
-
-          <div id="f5vm" class="">
-            <div class="" style="max-height:544px; overflow:auto;">
-             <table class="table table-hover">
-               <tbody>
-                <th>IP</th>
-                <th>Port</th>
-                <th>Node Status</th>
-                <th>Node Enabled Status</th>
-                <th>Name</th>
-                <th>VM Status</th>
-                <% @f5nodes.each do |each_f5node|%>
-                <%#= each_f5node.to_yaml%>
-                <tr>
-                <td><b><%=  each_f5node.ip%></b></td>
-                <td><%=  each_f5node.port%></td>
-                <td><%=  each_f5node.node_enable%></td>
-                <td><%=  each_f5node.node_status%></td>
-                <% @vm = Vm.where(:ip=>each_f5node.ip).first %>
-                  <%  if @vm.present?%>
-                  <td><%= link_to @vm.name, @vm, :style=>"color:black;", :remote=> true%></td>
-                  <td><%= @vm.power_state  %></td>
-                  <%end  %>
-              <% end %>
-                </tr>   
-              </tbody>
-            </table>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- F5 Cluster ends -->
-
-
-    <%# @f5nodes = F5Node.where(:f5_vip_id=>@f5_vip.id) %>
-
-   
-    </div>
-
-
-    <% end %>
-
-
-<!-- F5 Cluster -->
 
     <div class="panel-group" id="accordion" style="clear:left;">
       <%# @f5pools = F5Pool.find_by_sql(F5Pool.group(:f5_cluster_id).where(:f5_vip_id=>@f5_vip.id))%>
