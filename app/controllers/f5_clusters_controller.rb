@@ -1,4 +1,6 @@
 class F5ClustersController < ApplicationController
+  before_filter :authorize
+  
   # GET /f5_clusters
   # GET /f5_clusters.json
   def index

@@ -1,1 +1,0 @@
-!function(t){"use strict";t.tablesorter.addParser({id:"image",is:function(){return!1},format:function(e,i,s){return t(s).find("img").attr(i.config.imgAttr||"alt")||e},parsed:!0,type:"text"})}(jQuery);

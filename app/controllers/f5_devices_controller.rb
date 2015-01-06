@@ -1,4 +1,6 @@
 class F5DevicesController < ApplicationController
+  before_filter :authorize
+  
   # GET /f5_devices
   # GET /f5_devices.json
   def index

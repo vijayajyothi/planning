@@ -1,3 +1,5 @@
+          <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
+
 <div class="index-container">
 
   <!-- Index form Started -->
@@ -14,7 +16,7 @@
         </div>
       </div>
     </div>
-    <div class ="container" style="height:662px;overflow:auto;">
+    <div class ="container" style="height:662px;overflow:auto;float:left;">
       <table class="table table-striped tablesorter">
         <tr>
           <th>Device</th>
@@ -27,7 +29,12 @@
         <% if f5_device.ops_status=="Deleted"%>
         <tr class="alert alert-error">
           <td colspan=3><%= f5_device.name %> is deleted</td>
-          <td colspan=2><%= link_to 'Destroy', f5_device, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%></td>
+          <td colspan=2>
+            <% if @users.include? @current_user  %>
+
+          <%= link_to 'Destroy', f5_device, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%>
+          <% end %>
+          </td>
         </tr>
         <% else %>
         <tr style="" data-link="<%#= f5_cluster_path(f5_cluster) %>">

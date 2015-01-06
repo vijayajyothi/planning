@@ -1,4 +1,5 @@
 <div class="index-container">
+  <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
 
   <!-- Index form Started -->
   <div class="col-sm-12">
@@ -35,8 +36,13 @@
         </tr>
         <% else %>
         <tr class="alert alert-error">
-          <td colspan=2><%= f5_vip.name %> is deleted</td>
-          <td colspan=2><%= link_to 'Destroy', f5_vip, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%></td>
+          <td colspan=3><%= f5_vip.name %> is deleted</td>
+          <td colspan=2>
+            <% if @users.include? @current_user  %>
+
+            <%= link_to 'Destroy', f5_vip, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%>
+            <% end %>
+          </td>
         </tr>
         <% end %>
         <% end %>
@@ -60,8 +66,8 @@
         alert("hi")
         // $( "<h1>" ).text( json.title ).appendTo( "body" );
         // $( "<div class=\"content\">").html( json.html ).appendTo( "body" );
-    }
-    alert($(this).data("link"))
+      }
+      alert($(this).data("link"))
     });
   })
   </script>

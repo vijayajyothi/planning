@@ -1,4 +1,6 @@
 class VdcsController < ApplicationController
+  before_filter :authorize
+  
   # GET /vdcs
   # GET /vdcs.json
   def index

@@ -1,4 +1,5 @@
 <div class="index-container">
+          <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
 
   <!-- Index form Started -->
   <div class="col-sm-12">
@@ -26,7 +27,12 @@
         <% if vcenter.ops_status=="Deleted"%>
         <tr class="alert alert-error">
           <td colspan=3><%= vcenter.name %> is deleted</td>
-          <td colspan=2><%= link_to 'Destroy', vcenter, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%></td>
+          <td colspan=2>
+            <% if @users.include? @current_user  %>
+
+          <%= link_to 'Destroy', vcenter, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%>
+          <% end %>
+          </td>
         </tr>
         <% else %>
         <tr style="" data-link="<%= vcenter_path(vcenter) %>">
@@ -35,7 +41,6 @@
           <td><%= vcenter.location %></td>
           <td><%= link_to 'Show', vcenter ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
           <%# if @current_user == " "%>
-          <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
           <% if @users.include? @current_user  %>
           <td><%= link_to 'Edit', edit_vcenter_path(vcenter),:class => 'btn btn-mini btn-warning', :remote=> true %></td>
           <% end %>

@@ -1,74 +1,81 @@
-<div class="index-container">
-<div class="col-sm-12">
-  <div class="form-search col-sm-4">
-    <h2>VM Details</h2></div>
-    <div class="form-search col-sm-4" style="margin-top:20px;">
-      <div class="input-append">
+          <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
 
-        <%= form_tag vms_path, :method => :get, :remote=> true do %>
-        <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
-        <%= submit_tag "Search", :name => nil, :class=>"btn" %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-<div class ="container" style="height:623px;overflow:auto;float:left;">
+          <div class="index-container">
+            <div class="col-sm-12">
+              <div class="form-search col-sm-4">
+                <h2>VM Details</h2></div>
+                <div class="form-search col-sm-4" style="margin-top:20px;">
+                  <div class="input-append">
 
-  <table class="table table-striped tablesorter">
-    <tr>
-      <th>VM Name</th>
-      <th>VM Host Name</th>
-      <th>ESXi Host</th>
-      <th>IP</th>
-      <th>Connection State</th>
-      <th colspan=2> Actions</th>
-    </tr>
+                    <%= form_tag vms_path, :method => :get, :remote=> true do %>
+                    <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+                    <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+              <div class ="container" style="height:623px;overflow:auto;float:left;">
 
-    <% @vms.each do |vm| %>
-    <% if vm.ops_status=="Deleted"%>
-    <tr class="alert alert-error">
-      <td colspan=5><%= vm.name %> is deleted</td>
-      <td ><%= link_to 'Delete Permanently', vm, method: :delete, data: { confirm: 'Are you sure? will not reverted' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=> true%></td>
-    </tr>
-    <% else %>
-    <tr style="" id ="complete_tr">
+                <table class="table table-striped tablesorter">
+                  <tr>
+                    <th>VM Name</th>
+                    <th>VM Host Name</th>
+                    <th>ESXi Host</th>
+                    <th>IP</th>
+                    <th>Connection State</th>
+                    <th colspan=2> Actions</th>
+                  </tr>
 
-      <td><%= vm.name %></td>
-      <td><%= vm.vm_hostname %></td>
-      <td><%= my_host(vm.vmhost_id).name %></td>
-      <td><%= vm.ip %></td>
-      <td><%= vm.connection_state %></td>
-      <td><%= link_to 'Show', vm ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
-      <!-- <td><%#= link_to 'Edit', edit_vm_path(vm),:class => 'btn btn-mini btn-warning' %></td> -->
-      <td><%#= link_to 'Destroy', vm, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td>
-    </tr>
-    <% end %>
-    <% end %>
-  </table>
-  </div>
-  <div class="digg_pagination">
-    <%= paginate @vms, :container => false, :remote => true %>
-  </div>
-  <br />
-  <% comment do %>
-  <h3>Import VM's CSV</h3>
-  <%= form_tag import_vms_path, multipart: true do %>
-  <%= file_field_tag :file %>
-  <%= submit_tag "Import" %>
-  <% end %>
-  <% end %>
-</div>
-  <%#= link_to 'New Vm', new_vm_path %>
+                  <% @vms.each do |vm| %>
+                  <% if vm.ops_status=="Deleted"%>
+                  <tr class="alert alert-error">
+                    <td colspan=5><%= vm.name %> is deleted</td>
+                    <td colspan=2>
+                      <% if @users.include? @current_user  %>
 
-  <script>
-  $(function(){
-    $('table').tablesorter({
-      widgets        : ['zebra', 'columns'],
-      usNumberFormat : false,
-      sortReset      : true,
-      sortRestart    : true
-    });
-  });
+                      <%= link_to 'Delete Permanently', vm, method: :delete, data: { confirm: 'Are you sure? will not reverted' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=> true%>
+                      <% end %>
+                    </td>
+                  </tr>
+                  <% else %>
+                  <tr style="" id ="complete_tr">
 
-    </script>
+                    <td><%= vm.name %></td>
+                    <td><%= vm.vm_hostname %></td>
+                    <td><%= my_host(vm.vmhost_id).name %></td>
+                    <td><%= vm.ip %></td>
+                    <td><%= vm.connection_state %></td>
+                    <td><%= link_to 'Show', vm ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
+                    <!-- <td><%#= link_to 'Edit', edit_vm_path(vm),:class => 'btn btn-mini btn-warning' %></td> -->
+                    <td><%#= link_to 'Destroy', vm, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger'%></td>
+                  </tr>
+                  <% end %>
+                  <% end %>
+                </table>
+              </div>
+              <div class="digg_pagination">
+                <%= paginate @vms, :container => false, :remote => true %>
+              </div>
+              <br />
+              <% comment do %>
+              <h3>Import VM's CSV</h3>
+              <%= form_tag import_vms_path, multipart: true do %>
+              <%= file_field_tag :file %>
+              <%= submit_tag "Import" %>
+              <% end %>
+              <% end %>
+            </div>
+            <%#= link_to 'New Vm', new_vm_path %>
+
+            <script>
+            $(function(){
+              $('table').tablesorter({
+                widgets        : ['zebra', 'columns'],
+                usNumberFormat : false,
+                sortReset      : true,
+                sortRestart    : true
+              });
+            });
+
+            </script>
 

@@ -1,4 +1,6 @@
 class F5VipsController < ApplicationController
+  before_filter :authorize
+  
   # GET /f5_vips
   # GET /f5_vips.json
   def index

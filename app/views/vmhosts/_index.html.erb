@@ -1,3 +1,5 @@
+          <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
+
 <div class="index-container">
 <div class="col-sm-12">
   <div class="form-search col-sm-4">
@@ -26,7 +28,12 @@
     <% if vmhost.ops_status=="Deleted"%>
     <tr class="alert alert-error">
       <td colspan=3><%= vmhost.name  if vmhost.name.present?%> is deleted</td>
-      <td colspan=2><%= link_to 'Delete Permanently', vmhost, method: :delete, data: { confirm: 'Are you sure? will not reverted' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=> true%></td>
+        <td colspan=2>
+          <% if @users.include? @current_user  %>
+
+      <%= link_to 'Delete Permanently', vmhost, method: :delete, data: { confirm: 'Are you sure? will not reverted' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=> true%>
+      <% end %>
+      </td>
     </tr>
     <% else %>
     <tr style="" id ="complete_tr">

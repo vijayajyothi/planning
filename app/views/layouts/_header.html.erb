@@ -11,7 +11,7 @@ window.onhashchange=function(){window.location.hash="no-back-button";}
       <% if @current_user.present? %>
 
       <div class="col-sm-7">
-        <div class="logo" style="width:29%;"> <%= link_to (image_tag("new-vm-logo.jpg")), "/", :id => "logo" %>
+        <div class="logo" style="width:29%;"> <%= link_to (image_tag("new-vm-logo.jpg")), "/", :id => "logo", :title=>"Back to Home" %>
         </div>
         <div class="login-info">
           <span><b>Welcome <%= @current_user %></b></span><br/>

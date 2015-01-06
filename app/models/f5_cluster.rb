@@ -193,9 +193,8 @@ def f5_pool_capacity_import
     f5p.f5_vip_id = f5_vip.id if f5_vip.present?
     f5p.name=row[0].sub(/\/Common\//,"") if row[0].present?
     f5p.f5_cluster_id = f5_vip.f5_cluster_id if f5_vip.present?
-    f5p.lb_method = row["lb"]+" "+row["method"] if f5_vip.present?
+    f5p.lb_method = row[1]+" "+row[2] if f5p.present?
     f5p.pool_status = "Not Available"
-
     f5p.save 
   end
 end
@@ -233,10 +232,9 @@ end
 end
 
 def f5_node_capacity_import
-# ip,port,f5_pool_id,f5_cluster_id,vm_id
-  CSV.foreach("csv_data/f5/f5_node_capacity.csv", :headers => true) do |row|
-    f5ps = F5Pool.where(:name=>row["name"])
-    f5ps.each do |f5p|
+CSV.foreach("csv_data/f5/f5_node_capacity.csv", :headers => true) do |row|
+  f5ps = F5Pool.where(:name=>row["name"])
+  f5ps.each do |f5p|
 
     f5n =  F5Node.where(:ip=>row["ip"], :f5_pool_id=>f5p.id).first if f5p.present?
     vm = Vm.where(:ip=>row["ip"]).first
@@ -256,7 +254,7 @@ def f5_node_capacity_import
     f5n.f5_cluster_id = f5p.f5_cluster_id if f5p.present?
     f5n.save if f5n.ip.present?
 
-    end
+  end
 end
 end
 

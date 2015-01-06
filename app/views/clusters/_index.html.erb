@@ -1,3 +1,4 @@
+          <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
 
 <div class="index-container">
 <div class="col-sm-12">
@@ -13,7 +14,7 @@
       </div>
     </div>
   </div>
-<div class ="container" style="height:662px;overflow:auto;">
+<div class ="container" style="height:662px;overflow:auto;float:left;">
 
   <table class="table table-striped tablesorter">
     <tr>
@@ -27,7 +28,12 @@
     <% if cluster.ops_status=="Deleted"%>
     <tr class="alert alert-error">
       <td colspan=4><%= cluster.name %> is deleted</td>
-      <td colspan=2><%= link_to 'Delete Permanently', cluster, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=> true%></td>
+        <td colspan=2>
+          <% if @users.include? @current_user  %>
+
+      <%= link_to 'Delete Permanently', cluster, method: :delete, data: { confirm: 'Are you sure? will not reverted back' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=> true%>
+      <% end %>
+      </td>
     </tr>
     <% else %>
     <tr style="" id ="complete_tr">
