@@ -65,7 +65,7 @@
         <%# @f5nodes = F5Node.find_by_sql(F5Node.where(:f5_vip_id=>@f5_vip.id,'ops_status != ?', "Deleted")) %>
         <%# @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('ip,port').where(:f5_vip_id=>@f5_vip.id))%>
         <%# @nodes = F5Node.where('ops_status != ?', "Deleted")%>
-        <%@f5nodes = F5Node.where(:f5_pool_id=>@f5pool.id)%>
+
         <div class="span12"d>
           <div class="workflow-blocks" style="margin-top:0px;">
             <div class="workflow-heading"> <a data-toggle="collapse" data-parent="#accordion" href="#f5vm">
@@ -82,6 +82,9 @@
                   <th>Node Enabled Status</th>
                   <th>Name</th>
                   <th>VM Status</th>
+                   <%  if @f5pool.present?%>
+        
+        <%@f5nodes = F5Node.where(:f5_pool_id=>@f5pool.id)%>
                   <% if @f5nodes.present? %>
                   <% @f5nodes.each do |each_f5node|%>
                   <%#= each_f5node.to_yaml%>
@@ -97,6 +100,7 @@
                     <%end  %>
                     <% end %>
                   </tr>   
+                    <% end %>
                     <% end %>
                 </tbody>
               </table>
