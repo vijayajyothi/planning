@@ -154,6 +154,7 @@ match 'login', to: 'sessions#new', as: 'login'
 match 'signup', to: 'users#new', as: 'signup'
 
 get "home/index"
+get "home/server_error"
 get "/search_list" => "home#search_list", :as => :search_list
 
 get "/vms" => "vms#index", :as => :vms
@@ -241,7 +242,8 @@ resources :users
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+  # root :to => 'home#index'
+  root :to => 'home#server_error'
 
   # See how all your routes lay out with "rake routes"
 

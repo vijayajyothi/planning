@@ -8,9 +8,12 @@ class HomeController < ApplicationController
     @cluster_count =  Cluster.ops_status.count
     @vmhost_count =  Vmhost.ops_status.count
     @f5clusters_count = F5Cluster.ops_status.count
-    @f5vips_count = F5Vip.ops_status.count
+    @f5vips_count = F5Vip.count
   end
 
+def server_error
+  render :layout => false
+end
   def search_list
     @search = Sunspot.search [Vcenter, Vdc, Cluster, Vmhost, Vm, F5Vip, F5Cluster, F5Device] do 
       fulltext params[:search]
