@@ -9716,6 +9716,7 @@ ip,port,name
 10.113.164.84,8443,vdc-prod-app-pool2-8443
 10.113.164.86,8443,vdc-prod-app-pool2-8443
 10.113.191.57,443,ex-stg-443-pool
+10.113.191.54,443,ex-stg-443-pool
 10.113.61.41,80,vdc-prod-repo-pool2-80
 10.113.61.42,80,vdc-prod-repo-pool2-80
 10.113.61.41,8443,vdc-prod-repo-pool2-8443
@@ -9770,3 +9771,9 @@ ip,port,name
 10.128.37.175,8011,visl-lt-pl-pool
 10.128.37.174,8001,visl-lt-ml-pool
 10.128.37.175,8001,visl-lt-ml-pool
+10.113.15.90,7777,stagesoa-m-vip-pool
+10.113.15.92,7777,stagesoa-m-vip-pool
+10.113.15.93,7777,stagesoa-m-vip-pool
+10.113.15.94,7777,stagesoa-m-vip-pool
+10.113.15.95,7777,stagesoa-m-vip-pool
+10.113.15.91,7001,stagesoa-admin-vip-pool

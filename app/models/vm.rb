@@ -87,7 +87,7 @@ def vcenter_data_import
     vcenter = Vcenter.find_by_name(row["name"])
     if vcenter.present?
       vcenter.ops_status = "Present"
-      # vcenter.update_attributes(row.to_hash.slice(*accessible_attributes))
+      vcenter.update_attributes(row.to_hash.slice(*accessible_attributes))
     else
       vcenter = Vcenter.new
       vcenter.ops_status = "New"
