@@ -1315,9 +1315,9 @@ SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,myln-stg-webapp.vmw
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,myln-stg-webapp.vmware.com,10.113.53.20,80,GREEN,ENABLED,myln-stg-webapp-pool,GREEN,ROUND ROBIN,mylearn_cfm_monitor_webapp,10.113.53.211,80,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,vcmupdate-prod-vip,10.113.163.25,80,GREEN,ENABLED,vcmupdate-prod-pool-http,GREEN,ROUND ROBIN,ruok-http,10.113.163.23,80,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,vcmupdate-prod-vip,10.113.163.25,80,GREEN,ENABLED,vcmupdate-prod-pool-http,GREEN,ROUND ROBIN,ruok-http,10.113.163.24,80,UP,ENABLED,
-SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-vip,10.113.76.177,80,RED,ENABLED,oraclereport-pool,RED,ROUND ROBIN,oraclereport-prod-mon,10.113.12.39,7778,DOWN,ENABLED,http-to-https-redirect
-SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-vip,10.113.76.177,80,RED,ENABLED,oraclereport-pool,RED,ROUND ROBIN,oraclereport-prod-mon,10.113.12.40,7778,DOWN,ENABLED,http-to-https-redirect
-SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-vip,10.113.76.177,80,RED,ENABLED,oraclereport-pool,RED,ROUND ROBIN,oraclereport-prod-mon,10.113.12.41,7778,DOWN,ENABLED,http-to-https-redirect
+SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-vip,10.113.76.177,80,GREEN,ENABLED,oraclereport-pool,GREEN,ROUND ROBIN,oraclereport-prod-mon,10.113.12.39,7778,UP,ENABLED,http-to-https-redirect
+SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-vip,10.113.76.177,80,GREEN,ENABLED,oraclereport-pool,GREEN,ROUND ROBIN,oraclereport-prod-mon,10.113.12.40,7778,UP,ENABLED,http-to-https-redirect
+SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-vip,10.113.76.177,80,GREEN,ENABLED,oraclereport-pool,GREEN,ROUND ROBIN,oraclereport-prod-mon,10.113.12.41,7778,UP,ENABLED,http-to-https-redirect
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,sc9-stage-gsa-new-int-vip-ssl,10.113.52.35,443,GREEN,ENABLED,sc9-stage-gsa-new-int-https-pool,GREEN,ROUND ROBIN,tcp,10.113.52.32,443,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-kcat-vip.vmware.com,10.113.14.172,8080,GREEN,ENABLED,s2-stage-kcat-pool,GREEN,ROUND ROBIN,kcat-http-monitor,10.113.14.175,8080,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-kcat-vip.vmware.com,10.113.14.172,8080,GREEN,ENABLED,s2-stage-kcat-pool,GREEN,ROUND ROBIN,kcat-http-monitor,10.113.14.176,8080,UP,ENABLED,
@@ -1863,9 +1863,9 @@ SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,vdc-prod-app-vip2-S
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,vdc-prod-app-vip2-SSL,10.113.164.90,443,GREEN,ENABLED,vdc-prod-app-pool2-8443,GREEN,ROUND ROBIN,tcp,10.113.164.86,8443,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,vdc-prod-app-vip2,10.113.164.90,80,GREEN,ENABLED,vdc-prod-app-pool2-8080,GREEN,ROUND ROBIN,tcp,10.113.164.84,8080,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,vdc-prod-app-vip2,10.113.164.90,80,GREEN,ENABLED,vdc-prod-app-pool2-8080,GREEN,ROUND ROBIN,tcp,10.113.164.86,8080,UP,ENABLED,
-SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-prod-ssl,10.113.76.177,443,RED,ENABLED,oraclereport-pool,RED,ROUND ROBIN,oraclereport-prod-mon,10.113.12.39,7778,DOWN,ENABLED,
-SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-prod-ssl,10.113.76.177,443,RED,ENABLED,oraclereport-pool,RED,ROUND ROBIN,oraclereport-prod-mon,10.113.12.40,7778,DOWN,ENABLED,
-SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-prod-ssl,10.113.76.177,443,RED,ENABLED,oraclereport-pool,RED,ROUND ROBIN,oraclereport-prod-mon,10.113.12.41,7778,DOWN,ENABLED,
+SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-prod-ssl,10.113.76.177,443,GREEN,ENABLED,oraclereport-pool,GREEN,ROUND ROBIN,oraclereport-prod-mon,10.113.12.39,7778,UP,ENABLED,
+SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-prod-ssl,10.113.76.177,443,GREEN,ENABLED,oraclereport-pool,GREEN,ROUND ROBIN,oraclereport-prod-mon,10.113.12.40,7778,UP,ENABLED,
+SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,oraclereport-prod-ssl,10.113.76.177,443,GREEN,ENABLED,oraclereport-pool,GREEN,ROUND ROBIN,oraclereport-prod-mon,10.113.12.41,7778,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,ebssso-80,10.113.12.115,80,GREEN,ENABLED,ebssso,GREEN,ROUND ROBIN,http_custom,10.113.12.111,443,UP,ENABLED,http-to-https-redirect
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,ebssso-80,10.113.12.115,80,GREEN,ENABLED,ebssso,GREEN,ROUND ROBIN,http_custom,10.113.12.112,443,UP,ENABLED,http-to-https-redirect
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,sc9-sinkhole-ns-vip.vmware.com,10.113.164.118,53,GREEN,DISABLED,sc9-sinkhole-ns-pool,GREEN,ROUND ROBIN,tcp,10.113.164.57,53,UP,ENABLED,
@@ -2580,7 +2580,7 @@ OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,idm-vip,10.16.
 OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,idm-vip,10.16.27.43,7780,RED,ENABLED,idm-pool,RED,ROUND ROBIN,tcp,10.16.27.31,7780,DOWN,ENABLED,
 OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,phnx-portal-uat2-vip,10.16.71.172,80,BLUE,DISABLED,crp2-flexlm-2-pool,RED,ROUND ROBIN,http,10.16.22.23,80,DOWN,DISABLED,UAT2-http-to-https-redirect
 OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,phnx-portal-uat2-ssl-vip,10.16.71.172,443,BLUE,DISABLED,crp2-flexlm-2-pool,RED,ROUND ROBIN,http,10.16.22.23,80,DOWN,DISABLED,
-OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,devsoa-vip,10.16.71.153,7777,RED,ENABLED,devsoa-pool,RED,ROUND ROBIN,http,10.16.71.157,7777,DOWN,ENABLED,devsoa-redirect-890651
+OSDC,osdc-prod-stage-int-1,10.16.108.11,10.16.108.12,10.16.108.11,devsoa-vip,10.16.71.153,7777,GREEN,ENABLED,devsoa-pool,GREEN,ROUND ROBIN,http,10.16.71.157,7777,UP,ENABLED,devsoa-redirect-890651
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/ltrmqsslt-vip-5674,10.128.38.67,5674,GREEN,ENABLED,/Common/ltrmqsslt-5674-pool,GREEN,ROUND ROBIN,/Common/tcp,10.128.38.51,5674,UP,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/ltrmqsslt-vip-5674,10.128.38.67,5674,GREEN,ENABLED,/Common/ltrmqsslt-5674-pool,GREEN,ROUND ROBIN,/Common/tcp,10.128.38.52,5674,UP,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/supplier-lt-vip-ssl,10.128.38.50,443,RED,ENABLED,/Common/supplier-lt-pool,RED,ROUND ROBIN,/Common/tcp,10.128.38.40,8000,DOWN,ENABLED,

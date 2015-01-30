@@ -13,7 +13,7 @@ lb1-tier1-stage-eat1,10.128.2.12,standby
 lb1-devtest,10.128.6.11,standby
 lb2-devtest,10.128.6.12,active
 lb1-nim-dmz-eat1,10.128.7.11,active
-lb2-nim-dmz-eat1,10.128.7.12,standby
+lb2-nim-dmz-eat1,10.128.7.12,
 ld2pc2-sjc3,10.113.56.72,standby
 ld2pc1-sjc3,10.113.56.71,active
 lb1-INT-prod-8900,10.113.0.81,standby
