@@ -11,9 +11,10 @@ class HomeController < ApplicationController
     @f5vips_count = F5Vip.count
   end
 
-def server_error
-  render :layout => false
-end
+  def server_error
+    render :layout => false
+  end
+  
   def search_list
     @search = Sunspot.search [Vcenter, Vdc, Cluster, Vmhost, Vm, F5Vip, F5Cluster, F5Device] do 
       fulltext params[:search]
