@@ -1261,6 +1261,7 @@ ltsoa-m-vip-pool,ROUND,ROBIN,lt-soa-7777,wdc-lt-int-1
 ltsoa-admin-vip-pool,ROUND,ROBIN,lt-soa-7001,wdc-lt-int-1
 visl-lt-pl-pool,ROUND,ROBIN,visl-lt-pl-vip,wdc-lt-int-1
 visl-lt-ml-pool,ROUND,ROBIN,visl-lt-ml-vip,wdc-lt-int-1
+s2-lt-hightouch-vip-pool,ROUND,ROBIN,s2-lt-hightouch-vip,wdc-lt-int-1
 WDC-OWA-pool,ROUND,ROBIN,WDC-OWA-ssl-vip,wdc-tier2-prod-int-1
 viops-prod-app-int-pool,ROUND,ROBIN,viops-prod-app-int-vip,wdc-tier2-prod-int-1
 viops-prod-db-int-pool,ROUND,ROBIN,viops-prod-db-int-vip,wdc-tier2-prod-int-1

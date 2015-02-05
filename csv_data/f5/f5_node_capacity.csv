@@ -2531,8 +2531,12 @@ ip,port,name
 10.119.33.15,443,cpstg-pool
 10.119.33.38,80,blogs-stage-pool
 10.119.33.39,80,blogs-stage-pool
+10.119.33.51,80,blogs-stage-pool
+10.119.33.52,80,blogs-stage-pool
 10.119.33.38,80,blogs-stage-pool
 10.119.33.39,80,blogs-stage-pool
+10.119.33.51,80,blogs-stage-pool
+10.119.33.52,80,blogs-stage-pool
 10.119.17.63,80,blogs-prod-pool
 10.119.17.64,80,blogs-prod-pool
 10.119.17.68,80,blogs-prod-pool
@@ -7256,6 +7260,8 @@ ip,port,name
 10.119.17.68,80,blogs-prod-pool
 10.119.17.121,80,blogs-prod-app-pool
 10.119.17.122,80,blogs-prod-app-pool
+10.119.17.63,80,blogs-prod-app-pool
+10.119.17.64,80,blogs-prod-app-pool
 10.113.52.23,8080,knova-stg2-kcc-pool
 10.113.52.24,8080,knova-stg2-kcc-pool
 10.113.52.25,8080,knova-stg2-kcc-pool
@@ -9777,3 +9783,5 @@ ip,port,name
 10.113.15.94,7777,stagesoa-m-vip-pool
 10.113.15.95,7777,stagesoa-m-vip-pool
 10.113.15.91,7001,stagesoa-admin-vip-pool
+10.128.10.144,8080,s2-lt-hightouch-vip-pool
+10.128.10.145,8080,s2-lt-hightouch-vip-pool

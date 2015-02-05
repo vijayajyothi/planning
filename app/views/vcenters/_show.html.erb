@@ -27,13 +27,16 @@
 
               <% @vcenters.each do |each_vcenter|%>
               <li class=<%=each_vcenter.id== params[:id].to_i ? "active" : "none" %>>
+
                 <%= link_to  each_vcenter.name, selected_vcenter_path(each_vcenter), :remote=> true%>
               </li>
               <% end %>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
+    <div class='load-ajax'></div>
         <div class="dashboard">
+
           <%= render :partial=> "vcenter_detail" %>
         </div><!--/dashboard-->
       </div><!--/row-->
@@ -47,3 +50,36 @@
 // })
 
 </script>
+
+
+<script>
+$(function() {
+    $('.load-ajax').hide();
+    $(document).ajaxStart(function() {
+        $('.load-ajax').show();
+   });
+   $(document).ajaxStop(function() {
+        $('.load-ajax').hide();
+   });
+});
+</script>
+
+<style>
+.load-ajax {
+  /*float:right;*/
+  background-image:url(<%= asset_path 'ajax-loader.gif' %>);
+  width:450px;
+  height:90px;
+  background-position: center;
+  background-repeat: no-repeat;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    margin-left: -40px; /* half width of the spinner gif */
+    margin-top: -40px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:0000;
+    overflow: auto;
+   
+}
+</style>
