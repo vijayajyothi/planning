@@ -102,6 +102,10 @@ SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,wwwb-prod-web-vip-1
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,zimbra-prod-webproxy-vip,10.113.63.124,443,GREEN,ENABLED,zimbra-prod-webproxy-pool,GREEN,ROUND ROBIN,http,10.113.62.189,80,UP,ENABLED,
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,zimbra-prod-webproxy-vip,10.113.63.124,443,GREEN,ENABLED,zimbra-prod-webproxy-pool,GREEN,ROUND ROBIN,http,10.113.62.190,80,UP,ENABLED,
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,zimbraesna-vip,10.113.63.5,13777,GREEN,ENABLED,zimbraesna-pool,GREEN,ROUND ROBIN,tcp,10.113.62.153,13777,UP,ENABLED,
+SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,sc9-view-test-vip-http,10.113.63.107,80,GREEN,ENABLED,view-ss-ssl-pool,GREEN,ROUND ROBIN,https_443,10.113.63.101,443,UP,ENABLED,view-block-error-irule  view-ss-irule
+SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,sc9-view-test-vip-http,10.113.63.107,80,GREEN,ENABLED,view-ss-ssl-pool,GREEN,ROUND ROBIN,https_443,10.113.63.102,443,UP,ENABLED,view-block-error-irule  view-ss-irule
+SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,sc9-view-test-vip,10.113.63.107,443,GREEN,ENABLED,view-ss-ssl-pool,GREEN,ROUND ROBIN,https_443,10.113.63.101,443,UP,ENABLED,view-block-error-irule  view-ss-irule
+SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,sc9-view-test-vip,10.113.63.107,443,GREEN,ENABLED,view-ss-ssl-pool,GREEN,ROUND ROBIN,https_443,10.113.63.102,443,UP,ENABLED,view-block-error-irule  view-ss-irule
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,w-stage-ext-vip-SSL,10.113.54.21,443,GREEN,ENABLED,w-stage-pool-SSL,GREEN,ROUND ROBIN,tcp,10.113.54.23,443,UP,ENABLED,
 SC9,sc9-prod-stage-dmz-1,10.113.0.71,10.113.0.72,10.113.0.71,w-stage-ext-vip-SSL,10.113.54.21,443,GREEN,ENABLED,w-stage-pool-SSL,GREEN,ROUND ROBIN,tcp,10.113.54.24,443,UP,ENABLED,
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/archive-outbound-lb.vmware.com,10.113.208.58,25,GREEN,ENABLED,/Common/archive-outbound-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/tcp,10.113.208.28,25,UP,ENABLED,
@@ -309,6 +313,10 @@ SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/ceip-stage-
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/supplier-prod-vip,10.113.208.49,443,GREEN,ENABLED,/Common/supplier-prod-pool,GREEN,ROUND ROBIN,/Common/tcp,10.113.208.40,8000,UP,ENABLED,/Common/insert-X-Forwarded-Proto-https
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/pds-stage-jscape-vip-443,10.113.54.119,443,GREEN,ENABLED,/Common/sftp-stg-rs2-jscape-pool,GREEN,ROUND ROBIN,/Common/https,10.113.54.171,7443,UP,ENABLED,
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/pds-stage-jscape-vip-443,10.113.54.119,443,GREEN,ENABLED,/Common/sftp-stg-rs2-jscape-pool,GREEN,ROUND ROBIN,/Common/https,10.113.54.172,7443,UP,ENABLED,
+SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-vip,10.113.78.20,80,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.21,80,UP,ENABLED,/Common/my-int-www-http-to-https-redirect-RFC-129769  /Common/www-test40_now
+SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-vip,10.113.78.20,80,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.22,80,UP,ENABLED,/Common/my-int-www-http-to-https-redirect-RFC-129769  /Common/www-test40_now
+SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-vip,10.113.78.20,80,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.23,80,UP,ENABLED,/Common/my-int-www-http-to-https-redirect-RFC-129769  /Common/www-test40_now
+SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-vip,10.113.78.20,80,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.24,80,UP,ENABLED,/Common/my-int-www-http-to-https-redirect-RFC-129769  /Common/www-test40_now
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/esg-stage-ext-vip,10.113.70.47,9443,GREEN,ENABLED,/Common/esg-stage-ext-pool-9443,GREEN,ROUND ROBIN,/Common/tcp,10.113.70.45,9443,DOWN,DISABLED,/Common/iRule-esg-whitelist-mashery-stage
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/esg-stage-ext-vip,10.113.70.47,9443,GREEN,ENABLED,/Common/esg-stage-ext-pool-9443,GREEN,ROUND ROBIN,/Common/tcp,10.113.70.46,9443,DOWN,DISABLED,/Common/iRule-esg-whitelist-mashery-stage
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/esg-stage-ext-vip,10.113.70.47,9443,GREEN,ENABLED,/Common/esg-stage-ext-pool-9443,GREEN,ROUND ROBIN,/Common/tcp,10.113.70.48,9443,UP,ENABLED,/Common/iRule-esg-whitelist-mashery-stage
@@ -375,10 +383,6 @@ SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/portal-stag
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/portal-stage-ext-vip,10.113.70.120,80,GREEN,ENABLED,/Common/portal-stage-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-stage-monitor,10.113.70.22,80,UP,ENABLED,/Common/my-stg-www-http-to-https-redirect-OBSSO
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/portal-stage-ext-vip,10.113.70.120,80,GREEN,ENABLED,/Common/portal-stage-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-stage-monitor,10.113.70.23,80,UP,ENABLED,/Common/my-stg-www-http-to-https-redirect-OBSSO
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/portal-stage-ext-vip,10.113.70.120,80,GREEN,ENABLED,/Common/portal-stage-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-stage-monitor,10.113.70.24,80,UP,ENABLED,/Common/my-stg-www-http-to-https-redirect-OBSSO
-SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-vip,10.113.78.20,80,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.21,80,UP,ENABLED,/Common/my-int-www-http-to-https-redirect-RFC-129769
-SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-vip,10.113.78.20,80,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.22,80,UP,ENABLED,/Common/my-int-www-http-to-https-redirect-RFC-129769
-SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-vip,10.113.78.20,80,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.23,80,UP,ENABLED,/Common/my-int-www-http-to-https-redirect-RFC-129769
-SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-vip,10.113.78.20,80,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.24,80,UP,ENABLED,/Common/my-int-www-http-to-https-redirect-RFC-129769
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-ssl-vip,10.113.78.20,443,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.21,80,UP,ENABLED,/Common/iRule-Cookie-Secure-OBSSO-prod-RFC-129769  /Common/insert-X-Forwarded-Proto-https
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-ssl-vip,10.113.78.20,443,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.22,80,UP,ENABLED,/Common/iRule-Cookie-Secure-OBSSO-prod-RFC-129769  /Common/insert-X-Forwarded-Proto-https
 SC9,sc9-prod-stage-dmz-2,10.113.0.82,10.113.0.83,10.113.0.82,/Common/www-int-ssl-vip,10.113.78.20,443,GREEN,ENABLED,/Common/www-pool,GREEN,LEAST CONNECTION_MEMBER,/Common/www-http,10.113.78.23,80,UP,ENABLED,/Common/iRule-Cookie-Secure-OBSSO-prod-RFC-129769  /Common/insert-X-Forwarded-Proto-https
@@ -942,12 +946,12 @@ SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,prodrmq-new-vip.
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,idmdatautility-test.vmware.com,10.113.163.148,80,GREEN,ENABLED,idmdatautility-test-pool,GREEN,ROUND ROBIN,tcp,10.113.162.73,8001,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,idmdatautility-test.vmware.com,10.113.163.148,80,GREEN,ENABLED,idmdatautility-test-pool,GREEN,ROUND ROBIN,tcp,10.113.162.188,8001,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,knova-prd2-kss-vip,10.113.163.107,8080,GREEN,ENABLED,knova-prd2-kss-pool,GREEN,PREDICTIVE MEMBER,knova-prod-kss-kcc-mon,10.113.163.96,8080,UP,ENABLED,
-SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,knova-prd2-kss-vip,10.113.163.107,8080,GREEN,ENABLED,knova-prd2-kss-pool,GREEN,PREDICTIVE MEMBER,knova-prod-kss-kcc-mon,10.113.163.97,8080,UP,ENABLED,
+SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,knova-prd2-kss-vip,10.113.163.107,8080,GREEN,ENABLED,knova-prd2-kss-pool,GREEN,PREDICTIVE MEMBER,knova-prod-kss-kcc-mon,10.113.163.97,8080,DOWN,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,knova-prd2-kss-vip,10.113.163.107,8080,GREEN,ENABLED,knova-prd2-kss-pool,GREEN,PREDICTIVE MEMBER,knova-prod-kss-kcc-mon,10.113.163.98,8080,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,knova-prd2-kss-vip,10.113.163.107,8080,GREEN,ENABLED,knova-prd2-kss-pool,GREEN,PREDICTIVE MEMBER,knova-prod-kss-kcc-mon,10.113.163.99,8080,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,knova-prd2-kss-vip,10.113.163.107,8080,GREEN,ENABLED,knova-prd2-kss-pool,GREEN,PREDICTIVE MEMBER,knova-prod-kss-kcc-mon,10.113.163.100,8080,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,knova-prd2-kss-vip,10.113.163.107,8080,GREEN,ENABLED,knova-prd2-kss-pool,GREEN,PREDICTIVE MEMBER,knova-prod-kss-kcc-mon,10.113.163.101,8080,UP,ENABLED,
-SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,knova-prd2-kss-vip,10.113.163.107,8080,GREEN,ENABLED,knova-prd2-kss-pool,GREEN,PREDICTIVE MEMBER,knova-prod-kss-kcc-mon,10.113.163.102,8080,DOWN,ENABLED,
+SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,knova-prd2-kss-vip,10.113.163.107,8080,GREEN,ENABLED,knova-prd2-kss-pool,GREEN,PREDICTIVE MEMBER,knova-prod-kss-kcc-mon,10.113.163.102,8080,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,knova-prd2-kss-vip,10.113.163.107,8080,GREEN,ENABLED,knova-prd2-kss-pool,GREEN,PREDICTIVE MEMBER,knova-prod-kss-kcc-mon,10.113.163.103,8080,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,adautofs-vip-389,10.113.60.198,389,GREEN,ENABLED,sc9-ad-389-pool,GREEN,ROUND ROBIN,tcp,10.113.60.4,389,UP,ENABLED,
 SC9,sc9-tier2-prod-int-1,10.113.56.71,10.113.56.72,10.113.60.13,adautofs-vip-389,10.113.60.198,389,GREEN,ENABLED,sc9-ad-389-pool,GREEN,ROUND ROBIN,tcp,10.113.60.14,389,UP,ENABLED,
@@ -968,7 +972,7 @@ SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,OWA-autodiscovery-v
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,OWA-autodiscovery-vip,10.113.190.55,443,GREEN,ENABLED,SC09-OWA-pool,GREEN,ROUND ROBIN,http,10.113.190.28,80,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-prod-websvc3-vip,10.113.76.47,8381,GREEN,ENABLED,s2-prod-websvc3-pool,GREEN,ROUND ROBIN,http,10.113.76.165,8381,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-prod-websvc3-vip,10.113.76.47,8381,GREEN,ENABLED,s2-prod-websvc3-pool,GREEN,ROUND ROBIN,http,10.113.76.166,8381,UP,ENABLED,
-SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-prod-lr4-vip,10.113.12.149,8001,GREEN,ENABLED,s2-prod-lr4-pool,GREEN,ROUND ROBIN,s2-prod-lr-monitor,10.113.12.88,8001,DOWN,ENABLED,
+SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-prod-lr4-vip,10.113.12.149,8001,GREEN,ENABLED,s2-prod-lr4-pool,GREEN,ROUND ROBIN,s2-prod-lr-monitor,10.113.12.88,8001,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-prod-lr4-vip,10.113.12.149,8001,GREEN,ENABLED,s2-prod-lr4-pool,GREEN,ROUND ROBIN,s2-prod-lr-monitor,10.113.12.89,8001,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,websearch-stage-vip-b,10.113.53.175,8080,GREEN,ENABLED,websearch-stage-pool-b,GREEN,PREDICTIVE MEMBER,websearch-stage-app,10.113.53.173,8080,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,websearch-stage-vip-b,10.113.53.175,8080,GREEN,ENABLED,websearch-stage-pool-b,GREEN,PREDICTIVE MEMBER,websearch-stage-app,10.113.53.174,8080,DOWN,ENABLED,
@@ -1348,7 +1352,7 @@ SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-prod-lrpi-vip,10
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lr1-vip,10.113.14.84,8001,GREEN,ENABLED,s2-stage-lr1-pool,GREEN,ROUND ROBIN,s2-stage-lr-monitor,10.113.14.63,8001,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lr1-vip,10.113.14.84,8001,GREEN,ENABLED,s2-stage-lr1-pool,GREEN,ROUND ROBIN,s2-stage-lr-monitor,10.113.14.63,8011,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lr1-vip,10.113.14.84,8001,GREEN,ENABLED,s2-stage-lr1-pool,GREEN,ROUND ROBIN,s2-stage-lr-monitor,10.113.14.64,8001,UP,ENABLED,
-SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lr1-vip,10.113.14.84,8001,GREEN,ENABLED,s2-stage-lr1-pool,GREEN,ROUND ROBIN,s2-stage-lr-monitor,10.113.14.64,8011,DOWN,ENABLED,
+SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lr1-vip,10.113.14.84,8001,GREEN,ENABLED,s2-stage-lr1-pool,GREEN,ROUND ROBIN,s2-stage-lr-monitor,10.113.14.64,8011,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lr1-vip,10.113.14.84,8001,GREEN,ENABLED,s2-stage-lr1-pool,GREEN,ROUND ROBIN,s2-stage-lr-monitor,10.113.14.67,8001,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lr1-vip,10.113.14.84,8001,GREEN,ENABLED,s2-stage-lr1-pool,GREEN,ROUND ROBIN,s2-stage-lr-monitor,10.113.14.67,8011,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lr1-vip,10.113.14.84,8001,GREEN,ENABLED,s2-stage-lr1-pool,GREEN,ROUND ROBIN,s2-stage-lr-monitor,10.113.14.82,8001,UP,ENABLED,
@@ -1423,7 +1427,7 @@ SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,stagermq-vip,10.113
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,streaming-prod,10.113.163.252,80,GREEN,ENABLED,streaming-prod-pool,GREEN,ROUND ROBIN,tcp,10.113.164.197,80,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,streaming-prod,10.113.163.252,80,GREEN,ENABLED,streaming-prod-pool,GREEN,ROUND ROBIN,tcp,10.113.164.198,80,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lrpi-vip.vmware.com,10.113.14.170,443,GREEN,ENABLED,s2-stage-lrpi-pool,GREEN,ROUND ROBIN,s2-stage-lri-monitor,10.113.14.166,8001,DOWN,DISABLED,
-SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lrpi-vip.vmware.com,10.113.14.170,443,GREEN,ENABLED,s2-stage-lrpi-pool,GREEN,ROUND ROBIN,s2-stage-lri-monitor,10.113.14.166,8002,DOWN,ENABLED,
+SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lrpi-vip.vmware.com,10.113.14.170,443,GREEN,ENABLED,s2-stage-lrpi-pool,GREEN,ROUND ROBIN,s2-stage-lri-monitor,10.113.14.166,8002,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lrpi-vip.vmware.com,10.113.14.170,443,GREEN,ENABLED,s2-stage-lrpi-pool,GREEN,ROUND ROBIN,s2-stage-lri-monitor,10.113.14.167,8001,DOWN,DISABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,s2-stage-lrpi-vip.vmware.com,10.113.14.170,443,GREEN,ENABLED,s2-stage-lrpi-pool,GREEN,ROUND ROBIN,s2-stage-lri-monitor,10.113.14.167,8002,UP,ENABLED,
 SC9,sc9-tier2-prod-int-2,10.113.0.81,10.113.0.84,10.113.0.81,EPM-PROD-FDM,10.113.163.205,443,GREEN,ENABLED,EPM-PROD-FDM-pool,GREEN,ROUND ROBIN,tcp,10.113.163.78,80,UP,ENABLED,insert-X-Forwarded-Proto-https
@@ -2684,7 +2688,7 @@ WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/lttapim-8445,10.1
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/lttapim-8445,10.128.38.73,443,GREEN,ENABLED,/Common/ltapim-pool-8445,GREEN,ROUND ROBIN,/Common/tcp,10.128.38.72,8445,UP,ENABLED,
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/workspace-stg.vmware.com-80,10.128.38.63,80,GREEN,ENABLED,/Common/workspace-stg-pool,GREEN,ROUND ROBIN,/Common/tcp,10.128.80.17,443,UP,ENABLED,/Common/http-to-https-redirect
 WDC,wdc-lt-dmz-1,10.128.1.11,10.128.1.12,10.128.156.13,/Common/workspace-stg.vmware.com-80,10.128.38.63,80,GREEN,ENABLED,/Common/workspace-stg-pool,GREEN,ROUND ROBIN,/Common/tcp,10.128.80.18,443,UP,ENABLED,/Common/http-to-https-redirect
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-pl-vip,10.128.37.152,8011,GREEN,ENABLED,visl-lt-pl-pool,GREEN,ROUND ROBIN,http,10.128.37.174,8011,DOWN,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-pl-vip,10.128.37.152,8011,GREEN,ENABLED,visl-lt-pl-pool,GREEN,ROUND ROBIN,http,10.128.37.174,8011,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-pl-vip,10.128.37.152,8011,GREEN,ENABLED,visl-lt-pl-pool,GREEN,ROUND ROBIN,http,10.128.37.175,8011,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-entitlement.vmware.com_ssl,10.128.10.24,443,GREEN,ENABLED,obiee-prd1-entitlement-pool,GREEN,ROUND ROBIN,tcp,10.128.10.226,9704,DOWN,ENABLED,append_URI_iRule
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-entitlement.vmware.com_ssl,10.128.10.24,443,GREEN,ENABLED,obiee-prd1-entitlement-pool,GREEN,ROUND ROBIN,tcp,10.128.10.228,9704,UP,ENABLED,append_URI_iRule
@@ -2702,12 +2706,12 @@ WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,wwwa-lt-vip,10.128.10.153,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,wwwa-lt-vip,10.128.10.153,80,GREEN,ENABLED,wwwa-lt-pool,GREEN,LEAST CONNECTION_MEMBER,tcp,10.128.10.219,80,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-int-vip-443,10.128.36.106,443,GREEN,ENABLED,esg-lt-int-pool-443,GREEN,ROUND ROBIN,tcp,10.128.11.93,443,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-int-vip-443,10.128.36.106,443,GREEN,ENABLED,esg-lt-int-pool-443,GREEN,ROUND ROBIN,tcp,10.128.11.94,443,UP,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-int-vip-8443,10.128.36.106,8443,GREEN,ENABLED,esg-lt-int-pool-8443,GREEN,ROUND ROBIN,esg_custom_monitor,10.128.11.93,8443,UP,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-int-vip-8443,10.128.36.106,8443,GREEN,ENABLED,esg-lt-int-pool-8443,GREEN,ROUND ROBIN,esg_custom_monitor,10.128.11.94,8443,DOWN,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-int-vip-8443,10.128.36.106,8443,GREEN,ENABLED,esg-lt-int-pool-8443,GREEN,ROUND ROBIN,esg_custom_monitor,10.128.11.93,8443,DOWN,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-int-vip-8443,10.128.36.106,8443,GREEN,ENABLED,esg-lt-int-pool-8443,GREEN,ROUND ROBIN,esg_custom_monitor,10.128.11.94,8443,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-siml-vip,10.128.37.77,8011,GREEN,ENABLED,visl-lt-siml-pool,GREEN,ROUND ROBIN,http_custom,10.128.11.228,8011,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-siml-vip,10.128.37.77,8011,GREEN,ENABLED,visl-lt-siml-pool,GREEN,ROUND ROBIN,http_custom,10.128.11.229,8011,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-siml-vip,10.128.37.77,8011,GREEN,ENABLED,visl-lt-siml-pool,GREEN,ROUND ROBIN,http_custom,10.128.11.238,8011,DOWN,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-siml-vip,10.128.37.77,8011,GREEN,ENABLED,visl-lt-siml-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.174,8011,DOWN,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-siml-vip,10.128.37.77,8011,GREEN,ENABLED,visl-lt-siml-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.174,8011,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-siml-vip,10.128.37.77,8011,GREEN,ENABLED,visl-lt-siml-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.175,8011,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-solrs-vip-1.vmware.com,10.128.36.214,80,GREEN,ENABLED,s2-lt-solrs-pool-1,GREEN,ROUND ROBIN,s2-lt-solr-monitor,10.128.11.64,8080,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-solrs-vip-1.vmware.com,10.128.36.214,80,GREEN,ENABLED,s2-lt-solrs-pool-1,GREEN,ROUND ROBIN,s2-lt-solr-monitor,10.128.11.65,8080,UP,ENABLED,
@@ -2716,7 +2720,7 @@ WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip-ssl,10.1
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip-ssl,10.128.36.142,443,GREEN,ENABLED,oracleapps-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.104,8000,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip-ssl,10.128.36.142,443,GREEN,ENABLED,oracleapps-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.105,8000,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip-ssl,10.128.36.142,443,GREEN,ENABLED,oracleapps-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.106,8000,UP,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip-ssl,10.128.36.142,443,GREEN,ENABLED,oracleapps-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.107,8000,DOWN,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip-ssl,10.128.36.142,443,GREEN,ENABLED,oracleapps-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.107,8000,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,entitlementlt-vip-9704,10.128.37.171,9704,GREEN,ENABLED,entitlementlt-pool,GREEN,ROUND ROBIN,tcp,10.128.37.214,9704,DOWN,ENABLED,append_URI_iRule
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,entitlementlt-vip-9704,10.128.37.171,9704,GREEN,ENABLED,entitlementlt-pool,GREEN,ROUND ROBIN,tcp,10.128.37.215,9704,UP,ENABLED,append_URI_iRule
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,entitlementlt-vip-9704,10.128.37.171,9704,GREEN,ENABLED,entitlementlt-pool,GREEN,ROUND ROBIN,tcp,10.128.37.216,9704,DOWN,ENABLED,append_URI_iRule
@@ -2772,7 +2776,7 @@ WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,ltidm-vip,10.128.36.144,77
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,ltosb-vip,10.128.36.198,8011,GREEN,ENABLED,ltosb-pool,GREEN,ROUND ROBIN,http_custom,10.128.11.71,8011,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,ltosb-vip,10.128.36.198,8011,GREEN,ENABLED,ltosb-pool,GREEN,ROUND ROBIN,http_custom,10.128.11.72,8011,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,ltosb-vip,10.128.36.198,8011,GREEN,ENABLED,ltosb-pool,GREEN,ROUND ROBIN,http_custom,10.128.11.73,8011,UP,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,ltosb-vip,10.128.36.198,8011,GREEN,ENABLED,ltosb-pool,GREEN,ROUND ROBIN,http_custom,10.128.11.74,8011,UP,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,ltosb-vip,10.128.36.198,8011,GREEN,ENABLED,ltosb-pool,GREEN,ROUND ROBIN,http_custom,10.128.11.74,8011,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,ltosb-vip,10.128.36.198,8011,GREEN,ENABLED,ltosb-pool,GREEN,ROUND ROBIN,http_custom,10.128.36.147,8011,DOWN,DISABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,ltosb-vip,10.128.36.198,8011,GREEN,ENABLED,ltosb-pool,GREEN,ROUND ROBIN,http_custom,10.128.36.196,8011,DOWN,DISABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,ltosb-vip,10.128.36.198,8011,GREEN,ENABLED,ltosb-pool,GREEN,ROUND ROBIN,http_custom,10.128.36.197,8011,DOWN,DISABLED,
@@ -2803,7 +2807,7 @@ WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip,10.128.3
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip,10.128.36.142,80,GREEN,ENABLED,oracleapps-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.104,8000,UP,ENABLED,http-to-https-redirect
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip,10.128.36.142,80,GREEN,ENABLED,oracleapps-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.105,8000,UP,ENABLED,http-to-https-redirect
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip,10.128.36.142,80,GREEN,ENABLED,oracleapps-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.106,8000,UP,ENABLED,http-to-https-redirect
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip,10.128.36.142,80,GREEN,ENABLED,oracleapps-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.107,8000,DOWN,ENABLED,http-to-https-redirect
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracleapps-lt-vip,10.128.36.142,80,GREEN,ENABLED,oracleapps-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.107,8000,UP,ENABLED,http-to-https-redirect
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracledisco-lt-vip,10.128.36.143,80,GREEN,ENABLED,oracledisco-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.36.97,7778,DOWN,ENABLED,http-to-https-redirect
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracledisco-lt-vip,10.128.36.143,80,GREEN,ENABLED,oracledisco-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.36.98,7778,DOWN,ENABLED,http-to-https-redirect
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracledisco-lt-vip,10.128.36.143,80,GREEN,ENABLED,oracledisco-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.36.99,7778,DOWN,ENABLED,http-to-https-redirect
@@ -2967,7 +2971,7 @@ WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,lt-oid-vip,10.128.36.86,38
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,lt-oid-vip,10.128.36.86,389,GREEN,ENABLED,lt-oid-pool,GREEN,ROUND ROBIN,tcp,10.128.11.44,389,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-websvc4-vip_http,10.128.37.80,8481,GREEN,ENABLED,s2-lt-websvc4-pool,GREEN,ROUND ROBIN,http_custom,10.128.10.157,8481,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-websvc4-vip_http,10.128.37.80,8481,GREEN,ENABLED,s2-lt-websvc4-pool,GREEN,ROUND ROBIN,http_custom,10.128.10.158,8481,UP,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,bipub-lt-vip,10.128.37.172,443,GREEN,ENABLED,bipub-lt-pool,GREEN,ROUND ROBIN,tcp,10.128.37.165,9704,UP,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,bipub-lt-vip,10.128.37.172,443,RED,ENABLED,bipub-lt-pool,RED,ROUND ROBIN,tcp,10.128.37.165,9704,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,bi-lt-rtr-vip,10.128.37.160,80,GREEN,ENABLED,bi-lt-rtr-pool,GREEN,ROUND ROBIN,bi-lt-rtr-monitor,10.128.37.158,9704,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,bi-lt-rtr-vip,10.128.37.160,80,GREEN,ENABLED,bi-lt-rtr-pool,GREEN,ROUND ROBIN,bi-lt-rtr-monitor,10.128.37.161,9704,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,bi-lt-rtr-vip,10.128.37.160,80,GREEN,ENABLED,bi-lt-rtr-pool,GREEN,ROUND ROBIN,bi-lt-rtr-monitor,10.128.37.162,9704,UP,ENABLED,
@@ -2979,7 +2983,7 @@ WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-hhq-vip,10.128.37.15
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-hhq-vip,10.128.37.156,7080,GREEN,ENABLED,s2-lt-hhq-pool,GREEN,ROUND ROBIN,s2-lt-hhq-monitor,10.128.37.38,7080,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr5-vip.vmware.com,10.128.37.166,8011,GREEN,ENABLED,s2-lt-lr5-pool,GREEN,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.91,8011,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr5-vip.vmware.com,10.128.37.166,8011,GREEN,ENABLED,s2-lt-lr5-pool,GREEN,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.92,8011,UP,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-websvc5-pool,10.128.37.44,8581,GREEN,ENABLED,s2-lt-websvc5-pool,GREEN,ROUND ROBIN,http_custom,10.128.10.157,8581,UP,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-websvc5-pool,10.128.37.44,8581,GREEN,ENABLED,s2-lt-websvc5-pool,GREEN,ROUND ROBIN,http_custom,10.128.10.157,8581,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-websvc5-pool,10.128.37.44,8581,GREEN,ENABLED,s2-lt-websvc5-pool,GREEN,ROUND ROBIN,http_custom,10.128.10.158,8581,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr4-vip.vmware.com,10.128.37.173,8001,GREEN,ENABLED,s2-lt-lr4-pool,GREEN,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.91,8001,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lr4-vip.vmware.com,10.128.37.173,8001,GREEN,ENABLED,s2-lt-lr4-pool,GREEN,ROUND ROBIN,s2-lt-lr-monitor,10.128.10.92,8001,UP,ENABLED,
@@ -3000,12 +3004,14 @@ WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracledisco-lt-vip-ssl,10.
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracledisco-lt-vip-ssl,10.128.36.143,443,GREEN,ENABLED,oracledisco-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.67,7777,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracledisco-lt-vip-ssl,10.128.36.143,443,GREEN,ENABLED,oracledisco-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.68,7777,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,oracledisco-lt-vip-ssl,10.128.36.143,443,GREEN,ENABLED,oracledisco-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.69,7777,UP,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-hightouch-vip,10.128.37.52,80,GREEN,ENABLED,s2-lt-hightouch-vip-pool,GREEN,ROUND ROBIN,tcp,10.128.10.144,8080,UP,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-hightouch-vip,10.128.37.52,80,GREEN,ENABLED,s2-lt-hightouch-vip-pool,GREEN,ROUND ROBIN,tcp,10.128.10.145,8080,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,web-lt-vip,10.128.11.76,80,GREEN,ENABLED,web-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.10.150,80,UP,ENABLED,my-lt-www-http-to-https-redirect-OBSSO
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,web-lt-vip,10.128.11.76,80,GREEN,ENABLED,web-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.10.151,80,UP,ENABLED,my-lt-www-http-to-https-redirect-OBSSO
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,web-lt-vip,10.128.11.76,80,GREEN,ENABLED,web-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.10.152,80,UP,ENABLED,my-lt-www-http-to-https-redirect-OBSSO
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,web-lt-vip,10.128.11.76,80,GREEN,ENABLED,web-lt-pool,GREEN,ROUND ROBIN,http_custom,10.128.11.215,80,UP,ENABLED,my-lt-www-http-to-https-redirect-OBSSO
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-ml-vip,10.128.37.150,8001,RED,ENABLED,visl-lt-ml-pool,RED,ROUND ROBIN,http,10.128.37.174,8001,DOWN,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-ml-vip,10.128.37.150,8001,RED,ENABLED,visl-lt-ml-pool,RED,ROUND ROBIN,http,10.128.37.175,8001,DOWN,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-ml-vip,10.128.37.150,8001,GREEN,ENABLED,visl-lt-ml-pool,GREEN,ROUND ROBIN,http,10.128.37.174,8001,UP,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,visl-lt-ml-vip,10.128.37.150,8001,GREEN,ENABLED,visl-lt-ml-pool,GREEN,ROUND ROBIN,http,10.128.37.175,8001,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-ebspdhsso-ag-vip,10.128.37.235,443,RED,ENABLED,s2-lt-ebspdhsso-ag-pol,RED,ROUND ROBIN,tcp,10.128.37.73,6443,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-ebspdhsso-ag-vip,10.128.37.235,443,RED,ENABLED,s2-lt-ebspdhsso-ag-pol,RED,ROUND ROBIN,tcp,10.128.37.74,6443,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,py-lt-vswapub-vip,10.128.37.108,80,RED,ENABLED,py-lt-vswapub-vip-pool,RED,ROUND ROBIN,http-8080,10.128.37.47,8080,DOWN,ENABLED,_sys_https_redirect
@@ -3029,18 +3035,18 @@ WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-entitlement.vmw
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-entitlement.vmware.com,10.128.10.24,80,GREEN,ENABLED,obiee-prd1-entitlement-pool,GREEN,ROUND ROBIN,tcp,10.128.10.228,9704,UP,ENABLED,append_URI_iRule
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-entitlement.vmware.com,10.128.10.24,80,GREEN,ENABLED,obiee-prd1-entitlement-pool,GREEN,ROUND ROBIN,tcp,10.128.10.229,9704,DOWN,ENABLED,append_URI_iRule
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-entitlement.vmware.com,10.128.10.24,80,GREEN,ENABLED,obiee-prd1-entitlement-pool,GREEN,ROUND ROBIN,tcp,10.128.10.232,9704,DOWN,ENABLED,append_URI_iRule
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,web-lt-ints-vip,10.128.37.211,80,GREEN,ENABLED,web-lt-ints-pool-443,GREEN,ROUND ROBIN,tcp,10.128.37.190,443,UP,ENABLED,http-to-https-redirect
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,web-lt-ints-vip,10.128.37.211,80,GREEN,ENABLED,web-lt-ints-pool-443,GREEN,ROUND ROBIN,tcp,10.128.37.191,443,UP,ENABLED,http-to-https-redirect
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,web-lt-ints-vip,10.128.37.211,80,GREEN,DISABLED,web-lt-ints-pool-443,GREEN,ROUND ROBIN,tcp,10.128.37.190,443,UP,ENABLED,http-to-https-redirect
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,web-lt-ints-vip,10.128.37.211,80,GREEN,DISABLED,web-lt-ints-pool-443,GREEN,ROUND ROBIN,tcp,10.128.37.191,443,UP,ENABLED,http-to-https-redirect
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-bookings-vip.vmware.com,10.128.10.23,80,RED,ENABLED,obiee-prd1-bookings-pool,RED,ROUND ROBIN,tcp,10.128.10.224,9704,DOWN,ENABLED,append_URI_iRule
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,obiee-prd1-bookings-vip.vmware.com,10.128.10.23,80,RED,ENABLED,obiee-prd1-bookings-pool,RED,ROUND ROBIN,tcp,10.128.10.230,9704,DOWN,ENABLED,append_URI_iRule
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-solrs-vip-2.vmware.com,10.128.36.227,80,GREEN,ENABLED,s2-lt-solrs-pool-2,GREEN,ROUND ROBIN,s2-lt-solr-monitor,10.128.11.66,8080,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-solrs-vip-2.vmware.com,10.128.36.227,80,GREEN,ENABLED,s2-lt-solrs-pool-2,GREEN,ROUND ROBIN,s2-lt-solr-monitor,10.128.11.67,8080,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lrpis-vip.vmware.com,10.128.37.210,8002,GREEN,ENABLED,s2-lt-lrpis-pool,GREEN,ROUND ROBIN,s2-lt-lrpis-monitor,10.128.37.91,8002,UP,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lrpis-vip.vmware.com,10.128.37.210,8002,GREEN,ENABLED,s2-lt-lrpis-pool,GREEN,ROUND ROBIN,s2-lt-lrpis-monitor,10.128.37.134,8002,DOWN,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-lrpis-vip.vmware.com,10.128.37.210,8002,GREEN,ENABLED,s2-lt-lrpis-pool,GREEN,ROUND ROBIN,s2-lt-lrpis-monitor,10.128.37.134,8002,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,web-lt-ints-vip-443,10.128.37.211,443,GREEN,ENABLED,web-lt-ints-pool-443,GREEN,ROUND ROBIN,tcp,10.128.37.190,443,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,web-lt-ints-vip-443,10.128.37.211,443,GREEN,ENABLED,web-lt-ints-pool-443,GREEN,ROUND ROBIN,tcp,10.128.37.191,443,UP,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,psb-lt-ml-vip,10.128.37.179,8001,RED,ENABLED,psb-lt-ml-pool,RED,ROUND ROBIN,http_custom,10.128.37.174,8001,DOWN,ENABLED,
-WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,psb-lt-ml-vip,10.128.37.179,8001,RED,ENABLED,psb-lt-ml-pool,RED,ROUND ROBIN,http_custom,10.128.37.175,8001,DOWN,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,psb-lt-ml-vip,10.128.37.179,8001,GREEN,ENABLED,psb-lt-ml-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.174,8001,UP,ENABLED,
+WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,psb-lt-ml-vip,10.128.37.179,8001,GREEN,ENABLED,psb-lt-ml-pool,GREEN,ROUND ROBIN,http_custom,10.128.37.175,8001,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-tco-vip,10.128.37.186,8001,GREEN,ENABLED,s2-lt-tco-pool,GREEN,ROUND ROBIN,http,10.128.37.183,8001,UP,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,s2-lt-tco-vip,10.128.37.186,8001,GREEN,ENABLED,s2-lt-tco-pool,GREEN,ROUND ROBIN,http,10.128.37.184,8001,DOWN,ENABLED,
 WDC,wdc-lt-int-1,10.128.2.11,10.128.2.12,10.128.34.13,esg-lt-int-vip-80,10.128.36.106,80,GREEN,ENABLED,esg-lt-int-vip.vmware.com-80,GREEN,ROUND ROBIN,http,10.128.11.93,80,UP,ENABLED,
@@ -3649,20 +3655,26 @@ vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,bi-fbi-lt-vip,10.119.6
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,bi-fbi-lt-vip,10.119.60.35,80,GREEN,ENABLED,bi-fbi-lt-pool,GREEN,ROUND ROBIN,http,10.119.33.11,80,UP,ENABLED,
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,bi-fbi-prd-vip,10.119.60.31,80,GREEN,ENABLED,bi-fbi-prd-pool,GREEN,ROUND ROBIN,tcp,10.119.17.22,80,UP,ENABLED,
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,bi-fbi-prd-vip,10.119.60.31,80,GREEN,ENABLED,bi-fbi-prd-pool,GREEN,ROUND ROBIN,tcp,10.119.17.26,80,UP,ENABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-app-vip,10.119.17.120,80,GREEN,ENABLED,blogs-prod-app-pool,GREEN,ROUND ROBIN,tcp,10.119.17.63,80,UP,ENABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-app-vip,10.119.17.120,80,GREEN,ENABLED,blogs-prod-app-pool,GREEN,ROUND ROBIN,tcp,10.119.17.64,80,UP,ENABLED,
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-app-vip,10.119.17.120,80,GREEN,ENABLED,blogs-prod-app-pool,GREEN,ROUND ROBIN,tcp,10.119.17.121,80,UP,ENABLED,
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-app-vip,10.119.17.120,80,GREEN,ENABLED,blogs-prod-app-pool,GREEN,ROUND ROBIN,tcp,10.119.17.122,80,UP,ENABLED,
-vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-app-vip-SSL,10.119.17.120,443,GREEN,ENABLED,blogs-prod-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.17.64,80,UP,ENABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-app-vip-SSL,10.119.17.120,443,GREEN,ENABLED,blogs-prod-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.17.64,80,DOWN,ENABLED,
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-app-vip-SSL,10.119.17.120,443,GREEN,ENABLED,blogs-prod-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.17.68,80,UP,ENABLED,
-vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-ssl-vip,10.119.60.54,443,GREEN,ENABLED,blogs-prod-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.17.64,80,UP,ENABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-ssl-vip,10.119.60.54,443,GREEN,ENABLED,blogs-prod-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.17.64,80,DOWN,ENABLED,
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-ssl-vip,10.119.60.54,443,GREEN,ENABLED,blogs-prod-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.17.68,80,UP,ENABLED,
-vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-vip,10.119.60.54,80,GREEN,ENABLED,blogs-prod-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.17.64,80,UP,ENABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-vip,10.119.60.54,80,GREEN,ENABLED,blogs-prod-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.17.64,80,DOWN,ENABLED,
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-prod-vip,10.119.60.54,80,GREEN,ENABLED,blogs-prod-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.17.68,80,UP,ENABLED,
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-qai-ssl-vip,10.119.41.67,443,RED,ENABLED,blogs-qai-pool,RED,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.41.66,80,DOWN,ENABLED,
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-qai-vip,10.119.41.67,80,RED,DISABLED,blogs-qai-pool,RED,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.41.66,80,DOWN,ENABLED,
-vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-ssl-vip,10.119.33.31,443,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.38,80,UP,ENABLED,
-vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-ssl-vip,10.119.33.31,443,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.39,80,DOWN,ENABLED,
-vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-vip,10.119.33.31,80,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.38,80,UP,ENABLED,
-vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-vip,10.119.33.31,80,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.39,80,DOWN,ENABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-ssl-vip,10.119.33.31,443,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.38,80,UP,DISABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-ssl-vip,10.119.33.31,443,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.39,80,UP,DISABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-ssl-vip,10.119.33.31,443,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.51,80,UP,ENABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-ssl-vip,10.119.33.31,443,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.52,80,UP,ENABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-vip,10.119.33.31,80,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.38,80,UP,DISABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-vip,10.119.33.31,80,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.39,80,UP,DISABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-vip,10.119.33.31,80,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.51,80,UP,ENABLED,
+vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,blogs-stage-vip,10.119.33.31,80,GREEN,ENABLED,blogs-stage-pool,GREEN,PREDICTIVE MEMBER,blogs-qai-monitor,10.119.33.52,80,UP,ENABLED,
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,buflash11g-vip,10.119.60.62,80,RED,ENABLED,buflash11g-pool,RED,ROUND ROBIN,webflashprod,10.119.17.66,9704,DOWN,ENABLED,append_URI_iRule
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,buflash11g-vip,10.119.60.62,80,RED,ENABLED,buflash11g-pool,RED,ROUND ROBIN,webflashprod,10.119.17.67,9704,DOWN,ENABLED,append_URI_iRule
 vFred,sc9-vfred-all-1,10.119.4.11,10.119.4.12,10.119.4.13,buflashuat11g-vip,10.119.60.76,80,GREEN,ENABLED,buflashuat11g-pool,GREEN,ROUND ROBIN,webflashuat,10.119.41.95,9704,UP,ENABLED,append_URI_iRule
