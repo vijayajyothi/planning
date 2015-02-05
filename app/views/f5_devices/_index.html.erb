@@ -1,4 +1,4 @@
-          <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
+<% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
 
 <div class="index-container">
 
@@ -32,8 +32,8 @@
           <td colspan=2>
             <% if @users.include? @current_user  %>
 
-          <%= link_to 'Destroy', f5_device, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%>
-          <% end %>
+            <%= link_to 'Destroy', f5_device, method: :delete, data: { confirm: 'Are you sure?' } ,:class => 'btn btn-mini btn-danger delete-row', :remote=>true%>
+            <% end %>
           </td>
         </tr>
         <% else %>
@@ -48,27 +48,30 @@
           <% end %>
           <td>  <%= image_tag "#{image}", :style=> "margin:-4px 3px 0 0;width:21px;height:21px;"%><%= f5_device.status %></td>
           <td><%= link_to "https://#{f5_device.ip}","https://#{f5_device.ip}", target: "_blank"%></td>
-          <td><%= link_to "Show", f5_device, :class => 'btn btn-mini btn-info', :remote=> true%></td>
+          <div class="button"> 
+            <td><%= link_to "Show", f5_device, :class => 'btn btn-mini btn-info', :remote=> true%></td>
+          </div>
 
- 
 
-<% comment do %>
+          <% comment do %>
           <% if f5_device.status == "active"%>
-            <% @f5cluster= F5Cluster.where("primary_unit_ip='#{f5_device.ip}' OR secondary_unit_ip= '#{f5_device.ip}'").first %>
-            <% if @f5cluster.present?%>
-              <% @f5cluster.active=f5_device.ip %>
-              <% @f5cluster.save %>
-              <td><%= link_to 'Show',  @f5cluster ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
-              <%else%>
-              <td>F5 Cluster does't exist</td>
-            <% end %>  
-             <%else%>
-              <td>Stand By</td>        
+          <% @f5cluster= F5Cluster.where("primary_unit_ip='#{f5_device.ip}' OR secondary_unit_ip= '#{f5_device.ip}'").first %>
+          <% if @f5cluster.present?%>
+          <% @f5cluster.active=f5_device.ip %>
+          <% @f5cluster.save %>
+          <td><%= link_to 'Show',  @f5cluster ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
+          <%else%>
+          <td>F5 Cluster does't exist</td>
+          <% end %>  
+          <%else%>
+          <td>Stand By</td>        
           <% end %>          
         </tr>
-          <% end %>          
+        <% end %>          
         <% end %>
         <% end %>
+        <div class='load-ajax'></div>
+
       </table>
     </div>
     <div class="digg_pagination">
@@ -76,3 +79,37 @@
     </div>  
 
   </div>
+
+
+
+  <script>
+  $(function() {
+    $('.load-ajax').hide();
+    $(document).ajaxStart(function() {
+      $('.load-ajax').show();
+    });
+    $(document).ajaxStop(function() {
+      $('.load-ajax').hide();
+    });
+  });
+  </script>
+
+  <style>
+  .load-ajax {
+    /*float:right;*/
+    background-image:url(<%= asset_path 'ajax-loader.gif' %>);
+    width:450px;
+    height:90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    margin-left: -40px; /* half width of the spinner gif */
+    margin-top: -40px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:0000;
+    overflow: auto;
+
+  }
+  </style>
