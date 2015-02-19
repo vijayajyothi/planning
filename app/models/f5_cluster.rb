@@ -24,13 +24,14 @@ class F5Cluster < ActiveRecord::Base
 scope :ops_status, where('ops_status != ?', "Deleted")
 
 class << self
-  def importing_f5_data
-    f5cluster_data = f5cluster_data_import
-    p "Done with f5Cluster data Import"
-    
-    f5_device_data  = f5_device_update
-    p "Done with f5Devices -from prasad data Import"
-    
+  
+def importing_f5_data
+  f5cluster_data = f5cluster_data_import
+  p "Done with f5Cluster data Import"
+
+  f5_device_data  = f5_device_update
+  p "Done with f5Devices -from prasad data Import"
+
     f5_data  = f5_data  #f5.csv update
     f5_onecloud  = f5_onecloud  #f5_onecloud data from capacity update.
     

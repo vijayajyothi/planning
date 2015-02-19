@@ -114,6 +114,8 @@ w-stage-int-vip,10.113.54.22,80,sc9-prod-stage-dmz-1
 w-stage-int-vip-SSL,10.113.54.22,443,sc9-prod-stage-dmz-1
 w-stage-ext-vip-SSL,10.113.54.21,443,sc9-prod-stage-dmz-1
 supplier-staging-vip,10.113.54.200,443,sc9-prod-stage-dmz-1
+sc9-view-test-vip-http,10.113.63.107,80,sc9-prod-stage-dmz-1
+sc9-view-test-vip,10.113.63.107,443,sc9-prod-stage-dmz-1
 comm-dev-http-vip,10.113.211.17,80,sc9-prod-stage-dmz-2
 comm-dev-https-vip,10.113.211.17,443,sc9-prod-stage-dmz-2
 knova-prod-kb-vip2,10.113.63.117,80,sc9-prod-stage-dmz-2
@@ -809,6 +811,12 @@ star.mblogs-stage.vmware.com,10.113.53.65,443,sc9-tier2-prod-int-2
 star.mblogs-stage.vmware.com-80,10.113.53.65,80,sc9-tier2-prod-int-2
 stage-soa-7777,10.113.15.102,7777,sc9-tier2-prod-int-2
 stage-soa-7001,10.113.15.102,7001,sc9-tier2-prod-int-2
+itcomm-vip,10.113.164.19,443,sc9-tier2-prod-int-2
+prod-soa-7001-vip,10.113.164.188,7001,sc9-tier2-prod-int-2
+ws-stg-vip.vmware.com,10.113.191.234,443,sc9-tier2-prod-int-2
+ws-stg-iwa-vip,10.113.164.190,443,sc9-tier2-prod-int-2
+troux-prod-vip,10.113.164.32,443,sc9-tier2-prod-int-2
+prod-soa-7777-vip,10.113.164.188,7777,sc9-tier2-prod-int-2
 sblwebesvstage-prxy-bypass-vip,10.16.79.182,80,osdc-prod-dmz-1
 sblwebesvprod-prxy-bypass-vip,10.16.79.181,80,osdc-prod-dmz-1
 mylearnweb-ci-vip,10.16.79.174,80,osdc-prod-dmz-1
@@ -1285,6 +1293,7 @@ psynch-prod-443-vip,10.128.152.132,443,wdc-tier2-prod-int-1
 ad-test-new-vip,10.128.152.153,3268,wdc-tier2-prod-int-1
 ad-vip-ldap,10.128.152.153,389,wdc-tier2-prod-int-1
 wdc-rootdc-vip-1,10.128.153.28,389,wdc-tier2-prod-int-1
+wdc-ad-ovd-vip-389,10.128.153.67,389,wdc-tier2-prod-int-1
 communities-demo-ssl-vip,10.130.64.57,443,wdc-uat-dmz-1
 communities-demo-vip-1,10.130.64.57,80,wdc-uat-dmz-1
 communities-uat-vip,10.130.64.69,80,wdc-uat-dmz-1

@@ -114,6 +114,8 @@ w-stage-pool,ROUND,ROBIN,w-stage-int-vip,sc9-prod-stage-dmz-1
 w-stage-pool-SSL,ROUND,ROBIN,w-stage-int-vip-SSL,sc9-prod-stage-dmz-1
 w-stage-pool-SSL,ROUND,ROBIN,w-stage-ext-vip-SSL,sc9-prod-stage-dmz-1
 supplier-stage-pool,ROUND,ROBIN,supplier-staging-vip,sc9-prod-stage-dmz-1
+view-ss-ssl-pool,ROUND,ROBIN,sc9-view-test-vip-http,sc9-prod-stage-dmz-1
+view-ss-ssl-pool,ROUND,ROBIN,sc9-view-test-vip,sc9-prod-stage-dmz-1
 comm-dev-pool,ROUND,ROBIN,comm-dev-http-vip,sc9-prod-stage-dmz-2
 comm-dev-pool,ROUND,ROBIN,comm-dev-https-vip,sc9-prod-stage-dmz-2
 knova-prod-kb-pool2,ROUND,ROBIN,knova-prod-kb-vip2,sc9-prod-stage-dmz-2
@@ -545,7 +547,7 @@ sc9-app-ad-636-pool,ROUND,ROBIN,sc9-app-ad-636-vip,sc9-tier2-prod-int-2
 vcmupdate-prod-pool-http,ROUND,ROBIN,vcmupdate-prod-vip,sc9-tier2-prod-int-2
 sc9-app-ad-3268-pool,ROUND,ROBIN,sc9-app-ad-3268-vip,sc9-tier2-prod-int-2
 phon-prod-app-pool,ROUND,ROBIN,phon-prod-app-vip,sc9-tier2-prod-int-2
-vdc-stg-repo-pool,ROUND,ROBIN,vdc-stg-repo-vip.vmware.com,sc9-tier2-prod-int-2
+vdc-stg-repo-pool,PREDICTIVE,MEMBER,vdc-stg-repo-vip.vmware.com,sc9-tier2-prod-int-2
 vdc-stg-app-pool,PREDICTIVE,MEMBER,vdc-stg-app-vip.vmware.com,sc9-tier2-prod-int-2
 visl-stg-ml-pool,ROUND,ROBIN,visl-stg-ml-vip,sc9-tier2-prod-int-2
 s2-stage-hhq-pool,ROUND,ROBIN,s2-stage-hhq-vip.vmware.com,sc9-tier2-prod-int-2
@@ -818,6 +820,12 @@ w-stage-pool,ROUND,ROBIN,star.mblogs-stage.vmware.com,sc9-tier2-prod-int-2
 w-stage-pool,ROUND,ROBIN,star.mblogs-stage.vmware.com-80,sc9-tier2-prod-int-2
 stagesoa-m-vip-pool,ROUND,ROBIN,stage-soa-7777,sc9-tier2-prod-int-2
 stagesoa-admin-vip-pool,ROUND,ROBIN,stage-soa-7001,sc9-tier2-prod-int-2
+itcomm-vip-pool,ROUND,ROBIN,itcomm-vip,sc9-tier2-prod-int-2
+prodsoa-admin-vip-pool,ROUND,ROBIN,prod-soa-7001-vip,sc9-tier2-prod-int-2
+ws-stg-pool,ROUND,ROBIN,ws-stg-vip.vmware.com,sc9-tier2-prod-int-2
+ws-stg-iwa-vip-pool,ROUND,ROBIN,ws-stg-iwa-vip,sc9-tier2-prod-int-2
+troux-prod-pool,ROUND,ROBIN,troux-prod-vip,sc9-tier2-prod-int-2
+prod-soa-7777,ROUND,ROBIN,prod-soa-7777-vip,sc9-tier2-prod-int-2
 sblwebesvstage-pool,ROUND,ROBIN,sblwebesvstage-prxy-bypass-vip,osdc-prod-dmz-1
 sblwebesvprod-pool,ROUND,ROBIN,sblwebesvprod-prxy-bypass-vip,osdc-prod-dmz-1
 mylearnweb-ci1-pool,ROUND,ROBIN,mylearnweb-ci-vip,osdc-prod-dmz-1
@@ -1296,6 +1304,7 @@ psync-wdc-443-pool,ROUND,ROBIN,psynch-prod-443-vip,wdc-tier2-prod-int-1
 ad-test-new-pool,ROUND,ROBIN,ad-test-new-vip,wdc-tier2-prod-int-1
 ad-test-pool-ldap,ROUND,ROBIN,ad-vip-ldap,wdc-tier2-prod-int-1
 wdcrrootdc-pool-1,ROUND,ROBIN,wdc-rootdc-vip-1,wdc-tier2-prod-int-1
+wdc-ad-ovd-pool-389,ROUND,ROBIN,wdc-ad-ovd-vip-389,wdc-tier2-prod-int-1
 communities-demo-pool,ROUND,ROBIN,communities-demo-ssl-vip,wdc-uat-dmz-1
 communities-demo-pool,ROUND,ROBIN,communities-demo-vip-1,wdc-uat-dmz-1
 communities-uat-pool,ROUND,ROBIN,communities-uat-vip,wdc-uat-dmz-1
