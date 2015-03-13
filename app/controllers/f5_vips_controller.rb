@@ -3,6 +3,7 @@ class F5VipsController < ApplicationController
   
   # GET /f5_vips
   # GET /f5_vips.json
+ 
   def index
     # @f5_vips = F5Vip.all
 
@@ -10,7 +11,6 @@ class F5VipsController < ApplicationController
     @search = F5Vip.search do
       fulltext params[:search]
       paginate  :page => params[:page], :per_page=>15
-      # paginate  :page => params[:page], :per_page=>count
     end
     @f5_vips = @search.results
 

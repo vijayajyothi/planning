@@ -82,6 +82,7 @@ host_hbas_data = host_hbas_data_import
 p "Host hbas data uploaded"
 port_group_data = port_group_data_import
 p "port group data uploaded"
+
 # data_store_data = data_store_data_import
 # p "Data store data uploaded"
 vm_data = vm_data_import
@@ -160,7 +161,7 @@ end
 
 # vcenter data
 def vcenter_data_import
-  Vcenter.update_all(:ops_status=>"Deleted")
+#  Vcenter.update_all(:ops_status=>"Deleted")
   
   CSV.foreach("csv_data/powercli/esx/esx-vcenters.csv", :headers => true) do |row|
     vcenter = Vcenter.find_by_name(row["name"])
@@ -182,7 +183,7 @@ end
 
   # data center vdc data
   def data_center_data_import
-    Vdc.update_all(:ops_status=>"Deleted")
+ #   Vdc.update_all(:ops_status=>"Deleted")
 
     CSV.foreach("csv_data/powercli/esx/datacenters.csv", :headers => true) do |row|
 
@@ -204,7 +205,7 @@ end
 
 # Cluster data
 def cluster_import
-  Cluster.update_all(:ops_status=>"Deleted")
+  #Cluster.update_all(:ops_status=>"Deleted")
 
   CSV.foreach("csv_data/powercli/esx/clusters.csv", :headers => true) do |row|
 
