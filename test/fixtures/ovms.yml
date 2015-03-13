@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  vm_name: MyString
+  status: MyString
+  date_created: MyString
+  os: MyString
+  mem_gb: MyString
+  disk_gb: MyString
+  ip: MyString
+  vapp_name: MyString
+  vapp_status: MyString
+  application: MyString
+  app_owner: MyString
+  own_email: MyString
+  ovdc_id: 1
+  org: MyString
+  vm_desc: MyString
+  vapp_desc: MyString
+
+two:
+  vm_name: MyString
+  status: MyString
+  date_created: MyString
+  os: MyString
+  mem_gb: MyString
+  disk_gb: MyString
+  ip: MyString
+  vapp_name: MyString
+  vapp_status: MyString
+  application: MyString
+  app_owner: MyString
+  own_email: MyString
+  ovdc_id: 1
+  org: MyString
+  vm_desc: MyString
+  vapp_desc: MyString

@@ -1,0 +1,88 @@
+<div class="right-panel">
+  <div class="span9">
+   <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="workflow-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#basicdata">
+
+          <span><%= @ovm.vm_name %> Details</span>
+          <% if @ovm.date_created %><p><b> Created On : </b><%= @ovm.date_created %></p><% end %>
+          <p><b> Status : </b>
+            <% if @ovm.status == "PoweredOn"%>
+            <% image = "green.png"%>
+            <% elsif@ovm.status == "PoweredOff" %>
+            <% image = "red.png"%>
+            <% else %>
+            <% image = "pause.png"%>
+            <% end %>
+            <%= image_tag "#{image}", :style=> "margin:-4px 3px 0 0;width:21px;height:21px;"%><%= @ovm.status %></p></a>
+          </div>
+          <div id="basicdata" class="panel-collapse collapse in">
+            <div class="">
+              <table class="table table-hover">
+                <tbody>
+
+                 <tr>
+                  <td><b>VM Name</b></td>
+                  <td><%= @ovm.vm_name%></td>
+                  <td><b>OVDC</b></td>
+                  <td><%= link_to  Ovdc.find(@ovm.ovdc_id).ovdc, Ovdc.find(@ovm.ovdc_id), :remote=> true%></td>
+                </tr>
+
+
+                <tr>
+                 <td><b>Org</b></td>
+                 <td><%= @ovm.org %></td>
+                 <td><b>OS Type</b></td>
+                 <td><%= @ovm.os %></td>
+                 
+               </tr>
+               <tr>
+                <td><b>VM Description</b></td>
+                <td colspan=3><%= @ovm.vm_desc%></td>
+
+              </tr>
+              <tr>
+                <td><b>Disk(GB)</b></td>
+                <td><%= @ovm.disk_gb%></td>
+                <td><b>IP</b></td>
+                <td><%= @ovm.ip%></td>
+              </tr> 
+
+              <tr>
+                <td><b>Memory(GB)</b></td>
+                <td><%= @ovm.mem_gb %></td>
+                <td><b> Status</b></td>
+                <td><%= @ovm.status %></td>
+              </tr>  
+              <tr> 
+                <td><b>Application Owner</b></td>
+                <td><%= @ovm.app_owner%></td>
+                <td><b>Application</b></td>
+                <td><%= @ovm.application%></td>
+              </tr>
+
+                 
+              <tr>
+                <td><b>VApp Status</b></td>
+                <td><%= @ovm.vapp_status %></td>
+
+                <td><b>VApp Name</b></td>
+                <td><%= @ovm.vapp_name %></td>
+              </tr>  
+              <tr>
+                <td><b>Owner Email</b></td>
+                <td><%= @ovm.own_email %></td>
+
+                <td><b>VApp Description</b></td>
+                <td><%= @ovm.vapp_desc %></td>
+              </tr> 
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--/span-->
+</div><!--/span-->

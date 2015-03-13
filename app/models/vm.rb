@@ -1,11 +1,12 @@
 class Vm < ActiveRecord::Base
-  attr_accessible :application_id, :backup, :cluster_id, :connection_state, 
-  :created_by, :created_time, :folder_id, :hw_version, :hz_numer, :instance_id, 
-  :ip, :is_cloud, :last_boot, :last_change, :last_suspend, :last_suspend_interval, 
-  :name, :num_cpus, :num_vnics, :os, :owner, :persistent_id, :power_state, 
-  :ppm_no, :resource_pool, :status, :tier_id, :tools_status, :tools_version, 
-  :total_mem_mb, :uuid, :vcenter_id, :vdc_id, :version, :vm_hostname, :vm_id, 
-  :vmhost_id, :ops_status, :new_bon_on, :guest_state, :provisioned_space, :used_space
+ acts_as_xlsx
+ attr_accessible :application_id, :backup, :cluster_id, :connection_state, 
+ :created_by, :created_time, :folder_id, :hw_version, :hz_numer, :instance_id, 
+ :ip, :is_cloud, :last_boot, :last_change, :last_suspend, :last_suspend_interval, 
+ :name, :num_cpus, :num_vnics, :os, :owner, :persistent_id, :power_state, 
+ :ppm_no, :resource_pool, :status, :tier_id, :tools_status, :tools_version, 
+ :total_mem_mb, :uuid, :vcenter_id, :vdc_id, :version, :vm_hostname, :vm_id, 
+ :vmhost_id, :ops_status, :new_bon_on, :guest_state, :provisioned_space, :used_space
   # attr_accessible :application, :boottime, :cluster, :connectionstate, :createdby, :createdtime, :datacenter, :folder, :guestfullname, :gueststate, :hostname, :ipaddress, :memorymb, :numcpu, :persistentid, :powerstate, :provisionedspacegb, :qtynics, :reourcepool, :storagecommitted, :storageuncommitted, :suspendinterval, :suspendtime, :toolsrunningstatus, :toolstatus, :toolsversion, :usedspacegb, :vcserver, :version, :vmhost, :vmname
   
 #ASSOCIATIONS
@@ -59,24 +60,102 @@ end
 # CLASS METHODS
 class << self
   def importing_data
+    # one cloud data
+
+    one_cloud_dcs = import_ovdcs
+    p "one cloud data center data imported"
+    one_cloud_vms = import_ovms
+
+
+
 #    vcenter_data = vcenter_data_import
-    p "vcenter data uploaded"
-    data_center_data = data_center_data_import
-    p "data center data uploaded"
-    cluster_data = cluster_import
-    p "vdc data uploaded" 
-    esx_data = esx_data_import
-    p "ESX Host data (vmhost) uploaded"
-    esx_pnics_data = esx_pnics_data_import
-    p "ESX pnic data uploaded"
-    host_hbas_data = host_hbas_data_import
-    p "Host hbas data uploaded"
-    port_group_data = port_group_data_import
-    p "port group data uploaded"
+p "vcenter data uploaded"
+data_center_data = data_center_data_import
+p "data center data uploaded"
+cluster_data = cluster_import
+p "vdc data uploaded" 
+esx_data = esx_data_import
+p "ESX Host data (vmhost) uploaded"
+esx_pnics_data = esx_pnics_data_import
+p "ESX pnic data uploaded"
+host_hbas_data = host_hbas_data_import
+p "Host hbas data uploaded"
+port_group_data = port_group_data_import
+p "port group data uploaded"
 # data_store_data = data_store_data_import
 # p "Data store data uploaded"
 vm_data = vm_data_import
 p "Vm  uploaded"
+end
+
+def import_ovdcs
+  # Ovdc.update_all(:ops_status=>"Deleted")
+
+  
+  CSV.foreach("csv_data/oc-all-vdcs.csv", :headers => true) do |row|
+    ovdc = Ovdc.find_by_ovdc(row["ovdc"])
+    if ovdc.present?
+      # ovdc.ops_status = "Present"
+      ovdc.update_attributes(row.to_hash.slice(*accessible_attributes))
+    else
+      ovdc = Ovdc.new
+      # ovdc.ops_status = "New"
+      ovdc.attributes = row.to_hash.slice(*accessible_attributes)
+    end
+    ovdc.org = row["org"]
+    ovdc.ovdc= row["ovdc"]
+    ovdc.storage_pct= row["storage-pct"]
+    ovdc.mem_pct= row["mem-pct"]
+    ovdc.cpu_pct= row["cpu-pct"]
+    ovdc.st_limit= row["storageGB-limit"]
+    ovdc.st_alloc= row["storageGB-alloc"]
+    ovdc.st_used= row["storageGB-used"]
+    ovdc.st_free= row["storageGB-free"]
+    ovdc.mem_limit= row["memGB-limit"]
+    ovdc.mem_alloc= row["memGB-alloc"]
+    ovdc.mem_used= row["memGB-used"]
+    ovdc.mem_free= row["memGB-free"]
+    ovdc.cpu_limit= row["cpu-limit"]
+    ovdc.cpu_alloc= row["cpu-alloc"]
+    ovdc.cpu_used= row["cpu-used"]
+    ovdc.save if ovdc.ovdc.present?
+  end
+end
+
+def import_ovms
+  Ovm.update_all(:ops_status=>"Deleted")
+
+  
+  CSV.foreach("csv_data/oc-all-vms.csv", :headers => true) do |row|
+    ovm = Ovm.find_by_ip(row["IP"])
+    ovdc = Ovdc.find_by_ovdc(row["OrgVDC"])
+    if ovm.present?
+      ovm.ops_status = "Present"
+      ovm.update_attributes(row.to_hash.slice(*accessible_attributes))
+    else
+      ovm = Ovm.new
+      ovm.ops_status = "New"
+      ovm.attributes = row.to_hash.slice(*accessible_attributes)
+    end
+    ovm.app_owner = row["Application Owner"]
+    ovm.application = row["Application"]
+    ovm.date_created = row["Date Created"]
+    ovm.disk_gb = row["diskGB"]
+    ovm.ip = row["IP"]
+    ovm.mem_gb = row["memGB"]
+    ovm.org = row["Organization"]
+    ovm.os = row["OS"]
+    ovm.ovdc_id = ovdc.id if ovdc.present?
+    ovm.own_email = row["Owner Email"]
+    ovm.status = row["status"]
+    ovm.vapp_desc = row["vApp description"]
+    ovm.vapp_name = row["vApp name"]
+    ovm.vapp_status = row["vApp status"]
+    ovm.vm_desc = row["VM description"]
+    ovm.vm_name = row["VM name"]
+    
+    ovm.save if ovm.vm_name.present?
+  end
 end
 
 # vcenter data
@@ -237,7 +316,7 @@ def host_hbas_data_import
 
     hbas.save if hbas.name.present?
   end
-   extra_hosts = Hhba.where(:ops_status=>"Deleted")
+  extra_hosts = Hhba.where(:ops_status=>"Deleted")
   extra_hosts.delete_all
 end
 
@@ -264,7 +343,7 @@ def port_group_data_import
 
     pg.save if pg.name.present?
   end
-   extra_pgs = Portgroup.where(:ops_status=>"Deleted")
+  extra_pgs = Portgroup.where(:ops_status=>"Deleted")
   extra_pgs.delete_all
 end
 
@@ -297,13 +376,15 @@ def data_store_data_import
 
     data_store.save
   end
-   extra_data_stores = Datastore.where(:ops_status=>"Deleted")
+  extra_data_stores = Datastore.where(:ops_status=>"Deleted")
   extra_data_stores.delete_all
 end
 
 
 def vm_data_import
-  Vm.update_all(:ops_status=>"Deleted")
+  
+  # Vm.update_all(:ops_status=>"Deleted")
+  # Vm.update_all( :last_change=>Date.today-1) if 
 
   CSV.foreach("csv_data/powercli/esx/vms.csv", :headers => true) do |row|
     # vcenter = Vcenter.find_by_name(row["vcserver"])
@@ -370,6 +451,16 @@ def vm_data_import
 
     end
   end
+  csv= CSV.read("csv_data/powercli/esx/vms.csv",:headers=>true)
+  ips = Vm.all.collect(&:ip)
+  deleted_vms = ips- csv['ipaddress'] 
+  deleted_vms.each do |each_vm|
+    deleted_vm = Vm.where(:ip=>each_vm).first
+    deleted_vm.last_change= Date.today if deleted_vm.ops_status!="Deleted"
+    deleted_vm.ops_status = "Deleted"
+    deleted_vm.save
+  end
+
 end
 
 
@@ -395,3 +486,12 @@ end
 
 #INSTANCE METHODS
 end
+
+def self.to_csv(options = {})
+  CSV.generate(options) do |csv|
+    csv << column_names
+    all.each do |vm|
+      csv << vm.attributes.values_at(*column_names)
+    end
+  end
+end 

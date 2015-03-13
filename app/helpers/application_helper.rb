@@ -9,6 +9,11 @@ module ApplicationHelper
 end
 
 
+def get_ovms(ovdc)
+ @vms = Ovm.where(:ovdc_id=> ovdc)
+end
+
+
 def get_vdc(vcenter)
  @vdcs = Vdc.where(:vcenter_id=> vcenter.id)
 end

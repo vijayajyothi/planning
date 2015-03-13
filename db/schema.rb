@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141215050508) do
+ActiveRecord::Schema.define(:version => 20150219113135) do
 
   create_table "applications", :force => true do |t|
     t.string   "name"
@@ -325,6 +325,49 @@ ActiveRecord::Schema.define(:version => 20141215050508) do
     t.string   "ops_status"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
+  end
+
+  create_table "ovdcs", :force => true do |t|
+    t.string   "org"
+    t.string   "ovdc"
+    t.string   "storage_pct"
+    t.string   "mem_pct"
+    t.string   "cpu_pct"
+    t.string   "st_limit"
+    t.string   "st_alloc"
+    t.string   "st_used"
+    t.string   "st_free"
+    t.string   "mem_limit"
+    t.string   "mem_alloc"
+    t.string   "mem_used"
+    t.string   "mem_free"
+    t.string   "cpu_limit"
+    t.string   "cpu_alloc"
+    t.string   "cpu_used"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "ovms", :force => true do |t|
+    t.string   "vm_name"
+    t.string   "status"
+    t.string   "date_created"
+    t.string   "os"
+    t.string   "mem_gb"
+    t.string   "disk_gb"
+    t.string   "ip"
+    t.string   "vapp_name"
+    t.string   "vapp_status"
+    t.string   "application"
+    t.string   "app_owner"
+    t.string   "own_email"
+    t.integer  "ovdc_id"
+    t.string   "org"
+    t.string   "vm_desc"
+    t.string   "vapp_desc"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.string   "ops_status"
   end
 
   create_table "physical_disks", :force => true do |t|

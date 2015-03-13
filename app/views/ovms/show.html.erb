@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vm name:</b>
+  <%= @ovm.vm_name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @ovm.status %>
+</p>
+
+<p>
+  <b>Date created:</b>
+  <%= @ovm.date_created %>
+</p>
+
+<p>
+  <b>Os:</b>
+  <%= @ovm.os %>
+</p>
+
+<p>
+  <b>Mem gb:</b>
+  <%= @ovm.mem_gb %>
+</p>
+
+<p>
+  <b>Disk gb:</b>
+  <%= @ovm.disk_gb %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @ovm.ip %>
+</p>
+
+<p>
+  <b>Vapp name:</b>
+  <%= @ovm.vapp_name %>
+</p>
+
+<p>
+  <b>Vapp status:</b>
+  <%= @ovm.vapp_status %>
+</p>
+
+<p>
+  <b>Application:</b>
+  <%= @ovm.application %>
+</p>
+
+<p>
+  <b>App owner:</b>
+  <%= @ovm.app_owner %>
+</p>
+
+<p>
+  <b>Own email:</b>
+  <%= @ovm.own_email %>
+</p>
+
+<p>
+  <b>Ovdc:</b>
+  <%= @ovm.ovdc_id %>
+</p>
+
+<p>
+  <b>Org:</b>
+  <%= @ovm.org %>
+</p>
+
+<p>
+  <b>Vm desc:</b>
+  <%= @ovm.vm_desc %>
+</p>
+
+<p>
+  <b>Vapp desc:</b>
+  <%= @ovm.vapp_desc %>
+</p>
+
+
+<%= link_to 'Edit', edit_ovm_path(@ovm) %> |
+<%= link_to 'Back', ovms_path %>

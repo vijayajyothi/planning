@@ -66,7 +66,7 @@
         <%# @f5nodes = F5Node.find_by_sql(F5Node.group(:ip).select('ip,port').where(:f5_vip_id=>@f5_vip.id))%>
         <%# @nodes = F5Node.where('ops_status != ?', "Deleted")%>
 
-        <div class="span12"d>
+        <div class="span12">
           <div class="workflow-blocks" style="margin-top:0px;">
             <div class="workflow-heading"> <a data-toggle="collapse" data-parent="#accordion" href="#f5vm">
               <span>F5 Nodes </span>
@@ -82,26 +82,26 @@
                   <th>Node Enabled Status</th>
                   <th>Name</th>
                   <th>VM Status</th>
-                   <%  if @f5pool.present?%>
-        
-        <%@f5nodes = F5Node.where(:f5_pool_id=>@f5pool.id)%>
+                  <%  if @f5pool.present?%>
+                  <%@f5nodes = F5Node.where(:f5_pool_id=>@f5pool.id)%>
                   <% if @f5nodes.present? %>
                   <% @f5nodes.each do |each_f5node|%>
-                  <%#= each_f5node.to_yaml%>
                   <tr>
                     <td><b><%=  each_f5node.ip%></b></td>
                     <td><%=  each_f5node.port%></td>
                     <td><%=  each_f5node.node_enable%></td>
                     <td><%=  each_f5node.node_status%></td>
                     <% @vm = Vm.where(:ip=>each_f5node.ip).first %>
+                    <% @vm ||= Ovm.where(:ip=>each_f5node.ip).first %>
                     <%  if @vm.present?%>
                     <td><%= link_to @vm.name, @vm, :style=>"color:black;", :remote=> true%></td>
                     <td><%= @vm.power_state  %></td>
+                   
                     <%end  %>
                     <% end %>
                   </tr>   
-                    <% end %>
-                    <% end %>
+                  <% end %>
+                  <% end %>
                 </tbody>
               </table>
             </div>

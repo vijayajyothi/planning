@@ -30,9 +30,26 @@ class VmsController < ApplicationController
     Vm.import(params[:file])
     redirect_to root_url, notice: "Clusters imported."
   end
-  
+  def export
+    @deleted_vms = Vm.where(:ops_status=>"Deleted")
+    respond_to do |format|
+      format.html
+      format.xlsx
+      format.csv { send_data @deleted_vms.to_csv }
+      format.xls{ send_data @deleted_vms.to_csv(col_sep: "\t") }
+    end
+  end  
   def reports
     @datacenters = Vm.all.collect(&:vdc_id).uniq
+  end
+
+  def deleted_vms
+    @vms = Vm.where(:ops_status=>"Deleted").uniq
+  end
+
+  def mail_deleted_vms
+    @vms = Vm.where(:ops_status=>"Deleted").uniq
+    OpsMailer.send_deleted_vms(@vms).deliver
   end
 
   # GET /vms/1
@@ -46,7 +63,7 @@ class VmsController < ApplicationController
     #   format.json { render json: @vm }
     # end
   end
- 
+
 
   # GET /vms/new
   # GET /vms/new.json
@@ -101,7 +118,7 @@ class VmsController < ApplicationController
   def destroy
     @vm = Vm.find(params[:id])
     @vm.destroy
-      redirect_to :action => :index, status:303
+    redirect_to :action => :index, status:303
 
     # respond_to do |format|
     #   format.html { redirect_to vms_url }

@@ -1,0 +1,81 @@
+<%= form_for(@ovdc) do |f| %>
+  <% if @ovdc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ovdc.errors.count, "error") %> prohibited this ovdc from being saved:</h2>
+
+      <ul>
+      <% @ovdc.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :org %><br />
+    <%= f.text_field :org %>
+  </div>
+  <div class="field">
+    <%= f.label :ovdc %><br />
+    <%= f.text_field :ovdc %>
+  </div>
+  <div class="field">
+    <%= f.label :storage_pct %><br />
+    <%= f.text_field :storage_pct %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_pct %><br />
+    <%= f.text_field :mem_pct %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_pct %><br />
+    <%= f.text_field :cpu_pct %>
+  </div>
+  <div class="field">
+    <%= f.label :st_limit %><br />
+    <%= f.text_field :st_limit %>
+  </div>
+  <div class="field">
+    <%= f.label :st_alloc %><br />
+    <%= f.text_field :st_alloc %>
+  </div>
+  <div class="field">
+    <%= f.label :st_used %><br />
+    <%= f.text_field :st_used %>
+  </div>
+  <div class="field">
+    <%= f.label :st_free %><br />
+    <%= f.text_field :st_free %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_limit %><br />
+    <%= f.text_field :mem_limit %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_alloc %><br />
+    <%= f.text_field :mem_alloc %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_used %><br />
+    <%= f.text_field :mem_used %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_free %><br />
+    <%= f.text_field :mem_free %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_limit %><br />
+    <%= f.text_field :cpu_limit %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_alloc %><br />
+    <%= f.text_field :cpu_alloc %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_used %><br />
+    <%= f.text_field :cpu_used %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

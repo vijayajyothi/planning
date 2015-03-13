@@ -1,0 +1,53 @@
+<h1>Listing ovms</h1>
+
+<table>
+  <tr>
+    <th>Vm name</th>
+    <th>Status</th>
+    <th>Date created</th>
+    <th>Os</th>
+    <th>Mem gb</th>
+    <th>Disk gb</th>
+    <th>Ip</th>
+    <th>Vapp name</th>
+    <th>Vapp status</th>
+    <th>Application</th>
+    <th>App owner</th>
+    <th>Own email</th>
+    <th>Ovdc</th>
+    <th>Org</th>
+    <th>Vm desc</th>
+    <th>Vapp desc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ovms.each do |ovm| %>
+  <tr>
+    <td><%= ovm.vm_name %></td>
+    <td><%= ovm.status %></td>
+    <td><%= ovm.date_created %></td>
+    <td><%= ovm.os %></td>
+    <td><%= ovm.mem_gb %></td>
+    <td><%= ovm.disk_gb %></td>
+    <td><%= ovm.ip %></td>
+    <td><%= ovm.vapp_name %></td>
+    <td><%= ovm.vapp_status %></td>
+    <td><%= ovm.application %></td>
+    <td><%= ovm.app_owner %></td>
+    <td><%= ovm.own_email %></td>
+    <td><%= ovm.ovdc_id %></td>
+    <td><%= ovm.org %></td>
+    <td><%= ovm.vm_desc %></td>
+    <td><%= ovm.vapp_desc %></td>
+    <td><%= link_to 'Show', ovm %></td>
+    <td><%= link_to 'Edit', edit_ovm_path(ovm) %></td>
+    <td><%= link_to 'Destroy', ovm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ovm', new_ovm_path %>
