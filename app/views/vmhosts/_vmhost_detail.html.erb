@@ -7,8 +7,8 @@
           <span>ESXi Host</span>
           <p> <b><%= @vmhost.name %></b></p></a>
         </div>
-        <div id="vmhost" class="panel-collapse collapse in">
-          <div class="panel-body">
+        <div id="vmhost" class="panel-collapse collapse in" style="height:222px;overflow:auto;">
+          <div class="">
             <table class="table table-hover">
               <tbody>
                 <tr>
@@ -90,7 +90,7 @@
             </div>
 
             <div id="hhba" class="">
-              <div class="panel-body" style="max-height:205px; overflow:auto;">
+              <div class="" style="max-height:148px; overflow:auto;">
                <table class="table table-hover">
                 <tbody>
                   <th> Name</th>
@@ -120,7 +120,7 @@
 
            <!-- <div id="vmhost" class="panel-collapse collapse"> -->
            <div id="pnics" class="">
-            <div class="panel-body" style="max-height:200px; overflow:auto;">
+            <div class="" style="max-height:148px; overflow:auto;">
              <table class="table table-hover">
               <tbody>
                 <th> Name</th>
@@ -153,9 +153,8 @@
          </div>
 
          <div id="pgs" class="">
-          <div class="panel-body" style="max-height:200px; overflow:auto;">
+          <div class="" style="max-height:231px; overflow:auto;">
            <table class="table table-hover">
-             <table class="table table-hover">
               <tbody>
                 <th> Name</th>
                 <th> vSwitch</th>
@@ -184,7 +183,7 @@
 
           <!-- <div id="vmhost" class="panel-collapse collapse"> -->
           <div id="vms" class="">
-            <div class="panel-body" style="max-height:200px; overflow:auto;">
+            <div class="" style="max-height:231px; overflow:auto;">
              <table class="table table-hover">
                <tbody>
                  <% @vms.each do |each_vm|%>

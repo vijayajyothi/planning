@@ -1,16 +1,23 @@
 class OpsMailer < ActionMailer::Base
-  default from: "vkalangi1989@gmail.com"
+  default from: "opsgps@vmware.com"
 
   def confirmation_mail
-    mail(to: "vkalangi@vmware.com", subject: "Cron Job Done")
+    mail(to: "vkalangi@vmware.com", subject: "Cron Job Done-dev server")
   end
 
   def f5_confirmation_mail
-    mail(to: "vkalangi@vmware.com", subject: "F5 Cron Job Done")
+    mail(to: "vkalangi@vmware.com", subject: "F5 Cron Job Done-dev")
   end
 
   def f5_up_confirmation_mail
     mail(to: "vkalangi@vmware.com", subject: "F5 Cron Job new file update is Done")
 
   end 
+
+  def send_deleted_vms(vms)
+    @vms= vms[1..10]
+    mail(to: "vkalangi@vmware.com", subject: "Delted VMs list")
+  end 
+
+
 end

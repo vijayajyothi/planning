@@ -1,0 +1,81 @@
+<%= form_for(@ovm) do |f| %>
+  <% if @ovm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ovm.errors.count, "error") %> prohibited this ovm from being saved:</h2>
+
+      <ul>
+      <% @ovm.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vm_name %><br />
+    <%= f.text_field :vm_name %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :date_created %><br />
+    <%= f.text_field :date_created %>
+  </div>
+  <div class="field">
+    <%= f.label :os %><br />
+    <%= f.text_field :os %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_gb %><br />
+    <%= f.text_field :mem_gb %>
+  </div>
+  <div class="field">
+    <%= f.label :disk_gb %><br />
+    <%= f.text_field :disk_gb %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :vapp_name %><br />
+    <%= f.text_field :vapp_name %>
+  </div>
+  <div class="field">
+    <%= f.label :vapp_status %><br />
+    <%= f.text_field :vapp_status %>
+  </div>
+  <div class="field">
+    <%= f.label :application %><br />
+    <%= f.text_field :application %>
+  </div>
+  <div class="field">
+    <%= f.label :app_owner %><br />
+    <%= f.text_field :app_owner %>
+  </div>
+  <div class="field">
+    <%= f.label :own_email %><br />
+    <%= f.text_field :own_email %>
+  </div>
+  <div class="field">
+    <%= f.label :ovdc_id %><br />
+    <%= f.number_field :ovdc_id %>
+  </div>
+  <div class="field">
+    <%= f.label :org %><br />
+    <%= f.text_field :org %>
+  </div>
+  <div class="field">
+    <%= f.label :vm_desc %><br />
+    <%= f.text_field :vm_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :vapp_desc %><br />
+    <%= f.text_field :vapp_desc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

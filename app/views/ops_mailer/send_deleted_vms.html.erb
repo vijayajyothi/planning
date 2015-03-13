@@ -1,0 +1,31 @@
+<div class="index-container">
+  <div class="col-sm-12">
+    <div class="form-search col-sm-4">
+      <h2>Deleted VM Details</h2></div>
+      
+    </div>
+    <div class ="container" style="height:623px;overflow:auto;float:left;">
+
+      <table class="table table-striped tablesorter">
+        <tr>
+          <th>VM Name</th>
+          <th>VM Host Name</th>
+          <th>IP</th>
+        </tr>
+
+        <% @vms.each do |vm| %>
+
+        <tr style="" id ="complete_tr">
+
+          <td><%= vm.name %></td>
+          <td><%= vm.vm_hostname %></td>
+          <td><%= vm.ip %></td>
+          <div class="button"> 
+            <!-- <td><%#= link_to 'Show', vm ,:class => 'btn btn-mini btn-info', :remote=> true%></td> -->
+          </div>
+      
+        </tr>
+        <% end %>
+
+      </table>
+    </div>

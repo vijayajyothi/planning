@@ -38,6 +38,8 @@ gem 'net-ldap'
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
+gem 'acts_as_xlsx'
+gem 'axlsx_rails'
 # Use unicorn as the app server
 # gem 'unicorn'
 

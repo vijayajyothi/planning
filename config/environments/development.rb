@@ -49,12 +49,12 @@ config.consider_all_requests_local =false
   config.action_mailer.default :charset => "utf-8"
 
    config.action_mailer.smtp_settings = {
-    :enable_starttls_auto => true,
-    :address => "smtp.gmail.com",
-    :port => 587,
-    :domain => "gmail.com",
-    :authentication => :login,
-    :user_name => 'vkalangi1989@gmail.com',
-    :password => 'kalangi1989',
+    :enable_starttls_auto => false,
+    :address => "smtp.vmware.com",
+    :port => 25,
+    :domain => "vmware.com"
+    # :authentication => :login,
+    # :user_name => 'vkalangi1989@gmail.com',
+    # :password => 'kalangi1989',
   }
 end

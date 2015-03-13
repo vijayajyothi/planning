@@ -1,4 +1,10 @@
 Opsgps::Application.routes.draw do
+  resources :ovms
+
+
+  resources :ovdcs
+
+
   resources :f5_devices
 
 
@@ -152,12 +158,15 @@ match 'logout', to: 'sessions#destroy', as: 'logout'
 match 'login', to: 'sessions#new', as: 'login'
 
 match 'signup', to: 'users#new', as: 'signup'
+match 'deleted_vms', to: 'vms#deleted_vms', as: 'deleted_vms'
+match 'mail_deleted_vms', to: 'vms#mail_deleted_vms', as: 'mail_deleted_vms'
 
 get "home/index"
 get "home/server_error"
 get "/search_list" => "home#search_list", :as => :search_list
 
 get "/vms" => "vms#index", :as => :vms
+get "export", to: "vms#export", :as => :export
 get "/selected_vm/:id" => "vms#selected_vm", :as => :selected_vm
 
 get "/vcenters" => "vcenters#index", :as => :vcenters
@@ -191,6 +200,11 @@ get "/selected_f5_vip/:id" => "f5_vips#selected_f5_vip", :as => :selected_f5_vip
 get "/f5devices" => "f5_devices#index", :as => :f5devices
 get "/selected_f5_device/:id" => "f5_devices#selected_f5_device", :as => :selected_f5_device
 
+get "/ovdcs" => "ovdcs#index", :as => :ovdcs
+get "/selected_ovdc/:id" => "ovdcs#selected_ovdc", :as => :selected_ovdc
+
+get "/ovms" => "ovms#index", :as => :ovms
+get "/selected_ovm/:id" => "ovms#selected_ovm", :as => :selected_ovm
 
 resources :users 
  # The priority is based upon order of creation:

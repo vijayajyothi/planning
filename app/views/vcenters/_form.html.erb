@@ -28,9 +28,10 @@
     <%= f.label :description %><br />
     <%= f.text_area :description, :height=>"20%", :width=>"20%", :class=>"ops_input"%>
   </p>
-  
-    <%= f.submit :class=>"btn btn-primary",:value=>"Update vCenter", :remote=> true %>
-<% end %>
+<%= select_tag "vdc_id", options_from_collection_for_select(@vdcs, "id", "name"), :prompt => "Select a project", :onchange => "update_versions_div(this.value)" %>
+<div id="versionsDiv">
+  <%= render :partial => 'versions', :object => @vdcs %>
+</div>
 </fieldset>
 </div>
 <style>
