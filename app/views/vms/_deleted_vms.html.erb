@@ -1,12 +1,14 @@
 <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
 <p>
-  Download:
-
-<%= link_to "Download as Excel", export_path(format: "xlsx") %>
+  
+ 
 </p>
 <div class="index-container">
   <div class="col-sm-12">
     <div class="form-search col-sm-4">
+       
+ <div> Download deleted items:
+<%= link_to "Download as Excel", export_path(format: "xlsx") %></div>
       <h2>Deleted VM Details</h2></div>
       <%#= link_to 'Send mail', mail_deleted_vms_path ,:class => 'btn btn-mini btn-info',:remote=>true%>
       
@@ -19,6 +21,7 @@
           <th>Host</th>
           <th>IP</th>
           <th>Deleted date</th>
+          <th colspan=2>Actions</th>
         </tr>
 
         <% @vms.each do |vm| %>
@@ -31,7 +34,8 @@
           <td><%= vm.ip %></td>
           <td><%= vm.last_change.strftime("%D") %></td>
           <div class="button"> 
-            <!-- <td><%#= link_to 'Show', vm ,:class => 'btn btn-mini btn-info', :remote=> true%></td> -->
+         <td><%= link_to 'Edit', edit_deleted_vm_path(vm) ,:class => 'btn btn-mini btn-warning', :remote=> true%></td> 
+         <td><%= link_to 'Show', show_deleted_vm_path(vm) ,:class => 'btn btn-mini btn-info', :remote=> true%></td> 
           </div>
       
         </tr>

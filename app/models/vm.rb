@@ -6,7 +6,8 @@ class Vm < ActiveRecord::Base
  :name, :num_cpus, :num_vnics, :os, :owner, :persistent_id, :power_state, 
  :ppm_no, :resource_pool, :status, :tier_id, :tools_status, :tools_version, 
  :total_mem_mb, :uuid, :vcenter_id, :vdc_id, :version, :vm_hostname, :vm_id, 
- :vmhost_id, :ops_status, :new_bon_on, :guest_state, :provisioned_space, :used_space
+ :vmhost_id, :ops_status, :new_bon_on, :guest_state, :provisioned_space, :used_space,
+ :requested_by, :requested_date
   # attr_accessible :application, :boottime, :cluster, :connectionstate, :createdby, :createdtime, :datacenter, :folder, :guestfullname, :gueststate, :hostname, :ipaddress, :memorymb, :numcpu, :persistentid, :powerstate, :provisionedspacegb, :qtynics, :reourcepool, :storagecommitted, :storageuncommitted, :suspendinterval, :suspendtime, :toolsrunningstatus, :toolstatus, :toolsversion, :usedspacegb, :vcserver, :version, :vmhost, :vmname
   
 #ASSOCIATIONS
@@ -65,29 +66,27 @@ class << self
     one_cloud_dcs = import_ovdcs
     p "one cloud data center data imported"
     one_cloud_vms = import_ovms
+    p "one cloud vm data imported"
+    #    vcenter_data = vcenter_data_import
+    p "vcenter data uploaded"
+    data_center_data = data_center_data_import
+    p "data center data uploaded"
+    cluster_data = cluster_import
+    p "vdc data uploaded" 
+    esx_data = esx_data_import
+    p "ESX Host data (vmhost) uploaded"
+    esx_pnics_data = esx_pnics_data_import
+    p "ESX pnic data uploaded"
+    host_hbas_data = host_hbas_data_import
+    p "Host hbas data uploaded"
+    port_group_data = port_group_data_import
+    p "port group data uploaded"
 
-
-
-#    vcenter_data = vcenter_data_import
-p "vcenter data uploaded"
-data_center_data = data_center_data_import
-p "data center data uploaded"
-cluster_data = cluster_import
-p "vdc data uploaded" 
-esx_data = esx_data_import
-p "ESX Host data (vmhost) uploaded"
-esx_pnics_data = esx_pnics_data_import
-p "ESX pnic data uploaded"
-host_hbas_data = host_hbas_data_import
-p "Host hbas data uploaded"
-port_group_data = port_group_data_import
-p "port group data uploaded"
-
-# data_store_data = data_store_data_import
-# p "Data store data uploaded"
-vm_data = vm_data_import
-p "Vm  uploaded"
-end
+    # data_store_data = data_store_data_import
+    # p "Data store data uploaded"
+    vm_data = vm_data_import
+    p "Vm  uploaded"
+  end
 
 def import_ovdcs
   # Ovdc.update_all(:ops_status=>"Deleted")
@@ -162,46 +161,46 @@ end
 # vcenter data
 def vcenter_data_import
 #  Vcenter.update_all(:ops_status=>"Deleted")
-  
-  CSV.foreach("csv_data/powercli/esx/esx-vcenters.csv", :headers => true) do |row|
-    vcenter = Vcenter.find_by_name(row["name"])
-    if vcenter.present?
-      vcenter.ops_status = "Present"
-      vcenter.update_attributes(row.to_hash.slice(*accessible_attributes))
-    else
-      vcenter = Vcenter.new
-      vcenter.ops_status = "New"
-      vcenter.new_born_on = Date.today
-      vcenter.attributes = row.to_hash.slice(*accessible_attributes)
-    end
-    vcenter.name = row["name"]
-    vcenter.ip_address = row["ip"] if row["ip"].present?
-    vcenter.description = row["description"]  if row["description"].present?
-    vcenter.save if vcenter.name.present?
+
+CSV.foreach("csv_data/powercli/esx/esx-vcenters.csv", :headers => true) do |row|
+  vcenter = Vcenter.find_by_name(row["name"])
+  if vcenter.present?
+    vcenter.ops_status = "Present"
+    vcenter.update_attributes(row.to_hash.slice(*accessible_attributes))
+  else
+    vcenter = Vcenter.new
+    vcenter.ops_status = "New"
+    vcenter.new_born_on = Date.today
+    vcenter.attributes = row.to_hash.slice(*accessible_attributes)
   end
+  vcenter.name = row["name"]
+  vcenter.ip_address = row["ip"] if row["ip"].present?
+  vcenter.description = row["description"]  if row["description"].present?
+  vcenter.save if vcenter.name.present?
+end
 end
 
   # data center vdc data
   def data_center_data_import
  #   Vdc.update_all(:ops_status=>"Deleted")
 
-    CSV.foreach("csv_data/powercli/esx/datacenters.csv", :headers => true) do |row|
+ CSV.foreach("csv_data/powercli/esx/datacenters.csv", :headers => true) do |row|
 
-      vcenter = Vcenter.find_by_name(row["vcserver"])
-      vdc = Vdc.where(:name => row["datacenter"], :vcenter_id=>vcenter.id).first
-      if vdc.present?
-        vdc.ops_status = "Present"
-        vdc.update_attributes(row.to_hash.slice(*accessible_attributes))
-      else
-        vdc = Vdc.new
-        vdc.ops_status = "New"
-        vdc.attributes = row.to_hash.slice(*accessible_attributes)
-      end
-      vdc.name = row["datacenter"]
-      vdc.vcenter_id = vcenter.id
-      vdc.save if vdc.name.present?
-    end
-  end 
+  vcenter = Vcenter.find_by_name(row["vcserver"])
+  vdc = Vdc.where(:name => row["datacenter"], :vcenter_id=>vcenter.id).first
+  if vdc.present?
+    vdc.ops_status = "Present"
+    vdc.update_attributes(row.to_hash.slice(*accessible_attributes))
+  else
+    vdc = Vdc.new
+    vdc.ops_status = "New"
+    vdc.attributes = row.to_hash.slice(*accessible_attributes)
+  end
+  vdc.name = row["datacenter"]
+  vdc.vcenter_id = vcenter.id
+  vdc.save if vdc.name.present?
+end
+end 
 
 # Cluster data
 def cluster_import
@@ -383,7 +382,7 @@ end
 
 
 def vm_data_import
-  
+
   # Vm.update_all(:ops_status=>"Deleted")
   # Vm.update_all( :last_change=>Date.today-1) if 
 

@@ -167,7 +167,14 @@ get "/search_list" => "home#search_list", :as => :search_list
 
 get "/vms" => "vms#index", :as => :vms
 get "export", to: "vms#export", :as => :export
+get "export_all", to: "vms#export_all", :as => :export_all
+get "linux_vms", to: "vms#linux_vms", :as => :linux_vms
+get "windows_vms", to: "vms#windows_vms", :as => :windows_vms
 get "/selected_vm/:id" => "vms#selected_vm", :as => :selected_vm
+get "/edit_deleted_vm/:id" => "vms#edit_deleted_vm", :as => :edit_deleted_vm
+get "/show_deleted_vm/:id" => "vms#show_deleted_vm", :as => :show_deleted_vm
+get "select_type" =>"vms#select_type", :as => :select_type
+
 
 get "/vcenters" => "vcenters#index", :as => :vcenters
 get "/selected_vcenter/:id" => "vcenters#selected_vcenter", :as => :selected_vcenter

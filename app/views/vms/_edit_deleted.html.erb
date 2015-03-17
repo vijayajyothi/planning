@@ -1,0 +1,56 @@
+<%= form_for(@vm, :remote=>true) do |f| %>
+<% if @vm.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@vm.errors.count, "error") %> prohibited this vm from being saved:</h2>
+
+  <ul>
+    <% @vm.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+          <a data-original-title=""   data-remote="true" href="/deleted_vms">Back</a>
+
+<fieldset class="formfield">
+  <p>
+    <label>VM Name</label>
+    <%= f.text_field :name, :style=>"margin-top:0px !important;padding:10px !important; height:40px !important;", :readonly=> true %>
+  </p>
+  <p class="field">
+    <label>IP Address</label>
+    <%= f.text_field :ip, :style=>"margin-top:0px !important;padding:10px !important; height:40px !important;", :readonly=> true %>
+  </p>
+  <p class="field">
+    <label>Host Name</label>
+    <%= f.text_field :vm_hostname, :style=>"margin-top:0px !important;padding:10px !important; height:40px !important;", :readonly=> true%>
+  </p>
+  <p class="field">
+<label>HelpZilla Number</label>
+    <%= f.text_field :hz_numer, :style=>"margin-top:0px !important;padding:10px !important; height:40px !important;"%>
+  </p>
+  <p class="field">
+<label>Requester</label>
+    <%= f.text_field :requested_by, :style=>"margin-top:0px !important;padding:10px !important; height:40px !important;"%>
+  </p>
+    <p class="field">
+<label>Requested Date</label>
+    <%= f.text_field :requested_date, :style=>"margin-top:0px !important;padding:10px !important; height:40px !important;", :value=>Date.today%>
+  </p>
+  <%#= select_tag "vdc_id", options_from_collection_for_select(@vdcs, "id", "name"), :prompt => "Select a project", :onchange => "update_versions_div(this.value)" %>
+  <p>  <%= f.submit :class=>"btn btn-primary", :value=>"Update VM", :remote=>true, :style=>"float:right;"%></p>
+</fieldset>
+</div>
+<% end %>
+
+<style>
+.ops_input{
+ margin-top: 0px !important;
+ float: left;
+  width: 50% !important;
+   border: 1px solid #d9d9d9;
+   height: 40px !important;
+   padding: 10px;
+   border-radius: 5px; 
+}
+</style>
