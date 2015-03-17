@@ -32,7 +32,10 @@
           <td><%= vm.vm_hostname %></td>
 
           <td><%= vm.ip %></td>
-          <td><%= vm.last_change.strftime("%D") %></td>
+<% if vm.last_change.present? %>          <td><%= vm.last_change.strftime("%D") %></td> <% end %>
+
+
+
           <div class="button"> 
          <td><%= link_to 'Edit', edit_deleted_vm_path(vm) ,:class => 'btn btn-mini btn-warning', :remote=> true%></td> 
          <td><%= link_to 'Show', show_deleted_vm_path(vm) ,:class => 'btn btn-mini btn-info', :remote=> true%></td> 
