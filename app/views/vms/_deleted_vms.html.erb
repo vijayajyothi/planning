@@ -29,7 +29,7 @@
           <td><%= vm.vm_hostname %></td>
 
           <td><%= vm.ip %></td>
-<% if vm.last_change.present? %>          <td><%= vm.last_change.strftime("%D") %></td> <% end %>
+<td><% if vm.last_change.present? %>      <%= vm.last_change.strftime("%D") %> <% end %></td>
 
 
 
