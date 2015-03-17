@@ -30,6 +30,7 @@ class VmsController < ApplicationController
     Vm.import(params[:file])
     redirect_to root_url, notice: "Clusters imported."
   end
+
   def export
     @deleted_vms = Vm.where(:ops_status=>"Deleted")
     respond_to do |format|
@@ -39,6 +40,33 @@ class VmsController < ApplicationController
       format.xls{ send_data @deleted_vms.to_csv(col_sep: "\t") }
     end
   end  
+  def export_all
+    @vms = Vm.all
+    respond_to do |format|
+      format.xlsx
+      format.xls{ send_data @vms.to_csv(col_sep: "\t") }
+    end
+  end  
+  def linux_vms
+    @vms = Vm.where("os like ? OR os like ?","%Linux%", "%Centos%")
+    respond_to do |format|
+      format.xlsx
+      format.xls{ send_data @vms.to_csv(col_sep: "\t") }
+    end
+  end 
+  def windows_vms
+    @vms = Vm.where("os like ?","%Windows%")
+    respond_to do |format|
+      format.xlsx
+      format.xls{ send_data @vms.to_csv(col_sep: "\t") }
+    end
+  end  
+
+  def select_type
+    raise "here"
+    raise params[:data].inspect
+  end
+
   def reports
     @datacenters = Vm.all.collect(&:vdc_id).uniq
   end
@@ -79,6 +107,13 @@ class VmsController < ApplicationController
   # GET /vms/1/edit
   def edit
     @vm = Vm.find(params[:id])
+  end 
+
+  def edit_deleted_vm
+    @vm = Vm.find(params[:id])
+  end
+def show_deleted_vm
+    @vm = Vm.find(params[:id])
   end
 
   # POST /vms
@@ -104,11 +139,10 @@ class VmsController < ApplicationController
 
     respond_to do |format|
       if @vm.update_attributes(params[:vm])
-        format.html { redirect_to @vm, notice: 'Vm was successfully updated.' }
-        format.json { head :no_content }
+        format.js { redirect_to(deleted_vms_url)}
+
       else
-        format.html { render action: "edit" }
-        format.json { render json: @vm.errors, status: :unprocessable_entity }
+        format.js { redirect_to(deleted_vms_url)}
       end
     end
   end
