@@ -1,4 +1,4 @@
-<% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
+<% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju', 'Sugama Suhasini K'] %>
 <p>
   
  
@@ -37,7 +37,11 @@
 
 
           <div class="button"> 
+
+            <% if @users.include? @current_user  %>
+
          <td><%= link_to 'Edit', edit_deleted_vm_path(vm) ,:class => 'btn btn-mini btn-warning', :remote=> true%></td> 
+         <% end %>
          <td><%= link_to 'Show', show_deleted_vm_path(vm) ,:class => 'btn btn-mini btn-info', :remote=> true%></td> 
           </div>
       
