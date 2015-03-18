@@ -1,0 +1,7 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "One Cloud VMs") do |sheet|
+  sheet.add_row ["Org", "VM Name", "IP", "Status", "OS"] ## Header values of Excel
+  @ovms.each do |ovm|
+    sheet.add_row [ovm.org, ovm.vm_name, ovm.ip, ovm.status, ovm.os]
+  end
+end

@@ -1,4 +1,6 @@
 class OvmsController < ApplicationController
+  before_filter :authorize
+  
   # GET /ovms
   # GET /ovms.json
   def index

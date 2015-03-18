@@ -1,7 +1,6 @@
-<% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
+<% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju', 'Sugama Suhasini K'] %>
 <% if @users.include? @current_user  %>
-
-<div> Export:<%= link_to "One Cloud VMs", export_ovm_path(format: "xlsx") %> 
+<div> Export:<%= link_to "One Cloud VMs", export_ovm_path(format: "xlsx") %> </div>
 
   <%end %>
   <div class="index-container">
