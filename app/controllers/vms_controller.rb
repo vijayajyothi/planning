@@ -139,7 +139,7 @@ def show_deleted_vm
 
     respond_to do |format|
       if @vm.update_attributes(params[:vm])
-        format.js { redirect_to deleted_vms_path}
+        format.js { redirect_to root_url}
 
       else
         format.js { redirect_to(deleted_vms_url)}
