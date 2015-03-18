@@ -137,9 +137,10 @@ def show_deleted_vm
   def update
     @vm = Vm.find(params[:id])
 
+@vms = Vm.all
     respond_to do |format|
       if @vm.update_attributes(params[:vm])
-        format.js { redirect_to root_url}
+        format.js { redirect_to(vcenters_url)}
 
       else
         format.js { redirect_to(deleted_vms_url)}
