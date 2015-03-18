@@ -35,6 +35,14 @@ class OvmsController < ApplicationController
     @ovm = Ovm.find(params[:id])
   end
 
+  def export_ovm
+    @ovms = Ovm.all
+    respond_to do |format|
+      format.xlsx
+      format.xls{ send_data @ovms.to_csv(col_sep: "\t") }
+    end
+  end 
+
   # POST /ovms
   # POST /ovms.json
   def create

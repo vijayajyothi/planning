@@ -1,5 +1,5 @@
 <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju', 'Sugama Suhasini K'] %>
-            <% if @users.include? @current_user  %>
+<% if @users.include? @current_user  %>
 
 <div> Export:<%= link_to "All VMs", export_all_path(format: "xlsx") %> |
 <%= link_to "Linux VMs", linux_vms_path(format: "xlsx") %> |

@@ -212,6 +212,7 @@ get "/selected_ovdc/:id" => "ovdcs#selected_ovdc", :as => :selected_ovdc
 
 get "/ovms" => "ovms#index", :as => :ovms
 get "/selected_ovm/:id" => "ovms#selected_ovm", :as => :selected_ovm
+get "export_ovm", to: "vms#export_ovm", :as => :export_ovm
 
 resources :users 
  # The priority is based upon order of creation:
