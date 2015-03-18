@@ -140,7 +140,7 @@ def show_deleted_vm
 @vms = Vm.all
     respond_to do |format|
       if @vm.update_attributes(params[:vm])
-        format.js { redirect_to(vcenters_url)}
+        format.js { redirect_to :protocol =>'https://', :controller =>'vms_controller',:action=>'deleted_vms'}
 
       else
         format.js { redirect_to(deleted_vms_url)}
