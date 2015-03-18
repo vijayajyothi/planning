@@ -41,7 +41,7 @@ class VmsController < ApplicationController
     end
   end  
   def export_all
-    @vms = Vm.all
+    @vms = Vm.where('ops_status != ?', "Deleted")
     respond_to do |format|
       format.xlsx
       format.xls{ send_data @vms.to_csv(col_sep: "\t") }

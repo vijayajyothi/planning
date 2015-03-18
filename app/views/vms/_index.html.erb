@@ -1,7 +1,10 @@
-<% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju'] %>
+<% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju', 'Sugama Suhasini K'] %>
+            <% if @users.include? @current_user  %>
+
 <div> Export:<%= link_to "All VMs", export_all_path(format: "xlsx") %> |
 <%= link_to "Linux VMs", linux_vms_path(format: "xlsx") %> |
 <%= link_to "windows VMs", windows_vms_path(format: "xlsx") %></div>
+<%end %>
 <div class="index-container">
   <div class="col-sm-12">
     <div class="form-search col-sm-4">
