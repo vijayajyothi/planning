@@ -1,46 +1,89 @@
 <div class="index-container">
-  
 
-<!-- Index form Started -->
-<div class="col-sm-12">
-  <div class="form-search col-sm-4">
-    <h2>Search Results</h2></div>
-  </div>
-  <div class ="container" style="height:662px;overflow:auto;">
-    <table class="table table-striped tablesorter">
-      <tr>
-        <th></th>
-        <th>Name</th>
-        <th>Action</th>
-      </tr>
-    
-      <% @results.group_by(&:class).each do |key, group| %>
-      <tr>
-        <td colspan=3><b><%= "#{key}".upcase%> : </b></td></tr>
-        <% group.each do |result|%>
-          <tr>
-            <td></td>
-            <td><%= result.name %></td>
-            <td><%= link_to 'Show', result ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
-          </tr>
-        <% end %>
-      <% end %>
-    </table>
-  </div>
 
-  
+  <!-- Index form Started -->
+  <div class="col-sm-12">
+    <div class="form-search col-sm-4">
+      <h2>Search Results</h2></div>
+    </div>
+    <div class ="container" style="height:662px;overflow:auto;">
+      <table class="table table-striped tablesorter">
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Action</th>
+        </tr>
 
-</div>
+        <% @results.group_by(&:class).each do |key, group| %>
+        <tr>
+          <td colspan=3><b>
+            <%if "#{key}"=="Ovm"%>
+            <%="OneCloud VMs" %>
+            <% elsif "#{key}" == "Vm"%>
+            <%="vCenter VMs" %>
 
-<script>
-$(function(){
-  $('table').tablesorter({
-    widgets        : ['zebra', 'columns'],
-    usNumberFormat : false,
-    sortReset      : true,
-    sortRestart    : true
-  });
-});
+            <% else%>
+            <%= "#{key}".upcase%> : </b></td></tr>
+            <% end %>
 
-</script>
+            <% group.each do |result|%>
+            <% if result.ops_status=="Deleted"%>
+            <tr class="alert alert-error">
+              <td></td>
+              <td><%= result.name %> is deleted</td>
+              <td><%= link_to 'Show', result ,:class => 'btn btn-mini btn-info', :remote=> true%></td></tr>
+
+              <% else%>
+
+
+
+              <tr>
+                <td></td>
+                <td><%= result.name %></td>
+                <div class="button"> 
+                  <td><%= link_to 'Show', result ,:class => 'btn btn-mini btn-info', :remote=> true%></td>
+                </div>
+              </tr>
+              <% end %>
+              <% end %>
+              <% end %>
+              <div class='load-ajax'></div>
+
+            </table>
+          </div>
+
+
+
+        </div>
+        <script>
+        $(function() {
+          $('.load-ajax').hide();
+          $(document).ajaxStart(function() {
+            $('.load-ajax').show();
+          });
+          $(document).ajaxStop(function() {
+            $('.load-ajax').hide();
+          });
+        });
+        </script>
+
+        <style>
+        .load-ajax {
+          /*float:right;*/
+          background-image:url(<%= asset_path 'ajax-loader.gif' %>);
+          width:450px;
+          height:90px;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: fixed;
+          top: 40%;
+          left: 40%;
+          margin-left: -40px; /* half width of the spinner gif */
+          margin-top: -40px; /* half height of the spinner gif */
+          text-align:center;
+          z-index:0000;
+          overflow: auto;
+
+        }
+        </style>
 

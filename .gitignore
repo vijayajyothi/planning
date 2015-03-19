@@ -16,6 +16,6 @@
 /tmp
 /cron.log
 /solr/*
-
+/csv_data/*
 /public/*
 # /csvbkp/*

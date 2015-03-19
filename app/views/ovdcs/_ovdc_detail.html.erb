@@ -1,0 +1,104 @@
+
+
+<div class="right-panel">
+  <div class="span9">
+    <div class="span6">
+      <div class="workflow-blocks">
+        <div class="workflow-heading"><span>Basic Data</span><p> </p></div>
+        <table class="table table-hover">
+         <tbody>
+          <tr>
+            <td><b>OVDC</b></td>
+            <td><%= @ovdc.ovdc %></td>
+          </tr>
+          <tr>
+            <td><b>Org</b></td>
+            <td><%= @ovdc.org%></td>
+          </tr>
+          <tr><td colspan=2><b style="color:#3399CC;">Memory</b></td></tr>
+          <tr>
+              <td><b>Memory Allocated(GB)</b></td>
+              <td><%= @ovdc.mem_alloc %></td>
+            </tr>
+            <tr>
+              <td><b>Memory Limit(GB)</b></td>
+              <td><%= @ovdc.mem_limit%></td>
+            </tr>
+            <tr>
+              <td><b>Memory(%)</b></td>
+              <td><%= @ovdc.mem_pct%></td>
+            </tr>
+            <tr>
+              <td><b>Memory Used(GB)</b></td>
+              <td><%= @ovdc.mem_used%></td>
+            </tr>
+            <tr>
+              <td><b>Memory Free(GB)</b></td>
+              <td><%= @ovdc.mem_free%></td>
+            </tr>
+          <tr><td colspan=2><b style="color:#3399CC;">CPU</b></td></tr>
+
+             <tr>
+              <td><b>CPU Allocated(GHz)</b></td>
+              <td><%= @ovdc.cpu_alloc %></td>
+            </tr>
+            <tr>
+              <td><b>CPU Limit(GHz)</b></td>
+              <td><%= @ovdc.cpu_limit%></td>
+            </tr>
+            <tr>
+              <td><b>CPU(%)</b></td>
+              <td><%= @ovdc.cpu_pct%></td>
+            </tr>
+            <tr>
+              <td><b>CPU Used(GHz)</b></td>
+              <td><%= @ovdc.cpu_used%></td>
+            </tr>
+          <tr><td colspan=2><b style="color:#3399CC;">Storage</b></td></tr>
+
+            <tr>
+
+          <td><b>Storage Allocated(GB)</b></td>
+          <td><%= @ovdc.st_alloc %></td>
+        </tr>
+        <tr>
+          <td><b>Storage Limit(GB)</b></td>
+          <td><%= @ovdc.st_limit%></td>
+        </tr>
+        <tr>
+          <td><b>Storage(%)</b></td>
+          <td><%= @ovdc.storage_pct%></td>
+        </tr>
+        <tr>
+          <td><b>Storage Used(GB)</b></td>
+          <td><%= @ovdc.st_used%></td>
+        </tr>
+        <tr>
+          <td><b>Storage Free(GB)</b></td>
+          <td><%= @ovdc.st_free%></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+     <div class="span6">
+      <div class="workflow-blocks"  style="height:755px;">
+        <% @vms = get_ovms(@ovdc.id) %>
+
+        <div class="workflow-heading"><span>OneCloud VMs</span><p>Count : <b><%= @vms.count%></b></p></div>
+        <table class="table table-hover">
+
+          <tbody>
+            <% @vms.each do |each_vm|%>
+            <tr>
+              <td><b><%= link_to each_vm.name, each_vm, :style=>"color:black;", :remote=> true%></b></td>
+            </tr> 
+            <%end %>
+          </tbody></table>
+        </div>
+      </div>
+  
+<%#= link_to 'Edit', edit_vm_path(@vm) %> 
+<%#= link_to 'Back', vms_path %>
+</div><!--/span-->
+</div><!--/span-->

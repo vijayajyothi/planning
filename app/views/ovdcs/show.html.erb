@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Org:</b>
+  <%= @ovdc.org %>
+</p>
+
+<p>
+  <b>Ovdc:</b>
+  <%= @ovdc.ovdc %>
+</p>
+
+<p>
+  <b>Storage pct:</b>
+  <%= @ovdc.storage_pct %>
+</p>
+
+<p>
+  <b>Mem pct:</b>
+  <%= @ovdc.mem_pct %>
+</p>
+
+<p>
+  <b>Cpu pct:</b>
+  <%= @ovdc.cpu_pct %>
+</p>
+
+<p>
+  <b>St limit:</b>
+  <%= @ovdc.st_limit %>
+</p>
+
+<p>
+  <b>St alloc:</b>
+  <%= @ovdc.st_alloc %>
+</p>
+
+<p>
+  <b>St used:</b>
+  <%= @ovdc.st_used %>
+</p>
+
+<p>
+  <b>St free:</b>
+  <%= @ovdc.st_free %>
+</p>
+
+<p>
+  <b>Mem limit:</b>
+  <%= @ovdc.mem_limit %>
+</p>
+
+<p>
+  <b>Mem alloc:</b>
+  <%= @ovdc.mem_alloc %>
+</p>
+
+<p>
+  <b>Mem used:</b>
+  <%= @ovdc.mem_used %>
+</p>
+
+<p>
+  <b>Mem free:</b>
+  <%= @ovdc.mem_free %>
+</p>
+
+<p>
+  <b>Cpu limit:</b>
+  <%= @ovdc.cpu_limit %>
+</p>
+
+<p>
+  <b>Cpu alloc:</b>
+  <%= @ovdc.cpu_alloc %>
+</p>
+
+<p>
+  <b>Cpu used:</b>
+  <%= @ovdc.cpu_used %>
+</p>
+
+
+<%= link_to 'Edit', edit_ovdc_path(@ovdc) %> |
+<%= link_to 'Back', ovdcs_path %>

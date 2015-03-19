@@ -1,0 +1,7 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "VMs") do |sheet|
+  sheet.add_row ["VM Name", "Host Name", "IP", "Status", "OS"] ## Header values of Excel
+  @vms.each do |vm|
+    sheet.add_row [vm.name, vm.vm_hostname, vm.ip, vm.connection_state, vm.os]
+  end
+end
