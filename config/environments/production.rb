@@ -68,20 +68,21 @@ Opsgps::Application.configure do
    # Expands the lines which load the assets
   config.assets.debug = true
 # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'opsgps-v1.vmware.com' }
+  config.action_mailer.default_url_options = { :host => 'opsgps.vmware.com' }
   config.action_mailer.delivery_method = :smtp
   # change to false to prevent email from being sent during development
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default :charset => "utf-8"
 
-   config.action_mailer.smtp_settings = {
-    :enable_starttls_auto => true,
-    :address => "smtp.gmail.com",
-    :port => 587,
-    :domain => "gmail.com",
-    :authentication => :login,
-    :user_name => 'vkalangi1989@gmail.com',
-    :password => 'kalangi1989',
+  config.action_mailer.default :charset => "utf-8"
+  config.action_mailer.smtp_settings = {
+    :enable_starttls_auto => false,
+    :address => "smtp.vmware.com",
+    :port => 25,
+    :domain => "vmware.com"
+#    :authentication => :login,
+ #   :user_name => 'opsgps@vmware.com',
+  #  :password => '!YLa!EJU8aMeby@a@A',
   }
+
 end
