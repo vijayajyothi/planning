@@ -1,0 +1,53 @@
+<h1>Listing ovdcs</h1>
+
+<table>
+  <tr>
+    <th>Org</th>
+    <th>Ovdc</th>
+    <th>Storage pct</th>
+    <th>Mem pct</th>
+    <th>Cpu pct</th>
+    <th>St limit</th>
+    <th>St alloc</th>
+    <th>St used</th>
+    <th>St free</th>
+    <th>Mem limit</th>
+    <th>Mem alloc</th>
+    <th>Mem used</th>
+    <th>Mem free</th>
+    <th>Cpu limit</th>
+    <th>Cpu alloc</th>
+    <th>Cpu used</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ovdcs.each do |ovdc| %>
+  <tr>
+    <td><%= ovdc.org %></td>
+    <td><%= ovdc.ovdc %></td>
+    <td><%= ovdc.storage_pct %></td>
+    <td><%= ovdc.mem_pct %></td>
+    <td><%= ovdc.cpu_pct %></td>
+    <td><%= ovdc.st_limit %></td>
+    <td><%= ovdc.st_alloc %></td>
+    <td><%= ovdc.st_used %></td>
+    <td><%= ovdc.st_free %></td>
+    <td><%= ovdc.mem_limit %></td>
+    <td><%= ovdc.mem_alloc %></td>
+    <td><%= ovdc.mem_used %></td>
+    <td><%= ovdc.mem_free %></td>
+    <td><%= ovdc.cpu_limit %></td>
+    <td><%= ovdc.cpu_alloc %></td>
+    <td><%= ovdc.cpu_used %></td>
+    <td><%= link_to 'Show', ovdc %></td>
+    <td><%= link_to 'Edit', edit_ovdc_path(ovdc) %></td>
+    <td><%= link_to 'Destroy', ovdc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ovdc', new_ovdc_path %>

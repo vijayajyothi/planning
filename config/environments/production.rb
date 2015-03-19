@@ -75,14 +75,11 @@ Opsgps::Application.configure do
   config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.default :charset => "utf-8"
-  config.action_mailer.smtp_settings = {
+   config.action_mailer.smtp_settings = {
     :enable_starttls_auto => false,
     :address => "smtp.vmware.com",
     :port => 25,
     :domain => "vmware.com"
-#    :authentication => :login,
- #   :user_name => 'opsgps@vmware.com',
-  #  :password => '!YLa!EJU8aMeby@a@A',
   }
 
 end

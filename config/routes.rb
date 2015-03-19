@@ -1,4 +1,10 @@
 Opsgps::Application.routes.draw do
+  resources :ovms
+
+
+  resources :ovdcs
+
+
   resources :f5_devices
 
 
@@ -152,13 +158,23 @@ match 'logout', to: 'sessions#destroy', as: 'logout'
 match 'login', to: 'sessions#new', as: 'login'
 
 match 'signup', to: 'users#new', as: 'signup'
+match 'mail_deleted_vms', to: 'vms#mail_deleted_vms', as: 'mail_deleted_vms'
 
 get "home/index"
 get "home/server_error"
 get "/search_list" => "home#search_list", :as => :search_list
 
 get "/vms" => "vms#index", :as => :vms
+get "export", to: "vms#export", :as => :export
+get "export_all", to: "vms#export_all", :as => :export_all
+get "linux_vms", to: "vms#linux_vms", :as => :linux_vms
+get "deleted_vms", to: "vms#deleted_vms", :as => :deleted_vms
+get "windows_vms", to: "vms#windows_vms", :as => :windows_vms
 get "/selected_vm/:id" => "vms#selected_vm", :as => :selected_vm
+get "/edit_deleted_vm/:id" => "vms#edit_deleted_vm", :as => :edit_deleted_vm
+get "/show_deleted_vm/:id" => "vms#show_deleted_vm", :as => :show_deleted_vm
+get "select_type" =>"vms#select_type", :as => :select_type
+
 
 get "/vcenters" => "vcenters#index", :as => :vcenters
 get "/selected_vcenter/:id" => "vcenters#selected_vcenter", :as => :selected_vcenter
@@ -191,6 +207,12 @@ get "/selected_f5_vip/:id" => "f5_vips#selected_f5_vip", :as => :selected_f5_vip
 get "/f5devices" => "f5_devices#index", :as => :f5devices
 get "/selected_f5_device/:id" => "f5_devices#selected_f5_device", :as => :selected_f5_device
 
+get "/ovdcs" => "ovdcs#index", :as => :ovdcs
+get "/selected_ovdc/:id" => "ovdcs#selected_ovdc", :as => :selected_ovdc
+
+get "/ovms" => "ovms#index", :as => :ovms
+get "/selected_ovm/:id" => "ovms#selected_ovm", :as => :selected_ovm
+get "export_ovm", to: "ovms#export_ovm", :as => :export_ovm
 
 resources :users 
  # The priority is based upon order of creation:
@@ -243,7 +265,7 @@ resources :users
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'home#index'
-  # root :to => 'home#server_error'
+# root :to => 'home#server_error'
 
   # See how all your routes lay out with "rake routes"
 

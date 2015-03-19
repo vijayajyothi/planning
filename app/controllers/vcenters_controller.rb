@@ -38,8 +38,14 @@ end
   # GET /vcenters/1/edit
   def edit
     @vcenter = Vcenter.find(params[:id])
+@vdcs = Vdc.all
   end
 
+def update_versions
+raise "here"
+  @vdcs = Vdc.where(:id => params[:id]).all
+  render :partial => "vdcs", :object => @vdcs
+end
   # POST /vcenters
   # POST /vcenters.json
   def create
