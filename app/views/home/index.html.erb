@@ -1,3 +1,5 @@
+<% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju', 'Sugama Suhasini K'] %>
+
 <% comment do %>
 <% if flash[:notice]%>
 <div class="alert alert-error">
@@ -40,9 +42,11 @@
             </a>
           </div>
         </div>
+           <% if @users.include? @current_user  %>
+
         <div class="metro-nav">
           <div class="metro-nav-block nav-deep-thistle">
-           <a data-original-title="" data-remote="true" href="/reports">
+           <a data-original-title="" data-remote="true" href="#">
             <div class="info_img">Reports</div>
             <div class="info"></div>
             <div class="status"></div>
@@ -50,6 +54,7 @@
         </div>
 
       </div>
+     <% end %> 
     </div>
     <div class=" col-sm-6 col-md-3">
       <div class="metro-nav">
@@ -74,6 +79,8 @@
         </div>
 
       </div>
+           <% if @users.include? @current_user  %>
+
        <div class="metro-nav">
         <div class="metro-nav-block nav-deep-terques" style="background:#A0A5A5";>
           <a data-original-title=""   data-remote="true" href="/deleted_vms">
@@ -84,6 +91,7 @@
         </div>
 
       </div>
+      <% end %>
       
       
     </div>
