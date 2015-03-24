@@ -838,6 +838,7 @@ aw-rfs-files-vip-http-80,10.113.164.247,80,sc9-tier2-prod-int-2
 aw-tokens-vip.VMware.com-80,10.113.164.248,80,sc9-tier2-prod-int-2
 visl-prod-siml2-vip-pool,10.113.61.41,8021,sc9-tier2-prod-int-2
 opsgps-new--ssl,10.113.164.14,443,sc9-tier2-prod-int-2
+email-revenue-vip-25,10.113.165.80,25,sc9-tier2-prod-int-2
 sblwebesvstage-prxy-bypass-vip,10.16.79.182,80,osdc-prod-dmz-1
 sblwebesvprod-prxy-bypass-vip,10.16.79.181,80,osdc-prod-dmz-1
 mylearnweb-ci-vip,10.16.79.174,80,osdc-prod-dmz-1
@@ -3421,6 +3422,7 @@ pds-vip-443,10.113.208.112,443,lb1-VPRN-DMZ
 pds-vip-11880,10.113.208.112,80,lb1-VPRN-DMZ
 pds-vip-22,10.113.208.112,22,lb1-VPRN-DMZ
 mirage-prod-dmz-vip,10.113.208.117,8000,lb1-VPRN-DMZ
+aw-rfs-dmz-vip-80,10.113.63.74,80,lb1-VPRN-DMZ
 knova-stg2-kss-vip,10.113.53.145,8080,ld2sc1-sjc3
 knova-stg2-kcc-vip,10.113.53.231,8080,ld2sc1-sjc3
 s2-stage-ebssso-vip,10.113.53.118,443,ld2sc1-sjc3

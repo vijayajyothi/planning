@@ -9869,3 +9869,12 @@ ip,port,name
 10.128.11.199,443,wdc-view-pool
 10.128.11.198,443,wdc-view-pool
 10.128.11.199,443,wdc-view-pool
+10.113.191.63,25,email-revenue-pool
+10.113.191.64,25,email-revenue-pool
+10.113.191.65,25,email-revenue-pool
+10.113.164.243,80,aw-tokens-vip-pool-80
+10.113.164.244,80,aw-tokens-vip-pool-80
+10.113.164.241,80,aw-rfs-files-vip-80
+10.113.164.242,80,aw-rfs-files-vip-80
+10.113.164.247,80,aw-rfs-dmz-pool-80
+10.113.164.248,80,aw-rfs-dmz-pool-80
