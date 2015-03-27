@@ -25,7 +25,6 @@
           <tr>
             <th>VM Name</th>
             <th>VM Host Name</th>
-            <th>ESXi Host</th>
             <th>IP</th>
             <th>Connection State</th>
             <th colspan=2> Actions</th>
@@ -47,7 +46,6 @@
 
             <td><%= vm.name %></td>
             <td><%= vm.vm_hostname %></td>
-            <td><%= my_host(vm.vmhost_id).name %></td>
             <td><%= vm.ip %></td>
             <td><%= vm.connection_state %></td>
             <div class="button"> 
