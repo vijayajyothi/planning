@@ -24,9 +24,16 @@
         <table class="table table-striped tablesorter">
           <tr>
             <th>VM Name</th>
-            <th>VM Host Name</th>
-            <th>ESXi Host</th>
+<<<<<<< HEAD
+            <th>VM DNS Name</th>
+            <th>ESXi Host Name</th>
             <th>IP</th>
+=======
+ <th>VM DNS Name</th>
+            <th>ESXi Host Name</th>
+           
+ <th>IP</th>
+>>>>>>> 754d3830c764b2ae9af3dba4f486d8e68cfdc101
             <th>Connection State</th>
             <th colspan=2> Actions</th>
           </tr>
@@ -46,9 +53,15 @@
           <tr style="" id ="complete_tr">
 
             <td><%= vm.name %></td>
+<<<<<<< HEAD
             <td><%= vm.vm_hostname %></td>
-            <td><%= my_host(vm.vmhost_id).name %></td>
+            <td><%= my_host(vm.vmhost_id).name if vm.vmhost_id.present? %></td>
+            <td><%= vm.ip  %></td>
+=======
+    <td><%= vm.vm_hostname %></td>
+            <td><%= my_host(vm.vmhost_id).name if vm.vmhost_id.present? %></td>
             <td><%= vm.ip %></td>
+>>>>>>> 754d3830c764b2ae9af3dba4f486d8e68cfdc101
             <td><%= vm.connection_state %></td>
             <div class="button"> 
 

@@ -11,6 +11,7 @@ class HomeController < ApplicationController
     @f5vips_count = F5Vip.count
     @ovdcs = Ovdc.all.count
     @ovms = Ovm.all.count
+    @re_f5_count = ReF5Vip.all.count
     @deleted_count = Vm.where(:ops_status=>"Deleted").count
   end
 
@@ -19,7 +20,8 @@ class HomeController < ApplicationController
   end
   
   def search_list
-    @search = Sunspot.search [Vcenter, Vdc, Cluster, Vmhost, Vm, F5Vip, F5Cluster, F5Device, Ovm, Ovdc] do 
+    @search = Sunspot.search [Vcenter, Vdc, Cluster, Vmhost, Vm, Ovm, Ovdc, ReF5Vip, ReF5Inventory] do 
+    # @search = Sunspot.search [Vcenter, Vdc, Cluster, Vmhost, Vm, F5Vip, F5Cluster, F5Device, Ovm, Ovdc,ReF5Vip,ReF5Inventory] do 
       fulltext params[:search]
     end
     @results = @search.results

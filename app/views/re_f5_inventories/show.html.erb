@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Serial:</b>
+  <%= @re_f5_inventory.serial %>
+</p>
+
+<p>
+  <b>Hostname:</b>
+  <%= @re_f5_inventory.hostname %>
+</p>
+
+<p>
+  <b>Admin ip:</b>
+  <%= @re_f5_inventory.admin_ip %>
+</p>
+
+<p>
+  <b>Marketing name:</b>
+  <%= @re_f5_inventory.marketing_name %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @re_f5_inventory.version %>
+</p>
+
+<p>
+  <b>Failover mode:</b>
+  <%= @re_f5_inventory.failover_mode %>
+</p>
+
+<p>
+  <b>Failover state:</b>
+  <%= @re_f5_inventory.failover_state %>
+</p>
+
+<p>
+  <b>Peer address:</b>
+  <%= @re_f5_inventory.peer_address %>
+</p>
+
+<p>
+  <b>Peer admin ip:</b>
+  <%= @re_f5_inventory.peer_admin_ip %>
+</p>
+
+<p>
+  <b>Floating ip:</b>
+  <%= @re_f5_inventory.floating_ip %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @re_f5_inventory.location %>
+</p>
+
+<p>
+  <b>Environment:</b>
+  <%= @re_f5_inventory.environment %>
+</p>
+
+<p>
+  <b>Re f5 vip ip:</b>
+  <%= @re_f5_inventory.re_f5_vip_ip %>
+</p>
+
+
+<%= link_to 'Edit', edit_re_f5_inventory_path(@re_f5_inventory) %> |
+<%= link_to 'Back', re_f5_inventories_path %>

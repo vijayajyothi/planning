@@ -1,4 +1,13 @@
 Opsgps::Application.routes.draw do
+  resources :re_f5_inventories
+
+
+  resources :re_f5_pools
+
+
+  resources :re_f5_vips
+
+
   resources :ovms
 
 
@@ -199,11 +208,17 @@ match '/500' =>'error#server_error'
 get "/f5s" => "f5_clusters#index", :as => :f5s
 get "/selected_f5cluster/:id" => "f5_clusters#selected_f5cluster", :as => :selected_f5cluster
 
-# F5 Cluster
+# F5 VIP
 get "/f5vips" => "f5_vips#index", :as => :f5vips
 get "/selected_f5_vip/:id" => "f5_vips#selected_f5_vip", :as => :selected_f5_vip
+# Remodeled F5 VIP
+get "/ref5vips" => "re_f5_vips#index", :as => :ref5vips
+get "/re_selected_f5_vip/:id" => "re_f5_vips#re_selected_f5_vip", :as => :re_selected_f5_vip
 
-# F5 Cluster
+# get "/ref5vips" => "re_f5_vips#index", :as => :ref5vips
+get "/re_selected_f5_inventories/:id" => "re_f5_inventories#re_selected_f5_inventory", :as => :re_selected_f5_inventory
+
+# F5 Devices
 get "/f5devices" => "f5_devices#index", :as => :f5devices
 get "/selected_f5_device/:id" => "f5_devices#selected_f5_device", :as => :selected_f5_device
 
@@ -265,7 +280,7 @@ resources :users
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'home#index'
-  # root :to => 'home#server_error'
+# root :to => 'home#server_error'
 
   # See how all your routes lay out with "rake routes"
 

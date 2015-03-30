@@ -1,0 +1,75 @@
+<!-- <div class="container"> -->
+
+  <section>
+   <div class="container-fluid">
+     <div class="col-sm-12">
+
+    <div class="form-search col-sm-4">
+      <h4>F5 VIP Details</h2></div>
+        <div class="form-search col-sm-4" style="margin-top:3px;">
+
+          <div class="input-append">
+
+            <%= form_tag re_f5_vips_path, :method => :get, :remote=> true do %>
+            <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+            <%= submit_tag "Search", :name => nil, :class=>"btn" %>
+            <% end %>
+          </div>
+        </div>
+        <div class="form-search col-sm-4" style="margin-top:20px;">
+
+        </div>
+      </div>
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="well sidebar-nav" style="margin-right:20px;margin-bottom:0px;height:717px; overflow:auto;">
+          <ul class="nav nav-list">
+            <% @re_f5_vips.each do |each_f5_vip|%>
+              <li class=<%=each_f5_vip.id== params[:id].to_i ? "active" : "none" %>>
+              <%= link_to  each_f5_vip.name, re_selected_f5_vip_path(each_f5_vip), :remote=> true%>
+            </li>
+            
+            <% end %>
+          </ul>
+        </div><!--/.well -->
+      </div><!--/span-->
+    <div class='load-ajax'></div>
+      
+      <div class="dashboard">
+        <%= render :partial=> "f5_vip_detail" %>
+      </div><!--/dashboard-->
+    </div><!--/row-->
+  </section>
+<!-- </div>< --><!--/container-->
+
+<script>
+$(function() {
+    $('.load-ajax').hide();
+    $(document).ajaxStart(function() {
+        $('.load-ajax').show();
+   });
+   $(document).ajaxStop(function() {
+        $('.load-ajax').hide();
+   });
+});
+</script>
+
+<style>
+.load-ajax {
+  /*float:right;*/
+  background-image:url(<%= asset_path 'ajax-loader.gif' %>);
+  width:450px;
+  height:90px;
+  background-position: center;
+  background-repeat: no-repeat;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    margin-left: -40px; /* half width of the spinner gif */
+    margin-top: -40px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:0000;
+    overflow: auto;
+   
+}
+</style>

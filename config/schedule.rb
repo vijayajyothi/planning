@@ -19,8 +19,8 @@ set :output, "/home/workspace/opsgps/cron_log.log"
 
 every :day, :at=> '10:01am' do
   # rake `rm -rf /home/workspace/opsgps/solr`
-  rake "sunspot:solr:stop" 
-  rake "sunspot:solr:start"
+ # rake "sunspot:solr:stop" 
+#  rake "sunspot:solr:start"
   rake "sunspot:solr:start"
   rake "cron"
   rake "sunspot:solr:reindex"

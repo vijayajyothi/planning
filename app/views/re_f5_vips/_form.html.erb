@@ -1,0 +1,57 @@
+<%= form_for(@re_f5_vip) do |f| %>
+  <% if @re_f5_vip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@re_f5_vip.errors.count, "error") %> prohibited this re_f5_vip from being saved:</h2>
+
+      <ul>
+      <% @re_f5_vip.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :partition %><br />
+    <%= f.text_field :partition %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :environment %><br />
+    <%= f.text_field :environment %>
+  </div>
+  <div class="field">
+    <%= f.label :poool_name %><br />
+    <%= f.text_field :poool_name %>
+  </div>
+  <div class="field">
+    <%= f.label :vip_status %><br />
+    <%= f.text_field :vip_status %>
+  </div>
+  <div class="field">
+    <%= f.label :irules %><br />
+    <%= f.text_field :irules %>
+  </div>
+  <div class="field">
+    <%= f.label :persistance_method %><br />
+    <%= f.text_field :persistance_method %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,47 @@
+<h1>Listing re_f5_inventories</h1>
+
+<table>
+  <tr>
+    <th>Serial</th>
+    <th>Hostname</th>
+    <th>Admin ip</th>
+    <th>Marketing name</th>
+    <th>Version</th>
+    <th>Failover mode</th>
+    <th>Failover state</th>
+    <th>Peer address</th>
+    <th>Peer admin ip</th>
+    <th>Floating ip</th>
+    <th>Location</th>
+    <th>Environment</th>
+    <th>Re f5 vip ip</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @re_f5_inventories.each do |re_f5_inventory| %>
+  <tr>
+    <td><%= re_f5_inventory.serial %></td>
+    <td><%= re_f5_inventory.hostname %></td>
+    <td><%= re_f5_inventory.admin_ip %></td>
+    <td><%= re_f5_inventory.marketing_name %></td>
+    <td><%= re_f5_inventory.version %></td>
+    <td><%= re_f5_inventory.failover_mode %></td>
+    <td><%= re_f5_inventory.failover_state %></td>
+    <td><%= re_f5_inventory.peer_address %></td>
+    <td><%= re_f5_inventory.peer_admin_ip %></td>
+    <td><%= re_f5_inventory.floating_ip %></td>
+    <td><%= re_f5_inventory.location %></td>
+    <td><%= re_f5_inventory.environment %></td>
+    <td><%= re_f5_inventory.re_f5_vip_ip %></td>
+    <td><%= link_to 'Show', re_f5_inventory %></td>
+    <td><%= link_to 'Edit', edit_re_f5_inventory_path(re_f5_inventory) %></td>
+    <td><%= link_to 'Destroy', re_f5_inventory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Re f5 inventory', new_re_f5_inventory_path %>

@@ -18,8 +18,8 @@
               <!--  <td><b>Data Center</b></td>
               <td><%#= link_to my_vdc(@cluster.vdc_id).name , my_vdc(@cluster.vdc_id), :style=>"color:black;", :remote=> true%></td> -->
            
-              <td><b>Total memory(MB)</b></td>
-              <td><%= @cluster.mem_total_mb %></td>
+              <td><b>Total memory(GB)</b></td>
+              <td><%= @cluster.mem_total_mb/1024 %></td>
                <td><b>CPU Cores</b></tld>
               <td><%= @cluster.cpu_no_cores %></td>
             </tr>  
