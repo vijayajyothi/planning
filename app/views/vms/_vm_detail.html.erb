@@ -32,8 +32,14 @@
                 <td><b>Cluster</b></td>
                 <td><% if @vm.cluster_id.present? %><%= link_to my_cluster(@vm.cluster_id).name, my_cluster(@vm.cluster_id), :style=>"color:black;", :remote=> true%><% end %></td>
                 <td><b>ESX Host</b></td>
+<<<<<<< HEAD
                 <td><%= link_to_if(@vm.vmhost_id.present? , my_host(@vm.vmhost_id).name, my_host(@vm.vmhost_id), :style=>"color:black;", :remote=> true)%></td>
+=======
+      <td><%= link_to_if(@vm.vmhost_id.present? , my_host(@vm.vmhost_id).name, my_host(@vm.vmhost_id), :style=>"color:black;", :remote=> true)%></td>
+
+>>>>>>> 754d3830c764b2ae9af3dba4f486d8e68cfdc101
               </tr> 
+
               <tr>
                 <td><b>VM Name</b></td>
                 <td><%= @vm.name %></td>

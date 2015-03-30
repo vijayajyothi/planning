@@ -1,6 +1,7 @@
 VM name,status,Date Created,OS,memGB,diskGB,IP,vApp name,vApp status,Application,Application Owner,Owner Email,OrgVDC,Organization,VM description,vApp description
 10.127.239.150,PoweredOff,,Red Hat Enterprise Linux 7 (64-bit),0.00390625,0,10.127.239.150,IP reserver - do not delete,PoweredOff,,,,CorpIT-NonSDLC-MSSQL-PAYG1,corpit-nonsdlc,"","This vAPP contains dummy VMs with IP address allocated to eliminate IP duplication"
 10-mon-web-1,PoweredOn,,CentOS 4/5/6/7 (64-bit),4,99,10.127.242.87,appd-BASE_DB_MYSQL_5612-1.0.0-rpothukuchi-2144-7a369ae9-d4b3-4258-943a-32112c4901d2,ChildrenWithDifferentStatus,,,,CorpIT-NonSDLC-PAYG1-ovDC,corpit-nonsdlc,"",""
+test-jyothi,PoweredOn,,Red Hat Enterprise Linux 6 (64-bit),256,1296,10.127.241.129,Analytics-app,PoweredOn,,,,CorpIT-NonSDLC-PAYG1-ovDC,corpit-nonsdlc,"",""
 advanced-analytics-app-1,PoweredOn,,Red Hat Enterprise Linux 6 (64-bit),256,1296,10.127.241.129,Analytics-app,PoweredOn,,,,CorpIT-NonSDLC-PAYG1-ovDC,corpit-nonsdlc,"",""
 advanced-analytics-app-2,PoweredOn,,Red Hat Enterprise Linux 6 (64-bit),128,1166,10.127.241.161,Analytics-app,PoweredOn,,,,CorpIT-NonSDLC-PAYG1-ovDC,corpit-nonsdlc,"",""
 ADV-ANLY-APP-2,PoweredOn,,Microsoft Windows Server 2012 (64-bit),128,1040,10.127.234.215,ADV-ANLY-APP-2,PoweredOn,,,,CorpIT-NonSDLC-Windows-PAYG1,corpit-nonsdlc,"",""
