@@ -21,22 +21,22 @@
             <%="OneCloud VMs" %>
             <% elsif "#{key}" == "Vm"%>
             <%="vCenter VMs" %>
+            <% elsif "#{key}" == "ReF5Inventory"%>
+            <%="F5 Inventory" %>
+            <% elsif "#{key}" == "ReF5Vip"%>
+            <%="F5 VIPs" %>
 
             <% else%>
             <%= "#{key}".upcase%> : </b></td></tr>
             <% end %>
 
             <% group.each do |result|%>
-            <% if result.ops_status=="Deleted"%>
+            <% if result.ops_status=="Deleted" %>
             <tr class="alert alert-error">
               <td></td>
               <td><%= result.name %> is deleted</td>
               <td><%= link_to 'Show', result ,:class => 'btn btn-mini btn-info', :remote=> true%></td></tr>
-
               <% else%>
-
-
-
               <tr>
                 <td></td>
                 <td><%= result.name %></td>

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class OvmTest < ActiveSupport::TestCase
+class ReF5PoolTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

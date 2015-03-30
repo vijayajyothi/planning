@@ -1,0 +1,69 @@
+<%= form_for(@re_f5_inventory) do |f| %>
+  <% if @re_f5_inventory.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@re_f5_inventory.errors.count, "error") %> prohibited this re_f5_inventory from being saved:</h2>
+
+      <ul>
+      <% @re_f5_inventory.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :serial %><br />
+    <%= f.text_field :serial %>
+  </div>
+  <div class="field">
+    <%= f.label :hostname %><br />
+    <%= f.text_field :hostname %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_ip %><br />
+    <%= f.text_field :admin_ip %>
+  </div>
+  <div class="field">
+    <%= f.label :marketing_name %><br />
+    <%= f.text_field :marketing_name %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br />
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :failover_mode %><br />
+    <%= f.text_field :failover_mode %>
+  </div>
+  <div class="field">
+    <%= f.label :failover_state %><br />
+    <%= f.text_field :failover_state %>
+  </div>
+  <div class="field">
+    <%= f.label :peer_address %><br />
+    <%= f.text_field :peer_address %>
+  </div>
+  <div class="field">
+    <%= f.label :peer_admin_ip %><br />
+    <%= f.text_field :peer_admin_ip %>
+  </div>
+  <div class="field">
+    <%= f.label :floating_ip %><br />
+    <%= f.text_field :floating_ip %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :environment %><br />
+    <%= f.text_field :environment %>
+  </div>
+  <div class="field">
+    <%= f.label :re_f5_vip_ip %><br />
+    <%= f.text_field :re_f5_vip_ip %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150317060032) do
+ActiveRecord::Schema.define(:version => 20150330072199) do
 
   create_table "applications", :force => true do |t|
     t.string   "name"
@@ -414,6 +414,55 @@ ActiveRecord::Schema.define(:version => 20150317060032) do
     t.string   "ops_status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "re_f5_inventories", :force => true do |t|
+    t.string   "serial"
+    t.string   "hostname"
+    t.string   "admin_ip"
+    t.string   "marketing_name"
+    t.string   "version"
+    t.string   "failover_mode"
+    t.string   "failover_state"
+    t.string   "peer_address"
+    t.string   "peer_admin_ip"
+    t.string   "floating_ip"
+    t.string   "location"
+    t.string   "environment"
+    t.string   "re_f5_vip_ip"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "ops_staus"
+    t.string   "ops_stauts"
+    t.string   "ops_status"
+  end
+
+  create_table "re_f5_pools", :force => true do |t|
+    t.string   "name"
+    t.integer  "re_f5_vip_id"
+    t.string   "pool_members"
+    t.string   "lb_method"
+    t.string   "pool_monitor"
+    t.string   "pool_status"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.string   "vips"
+  end
+
+  create_table "re_f5_vips", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "ip"
+    t.string   "partition"
+    t.string   "location"
+    t.string   "environment"
+    t.string   "poool_name"
+    t.string   "vip_status"
+    t.string   "irules"
+    t.string   "persistance_method"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "ops_status"
   end
 
   create_table "san_ports", :force => true do |t|

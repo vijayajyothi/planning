@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class OvdcTest < ActiveSupport::TestCase
+class ReF5InventoryTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

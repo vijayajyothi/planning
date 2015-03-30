@@ -1,0 +1,33 @@
+<h1>Listing re_f5_pools</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Re f5 vip</th>
+    <th>Pool members</th>
+    <th>Lb method</th>
+    <th>Pool monitor</th>
+    <th>Pool status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @re_f5_pools.each do |re_f5_pool| %>
+  <tr>
+    <td><%= re_f5_pool.name %></td>
+    <td><%= re_f5_pool.re_f5_vip_id %></td>
+    <td><%= re_f5_pool.pool_members %></td>
+    <td><%= re_f5_pool.lb_method %></td>
+    <td><%= re_f5_pool.pool_monitor %></td>
+    <td><%= re_f5_pool.pool_status %></td>
+    <td><%= link_to 'Show', re_f5_pool %></td>
+    <td><%= link_to 'Edit', edit_re_f5_pool_path(re_f5_pool) %></td>
+    <td><%= link_to 'Destroy', re_f5_pool, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Re f5 pool', new_re_f5_pool_path %>

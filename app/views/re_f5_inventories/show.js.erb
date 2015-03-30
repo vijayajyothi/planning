@@ -1,0 +1,10 @@
+$(".index-container").html("<%= escape_javascript(render(:partial => "show"))%>");
+ 
+
+ $('.nav li ').click(function()
+  {
+    $('.nav li').removeClass('active');
+    $(this).addClass('active');
+  });
+
+
