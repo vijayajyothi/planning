@@ -53,6 +53,19 @@
         </div>
 
       </div> -->
+        <% if @users.include? @current_user  %>
+
+       <div class="metro-nav">
+        <div class="metro-nav-block nav-deep-terques" style="background:#A0A5A5";>
+          <a data-original-title=""   data-remote="true" href="/deleted_vms">
+            <div class="info_img"><img src="/assets/underwriting.png"></div>
+            <div class="info"><%= @deleted_count%></div> 
+            <div class="status">Deleted VMs</div>
+          </a>
+        </div>
+
+      </div>
+      <% end %>
     </div>
     <div class=" col-sm-6 col-md-3">
       <div class="metro-nav">
@@ -77,19 +90,7 @@
         </div>
 
       </div>
-           <% if @users.include? @current_user  %>
-
-       <div class="metro-nav">
-        <div class="metro-nav-block nav-deep-terques" style="background:#A0A5A5";>
-          <a data-original-title=""   data-remote="true" href="/deleted_vms">
-            <div class="info_img"><img src="/assets/underwriting.png"></div>
-            <div class="info"><%= @deleted_count%></div> 
-            <div class="status">Deleted VMs</div>
-          </a>
-        </div>
-
-      </div>
-      <% end %>
+         
       
       
     </div>
