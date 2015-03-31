@@ -432,6 +432,8 @@ ActiveRecord::Schema.define(:version => 20150330072199) do
     t.string   "re_f5_vip_ip"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "ops_staus"
+    t.string   "ops_stauts"
     t.string   "ops_status"
   end
 
