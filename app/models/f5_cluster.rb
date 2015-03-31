@@ -89,9 +89,12 @@ class << self
     CSV.foreach("csv_data/remodel_f5/f5-pools.csv", :headers => true) do |row|
       # f5vip = ReF5Vip.where(:poool_name=>row["Pool Name"]).first 
       re_f5_pool = ReF5Pool.where(:name=>row["Pool Name"]).first 
+      if re_f5_pool.present?
 
-      unless re_f5_pool.present?
+      else re_f5_pool.present?
         re_f5_pool = ReF5Pool.new
+        re_f5_pool.attributes = row.to_hash.slice(*accessible_attributes)
+      end
         # re_f5_pool.re_f5_vip_id = f5vip.id if f5vip.present?
         re_f5_pool.name = row["Pool Name"]
         re_f5_pool.pool_members = row["Pool Members"]
@@ -102,49 +105,52 @@ class << self
         re_f5_pool.save
       end
     end
-  end
 
-  def re_f5_inventory_import
-    CSV.foreach("csv_data/remodel_f5/f5-inventory.csv", :headers => true) do |row|
+    def re_f5_inventory_import
+      CSV.foreach("csv_data/remodel_f5/f5-inventory.csv", :headers => true) do |row|
       # f5vip = ReF5Vip.where(:ip=>row["Floating IP"]).first 
       f5_inventory = ReF5Inventory.where(:admin_ip => row["AdminIP"]).first
-      unless f5_inventory.present?
+      if f5_inventory.present?
+        f5_inventory.ops_status = "Present"
+      else f5_inventory.present?
         f5_inventory = ReF5Inventory.new
-        f5_inventory.serial = row["Serial"]
-        f5_inventory.hostname = row["Hostname"]
-        f5_inventory.admin_ip = row["AdminIP"]
-        f5_inventory.marketing_name = row["Marketing Name"]
-        f5_inventory.version = row["Version"]
-        f5_inventory.failover_mode = row["Failover Mode"]
-        f5_inventory.failover_state = row["Failover State"]
-        f5_inventory.peer_address = row["Peer Address"]
-        f5_inventory.peer_admin_ip = row["Peer AdminIP"]
-        f5_inventory.floating_ip = row["Floating IP"]
-        f5_inventory.location = row["Location"]
-        f5_inventory.environment = row["Environment"]
-        f5_inventory.save
+        f5_inventory.attributes = row.to_hash.slice(*accessible_attributes)
+
+      end
+      f5_inventory.serial = row["Serial"]
+      f5_inventory.hostname = row["Hostname"]
+      f5_inventory.admin_ip = row["AdminIP"]
+      f5_inventory.marketing_name = row["Marketing Name"]
+      f5_inventory.version = row["Version"]
+      f5_inventory.failover_mode = row["Failover Mode"]
+      f5_inventory.failover_state = row["Failover State"]
+      f5_inventory.peer_address = row["Peer Address"]
+      f5_inventory.peer_admin_ip = row["Peer AdminIP"]
+      f5_inventory.floating_ip = row["Floating IP"]
+      f5_inventory.location = row["Location"]
+      f5_inventory.environment = row["Environment"]
+      f5_inventory.save
         # f5_inventory.re_f5_vip_ip = f5vip.ip
-      end
-    end 
-  end
+      end 
+    end
 
 
 
-  def f5_data
-    CSV.foreach("csv_data/f5/f5.csv", :headers => true) do |row|
-      f5c = F5Cluster.find_by_access_ip(row[4])
-      if f5c.blank?
-        next
-      end
-      f5vip = {:name => row[5].sub(/\/Common\//,""),
-        :ip => row[6],
-        :port => row[7],
-        :f5_cluster_id => f5c.id
+    def f5_data
+      CSV.foreach("csv_data/f5/f5.csv", :headers => true) do |row|
+        f5c = F5Cluster.find_by_access_ip(row[4])
+        if f5c.blank?
+          next
+        end
+        f5vip = {:name => row[5].sub(/\/Common\//,""),
+          :ip => row[6],
+          :port => row[7],
+          :f5_cluster_id => f5c.id
 
-      }
-      t = F5Vip.find_or_initialize_by_name_and_f5_cluster_id(row[5].sub(/\/Common\//,""),f5c.id)
-      t.attributes = f5vip
-      if t.changed?
+        }
+        t = F5Vip.find_or_initialize_by_name_and_f5_cluster_id(row[5].sub(/\/Common\//,""),f5c.id)
+        t.attributes = f5vip
+        if t.changed?
           # logmessage  "Changes to the F5VIP #{row[5]} #{t.changes.to_json}"
           t.save
         end  
