@@ -1034,15 +1034,6 @@
 "vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-8.vmware.com","vSwitch0","Management Network"
 "vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-8.vmware.com","vSwitch1","VMotion"
 "vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-8.vmware.com","vSwitch2","sc9-prod-portable-dmz-10.113.208.0/23"
-"vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-5.vmware.com","vSwitch0","sc9-backup-servers-10.113.120.0/24"
-"vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-5.vmware.com","vSwitch0","sc9-prod-tier2-server-10.113.160.0/19"
-"vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-5.vmware.com","vSwitch0","SC9 Infra Mgmt-10.113.16.0/22"
-"vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-5.vmware.com","vSwitch0","Prod Tier2 Mgmt- 10.113.192.0/21"
-"vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-5.vmware.com","vSwitch0","sc9-tier2-prod-servers-10.113.60.0/23"
-"vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-5.vmware.com","vSwitch0","temp-vmotion"
-"vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-5.vmware.com","vSwitch0","Management Network"
-"vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-5.vmware.com","vSwitch1","VMotion"
-"vc-prod-1.vmware.com","Santa Clara","sc9-prod-vmg3-5.vmware.com","vSwitch2","sc9-prod-portable-dmz-10.113.208.0/23"
 "vc-prod-1.vmware.com","Santa Clara","sc9-prod4-k08-02.vmware.com","vSwitch0","sc9-prod-tier2-server-10.113.160.0/19"
 "vc-prod-1.vmware.com","Santa Clara","sc9-prod4-k08-02.vmware.com","vSwitch0","SC9 Infra Mgmt-10.113.16.0/22"
 "vc-prod-1.vmware.com","Santa Clara","sc9-prod4-k08-02.vmware.com","vSwitch0","Prod Tier2 Mgmt- 10.113.192.0/21"
@@ -1376,11 +1367,7 @@
 "vc-prod-1.vmware.com","Santa Clara","sc9-p8j13-13.vmware.com","vSwitch2","VMkernel"
 "vc-prod-1.vmware.com","Santa Clara","sc9-p8j13-13.vmware.com","vSwitch3","10.113.208.0/23-vf-prod-dmz"
 "vc-prod-1.vmware.com","Santa Clara","sc9-p8j13-13.vmware.com","vSwitch3","sc9-tier2-prod-dmz-10.113.62.0/23"
-<<<<<<< HEAD
 "vc-prod-1.vmware.com","Santa Clara","sc9-prod7-win-c04-05.vmware.com","vSwitch0","donot_use-sc9-hpc-10.113.112.0/21"
-=======
-"vc-prod-1.vmware.com","Santa Clara","sc9-prod7-win-c04-05.vmware.com","vSwitch0","sc9-hpc-10.113.112.0/21"
->>>>>>> 754d3830c764b2ae9af3dba4f486d8e68cfdc101
 "vc-prod-1.vmware.com","Santa Clara","sc9-prod7-win-c04-05.vmware.com","vSwitch0","10.119.32.0/21-vf-stage"
 "vc-prod-1.vmware.com","Santa Clara","sc9-prod7-win-c04-05.vmware.com","vSwitch0","sc9-prod-servers-10.113.12.0/23"
 "vc-prod-1.vmware.com","Santa Clara","sc9-prod7-win-c04-05.vmware.com","vSwitch0","sc9-prod-ebiz-10.113.76.0/24"

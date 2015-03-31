@@ -1142,6 +1142,8 @@ pds-dev-jscape-pool-22,ROUND,ROBIN,pds-dev-jscape-vip-22,wdc-lt-dmz-1
 pds-dev-jscape-vip-10880,ROUND,ROBIN,pds-dev-jscape-vip-10880,wdc-lt-dmz-1
 esg-lt-ext-pool-9443,ROUND,ROBIN,esg-lt-vip.vmware.com-9443,wdc-lt-dmz-1
 pds-dev-jscape-vip-10880-1,ROUND,ROBIN,pds-dev-vip-11880-1,wdc-lt-dmz-1
+liferay-lt-pool-80,ROUND,ROBIN,liferay-lt-https,wdc-lt-dmz-1
+liferay-lt-pool-80,ROUND,ROBIN,liferay-lt-pool-http,wdc-lt-dmz-1
 dr-ltwebsvc-pool,ROUND,ROBIN,dr-ltwebsvc-vip,wdc-lt-int-1
 fbi-lt-pool,ROUND,ROBIN,fbi-lt-80-vip,wdc-lt-int-1
 flexltwerbsvc-pool,ROUND,ROBIN,flexltwebsvc-vip,wdc-lt-int-1
@@ -1333,6 +1335,8 @@ ad-test-new-pool,ROUND,ROBIN,ad-test-new-vip,wdc-tier2-prod-int-1
 ad-test-pool-ldap,ROUND,ROBIN,ad-vip-ldap,wdc-tier2-prod-int-1
 wdcrrootdc-pool-1,ROUND,ROBIN,wdc-rootdc-vip-1,wdc-tier2-prod-int-1
 wdc-ad-ovd-pool-389,ROUND,ROBIN,wdc-ad-ovd-vip-389,wdc-tier2-prod-int-1
+wdc-ad-ovd-pool-3269,ROUND,ROBIN,wdc-ad-ovd-vip-3269,wdc-tier2-prod-int-1
+wdc-ad-ovd-pool-636,ROUND,ROBIN,wdc-ad-ovd-vip-636,wdc-tier2-prod-int-1
 communities-demo-pool,ROUND,ROBIN,communities-demo-ssl-vip,wdc-uat-dmz-1
 communities-demo-pool,ROUND,ROBIN,communities-demo-vip-1,wdc-uat-dmz-1
 communities-uat-pool,ROUND,ROBIN,communities-uat-vip,wdc-uat-dmz-1
