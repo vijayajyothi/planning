@@ -28,17 +28,17 @@ class << self
   def importing_f5_data
 
     re_f5_vip_data = re_f5_vip_data_import
-re_f5_pool_data_import = re_f5_pool_data_import
-re_f5_inventory_import= re_f5_inventory_import
-    
-    f5cluster_data = f5cluster_data_import
-    p "Done with f5Cluster data Import"
+    re_f5_pool_data_import = re_f5_pool_data_import
+    re_f5_inventory_import= re_f5_inventory_import
+    # ********************************* old code **********************
+    # f5cluster_data = f5cluster_data_import
+    # p "Done with f5Cluster data Import"
 
-    f5_device_data  = f5_device_update
-    p "Done with f5Devices -from prasad data Import"
+    # f5_device_data  = f5_device_update
+    # p "Done with f5Devices -from prasad data Import"
 
-    f5_data  = f5_data  #f5.csv update
-    f5_onecloud  = f5_onecloud  #f5_onecloud data from capacity update.
+    # f5_data  = f5_data  #f5.csv update
+    # f5_onecloud  = f5_onecloud  #f5_onecloud data from capacity update.
    #******************************* oldest code ****************************** 
     # f5vip_data = f5vip_data_import
     # p "Done with F5Vip data Import"
