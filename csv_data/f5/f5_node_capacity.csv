@@ -9878,3 +9878,11 @@ ip,port,name
 10.113.164.242,80,aw-rfs-files-vip-80
 10.113.164.247,80,aw-rfs-dmz-pool-80
 10.113.164.248,80,aw-rfs-dmz-pool-80
+10.128.11.76,80,liferay-lt-pool-80
+10.128.11.76,80,liferay-lt-pool-80
+10.128.152.31,3269,wdc-ad-ovd-pool-3269
+10.128.152.32,3269,wdc-ad-ovd-pool-3269
+10.128.153.110,3269,wdc-ad-ovd-pool-3269
+10.128.152.31,636,wdc-ad-ovd-pool-636
+10.128.152.32,636,wdc-ad-ovd-pool-636
+10.128.153.110,636,wdc-ad-ovd-pool-636
