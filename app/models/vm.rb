@@ -67,7 +67,7 @@ class << self
     p "one cloud data center data imported"
     one_cloud_vms = import_ovms
     p "one cloud vm data imported"
-    #    vcenter_data = vcenter_data_import
+    vcenter_data = vcenter_data_import
     p "vcenter data uploaded"
     data_center_data = data_center_data_import
     p "data center data uploaded"
