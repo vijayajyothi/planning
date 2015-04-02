@@ -27,10 +27,7 @@
 
                 <td><b>Data Center</b></td>
                 <td> <%if @vm.vdc_id.present?%><%= link_to my_vdc_name(@vm.vdc_id).name, my_vdc_name(@vm.vdc_id), :style=>"color:black;", :remote=> true%><% end %></td>
-                <td><%= link_to_if(@vm.vcenter_id.present?, my_vcenter(@vm.vcenter_id).name, my_vcenter(@vm.vcenter_id), :style=>"color:black;", :remote=> true)%></td>
 
-                <td><b>Data Center</b></td>
-                <td><%= link_to_if(@vm.vdc_id.present?, my_vdc_name(@vm.vdc_id).name, my_vdc_name(@vm.vdc_id), :style=>"color:black;", :remote=> true)%></td>
               </tr>
               <tr>
                 <td><b>Cluster</b></td>
