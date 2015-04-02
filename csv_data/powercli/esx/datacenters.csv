@@ -1,4 +1,5 @@
 "timestamp","vcserver","datacenter"
+<<<<<<< HEAD
 "2015-03-30 00:02:26","vc-dev-1.vmware.com","North America Remote Sites"
 "2015-03-30 00:02:26","vc-dev-1.vmware.com","Palo Alto"
 "2015-03-30 00:02:26","vc-dev-1.vmware.com","SC9"
@@ -7,3 +8,13 @@
 "2015-03-30 00:02:39","vc-prod-1.vmware.com","Santa Clara"
 "2015-03-30 00:02:39","vf-prod-vc-01.vmware.com","Santa Clara"
 "2015-03-30 00:02:39","sc9-srm-vc-1.vmware.com","SantaClara"
+=======
+"2015-03-31 00:02:24","vc-dev-1.vmware.com","North America Remote Sites"
+"2015-03-31 00:02:24","vc-dev-1.vmware.com","Palo Alto"
+"2015-03-31 00:02:24","vc-dev-1.vmware.com","SC9"
+"2015-03-31 00:02:35","vc-prod-1.vmware.com","North America Remote Sites"
+"2015-03-31 00:02:35","vc-prod-1.vmware.com","Palo Alto"
+"2015-03-31 00:02:35","vc-prod-1.vmware.com","Santa Clara"
+"2015-03-31 00:02:37","vf-prod-vc-01.vmware.com","Santa Clara"
+"2015-03-31 00:02:37","sc9-srm-vc-1.vmware.com","SantaClara"
+>>>>>>> 34084b072288ae8a2dd8fa957a5edd9f77cac503
