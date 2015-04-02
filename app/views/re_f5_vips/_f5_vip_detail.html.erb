@@ -2,7 +2,7 @@
   <div class="span9">
 
 
-    <div class="workflow-blocks" style="height:255px;overflow:auto;">
+    <div class="workflow-blocks">
       <div class="workflow-heading"><b>F5 VIP:</b> <%= @re_f5_vip.name %></div>
 
       <table class="table table-hover">
@@ -10,12 +10,14 @@
           <tr>
             <td><b>F5 VIP Name</b></td>
             <td><%= @re_f5_vip.name %></td>
-            <td><b>F5 VIP IP</b></td>
-            <td><%= @re_f5_vip.ip %></td>
+            <td><b>VIP IP</b></td>
+            <td><%= @re_f5_vip.address %></td>
+            <!-- <td><b>F5 VIP IP</b></td> -->
+            <!-- <td><%#= @re_f5_vip.ip %></td> -->
           </tr>
           <tr>
-            <td><b>Address</b></td>
-            <td><%= @re_f5_vip.address %></td>
+            <td ><b>VIP Status</b></td>
+            <td ><%= @re_f5_vip.vip_status %></td>
             <td ><b>F5 Location</b></td>
             <td ><%= @re_f5_vip.location %></td>
           </tr> 
@@ -26,12 +28,11 @@
             <td ><%= @re_f5_vip.partition %></td>
           </tr> 
           <% @pool = ReF5Pool.where(:name =>@re_f5_vip.poool_name).first%>
-          <tr>
-            <td ><b>VIP Status</b></td>
-            <td ><%= @re_f5_vip.vip_status %></td>
-            <td><b>VIPs</b></td>
-            <td><%= @pool.vips if @pool.present?%></td>
-          </tr> 
+          <!-- <tr> -->
+            
+            <!-- <td><b>VIPs</b></td> -->
+            <!-- <td><%#= @pool.vips if @pool.present?%></td> -->
+          <!-- </tr>  -->
           <tr>
             <td><b>iRules</b></td>
             <td><%= @re_f5_vip.irules %></td>
@@ -42,7 +43,8 @@
            <td><b>Pool Name</b></td>
            <td><%= @re_f5_vip.poool_name %></td>
            <td><b>LB Method</b></td>
-           <td><%= @pool.lb_method  if @pool.present?%></td>
+           <% @pool.lb_method.slice!"LB_METHOD_"  if @pool.present?%>
+           <td><%= @pool.lb_method if @pool.present?%></td>
          </tr> 
          <tr>
           <td><b>Pool Monitor</b></td>
@@ -61,7 +63,7 @@
     <% @f5_inventories = ReF5Inventory.where(:floating_ip=>@re_f5_vip.ip)%>
     <% @f5_inventories.each do |each_in|%>
 
-    <div class="workflow-blocks" style="overflow:hidden;height:219px;">
+    <div class="workflow-blocks">
       <div class="workflow-heading"><b>Is Deployed In:</b></div>
 
       <table class="table table-hover">
@@ -76,27 +78,34 @@
         </tr> 
         <tr>
           <td><b>Admin IP</b></td>
-          <td><%= each_in.admin_ip%></td>
+              <td><%= link_to "https://#{each_in.admin_ip}","https://#{each_in.admin_ip}", target: "_blank"%></td>
+
           <td><b>Marketing Name</b></td>
           <td><%= each_in.marketing_name%></td>
         </tr>
         <tr>
           <td><b>Version</b></td>
           <td><%= each_in.version%></td>
-          <td><b>Failover Mode</b></td>
-          <td><%= each_in.failover_mode%></td>
-        </tr>
-        <tr>
+        <% if each_in.failover_state.split('_')[2] == "ACTIVE"%>
+          <% image = "green.png"%>
+          <% else each_in.failover_state.split('_')[2] == "standby" %>
+          <% image = "red.png"%>
+          <% end %>
           <td><b>Failover State</b></td>
-          <td><%= each_in.failover_state%></td>
-          <td><b>Peer Address</b></td>
-          <td><%= each_in.peer_address%></td>
+          <td>  <%= image_tag "#{image}", :style=> "margin:-4px 3px 0 0;width:21px;height:21px;"%><%= each_in.failover_state.split('_')[2] %></td>
+          </tr>
+        <tr>
+      <!--     <td><b>Peer Address</b></td>
+          <td><%#= each_in.peer_address%></td> 
         </tr>
+          <td><b>Failover Mode</b></td>
+          <td><%#= each_in.failover_mode%></td> 
+        
         <tr>
           <td><b>Peer Admin IP</b></td>
-          <td><%= each_in.peer_admin_ip%></td>
+          <td><%#= each_in.peer_admin_ip%></td>
           <td><b>Floating IP</b></td>
-          <td><%= each_in.floating_ip%></td>
+          <td><%#= each_in.floating_ip%></td>-->
         </tr> 
 
       </tbody></table>

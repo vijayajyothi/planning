@@ -1,0 +1,157 @@
+<div class="right-panel">
+  <div class="span9">
+   <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="workflow-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#basicdata">
+          <span><%= @vm.name %> Details</span>
+          <p><b> Created On : </b><%= @vm.new_born_on %></p>
+          <p><b> Status : </b>
+            <% if @vm.power_state == "PoweredOn"%>
+             <% image = "green.png"%>
+            <% elsif@vm.power_state == "PoweredOff" %>
+             <% image = "red.png"%>
+            <% else %>
+             <% image = "pause.png"%>
+            <% end %>
+            <%= image_tag "#{image}", :style=> "margin:-4px 3px 0 0;width:21px;height:21px;"%><%= @vm.power_state %></p></a>
+        </div>
+
+        <div id="basicdata" class="panel-collapse collapse in">
+          <div class="">
+            <table class="table table-hover">
+              <tbody>
+               <tr>
+                <td><b>vCenter</b></td>
+
+                <td> <%if @vm.vcenter_id.present?%> <%= link_to my_vcenter(@vm.vcenter_id).name, my_vcenter(@vm.vcenter_id), :style=>"color:black;", :remote=> true%><% end %></td>
+
+                <td><b>Data Center</b></td>
+                <td> <%if @vm.vdc_id.present?%><%= link_to my_vdc_name(@vm.vdc_id).name, my_vdc_name(@vm.vdc_id), :style=>"color:black;", :remote=> true%><% end %></td>
+              </tr>
+              <tr>
+                <td><b>Cluster</b></td>
+                <td><% if @vm.cluster_id.present? %><%= link_to my_cluster(@vm.cluster_id).name, my_cluster(@vm.cluster_id), :style=>"color:black;", :remote=> true%><% end %></td>
+                <td><b>ESX Host</b></td>
+                <td><%if @vm.vmhost_id.present?%><%= link_to_if(@vm.vmhost_id.present? , my_host(@vm.vmhost_id).name, my_host(@vm.vmhost_id), :style=>"color:black;", :remote=> true)%><% end %></td>
+           </tr> 
+
+              <tr>
+                <td><b>VM Name</b></td>
+                <td><%= @vm.name %></td>
+                <td><b>VM IP Address</b></td>
+                <td><%= @vm.ip %></td>
+              </tr> 
+              <tr>
+                <td><b>Connection Status</b></td>
+                <td><%= @vm.connection_state %></td>
+
+                <td><b>OS Type</b></td>
+                <td><%= @vm.os %></td>
+              </tr>  
+
+              <tr>
+                <td><b>Total vCPUs</b></td>
+                <td><%= @vm.num_cpus %></td>
+
+                <td><b>Total vNICs</b></td>
+                <td><%= @vm.num_vnics %></td>
+              </tr>    
+              <tr>
+                <td><b>Status</b></td>
+                <td><%= @vm.guest_state %></td>
+
+                <td><b>DNS Name</b></td>
+                <td><%= @vm.vm_hostname %></td>
+              </tr>  
+              
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default  span6" style="margin-left:0px;margin-top:6px;" >
+        <%# @clusters = get_cluster(@vcenter) %>
+        <div class="workflow-heading">
+          <a data-toggle="collapse" data-parent="#accordion" href="#opsdata">
+            <span>vSphere</span>
+            <p> <b>HW Version :</b> <%= @vm.version %></p></a>
+          </div>
+
+          <div id="opsdata" class="">
+            <div class="" >
+              <table class="table table-hover">
+               <tbody>
+                 <tr>
+                  <td><b>Resource Pool</b></td>
+                  <td><%= @vm.resource_pool %></td>
+                </tr> 
+                <tr>
+                  <td><b>Tool Status</b></td>
+                  <td><%= @vm.tools_status %></td>
+                </tr> 
+                <tr>
+                  <td><b>Tools Version</b></td>
+                  <td><%= @vm.tools_version %></td>
+                </tr> 
+                <tr>
+                  <td><b>UUID</b></td>
+                  <td><%= @vm.uuid %></td>
+                </tr> 
+                
+                <tr>
+                  <td><b>Last Boot</b></td>
+                  <td><%= @vm.last_boot %></td>
+                </tr> 
+
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default  span6"  style="margin-top:6px;">
+          <% #@esxs = get_esx(@vcenter) %>
+          <div class="workflow-heading">
+            <a data-toggle="collapse" data-parent="#accordion" href="#status">
+              <span>Status </span>
+              <p>  <%#= @esxs.count %></p></a>
+            </div>
+
+            <div id="status" class="">
+              <div class="" style="max-height:533px; overflow:auto;">
+                <table class="table table-hover">
+                  <tbody>
+                    <tr>
+                      <td><b>Power State</b></td>
+                      <td><%= @vm.power_state %></td>
+                    </tr>  
+                    <tr>
+                      <td><b>Connection State</b></td>
+                      <td><%= @vm.connection_state %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Persistent ID </b></td>
+                      <td><%= @vm.persistent_id %></td>
+                    </tr> 
+                    
+                    <tr>
+                      <td><b>Total Memory(MB)</b></td>
+                      <td><%= @vm.total_mem_mb %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Provisioned Space(GB)</b></td>
+                      <td><%= @vm.provisioned_space.to_i.round(2) %></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Used Space(GB)</b></td>
+                      <td><%= @vm.used_space.to_i.round(2) %></td>
+                    </tr> 
+                    
+                  </tbody></table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div><!--/span-->
+      </div><!--/span-->
