@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  re_f5_vip_id: 1
+  pool_members: MyString
+  lb_method: MyString
+  pool_monitor: MyString
+  pool_status: MyString
+
+two:
+  name: MyString
+  re_f5_vip_id: 1
+  pool_members: MyString
+  lb_method: MyString
+  pool_monitor: MyString
+  pool_status: MyString

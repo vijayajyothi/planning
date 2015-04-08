@@ -89,7 +89,7 @@ ul#sidemenu li a:hover{ background: -moz-linear-gradient(center top , #8cc63f, #
 (max-width: 1920px) {
 	
 	.navbar-default { margin-top:5px}
-	.logo{display:block; float:left; width:33% !important;}
+	.logo{display:block; float:left; width:45% !important;}
 	.login-info span{width:100%; float:left; padding-top:10px; font-size:13px}
 	.nav-span{display:none}
 

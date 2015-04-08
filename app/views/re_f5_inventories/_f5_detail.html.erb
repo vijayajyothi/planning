@@ -1,0 +1,54 @@
+<div class="right-panel">
+  <div class="span9">
+
+
+   
+    <div class="workflow-blocks" >
+      <div class="workflow-heading"><b><%= @re_f5_inventory.hostname%></b></div>
+
+      <table class="table table-hover">
+        <tbody>
+         <tr>
+
+          <td><b>Host</b></td>
+          <td><%= @re_f5_inventory.hostname%></td>
+          <td><b>Serial</b></td>
+          <td><%= @re_f5_inventory.serial%></td>
+
+        </tr> 
+        <tr>
+          <td><b>Admin IP</b></td>
+          <td><%= @re_f5_inventory.admin_ip%></td>
+          <td><b>Marketing Name</b></td>
+          <td><%= @re_f5_inventory.marketing_name%></td>
+        </tr>
+        <tr>
+          <td><b>Version</b></td>
+          <td><%= @re_f5_inventory.version%></td>
+          <td><b>Failover Mode</b></td>
+          <td><%= @re_f5_inventory.failover_mode%></td>
+        </tr>
+        <tr>
+          <td><b>Failover State</b></td>
+          <td><%= @re_f5_inventory.failover_state%></td>
+          <td><b>Peer Address</b></td>
+          <td><%= @re_f5_inventory.peer_address%></td>
+        </tr>
+        <tr>
+          <td><b>Peer Admin IP</b></td>
+          <td><%= @re_f5_inventory.peer_admin_ip%></td>
+          <td><b>Floating IP</b></td>
+          <td><%= @re_f5_inventory.floating_ip%></td>
+        </tr> 
+          <tr>
+        <td ><b>F5 Location</b></td>
+            <td ><%= @re_f5_inventory.location %></td>
+            <td><b>Environment</b></td>
+            <td><%= @re_f5_inventory.environment %></td>
+          </tr> 
+
+      </tbody></table>
+
+    </div>
+  </div>
+</div>

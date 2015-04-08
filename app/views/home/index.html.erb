@@ -1,3 +1,5 @@
+<% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju', 'Sugama Suhasini K'] %>
+
 <% comment do %>
 <% if flash[:notice]%>
 <div class="alert alert-error">
@@ -36,20 +38,34 @@
             <a data-original-title="" data-remote="true" href="/vms">
               <div class="info_img"><img src="/assets/vm.png" style="height:50px;width:50px;"></div>
               <div class="info"><%= @vm_count %></div>
-              <div class="status">VMs</div>
+              <div class="status">Vcenter VMs</div>
             </a>
           </div>
         </div>
-        <div class="metro-nav">
+
+        <!-- <div class="metro-nav">
           <div class="metro-nav-block nav-deep-thistle">
-           <a data-original-title="" data-remote="true" href="/reports">
-            <div class="info_img">Reports</div>
-            <div class="info"></div>
+           <a data-original-title="" data-remote="true" href="/ref5vips">
+            <div class="info_img">F5</div>
+              <div class="info"><%#= @re_f5_count %></div>
             <div class="status"></div>
           </a>
         </div>
 
+      </div> -->
+        <% if @users.include? @current_user  %>
+
+       <div class="metro-nav">
+        <div class="metro-nav-block nav-deep-terques" style="background:#A0A5A5";>
+          <a data-original-title=""   data-remote="true" href="/deleted_vms">
+            <div class="info_img"><img src="/assets/underwriting.png"></div>
+            <div class="info"><%= @deleted_count%></div> 
+            <div class="status">Deleted VMs</div>
+          </a>
+        </div>
+
       </div>
+      <% end %>
     </div>
     <div class=" col-sm-6 col-md-3">
       <div class="metro-nav">
@@ -65,25 +81,16 @@
       <div class="metro-nav">
         <div class="metro-nav-block nav-deep-terques">
 
-          <a data-original-title=""   data-remote="true" href="/f5vips">
-            <div class="info_img"><img src="/assets/underwriting.png"></div>
+          <a data-original-title=""   data-remote="true" href="/ref5vips">
+            <div class="info_img"><img src="/assets/f5.png" style="height:50px;width:50px;"></div>
             <!-- <div class="info"><%= @f5clusters_count%></div> -->
-            <div class="info"><%= @f5vips_count%></div> 
+            <div class="info"><%= @re_f5_count%></div> 
             <div class="status">F5 VIPs</div>
           </a>
         </div>
 
       </div>
-       <div class="metro-nav">
-        <div class="metro-nav-block nav-deep-terques" style="background:#A0A5A5";>
-          <a data-original-title=""   data-remote="true" href="/deleted_vms">
-            <div class="info_img"><img src="/assets/underwriting.png"></div>
-            <div class="info"><%= @deleted_count%></div> 
-            <div class="status">Deleted VMs</div>
-          </a>
-        </div>
-
-      </div>
+         
       
       
     </div>
@@ -99,9 +106,9 @@
     </div><div class="metro-nav">
     <div class="metro-nav-block nav-block-red">
       <a data-original-title="" data-remote="true" href="/ovdcs">
-        <div class="info_img"><img src="/assets/scoring.png"></div>
+        <div class="info_img"><img src="/assets/vdc.png" style="height:50px;width:50px;"></div>
         <div class="info"><%= @ovdcs%></div>
-        <div class="status">OVDCS</div>
+        <div class="status">Virtual DataCenters</div>
       </a>
     </div>
 
@@ -119,9 +126,9 @@
 <div class="metro-nav">
   <div class="metro-nav-block nav-block-green">
    <a data-original-title="" data-remote="true" href="/ovms">
-    <div class="info_img"><img src="/assets/finance.png"></div>
+    <div class="info_img"><img src="/assets/vm.png" style="height:50px;width:50px;"></div>
     <div class="info"><%= @ovms %></div>
-    <div class="status">OVMs</div>
+    <div class="status">OneCloud VMs</div>
   </a>
 </div>
 
