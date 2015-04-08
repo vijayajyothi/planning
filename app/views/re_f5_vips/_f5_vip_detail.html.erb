@@ -5,7 +5,7 @@
     <div class="workflow-blocks">
       <div class="workflow-heading"><b>F5 VIP:</b> <%= @re_f5_vip.name %></div>
 
-      <table class="table table-hover">
+      <table class="table table-hover" style="table-layout:fixed;">
         <tbody>
           <tr>
             <td><b>F5 VIP Name</b></td>
@@ -35,9 +35,9 @@
           <!-- </tr>  -->
           <tr>
             <td><b>iRules</b></td>
-            <td><%= @re_f5_vip.irules %></td>
+            <td><%= @re_f5_vip.irules.present? ? @re_f5_vip.irules : "Not Configured" %></td>
             <td ><b>Persistence Method</b></td>
-            <td ><%= @re_f5_vip.persistance_method %></td>
+            <td ><%= @re_f5_vip.persistance_method.present? ? @re_f5_vip.persistance_method :  "Not Configured "%></td>
           </tr> 
           <tr>
            <td><b>Pool Name</b></td>
@@ -54,7 +54,7 @@
         </tr> 
         <tr>
           <td ><b>Pool Members</b></td>
-          <td colspan=3><%= @pool.pool_members if @pool.present? %></td>
+          <td colspan=3 style="word-wrap:break-word;"><%= @pool.pool_members if @pool.present? %></td>
         </tr> 
 
       </tbody></table>

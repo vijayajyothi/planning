@@ -4,12 +4,12 @@
   <!-- Index form Started -->
   <div class="col-sm-12">
     <div class="form-search col-sm-4">
-      <h2>F5 VIP Details</h2></div>
+      <h2>F5 Inventory Details</h2></div>
       <div class="form-search col-sm-4" style="margin-top:20px;">
         <div class="input-append">
 
           <%= form_tag re_f5_vips_path, :method => :get, :remote=> true do %>
-          <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+          <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;", :placeholder =>"Search in F5 Inventory" %>
           <%= submit_tag "Search", :name => nil, :class=>"btn" %>
           <% end %>
         </div>
