@@ -21,22 +21,22 @@
             <%="OneCloud VMs" %>
             <% elsif "#{key}" == "Vm"%>
             <%="vCenter VMs" %>
+            <% elsif "#{key}" == "ReF5Inventory"%>
+            <%="F5 Inventory" %>
+            <% elsif "#{key}" == "ReF5Vip"%>
+            <%="F5 VIPs" %>
 
             <% else%>
             <%= "#{key}".upcase%> : </b></td></tr>
             <% end %>
 
             <% group.each do |result|%>
-            <% if result.ops_status=="Deleted"%>
+            <% if result.ops_status=="Deleted" %>
             <tr class="alert alert-error">
               <td></td>
               <td><%= result.name %> is deleted</td>
               <td><%= link_to 'Show', result ,:class => 'btn btn-mini btn-info', :remote=> true%></td></tr>
-
               <% else%>
-
-
-
               <tr>
                 <td></td>
                 <td><%= result.name %></td>
@@ -72,11 +72,11 @@
           /*float:right;*/
           background-image:url(<%= asset_path 'ajax-loader.gif' %>);
           width:450px;
-          height:90px;
+          height:490px;
           background-position: center;
           background-repeat: no-repeat;
           position: fixed;
-          top: 40%;
+          top: 20%;
           left: 40%;
           margin-left: -40px; /* half width of the spinner gif */
           margin-top: -40px; /* half height of the spinner gif */

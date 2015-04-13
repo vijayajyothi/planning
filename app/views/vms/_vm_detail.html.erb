@@ -21,20 +21,20 @@
           <div class="">
             <table class="table table-hover">
               <tbody>
-<tr>
+               <tr>
                 <td><b>vCenter</b></td>
+
                 <td> <%if @vm.vcenter_id.present?%> <%= link_to my_vcenter(@vm.vcenter_id).name, my_vcenter(@vm.vcenter_id), :style=>"color:black;", :remote=> true%><% end %></td>
 
                 <td><b>Data Center</b></td>
                 <td> <%if @vm.vdc_id.present?%><%= link_to my_vdc_name(@vm.vdc_id).name, my_vdc_name(@vm.vdc_id), :style=>"color:black;", :remote=> true%><% end %></td>
-
               </tr>
               <tr>
                 <td><b>Cluster</b></td>
                 <td><% if @vm.cluster_id.present? %><%= link_to my_cluster(@vm.cluster_id).name, my_cluster(@vm.cluster_id), :style=>"color:black;", :remote=> true%><% end %></td>
                 <td><b>ESX Host</b></td>
                 <td><%if @vm.vmhost_id.present?%><%= link_to_if(@vm.vmhost_id.present? , my_host(@vm.vmhost_id).name, my_host(@vm.vmhost_id), :style=>"color:black;", :remote=> true)%><% end %></td>
-           </tr>
+           </tr> 
 
               <tr>
                 <td><b>VM Name</b></td>

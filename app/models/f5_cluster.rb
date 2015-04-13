@@ -24,17 +24,22 @@ class F5Cluster < ActiveRecord::Base
 scope :ops_status, where('ops_status != ?', "Deleted")
 
 class << self
-  
-def importing_f5_data
-  f5cluster_data = f5cluster_data_import
-  p "Done with f5Cluster data Import"
 
-  f5_device_data  = f5_device_update
-  p "Done with f5Devices -from prasad data Import"
+  def importing_f5_data
 
-    f5_data  = f5_data  #f5.csv update
-    f5_onecloud  = f5_onecloud  #f5_onecloud data from capacity update.
-    
+    re_f5_vip_data = re_f5_vip_data_import
+    re_f5_pool_data_import = re_f5_pool_data_import
+    re_f5_inventory_import= re_f5_inventory_import
+    # ********************************* old code **********************
+    # f5cluster_data = f5cluster_data_import
+    # p "Done with f5Cluster data Import"
+
+    # f5_device_data  = f5_device_update
+    # p "Done with f5Devices -from prasad data Import"
+
+    # f5_data  = f5_data  #f5.csv update
+    # f5_onecloud  = f5_onecloud  #f5_onecloud data from capacity update.
+   #******************************* oldest code ****************************** 
     # f5vip_data = f5vip_data_import
     # p "Done with F5Vip data Import"
 
@@ -50,9 +55,86 @@ def importing_f5_data
     # p "Done with F5 node data Import"
     # f5_node_capacity_import = f5_node_capacity_import
     # p "Done with F5 node capacity data Import"
-  end  
+   #******************************* oldest code ****************************** 
+ end  
 
     # ActiveRecord::Base.connection.execute("TRUNCATE vmvips")
+
+
+    def re_f5_vip_data_import
+      CSV.foreach("csv_data/remodel_f5/f5-vips.csv", :headers => true) do |row|
+       f5vip = ReF5Vip.where(:name=>row["VIP Name"], :address =>row["VIP Address"]).first 
+       if f5vip.present?
+        f5vip.ops_status = "Present"
+      else
+        f5vip= ReF5Vip.new
+        f5vip.ops_status = "New"
+        f5vip.attributes = row.to_hash.slice(*accessible_attributes)
+      end
+      f5vip.name= row["VIP Name"]
+      f5vip.ip= row["F5 IP"]
+      f5vip.address= row["VIP Address"]
+      f5vip.partition= row["Partition"]
+      f5vip.location= row["F5 Location"]
+      f5vip.environment= row["F5 Environment"]
+      f5vip.poool_name= row["Pool Name"]
+      f5vip.vip_status= row["VIP Status"]
+      f5vip.irules= row["iRules"]
+      f5vip.persistance_method= row["Persistence Method"]
+      f5vip.save
+    end
+  end
+
+  def re_f5_pool_data_import
+    CSV.foreach("csv_data/remodel_f5/f5-pools.csv", :headers => true) do |row|
+      # f5vip = ReF5Vip.where(:poool_name=>row["Pool Name"]).first 
+      re_f5_pool = ReF5Pool.where(:name=>row["Pool Name"]).first 
+      if re_f5_pool.present?
+
+      else re_f5_pool.present?
+        re_f5_pool = ReF5Pool.new
+        re_f5_pool.attributes = row.to_hash.slice(*accessible_attributes)
+      end
+        # re_f5_pool.re_f5_vip_id = f5vip.id if f5vip.present?
+        re_f5_pool.name = row["Pool Name"]
+        re_f5_pool.pool_members = row["Pool Members"]
+        re_f5_pool.lb_method = row["Pool LB Method"]
+        re_f5_pool.pool_monitor = row["Pool Monitor"]
+        re_f5_pool.pool_status = row["Pool Status"]
+        re_f5_pool.vips = row["VIPs"]
+        re_f5_pool.save
+      end
+    end
+
+    def re_f5_inventory_import
+      CSV.foreach("csv_data/remodel_f5/f5-inventory.csv", :headers => true) do |row|
+      # f5vip = ReF5Vip.where(:ip=>row["Floating IP"]).first 
+      f5_inventory = ReF5Inventory.where(:admin_ip => row["AdminIP"]).first
+      if f5_inventory.present?
+        f5_inventory.ops_status = "Present"
+      else f5_inventory.present?
+        f5_inventory = ReF5Inventory.new
+        f5_inventory.attributes = row.to_hash.slice(*accessible_attributes)
+
+      end
+      f5_inventory.serial = row["Serial"]
+      f5_inventory.hostname = row["Hostname"]
+      f5_inventory.admin_ip = row["AdminIP"]
+      f5_inventory.marketing_name = row["Marketing Name"]
+      f5_inventory.version = row["Version"]
+      f5_inventory.failover_mode = row["Failover Mode"]
+      f5_inventory.failover_state = row["Failover State"]
+      f5_inventory.peer_address = row["Peer Address"]
+      f5_inventory.peer_admin_ip = row["Peer AdminIP"]
+      f5_inventory.floating_ip = row["Floating IP"]
+      f5_inventory.location = row["Location"]
+      f5_inventory.environment = row["Environment"]
+      f5_inventory.save
+        # f5_inventory.re_f5_vip_ip = f5vip.ip
+      end 
+    end
+
+
 
     def f5_data
       CSV.foreach("csv_data/f5/f5.csv", :headers => true) do |row|

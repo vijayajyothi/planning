@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  serial: MyString
+  hostname: MyString
+  admin_ip: MyString
+  marketing_name: MyString
+  version: MyString
+  failover_mode: MyString
+  failover_state: MyString
+  peer_address: MyString
+  peer_admin_ip: MyString
+  floating_ip: MyString
+  location: MyString
+  environment: MyString
+  re_f5_vip_ip: MyString
+
+two:
+  serial: MyString
+  hostname: MyString
+  admin_ip: MyString
+  marketing_name: MyString
+  version: MyString
+  failover_mode: MyString
+  failover_state: MyString
+  peer_address: MyString
+  peer_admin_ip: MyString
+  floating_ip: MyString
+  location: MyString
+  environment: MyString
+  re_f5_vip_ip: MyString

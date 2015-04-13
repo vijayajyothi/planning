@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @re_f5_pool.name %>
+</p>
+
+<p>
+  <b>Re f5 vip:</b>
+  <%= @re_f5_pool.re_f5_vip_id %>
+</p>
+
+<p>
+  <b>Pool members:</b>
+  <%= @re_f5_pool.pool_members %>
+</p>
+
+<p>
+  <b>Lb method:</b>
+  <%= @re_f5_pool.lb_method %>
+</p>
+
+<p>
+  <b>Pool monitor:</b>
+  <%= @re_f5_pool.pool_monitor %>
+</p>
+
+<p>
+  <b>Pool status:</b>
+  <%= @re_f5_pool.pool_status %>
+</p>
+
+
+<%= link_to 'Edit', edit_re_f5_pool_path(@re_f5_pool) %> |
+<%= link_to 'Back', re_f5_pools_path %>

@@ -1,0 +1,41 @@
+<h1>Listing re_f5_vips</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Ip</th>
+    <th>Partition</th>
+    <th>Location</th>
+    <th>Environment</th>
+    <th>Poool name</th>
+    <th>Vip status</th>
+    <th>Irules</th>
+    <th>Persistance method</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @re_f5_vips.each do |re_f5_vip| %>
+  <tr>
+    <td><%= re_f5_vip.name %></td>
+    <td><%= re_f5_vip.address %></td>
+    <td><%= re_f5_vip.ip %></td>
+    <td><%= re_f5_vip.partition %></td>
+    <td><%= re_f5_vip.location %></td>
+    <td><%= re_f5_vip.environment %></td>
+    <td><%= re_f5_vip.poool_name %></td>
+    <td><%= re_f5_vip.vip_status %></td>
+    <td><%= re_f5_vip.irules %></td>
+    <td><%= re_f5_vip.persistance_method %></td>
+    <td><%= link_to 'Show', re_f5_vip %></td>
+    <td><%= link_to 'Edit', edit_re_f5_vip_path(re_f5_vip) %></td>
+    <td><%= link_to 'Destroy', re_f5_vip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Re f5 vip', new_re_f5_vip_path %>

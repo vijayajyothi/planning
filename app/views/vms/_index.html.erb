@@ -1,3 +1,4 @@
+  <div class="index-container">
 <% @users = ['Vijaya Jyothi Kalangi (c)', 'Ashokraj Rajamanikam Devaraju', 'Sugama Suhasini K'] %>
 <% if @users.include? @current_user  %>
 
@@ -5,7 +6,6 @@
   <%= link_to "Linux VMs", linux_vms_path(format: "xlsx") %> |
   <%= link_to "windows VMs", windows_vms_path(format: "xlsx") %></div>
   <%end %>
-  <div class="index-container">
     <div class="col-sm-12">
       <div class="form-search col-sm-4">
         <h2>VM Details</h2></div>
@@ -13,7 +13,7 @@
           <div class="input-append">
 
             <%= form_tag vms_path, :method => :get, :remote=> true do %>
-            <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;"%>
+            <%= text_field_tag :search, params[:search],:class=>"span2 search-query" ,:style=>"height:30px;", :placeholder =>"Search in VMs"%>
             <%= submit_tag "Search", :name => nil, :class=>"btn" %>
             <% end %>
           </div>
@@ -24,10 +24,9 @@
         <table class="table table-striped tablesorter">
           <tr>
             <th>VM Name</th>
- <th>VM DNS Name</th>
+            <th>VM DNS Name</th>
             <th>ESXi Host Name</th>
-           
- <th>IP</th>
+            <th>IP</th>
             <th>Connection State</th>
             <th colspan=2> Actions</th>
           </tr>
@@ -45,11 +44,11 @@
           </tr>
           <% else %>
           <tr style="" id ="complete_tr">
-
             <td><%= vm.name %></td>
-    <td><%= vm.vm_hostname %></td>
+            <td><%= vm.vm_hostname %></td>
             <td><%= my_host(vm.vmhost_id).name if vm.vmhost_id.present? %></td>
-            <td><%= vm.ip %></td>
+            <td><%= vm.ip  %></td>
+
             <td><%= vm.connection_state %></td>
             <div class="button"> 
 
