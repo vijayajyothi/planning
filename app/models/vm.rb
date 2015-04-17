@@ -118,7 +118,7 @@ def import_ovdcs
     ovdc.cpu_limit= row["cpu-limit"]
     ovdc.cpu_alloc= row["cpu-alloc"]
     ovdc.cpu_used= row["cpu-used"]
-    ovdc.save if ovdc.ovdc.present?
+    ovdc.save if ovdc.ovdc.present? 
   end
 end
 

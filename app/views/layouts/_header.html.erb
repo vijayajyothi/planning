@@ -1,4 +1,4 @@
-<header style="height:14%;">
+<header style="height:12% !important;">
   <script>
   window.location.hash="no-back-button";
 window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
@@ -10,15 +10,13 @@ window.onhashchange=function(){window.location.hash="no-back-button";}
   <div class="row">
     <% if @current_user.present? %>
 
-    <div class="col-sm-7">
-      <div class="logo" style="width:45% !important;"> <%= link_to (image_tag("new-vm-logo.jpg")), "/", :id => "logo", :title=>"Back to Home", :style=>"margin:0px !important" %>
+    <div class="col-sm-7" style="padding-top:10px;">
+      <div class="logo" style="width:30% !important;margin-top:12px;"> 
+        <%= link_to (image_tag("vm-logo.jpg")), "/", :id => "logo", :title=>"Back to Home", :style=>"margin:0px !important" %>
       </div>
-      <div class="login-info">
-        <span><b>Welcome <%= @current_user %></b></span><br/>
-        <!-- <span><b>Last Log in: </b><%#= last_login_time %></span> -->
-      </div>
+     
 
-      <div style="margin:9px;float:right;">
+      <div style="margin:22px;float:right;">
        <div class="form-search" >
          <div class="input-append" >
           <%= form_tag search_list_path, :method => :get, :remote=> true do %>
@@ -44,8 +42,13 @@ window.onhashchange=function(){window.location.hash="no-back-button";}
        </div>
        <!-- Collect the nav links, forms, and other content for toggling -->
        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav" style="float: right;padding-top: 30px;" align="right">
+        <div style="font-size:smaller;">
+        <span><b>Logged in as: </b><%= @current_user %></span><br/>
+        <!-- <span><b>Last Log in: </b><%#= last_login_time %></span> -->
+      </div>
+        <ul class="nav navbar-nav" style="float: right;padding-top: 5px;" align="right">
 
+         <li style="width:12%;"><span class="nav-span"></span><%= link_to (image_tag("home.png")), "/" , :style=> "height:32px;width:32px;"%></li>
          <li style="width:12%;"><a href="/vcenters" data-remote=true alt="vCenters" title="vCenters"><span class="nav-span"></span><%= image_tag "vcenter.png", :style=> "height:32px;width:32px;"%></a></li>
          <li style="width:12%;"><a href="/vdcs" data-remote=true alt="vdcs" title="Data Centers"><span class="nav-span"></span><%= image_tag "vdc.png", :style=> "height:32px;width:32px;" %></a></li>
          <li style="width:12%;"><a href="/clusters" data-remote=true alt="Clusters" title="Clusters"><span class="nav-span"></span><%= image_tag "cluster.png", :style=> "height:32px;width:32px;" %></a></li>
@@ -68,7 +71,7 @@ window.onhashchange=function(){window.location.hash="no-back-button";}
 
 <% else %>
 <div class="col-sm-6">
-  <div class="logo" style="width:45% !important;"> <%= link_to (image_tag("new-vm-logo.jpg")), "/", :id => "logo" %>
+  <div class="logo" style="width:45% !important;"> <%= link_to (image_tag("vm-logo.jpg")), "/", :id => "logo" %>
   </div>
 </div>
 </div>
@@ -80,3 +83,17 @@ window.onhashchange=function(){window.location.hash="no-back-button";}
 
 </header>
 
+<style>
+
+div.logo:hover  {
+  /*opacity:0.6;*/
+  transform: scale(1.1);
+  /*background-size: 150% 150%;*/
+}
+.navbar .nav>li:hover {
+  /*opacity:0.6;*/
+  transform: scale(1.1);
+  /*background-size: 150% 150%;*/
+}
+
+</style>
