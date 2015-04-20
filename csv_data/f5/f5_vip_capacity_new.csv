@@ -392,6 +392,8 @@ vam-stage-mysql-vip-1,10.113.68.132,3306,sc9-tier1-stage-int-1
 s2-stage-websvc4-vip.vmware.com,10.113.68.197,8481,sc9-tier1-stage-int-1
 stageosb-8012-vip,10.113.68.143,8012,sc9-tier1-stage-int-1
 s2-stage-wcm-vip-b.vmware.com,10.113.68.157,8251,sc9-tier1-stage-int-1
+vf-av-vip-https,10.113.68.171,443,sc9-tier1-stage-int-1
+vf-av-vip,10.113.68.171,80,sc9-tier1-stage-int-1
 zimbra-prod-proxy-7071-vip,10.113.61.164,7071,sc9-tier2-prod-int-1
 conscripts-ssh-vip,10.113.160.80,22,sc9-tier2-prod-int-1
 people-prod-vip,10.113.161.156,443,sc9-tier2-prod-int-1
@@ -853,6 +855,10 @@ alohapublishrmq-prod-vip-https,10.113.164.249,443,sc9-tier2-prod-int-2
 partnerweb-stg-mysql-vip,10.113.53.30,3306,sc9-tier2-prod-int-2
 aloha-stage-vip-https,10.113.53.205,443,sc9-tier2-prod-int-2
 odm-prd-app-vip,10.113.165.35,8001,sc9-tier2-prod-int-2
+mdmbi-vip-443,10.113.122.35,443,sc9-tier2-prod-int-2
+gsscms-stg-web-vip,10.113.15.115,80,sc9-tier2-prod-int-2
+gsscms-prd-web-vip,10.113.12.178,80,sc9-tier2-prod-int-2
+mdmbi-vip-9704,10.113.122.35,80,sc9-tier2-prod-int-2
 sblwebesvstage-prxy-bypass-vip,10.16.79.182,80,osdc-prod-dmz-1
 sblwebesvprod-prxy-bypass-vip,10.16.79.181,80,osdc-prod-dmz-1
 mylearnweb-ci-vip,10.16.79.174,80,osdc-prod-dmz-1
@@ -1338,6 +1344,7 @@ wdc-rootdc-vip-1,10.128.153.28,389,wdc-tier2-prod-int-1
 wdc-ad-ovd-vip-389,10.128.153.67,389,wdc-tier2-prod-int-1
 wdc-ad-ovd-vip-3269,10.128.153.67,3269,wdc-tier2-prod-int-1
 wdc-ad-ovd-vip-636,10.128.153.67,636,wdc-tier2-prod-int-1
+wdc-proxy-vip,10.128.152.37,3128,wdc-tier2-prod-int-1
 communities-demo-ssl-vip,10.130.64.57,443,wdc-uat-dmz-1
 communities-demo-vip-1,10.130.64.57,80,wdc-uat-dmz-1
 communities-uat-vip,10.130.64.69,80,wdc-uat-dmz-1
