@@ -24,6 +24,11 @@
       <div class="span3">
         <div class="well sidebar-nav" style="margin-right:20px;margin-bottom:0px;height:717px; overflow:auto;">
           <ul class="nav nav-list">
+             <%# @selected_f5 = ReF5Vip.find(params[:id].to_i)%>
+              <!-- <li class=<%#=@selected_f5.id== params[:id].to_i ? "active" : "none" %>> -->
+                <%#= link_to @selected_f5.name, @selected_f5, :remote=>true%>
+              <!-- </li> -->
+              <%# @re_f5_vips1 = @re_f5_vips-[@selected_f5] %>
             <% @re_f5_vips.each do |each_f5_vip|%>
               <li class=<%=each_f5_vip.id== params[:id].to_i ? "active" : "none" %>>
               <%= link_to  each_f5_vip.name, re_selected_f5_vip_path(each_f5_vip), :remote=> true%>
@@ -31,6 +36,8 @@
             
             <% end %>
           </ul>
+            <div class="digg_pagination">      <%= paginate @re_f5_vips, :container => false, :remote => true %>      </div>
+
         </div><!--/.well -->
       </div><!--/span-->
     <div class='load-ajax'></div>

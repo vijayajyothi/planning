@@ -18,7 +18,8 @@ class ReF5VipsController < ApplicationController
   # GET /re_f5_vips/1.json
   def show
     @re_f5_vip = ReF5Vip.find(params[:id])
-    @re_f5_vips = ReF5Vip.all
+    # @re_f5_vips = ReF5Vip.all
+    @re_f5_vips = ReF5Vip.page(params[:page]).per(25) 
     
   end
 

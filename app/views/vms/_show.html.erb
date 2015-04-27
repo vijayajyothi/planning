@@ -25,12 +25,18 @@
         <div class="span3">
           <div class="well sidebar-nav" style="margin-right:20px;margin-bottom:0px;height:717px; overflow:auto;">
             <ul class="nav nav-list">
+              <%# @selected_vm = Vm.find(params[:id].to_i)%>
+              <!-- <li class=<%#=@selected_vm.id== params[:id].to_i ? "active" : "none" %>> -->
+                <%#= link_to @selected_vm.name, @selected_vm, :remote=>true%>
+              <!-- </li> -->
+              <%# @vms1 = @vms-[@selected_vm] %>
               <% @vms.each do |each_vm|%>
               <li class=<%=each_vm.id== params[:id].to_i ? "active" : "none" %>>
                <%= link_to  each_vm.name, selected_vm_path(each_vm), :remote=> true%>
               </li>
               <% end %>
             </ul>
+            <div class="digg_pagination">      <%= paginate @vms, :container => false, :remote => true %>      </div>
           </div><!--/.well -->
         </div><!--/span-->
     <div class='load-ajax'></div>

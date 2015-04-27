@@ -84,7 +84,8 @@ class VmsController < ApplicationController
   # GET /vms/1.json
   def show
     @vm = Vm.find(params[:id])
-    @vms = Vm.where('ops_status != ?', "Deleted" )
+    # @vms = Vm.where('ops_status != ?', "Deleted" )
+    @vms = Vm.page(params[:page]).per(25) 
 
     # respond_to do |format|
     #   format.html # show.html.erb
