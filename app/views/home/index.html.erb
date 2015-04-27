@@ -14,7 +14,7 @@
     <div class="container">
 
       <div class="col-sm-12 workflow-blocks" style="padding:10px 20px 10px 20px;margin-bottom:20px;">
-       <p> IT Ops GPS provides the ability to search and navigate infrastructure inventory managed by VMware IT Operations. Data for VMs, ESX, and Services is gathered from the running environment, consolidated into a central database, and made accessible with this web application.</p>
+       <p> IT Ops GPS provides the ability to search and navigate infrastructure inventory managed by VMware IT Operations Team.  It serves as a central repository for retrieving the vSphere object information from vCenters, the objects in Onecloud environment and F5 VIPs. The Data are gathered from the running environment, consolidated into a central database, and made accessible via this Web Application.</p>
 
        <p> To navigate the inventory: search for inventory of interest, view the results, and navigate the hyperlinks in the data.</p>
      </div>
@@ -25,9 +25,9 @@
         <div class="metro-nav">
           <div class="metro-nav-block nav-light-yellow">
             <a data-original-title="" data-remote="true" href="/vcenters">
-              <div class="info_img"><img src="/assets/vcenter.png" style="height:53px;width:51px;"></div>
+              <div class="info_img"><img src="/assets/vcenter-1.png" style="height:49px;width:51px;"></div>
               <div class="info"><%= @vcenter_count %></div>
-              <div class="status">Vcenter</div>
+              <div class="status">vCenters</div>
             </a>
           </div>
 
@@ -38,7 +38,7 @@
             <a data-original-title="" data-remote="true" href="/vms">
               <div class="info_img"><img src="/assets/vm.png" style="height:50px;width:50px;"></div>
               <div class="info"><%= @vm_count %></div>
-              <div class="status">Vcenter VMs</div>
+              <div class="status">vCenter VMs</div>
             </a>
           </div>
         </div>
@@ -97,9 +97,9 @@
     <div class=" col-sm-6 col-md-3"><div class="metro-nav">
       <div class="metro-nav-block nav-light-green">
         <a data-original-title=""  data-remote="true" href="/clusters">
-          <div class="info_img"><img src="/assets/cluster.png" style="height:50px;width:50px;"></div>
+          <div class="info_img"><img src="/assets/cluster.png" style="height:47px;width:50px;"></div>
           <div class="info"><%= @cluster_count%></div>
-          <div class="status">Clusters</div>
+          <div class="status">ESXi Clusters</div>
         </a>
       </div>
 
@@ -116,9 +116,9 @@
   <div class=" col-sm-6 col-md-3"><div class="metro-nav">
     <div class="metro-nav-block nav-deep-thistle">
      <a data-original-title="" data-remote="true" href="/vmhosts">
-      <div class="info_img"><img src="/assets/vmhost.png" style="height:50px;width:50px;"></div>
+      <div class="info_img"><img src="/assets/vmhost.png" style="height:47px;width:50px;"></div>
       <div class="info"><%= @vmhost_count%></div>
-      <div class="status">Esxi Host</div>
+      <div class="status">ESXi Hosts</div>
     </a>
   </div>
 

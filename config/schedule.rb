@@ -6,7 +6,7 @@
 # Example:
 #
 
-set :output, "/home/workspace/opsgps/cron_log.log"
+set :output, "/data/workspace/opsgps/cron_log.log"
 #
 
 # every 2.hours do

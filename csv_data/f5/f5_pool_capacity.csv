@@ -397,6 +397,8 @@ vam-stage-mysql-pool,ROUND,ROBIN,vam-stage-mysql-vip-1,sc9-tier1-stage-int-1
 s2-stage-websvc4-pool,ROUND,ROBIN,s2-stage-websvc4-vip.vmware.com,sc9-tier1-stage-int-1
 stageosb-8012-pool,ROUND,ROBIN,stageosb-8012-vip,sc9-tier1-stage-int-1
 s2-stage-wcm-pool-b,ROUND,ROBIN,s2-stage-wcm-vip-b.vmware.com,sc9-tier1-stage-int-1
+vf-av-pool,ROUND,ROBIN,vf-av-vip-https,sc9-tier1-stage-int-1
+vf-av-pool,ROUND,ROBIN,vf-av-vip,sc9-tier1-stage-int-1
 zimbra-prod-proxy-7071-pool,LEAST,CONNECTION_MEMBER,zimbra-prod-proxy-7071-vip,sc9-tier2-prod-int-1
 conscripts-ssh-vip,ROUND,ROBIN,conscripts-ssh-vip,sc9-tier2-prod-int-1
 vmweb-prod-people-1-pool,ROUND,ROBIN,people-prod-vip,sc9-tier2-prod-int-1
@@ -864,6 +866,10 @@ alohapublishrmq-prod-pool,ROUND,ROBIN,alohapublishrmq-prod-vip-https,sc9-tier2-p
 partnerweb-stg-mysql-pool,ROUND,ROBIN,partnerweb-stg-mysql-vip,sc9-tier2-prod-int-2
 aloha-stage-pool,ROUND,ROBIN,aloha-stage-vip-https,sc9-tier2-prod-int-2
 odm-prd-app-pool,ROUND,ROBIN,odm-prd-app-vip,sc9-tier2-prod-int-2
+mdmbi-pool,ROUND,ROBIN,mdmbi-vip-443,sc9-tier2-prod-int-2
+gsscms-stg-web-pool,ROUND,ROBIN,gsscms-stg-web-vip,sc9-tier2-prod-int-2
+gsscms-prd-web-pool,ROUND,ROBIN,gsscms-prd-web-vip,sc9-tier2-prod-int-2
+mdmbi-pool,ROUND,ROBIN,mdmbi-vip-9704,sc9-tier2-prod-int-2
 sblwebesvstage-pool,ROUND,ROBIN,sblwebesvstage-prxy-bypass-vip,osdc-prod-dmz-1
 sblwebesvprod-pool,ROUND,ROBIN,sblwebesvprod-prxy-bypass-vip,osdc-prod-dmz-1
 mylearnweb-ci1-pool,ROUND,ROBIN,mylearnweb-ci-vip,osdc-prod-dmz-1
@@ -1352,6 +1358,7 @@ wdcrrootdc-pool-1,ROUND,ROBIN,wdc-rootdc-vip-1,wdc-tier2-prod-int-1
 wdc-ad-ovd-pool-389,ROUND,ROBIN,wdc-ad-ovd-vip-389,wdc-tier2-prod-int-1
 wdc-ad-ovd-pool-3269,ROUND,ROBIN,wdc-ad-ovd-vip-3269,wdc-tier2-prod-int-1
 wdc-ad-ovd-pool-636,ROUND,ROBIN,wdc-ad-ovd-vip-636,wdc-tier2-prod-int-1
+wdc-proxy-pool,ROUND,ROBIN,wdc-proxy-vip,wdc-tier2-prod-int-1
 communities-demo-pool,ROUND,ROBIN,communities-demo-ssl-vip,wdc-uat-dmz-1
 communities-demo-pool,ROUND,ROBIN,communities-demo-vip-1,wdc-uat-dmz-1
 communities-uat-pool,ROUND,ROBIN,communities-uat-vip,wdc-uat-dmz-1
@@ -3528,7 +3535,7 @@ pds-pool-22,ROUND,ROBIN,pds-vip-22,lb1-VPRN-DMZ
 mirage-dmz-pool,ROUND,ROBIN,mirage-prod-dmz-vip,lb1-VPRN-DMZ
 aw-rfs-dmz-pool-80,ROUND,ROBIN,aw-rfs-dmz-vip-80,lb1-VPRN-DMZ
 knova-stg2-kss-pool,LEAST,CONNECTION_MEMBER,knova-stg2-kss-vip,ld2sc1-sjc3
-knova-stg2-kcc-pool,ROUND,ROBIN,knova-stg2-kcc-vip,ld2sc1-sjc3
+knova-stg2-kcc-pool,PREDICTIVE,NODE_ADDRESS,knova-stg2-kcc-vip,ld2sc1-sjc3
 s2-stage-ebssso-pool,ROUND,ROBIN,s2-stage-ebssso-vip,ld2sc1-sjc3
 knova-stg-ikb-pool,ROUND,ROBIN,knova-stg-ikb-ssl-vip,ld2sc1-sjc3
 vmshare-stage-gsa-pool,ROUND,ROBIN,vmshare-stage-gsa-vip,ld2sc1-sjc3
@@ -3583,6 +3590,6 @@ vdc-stg-app-pool,ROUND,ROBIN,vdc-stg-app-vip.vmware.com,ld2sc1-sjc3
 psynch-stage-443-pool,ROUND,ROBIN,psynch-stage-vip,ld2sc1-sjc3
 vdc-stg-app-8443-pool,ROUND,ROBIN,vdc-stg-app-vip-443,ld2sc1-sjc3
 s2-stage-catsso-vip-pool,ROUND,ROBIN,s2-stage-catsso-vip,ld2sc1-sjc3
-knova-stg2-kcc-pool,ROUND,ROBIN,knova-stg2-kcc-vip_8181,ld2sc1-sjc3
+knova-stg2-kcc-pool,PREDICTIVE,NODE_ADDRESS,knova-stg2-kcc-vip_8181,ld2sc1-sjc3
 knova-stg2-adm-pool,ROUND,ROBIN,knova-stg2-adm-vip,ld2sc1-sjc3
 vdc-stg-app-8443-pool,ROUND,ROBIN,vdc-stg-app-vip.vmware.com,ld2sc1-sjc3

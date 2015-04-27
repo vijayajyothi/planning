@@ -30,7 +30,7 @@
           <% @ovms.each do |ovm| %>
           <% if ovm.ops_status=="Deleted"%>
           <tr class="alert alert-error">
-            <td colspan=5><%= ovm.vm_name %> is deleted</td>
+            <td colspan=3><%= ovm.vm_name %> is deleted</td>
             <td colspan=2>
               <% if @users.include? @current_user  %>
 

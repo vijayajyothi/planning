@@ -11,12 +11,12 @@ window.onhashchange=function(){window.location.hash="no-back-button";}
     <% if @current_user.present? %>
 
     <div class="col-sm-7" style="padding-top:10px;">
-      <div class="logo" style="width:30% !important;margin-top:12px;"> 
+      <div class="logo" style="width:40% !important;margin-top:12px;"> 
         <%= link_to (image_tag("vm-logo.jpg")), "/", :id => "logo", :title=>"Back to Home", :style=>"margin:0px !important" %>
       </div>
      
 
-      <div style="margin:22px;float:right;">
+      <div style="margin:22px;float:right;padding-right:4.2em;">
        <div class="form-search" >
          <div class="input-append" >
           <%= form_tag search_list_path, :method => :get, :remote=> true do %>
@@ -48,7 +48,7 @@ window.onhashchange=function(){window.location.hash="no-back-button";}
       </div>
         <ul class="nav navbar-nav" style="float: right;padding-top: 5px;" align="right">
 
-         <li style="width:12%;"><span class="nav-span"></span><%= link_to (image_tag("home.png")), "/" , :style=> "height:32px;width:32px;"%></li>
+         <li style="width:12%;"><span class="nav-span"></span><%= link_to (image_tag("home.png")), "/" , :style=> "height:32px;width:32px;", :title=>"Home" %></li>
          <li style="width:12%;"><a href="/vcenters" data-remote=true alt="vCenters" title="vCenters"><span class="nav-span"></span><%= image_tag "vcenter.png", :style=> "height:32px;width:32px;"%></a></li>
          <li style="width:12%;"><a href="/vdcs" data-remote=true alt="vdcs" title="Data Centers"><span class="nav-span"></span><%= image_tag "vdc.png", :style=> "height:32px;width:32px;" %></a></li>
          <li style="width:12%;"><a href="/clusters" data-remote=true alt="Clusters" title="Clusters"><span class="nav-span"></span><%= image_tag "cluster.png", :style=> "height:32px;width:32px;" %></a></li>
