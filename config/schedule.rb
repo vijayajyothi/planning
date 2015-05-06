@@ -25,7 +25,9 @@ every :day, :at=> '10:01am' do
   rake "cron"
   rake "sunspot:solr:reindex"
   rake `chmod -R 777 *`
+  rake "log:clear"
 end
+
 
 
 # every 2.hours do

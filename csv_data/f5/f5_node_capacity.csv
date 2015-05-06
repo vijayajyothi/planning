@@ -9858,6 +9858,9 @@ ip,port,name
 10.128.11.183,8021,odm-lt-app-pool
 10.128.11.185,8021,odm-lt-app-pool
 10.128.11.186,8021,odm-lt-app-pool
+10.128.11.183,8022,odm-lt-app-pool
+10.128.11.185,8022,odm-lt-app-pool
+10.128.11.186,8022,odm-lt-app-pool
 10.113.62.37,443,ws-prod-pool
 10.113.62.38,443,ws-prod-pool
 10.113.61.123,8021,visl-prod-siml2-vip-pool
@@ -9932,3 +9935,10 @@ ip,port,name
 10.128.242.74,3128,wdc-proxy-pool
 10.128.242.75,3128,wdc-proxy-pool
 10.128.242.76,3128,wdc-proxy-pool
+10.113.15.140,80,ciovantage-stage-1.vip.vmware.com-pool
+10.113.15.141,80,ciovantage-stage-1.vip.vmware.com-pool
+10.113.15.142,80,ciovantage-stage-1.vip.vmware.com-pool
+10.113.15.143,80,ciovantage-stage-1.vip.vmware.com-pool
+10.113.53.24,80,tableauexec-stg-pool
+10.113.53.25,80,tableauexec-stg-pool
+10.113.165.26,8001,odm-prd-app-pool
