@@ -72,7 +72,9 @@ class VmsController < ApplicationController
   end
 
   def deleted_vms
-    @vms = Vm.where(:ops_status=>"Deleted").uniq
+    # @vms = Vm.where(:ops_status=>"Deleted").uniq
+    @vms = Vm.where(:ops_status=>"Deleted").uniq.page(params[:page]).per(15) 
+
   end
 
   def mail_deleted_vms
