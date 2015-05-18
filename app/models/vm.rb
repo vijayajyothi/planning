@@ -187,8 +187,6 @@ end
  CSV.foreach("csv_data/powercli/esx/datacenters.csv", :headers => true) do |row|
 
   vcenter = Vcenter.find_by_name(row["vcserver"])
-  p "here"
-  p vcenter
   vdc = Vdc.where(:name => row["datacenter"], :vcenter_id=>vcenter.id).first if vcenter.present?
   if vdc.present?
     vdc.ops_status = "Present"
@@ -227,7 +225,7 @@ def cluster_import
     cluster.cpu_total_mhz = row["totalcpu"].to_i/1000
     cluster.mem_total_mb = row["totalmemory"].to_i/1000000
     cluster.cpu_no_cores = row["numcpucores"]
-    cluster.vcenter_id = vcenter.id
+    cluster.vcenter_id = vcenter.id if vcenter.present?
     cluster.save! if cluster.name.present?
   end
 end 
@@ -238,7 +236,7 @@ def esx_data_import
     vcenter = Vcenter.find_by_name(row["vcserver"])
     # cluster = Cluster.where(:vcenter_id=>vcenter.id).first
     # esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id, :cluster_id=> cluster.id).first if cluster.present?
-    esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id).first
+    esx_host = Vmhost.where(:name=>row["vmhost"], :vcenter_id=> vcenter.id).first if vcenter.present?
 
     if esx_host.present?
       esx_host.ops_status = "Present"
@@ -248,7 +246,7 @@ def esx_data_import
       esx_host.ops_status = "New"
       esx_host.attributes = row.to_hash.slice(*accessible_attributes)
     end
-    esx_host.vcenter_id = vcenter.id
+    esx_host.vcenter_id = vcenter.id if vcenter.present?
   # esx_host.cluster_id = cluster.id if cluster.present?
   esx_host.name = row["vmhost"]
   esx_host.uuid = row["uuid"]
