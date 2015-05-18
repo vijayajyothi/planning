@@ -31,6 +31,7 @@
 
         </div>
       </div>
+      <% if @vcenter.present? %>
       <div class="panel-group" id="accordion" style="clear:left;">
     <% @clusters = get_cluster(@vcenter) %>
 
@@ -86,7 +87,7 @@
             </div>
           </div>
 
-
+<% end %>
           <!-- <div class="span4">
             <div class="workflow-blocks">
               <div class="workflow-heading"><span>OPS Data</span><p></p></div>
