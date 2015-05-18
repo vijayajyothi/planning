@@ -38,7 +38,7 @@
         <% else %>
         <tr style="" id ="complete_tr">
           <td><%= vdc.name %></td>
-          <td><%= vcenter_name(vdc.vcenter_id) %></td>
+          <td><%= vcenter_name(vdc.vcenter_id) if vdc.vcenter_id.present? %></td>
           <!-- <td><%#= vdc.description %></td> -->
     <div class='button'>
 
