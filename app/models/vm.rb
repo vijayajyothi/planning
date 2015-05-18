@@ -199,7 +199,7 @@ end
   end
   vdc.name = row["datacenter"]
   vdc.vcenter_id = vcenter.id if vcenter.present?
-  vdc.save if vdc.name.present?
+  vdc.save if vdc.vcenter_id.present?
 end
 end 
 
