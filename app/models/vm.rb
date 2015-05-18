@@ -187,7 +187,7 @@ end
  CSV.foreach("csv_data/powercli/esx/datacenters.csv", :headers => true) do |row|
 
   vcenter = Vcenter.find_by_name(row["vcserver"])
-  vdc = Vdc.where(:name => row["datacenter"], :vcenter_id=>vcenter.id).first
+  vdc = Vdc.where(:name => row["datacenter"], :vcenter_id=>vcenter.id).first if vcenter.id.present?
   if vdc.present?
     vdc.ops_status = "Present"
     vdc.update_attributes(row.to_hash.slice(*accessible_attributes))
