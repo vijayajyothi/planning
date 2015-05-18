@@ -14,7 +14,9 @@
             </tr>
             <tr>
               <td><b>Vcenter</b></td>
-              <td><%= link_to_if(@vcenter.present? @vcenter.name, @vcenter), :style=>"color:black;", :remote=> true%></td>
+              <% if @vcenter.present? %>
+              <td><%= link_to @vcenter.name, @vcenter, :style=>"color:black;", :remote=> true%></td>
+              <% end %>
             </tr>
             <!-- <tr>
               <td><b>Location</b></td>
