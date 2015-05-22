@@ -256,7 +256,7 @@ def esx_data_import
   esx_host.model = row["model"]
   esx_host.mem_total_mb = row["memorysize"]
   esx_host.cpu_model = row["cpumodel"]
-  esx_host.cpu_total_mhz = row["cpuhz"]
+  esx_host.cpu_total_mhz = row["cpuhz"].to_i/1000000
   esx_host.num_cpu = row["numcpupackages"]
   esx_host.num_core = row["numcpucores"]
   esx_host.esx_product = row["esxproductname"]
@@ -285,7 +285,7 @@ def esx_pnics_data_import
     pnic.name = row["pnic"]
     pnic.speed = row["speed"]
     pnic.macaddress = row["macaddress"]
-    pnic.observed = row["observed"]
+    pnic.observed = row["observed"].split(" ")[0]
     pnic.save if pnic.name.present?
   end
   extra_pnics = Pnic.where(:ops_status=>"Deleted")
