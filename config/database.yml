@@ -41,3 +41,4 @@ production:
   password: password
   socket: /var/run/mysqld/mysqld.sock
   reconnect: true
+  host: opsgps-prod-mysql
